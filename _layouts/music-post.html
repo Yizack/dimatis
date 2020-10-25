@@ -1,0 +1,121 @@
+{%- assign data = site.data.tracks | where: 'track', page.track -%}
+{%- assign track = data[0] -%}
+{%- if track.cover -%}
+  {%- assign cover = track.cover -%}
+{%- else -%}
+  {%- assign cover = track.track -%}
+{%- endif -%}
+{%- assign sorted = site.data.tracks | sort: 'date' | reverse | where: "genre", track.genre -%}
+{%- assign data2 = site.data.lyrics | where: 'lyric', page.track -%}
+{%- assign lyric = data2[0] -%}
+{%- assign lyrics = lyric.lyrics -%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{ track.artists }} - {{ track.title }}</title>
+    <!-- Metadatos -->
+{% include meta.html %}
+    <meta name="keywords" content="release, {{ track.title }}, {{ track.genre }}, play, stream, download, fanlink"/>
+    <meta name="description" content="{{ track.description }}"/>
+    <!-- Protocolo Open Graph -->
+    <meta property="og:url" content="{{ site.url }}/music/{{ track.track  }}"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="{{ track.artists }} - {{ track.title }}"/>
+    <meta property="og:site_name" content="Dimatis"/>
+    <meta property="og:image" content="{{ site.url }}/images/{{ cover }}.jpg"/>
+    <meta property="og:image:width" content="500"/>
+    <meta property="og:image:height" content="500"/>
+    <meta property="og:image:alt" content="{{ track.artists }} - {{ track.title }}"/>
+    <meta property="og:description" content="{{ track.description }}"/>
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:image" content="{{ site.url }}/images/{{ cover }}.jpg"/>
+    <meta name="twitter:title" content="{{ track.artists }} - {{ track.title }}"/>
+    <meta name="twitter:description" content="{{ track.description }}"/>  
+    <meta name="twitter:site" content="@dimatismusic"/>
+    <!-- Recursos -->
+{% include head.html %}
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+      {   
+        "@context" : "http://schema.org",
+        "@type" : "MusicRecording",
+        "name" : "{{ track.title }}",
+        "url" : "{{ site.url }}/music/{{ track.track  }}",
+        "image" : "{{ site.url }}/images/{{ cover }}.jpg",
+        "genre" : "{{ track.genre }}",
+        "duration" : "PT{% if track.hh %}{{ track.hh }}{% else %}0{% endif %}H{{ track.mm }}M{{ track.ss }}S",
+        "datePublished": "{{ track.date | date: "%Y-%m-%d" }}",{% if track.album %}
+        "inAlbum": [
+          {
+            "@type": "MusicAlbum",
+            "name": "{{ track.album }}",
+            "url": "{{ site.url }}/album/{{ track.album | replace: ' ', '-' | downcase }}"
+          }
+        ],{% endif %}
+        "byArtist": [
+          {
+            "@type": "MusicGroup",
+            "name": "{{ track.person1 }}"
+          }{% if track.person2 %},
+          {
+            "@type": "MusicGroup",
+            "name": "{{ track.person2 }}"
+          }{% endif %}
+        ]
+      }
+    </script>
+  </head>
+  <body class="bg-dark text-white">
+{% include navbar.html %}
+    <main class="page project-page">
+      <section class="portfolio-block project pt-3">
+        <div class="container">
+          <div class="heading mb-3">
+            <h1 class="mb-1">{{ track.title }}</h1>
+            <h3 class="text-secondary">{{ track.artists }}</h3>
+          </div>
+          <iframe class="text-center card-img-top rounded-lg" src="/player/{{ track.track  }}" width="300" height="380"></iframe>
+          <div class="row">
+            <div class="col-12 col-md-8 info mt-3 text-justify">
+              <h3 class="mb-1">Description</h3>
+              <p>{{ track.description }}</p>{% if lyrics %}
+              <h3 class="mb-1">Lyrics</h3>
+              <p>{{ lyrics }}</p>{% endif %}
+            </div>
+            <div class="col-12 col-md-4 meta">
+              <div class="tags">
+                <span class="meta-heading mb-0">Genre</span>
+                <a class="tag mb-1" href="/tag/{{ track.genre | replace: ' ', '-' | downcase }}">{{ track.genre }}</a>{% if track.album %}
+                <span class="meta-heading mb-0">Album</span>
+                <a class="tag mb-1" href="/album/{{ track.album | replace: ' ', '-' | downcase }}">{{ track.album }}</a>{% endif %}
+                <span class="meta-heading mb-0">Release date</span>
+                <span class="tag mb-1">{{ track.date | date_to_string: "ordinal", "US" }}</span>
+                <span class="meta-heading mb-0">Duration</span>
+                <span class="tag mb-1">{{ track.mm }}:{% if track.ss < 10 %}0{{ track.ss }}{% else %}{{ track.ss }}{% endif %}</span>
+                <span class="meta-heading mb-0">Fanlink</span>
+                <a class="tag" href="https://yizack.com/{{ track.track }}">yizack.com/{{ track.track }}</a>
+              </div>
+            </div>
+          </div>
+          <div class="more-projects">
+            <h3 class="text-center">More <a class="tag" href="/tag/{{ track.genre | replace: ' ', '-' | downcase }}">{{ track.genre }}</a> music</h3>
+            <div class="row gallery text-center">{% for item in sorted %}
+              <div class="col-6 col-lg-3">
+                <div class="item">
+                  <a href="/music/{{ item.track }}">
+                    <img class="img-fluid scale-on-hover" src="/images/{% if item.cover %}{{ item.cover }}{% else %}{{ item.track }}{% endif %}.jpg" alt="{{ item.artists }} - {{ item.title }}">
+                    <p class="mb-0">{{ item.title }}</p>
+                    <p><small>{{ item.artists }}</small></p>
+                  </a>
+                </div>
+              </div>{% if forloop.index0 == 7 %}{% break %}{% endif %}{% endfor %}
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+{% include footer.html %}
+{% include scripts.html %}
+  </body>
+</html>

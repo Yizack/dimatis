@@ -1,0 +1,175 @@
+{%- assign sorted = site.data.tracks | sort: 'date' | reverse -%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dimatis</title>
+    <!-- Metadatos -->
+{% include meta.html %}
+    <meta name="keywords" content="dimatis, website, producer, dj, artist, panama, yizack, musician"/>
+    <meta name="description" content="Dimatis is a Panamanian musician and producer."/>
+    <!-- Protocolo Open Graph -->
+    <meta property="og:url" content="{{ site.url }}"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Dimatis"/>
+    <meta property="og:site_name" content="Dimatis"/>
+    <meta property="og:image" content="{{ site.url }}/images/cover.jpg"/>
+    <meta property="og:image:width" content="300"/>
+    <meta property="og:image:height" content="200"/>
+    <meta property="og:image:alt" content="Dimatis cover image"/>
+    <meta property="og:description" content="Dimatis is a Panamanian musician and producer."/>
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:image" content="{{ site.url }}/images/dimatis-logo-2.png"/>
+    <meta name="twitter:title" content="Dimatis"/>
+    <meta name="twitter:description" content="Dimatis is a Panamanian musician and producer."/>  
+    <meta name="twitter:site" content="@dimatismusic"/>
+    <!-- Recursos -->
+{% include head.html %}
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@graph": [
+          {
+            "@type" : "WebSite",
+            "name" : "Dimatis",
+            "url" : "{{ site.url }}",
+            "image" : "{{ site.url }}/images/dimatis-logo-2.png"
+          },
+          {
+            "@type" : "Organization",
+            "name" : "Dimatis",
+            "url" : "{{ site.url }}",
+            "logo" : "{{ site.url }}/images/dimatis-logo-2.png",
+            "image" : "{{ site.url }}/images/cover.jpg",
+            "description": "Dimatis is a Panamanian musician and producer."
+          },
+          {
+            "@type" : ["Person","MusicGroup"],
+            "@id":"https://musicbrainz.org/artist/507c89e0-5a06-4466-bef0-0ae22dd90945",
+            "name" : "Dimatis",
+            "alternateName": "Yizack Rangel",
+            "url" : "{{ site.url }}",
+            "image" : "{{ site.url }}/images/dimatis-logo-2.png",
+            "description": "Dimatis is a Panamanian musician and producer.",
+            "birthDate": "1998-06-15",
+            "birthPlace":
+            {
+              "@type":"AdministrativeArea",
+              "@id":"https://musicbrainz.org/area/e4038ab2-0e15-4987-855a-adf4f0878645",
+              "name":"Panamá",
+              "containedIn":
+                {
+                  "@type":"Country",
+                  "@id":"https://musicbrainz.org/area/6f85633b-dff4-3fb4-babd-fb89b3628041",
+                  "name":"Panama"
+                }
+            },
+            "sameAs" :[
+              "https://youtube.com/dimatis",
+              "https://soundcloud.com/dimatis",
+              "https://facebook.com/dimatismusic",
+              "https://twitter.com/dimatismusic",
+              "https://instagram.com/dimatismusic"
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body class="bg-dark text-white">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-light portfolio-navbar py-1">
+      <div class="container">
+        <a class="navbar-brand logo" href="/"><i class="icon-dimatis"></i>Dimatis</a>
+        <button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="nav navbar-nav ml-auto" itemscope itemtype="http://schema.org/SiteNavigationElement" role="menu">
+            <li itemprop="name" role="menuitem" class="nav-item">
+              <a itemprop="url" class="nav-link active" href="/" title="Home">Home</a>
+            </li>
+            <li itemprop="name" role="menuitem" class="nav-item">
+              <a itemprop="url" class="nav-link" href="/music" title="Music">Music</a>
+            </li>
+            <li itemprop="name" role="menuitem" class="nav-item">
+              <a itemprop="url" class="nav-link" href="/album" title="Albums">Albums</a>
+            </li>
+            <li itemprop="name" role="menuitem" class="nav-item">
+              <a itemprop="url" class="nav-link" href="https://yizack.com/fanlinks" title="Fanlinks">Fanlinks</a>
+            </li>
+            <li itemprop="name" role="menuitem" class="nav-item">
+              <a itemprop="url" class="nav-link" href="/#about" title="About">About</a>
+            </li>
+            <li itemprop="name" role="menuitem" class="nav-item">
+              <a itemprop="url" class="nav-link" href="/licensing" title="Licensing">Licensing</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="page">
+      <section class="portfolio-block block-intro py-3">
+        <div class="container">
+          <div class="avatar border border-1" style="background-image:url('images/dimatis-logo-2.png');"></div>
+          <h1>Dimatis</h1>
+            <div class="about-me">
+              <p>Dimatis is a Panamanian musician and producer.</p>
+            </div>
+        </div>
+      </section>
+      <section class="bg-light text-dark">
+        <div class="container py-5 text-center">
+          <div class="pb-2">
+            <h4 class="text-uppercase">Latest Music</h4>
+          </div>
+          <div>
+            <iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:0RAT9Q5WZwzJRJgTI38zJR&amp;size=detail&amp;theme=light" width="215" height="56"></iframe>
+            <p>Follow my music on Spotify</p>
+          </div>
+          <div class="row my-4">{% for item in sorted %}
+            <div class="col-12 col-lg-4">
+              <div class="item">
+                <iframe class="rounded-lg" src="/player/{{ item.track }}" width="300" height="380"></iframe>
+                <a href="/music/{{ item.track }}">
+                  <p class="mb-0">{{ item.title }}</p>
+                  <p><small>{{ item.artists }}</small></p>
+                </a>
+              </div>
+            </div>{% if forloop.index0 == 2 %}{% break %}{% endif %}{% endfor %}
+          </div>
+          <div class="text-uppercase">
+            <a class="btn btn-outline-dark" role="button" href="/music">See more</a>
+          </div>
+          <div class="pt-5 pb-2" id="ig">
+            <h4 class="text-uppercase">Instagram feed</h4>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 feed">
+                <iframe class="rounded-lg" src="https://dev.yizack.com/instagram/feed" width="100%" height="745.4px"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-dark text-white">
+        <div class="container py-5 px-4">
+          <div class="pb-2" id="about">
+            <h4 class="text-center text-uppercase">About</h4>
+          </div>
+          <div class="text-justify text-secondary biography font-weight-light">
+            <p>
+              Eliézer Yizack Rangel Baysa, also known as <a href="https://open.spotify.com/artist/0RAT9Q5WZwzJRJgTI38zJR" target="_blank" title="Dimatis on Spotify"><b>Dimatis</b></a>. He was born and raised in La Chorrera, Panama on June 15th, 1998. During 2013 he made some songs just for fun, but on August 24th, 2014, he started uploading his music on SoundCloud.<br/><br/>
+              He loves the melodic electronic music scene, his main genre is <a href="https://open.spotify.com/playlist/6Qu7co7czjjXwSEuCyCOAD" target="_blank" title="Spotify Melodic Dubstep Playlist">Melodic Dubstep</a>, but he has also adopted other genres like Chillstep, Future Garage, Chill, Liquid Drum & Bass, and Future Bass.<br/><br/>
+              Over the years, Yizack has been improving the quality of his music and has been supported by important YouTube channels like <a href="https://youtube.com/AirwaveMusicTV" target="_blank" title="AirwaveMusicTV">AirwaveMusicTV</a>, <a href="https://youtube.com/OnlyChillstep" target="_blank" title="OnlyChillstep">OnlyChillstep</a>, <a href="https://youtube.com/LaMusiqueLibre" target="_blank" title="LaMusiqueLibre">La Musique Libre</a>, <a href="https://youtube.com/MixHound" target="_blank" title="MixHound">MixHound</a>, <a href="https://youtube.com/HearWeGoCopyrightFreeMusic" target="_blank" title="HearWeGo">HearWeGo</a> and has been in love with those communities.<br/><br/>
+              Yizack is a melodic electronic music producer in Panama, his mission is to share his music with the world by providing beautiful emotions through the melodies of his songs and one day be recognized for his music in his country.<br/><br/>
+              Some artists who inspired him were: Au5, Blackmill, Chime, Collin McLoughlin, Crystal Skies, ILLENIUM, Miles Away, Said the Sky, Seven Lions, Skrux, T-Mass, Tim Schaufert, Xilent, and many others.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+{% include footer.html %}
+{% include scripts.html %}
+  </body>
+</html>

@@ -1,0 +1,19 @@
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-light portfolio-navbar py-1">
+      <div class="container">
+        <a class="navbar-brand logo" href="/"><i class="icon-dimatis"></i>Dimatis</a>
+        <button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="nav navbar-nav ml-auto" role="menu">
+            <li class="nav-item" role="menuitem"><a class="nav-link{% if page.path == 'index.md' %} active{% endif %}" href="/">Home</a></li>
+            <li class="nav-item" role="menuitem"><a class="nav-link{% if page.path contains 'music' or page.path contains 'tag' %} active{% endif %}" href="/music">Music</a></li>
+            <li class="nav-item" role="menuitem"><a class="nav-link{% if page.path contains 'album' %} active{% endif %}" href="/album">Albums</a></li>
+            <li class="nav-item" role="menuitem"><a class="nav-link" href="https://yizack.com/fanlinks">Fanlinks</a></li>
+            <li class="nav-item" role="menuitem"><a class="nav-link" href="/#about">About</a></li>
+            <li class="nav-item" role="menuitem"><a class="nav-link{% if page.path contains 'licensing' %} active{% endif %}" href="/licensing">Licensing</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>

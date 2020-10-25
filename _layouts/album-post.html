@@ -1,0 +1,109 @@
+{%- assign data = site.data.albums | where: 'album', page.album -%}
+{%- assign album = data[0] -%}
+{%- assign sorted = site.data.albums | sort: 'date' | reverse -%}
+{%- assign tracks = site.data.tracks | sort: 'date' | reverse | where: 'album', album.title -%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{ album.artists }} - {{ album.title }} ({{ album.type }})</title>
+    <!-- Metadatos -->
+{% include meta.html %}
+    <meta name="keywords" content="album, {{ album.title }}, fanlink, download"/>
+    <meta name="description" content="{{ album.description }}"/>
+    <!-- Protocolo Open Graph -->
+    <meta property="og:url" content="{{ site.url }}/album/{{ album.album }}"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="{{ album.artists }} - {{ album.title }} ({{ album.type }})"/>
+    <meta property="og:site_name" content="Dimatis"/>
+    <meta property="og:image" content="{{ site.url }}/images/{{ album.cover }}.jpg"/>
+    <meta property="og:image:width" content="500"/>
+    <meta property="og:image:height" content="500"/>
+    <meta property="og:image:alt" content="{{ album.artists }} - {{ album.title }} ({{ album.type }})"/>
+    <meta property="og:description" content="{{ album.description }}"/>
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:image" content="{{ site.url }}/images/{{ album.cover }}.jpg"/>
+    <meta name="twitter:title" content="{{ album.artists }} - {{ album.title }} ({{ album.type }})"/>
+    <meta name="twitter:description" content="{{ album.description }}"/>  
+    <meta name="twitter:site" content="@dimatismusic"/>
+    <!-- Recursos -->
+{% include head.html %}
+  </head>
+  <body class="bg-dark text-white">
+{% include navbar.html %}
+    <main class="page project-page">
+      <section class="portfolio-block project pt-3">
+        <div class="container" itemscope itemtype="http://schema.org/MusicAlbum">
+          <div class="heading mb-3">
+            <h1 class="mb-1"><span itemprop="name">{{ album.title }}</span> ({{ album.type }})</h1>
+            <h3 class="text-secondary" itemprop="byArtist" itemscope itemtype="http://schema.org/MusicGroup"><span itemprop="name">{{ album.artists }}</span></h3>
+          </div>
+          <div class="text-center">
+            <img src="/images/{{ album.cover }}.jpg" class="rounded-lg" itemprop="image" height="300">
+          </div>
+          <div class="row">
+            <div class="col-12 info mt-3">
+              <h3 class="mb-1">Tracks</h3>
+              <table class="table text-secondary shadow-sm">
+                <thead class="text-white">
+                  <tr>
+                    <th>#</th>
+                    <th>Artists</th>
+                    <th>Title</th>
+                    <th><i class="far fa-clock" aria-hidden="true"></i></th>
+                  </tr>
+                </thead>
+                <tbody>{% for item in tracks %}
+                  <tr data-href="/music/{{ item.track }}" itemprop="track" itemscope itemtype="http://www.schema.org/MusicRecording">
+                    <td itemprop="position">{{ forloop.index }}</td>
+                    <td itemprop="url" content="{{ site.url }}/music/{{ item.track }}">{{ item.artists }}</td>
+                    <td itemprop="name">{{ item.title }}</td>
+                    <td itemprop="duration" content="PT{% if item.hh %}{{ item.hh }}{% else %}0{% endif %}H{{ item.mm }}M{{ item.ss }}S">{{ item.mm }}:{% if item.ss < 10 %}0{{ item.ss }}{% else %}{{ item.ss }}{% endif %}</td>
+                  </tr>{% endfor %}
+                </tbody>
+              </table>
+            </div>
+            <div class="col-12 col-md-8 info mt-3 text-justify">
+              <h3 class="mb-1">Description</h3>
+              <p>{{ album.description }}</p>
+            </div>
+            <div class="col-12 col-md-4 meta">
+              <div class="tags">
+                <span class="meta-heading mb-0">Type</span>
+                <span class="tag mb-1">{{ album.type }}</span>
+                <span class="meta-heading mb-0">Release date</span>
+                <span class="tag mb-1" itemprop="datePublished" content="{{ album.date | date: '%Y-%m-%d' }}">{{ album.date | date_to_string: "ordinal", "US" }}</span>
+                <span class="meta-heading mb-0">Fanlink</span>
+                <a class="tag" href="https://yizack.com/{{ album.cover }}">yizack.com/{{ album.cover }}</a>
+              </div>
+            </div>
+          </div>
+          <div class="more-projects">
+            <h3 class="text-center">More <a class="tag" href="/album">Albums</a></h3>
+            <div class="row gallery text-center">{% for item in sorted %}
+              <div class="col-6 col-lg-3">
+                <div class="item">
+                  <a href="/album/{{ item.album }}">
+                    <img class="img-fluid scale-on-hover" src="/images/{{ item.cover }}.jpg" alt="{{ item.artists }} - {{ item.title }} ({{ item.type }})">
+                    <p class="mb-0">{{ item.title }} ({{ item.type }})</p>
+                    <p><small>{{ item.artists }}</small></p>
+                  </a>
+                </div>
+              </div>
+              {% if forloop.index0 == 7 %}{% break %}{% endif %}{% endfor %}
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+{% include footer.html %}
+{% include scripts.html %}
+    <script>
+      $(function() {
+        $('*[data-href]').on('click', function() {
+          window.location = $(this).data("href");
+        });
+      });
+    </script>
+  </body>
+</html>

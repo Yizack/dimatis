@@ -1,0 +1,54 @@
+{%- assign data = site.data.tracks | where: 'track', page.track -%}
+{%- assign track = data[0] -%}
+{%- if track.cover -%}
+  {%- assign cover = track.cover -%}
+{%- else -%}
+  {%- assign cover = track.track -%}
+{%- endif %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ track.artists }} - {{ track.title }}</title>
+    <!-- Metadatos -->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="{{ track.description }}"/>
+    <!-- Protocolo Open Graph -->
+    <meta property="og:url" content="{{ site.url }}/music/{{ track.track }}"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="{{ track.artists }} - {{ track.title }}"/>
+    <meta property="og:site_name" content="Dimatis"/>
+    <meta property="og:image" content="{{ site.url }}/images/{{ track.track }}.jpg"/>
+    <meta property="og:image:width" content="500"/>
+    <meta property="og:image:height" content="500"/>
+    <meta property="og:image:alt" content="{{ track.artists }} - {{ track.title }}"/>
+    <meta property="og:description" content="{{ track.description }}"/>
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:image" content="{{ site.url }}/images/{{ track.track }}.jpg"/>
+    <meta name="twitter:title" content="{{ track.artists }} - {{ track.title }}"/>
+    <meta name="twitter:description" content="{{ track.description }}">
+    <meta name="twitter:site" content="@dimatismusic"/>
+    <!-- Recursos -->
+    <link rel="icon" href="/images/dimatis-logo-1.png"/>
+    <link rel="shortcut icon" href="/images/dimatis-logo-1.png"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.7/mediaelementplayer.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/audio.css"/>
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/cc91b92ca8.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.7/mediaelement-and-player.min.js"></script>
+    <script src="/js/audio.js"></script>
+  </head>
+  <body>
+    <div class="music-player {% if track.style %}{{ track.style }}{% elsif track.cover %}{{ track.cover }}{% else %}{{ track.track }}{% endif %}">
+      <div class="cover">
+        <img src="/images/{{ cover }}.jpg" alt="{{ track.artists }} - {{ track.title }}">
+      </div>
+      <div class="lecteur">
+        <audio style="width: 100%;" class="fc-media">
+          <source src="https://www.dropbox.com/s/{{ track.dropbox }}/?dl=0" type="audio/mpeg"/>
+        </audio>
+      </div>
+    </div>
+  </body>
+</html>
