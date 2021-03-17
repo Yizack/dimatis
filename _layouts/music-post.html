@@ -9,6 +9,9 @@
 {%- assign data2 = site.data.lyrics | where: 'lyric', page.track -%}
 {%- assign lyric = data2[0] -%}
 {%- assign lyrics = lyric.lyrics -%}
+{%- assign data3 = site.data.credits | where: 'credit', page.track -%}
+{%- assign credit = data3[0] -%}
+{%- assign credits = credit.credits -%}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -81,7 +84,9 @@
               <h3 class="mb-1">Description</h3>
               <p>{{ track.description }}</p>{% if lyrics %}
               <h3 class="mb-1">Lyrics</h3>
-              <p>{{ lyrics }}</p>{% endif %}
+              <p>{{ lyrics }}</p>{% endif %}{% if credits %}
+              <h3 class="mb-1">Credits</h3>
+              <p>{{ credits }}</p>{% endif %}
             </div>
             <div class="col-12 col-md-4 meta">
               <div class="tags">
