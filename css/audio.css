@@ -357,3 +357,7 @@ body {
 .fly-again {
     background: transparent linear-gradient(to bottom,rgb(31 92 199) 21%,rgb(12 30 28) 0%) repeat scroll 0 0;
 }
+
+.paying-for-it {
+    background: transparent linear-gradient(to bottom,rgb(19 71 96) 21%,rgb(6 14 19) 0%) repeat scroll 0 0;
+}
