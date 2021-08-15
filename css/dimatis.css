@@ -178,6 +178,10 @@ iframe {
     height: fit-content;
 }
 
+.feed iframe {
+    height: 100vh;
+}
+
 :target:before {
     content: "";
     display: block;
