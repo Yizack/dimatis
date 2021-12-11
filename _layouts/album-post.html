@@ -31,15 +31,15 @@
   </head>
   <body class="bg-dark text-white">
 {% include navbar.html %}
-    <main class="page project-page">
-      <section class="portfolio-block project pt-3">
-        <div class="container" itemscope itemtype="http://schema.org/MusicAlbum">
-          <div class="heading mb-3">
+    <main>
+      <section id="album">
+        <div class="container py-5" itemscope itemtype="http://schema.org/MusicAlbum">
+          <div class="pb-3 text-center">
             <h1 class="mb-1"><span itemprop="name">{{ album.title }}</span> ({{ album.type }})</h1>
-            <h3 class="text-secondary" itemprop="byArtist" itemscope itemtype="http://schema.org/MusicGroup"><span itemprop="name">{{ album.artists }}</span></h3>
+            <h3 class="text-secondary mb-0" itemprop="byArtist" itemscope itemtype="http://schema.org/MusicGroup"><span itemprop="name">{{ album.artists }}</span></h3>
           </div>
           <div class="text-center">
-            <img src="/images/{{ album.cover }}.jpg" class="rounded-lg" itemprop="image" height="300">
+            <img src="/images/{{ album.cover }}.jpg" class="rounded-lg" itemprop="image" width="300" height="300">
           </div>
           <div class="row">
             <div class="col-12 info mt-3">
@@ -63,18 +63,18 @@
                 </tbody>
               </table>
             </div>
-            <div class="col-12 col-md-8 info mt-3 text-justify">
-              <h3 class="mb-1">Description</h3>
-              <p>{{ album.description }}</p>
+            <div class="col-12 col-md-8 text-secondary">
+              <h3 class="mb-0 text-white">Description</h3>
+              <p class="mb-md-0">{{ album.description }}</p>
             </div>
-            <div class="col-12 col-md-4 meta">
-              <div class="tags">
-                <span class="meta-heading mb-0">Type</span>
-                <span class="tag mb-1">{{ album.type }}</span>
-                <span class="meta-heading mb-0">Release date</span>
-                <span class="tag mb-1" itemprop="datePublished" content="{{ album.date | date: '%Y-%m-%d' }}">{{ album.date | date_to_string: "ordinal", "US" }}</span>
-                <span class="meta-heading mb-0">Fanlink</span>
-                <a class="tag" href="https://yizack.com/{{ album.cover }}">yizack.com/{{ album.cover }}</a>
+            <div class="col-12 col-md-4">
+              <div id="tags">
+                <div class="mb-0">Type</div>
+                <div class="mb-1">{{ album.type }}</div>
+                <div class="mb-0">Release date</div>
+                <div class="mb-1" itemprop="datePublished" content="{{ album.date | date: '%Y-%m-%d' }}">{{ album.date | date_to_string: "ordinal", "US" }}</div>
+                <div class="mb-0">Fanlink</div>
+                <a href="https://yizack.com/{{ album.cover }}">yizack.com/{{ album.cover }}</a>
               </div>
             </div>
           </div>
