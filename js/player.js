@@ -10,6 +10,7 @@ var audio = {
             var media = $('audio.fc-media', (target !== undefined) ? target : 'body')
             if (media.length) {
                 media.mediaelementplayer({
+                    iconSprite: '',
                     audioHeight: 40,
                     features : ['playpause', 'current', 'duration', 'progress', 'volume', 'tracks', 'fullscreen'],
                     alwaysShowControls: true,
