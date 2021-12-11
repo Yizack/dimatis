@@ -71,14 +71,14 @@
   </head>
   <body class="bg-dark text-white">
 {% include navbar.html %}
-    <main class="page project-page">
-      <section class="portfolio-block project pt-3">
+    <main>
+      <section>
         <div class="container">
-          <div class="heading mb-3">
+          <div class="py-3">
             <h1 class="mb-1">{{ track.title }}</h1>
-            <h3 class="text-secondary">{{ track.artists }}</h3>
+            <h3 class="text-secondary mb-0">{{ track.artists }}</h3>
           </div>
-          <iframe class="text-center card-img-top rounded-lg" src="/player/{{ track.track  }}" width="300" height="380"></iframe>
+          <iframe class="text-center rounded-3 w-100" src="/player/{{ track.track  }}" width="300" height="385"></iframe>
           <div class="row">
             <div class="col-12 col-md-8 info mt-3 text-justify">
               <h3 class="mb-1">Description</h3>
@@ -88,17 +88,17 @@
               <h3 class="mb-1">Credits</h3>
               <p>{{ credits }}</p>{% endif %}
             </div>
-            <div class="col-12 col-md-4 meta">
+            <div class="col-12 col-md-4">
               <div class="tags">
-                <span class="meta-heading mb-0">Genre</span>
+                <div class="meta-heading mb-0">Genre</div>
                 <a class="tag mb-1" href="/tag/{{ track.genre | replace: ' ', '-' | downcase }}">{{ track.genre }}</a>{% if track.album %}
-                <span class="meta-heading mb-0">Album</span>
+                <div class="meta-heading mb-0">Album</div>
                 <a class="tag mb-1" href="/album/{{ track.album | replace: ' ', '-' | downcase }}">{{ track.album }}</a>{% endif %}
-                <span class="meta-heading mb-0">Release date</span>
-                <span class="tag mb-1">{{ track.date | date_to_string: "ordinal", "US" }}</span>
-                <span class="meta-heading mb-0">Duration</span>
-                <span class="tag mb-1">{{ track.mm }}:{% if track.ss < 10 %}0{{ track.ss }}{% else %}{{ track.ss }}{% endif %}</span>
-                <span class="meta-heading mb-0">Fanlink</span>
+                <div class="meta-heading mb-0">Release date</div>
+                <div class="tag mb-1">{{ track.date | date_to_string: "ordinal", "US" }}</div>
+                <div class="meta-heading mb-0">Duration</div>
+                <div class="tag mb-1">{{ track.mm }}:{% if track.ss < 10 %}0{{ track.ss }}{% else %}{{ track.ss }}{% endif %}</div>
+                <div class="meta-heading mb-0">Fanlink</div>
                 <a class="tag" href="https://yizack.com/{{ track.track }}">yizack.com/{{ track.track }}</a>
               </div>
             </div>
