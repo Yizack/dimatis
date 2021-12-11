@@ -109,7 +109,7 @@
               <div class="col-6 col-lg-3">
                 <div class="mt-2">
                   <a href="/music/{{ item.track }}">
-                    <img class="img-fluid scale-on-hover" src="/images/{% if item.cover %}{{ item.cover }}{% else %}{{ item.track }}{% endif %}.jpg" alt="{{ item.artists }} - {{ item.title }}">
+                    <img class="img-fluid scale-on-hover rounded-3" src="/images/{% if item.cover %}{{ item.cover }}{% else %}{{ item.track }}{% endif %}.jpg" alt="{{ item.artists }} - {{ item.title }}">
                     <p class="mb-0">{{ item.title }}</p>
                     <p><small>{{ item.artists }}</small></p>
                   </a>
