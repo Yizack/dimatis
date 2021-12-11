@@ -31,7 +31,7 @@
     <main>
       <section>
         <div class="container py-5 text-center">
-          <h4 class="text-uppercase">Albums</h4>
+          <h3 class="text-uppercase">Albums</h3>
           <p class="mb-0">Check all my albums</p>
           <div class="row my-4">{% for item in sorted %}
             <div class="col-12 col-lg-4" id="{% if forloop.index0 > 14 %}oculto{% assign more = true %}{% else %}album{% assign more = false %}{% endif %}">
