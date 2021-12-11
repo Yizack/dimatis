@@ -73,8 +73,8 @@
 {% include navbar.html %}
     <main>
       <section>
-        <div class="container">
-          <div class="py-3 text-center">
+        <div class="container py-5">
+          <div class="pb-3 text-center">
             <h1 class="mb-1">{{ track.title }}</h1>
             <h3 class="text-secondary mb-0">{{ track.artists }}</h3>
           </div>
@@ -103,7 +103,7 @@
               </div>
             </div>
           </div>
-          <div id="more-projects" class="py-3">
+          <div id="more-projects" class="pt-3">
             <h3 class="text-center">More <a class="tag" href="/tag/{{ track.genre | replace: ' ', '-' | downcase }}">{{ track.genre }}</a> music</h3>
             <div class="row gallery text-center">{% for item in sorted %}
               <div class="col-6 col-lg-3">
