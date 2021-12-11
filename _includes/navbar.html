@@ -1,18 +1,17 @@
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-light portfolio-navbar py-1">
+    <nav class="navbar navbar-expand-lg bg-light navbar-light py-1 sticky-top">
       <div class="container">
-        <a class="navbar-brand logo" href="/"><i class="icon-dimatis"></i>Dimatis</a>
-        <button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav">
-          <span class="sr-only">Toggle navigation</span>
+        <a class="navbar-brand" href="/"><i class="icon-dimatis"></i>Dimatis</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="nav navbar-nav ml-auto" role="menu">
-            <li class="nav-item" role="menuitem"><a class="nav-link{% if page.path == 'index.md' %} active{% endif %}" href="/">Home</a></li>
-            <li class="nav-item" role="menuitem"><a class="nav-link{% if page.path contains 'music' or page.path contains 'tag' %} active{% endif %}" href="/music">Music</a></li>
-            <li class="nav-item" role="menuitem"><a class="nav-link{% if page.path contains 'album' %} active{% endif %}" href="/album">Albums</a></li>
-            <li class="nav-item" role="menuitem"><a class="nav-link" href="https://yizack.com/fanlinks" target="_blank">Fanlinks</a></li>
-            <li class="nav-item" role="menuitem"><a class="nav-link" href="/#about">About</a></li>
-            <li class="nav-item" role="menuitem"><a class="nav-link{% if page.path contains 'licensing' %} active{% endif %}" href="/licensing">Licensing</a></li>
+            <li class="nav-item pe-3" role="menuitem"><a class="nav-link{% if page.path == 'index.md' %} active{% endif %}" href="/">Home</a></li>
+            <li class="nav-item pe-3" role="menuitem"><a class="nav-link{% if page.path contains 'music' or page.path contains 'tag' %} active{% endif %}" href="/music">Music</a></li>
+            <li class="nav-item pe-3" role="menuitem"><a class="nav-link{% if page.path contains 'album' %} active{% endif %}" href="/album">Albums</a></li>
+            <li class="nav-item pe-3" role="menuitem"><a class="nav-link" href="https://yizack.com/fanlinks" target="_blank">Fanlinks</a></li>
+            <li class="nav-item pe-3" role="menuitem"><a class="nav-link" href="/#about">About</a></li>
+            <li class="nav-item pe-3" role="menuitem"><a class="nav-link{% if page.path contains 'licensing' %} active{% endif %}" href="/licensing">Licensing</a></li>
             <li class="nav-item" role="menuitem"><a class="nav-link" href="https://merch.streamelements.com/dimatis" target="_blank">Merch</a></li>
           </ul>
         </div>
