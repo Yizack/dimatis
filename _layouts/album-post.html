@@ -68,13 +68,13 @@
               <p class="mb-md-0">{{ album.description }}</p>
             </div>
             <div class="col-12 col-md-4">
-              <div id="tags">
+              <div class="tags">
                 <div class="mb-0">Type</div>
-                <div class="mb-1 text-secondary">{{ album.type }}</div>
+                <div class="tag mb-1">{{ album.type }}</div>
                 <div class="mb-0">Release date</div>
-                <div class="mb-1 text-secondary" itemprop="datePublished" content="{{ album.date | date: '%Y-%m-%d' }}">{{ album.date | date_to_string: "ordinal", "US" }}</div>
+                <div class="tag mb-1" itemprop="datePublished" content="{{ album.date | date: '%Y-%m-%d' }}">{{ album.date | date_to_string: "ordinal", "US" }}</div>
                 <div class="mb-0">Fanlink</div>
-                <a href="https://yizack.com/{{ album.cover }}">yizack.com/{{ album.cover }}</a>
+                <a class="tag" href="https://yizack.com/{{ album.cover }}">yizack.com/{{ album.cover }}</a>
               </div>
             </div>
           </div>
