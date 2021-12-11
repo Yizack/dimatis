@@ -1,0 +1,267 @@
+html, body {
+    margin: 0px;
+    overflow: hidden;
+}
+
+/* media player */
+.mejs__container, .mejs__controls {
+  background: transparent!important;
+}
+
+.mejs__container {
+  width: 100%!important;
+  min-width: 100%!important;
+}
+
+.mejs__controls {
+  display: flex!important;
+  flex-direction: column!important;
+  padding: 0!important;
+}
+
+.mejs__button {
+  width: 100%!important;
+}
+
+.mejs__button>button {
+  overflow: visible!important;
+}
+
+.mejs__button, .mejs__time, .mejs__time-rail {
+  height: 0px!important;
+}
+
+.mejs__time-rail {
+  padding: 0!important;
+  width: 100%!important;
+  margin: 0!important;
+}
+
+.mejs__time {
+  height: 4rem!important;
+  padding: 0!important;
+  display: flex!important;
+  justify-content: space-between!important;
+}
+
+.mejs__play button, .mejs__pause button {
+  margin: 0!important;
+  top: -0.5rem!important;
+}
+
+.mejs__currenttime, .mejs__duration{
+  align-self: flex-end!important;
+}
+
+.mejs__play button::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f04b";
+  font-size: 1rem!important;
+  display: flex;
+}
+
+.mejs__pause button::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f04c";
+  font-size: 1rem!important;
+  display: flex;
+}
+
+.mejs__volume-button button {
+  margin: 0!important;
+  top: -1.5rem!important;
+  right: 3.5rem;
+}
+
+.mejs__volume-button.mejs__mute button::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f028";
+  font-size: 1rem!important;
+  display: flex;
+}
+
+.mejs__volume-button.mejs__unmute button::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f6a9";
+  font-size: 1rem!important;
+  display: flex;
+}
+
+.mejs__horizontal-volume-slider {
+  width: 100%!important;
+  height: 0!important;
+  margin-top: 1rem;
+}
+
+.mejs__horizontal-volume-total {
+  background:hsla(0,0%,100%,.3)!important;
+  top: -2.75rem!important;
+  right: 0!important;
+  left: unset!important;
+  cursor: pointer;
+}
+
+.mejs__pause svg.mejs__icon-pause, .mejs__play svg.mejs__icon-play, .mejs__replay svg.mejs__icon-replay {
+    display: none;
+}
+
+/* end media player */
+
+
+
+.player-color {
+  background-color: #f0aac2;
+}
+
+/* Track Styles */
+.maybe-remix {
+    background: rgb(92, 98, 146);
+}
+
+.quity {
+    background: rgb(89, 68, 49);
+}
+
+.floating-ep {
+    background: rgb(220, 114, 114);
+}
+
+.gris-remix {
+    background: rgb(76, 20, 25);
+}
+
+.demure {
+    background: rgb(93, 82, 163);
+}
+
+.glare {
+    background: rgb(119, 27, 159);
+}
+
+.heartbeat {
+    background: rgb(64, 39, 45);
+}
+
+.moonlit-lover {
+    background: rgb(63, 97, 106);
+}
+
+.bliss {
+    background: rgb(23, 24, 39);
+}
+
+.seeker {
+    background: rgb(17, 36, 43);
+}
+
+.the-dream {
+    background: rgb(55, 62, 78);
+}
+
+.vicious-mind {
+    background: rgb(63, 56, 32);
+}
+
+.timeline {
+    background: rgb(43, 28, 28);
+}
+
+.among-us {
+    background: rgb(21, 21, 21);
+}
+
+.turns-to-dust-remix {
+    background: rgb(141, 53, 64);
+}
+
+.celeste {
+    background: rgb(201, 135, 120);
+}
+
+.fantasy-remix {
+    background: rgb(162, 147, 206);
+}
+
+.sign-of-time {
+    background: rgb(112, 122, 59);
+}
+
+.exhilaration-remix {
+    background: rgb(119, 134, 182);
+}
+
+.experiences-album {
+    background: rgb(23, 24, 28);
+}
+
+.breathe {
+    background: rgb(172, 73, 118);
+}
+
+.fanciful {
+    background: rgb(72, 58, 111);
+}
+
+.white-dwarf {
+    background: rgb(146, 21, 53);
+}
+
+.magical-forest {
+    background: rgb(119, 123, 215);
+}
+
+.escape-with-you-remix {
+    background: rgb(142, 148, 208);
+}
+
+.otherworld-remix {
+    background: rgb(69, 28, 78);
+}
+
+.two-ways {
+    background: rgb(94, 40, 26);
+}
+
+.out-there {
+    background: rgb(232, 133, 128);
+}
+
+.who-am-i-without-you {
+    background: rgb(54 53 146);
+}
+
+.hold-on-to-me {
+    background: rgb(163 180 85);
+}
+
+.euphoria-remix {
+    background: rgb(216 147 181);
+}
+
+.worthy-of-life {
+    background: rgb(70 33 15);
+}
+
+.stay-remix {
+    background: rgb(46 56 83);
+}
+
+.fly-again {
+    background: rgb(31 92 199);
+}
+
+.paying-for-it {
+    background: rgb(19 71 96);
+}
+
+.i-will-someday {
+    background: rgb(12 16 18);
+}
+
+.just-stay {
+    background: rgb(165 116 136);
+}
