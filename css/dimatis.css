@@ -148,10 +148,6 @@ footer .copyright {
     display: none;
 }
 
-#more {
-    cursor: pointer;
-}
-
 .table th {
     border-top: none;
     font-weight: normal;
