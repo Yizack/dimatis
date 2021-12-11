@@ -31,13 +31,8 @@
     <main class="page">
       <section>
         <div class="container py-5 text-center">
-          <div class="pb-2">
-            <h4 class="text-uppercase">Albums</h4>
-          </div>
-          <div>
-            <iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:0RAT9Q5WZwzJRJgTI38zJR&amp;size=detail&amp;theme=dark" width="210" height="56"></iframe>
-            <p>Follow my music on Spotify</p>
-          </div>
+          <h4 class="text-uppercase">Albums</h4>
+          <p class="mb-0">Check all my albums</p>
           <div class="row my-4">{% for item in sorted %}
             <div class="col-12 col-lg-4" id="{% if forloop.index0 > 14 %}oculto{% assign more = true %}{% else %}album{% assign more = false %}{% endif %}">
               <div class="item">
