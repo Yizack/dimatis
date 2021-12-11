@@ -72,7 +72,7 @@
   <body class="bg-dark text-white">
 {% include navbar.html %}
     <main>
-      <section>
+      <section id="music">
         <div class="container py-5">
           <div class="pb-3 text-center">
             <h1 class="mb-1">{{ track.title }}</h1>
@@ -80,13 +80,13 @@
           </div>
           <iframe class="text-center rounded-3 w-100" src="/player/{{ track.track  }}" width="300" height="385"></iframe>
           <div class="row my-3">
-            <div class="col-12 col-md-8 text-justify text-secondary">
+            <div class="col-12 col-md-8 text-secondary">
               <h3 class="mb-0 text-white">Description</h3>
               <p>{{ track.description }}</p>{% if lyrics %}
               <h3 class="mt-3 mb-1 text-white">Lyrics</h3>
               <p>{{ lyrics }}</p>{% endif %}{% if credits %}
               <h3 class="mt-3 mb-1 text-white">Credits</h3>
-              <p>{{ credits }}</p>{% endif %}
+              <p class="mb-md-0">{{ credits }}</p>{% endif %}
             </div>
             <div class="col-12 col-md-4">
               <div class="tags">
