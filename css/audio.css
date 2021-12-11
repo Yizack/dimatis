@@ -38,7 +38,7 @@ html, body {
 }
 
 .mejs__time {
-  height: 4rem!important;
+  height: 2rem!important;
   padding: 0!important;
   display: flex!important;
   justify-content: space-between!important;
@@ -71,7 +71,7 @@ html, body {
 
 .mejs__volume-button button {
   margin: 0!important;
-  top: -1.5rem!important;
+  top: -2.5rem!important;
   right: 3.5rem;
 }
 
@@ -94,7 +94,6 @@ html, body {
 .mejs__horizontal-volume-slider {
   width: 100%!important;
   height: 0!important;
-  margin-top: 1rem;
 }
 
 .mejs__horizontal-volume-total {
@@ -107,6 +106,14 @@ html, body {
 
 .mejs__pause svg.mejs__icon-pause, .mejs__play svg.mejs__icon-play, .mejs__replay svg.mejs__icon-replay {
     display: none;
+}
+
+/* end media player */
+
+
+
+.player-color {
+  background-color: #f0aac2;
 }
 
 /* end media player */
