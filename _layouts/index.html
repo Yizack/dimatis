@@ -122,9 +122,7 @@
       <section id="music" class="bg-light">
         <div class="container py-5 text-center text-dark">
           <h3 class="text-uppercase">Latest Music</h3>
-          <div>
-            <p class="mb-0">Listen to my latest music</p>
-          </div>
+          <p class="mb-0">Listen to my latest music</p>
           <div class="row my-4">{% for item in sorted %}
             <div class="col-12 col-lg-4">
               <iframe class="rounded-3" src="/player/{{ item.track }}" width="300" height="385"></iframe>
