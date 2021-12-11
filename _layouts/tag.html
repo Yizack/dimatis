@@ -28,16 +28,11 @@
   </head>
   <body class="bg-dark text-white">
 {% include navbar.html %}
-    <main class="page">
+    <main>
       <section>
         <div class="container py-5 text-center">
-          <div class="pb-2">
-            <h4 class="text-uppercase">{{ page.genre }}</h4>
-          </div>
-          <div>
-            <iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:0RAT9Q5WZwzJRJgTI38zJR&amp;size=detail&amp;theme=dark" width="210" height="56"></iframe>
-            <p>Follow my music on Spotify</p>
-          </div>
+          <h3 class="text-uppercase">{{ page.genre }}</h3>
+          <p>Listen to all my music in this genre</p>
           <div class="row my-4">{% for item in sorted %}
             <div class="col-12 col-lg-4" id="{% if forloop.index0 > 14 %}oculto{% assign more = true %}{% else %}player{% assign more = false %}{% endif %}">
               <div class="item">
@@ -50,7 +45,7 @@
             </div>{% endfor %}
           </div>{% if more == true %}
           <div class="text-uppercase">
-            <a class="btn btn-outline-white" role="button" onclick="more()" id="more">Load more</a>
+            <a class="btn btn-outline-white rounded-pill" role="button" onclick="more()" id="more">Load more</a>
           </div>{% endif %}
         </div>
       </section>
