@@ -37,7 +37,7 @@
             <div class="col-12 col-lg-4" id="{% if forloop.index0 > 14 %}oculto{% assign more = true %}{% else %}album{% assign more = false %}{% endif %}">
               <div class="item">
                 <a href="/album/{{ item.album }}">
-                  <img class="img-fluid scale-on-hover rounded-lg" src="/images/{{ item.cover }}.jpg" alt="{{ item.artists }} - {{ item.title }} ({{ item.type }})" width="300">
+                  <img class="img-fluid scale-on-hover rounded-3" src="/images/{{ item.cover }}.jpg" alt="{{ item.artists }} - {{ item.title }} ({{ item.type }})" width="300">
                   <p class="mt-2 mb-0">{{ item.title }} ({{ item.type }})</p>
                   <p><small>{{ item.artists }}</small></p>
                 </a>
