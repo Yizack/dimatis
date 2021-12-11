@@ -107,13 +107,11 @@
             <h3 class="text-center">More <a class="tag" href="/tag/{{ track.genre | replace: ' ', '-' | downcase }}">{{ track.genre }}</a> music</h3>
             <div class="row gallery text-center">{% for item in sorted %}
               <div class="col-6 col-lg-3">
-                <div class="mt-2">
-                  <a href="/music/{{ item.track }}">
-                    <img class="img-fluid scale-on-hover rounded-3" src="/images/{% if item.cover %}{{ item.cover }}{% else %}{{ item.track }}{% endif %}.jpg" alt="{{ item.artists }} - {{ item.title }}">
-                    <p class="mb-0">{{ item.title }}</p>
-                    <p><small>{{ item.artists }}</small></p>
-                  </a>
-                </div>
+                <a href="/music/{{ item.track }}">
+                  <img class="img-fluid scale-on-hover rounded-3" src="/images/{% if item.cover %}{{ item.cover }}{% else %}{{ item.track }}{% endif %}.jpg" alt="{{ item.artists }} - {{ item.title }}">
+                  <p class="mt-2 mb-0">{{ item.title }}</p>
+                  <p><small>{{ item.artists }}</small></p>
+                </a>
               </div>{% if forloop.index0 == 7 %}{% break %}{% endif %}{% endfor %}
             </div>
           </div>
