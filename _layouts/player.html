@@ -44,7 +44,7 @@
   <body>
     <div id="player" class="vh-100 {% if track.style %}{{ track.style }}{% elsif track.cover %}{{ track.cover }}{% else %}{{ track.track }}{% endif %}">
       <div class="position-absolute start-0 top-0 bottom-0 end-0 d-flex flex-column" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8))">   
-        <div id="controls" class="text-white px-3 py-4 music-player">
+        <div id="controls" class="text-white px-3 pt-4 pb-3 music-player">
           <div class="lecteur">
             <audio id="music" class="fc-media w-100">
               <source src="https://www.dropbox.com/s/{{ track.dropbox }}/?dl=1" type="audio/mpeg">
