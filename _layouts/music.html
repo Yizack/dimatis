@@ -36,7 +36,7 @@
           <div class="row my-4">{% for item in sorted %}
             <div class="col-12 col-lg-4" id="{% if forloop.index0 > 14 %}oculto{% else %}player{% endif %}">
               <div class="item">
-                <iframe class="rounded-lg" src="/player/{{ item.track }}" width="300" height="385"></iframe>
+                <iframe class="rounded-3" src="/player/{{ item.track }}" width="300" height="385"></iframe>
                 <a href="/music/{{ item.track }}">
                   <p class="mb-0">{{ item.title }}</p>
                   <p><small>{{ item.artists }}</small></p>
