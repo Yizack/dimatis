@@ -1,9 +1,9 @@
 .bg-dark {
-    background-color: #292929!important;
+    background-color: #151515!important;
 }
 
 .text-dark {
-    color: #292929!important;
+    color: #151515!important;
 }
 
 .text-secondary {
@@ -15,18 +15,18 @@
 }
 
 .bg-light a, .bg-light a:hover {
-    color: #292929;
+    color: #151515;
 }
 
 .btn-outline-dark {
-    color: #292929;
-    border-color: #292929;
+    color: #151515;
+    border-color: #151515;
 }
 
 .btn-outline-dark:hover {
     color: #fff!important;
     border-color: #fff;
-    background: #292929;
+    background: #151515;
 }
 
 .btn-outline-white {
@@ -35,7 +35,7 @@
 }
 
 .btn-outline-white:hover {
-    color: #292929!important;
+    color: #151515!important;
     border-color: #fff;
     background: #fff;
 }
@@ -135,7 +135,7 @@ footer .copyright {
 
 tbody tr:hover {
     background: #f8f9fa;
-    color: #292929;
+    color: #151515;
 }
 
 iframe {
@@ -189,7 +189,7 @@ a:hover {
 }
 
 ::-webkit-scrollbar-track {
-  background: #292929;
+  background: #151515;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -201,7 +201,6 @@ a:hover {
 }
 
 :root {
-  overflow-y: scroll;
-  scrollbar-color: #f7f7f7 #292929;
+  scrollbar-color: #f7f7f7 #151515;
   scrollbar-width: thin !important;
 }
