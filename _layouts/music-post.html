@@ -91,15 +91,15 @@
             <div class="col-12 col-md-4">
               <div id="tags">
                 <div class="mb-0">Genre</div>
-                <a class="tag mb-1" href="/tag/{{ track.genre | replace: ' ', '-' | downcase }}">{{ track.genre }}</a>{% if track.album %}
+                <div class="tag mb-2"><a href="/tag/{{ track.genre | replace: ' ', '-' | downcase }}">{{ track.genre }}</a></div>{% if track.album %}
                 <div class="mb-0">Album</div>
-                <a class="tag mb-1" href="/album/{{ track.album | replace: ' ', '-' | downcase }}">{{ track.album }}</a>{% endif %}
+                <div class="tag mb-2"><a href="/album/{{ track.album | replace: ' ', '-' | downcase }}">{{ track.album }}</a></div>{% endif %}
                 <div class="mb-0">Release date</div>
-                <div class="tag mb-1">{{ track.date | date_to_string: "ordinal", "US" }}</div>
+                <div class="tag mb-2">{{ track.date | date_to_string: "ordinal", "US" }}</div>
                 <div class="mb-0">Duration</div>
-                <div class="tag mb-1">{{ track.mm }}:{% if track.ss < 10 %}0{{ track.ss }}{% else %}{{ track.ss }}{% endif %}</div>
+                <div class="tag mb-2">{{ track.mm }}:{% if track.ss < 10 %}0{{ track.ss }}{% else %}{{ track.ss }}{% endif %}</div>
                 <div class="mb-0">Fanlink</div>
-                <a class="tag" href="https://yizack.com/{{ track.track }}">yizack.com/{{ track.track }}</a>
+                <div class="tag"><a href="https://yizack.com/{{ track.track }}">yizack.com/{{ track.track }}</a></div>
               </div>
             </div>
           </div>
