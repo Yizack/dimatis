@@ -193,7 +193,7 @@
     <script>
       $(function() {
         $.getJSON("https://dev.yizack.com/spotify/followers?id=0RAT9Q5WZwzJRJgTI38zJR", function(result){
-          $("#spotify_followers n").html(result["followers"]);
+          $("#spotify_followers #n").html(result["followers"]);
         });
       });
     </script>
