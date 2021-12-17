@@ -170,6 +170,17 @@
             </div>
             <div class="col-lg-4 text-center">
               <img class="img-fluid rounded-3" src="/images/dimatis-picture.jpg">
+              <div class="d-flex justify-content-center">
+                <a class="btn btn-sm rounded-pill me-2 text-white" style="background: #2cbe58;" href="https://open.spotify.com/artist/0RAT9Q5WZwzJRJgTI38zJR" title="Follow on Spotify"><i class="fab fa-spotify" aria-hidden="true"></i> Follow</a>
+                <div class="position-relative align-self-center">
+                  <span class="position-absolute" style="left: -9px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                      <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"></path>
+                    </svg>
+                  </span>
+                  <a id="spotify_followers" href="https://open.spotify.com/artist/0RAT9Q5WZwzJRJgTI38zJR" title="Followers on Spotify" class="bg-white rounded text-dark small py-1 px-2"># followers</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -177,5 +188,10 @@
     </main>
 {% include footer.html %}
 {% include scripts.html %}
+    <script>
+    $.getJSON("https://dev.yizack.com/spotify/followers?id=0RAT9Q5WZwzJRJgTI38zJR", function(result){
+      $("#spotify_followers").html(result["followers"] + " followers");
+    });
+    </script>
   </body>
 </html>
