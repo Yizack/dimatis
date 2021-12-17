@@ -185,22 +185,38 @@ a:hover {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #151515;
+    background: #151515;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #f7f7f7; 
+    background: #f7f7f7; 
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #f7f7f7; 
+    background: #f7f7f7; 
 }
 
 :root {
-  scrollbar-color: #f7f7f7 #151515;
-  scrollbar-width: thin !important;
+    scrollbar-color: #f7f7f7 #151515;
+    scrollbar-width: thin !important;
+}
+
+#follow_spotify:hover {
+    text-decoration: none!important;
+}
+
+#follow_spotify:hover #spotify_button {
+    background: #1fad49;
+}
+
+#follow_spotify #spotify_button {
+    background: #1fad49;
+}
+
+#follow_spotify:hover #spotify_followers {
+    text-decoration: underline!important;
 }
