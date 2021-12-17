@@ -179,7 +179,7 @@
                         <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"></path>
                       </svg>
                     </span>
-                    <span id="spotify_followers" class="bg-white rounded text-dark small py-1 px-2">followers</span>
+                    <span id="spotify_followers" class="bg-white rounded text-dark small py-1 px-2"><span id="n"></span> followers</span>
                   </div>
                 </div>
               </a>
@@ -193,7 +193,7 @@
     <script>
       $(function() {
         $.getJSON("https://dev.yizack.com/spotify/followers?id=0RAT9Q5WZwzJRJgTI38zJR", function(result){
-          $("#spotify_followers").html(result["followers"] + " followers");
+          $("#spotify_followers n").html(result["followers"]);
         });
       });
     </script>
