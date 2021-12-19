@@ -220,3 +220,8 @@ a:hover {
 #follow_spotify:hover #spotify_followers {
     text-decoration: underline!important;
 }
+
+::selection {
+    background: #292929!important;
+    color: white!important;
+}
