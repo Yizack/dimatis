@@ -5,8 +5,8 @@
 {%- else -%}
   {%- assign cover = track.track -%}
 {%- endif %}
-{%- assign data_drive = site.data.drive | where: 'track', page.track -%}
-{%- assign drive = data_drive[0] -%}<!DOCTYPE html>
+{%- assign data_dropbox = site.data.dropbox | where: 'track', page.track -%}
+{%- assign dropbox = data_dropbox[0] -%}<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>{{ track.artists }} - {{ track.title }}</title>
@@ -46,7 +46,7 @@
         <div id="controls">
           <div class="lecteur">
             <audio id="music" class="fc-media">
-              <source src="https://drive.google.com/uc?export=download&id={{ drive.id }}" type="audio/mpeg">
+              <source src="https://www.dropbox.com/s/{{ dropbox.id }}/?dl=1" type="audio/mpeg">
             </audio>
           </div>
         </div>
