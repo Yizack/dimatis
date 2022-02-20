@@ -9,6 +9,8 @@ genre: EDM
 date_start: March 11th, 2022
 date_close: April 8, 2022
 date_winners: April 15th, 2022
+banner: https://images.unsplash.com/photo-1591140111604-7f310043d5fd
+py: center
 stems: https://drive.google.com/drive/folders/13S_XMxdB_7KnOmMcsQAe68_hBfzqzA24?usp=sharing
 submit: 
 details: '
