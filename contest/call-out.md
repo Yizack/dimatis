@@ -59,7 +59,4 @@ rules: '
                     <li>Winners will be announced on Dimatis socials.</li>
                     <li>Winners are free to sell their remixes on Bandcamp.</li>
                     <li>By submitting your remix, you agree with all terms mentioned on this page.</li>'
-
-
-
 ---
