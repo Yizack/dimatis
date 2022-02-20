@@ -10,7 +10,7 @@
   <body class="bg-dark text-white">
 {% include navbar.html %}
     <main>
-      <section id="banner">
+      <section style="background: url('{{ page.banner }}');background-size: cover;background-repeat: no-repeat;background-position-x: right;background-position-y:{{ page.py }};">
         <div class="container py-5">
           <h1>{{ page.title }} <span class="text-dark">Remix Contest</span></h1>
           <div class="row">
