@@ -1,7 +1,7 @@
 ---
 layout: contest
 
-name: Call Out
+title: Call Out
 track: call-out
 key: B min
 tempo: 150 BPM
