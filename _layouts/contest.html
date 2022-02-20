@@ -96,7 +96,7 @@
             <div class="col-md-3  order-md-2 order-1">
               <div class="border border-secondary rounded p-3 text-center mb-3">
                 <h4>Submission deadline</h4>
-                <p id="countdown"></p>
+                <p id="countdown" class="text-center">0D 0H 0M 50S</p>
                 <a role="button" class="btn btn-primary rounded-pill" href="{{ page.submit }}">Submit Remix</a>
               </div>
               <div class="border border-secondary rounded p-3 text-center mb-3">
@@ -137,8 +137,8 @@
       var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      document.getElementById("countdown").innerHTML = days + "D" + hours + "H "
-      + minutes + "M" + seconds + "S ";
+      document.getElementById("countdown").innerHTML = days + "D " + hours + "H "
+      + minutes + "M " + seconds + "S ";
       if (distance < 0) {
         clearInterval(x);
         document.getElementById("countdown").innerHTML = "EXPIRED";
