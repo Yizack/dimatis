@@ -6,7 +6,8 @@ track: call-out
 key: B min
 tempo: 150 BPM
 genre: EDM
-date_submissions: March 11th, 2022 - April 8th, 2022
+date_start: March 11th, 2022
+date_close: April 8, 2022
 date_winners: April 15th, 2022
 stems: https://drive.google.com/drive/folders/13S_XMxdB_7KnOmMcsQAe68_hBfzqzA24?usp=sharing
 submit: 

@@ -96,6 +96,7 @@
             <div class="col-md-3  order-md-2 order-1">
               <div class="border border-secondary rounded p-3 text-center mb-3">
                 <h4>Submission deadline</h4>
+                <p id="countdown"></p>
                 <a role="button" class="btn btn-primary rounded-pill" href="{{ page.submit }}">Submit Remix</a>
               </div>
               <div class="border border-secondary rounded p-3 text-center mb-3">
@@ -113,7 +114,7 @@
                 <hr>
                 <div class="text-start">
                   <p class="m-0">Submissions</p>
-                  <p class="m-0 small text-secondary">{{ page.date_submissions}}</p>
+                  <p class="m-0 small text-secondary">{{ page.date_start }} - {{ page.date_close }}</p>
                 </div>
                 <hr>
                 <div class="text-start">
@@ -127,6 +128,23 @@
       </section>
     </main>
 {% include footer.html %}
+    <script>
+    var countDownDate = new Date("{{ page.date_close }} 00:00:00").getTime();
+    var x = setInterval(function() {
+      var now = new Date().getTime();
+      var distance = countDownDate - now;
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      document.getElementById("countdown").innerHTML = days + "D" + hours + "H "
+      + minutes + "M" + seconds + "S ";
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
 {% include scripts.html %}
   </body>
 </html>
