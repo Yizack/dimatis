@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{ page.name }} Remix Contest | Dimatis</title>
+    <!-- Metadatos -->
+{% include meta.html %}
+    <!-- Recursos -->
+{% include head.html %}
+  </head>
+  <body class="bg-dark text-white">
+{% include navbar.html %}
+    <main>
+      <section id="banner">
+        <div class="container py-5 bg-secondary">
+          <h1>{{ page.name }} <span class="text-secondary">Remix Contest</span></h1>
+          <div class="row">
+            <div class="col-sm-2 text-center">
+              <img class="img-fluid" src="../images/{{ page.track }}.jpg" width="100%" height="100%">
+            </div>
+            <div class="col-sm-10 py-2 py-sm-0">
+              <iframe class="rounded-3 mb-sm-3 mb-0" src="/player/feeling" width="100%" height="85"></iframe>
+              <div class="d-flex">
+                <div class="border border-white rounded py-1 px-2" role="button">{{ page.key }}</div>
+                <div class="border border-white rounded py-1 px-2 mx-2" role="button">{{ page.tempo }}</div>
+                <div class="border border-white rounded py-1 px-2" role="button">{{ page.genre }}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="music" class="bg-dark">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-lg-9">
+              <ul class="nav nav-tabs nav-justified" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" data-bs-toggle="tab" href="#details">Details</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#prizes">Prizes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#rules">Rules</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#entries">Entries</a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <div id="details" class="container tab-pane active text-secondary"><br>
+                  <div class="details">
+{{ page.details }}
+                  </div>
+                </div>
+                <div id="prizes" class="container tab-pane fade text-secondary"><br>
+                  <div class="mb-2">
+                    <h4 class="text-white">1st Place</h4>
+                    <ul>{% for item in page.place1 %}
+                      <li>${{ item }}</li>{% endfor %}
+                    </ul>
+                  </div>
+                  <div class="mb-2">
+                    <hr>
+                    <h4 class="text-white">2nd Place</h4>
+                    <ul>{% for item in page.place2 %}
+                      <li>${{ item }}</li>{% endfor %}
+                    </ul>
+                  </div>
+                  <div class="mb-2">
+                    <hr>
+                    <h4 class="text-white">3rd Place</h4>
+                    <ul>{% for item in page.place3 %}
+                      <li>${{ item }}</li>{% endfor %}
+                    </ul>
+                  </div>
+                  <div class="mb-2">
+                    <hr>
+                    <h4 class="text-white">4th - 5th Place</h4>
+                    <ul>{% for item in page.place4and5 %}
+                      <li>${{ item }}</li>{% endfor %}
+                    </ul>
+                  </div>
+                  <hr>
+                  <p>*If your remix is on the Melodic Dubstep genre, your track will be added to Dimatis <a target="_blank" href="https://open.spotify.com/playlist/6Qu7co7czjjXwSEuCyCOAD">Melodic Dubstep</a> +18k followers Spotify playlist.</p>
+                </div>
+                <div id="rules" class="container tab-pane fade text-secondary"><br>
+                  <ul>
+{{ page.rules }}
+                  </ul>
+                </div>
+                <div id="entries" class="container tab-pane fade text-secondary"><br>
+                  <p>Currently no entries in this contest.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="border border-secondary rounded p-3 text-center mb-3">
+                <h4>Submission deadline</h4>
+                <a role="button" class="btn btn-primary rounded-pill">Submit Remix</a>
+              </div>
+              <div class="border border-secondary rounded p-3 text-center mb-3">
+                <h4>Stems</h4>
+                <div class="text-start mb-2">
+                  <li>WAV files</li>
+                  <li>Midi melodies</li>
+                  <li>Lyrics</li>
+                  <li>Cover art</li>
+                </div>
+                <a role="button" class="btn btn-primary rounded-pill">Download Stems</a>
+              </div>
+              <div class="border border-secondary rounded p-3 text-center">
+                <h4>Schedule</h4>
+                <hr>
+                <div class="text-start">
+                  <p class="m-0">Submissions</p>
+                  <p class="m-0 small text-secondary">{{ page.date_submissions}}</p>
+                </div>
+                <hr>
+                <div class="text-start">
+                  <p class="m-0">Winners Announcement</p>
+                  <p class="m-0 small text-secondary">{{ page.date_winners}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+{% include footer.html %}
+{% include scripts.html %}
+  </body>
+</html>
