@@ -6,7 +6,7 @@ track: call-out
 key: B min
 tempo: 150 BPM
 genre: EDM
-date_start: March 11th, 2022
+date_start: March 7th, 2022
 date_close: April 8, 2022
 date_winners: April 15th, 2022
 banner: https://images.unsplash.com/photo-1591140111604-7f310043d5fd
