@@ -6,8 +6,8 @@ track: call-out
 key: B min
 tempo: 150 BPM
 genre: EDM
-date_submissions: March 11, 2022 - April 8, 2022
-date_winners: April 15, 2022
+date_submissions: March 11th, 2022 - April 8th, 2022
+date_winners: April 15th, 2022
 stems: https://drive.google.com/drive/folders/13S_XMxdB_7KnOmMcsQAe68_hBfzqzA24?usp=sharing
 submit: 
 details: '
@@ -17,7 +17,14 @@ details: '
                     <p>Although our musical styles are completely different, somehow we manage to merge our styles as in previous collaborations we have done like <a target="_blank" href="https://bayza.fanlink.to/dive">Dive</a>, <a target="_blank" href="/music/serenity">Serenity</a>, <a target="_blank" href="/music/hold-on-to-me">Hold on To Me</a>, <a target="_blank" href="https://lnk.bayza.ml/reborn">Reborn</a>, and now <a target="_blank" href="/music/call-out">Call Out</a> with which we will be doing this competition. We believe this song has potential for remixes and we can not wait to hear what you can do with it. Our best luck to you all!</p>
                     <p>First, second and third place will receive cash prizes by paypal and their remixes will be included in the official remixes EP release, fourth and fifth place will also be included in the official remixes EP release, you can see more details in the Prizes tab section.</p>
                     <p>By submitting your remix you warrant that all added content in the remix is your own intellectual property, have been created by you and any used loops/sounds are royalty free. All content in your remix is free from any third party copyright claim.</p>
-                    <h4 class="text-white">How to submit</h4>'
+                    <h4 class="text-white">How to submit</h4>
+                    <ol>
+                      <li>Download the stems.</li>
+                      <li>Upload your final remix mastered, 16 bit 44.1 kHz in .WAV to any colud storage platform such as Google Drive, Dropbox, Wetransfer etc.</li>
+                      <li>Fill the submission form by clicking the "Submit Remix" button.</li>
+                      <li>Upload your remix on Soundcloud, properly titled, as "Dimatis & Bayza - Call Out (Artist Remix)".</li>
+                      <li>Winners will be announced on April 15th, 2022</li>
+                    </ol>'
 place1:
   - $100 USD on PayPal.
   - Official Remix EP release on all streaming platforms.
