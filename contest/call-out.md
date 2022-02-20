@@ -60,6 +60,7 @@ rules: '
                       </ul>
                     </li>
                     <li>Remixes may ONLY be shared on YouTube, Soundcloud, Instagram, Facebook, and Twitter.</li>
+                    <li>Participants CAN NOT release remixes on music streaming platforms by themselves, such as Spotify, Apple Music, etc.</li>
                     <li>The copyright and all other rights of the provided stems and musical compositions embodied in the stems are owned and controlled by Dimatis and Bayza.</li>
                     <li>Stems may not be used for any other purposes than for participating in this contest.</li>
                     <li>You must use the main vocals stem in your remix.</li>
