@@ -53,6 +53,7 @@ rules: '
                       <ul>
                         <li>Chill Trap</li>
                         <li>Chillstep</li>
+                        <li>Colour Bass</li>
                         <li>Drum & Bass</li>
                         <li>Dubstep</li>
                         <li>Future Bass</li>
