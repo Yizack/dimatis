@@ -13,7 +13,7 @@ banner: https://images.unsplash.com/photo-1591140111604-7f310043d5fd
 stems: https://drive.google.com/drive/folders/13S_XMxdB_7KnOmMcsQAe68_hBfzqzA24?usp=sharing
 submit: 
 details: '
-                    <p>"Call Out" in an electropop style track with future bass and modern dance music influences including melancholy vocals.</p>
+                    <p>"Call Out" is an electropop-style track with future bass and modern dance music influences including melancholy vocals.</p>
                     <p>We are very excited to announce our first remix competition. Dimatis and Bayza, independent producer brothers from Panama, both of us have been creating music for more than 9 years, Dimatis more focused on genres such as Melodic Dubstep and Chillstep, while Bayza is focused on genres such as Deep House.
                     </p>
                     <p>Although our musical styles are completely different, somehow we always manage to merge our styles as in previous collaborations we have done like <a target="_blank" href="https://bayza.fanlink.to/dive">Dive</a>, <a target="_blank" href="/music/serenity">Serenity</a>, <a target="_blank" href="/music/hold-on-to-me">Hold on To Me</a>, <a target="_blank" href="https://lnk.bayza.ml/reborn">Reborn</a>, and now <a target="_blank" href="/music/call-out">Call Out</a> with which we will be doing this competition. We believe this song has potential for remixes and we can not wait to hear what you can do with it. Our best luck to you all!</p>
