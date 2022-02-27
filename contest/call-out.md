@@ -70,6 +70,7 @@ rules: '
                         <li>Melodic Dubstep</li>
                       </ul>
                     </li>
+                    <li>If you don not submit a soundcloud link in the form, it will not appear in the list of entries on this website.</li>
                     <li>Remixes may ONLY be shared on YouTube, Soundcloud, Instagram, Facebook, and Twitter.</li>
                     <li>Participants CAN NOT release remixes on music streaming platforms by themselves, such as Spotify, Apple Music, etc.</li>
                     <li>The copyright and all other rights of the provided stems and musical compositions embodied in the stems are owned and controlled by Dimatis and Bayza.</li>
