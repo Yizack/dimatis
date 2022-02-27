@@ -173,6 +173,7 @@
     $(document).ready(function(){
       $.getJSON("{{ page.form_script }}", function(result){
         if(result.length > 0){
+          $("#submissions").html("");
           $.each(result, function(i, submission){
             var pathname = new URL(submission.soundcloud).pathname;
             var sc_secret_token = pathname.split("/")[3];
@@ -181,7 +182,7 @@
           });
         }
         else {
-          $("#submissions").append('<p>Currently no entries in this contest.</p>');
+          $("#submissions").html('<p>Currently no entries in this contest.</p>');
         }
       });
     });
