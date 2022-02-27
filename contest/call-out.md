@@ -54,7 +54,7 @@ places4and5:
   - Video featuring your remix on Dimatis' YouTube channel.
   - Support from Dimatis on socials
 rules: '
-                    <li>The winners will be judged and selected by Dimatis.</li>
+                    <li>The winners will be judged and selected only by Dimatis.</li>
                     <li>Only one remix per contestant.</li>
                     <li>Followers do not matter.</li>
                     <li>If you do not make it to the winners, it is nothing personal, do not let this discourage you and keep making music.</li>
