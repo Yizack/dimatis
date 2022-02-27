@@ -90,7 +90,7 @@
                   </ul>
                 </div>
                 <div id="entries" class="container tab-pane fade text-secondary"><br>
-                  <p>Currently no entries in this contest.</p>
+                  <div id="submissions"><p>Loading entries...</p></div>
                 </div>
               </div>
             </div>
@@ -169,6 +169,22 @@
         $("#countdown").html("CLOSED");
       }
     }, 1000);
+
+    $(document).ready(function(){
+      $.getJSON("{{ page.form_script }}", function(result){
+        if(result.length > 0){
+          $.each(result, function(i, submission){
+            var pathname = new URL(submission.soundcloud).pathname;
+            var sc_secret_token = pathname.split("/")[3];
+            var sc_artist = pathname.split("/")[1];
+            $("#submissions").append('<iframe class="mb-3" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url='+ submission.soundcloud +'%3Fsecret_token%3'+ sc_secret_token +'&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/'+ sc_artist +'" title="Dimatis" target="_blank" style="color: #cccccc; text-decoration: none;">Dimatis</a> · <a href="'+ submission.soundcloud +'" title="{{ page.artist }} - {{ page.title }} ('+ submission.artist +' Remix)" target="_blank" style="color: #cccccc; text-decoration: none;">{{ page.artist }} - {{ page.title }} ('+ submission.artist +' Remix)</a></div>');
+          });
+        }
+        else {
+          $("#submissions").append('<p>Currently no entries in this contest.</p>');
+        }
+      });
+    });
     </script>
   </body>
 </html>
