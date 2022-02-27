@@ -23,10 +23,12 @@ details: '
                     <p>By submitting your remix you warrant that all added content in the remix is your own intellectual property, have been created by you and any used loops/sounds are royalty free. All content in your remix is free from any third party copyright claim.</p>
                     <h4 class="text-white">How to submit</h4>
                     <ol>
+                      <li>Read the rules.</li>
                       <li>Download the stems.</li>
                       <li>Upload your final remix mastered, 16 bit 44.1 kHz in .WAV to any colud storage platform such as Google Drive, Dropbox, Wetransfer etc.</li>
                       <li>Upload your remix on Soundcloud, properly titled, as "Dimatis & Bayza - Call Out (Artist Remix)".</li>
                       <li>Fill the submission form by clicking the "Submit Remix" button.</li>
+                      <li>Check that your remix is in the "Entries" tab.</li>
                       <li>Winners will be announced on April 15th, 2022</li>
                     </ol>'
 place1:
