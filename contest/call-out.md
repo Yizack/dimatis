@@ -53,6 +53,8 @@ places4and5:
 rules: '
                     <li>The winners will be judged and selected by Dimatis.</li>
                     <li>Only one remix per contestant.</li>
+                    <li>Followers do not matter.</li>
+                    <li>If you do not make it to the winners, it is nothing personal, do not let this discourage you and keep making music.</li>
                     <li>You can do any genre you want and win if it is good enough but I am looking for these if possible:
                       <ul>
                         <li>Chill Trap</li>
