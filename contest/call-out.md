@@ -53,7 +53,7 @@ places4and5:
 rules: '
                     <li>The winners will be judged and selected by Dimatis.</li>
                     <li>Only one remix per contestant.</li>
-                    <li>Genres accepted:
+                    <li>You can do any genre you want and win if it is good enough but I am looking for these if possible:
                       <ul>
                         <li>Chill Trap</li>
                         <li>Chillstep</li>
