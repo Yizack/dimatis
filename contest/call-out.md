@@ -1,6 +1,7 @@
 ---
 layout: contest
 
+artist: Dimatis & Bayza
 title: Call Out
 track: call-out
 key: B min
@@ -11,7 +12,8 @@ date_close: April 8, 2022
 date_winners: April 15, 2022
 banner: https://images.unsplash.com/photo-1591140111604-7f310043d5fd
 stems: https://drive.google.com/drive/folders/13S_XMxdB_7KnOmMcsQAe68_hBfzqzA24?usp=sharing
-submit: 
+submit: https://docs.google.com/forms/d/e/1FAIpQLSdUlW_kM8aM27OwbcVrWV9fadt8URgmQzBHyRQ4o9DnT_ANdQ/viewform?usp=sf_link
+form_script: https://script.google.com/macros/s/AKfycbyviBcPkdqW68Eof2xQXf8x9brFDsESXYJMbtJsdW0ApsRxpyQFH_ef3x5EReWAidM/exec
 details: '
                     <p>"Call Out" is an electropop-style track with future bass and modern dance music influences including melancholy vocals.</p>
                     <p>We are very excited to announce our first remix competition. Dimatis and Bayza, independent producer brothers from Panama, both of us have been creating music for more than 9 years, Dimatis more focused on genres such as Melodic Dubstep and Chillstep, while Bayza is focused on genres such as Deep House.
