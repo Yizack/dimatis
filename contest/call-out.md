@@ -55,6 +55,8 @@ rules: '
                     <li>Only one remix per contestant.</li>
                     <li>Followers do not matter.</li>
                     <li>If you do not make it to the winners, it is nothing personal, do not let this discourage you and keep making music.</li>
+                    <li>You must use the main vocals stem for your remix.</li>
+                    <li>You are free to be creative as you want changing the bpm, chord progression, structure, creating and using your own melodies.</li>
                     <li>You can do any genre you want and win if it is good enough but I am looking for these if possible:
                       <ul>
                         <li>Chill Trap</li>
@@ -72,9 +74,7 @@ rules: '
                     <li>Participants CAN NOT release remixes on music streaming platforms by themselves, such as Spotify, Apple Music, etc.</li>
                     <li>The copyright and all other rights of the provided stems and musical compositions embodied in the stems are owned and controlled by Dimatis and Bayza.</li>
                     <li>Stems may not be used for any other purposes than for participating in this contest.</li>
-                    <li>You must use the main vocals stem in your remix.</li>
-                    <li>You are free to be creative as you want changing the bpm, chord progression, structure, creating and using your own melodies.</li>
-                    <li>The remix submissions are ordered according to the submission order.</li>
+                    <li>The remix submission entries are ordered according to the submission order.</li>
                     <li>Winners will be announced on Dimatis socials.</li>
                     <li>Winners are free to sell their remixes on Bandcamp.</li>
                     <li>By submitting your remix, you agree with all terms mentioned on this page.</li>'
