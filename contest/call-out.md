@@ -80,6 +80,6 @@ rules: '
                     <li>Stems may not be used for any other purposes than for participating in this contest.</li>
                     <li>The remix submission entries are ordered according to the submission order.</li>
                     <li>Winners will be announced on Dimatis socials.</li>
-                    <li>Winners are free to sell their remixes on Bandcamp.</li>
+                    <li>Remixers are free to sell their remixes on Bandcamp.</li>
                     <li>By submitting your remix, you agree with all terms mentioned on this page.</li>'
 ---
