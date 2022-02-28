@@ -57,7 +57,7 @@ places4and5:
 rules: '
                     <li>The winners will be judged and selected only by Dimatis.</li>
                     <li>Only one remix per contestant.</li>
-                    <li>Followers do not matter.</li>
+                    <li>Followers do not matter. The only thing that matters is how good your remix is.</li>
                     <li>You can use as many stems as you like but you must use the main vocal stem for your remix.</li>
                     <li>You are free to be creative as you want, changing the bpm, chord progression, structure, creating and using your own melodies.</li>
                     <li>You can do any genre you want and win if it is good enough but I am looking for these if possible:
