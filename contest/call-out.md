@@ -14,6 +14,7 @@ banner: https://images.unsplash.com/photo-1591140111604-7f310043d5fd
 stems: https://bit.ly/3BYdYtL
 submit: https://forms.gle/eDSFN46GqdNp9j6SA
 form_script: https://script.google.com/macros/s/AKfycbyviBcPkdqW68Eof2xQXf8x9brFDsESXYJMbtJsdW0ApsRxpyQFH_ef3x5EReWAidM/exec
+description: First, second and third place will receive cash prizes on PayPal, and their remixes will be included in the official remixes EP release, fourth and fifth place will also be included in the official remixes EP release, you can see more details in the Prizes tab section.
 details: '
                     <p>"Call Out" is an electropop-style track with future bass and modern dance music influences including melancholy vocals.</p>
                     <p>We are very excited to announce our first remix competition. Dimatis and Bayza, independent producer twin brothers from Panama, we have both been creating music for more than 9 years, Dimatis more focused on genres such as Melodic Dubstep and Chillstep, while Bayza is focused on genres such as Deep House.
