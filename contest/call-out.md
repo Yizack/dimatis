@@ -27,7 +27,7 @@ details: '
                       <li>Download the stems.</li>
                       <li>Upload your final remix mastered, 16 bit 44.1 kHz in .WAV to any colud storage platform such as Google Drive, Dropbox, Wetransfer etc.</li>
                       <li>Upload your final remix as a public or priavte track on Soundcloud, properly titled, as "Dimatis & Bayza - Call Out (Artist Remix)".</li>
-                      <li>In the browser of your PC or mobile, click the share button on your soundcloud track and copy the link (Don't use the soundcloud's app link).</li>
+                      <li>Open a browser on your PC or mobile, click the share button on your soundcloud track and copy the link (Do not use the soundcloud mobile app).</li>
                       <li>Fill the submission form by clicking the "Submit Remix" button.</li>
                       <li>Check that your remix is in the "Entries" tab.</li>
                       <li>Winners will be announced on April 15th, 2022</li>
