@@ -44,7 +44,7 @@
                   <a class="nav-link" data-bs-toggle="tab" href="#rules">Rules</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" data-bs-toggle="tab" href="#entries">Entries&nbsp;(<span id="entries">0</span>)</a>
+                  <a class="nav-link" data-bs-toggle="tab" href="#entries">Entries&nbsp;(<span id="entries_number">0</span>)</a>
                 </li>
               </ul>
               <div class="tab-content">
@@ -174,7 +174,7 @@
       $.getJSON("{{ page.form_script }}", function(result){
         if(result.length > 0){
           $("#submissions").html("");
-          $("#entries").html(result.length);
+          $("#entries_number").html(result.length);
           $.each(result, function(i, submission){
             var pathname = new URL(submission.soundcloud).pathname;
             var sc_artist = pathname.split("/")[1];
