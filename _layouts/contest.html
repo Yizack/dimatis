@@ -175,7 +175,6 @@
         if(result.length > 0){
           var entries = 0;
           $("#submissions").html("");
-          $("#entries_number").html(entries);
           $.each(result, function(i, submission){
             if(submission.soundcloud.indexOf("soundcloud.com")){
               var pathname = new URL(submission.soundcloud).pathname;
@@ -189,6 +188,7 @@
               $("#submissions").append("<hr>")
             }
           });
+          $("#entries_number").html(entries);
         }
         else {
           $("#submissions").html('<p>Currently no entries in this contest.</p>');
