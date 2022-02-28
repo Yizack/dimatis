@@ -172,8 +172,8 @@
 
     $(document).ready(function(){
       $.getJSON("{{ page.form_script }}", function(result){
-        var entries = 0;
         if(result.length > 0){
+          var entries = 0;
           $("#submissions").html("");
           $("#entries_number").html(entries);
           $.each(result, function(i, submission){
