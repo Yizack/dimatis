@@ -11,7 +11,7 @@ date_start: February 28, 2022
 date_close: April 8, 2022
 date_winners: April 15, 2022
 banner: https://images.unsplash.com/photo-1591140111604-7f310043d5fd
-stems: https://drive.google.com/drive/folders/13S_XMxdB_7KnOmMcsQAe68_hBfzqzA24?usp=sharing
+stems: https://bit.ly/3BYdYtL
 submit: https://forms.gle/eDSFN46GqdNp9j6SA
 form_script: https://script.google.com/macros/s/AKfycbyviBcPkdqW68Eof2xQXf8x9brFDsESXYJMbtJsdW0ApsRxpyQFH_ef3x5EReWAidM/exec
 details: '
