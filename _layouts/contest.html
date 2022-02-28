@@ -176,7 +176,7 @@
           var entries = 0;
           $("#submissions").html("");
           $.each(result, function(i, submission){
-            if(submission.soundcloud.indexOf("soundcloud.com")){
+            if(submission.soundcloud.indexOf("soundcloud.com") > -1){
               var pathname = new URL(submission.soundcloud).pathname;
               var sc_artist = pathname.split("/")[1];
               var sc_track_path = pathname.split("/")[2];
