@@ -19,7 +19,7 @@ details: '
                     <p>We are very excited to announce our first remix competition. Dimatis and Bayza, independent producer twin brothers from Panama, we have both been creating music for more than 9 years, Dimatis more focused on genres such as Melodic Dubstep and Chillstep, while Bayza is focused on genres such as Deep House.
                     </p>
                     <p>Although our musical styles are completely different, sometimes we manage to merge our styles as in previous collaborations we have done like <a target="_blank" href="https://bayza.fanlink.to/dive">Dive</a>, <a target="_blank" href="/music/serenity">Serenity</a>, <a target="_blank" href="/music/hold-on-to-me">Hold on To Me</a>, <a target="_blank" href="https://lnk.bayza.ml/reborn">Reborn</a>, and now <a target="_blank" href="/music/call-out">Call Out</a> with which we will be doing this competition. We believe this song has potential for remixes and we can not wait to hear what you can do with it. Our best luck to you all!</p>
-                    <p>First, second and third place will receive cash prizes on PayPal and their remixes will be included in the official remixes EP release, fourth and fifth place will also be included in the official remixes EP release, you can see more details in the Prizes tab section.</p>
+                    <p>First, second and third place will receive cash prizes on PayPal, and their remixes will be included in the official remixes EP release, fourth and fifth place will also be included in the official remixes EP release, you can see more details in the Prizes tab section.</p>
                     <p>By submitting your remix you warrant that all added content in the remix is your own intellectual property, has been created by you and any used loops/sounds are royalty-free. All content in your remix is free from any third-party copyright claim.</p>
                     <h4 class="text-white">How to submit</h4>
                     <ol>
@@ -29,7 +29,7 @@ details: '
                       <li>Upload your final remix mastered, as a public or private track on Soundcloud, properly titled, as "Dimatis & Bayza - Call Out (Artist Remix)".</li>
                       <li>In your browser click the share button of your Soundcloud track and copy the link (Do not use the Soundcloud mobile app).</li>
                       <li>Fill out the submission form by clicking the "Submit Remix" button.</li>
-                      <li>Check that your remix is in the "Entries" tab.</li>
+                      <li>After submitting the form, check that your remix appears automatically in the "Entries" tab.</li>
                       <li>Winners will be announced on April 15th, 2022</li>
                     </ol>'
 place1:
