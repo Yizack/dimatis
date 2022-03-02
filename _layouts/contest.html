@@ -191,8 +191,8 @@
 
     $(document).ready(function(){
       $.getJSON("{{ page.form_script }}", function(result){
+        var entries = 0;
         if(result.length > 0){
-          var entries = 0;
           $("#submissions").html("");
           $.each(result, function(i, submission){
             if(submission.soundcloud.indexOf("soundcloud.com") > -1){
@@ -207,11 +207,11 @@
               $("#submissions").append("<hr>")
             }
           });
-          $("#entries_number").html(entries);
         }
         else {
           $("#submissions").html('<p>Currently no entries in this contest.</p>');
         }
+        $("#entries_number").html(entries);
       });
     });
     </script>
