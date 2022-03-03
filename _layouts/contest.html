@@ -155,12 +155,12 @@
                 <hr>
                 <div class="text-start">
                   <p class="m-0">Submissions</p>
-                  <p class="m-0 small text-secondary">{{ page.date_start }} - {{ page.date_close }}</p>
+                  <p class="m-0 small text-secondary">{{ page.date_start | date_to_long_string: "ordinal", "US" }} - {{ page.date_close | date_to_long_string: "ordinal", "US" }}</p>
                 </div>
                 <hr>
                 <div class="text-start">
                   <p class="m-0">Winners Announcement</p>
-                  <p class="m-0 small text-secondary">{{ page.date_winners}}</p>
+                  <p class="m-0 small text-secondary">{{ page.date_winners | date_to_long_string: "ordinal", "US" }}</p>
                 </div>
               </div>
             </div>

@@ -7,9 +7,9 @@ track: call-out
 key: B min
 tempo: 150 BPM
 genre: EDM
-date_start: February 28, 2022
-date_close: April 8, 2022
-date_winners: April 15, 2022
+date_start: 2022-02-28
+date_close: 2022-03-08
+date_winners: 2022-03-15
 banner: https://images.unsplash.com/photo-1591140111604-7f310043d5fd
 stems: https://bit.ly/3BYdYtL
 submit: https://forms.gle/eDSFN46GqdNp9j6SA
@@ -31,7 +31,7 @@ details: '
                       <li>In your browser click the share button of your Soundcloud track and copy the link (Do not use the Soundcloud mobile app).</li>
                       <li>Fill out the submission form by clicking the "Submit Remix" button.</li>
                       <li>After submitting the form, check that your remix appears automatically in the "Entries" tab.</li>
-                      <li>Winners will be announced on April 15th, 2022</li>
+                      <li>Winners will be announced on April 15th, 2022.</li>
                     </ol>'
 place1:
   - $100 USD on PayPal.
