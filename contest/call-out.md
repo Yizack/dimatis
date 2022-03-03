@@ -8,8 +8,8 @@ key: B min
 tempo: 150 BPM
 genre: EDM
 date_start: 2022-02-28
-date_close: 2022-03-08
-date_winners: 2022-03-15
+date_close: 2022-04-08
+date_winners: 2022-04-15
 banner: https://images.unsplash.com/photo-1591140111604-7f310043d5fd
 stems: https://bit.ly/3BYdYtL
 submit: https://forms.gle/eDSFN46GqdNp9j6SA
