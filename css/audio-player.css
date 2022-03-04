@@ -333,6 +333,14 @@ html, body {
     background: rgb(20 34 42);
 }
 
-.call-out {
+.call-out, .call-out-instrumental {
     background: rgb(70 91 110);
+}
+
+.afterglow {
+    background: rgb(6 16 21);
+}
+
+.afterglow-remix {
+    background: rgb(10 18 20);
 }
