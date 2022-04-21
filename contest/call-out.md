@@ -35,24 +35,24 @@ details: '
                     </ol>'
 place1:
   - $100 USD on PayPal.
-  - Official Remix EP release on all streaming platforms.
+  - Official Remix Album release on all streaming platforms.
   - Video featuring your remix on Dimatis' YouTube channel.
   - Dimatis Instagram video post reacting to your remix, with Bayza.
   - Support from Dimatis on socials.
 place2:
   - $50 USD on PayPal.
-  - Official Remix EP release on all streaming platforms.
+  - Official Remix Album release on all streaming platforms.
   - Video featuring your remix on Dimatis' YouTube channel.
   - Dimatis Instagram video post reacting to your remix, with Bayza.
   - Support from Dimatis on socials.
 place3:
   - $25 USD on PayPal.
-  - Official Remix EP release on all streaming platforms.
+  - Official Remix Album release on all streaming platforms.
   - Video featuring your remix on Dimatis' YouTube channel.
   - Dimatis Instagram video post reacting to your remix, with Bayza.
   - Support from Dimatis on socials.
 places4and5:
-  - Official Remix EP release on all streaming platforms.
+  - Official Remix Album release on all streaming platforms.
   - Video featuring your remix on Dimatis' YouTube channel.
   - Support from Dimatis on socials
 rules: '
