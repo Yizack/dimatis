@@ -33,12 +33,8 @@
     <!-- Recursos -->
     <link rel="icon" href="/images/dimatis-logo-1.png"/>
     <link rel="shortcut icon" href="/images/dimatis-logo-1.png"/>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/5.0.4/mediaelementplayer.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/5.0.5/mediaelementplayer.min.css"/>
     <link rel="stylesheet" type="text/css" href="/css/audio-player.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/5.0.4/mediaelement-and-player.min.js"></script>
-    <script src="/js/audio-player.js"></script>
   </head>
   <body>
     <div id="player" class="{% if track.style %}{{ track.style }}{% elsif track.cover %}{{ track.cover }}{% else %}{{ track.track }}{% endif %}">
@@ -61,5 +57,7 @@
         </div>
       </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/5.0.5/mediaelement-and-player.min.js"></script>
+    <script src="/js/audio-player.js"></script>
   </body>
 </html>
