@@ -196,7 +196,7 @@
       let entries = 0;
       if (data.length > 0) {
         document.getElementById("submissions").innerHTML = "";
-        data.forEach((i, submission)=>{
+        data.forEach((submission, i)=>{
           if(submission.soundcloud.indexOf("soundcloud.com") > -1){
               const pathname = new URL(submission.soundcloud).pathname;
               const sc_artist = pathname.split("/")[1];
