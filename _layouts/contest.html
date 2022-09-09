@@ -171,49 +171,48 @@
 {% include footer.html %}
 {% include scripts.html %}
   <script>
-    var countDownDate = new Date("{{ page.date_close }} 00:00:00").getTime();
-    var x = setInterval(function() {
-      var now = new Date().getTime();
-      var distance = countDownDate - now;
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      $("#days").html(days);
-      $("#hours").html(hours);
-      $("#mins").html(minutes);
-      $("#secs").html(seconds);
+    const countDownDate = new Date("{{ page.date_close }} 00:00:00").getTime();
+    const x = setInterval(function() {
+      const now = new Date().getTime();
+      const distance = countDownDate - now;
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      document.getElementById("days").innerHTML = days;
+      document.getElementById("hours").innerHTML = hours;
+      document.getElementById("mins").innerHTML = minutes;
+      document.getElementById("secs").innerHTML = seconds;
       if (distance < 0) {
         clearInterval(x);
-        $("#countdown").html("CLOSED");
+        document.getElementById("countdown").innerHTML = "CLOSED";
       }
     }, 1000);
 
-    $(document).ready(function(){
-      $.getJSON("{{ page.form_script }}", function(result){
-        var entries = 0;
-        if(result.length > 0){
-          $("#submissions").html("");
-          $.each(result, function(i, submission){
-            if(submission.soundcloud.indexOf("soundcloud.com") > -1){
-              var pathname = new URL(submission.soundcloud).pathname;
-              var sc_artist = pathname.split("/")[1];
-              var sc_track_path = pathname.split("/")[2];
-              var sc_secret_token = pathname.split("/")[3];
-              $("#submissions").append('<iframe width="100%" height="200" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https://soundcloud.com/'+ sc_artist +'/'+ sc_track_path +'&secret_token='+ sc_secret_token +'&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=true&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;overflow: hidden;font-weight: 100;"><a href="'+ submission.soundcloud +'" title="Listen to &quot;Dimatis & Bayza - Call Out ('+ submission.artist +' Remix)&quot; on Soundcloud" target="_blank" style="color: #fff;">Dimatis & Bayza - Call Out ('+ submission.artist +' Remix)</a> · Submitted on '+ submission.timestamp +' by <a href="https://soundcloud.com/'+ sc_artist +'" title="'+ submission.artist +' on Soundcloud" target="_blank" style="color: #fff;">'+ submission.artist +'</a>.</div>');
-              entries++;
-            }
-            if(result.length-1 != i){
-              $("#submissions").append("<hr>")
-            }
-          });
-        }
-        else {
-          $("#submissions").html('<p>Currently no entries in this contest.</p>');
-        }
-        $("#entries_number").html(entries);
+    const response = await fetch("{{ page.form_script }}");
+    const data = await response.json();
+
+    let entries = 0;
+    if (data.length > 0) {
+      document.getElementById("submissions").innerHTML = "";
+      data.forEach((i, submission)=>{
+        if(submission.soundcloud.indexOf("soundcloud.com") > -1){
+            const pathname = new URL(submission.soundcloud).pathname;
+            const sc_artist = pathname.split("/")[1];
+            const sc_track_path = pathname.split("/")[2];
+            const sc_secret_token = pathname.split("/")[3];
+            document.getElementById("#submissions").innerHTML += '<iframe width="100%" height="200" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https://soundcloud.com/'+ sc_artist +'/'+ sc_track_path +'&secret_token='+ sc_secret_token +'&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=true&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;overflow: hidden;font-weight: 100;"><a href="'+ submission.soundcloud +'" title="Listen to &quot;Dimatis & Bayza - Call Out ('+ submission.artist +' Remix)&quot; on Soundcloud" target="_blank" style="color: #fff;">Dimatis & Bayza - Call Out ('+ submission.artist +' Remix)</a> · Submitted on '+ submission.timestamp +' by <a href="https://soundcloud.com/'+ sc_artist +'" title="'+ submission.artist +' on Soundcloud" target="_blank" style="color: #fff;">'+ submission.artist +'</a>.</div>';
+            entries++;
+          }
+          if(data.length-1 != i){
+            document.getElementById("submissions").appendChild(document.createElement("hr"));
+          }
       });
-    });
+    }
+    else {
+      document.getElementById("submissions").innerHTML = "<p>Currently no entries in this contest.</p>";
+    }
+    document.getElementById("entries_number").innerHTML = entries;
     </script>
   </body>
 </html>

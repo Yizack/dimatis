@@ -55,10 +55,10 @@
     <script id="show_script">
       function more(){
         document.getElementById("more").remove();
-        var x = document.querySelectorAll("#oculto");
-        for (let i = 0; i < x.length; i++) {
-          $(x[i]).removeAttr('id');
-        }
+        const x = document.querySelectorAll("#oculto");
+        x.forEach((item)=>{
+          item.removeAttribute('id');
+        });
         document.getElementById("show_script").remove();
       }
     </script>

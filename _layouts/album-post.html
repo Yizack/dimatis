@@ -99,9 +99,10 @@
 {% include footer.html %}
 {% include scripts.html %}
     <script>
-      $(function() {
-        $('*[data-href]').on('click', function() {
-          window.location = $(this).data("href");
+      const hrefs = document.querySelectorAll("*[data-href]");
+      hrefs.forEach((href)=>{
+        href.addEventListener('click', () => {
+          window.location = this.dataset.href;
         });
       });
     </script>
