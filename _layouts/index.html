@@ -191,9 +191,11 @@
 {% include footer.html %}
 {% include scripts.html %}
     <script>
-      const response = await fetch("https://dev.yizack.com/spotify/followers?id=0RAT9Q5WZwzJRJgTI38zJR");
-      const data = await response.json();
-      document.querySelector("#spotify_followers #n").innerHTML = data["followers"];
+      (async() => {
+        const response = await fetch("https://dev.yizack.com/spotify/followers?id=0RAT9Q5WZwzJRJgTI38zJR");
+        const data = await response.json();
+        document.querySelector("#spotify_followers #n").innerHTML = data["followers"];
+      })();
     </script>
   </body>
 </html>
