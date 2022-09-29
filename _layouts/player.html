@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="/css/audio-player.css"/>
   </head>
   <body>
-    <div id="player" class="{% if track.style %}{{ track.style }}{% elsif track.cover %}{{ track.cover }}{% else %}{{ track.track }}{% endif %}">
+    <div id="player">
       <div id="container">   
         <div id="controls">
           <div class="lecteur">
@@ -57,7 +57,8 @@
         </div>
       </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/5.0.5/mediaelement-and-player.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/5.1.0/mediaelement-and-player.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
     <script src="/js/audio-player.js"></script>
   </body>
 </html>
