@@ -1,0 +1,5 @@
+Sitemap: http://dimatis.yizack.com/sitemap.xml
+
+User-agent: * 
+Crawl-delay: 1
+Disallow: /player/
