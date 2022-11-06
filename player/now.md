@@ -1,5 +1,0 @@
----
-layout: player
-
-track: now
----

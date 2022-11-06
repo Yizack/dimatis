@@ -1,0 +1,48 @@
+{
+  "experiences": {
+    "artists": "Dimatis",
+    "title": "Experiences",
+    "description": "Hello, I am very excited to present my first album 'Experiences' this album represents some feelings of my experiences lived during 2019, I hope you like it.",
+    "tracks": [
+      "experiences",
+      "grief",
+      "moments-together",
+      "now",
+      "overcoming",
+      "serenity",
+      "unusual"
+    ],
+    "cover": "experiences-album",
+    "type": "Album",
+    "date": "2020-01-24T00:00:00.000Z",
+    "person": ["Dimatis"]
+  },
+  "floating": {
+    "artists": "Dimatis",
+    "title": "Floating",
+    "description": "Floating is my first EP ever! 🎶 it contains 4 tracks in different genres.",
+    "tracks": [
+      "mists",
+      "floating",
+      "shades",
+      "what-awaits-us"
+    ],
+    "cover": "floating-ep",
+    "type": "EP",
+    "date": "2019-01-28T00:00:00.000Z",
+    "person": ["Dimatis"]
+  },
+  "moonlit-lover": {
+    "artists": "Dimatis",
+    "title": "Moonlit Lover",
+    "description": "Moonlit lover has a chillstep track and the piano version, you can relax listening to the melodies under the moonlight. ❤",
+    "tracks": [
+      "moonlit-lover",
+      "moonlit-lover-piano"
+    ],
+    "cover": "moonlit-lover",
+    "type": "Single",
+    "date": "2018-08-01T00:00:00.000Z",
+    "person": ["Dimatis"]
+  }
+}

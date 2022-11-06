@@ -1,0 +1,234 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    scroll-behavior: smooth;
+}
+
+pre {
+    font-family: Roboto, sans-serif;
+    font-size: 1em;
+}
+
+.bg-dark {
+    background-color: #151515!important;
+}
+
+.text-dark {
+    color: #151515!important;
+}
+
+.text-secondary {
+    color: #a3a5a7!important;
+}
+
+.bg-dark a, .bg-dark a:hover{
+    color: #fff;
+}
+
+.bg-light a, .bg-light a:hover {
+    color: #151515;
+}
+
+.btn-outline-dark {
+    color: #151515;
+    border-color: #151515;
+}
+
+.btn-outline-dark:hover {
+    color: #fff!important;
+    border-color: #fff;
+    background: #151515;
+}
+
+.btn-outline-white {
+    color: #fff;
+    border-color: #fff;
+}
+
+.btn-outline-white:hover {
+    color: #151515!important;
+    border-color: #fff;
+    background: #fff;
+}
+
+.tag a, .tag {
+    color: #a3a5a7!important;
+}
+
+.tag a:hover, .tag:hover {
+    color: #fff!important;
+}
+
+ul.alt li {
+    border-bottom: solid 1px rgba(144, 144, 144, 0.25);
+    padding: 0.5em 0;
+}
+
+ul.alt {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.contact li {
+    padding: 0.5em 0;
+}
+
+ul.contact {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.icons {
+    list-style: none;
+    padding-left: 0;
+    font-size: 1.4rem
+}
+
+ul.icons li {
+    display: inline-block;
+}
+
+footer .icons a {
+    color: #bbb;
+}
+  
+footer .spotify a:hover {
+    color: #1db954;
+    text-decoration: none;
+}
+  
+footer .soundcloud a:hover {
+    color: #F26E23;
+    text-decoration: none;
+}
+  
+footer .youtube a:hover {
+    color: #ff0000;
+    text-decoration: none;
+}
+  
+footer .twitter a:hover {
+    color: #1da1f2;
+    text-decoration: none;
+}
+  
+footer .facebook a:hover {
+    color: #3b5998;
+    text-decoration: none;
+}
+  
+footer .instagram a:hover {
+    color: #833ab4;
+    text-decoration: none;
+}
+
+footer .copyright {
+    color: #bbb;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.table th {
+    border-top: none;
+    font-weight: normal;
+}
+
+tbody tr:hover {
+    background: #f8f9fa;
+    color: #151515;
+}
+
+iframe {
+    border: none;
+}
+
+.feed {
+    height: fit-content;
+}
+
+.feed iframe {
+    height: 100vh;
+}
+
+:target:before {
+    content: "";
+    display: block;
+    height: 75px;
+    margin-top: -75px;
+    visibility: hidden;
+}
+
+#banner {
+    background: url('/images/banner_bg.jpg');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+}
+
+.scale-on-hover:hover{
+    -webkit-transform:scale(1.05);
+    transform:scale(1.05);
+    box-shadow:0 10px 10px rgba(0,0,0,.15)!important
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #151515;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f7f7f7; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #f7f7f7; 
+}
+
+:root {
+    scrollbar-color: #f7f7f7 #151515;
+    scrollbar-width: thin !important;
+}
+
+#follow_spotify:hover {
+    text-decoration: none!important;
+}
+
+#follow_spotify:hover #spotify_button {
+    background: #1fad49;
+}
+
+#follow_spotify #spotify_button {
+    background: #2cbe58;
+}
+
+#follow_spotify:hover #spotify_followers {
+    text-decoration: underline!important;
+}
+
+::selection {
+    background: #292929!important;
+    color: white!important;
+}
+
+.loading-page {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}

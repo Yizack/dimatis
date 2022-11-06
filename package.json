@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "eslint": "^8.26.0",
+    "eslint-plugin-vue": "^9.7.0",
+    "nuxt": "3.0.0-rc.13"
+  },
+  "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^6.2.0",
+    "@fortawesome/free-regular-svg-icons": "^6.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "@fortawesome/vue-fontawesome": "^3.0.1",
+    "bootstrap": "^5.2.2",
+    "colorthief": "^2.3.2",
+    "mediaelement": "^5.1.0"
+  }
+}

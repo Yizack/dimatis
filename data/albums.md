@@ -1,4 +1,0 @@
----
-layout: data
-data: albums
----
