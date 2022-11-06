@@ -21,7 +21,7 @@ import tracksJSON from "~/public/data/tracks.json";
       <div class="text-uppercase">
         <NuxtLink class="btn btn-outline-dark rounded-pill text-decoration-none" role="button" to="/music">See more</NuxtLink>
       </div>
-      <!--<InstagramComp/>-->
+      <InstagramFeed/>
     </div>
   </section>
 </template>
