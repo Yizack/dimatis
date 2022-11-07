@@ -4,20 +4,20 @@ import ColorThief from "colorthief";
 </script>
 
 <template>
-  <div id="player" :style="[size, style]">
-    <div id="container">   
-      <div id="controls">
+  <div class="player" :style="[size, style]">
+    <div class="box">   
+      <div class="controls">
         <div class="lecteur">
-          <audio ref="audio" id="music" class="fc-media">
+          <audio ref="audio" class="music fc-media">
             <source :src="`https://www.dropbox.com/s/dl/${track.dropbox}`" type="audio/mpeg">
           </audio>
         </div>
       </div>
-      <div id="cover" v-if="colored">
-        <div id="box-1">
-          <div id="box-2">
-            <div id="box-3">
-              <div id="image" :style="`background: url('${srcImage}');`" :alt="`${track.artists} - ${track.title}`"></div>
+      <div class="cover" v-if="colored">
+        <div class="box-1">
+          <div class="box-2">
+            <div class="box-3">
+              <div class="image" :style="`background: url('${srcImage}');`" :alt="`${track.artists} - ${track.title}`"></div>
             </div>
           </div>
         </div>

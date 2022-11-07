@@ -89,11 +89,11 @@
 }
 
 /* player style */
-#player {
+.player {
     overflow: hidden;
 }
 
-#container {
+.box {
     position: relative;
     height: 100%;
     display: flex;
@@ -101,7 +101,7 @@
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
 }
 
-#controls {
+.controls {
     color: #fff;
     padding-right: 1rem;
     padding-left: 1rem;
@@ -109,23 +109,23 @@
     padding-bottom: 1.5rem;
 }
 
-#music {
+.music {
     width: 100%;
 }
 
-#cover {
+.cover {
     overflow-y: hidden;
     flex: 1 1 0%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-#box-1 {
+.box-1 {
     overflow-y: hidden;
     height: 100%;
 }
 
-#box-2 {
+.box-2 {
     box-sizing: border-box;
     position: relative;
     height: 100%;
@@ -133,14 +133,14 @@
     padding: 0.5rem;
 }
 
-#box-3 {
+.box-3 {
     min-width: 80px;
     position: relative;
     height: 100%;
     width: 100%;
 }
 
-#image {
+.image {
     background-repeat: no-repeat!important;
     background-size: contain!important;
     background-position: center top!important;
