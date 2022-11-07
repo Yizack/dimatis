@@ -60,7 +60,7 @@ export default {
         { name: "twitter:image", content: `${SITE.url}/${SITE.logo}` }
       ],
       link: [
-        { rel: "canonical", href: `${SITE.url}/album` }
+        { rel: "canonical", href: `${SITE.url}/album/` }
       ]
     });
   }

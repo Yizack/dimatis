@@ -95,7 +95,7 @@ export default {
         { name: "twitter:image", content: `${SITE.url}/${SITE.logo}` }
       ],
       link: [
-        { rel: "canonical", href: `${SITE.url}/music` }
+        { rel: "canonical", href: `${SITE.url}/music/` }
       ]
     });
   }

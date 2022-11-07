@@ -91,7 +91,7 @@ export default {
         { type: "application/ld+json", children: SEO() }
       ],
       link: [
-        { rel: "canonical", href: SITE.url }
+        { rel: "canonical", href: `${SITE.url}/` }
       ]
     });
   }

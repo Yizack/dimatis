@@ -88,7 +88,7 @@ export default {
         { name: "twitter:image", content: `${SITE.url}/${SITE.logo}` }
       ],
       link: [
-        { rel: "canonical", href: `${SITE.url}/licensing` }
+        { rel: "canonical", href: `${SITE.url}/licensing/` }
       ]
     });
   },

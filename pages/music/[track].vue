@@ -155,7 +155,7 @@ export default {
         { type: "application/ld+json", children: this.SEO }
       ],
       link: [
-        { rel: "canonical", href: `${SITE.url}/music/${this.param}` }
+        { rel: "canonical", href: `${SITE.url}/music/${this.param}/` }
       ]
     });
   }

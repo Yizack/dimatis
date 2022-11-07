@@ -129,7 +129,7 @@ export default {
         { name: "twitter:site", content: `@${SITE.twitter}` }
       ],
       link: [
-        { rel: "canonical", href: `${SITE.url}/album/${this.param}` }
+        { rel: "canonical", href: `${SITE.url}/album/${this.param}/` }
       ]
     });
   }
