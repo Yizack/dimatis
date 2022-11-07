@@ -13,11 +13,10 @@ import ColorThief from "colorthief";
           </audio>
         </div>
       </div>
-      <div class="cover" v-if="colored">
+      <div class="cover">
         <div class="box-1">
           <div class="box-2">
-            <div class="box-3">
-              <div class="image" :style="`background: url('${srcImage}');`" :alt="`${track.artists} - ${track.title}`"></div>
+            <div class="box-3" v-html="image">
             </div>
           </div>
         </div>
@@ -32,7 +31,7 @@ export default {
   name: "MusicPlayer",
   data() {
     return {
-      colored: false,
+      image: null,
       style: {
         "background-color": null
       }
@@ -46,7 +45,6 @@ export default {
   methods: {
     mediaElement() {
       let media = this.$refs.audio;
-      // eslint-disable-next-line no-undef
       new MediaElementPlayer(media, {
         iconSprite: "",
         audioHeight: 40,
@@ -57,22 +55,25 @@ export default {
         iPhoneUseNativeControls: false,
         AndroidUseNativeControls: false
       });
+    },
+    colorImage() {
+      let img = new Image();
+      img.crossOrigin = "Anonymous";
+      img.src = this.srcImage;
+      img.alt = `${this.track.artists} - ${this.track.title}`;
+      img.classList.add("image");
+
+      img.onload = () => {
+        let colorThief = new ColorThief();
+        let color = colorThief.getColor(img);
+        this.style["background-color"] = `rgb(${color})`;
+        this.image = img.outerHTML;
+      };
     }
   },
   mounted() {
     this.mediaElement();
-
-    let img = new Image();
-    img.crossOrigin = "Anonymous";
-    img.src = this.srcImage;
-
-    img.onload = () => {
-      let colorThief = new ColorThief();
-      let color = colorThief.getColor(img);
-      this.style["background-color"] = `rgb(${color})`;
-      this.colored = true;
-    };
-    
-  },
+    this.colorImage();
+  }
 };
 </script>
