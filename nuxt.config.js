@@ -25,5 +25,9 @@ export default {
     "~/assets/css/dimatis.css",
     "~/assets/css/dimatis-icon.css",
     "~/assets/css/audio-player.css",
-  ]
+  ],
+  nitro: {
+    crawlLinks: true,
+    routes: ["/"]
+  }
 };
