@@ -4,7 +4,6 @@ html {
 
 body {
     font-family: Roboto, sans-serif;
-    scroll-behavior: smooth;
 }
 
 pre {
@@ -202,6 +201,7 @@ a:hover {
 :root {
     scrollbar-color: #f7f7f7 #151515;
     scrollbar-width: thin !important;
+    scroll-behavior: unset;
 }
 
 #follow_spotify:hover {
