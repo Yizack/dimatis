@@ -72,6 +72,7 @@ definePageMeta({ layout: "site" });
 
 <script>
 export default {
+  props: ["loading"],
   name: "TrackPage",
   data() {
     return {
@@ -160,4 +161,4 @@ export default {
     });
   }
 };
-</Script>
+</script>
