@@ -1,5 +1,3 @@
-import { SITE } from "./site-info.js";
-
 export default {
   app: {
     head: {
