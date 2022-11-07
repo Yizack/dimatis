@@ -15,7 +15,7 @@ definePageMeta({ layout: "site" });
             <div class="col-12 col-lg-4">
               <div class="item">
                 <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{width: '300px', height: '385px'}" :track="track" :param="param"/>
-                <NuxtLink :to="`/music/${param}`">
+                <NuxtLink :to="`/music/${param}/`">
                   <p class="mb-0">{{ track.title }}</p>
                   <p><small>{{ track.artists }}</small></p>
                 </NuxtLink>
@@ -26,7 +26,7 @@ definePageMeta({ layout: "site" });
             <div class="col-12 col-lg-4" v-if="showMore">
               <div class="item">
                 <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{width: '300px', height: '385px'}" :track="track" :param="param"/>
-                <NuxtLink :to="`/music/${param}`">
+                <NuxtLink :to="`/music/${param}/`">
                   <p class="mb-0">{{ track.title }}</p>
                   <p><small>{{ track.artists }}</small></p>
                 </NuxtLink>
@@ -78,7 +78,7 @@ export default {
         { name: "keywords", content: "discography, releases, singles, remixes, songs, listen" },
         { name: "description", content: `All ${SITE.name} releases` },
         // Protocolo Open Graph
-        { property: "og:url", content: `${SITE.url}/music` },
+        { property: "og:url", content: `${SITE.url}/music/` },
         { property: "og:type", content: "website" },
         { property: "og:title", content: `Music | ${SITE.name}` },
         { property: "og:site_name", content: SITE.name },

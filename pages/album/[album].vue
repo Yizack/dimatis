@@ -64,7 +64,7 @@ definePageMeta({ layout: "site" });
             <template v-for="(album, param) in moreAlbums" :key="param">
               <div class="col-6 col-lg-3" >
                 <div class="item">
-                  <NuxtLink :to="`/album/${param}`">
+                  <NuxtLink :to="`/album/${param}/`">
                     <img class="img-fluid scale-on-hover" :src="`/images/${album.cover}.jpg`" :alt="`${album.artists} - ${album.title} (${album.type})`">
                     <p class="mt-2 mb-0">{{ album.title }} ({{ album.type }})</p>
                     <p><small>{{ album.artists }}</small></p>
@@ -112,7 +112,7 @@ export default {
         { name: "keywords", content: `album, ${this.album.title}, fanlink, download` },
         { name: "description", content: this.album.description },
         // Protocolo Open Graph
-        { property: "og:url", content: `${SITE.url}/album/${this.param}` },
+        { property: "og:url", content: `${SITE.url}/album/${this.param}/` },
         { property: "og:type", content: "website" },
         { property: "og:title", content: `${this.album.artists} - ${this.album.title} (${this.album.type})` },
         { property: "og:site_name", content: SITE.name },

@@ -15,16 +15,16 @@ import { SITE } from "~/site-info.js";
             <NuxtLink class="nav-link" to="/">Home</NuxtLink>
           </li>
           <li class="nav-item pe-3" role="menuitem">
-            <NuxtLink class="nav-link" :class="{ active: path.includes('/music') || path.includes('/tag') }" to="/music">Music</NuxtLink>
+            <NuxtLink class="nav-link" :class="{ active: path.includes('/music') || path.includes('/tag') }" to="/music/">Music</NuxtLink>
           </li>
           <li class="nav-item pe-3" role="menuitem">
-            <NuxtLink class="nav-link" :class="{ active: path.includes('/album') }" to="/album">Albums</NuxtLink>
+            <NuxtLink class="nav-link" :class="{ active: path.includes('/album') }" to="/album/">Albums</NuxtLink>
           </li>
           <li class="nav-item pe-3" role="menuitem">
-            <a class="nav-link" href="/#about">About</a>
+            <NuxtLink class="nav-link" to="/#about">About</NuxtLink>
           </li>
           <li class="nav-item pe-3" role="menuitem">
-            <NuxtLink class="nav-link" :class="{ active: path.includes('/licensing') }" to="/licensing">Licensing</NuxtLink>
+            <NuxtLink class="nav-link" :class="{ active: path.includes('/licensing') }" to="/licensing/">Licensing</NuxtLink>
           </li>
           <li class="nav-item pe-3" role="menuitem"><a class="nav-link" :href="SITE.fanlinks" target="_blank">Fanlinks</a></li>
           <li class="nav-item" role="menuitem"><a class="nav-link" :href="SITE.merch" target="_blank">Merch</a></li>

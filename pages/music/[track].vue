@@ -37,10 +37,10 @@ definePageMeta({ layout: "site" });
           <div class="col-12 col-md-4">
             <div id="tags">
               <div class="mb-0">Genre</div>
-              <div class="tag mb-2"><NuxtLink :to="`/tag/${genreURL}`">{{ track.genre }}</NuxtLink></div>
+              <div class="tag mb-2"><NuxtLink :to="`/tag/${genreURL}/`">{{ track.genre }}</NuxtLink></div>
               <template v-if="track?.album">
                 <div class="mb-0">Album</div>
-                <div class="tag mb-2"><NuxtLink :to="`/album/${track.album.replace(/\s+/g, '-').toLowerCase()}`">{{ track.album }}</NuxtLink></div>
+                <div class="tag mb-2"><NuxtLink :to="`/album/${track.album.replace(/\s+/g, '-').toLowerCase()}/`">{{ track.album }}</NuxtLink></div>
               </template>
               <div class="mb-0">Release date</div>
               <div class="tag mb-2">{{ new Date(track.date).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" }) }}</div>
@@ -56,7 +56,7 @@ definePageMeta({ layout: "site" });
           <div class="row gallery text-center">
             <template v-for="(more, more_param) in moreTracks" :key="more_param">
               <div class="col-6 col-lg-3">
-                <NuxtLink :to="'/music/' + more_param">
+                <NuxtLink :to="`/music/${more_param}/`">
                  <img class="img-fluid scale-on-hover rounded-3" :src="`/images/${more?.cover ? more.cover : more_param}.jpg`" :alt="`${more.artists} - ${more.title}`">
                   <p class="mt-2 mb-0">{{ more.title }}</p>
                   <p><small>{{ more.artists }}</small></p>
@@ -134,7 +134,7 @@ export default {
         { name: "keywords", content: `release, ${this.track.title}, ${this.track.genre}, play, stream, download, fanlink` },
         { name: "description", content: this.track.description },
         // Protocolo Open Graph
-        { property: "og:url", content: `${SITE.url}/music/${this.param}` },
+        { property: "og:url", content: `${SITE.url}/music/${this.param}/` },
         { property: "og:type", content: "website" },
         { property: "og:title", content: `${this.track.artists} - ${this.track.title}` },
         { property: "og:site_name", content: SITE.name },

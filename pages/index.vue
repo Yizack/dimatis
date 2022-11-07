@@ -71,7 +71,7 @@ export default {
         { name: "keywords", content: SITE.keywords },
         { name: "description", content: SITE.meta_description },
         // Protocolo Open Graph
-        { property: "og:url", content: SITE.url },
+        { property: "og:url", content: `${SITE.url}/` },
         { property: "og:type", content: "website" },
         { property: "og:title", content: SITE.name },
         { property: "og:site_name", content: SITE.name },

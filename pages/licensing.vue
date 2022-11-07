@@ -71,7 +71,7 @@ export default {
         { name: "keywords", content: "licensing, youtube, monetization, streaming, videos" },
         { name: "description", content: `${SITE.name} music licensing` },
         // Protocolo Open Graph
-        { property: "og:url", content: `${SITE.url}/licensing` },
+        { property: "og:url", content: `${SITE.url}/licensing/` },
         { property: "og:type", content: "website" },
         { property: "og:title", content: `Licensing | ${SITE.name}` },
         { property: "og:site_name", content: SITE.name },
