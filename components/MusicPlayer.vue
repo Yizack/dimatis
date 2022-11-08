@@ -1,10 +1,5 @@
-
-<script setup>
-import ColorThief from "colorthief";
-</script>
-
 <template>
-  <div class="player" :style="[size, style]">
+  <div class="player" :class="track?.cover ? track.cover : param"  :style="[size]">
     <div class="box">   
       <div class="controls">
         <div class="lecteur">
@@ -16,7 +11,8 @@ import ColorThief from "colorthief";
       <div class="cover">
         <div class="box-1">
           <div class="box-2">
-            <div class="box-3" v-html="image">
+            <div class="box-3">
+              <img class="image" :src="srcImage" :alt="`${track.artists} - ${track.title}`">
             </div>
           </div>
         </div>
@@ -29,14 +25,6 @@ import ColorThief from "colorthief";
 export default {
   props: ["size", "track", "param"],
   name: "MusicPlayer",
-  data() {
-    return {
-      image: null,
-      style: {
-        "background-color": null
-      }
-    };
-  },
   computed: {
     srcImage() {
       return `/images/${this.track?.cover ? this.track.cover : this.param}.jpg`;
@@ -55,25 +43,10 @@ export default {
         iPhoneUseNativeControls: false,
         AndroidUseNativeControls: false
       });
-    },
-    colorImage() {
-      let img = new Image();
-      img.crossOrigin = "Anonymous";
-      img.src = this.srcImage;
-      img.alt = `${this.track.artists} - ${this.track.title}`;
-      img.classList.add("image");
-
-      img.onload = () => {
-        let colorThief = new ColorThief();
-        let color = colorThief.getColor(img);
-        this.style["background-color"] = `rgb(${color})`;
-        this.image = img.outerHTML;
-      };
     }
   },
   mounted() {
     this.mediaElement();
-    this.colorImage();
   }
 };
 </script>

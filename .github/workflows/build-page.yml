@@ -23,6 +23,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: |
         npm ci
+        npm run style_players
         npm run generate
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4

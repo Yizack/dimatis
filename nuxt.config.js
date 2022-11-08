@@ -23,6 +23,7 @@ export default {
     "~/assets/css/dimatis.css",
     "~/assets/css/dimatis-icon.css",
     "~/assets/css/audio-player.css",
+    "~/assets/css/player-styles.css"
   ],
   nitro: {
     crawlLinks: true,
