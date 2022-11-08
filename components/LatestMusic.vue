@@ -11,7 +11,7 @@ import tracksJSON from "~/public/data/tracks.json";
         <template v-for="(track, param) in latestTracks" :key="param">
           <div class="col-12 col-lg-4">
             <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{width: '300px', height: '385px'}" :track="track" :param="param"/>
-            <NuxtLink :to="`/music/${param}`">
+            <NuxtLink :to="`/music/${param}/`">
               <p class="mb-0">{{ track.title }}</p>
               <p><small>{{ track.artists }}</small></p>
             </NuxtLink>
@@ -19,7 +19,7 @@ import tracksJSON from "~/public/data/tracks.json";
         </template>
       </div>   
       <div class="text-uppercase">
-        <NuxtLink class="btn btn-outline-dark rounded-pill text-decoration-none" role="button" to="/music">See more</NuxtLink>
+        <NuxtLink class="btn btn-outline-dark rounded-pill text-decoration-none" role="button" to="/music/">See more</NuxtLink>
       </div>
       <InstagramFeed/>
     </div>
