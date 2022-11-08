@@ -18,7 +18,8 @@
     "definePageMeta": "readonly",
     "useHead": "readonly",
     "defineNuxtPlugin": "readonly",
-    "useNuxtApp": "readonly"
+    "useNuxtApp": "readonly",
+    "MediaElementPlayer": "readonly"
   },
   "plugins": [
     "vue"
