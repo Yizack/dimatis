@@ -15,14 +15,14 @@ definePageMeta({ layout: "site" });
         </div>
         <MusicPlayer class="text-center rounded-3" :size="{height: '450px', width: '100%'}" :track="track" :param="param"/>
         <div class="row my-3">
-          <div class="col-12 col-md-8 text-secondary">
+          <div class="col-12 col-md-8 mb-3 mb-md-0 text-secondary">
             <h3 class="mb-1 text-white">Description</h3>
             <p>{{ track.description }}</p>
             <template v-if="lyric">
               <h3 class="mt-3 mb-1 text-white">Lyrics</h3>
-              <pre>{{ lyric }}</pre>
+              <pre class="m-0">{{ lyric }}</pre>
             </template>
-            <template v-if="track?.credits">
+            <template v-if="'credits' in track">
               <h3 class="mt-3 mb-1 text-white">Credits</h3>
               <template v-for="(credits, index) in track.credits" :key="index">
                 <div :class="{ 'mb-3': track.credits.length - 1 !== index}">
@@ -38,7 +38,7 @@ definePageMeta({ layout: "site" });
             <div id="tags">
               <div class="mb-0">Genre</div>
               <div class="tag mb-2"><NuxtLink :to="`/tag/${genreURL}/`">{{ track.genre }}</NuxtLink></div>
-              <template v-if="track?.album">
+              <template v-if="'album' in track">
                 <div class="mb-0">Album</div>
                 <div class="tag mb-2"><NuxtLink :to="`/album/${track.album.replace(/\s+/g, '-').toLowerCase()}/`">{{ track.album }}</NuxtLink></div>
               </template>
@@ -57,7 +57,7 @@ definePageMeta({ layout: "site" });
             <template v-for="(more, more_param) in moreTracks" :key="more_param">
               <div class="col-6 col-lg-3">
                 <NuxtLink :to="`/music/${more_param}/`">
-                 <img class="img-fluid scale-on-hover rounded-3" :src="`/images/${more?.cover ? more.cover : more_param}.jpg`" :alt="`${more.artists} - ${more.title}`">
+                 <img class="img-fluid scale-on-hover rounded-3" :src="`/images/${'cover' in more ? more.cover : more_param}.jpg`" :alt="`${more.artists} - ${more.title}`">
                   <p class="mt-2 mb-0">{{ more.title }}</p>
                   <p><small>{{ more.artists }}</small></p>
                 </NuxtLink>
