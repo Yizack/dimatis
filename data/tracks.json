@@ -1,4 +1,56 @@
 { 
+  "autumn-leaves-fall-remix": {
+    "artists": "Mox Jade & Sydney Grimm",
+    "title": "Autumn Leaves Fall (Dimatis Remix)",
+    "description": "It's a pleasure to have remixed such a wonderful song by Mox Jade and Sydney Grimm 💙. I found out about the contest really late but surprisingly I managed to finish my remix a few days before the deadline, and I'm glad I did because I'm one of the three winners!! This is one of my favorite remixes of all time.",
+    "genre": "Melodic Dubstep",
+    "date": "2022-11-11T00:00:00.000Z",
+    "person": ["Mox Jade", "Sydney Grimm"],
+    "mm": 3,
+    "ss": 28,
+    "dropbox": "2ey18ka1iuwen4m",
+    "credits": [
+      {
+        "title": "Support Mox Jade",
+        "socials": [
+          {
+            "name": "Spotify",
+            "link": "https://open.spotify.com/artist/3HlA4oN32tBsJgVIppg0z1"
+          },
+          {
+            "name": "Youtube",
+            "link": "https://www.youtube.com/channel/UCfXV7PqwvmWbyZ8XmHgkHqw"
+          },
+          {
+            "name": "Instagram",
+            "link": "https://www.instagram.com/moxjade/"
+          }
+        ]
+      },
+      {
+        "title": "Support Sydney Grimm",
+        "socials": [
+          {
+            "name": "Spotify",
+            "link": "https://open.spotify.com/artist/4jqQOZ9uKl5w7FfgkLn7oy"
+          },
+          {
+            "name": "Instagram",
+            "link": "https://www.instagram.com/sydney.grimm.music/"
+          }
+        ]
+      },
+      {
+        "title": "Artwork by Johnny Arroyo (drycreekstudios)",
+        "socials": [
+          {
+            "name": "Instagram",
+            "link": "https://www.instagram.com/drycreekstudios/"
+          }
+        ]
+      }
+    ]
+  },
   "wonderland-remix": {
     "artists": "Christoph Sebastian Pabst & Valeska Rautenberg",
     "title": "Wonderland (Dimatis Remix)",
