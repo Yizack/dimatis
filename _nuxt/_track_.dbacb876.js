@@ -1,4 +1,4 @@
-import{_ as b}from"./MusicPlayer.111cecfc.js";import{a as s,b as e,t,f as y,F as d,q as p,r as k,w as I,e as m,h as v,i as _,o as i,s as S}from"./entry.9b7b7e18.js";import{S as r}from"./site-info.6e7bd9e7.js";import{t as $}from"./tracks.0d7a5a14.js";const W={"wonderland-remix":{lyrics:`Wouldn't you give the world to know the secrets of
+import{_ as b}from"./MusicPlayer.fdf52119.js";import{a as s,b as e,t,f as y,F as d,q as p,r as k,w as I,e as m,h as v,i as _,o as i,s as S}from"./entry.98a51aaf.js";import{S as r}from"./site-info.6e7bd9e7.js";import{t as $}from"./tracks.0d7a5a14.js";const W={"wonderland-remix":{lyrics:`Wouldn't you give the world to know the secrets of
 living life and letting go?
 
 Don't you ever try to fight what you feel
