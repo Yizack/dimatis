@@ -10,7 +10,7 @@
     "style_players": "node players.style.js"
   },
   "devDependencies": {
-    "eslint": "^8.26.0",
+    "eslint": "^8.27.0",
     "eslint-plugin-vue": "^9.7.0",
     "nuxt": "3.0.0-rc.13"
   },
@@ -18,7 +18,7 @@
     "@fortawesome/free-brands-svg-icons": "^6.2.0",
     "@fortawesome/free-regular-svg-icons": "^6.2.0",
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
-    "@fortawesome/vue-fontawesome": "^3.0.1",
+    "@fortawesome/vue-fontawesome": "^3.0.2",
     "bootstrap": "^5.2.2",
     "colorthief": "^2.3.2",
     "mediaelement": "^5.1.0"
