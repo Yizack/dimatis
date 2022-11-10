@@ -37,7 +37,7 @@ definePageMeta({ layout: "site" });
                     <a class="btn text-dark text-start w-100 collapsed" data-bs-toggle="collapse" href="#collapseOne">Click to open a guide to dispute RouteNote's Claim</a>
                   </div>
                   <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
-                    <div class="card-body text-dark">
+                    <div class="card-body bg-light text-dark">
                       <ol>
                         <li class="mb-2">Make sure you have credited me in your video description. </li>
                         <li class="mb-2">Click details of the copyright claim.<div><img src="/images/routenote_dispute/r1.png" class="img-fluid"></div></li>
@@ -46,7 +46,7 @@ definePageMeta({ layout: "site" });
                         <li class="mb-2">Mark the "My dispute isn't based on any of the reasons above." checkbox and click Continue.<div><img src="/images/routenote_dispute/r4.png" class="img-fluid"></div></li>
                         <li class="mb-2">Select the option "License" and click Continue.<div><img src="/images/routenote_dispute/r5.png" class="img-fluid"></div></li>
                         <li class="mb-2">Mark the "I have permission to use the content from the copyright owner" checkbox.<div><img src="/images/routenote_dispute/r6.png" class="img-fluid"></div></li>
-                        <li class="mb-2">I believe you can write anything that lets them know you have my permission to use my music but if you want, you can write the following in the form "I have permission to use this song as stated on the artist's website {{ SITE.url }}/licensing", check the 3 checkboxes below the form and write your full name in the signature field.<div><img src="/images/routenote_dispute/r7.png" class="img-fluid"></div></li>
+                        <li class="mb-2">I believe you can write anything that lets them know you have my permission to use my music but if you want, you can write the following in the form "I have permission to use this song as stated on the artist's website <NuxtLink :to="`${SITE.url}/licensing/`">{{ SITE.url }}/licensing/</NuxtLink>", check the 3 checkboxes below the form and write your full name in the signature field.<div><img src="/images/routenote_dispute/r7.png" class="img-fluid"></div></li>
                         <li>The claim will be released by RouteNote within 3 days or maximum in a week.</li>
                       </ol>
                       <p class="m-0"><small>Note: Music copyright claims are not the same as "strikes". A claim is often an automated process by music distribuitors to prevent a material from being used without proper credits. Having a video with copyright claim won't risk your channel.</small></p>
