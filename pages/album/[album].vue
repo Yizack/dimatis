@@ -59,7 +59,7 @@ definePageMeta({ layout: "site" });
           </div>
         </div>
         <div id="more-projects" class="pt-3">
-          <h3 class="text-center">More <a class="tag" href="/album">Albums</a></h3>
+          <h3 class="text-center">More <NuxtLink class="tag" href="/album/">Albums</NuxtLink></h3>
           <div class="row gallery text-center">
             <template v-for="(album, param) in moreAlbums" :key="param">
               <div class="col-6 col-lg-3" >
@@ -100,7 +100,9 @@ export default {
     },
     moreAlbums() {
       return Object.entries(this.albums).slice(0, 8).reduce((obj, [key, value]) => {
-        obj[key] = value;
+        if (!key.includes(this.param)) {
+          obj[key] = value;
+        }
         return obj;
       }, {});
     }

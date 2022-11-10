@@ -25,8 +25,8 @@ definePageMeta({ layout: "site" });
             <template v-if="track?.credits">
               <h3 class="mt-3 mb-1 text-white">Credits</h3>
               <template v-for="(credits, index) in track.credits" :key="index">
-                <div class="mb-md-0">
-                  <p class="m-0">{{ credits.title }}</p>
+                <div :class="{ 'mb-3': track.credits.length - 1 !== index}">
+                  <h5 class="mb-1">{{ credits.title }}</h5>
                   <template v-for="socials in credits.socials" :key="socials.name">
                     <p class="m-0">{{ socials.name }}: <a :href="socials.link" target="_blank">{{ socials.link }}</a></p>
                   </template>
@@ -52,7 +52,7 @@ definePageMeta({ layout: "site" });
           </div>
         </div>
         <div id="more-tracks" class="pt-3">
-          <h3 class="text-center">More <a class="tag" :href="`/tag/${genreURL}`">{{ track.genre }}</a> music</h3>
+          <h3 class="text-center">More <NuxtLink  class="tag" :href="`/tag/${genreURL}/`">{{ track.genre }}</NuxtLink> music</h3>
           <div class="row gallery text-center">
             <template v-for="(more, more_param) in moreTracks" :key="more_param">
               <div class="col-6 col-lg-3">
@@ -93,7 +93,7 @@ export default {
     },
     moreTracks() {
       return Object.entries(this.tracks).reduce((obj, [key, value]) => {
-        if (value.genre === this.track.genre && Object.keys(obj).length < 8) {
+        if (value.genre === this.track.genre && Object.keys(obj).length < 8 && !key.includes(this.param)) {
           obj[key] = value;
         }
         return obj;
