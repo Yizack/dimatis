@@ -9,10 +9,10 @@ let styles = {};
 let css_content = "";
 
 Object.keys(tracks).forEach((param) => {
-  const filename = tracks[param]?.cover ? tracks[param].cover : param;
+  const filename = "cover" in tracks[param] ? tracks[param].cover : param;
   const img = resolve(process.cwd(), `./public/images/${filename}.jpg`);
   ColorThief.getColor(img).then(color => {
-    if (!styles?.[filename]) {
+    if (!(filename in styles)) {
       styles[filename] = {
         color: `rgb(${color[0]}, ${color[1]}, ${color[2]})`
       };

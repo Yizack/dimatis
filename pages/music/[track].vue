@@ -105,14 +105,14 @@ export default {
         "@type" : "MusicRecording",
         "name" : this.track.title,
         "url" : `${SITE.url}/music/${this.param}`,
-        "image" : `${SITE.url}/images/${this.track?.cover ? this.track.cover : this.param}.jpg`,
+        "image" : `${SITE.url}/images/${"cover" in this.track ? this.track.cover : this.param}.jpg`,
         "genre" : this.track.genre,
-        "duration" : `PT${this.track?.hh ? this.track.hh : 0}H${this.track?.mm ? this.track.mm : 0}M${this.track?.ss ? this.track.ss : 0}S`,
+        "duration" : `PT${"hh" in this.track ? this.track.hh : 0}H${"mm" in this.track ? this.track.mm : 0}M${"ss" in this.track ? this.track.ss : 0}S`,
         "datePublished": this.track.date.split("T")[0],
         "byArtist": []
       };
 
-      this.track?.album ? schemaOrg.inAlbum = [{
+      "album" in this.track ? schemaOrg.inAlbum = [{
         "@type": "MusicAlbum",
         "name": this.track.album,
         "url": `${SITE.url}/album/${this.track.album.replace(/\s+/g, "-").toLowerCase()}` 
@@ -139,14 +139,14 @@ export default {
         { property: "og:type", content: "website" },
         { property: "og:title", content: `${this.track.artists} - ${this.track.title}` },
         { property: "og:site_name", content: SITE.name },
-        { property: "og:image", content: `${SITE.url}/images/${this.track?.cover ? this.track.cover : this.param}.jpg` },
+        { property: "og:image", content: `${SITE.url}/images/${"cover" in this.track ? this.track.cover : this.param}.jpg` },
         { property: "og:image:width", content: "500" },
         { property: "og:image:height", content: "500" },
         { property: "og:image:alt", content: `${this.track.artists} - ${this.track.title}` },
         { property: "og:description", content: this.track.description },
         // Twitter Card
         { name: "twitter:card", content: "summary" },
-        { name: "twitter:image", content: `${SITE.url}/images/${this.track?.cover ? this.track.cover : this.param}.jpg` },
+        { name: "twitter:image", content: `${SITE.url}/images/${"cover" in this.track ? this.track.cover : this.param}.jpg` },
         { name: "twitter:title", content: `${this.track.artists} - ${this.track.title}` },
         { name: "twitter:description", content: this.track.description },
         { name: "twitter:site", content: `@${SITE.twitter}` }

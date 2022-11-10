@@ -1,5 +1,5 @@
 <template>
-  <div class="player" :class="track?.cover ? track.cover : param"  :style="[size]">
+  <div class="player" :class="'cover' in track ? track.cover : param"  :style="[size]">
     <div class="box">   
       <div class="controls">
         <div class="lecteur">
@@ -27,7 +27,7 @@ export default {
   name: "MusicPlayer",
   computed: {
     srcImage() {
-      return `/images/${this.track?.cover ? this.track.cover : this.param}.jpg`;
+      return `/images/${"cover" in this.track ? this.track.cover : this.param}.jpg`;
     }
   },
   methods: {

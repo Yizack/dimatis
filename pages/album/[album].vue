@@ -37,7 +37,7 @@ definePageMeta({ layout: "site" });
                     <td itemprop="position">{{ index + 1 }}</td>
                     <td itemprop="url" :content="`${SITE.url}/music/${track}`">{{ tracks[track].artists }}</td>
                     <td itemprop="name">{{ tracks[track].title }}</td>
-                    <td itemprop="duration" :content="`PT${tracks[track]?.hh ? tracks[track].hh : 0}H${tracks[track]?.mm ? tracks[track].mm : 0}M${tracks[track]?.ss ? tracks[track].ss : 0}S`">{{ tracks[track].mm }}:{{ String(tracks[track].ss).padStart(2, "0") }}</td>
+                    <td itemprop="duration" :content="`PT${'hh' in tracks[track] ? tracks[track].hh : 0}H${'mm' in tracks[track] ? tracks[track].mm : 0}M${'ss' in tracks[track] ? tracks[track].ss : 0}S`">{{ tracks[track].mm }}:{{ String(tracks[track].ss).padStart(2, "0") }}</td>
                   </tr>
                 </template>
               </tbody>
