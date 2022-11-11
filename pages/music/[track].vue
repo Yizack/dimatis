@@ -16,22 +16,28 @@ definePageMeta({ layout: "site" });
         <MusicPlayer class="text-center rounded-3" :size="{height: '450px', width: '100%'}" :track="track" :param="param"/>
         <div class="row my-3">
           <div class="col-12 col-md-8 mb-3 mb-md-0 text-secondary">
-            <h3 class="mb-1 text-white">Description</h3>
-            <p>{{ track.description }}</p>
+            <div class="description">
+              <h3 class="text-white">Description</h3>
+              <p>{{ track.description }}</p>
+            </div>
             <template v-if="lyric">
-              <h3 class="mt-3 mb-1 text-white">Lyrics</h3>
-              <pre class="m-0">{{ lyric }}</pre>
+              <div class="lyrics mt-3">
+                <h3 class="text-white">Lyrics</h3>
+                <pre class="m-0">{{ lyric }}</pre>
+              </div>
             </template>
             <template v-if="'credits' in track">
-              <h3 class="mt-3 mb-1 text-white">Credits</h3>
-              <template v-for="(credits, index) in track.credits" :key="index">
-                <div :class="{ 'mb-3': track.credits.length - 1 !== index}">
-                  <h5 class="mb-1">{{ credits.title }}</h5>
-                  <template v-for="socials in credits.socials" :key="socials.name">
-                    <p class="m-0">{{ socials.name }}: <a :href="socials.link" target="_blank">{{ socials.link }}</a></p>
-                  </template>
-                </div>
-              </template>
+              <div class="credits mt-3">
+                <h3 class="text-white">Credits</h3>
+                <template v-for="(credits, index) in track.credits" :key="index">
+                  <div :class="{ 'mb-3': track.credits.length - 1 !== index}">
+                    <h5>{{ credits.title }}</h5>
+                    <template v-for="socials in credits.socials" :key="socials.name">
+                      <p class="m-0">{{ socials.name }}: <a :href="socials.link" target="_blank">{{ socials.link }}</a></p>
+                    </template>
+                  </div>
+                </template>
+              </div>
             </template>
           </div>
           <div class="col-12 col-md-4">
@@ -45,7 +51,7 @@ definePageMeta({ layout: "site" });
               <div class="mb-0">Release date</div>
               <div class="tag mb-2">{{ new Date(track.date).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" }) }}</div>
               <div class="mb-0">Duration</div>  
-              <div class="tag mb-2">{{ track.duration }}</div>
+              <div class="tag mb-2">{{ track.mm }}:{{ String(track.ss).padStart(2, "0") }}</div>
               <div class="mb-0">Fanlink</div>
               <div class="tag"><a :href="`https://yizack.com/${param}`" target="_blank">yizack.com/{{ param }}</a></div>
             </div>

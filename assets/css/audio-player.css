@@ -93,6 +93,12 @@
     overflow: hidden;
 }
 
+@media (max-width: 385px) {
+    .player {
+        height: unset!important;
+    }
+}
+
 .box {
     position: relative;
     height: 100%;
@@ -144,6 +150,7 @@
     background-repeat: no-repeat!important;
     background-size: contain!important;
     background-position: center top!important;
-    height: 100%;
     position: relative;
+    max-height: 100%;
+    max-width: 100%;
 }
