@@ -16,7 +16,7 @@ Object.keys(tracks).forEach((param) => {
       styles[filename] = {
         color: `rgb(${color[0]}, ${color[1]}, ${color[2]})`
       };
-      css_content += `.${filename} {\n  background-color: ${styles[filename].color}\n}\n`;
+      css_content += `.${filename} { background-color: ${styles[filename].color} }\n`;
       writeFile("./assets/css/player-styles.css", css_content, "utf-8", () => {
         console.log(`Generated style: ${filename}`);
       });
