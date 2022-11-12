@@ -10,9 +10,9 @@
     "style_players": "node players.style.js"
   },
   "devDependencies": {
+    "nuxt": "^3.0.0-rc.13",
     "eslint": "^8.27.0",
     "eslint-plugin-vue": "^9.7.0",
-    "nuxt": "3.0.0-rc.13",
     "stylelint": "^14.14.1"
   },
   "dependencies": {
