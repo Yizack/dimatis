@@ -3,10 +3,10 @@ import { SITE } from "~/site-info.js";
 </script>
 
 <template>
-  <nav class="navbar navbar-expand-lg bg-light navbar-light py-1 sticky-top shadow vw-100">
+  <nav class="navbar navbar-expand-lg bg-light navbar-light sticky-top shadow vw-100">
     <div class="container">
       <NuxtLink class="navbar-brand text-decoration-none" to="/"><DimatisIcon width="28" height="24" fill="#151515"/>{{ SITE.name }}</NuxtLink>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <button class="navbar-toggler rounded-pill" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div ref="nav" class="collapse navbar-collapse justify-content-end" id="nav">
@@ -15,16 +15,16 @@ import { SITE } from "~/site-info.js";
             <NuxtLink class="nav-link" to="/">Home</NuxtLink>
           </li>
           <li class="nav-item pe-3" role="menuitem">
-            <NuxtLink class="nav-link" :class="{ active: path.includes('/music') || path.includes('/tag') }" to="/music/">Music</NuxtLink>
+            <NuxtLink class="nav-link" to="/music/">Music</NuxtLink>
           </li>
           <li class="nav-item pe-3" role="menuitem">
-            <NuxtLink class="nav-link" :class="{ active: path.includes('/album') }" to="/album/">Albums</NuxtLink>
+            <NuxtLink class="nav-link" to="/album/">Albums</NuxtLink>
           </li>
           <li class="nav-item pe-3" role="menuitem">
             <NuxtLink class="nav-link" to="/#about">About</NuxtLink>
           </li>
           <li class="nav-item pe-3" role="menuitem">
-            <NuxtLink class="nav-link" :class="{ active: path.includes('/licensing') }" to="/licensing/">Licensing</NuxtLink>
+            <NuxtLink class="nav-link" to="/licensing/">Licensing</NuxtLink>
           </li>
           <li class="nav-item pe-3" role="menuitem"><a class="nav-link" :href="SITE.fanlinks" target="_blank">Fanlinks</a></li>
           <li class="nav-item" role="menuitem"><a class="nav-link" :href="SITE.merch" target="_blank">Merch</a></li>

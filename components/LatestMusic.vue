@@ -19,7 +19,7 @@ import tracksJSON from "~/public/data/tracks.json";
         </template>
       </div>   
       <div class="text-uppercase">
-        <NuxtLink class="btn btn-outline-dark rounded-pill text-decoration-none" role="button" to="/music/">See more</NuxtLink>
+        <NuxtLink class="btn btn-outline-dark rounded-pill text-decoration-none" role="button" to="/music/">More music</NuxtLink>
       </div>
       <InstagramFeed/>
     </div>

@@ -26,6 +26,8 @@ import { faSpotify } from "@fortawesome/free-brands-svg-icons";
 
               Artists who inspire him are: Au5, Blackmill, Chime, CMA, Collin McLoughlin, Crystal Skies, ILLENIUM, Said The Sky, Seven Lions, Skrux, Tim Schaufert, Xilent, among many others.
             </p>
+            <hr>
+            <p class="small"><small>Edited on 2 September 2022.</small></p>
           </div>
         </div>
         <div class="col-lg-4 text-center">

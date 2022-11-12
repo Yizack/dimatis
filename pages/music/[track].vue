@@ -13,9 +13,9 @@ definePageMeta({ layout: "site" });
           <h1 class="mb-1">{{ track.title }}</h1>
           <h3 class="text-secondary mb-0">{{ track.artists }}</h3>
         </div>
-        <MusicPlayer class="text-center rounded-3" :size="{height: '450px', width: '100%'}" :track="track" :param="param"/>
-        <div class="row my-3">
-          <div class="col-12 col-md-8 mb-3 mb-md-0 text-secondary">
+        <MusicPlayer class="rounded-3" :size="{height: '450px', width: '100%'}" :track="track" :param="param"/>
+        <div class="row my-3 mx-0 bg-secondary rounded p-3">
+          <div class="col-12 col-md-8 mb-3 mb-md-0 text-secondary p-0">
             <div class="description">
               <h3 class="text-white">Description</h3>
               <p>{{ track.description }}</p>
@@ -40,7 +40,7 @@ definePageMeta({ layout: "site" });
               </div>
             </template>
           </div>
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-4 ps-md-3 p-0">
             <div id="tags">
               <div class="mb-0">Genre</div>
               <div class="tag mb-2"><NuxtLink :to="`/tag/${genreURL}/`">{{ track.genre }}</NuxtLink></div>

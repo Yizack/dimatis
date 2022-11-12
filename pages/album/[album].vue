@@ -19,19 +19,19 @@ definePageMeta({ layout: "site" });
         <div class="text-center">
           <img :src="`/images/${album.cover}.jpg`" class="rounded-lg" itemprop="image" width="300" height="300">
         </div>
-        <div class="row">
-          <div class="col-12 info mt-3">
+        <div class="row mx-0 my-3">
+          <div class="col-12 info mx-0 p-0">
             <h3 class="mb-1">Tracks</h3>
-            <table class="table text-secondary shadow-sm">
+            <table class="table">
               <thead class="text-white">
-                <tr>
+                <tr class="small text-uppercase">
                   <th>#</th>
                   <th>Artists</th>
                   <th>Title</th>
                   <th><FontAwesomeIcon :icon="faClock"/></th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody class="text-secondary">
                 <template v-for="(track, index) in album.tracks" :key="track">
                   <tr @click="goTrack(track)" role="button" :itemprop="track" itemscope itemtype="http://www.schema.org/MusicRecording">
                     <td itemprop="position">{{ index + 1 }}</td>
@@ -43,22 +43,24 @@ definePageMeta({ layout: "site" });
               </tbody>
             </table>
           </div>
-          <div class="col-12 col-md-8 mt-3 text-secondary">
-            <h3 class="mb-0 text-white">Description</h3>
-            <p class="mb-md-0">{{ album.description }}</p>
-          </div>
-          <div class="col-12 col-md-4 mt-md-3">
-            <div class="tags">
-              <div class="mb-0">Type</div>
-              <div class="tag mb-1">{{ album.type }}</div>
-              <div class="mb-0">Release date</div>
-              <div class="tag mb-1" itemprop="datePublished" :content="album.date.split('T')[0]">{{ new Date(album.date).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" }) }}</div>
-              <div class="mb-0">Fanlink</div>
-              <div class="tag"><a :href="`https://yizack.com/${album.cover}`" target="_blank">yizack.com/{{ album.cover }}</a></div>
+          <div class="col-12 row mt-3 mb-3 mb-md-0 mx-0 bg-secondary rounded p-3">
+            <div class="col-12 col-md-8 text-secondary p-0">
+              <h3 class="mb-0 text-white">Description</h3>
+              <p class="mb-md-0">{{ album.description }}</p>
+            </div>
+            <div class="col-12 col-md-4 ps-md-3 p-0">
+              <div class="tags">
+                <div class="mb-0">Type</div>
+                <div class="tag mb-1">{{ album.type }}</div>
+                <div class="mb-0">Release date</div>
+                <div class="tag mb-1" itemprop="datePublished" :content="album.date.split('T')[0]">{{ new Date(album.date).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" }) }}</div>
+                <div class="mb-0">Fanlink</div>
+                <div class="tag"><a :href="`https://yizack.com/${album.cover}`" target="_blank">yizack.com/{{ album.cover }}</a></div>
+              </div>
             </div>
           </div>
         </div>
-        <div id="more-projects" class="pt-3">
+        <div id="more-albums" class="pt-3">
           <h3 class="text-center">More <NuxtLink class="tag" href="/album/">Albums</NuxtLink></h3>
           <div class="row gallery text-center">
             <template v-for="(album, param) in moreAlbums" :key="param">
