@@ -31,7 +31,7 @@ import { faSpotify } from "@fortawesome/free-brands-svg-icons";
           </div>
         </div>
         <div class="col-lg-4 text-center">
-          <img class="img-fluid rounded-3" src="/images/dimatis-bio.jpg">
+          <img class="img-fluid rounded-3" src="/images/dimatis-bio.jpg" :alt="`${SITE.name} photo`">
           <a id="follow_spotify" href="https://open.spotify.com/artist/0RAT9Q5WZwzJRJgTI38zJR" target="_blank" title="Follow on Spotify">
             <div class="d-flex justify-content-center mt-2">
               <span id="spotify_button" class="rounded-pill me-2 small px-2 py-1 text-white text-uppercase"><FontAwesomeIcon :icon="faSpotify"/> Follow</span>

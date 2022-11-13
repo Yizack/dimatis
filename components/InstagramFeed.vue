@@ -4,7 +4,7 @@
   </div>
   <div class="row">
     <div class="col-lg-12 feed p-0">
-      <iframe class="rounded-lg" src="https://dev.yizack.com/instagram/feeds/dimatis/feed" width="100%" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+      <iframe class="rounded-lg" title="Instagram feed" src="https://dev.yizack.com/instagram/feeds/dimatis/feed" width="100%" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
     </div>
   </div>
 </template>
