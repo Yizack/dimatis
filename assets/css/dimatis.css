@@ -31,6 +31,10 @@ pre {
     background-color: var(--dark-color)!important
 }
 
+.bg-white {
+    background-color: var(--white-color)!important
+}
+
 .text-dark {
     color: var(--dark-color)!important
 }
