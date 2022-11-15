@@ -33,7 +33,6 @@ export default {
   name: "App",
   data() {
     return {
-      path: this.$route.path,
       loading: true
     };
   },
