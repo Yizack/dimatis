@@ -15,7 +15,8 @@ export default {
         { name: "msapplication-TileImage", content: "/icons/mstile-144x144.png" },
       ],
       link: [
-        { rel: "preload", as: "font", href: "https://fonts.googleapis.com/css?family=Roboto:400,300" },
+        { rel: "preload", as: "style", crossorigin: "anonymous", href: "https://fonts.googleapis.com/css?family=Roboto:400,300" },
+        { rel: "stylesheet", crossorigin: "anonymous", href: "https://fonts.googleapis.com/css?family=Roboto:400,300" },
         { rel: "icon", type:"image/png", sizes:"16x16", href: "/favicon-16x16.png" },
         { rel: "icon", type:"image/png", sizes:"32x32", href: "/favicon-32x32.png" },
         { rel: "icon", type:"image/png", sizes:"192x192", href: "/android-chrome-192x192.png" },
