@@ -3,22 +3,22 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "nuxt dev --port=5173",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "style_players": "node players.style.js"
   },
   "devDependencies": {
-    "nuxt": "^3.0.0-rc.13",
     "eslint": "^8.27.0",
     "eslint-plugin-vue": "^9.7.0",
-    "stylelint": "^14.14.1"
+    "nuxt": "^3.0.0",
+    "stylelint": "^14.15.0"
   },
   "dependencies": {
-    "@fortawesome/free-brands-svg-icons": "^6.2.0",
-    "@fortawesome/free-regular-svg-icons": "^6.2.0",
-    "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "@fortawesome/free-brands-svg-icons": "^6.2.1",
+    "@fortawesome/free-regular-svg-icons": "^6.2.1",
+    "@fortawesome/free-solid-svg-icons": "^6.2.1",
     "@fortawesome/vue-fontawesome": "^3.0.2",
     "bootstrap": "^5.2.2",
     "colorthief": "^2.3.2",

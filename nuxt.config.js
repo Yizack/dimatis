@@ -1,5 +1,7 @@
 export default {
   app: {
+    rootId: "app",
+    buildAssetsDir: "/_app/",
     head: {
       htmlAttrs: {
         lang: "en"
