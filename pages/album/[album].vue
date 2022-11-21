@@ -4,6 +4,7 @@ import albumsJSON from "~/public/data/albums.json";
 import tracksJSON from "~/public/data/tracks.json";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { faClock } from "@fortawesome/free-regular-svg-icons";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 definePageMeta({ layout: "site" });
 </script>
 
@@ -56,7 +57,7 @@ definePageMeta({ layout: "site" });
                 <div class="mb-0">Release date</div>
                 <div class="tag mb-1" itemprop="datePublished" :content="album.date.split('T')[0]">{{ new Date(album.date).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" }) }}</div>
                 <div class="mb-0">Fanlink</div>
-                <div class="tag"><a :href="`https://yizack.com/${album.cover}`" target="_blank">yizack.com/{{ album.cover }}</a></div>
+                <div class="tag"><a :href="`https://yizack.com/${album.cover}`" target="_blank">yizack.com/{{ album.cover }}<FontAwesomeIcon class="ms-2" :icon="faArrowUpRightFromSquare"/></a></div>
               </div>
             </div>
           </div>
