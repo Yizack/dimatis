@@ -25,7 +25,7 @@ definePageMeta({ layout: "site" });
             <template v-if="lyric">
               <div class="lyrics mt-3">
                 <h3 class="text-white">Lyrics</h3>
-                <pre class="m-0">{{ lyric }}</pre>
+                <p class="m-0 pre-line">{{ lyric }}</p>
               </div>
             </template>
             <template v-if="'credits' in track">
