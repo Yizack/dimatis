@@ -1,4 +1,76 @@
 { 
+  "traveler-in-time": {
+    "artists": "Dimatis & Elvya",
+    "title": "Traveler In Time",
+    "description": "Who wouldn't want to travel back or forward in time? I have the pleasure to bring you another song with Elvya this time with a time traveler theme, get ready to be delighted with a chill-type beat using sparkly and enveloping sounds that we could probably hear during a time teleportation while everything stops around you 💫. I came up with the instrumental of this song as an idea of mine almost 3 years ago but the result never convinced me so I never released it until talking to Elvya I showed her the demo and she added that magic missing, Now it comes alive thanks to her amazing vocals as always 💜.",
+    "genre": "Chill",
+    "date": "2022-11-25T00:00:00.000",
+    "person": ["Dimatis", "Elvya"],
+    "mm": 3,
+    "ss": 41,
+    "album": "Traveler In Time",
+    "cover": "traveler-in-time",
+    "dropbox": "1o0ewu4jlx9izcb",
+    "credits": [
+      {
+        "title": "Support Elvya",
+        "socials": [
+          {
+            "name": "Spotify",
+            "link": "https://open.spotify.com/artist/7nsHwDfvq2CVqfC2jt3Z9N"
+          },
+          {
+            "name": "Youtube",
+            "link": "https://youtube.com/user/elvyaofficial"
+          },
+          {
+            "name": "Facebook",
+            "link": "https://facebook.com/Elvyamusic"
+          },
+          {
+            "name": "Fiverr",
+            "link": "https://www.fiverr.com/elvyadulcimer"
+          }
+        ]
+      }
+    ]
+  },
+  "traveler-in-time-instrumental": {
+    "artists": "Dimatis & Elvya",
+    "title": "Traveler In Time (Instrumental)",
+    "description": "Instrumental version of Traveler In Time. Read more about the song in the original version!",
+    "genre": "Chill",
+    "date": "2022-11-25T00:00:00.000",
+    "person": ["Dimatis", "Elvya"],
+    "mm": 3,
+    "ss": 41,
+    "album": "Traveler In Time",
+    "cover": "traveler-in-time",
+    "dropbox": "25jh2nkqyiphknx",
+    "credits": [
+      {
+        "title": "Support Elvya",
+        "socials": [
+          {
+            "name": "Spotify",
+            "link": "https://open.spotify.com/artist/7nsHwDfvq2CVqfC2jt3Z9N"
+          },
+          {
+            "name": "Youtube",
+            "link": "https://youtube.com/user/elvyaofficial"
+          },
+          {
+            "name": "Facebook",
+            "link": "https://facebook.com/Elvyamusic"
+          },
+          {
+            "name": "Fiverr",
+            "link": "https://www.fiverr.com/elvyadulcimer"
+          }
+        ]
+      }
+    ]
+  },
   "autumn-leaves-fall-remix": {
     "artists": "Mox Jade & Sydney Grimm",
     "title": "Autumn Leaves Fall (Dimatis Remix)",
@@ -71,7 +143,30 @@
     "person": ["Dimatis", "Elvya"],
     "mm": 3,
     "ss": 23,
-    "dropbox": "coshvekgb0azza3"
+    "dropbox": "coshvekgb0azza3",
+    "credits": [
+      {
+        "title": "Support Elvya",
+        "socials": [
+          {
+            "name": "Spotify",
+            "link": "https://open.spotify.com/artist/7nsHwDfvq2CVqfC2jt3Z9N"
+          },
+          {
+            "name": "Youtube",
+            "link": "https://youtube.com/user/elvyaofficial"
+          },
+          {
+            "name": "Facebook",
+            "link": "https://facebook.com/Elvyamusic"
+          },
+          {
+            "name": "Fiverr",
+            "link": "https://www.fiverr.com/elvyadulcimer"
+          }
+        ]
+      }
+    ]
   },
   "fade-away": {
     "artists": "Dimatis",
@@ -438,15 +533,38 @@
     "dropbox": "0l43nqtkzqalcgn"
   },
   "out-there": {
-    "artists": "Dimatis",
-    "title": "Out There (feat. Elvya)",
+    "artists": "Dimatis & Elvya",
+    "title": "Out There",
     "description": "I am very excited to present my new collaboration with Elvya 🤩, we met a month ago on Discord, I took an idea from one of my previous projects 💡and sent it to her to record something, in a couple of hours she sent me her vocals, I impressed that she is so fast 😱. Also thanks to Albert Weand for letting me use his art for the song cover art and thanks to Visualmadness for editing the cover art ❤",
     "genre": "Chillstep",
     "date": "2020-06-05T00:00:00.000",
     "person": ["Dimatis", "Elvya"],
     "mm": 4,
     "ss": 4,
-    "dropbox": "1yqavnfk4r8is9y"
+    "dropbox": "1yqavnfk4r8is9y",
+    "credits": [
+      {
+        "title": "Support Elvya",
+        "socials": [
+          {
+            "name": "Spotify",
+            "link": "https://open.spotify.com/artist/7nsHwDfvq2CVqfC2jt3Z9N"
+          },
+          {
+            "name": "Youtube",
+            "link": "https://youtube.com/user/elvyaofficial"
+          },
+          {
+            "name": "Facebook",
+            "link": "https://facebook.com/Elvyamusic"
+          },
+          {
+            "name": "Fiverr",
+            "link": "https://www.fiverr.com/elvyadulcimer"
+          }
+        ]
+      }
+    ]
   },
   "otherworld-remix": {
     "artists": "Killigrew",
