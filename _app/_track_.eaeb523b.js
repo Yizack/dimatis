@@ -1,4 +1,4 @@
-import{_ as k}from"./MusicPlayer.b2ddd42b.js";import{a,b as e,t,h as u,s as g,F as c,r as w,w as y,e as l,u as I,i as v,o as s,v as b}from"./entry.4608e912.js";import{u as _}from"./composables.d95f9046.js";import{S as r}from"./site-info.ed496d45.js";import{t as S}from"./tracks.467a5d2f.js";import{F as T}from"./index.es.3d737571.js";import{f as A}from"./index.bde098c6.js";const $={"traveler-in-time":{lyrics:`It feels like
+import{_ as k}from"./MusicPlayer.75a7e859.js";import{a,b as e,t,h as u,s as g,F as c,r as w,w as y,e as l,u as I,i as v,o as s,v as b}from"./entry.77744707.js";import{u as _}from"./composables.7be78750.js";import{S as r}from"./site-info.ed496d45.js";import{t as S}from"./tracks.467a5d2f.js";import{F as T}from"./index.es.ca875ef2.js";import{f as A}from"./index.bde098c6.js";const $={"traveler-in-time":{lyrics:`It feels like
 The world has stopped
 Sparks floating off my fingertips
 As I listen to the unknown sounds
@@ -21,7 +21,7 @@ Spinning
 Spinning around
 Like a waterfall
 Like a tornado
-Drifting drifting
+Drifting
 I catch myself grinning
 As I watch the clock
 
