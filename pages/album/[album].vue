@@ -18,7 +18,7 @@ definePageMeta({ layout: "site" });
           <h3 class="text-secondary mb-0" itemprop="byArtist" itemscope itemtype="http://schema.org/MusicGroup"><span itemprop="name">{{ album.artists }}</span></h3>
         </div>
         <div class="text-center my-3">
-          <img :src="`/images/${album.cover}.jpg`" class="album-image rounded-lg" itemprop="image" width="300" height="300">
+          <img :src="`/images/${album.cover}.jpg`" class="album-image rounded-3" itemprop="image" width="300" height="300">
           <span class="album-image-blurry" :style="`background: url('/images/${album.cover}.jpg')`"></span>
         </div>
         <div class="row mx-0 my-3">
