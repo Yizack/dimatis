@@ -277,15 +277,14 @@ a:hover {
 }
 
 .album-image-blurry {
-    filter: blur(40px);
-    opacity: 0.5;
+    filter: blur(20px);
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
     z-index: 0;
     width: 300px;
     height: 300px;
-    background-size: contain
+    background-size: contain!important
 }
 
 .pre-line {
