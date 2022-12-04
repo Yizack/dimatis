@@ -61,20 +61,12 @@ import { faSpotify } from "@fortawesome/free-brands-svg-icons";
 <script>
 export default {
   name: "AboutComponent",
-  data() {
-    return {
-      followers: null
-    };
-  },
-  methods: {
-    async spotifyFololwers() {
-      const response = await fetch(`https://dev.yizack.com/spotify/followers?id=${SITE.spotify_id}`);
-      const data = await response.json();
-      this.followers = data["followers"];
+  computed: {
+    async followers() {
+      const response = await fetch(`https://cf-spotify.yizack.workers.dev/followers?id=${SITE.spotify_id}`);
+      const { followers } = await response.json();
+      return followers;
     }
-  },
-  mounted() {
-    this.spotifyFololwers();
   }
 };
 </script>
