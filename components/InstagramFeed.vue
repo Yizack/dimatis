@@ -152,9 +152,11 @@ export default {
     },
     async getFeed() {
       await fetch("https://feed-dimatis.yizack.com/").then(async (response) => {
-        const { data } = await response.json();
-        this.feed = Object.keys(data).length === 0 ? data : null;
-        this.setupGlide();
+        const body = await response.json();
+        if ("data" in body) {
+          this.feed = body.data;
+          this.setupGlide();
+        }
       }).catch((error) => {
         console.log(error);
       });
