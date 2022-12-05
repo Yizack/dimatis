@@ -151,10 +151,7 @@ export default {
       }, 1000);
     },
     async getFeed() {
-      await fetch("https://cf-instagram-feed.yizack.workers.dev/", {
-        method: "GET",
-        credentials: "include"
-      }).then(async (response) => {
+      await fetch("https://feed-dimatis.yizack.com/").then(async (response) => {
         const { data } = await response.json();
         this.feed = data;
         this.setupGlide();
