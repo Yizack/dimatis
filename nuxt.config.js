@@ -44,7 +44,8 @@ export default {
     "~/assets/css/dimatis.css",
     "~/assets/css/dimatis-icon.css",
     "~/assets/css/audio-player.css",
-    "~/assets/css/player-styles.css"
+    "~/assets/css/player-styles.css",
+    "@glidejs/glide/dist/css/glide.core.min.css",
   ],
   nitro: {
     crawlLinks: true,

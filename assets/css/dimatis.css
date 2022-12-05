@@ -173,12 +173,8 @@ iframe {
     border: none
 }
 
-.feed {
-    height: fit-content
-}
-
-.feed iframe {
-    height: 100vh
+iframe.instagram-media.instagram-media-rendered {
+    max-height: 1000px
 }
 
 :target:before {

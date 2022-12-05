@@ -19,7 +19,8 @@
     "useHead": "readonly",
     "defineNuxtPlugin": "readonly",
     "useNuxtApp": "readonly",
-    "MediaElementPlayer": "readonly"
+    "MediaElementPlayer": "readonly",
+    "Glide": "readonly"
   },
   "plugins": [
     "vue"

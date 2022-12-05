@@ -6,6 +6,7 @@ definePageMeta({ layout: "site" });
 <template>
   <Banner/>
   <LatestMusic/>
+  <InstagramFeed/>
   <About/>
 </template>
 
@@ -88,7 +89,8 @@ export default {
         { name: "twitter:image", content: `${SITE.url}/${SITE.logo}` }
       ],
       script: [
-        { type: "application/ld+json", children: SEO() }
+        { type: "application/ld+json", children: SEO() },
+        { src: "https://www.instagram.com/embed.js", async: true, body: true }
       ],
       link: [
         { rel: "canonical", href: `${SITE.url}/` }

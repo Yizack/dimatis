@@ -20,6 +20,7 @@
     "@fortawesome/free-regular-svg-icons": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
     "@fortawesome/vue-fontawesome": "^3.0.2",
+    "@glidejs/glide": "^3.6.0",
     "bootstrap": "^5.2.2",
     "colorthief": "^2.3.2",
     "mediaelement": "^5.1.0"
