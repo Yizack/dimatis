@@ -68,7 +68,7 @@ export default {
   },
   methods: {
     async spotifyFollowers() {
-      const response = await fetch(`https://cf-spotify.yizack.workers.dev/followers?id=${SITE.spotify_id}`);
+      const response = await fetch(`https://cf-spotify.yizack.com/followers?id=${SITE.spotify_id}`);
       const { followers } = await response.json();
       this.followers = followers;
     }
