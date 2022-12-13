@@ -10,7 +10,7 @@
             <div class="glide__track" data-glide-el="track">
               <ul class="glide__slides" :class="{'d-none': !showGlide && !feed}">
                 <li class="glide__slide" v-for="(post, index) in feed" :key="index">
-                  <blockquote class="instagram-media" data-instgrm-captioned :data-instgrm-permalink="`${post.permalink}?utm_source=ig_embed&amp;utm_campaign=loading`" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: auto; max-width:540px; min-width:326px; padding:0; width:90%;">
+                  <blockquote class="instagram-media mx-auto" data-instgrm-captioned :data-instgrm-permalink="`${post.permalink}?utm_source=ig_embed&amp;utm_campaign=loading`" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: auto; max-width:540px; min-width:326px; padding:0; width:90%;">
                     <div style="padding:16px;">
                       <a :href="`${post.permalink}?utm_source=ig_embed&amp;utm_campaign=loading`" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none;" target="_blank">
                         <div style=" display: flex; flex-direction: row; align-items: center;">
