@@ -8,7 +8,26 @@
     "person": ["Dimatis"],
     "mm": 3,
     "ss": 17,
-    "dropbox": "m16p1abd88il06n"
+    "dropbox": "m16p1abd88il06n",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/track/2b6fNsRRqKXXHMXQxpt8RM",
+        "soundcloud": "https://soundcloud.com/dimatis/5-months-ago",
+        "youtube": "https://youtu.be/kY9X97KbTOQ",
+        "apple": "https://music.apple.com/us/album/5-months-ago-single/1658047495?app=music&ls=1",
+        "itunes": "https://music.apple.com/us/album/5-months-ago-single/1658047495?app=itunes&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/track/5-months-ago",
+        "deezer": "https://www.deezer.com/us/album/383537227",
+        "tidal": "https://tidal.com/browse/track/264561621",
+        "yandex": "",
+        "amazon": "https://www.amazon.com/dp/B0BP2CCQPD",
+        "tiktok": "",
+        "beatport": "",
+        "netease": "https://music.163.com/#/song?id=2004445663"
+      }
+    }
   },
   "traveler-in-time": {
     "artists": "Dimatis & Elvya",
@@ -21,6 +40,7 @@
     "ss": 41,
     "album": "Traveler In Time",
     "cover": "traveler-in-time",
+    "instrumental": "traveler-in-time-instrumental",
     "dropbox": "1o0ewu4jlx9izcb",
     "credits": [
       {
@@ -44,7 +64,26 @@
           }
         ]
       }
-    ]
+    ],
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/album/2RzOr1f4mawYnMKClPF276",
+        "soundcloud": "https://soundcloud.com/dimatis/sets/traveler-in-time",
+        "youtube": "https://youtu.be/s0JmJNi9jVU",
+        "apple": "https://music.apple.com/us/artist/dimatis/1139797073?app=music&ls=1",
+        "itunes": "https://music.apple.com/us/artist/dimatis/1139797073?app=itunes&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/album/traveler-in-time",
+        "deezer": "https://www.deezer.com/us/album/375388547",
+        "tidal": "https://tidal.com/browse/album/260513471",
+        "yandex": "",
+        "amazon": "https://www.amazon.com/dp/B0BMKQCN6R",
+        "tiktok": "",
+        "beatport": "",
+        "netease": "https://music.163.com/#/album?id=154928399"
+      }
+    }
   },
   "traveler-in-time-instrumental": {
     "artists": "Dimatis & Elvya",
@@ -80,7 +119,26 @@
           }
         ]
       }
-    ]
+    ],
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/track/1Q90THUY9Znx6iTlcvE4Xs",
+        "soundcloud": "https://soundcloud.com/dimatis/traveler-in-time-instrumental",
+        "youtube": "",
+        "apple": "https://music.apple.com/us/album/traveler-in-time-instrumental/1654532757?i=1654532759&app=music&ls=1",
+        "itunes": "https://music.apple.com/us/album/traveler-in-time-instrumental/1654532757?i=1654532759&app=itunes&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/album/traveler-in-time",
+        "deezer": "https://www.deezer.com/us/album/375388547",
+        "tidal": "https://tidal.com/browse/album/260513471",
+        "yandex": "",
+        "amazon": "https://www.amazon.com/dp/B0BMKQCN6R",
+        "tiktok": "",
+        "beatport": "",
+        "netease": "https://music.163.com/#/song?id=1998481982"
+      }
+    }
   },
   "autumn-leaves-fall-remix": {
     "artists": "Mox Jade & Sydney Grimm",
@@ -132,7 +190,26 @@
           }
         ]
       }
-    ]
+    ],
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/track/4mvjLX0Ks9NnvIKtxtb9xF",
+        "soundcloud": "https://soundcloud.com/dimatis/autumn-leaves-fall-remix",
+        "youtube": "https://youtu.be/9H_mo9ng6bU",
+        "apple": "https://music.apple.com/us/album/autumn-leaves-fall-dimatis-remix/1653644192?i=1653644195&app=music&ls=1",
+        "itunes": "https://music.apple.com/us/album/autumn-leaves-fall-dimatis-remix/1653644192?i=1653644195&app=itunes&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/track/autumn-leaves-fall-dimatis-remix",
+        "deezer": "https://www.deezer.com/us/track/2023931547",
+        "tidal": "https://tidal.com/browse/track/261564005",
+        "yandex": "",
+        "amazon": "https://www.amazon.com/dp/B0BLT58NLN",
+        "tiktok": "https://vm.tiktok.com/ZMFHAKouX/",
+        "beatport": "",
+        "netease": "https://music.163.com/#/song?id=1999841143"
+      }
+    }
   },
   "wonderland-remix": {
     "artists": "Christoph Sebastian Pabst & Valeska Rautenberg",
@@ -143,7 +220,26 @@
     "person": ["Christoph Sebastian Pabst", "Valeska Rautenberg"],
     "mm": 4,
     "ss": 18,
-    "dropbox": "y2c4mchpm0y2h6r"
+    "dropbox": "y2c4mchpm0y2h6r",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/album/6KPy4TDnw5KHOSnmDbqwTO",
+        "soundcloud": "https://soundcloud.com/dimatis/wonderland-remix",
+        "youtube": "https://youtu.be/SXUg8LEoKdg",
+        "apple": "https://music.apple.com/us/album/wonderland-dimatis-remix/1639259678?app=music&ls=1",
+        "itunes": "https://music.apple.com/us/album/wonderland-dimatis-remix/1639259678?app=itunes&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/track/wonderland-dimatis-remix",
+        "deezer": "https://www.deezer.com/en/album/344728217",
+        "tidal": "https://tidal.com/browse/album/242282198",
+        "yandex": "https://music.yandex.com/album/23203526",
+        "amazon": "https://www.amazon.com/dp/B0B957L5X6",
+        "tiktok": "https://vm.tiktok.com/ZMNKEA6Tk/",
+        "beatport": "https://www.beatport.com/release/wonderland-dimatis-remix/3836982",
+        "netease": "https://music.163.com/#/song?id=1970988220"
+      }
+    }
   },
   "let-me-go": {
     "artists": "Dimatis & Elvya",
@@ -177,7 +273,25 @@
           }
         ]
       }
-    ]
+    ],
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/album/3wWbpwgXg2lSOAsSnbYUmR",
+        "soundcloud": "https://soundcloud.com/dimatis/let-me-go",
+        "youtube": "https://youtu.be/kwk3PQnLOCA",
+        "apple": "https://music.apple.com/us/album/let-me-goy-single/1632805901?app=music&ls=1",
+        "itunes": "https://music.apple.com/us/album/let-me-go-single/1632805901?app=itunes&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/track/let-me-go",
+        "deezer": "https://www.deezer.com/en/album/332667717",
+        "tidal": "https://tidal.com/browse/album/236342315",
+        "yandex": "",
+        "amazon": "https://www.amazon.com/dp/B0B5PBKZVZ",
+        "tiktok": "https://vm.tiktok.com/ZMNE1Ltxo/",
+        "netease": "https://music.163.com/#/song?id=1961124574"
+      }
+    }
   },
   "fade-away": {
     "artists": "Dimatis",
@@ -188,7 +302,25 @@
     "person": ["Dimatis"],
     "mm": 4,
     "ss": 36,
-    "dropbox": "udvpsrgoer3b3g4"
+    "dropbox": "udvpsrgoer3b3g4",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/track/1IQDgkTJvhotNS0CysKm0M",
+        "soundcloud": "https://soundcloud.com/dimatis/fade-away",
+        "youtube": "https://youtu.be/M1vtmncLm6U",
+        "apple": "https://music.apple.com/us/album/fade-away-single/1631123114?app=music&ls=1",
+        "itunes": "https://music.apple.com/us/album/fade-away-single/1631123114?app=itunes&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/track/fade-away",
+        "deezer": "https://www.deezer.com/en/album/329528627",
+        "tidal": "https://tidal.com/browse/album/234782020",
+        "yandex": "",
+        "amazon": "https://www.amazon.com/dp/B0B4S8DL62",
+        "tiktok": "https://vm.tiktok.com/ZMNE18kNd/",
+        "netease": "https://music.163.com/#/song?id=1958209107"
+      }
+    }
   },
   "snowflake-remix": {
     "artists": "NAWN",
@@ -226,7 +358,25 @@
           }
         ]
       }
-    ]
+    ],
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/track/48VBSIq0REA7E5dRhUeI4W",
+        "soundcloud": "https://soundcloud.com/dimatis/snowflake-remix",
+        "youtube": "https://youtu.be/Zujo8SwGsuI",
+        "apple": "https://music.apple.com/us/album/snowflake-dimatis-remix/1623607701?i=1623607703&app=music&ls=1",
+        "itunes": "https://music.apple.com/us/album/snowflake-dimatis-remix/1623607701?i=1623607703&app=itunes&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/track/snowflake-dimatis-remix",
+        "deezer": "",
+        "tidal": "https://tidal.com/browse/track/224779670",
+        "yandex": "",
+        "amazon": "https://www.amazon.com/dp/B09XR4YG7X",
+        "tiktok": "",
+        "netease": "https://music.163.com/#/song?id=1937542166"
+      }
+    }
   },
   "afterglow": {
     "artists": "Dimatis",
@@ -237,7 +387,26 @@
     "person": ["Dimatis"],
     "mm": 3,
     "ss": 16,
-    "dropbox": "rplt2k5x7bbnexj"
+    "remix": "afterglow-remix",
+    "dropbox": "rplt2k5x7bbnexj",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/album/65YQ2AcZcHvJTYL2zOyhgP",
+        "soundcloud": "https://soundcloud.com/dimatis/afterglow",
+        "youtube": "https://youtu.be/tP2tqvvnKok",
+        "apple": "https://music.apple.com/us/album/afterglow-single/1610856217?app=music&ls=1",
+        "itunes": "https://music.apple.com/us/album/afterglow-single/1610856217?app=itunes&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/track/afterglow",
+        "deezer": "https://www.deezer.com/us/album/297076472",
+        "tidal": "https://tidal.com/browse/album/217454675",
+        "yandex": "https://music.yandex.com/album/21468415",
+        "amazon": "https://www.amazon.com/dp/B09SWM4QSK",
+        "tiktok": "https://vm.tiktok.com/ZMNKogffN/",
+        "netease": "https://music.163.com/#/song?id=1921927166"
+      }
+    }
   },
   "afterglow-remix": {
     "artists": "Beatcore & Livingston Crain",
@@ -248,7 +417,16 @@
     "person": ["Beatcore", "Livingston Crain"],
     "mm": 3,
     "ss": 16,
-    "dropbox": "dmq3qfqcymu2kj5"
+    "instrumental": "afterglow",
+    "dropbox": "dmq3qfqcymu2kj5",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "soundcloud": "https://soundcloud.com/dimatis/beatcore-livingston-crain-afterglow-dimatis-remix",
+        "youtube": "https://youtu.be/O6qYglKG3_4"
+      }
+    }
   },
   "call-out": {
     "artists": "Dimatis & Bayza",
