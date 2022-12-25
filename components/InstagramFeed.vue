@@ -1,14 +1,14 @@
 <template>
   <section id="ig-feed" class="bg-light">
     <div class="container pb-5 text-center text-dark">
-      <div class="pb-3" id="ig" v-if="(showGlide && feed)">
+      <div class="pb-3" id="ig" v-if="FontFaceSetLoadEvent">
         <h4 class="text-uppercase">Instagram feed</h4>
       </div>
       <div class="row">
         <div class="col-lg-12 p-0">
           <div class="glide">
             <div class="glide__track" data-glide-el="track">
-              <ul class="glide__slides" :class="{'d-none': !showGlide && !feed}">
+              <ul class="glide__slides" :class="{'d-none': !feed}">
                 <li class="glide__slide" v-for="(post, index) in feed" :key="index">
                   <blockquote class="instagram-media mx-auto" data-instgrm-captioned :data-instgrm-permalink="`${post.permalink}?utm_source=ig_embed&amp;utm_campaign=loading`" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: auto; max-width:540px; min-width:326px; padding:0; width:90%;">
                     <div style="padding:16px;">
@@ -56,7 +56,7 @@
                           </div>
                         </div>
                       </a>
-                      <p style=" margin:8px 0 0 0; padding:0 4px;">
+                      <p style="margin:8px 0 0 0; padding:0 4px; text-align: left;">
                         <a :href="`${post.permalink}?utm_source=ig_embed&amp;utm_campaign=loading`" style="color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">{{ post.caption }}</a>
                       </p>
                       <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
@@ -70,12 +70,12 @@
               </ul>
             </div>
             <div class="glide__arrows" data-glide-el="controls">
-              <span class="glide__arrow glide__arrow--left" data-glide-dir="<" :class="{'d-none': !showGlide && !feed}">
+              <span class="glide__arrow glide__arrow--left" data-glide-dir="<" :class="{'d-none': !feed}">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
                 </svg>
               </span>
-              <span class="glide__arrow glide__arrow--right" data-glide-dir=">" :class="{'d-none': !showGlide && !feed}">
+              <span class="glide__arrow glide__arrow--right" data-glide-dir=">" :class="{'d-none': !feed}">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
                 </svg>
@@ -127,8 +127,7 @@ export default {
   name: "InstagramFeed",
   data() {
     return {
-      feed: null,
-      showGlide: false,
+      feed: null
     };
   },
   methods: {
@@ -147,8 +146,7 @@ export default {
           }
         }).mount();
         window.instgrm.Embeds.process();
-        this.showGlide = true;
-      }, 1000);
+      }, 0);
     },
     async getFeed() {
       await fetch("https://feed-dimatis.yizack.com/").then(async (response) => {
