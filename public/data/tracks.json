@@ -1,4 +1,34 @@
 { 
+  "aura": {
+    "artists": "Dimatis",
+    "title": "Aura",
+    "description": "I'm very happy to bring you my new song Aura, this song is a bit different from what I usually do, this was an idea from 4 years ago and I decided to release it today. I hope you enjoy it 💙.",
+    "genre": "Dubstep",
+    "date": "2023-01-27T00:00:00.000",
+    "person": ["Dimatis"],
+    "mm": 3,
+    "ss": 53,
+    "dropbox": "xlyehk97zf5za43",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/track/1HDgewvCUmTJo1vanldOFK",
+        "soundcloud": "https://soundcloud.com/dimatis/aura",
+        "youtube": "https://youtu.be/Tk1jUKFoho4",
+        "apple": "https://music.apple.com/us/album/aura-single/1666479627?app=music&ls=1",
+        "itunes": "https://music.apple.com/us/album/aura-single/1666479627?app=itunes&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/track/aura",
+        "deezer": "https://www.deezer.com/us/album/397864567",
+        "tidal": "https://tidal.com/browse/album/272100940",
+        "yandex": "",
+        "amazon": "https://www.amazon.com/dp/B0BSLVC367",
+        "tiktok": "",
+        "beatport": "",
+        "netease": "https://music.163.com/#/song?id=2015688679"
+      }
+    }
+  },
   "5-months-ago": {
     "artists": "Dimatis",
     "title": "5 Months Ago",
