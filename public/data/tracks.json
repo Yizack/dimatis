@@ -506,7 +506,25 @@
           }
         ]
       }
-    ]
+    ],
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/album/1fE5GUpjwz6mS27MfPwqtF",
+        "soundcloud": "https://soundcloud.com/dimatis/call-out",
+        "youtube": "https://youtu.be/uuhW3aJEplg",
+        "apple": "https://music.apple.com/us/album/call-out-single/1608543909?app=music&ls=1",
+        "itunes": "https://music.apple.com/us/album/call-out-single/1608543909?app=itunes&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/album/call-out",
+        "deezer": "https://www.deezer.com/en/album/293077852",
+        "tidal": "https://tidal.com/browse/album/215313561",
+        "yandex": "https://music.yandex.com/album/20983998",
+        "amazon": "https://www.amazon.com/dp/B09SF6MJTW",
+        "tiktok": "",
+        "netease": "https://music.163.com/#/song?id=1923378342"
+      }
+    }
   },
   "call-out-instrumental": {
     "artists": "Dimatis & Bayza",
@@ -557,7 +575,25 @@
           }
         ]
       }
-    ]
+    ],
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/track/3E1biqR9EGXv4fADrE6bbU",
+        "soundcloud": "https://soundcloud.com/dimatis/call-out-instrumental",
+        "youtube": "https://youtu.be/uOW-OoqZ9n0",
+        "apple": "https://music.apple.com/us/album/call-out-instrumental/1608543909?i=1608543911&app=music&ls=1",
+        "itunes": "https://music.apple.com/us/album/call-out-instrumental/1608543909?i=1608543911&app=itunes&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/album/call-out",
+        "deezer": "https://www.deezer.com/us/track/1645084072",
+        "tidal": "https://tidal.com/browse/album/215313561",
+        "yandex": "https://music.yandex.com/album/20983998",
+        "amazon": "https://www.amazon.com/dp/B09SF6MJTW",
+        "tiktok": "",
+        "netease": "https://music.163.com/#/song?id=1923377531"
+      }
+    }
   },
   "feeling": {
     "artists": "Emantium x Dimatis",
@@ -587,7 +623,25 @@
           }
         ]
       }
-    ]
+    ],
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/album/2D8nxagdCphO6B9LN389ut",
+        "soundcloud": "https://soundcloud.com/dimatis/feeling",
+        "youtube": "https://youtu.be/v_LeCM5yEbs",
+        "apple": "https://music.apple.com/us/album/feeling-single/1609854761?app=music&ls=1",
+        "itunes": "https://music.apple.com/us/album/feeling-single/1609854761?app=itunes&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/track/feeling",
+        "deezer": "https://www.deezer.com/album/295322342",
+        "tidal": "https://tidal.com/browse/album/216557733",
+        "yandex": "https://music.yandex.com/album/21316958",
+        "amazon": "https://www.amazon.com/dp/B09SF6MJTW",
+        "tiktok": "https://vm.tiktok.com/ZMLMuMqDH/",
+        "netease": "https://music.163.com/#/song?id=1920140665"
+      }
+    }
   },
   "just-stay": {
     "artists": "Dimatis",
@@ -609,7 +663,25 @@
           }
         ]
       }
-    ]
+    ],
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/album/7jfrDvrS9jbANmiuBtM5EO",
+        "soundcloud": "https://soundcloud.com/dimatis/just-stay",
+        "youtube": "https://youtu.be/L133j7pbJR4",
+        "apple": "https://music.apple.com/us/album/just-stay-single/1599748910?app=music&ls=1",
+        "itunes": "https://music.apple.com/us/album/just-stay-single/1599748910?app=itunes&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/track/just-stay",
+        "deezer": "https://www.deezer.com/album/279563342",
+        "tidal": "https://tidal.com/browse/album/208682873",
+        "yandex": "https://music.yandex.com/album/19866706",
+        "amazon": "https://www.amazon.com/dp/B09NF1W6PF",
+        "tiktok": "https://vm.tiktok.com/ZM8v1eX5T/",
+        "netease": "https://music.163.com/#/song?id=1902357512"
+      }
+    }
   },
   "i-will-someday": {
     "artists": "Dimatis",
@@ -620,7 +692,25 @@
     "person": ["Dimatis"],
     "mm": 4,
     "ss": 23,
-    "dropbox": "hhlhjlhshcsqixw"
+    "dropbox": "hhlhjlhshcsqixw",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/album/1tyPEKQgOzpa0awqIcJgKd",
+        "soundcloud": "https://soundcloud.com/dimatis/i-will-someday",
+        "youtube": "https://youtu.be/RqTNuh3Fu2M",
+        "apple": "https://music.apple.com/us/album/i-will-someday-single/1592078845?app=music&ls=1",
+        "itunes": "https://music.apple.com/us/album/i-will-someday-single/1592078845?app=itunes&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/track/i-will-someday",
+        "deezer": "https://www.deezer.com/en/album/267965902",
+        "tidal": "https://tidal.com/browse/album/202439308",
+        "yandex": "https://music.yandex.com/album/19858837",
+        "amazon": "https://www.amazon.com/dp/B09K7Q4ZR1",
+        "tiktok": "https://vm.tiktok.com/ZM8x1wTAQ/",
+        "netease": "https://music.163.com/#/song?id=1889755420"
+      }
+    }
   },
   "paying-for-it": {
     "artists": "Dimatis",
@@ -631,7 +721,24 @@
     "person": ["Dimatis"],
     "mm": 3,
     "ss": 46,
-    "dropbox": "p9kknusuc2qz6jx"
+    "dropbox": "p9kknusuc2qz6jx",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/track/0DGJehHmDyBrhUxQZciTRN",
+        "soundcloud": "https://soundcloud.com/dimatis/paying-for-it",
+        "youtube": "https://youtu.be/ZDGBC5cztw0",
+        "apple": "https://music.apple.com/us/album/paying-for-it-feat-salvo-single/1567512744?app=music&ls=1",
+        "itunes": "https://music.apple.com/us/album/paying-for-it-feat-salvo-single/1567512744?app=itunes&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/track/paying-for-it-feat-salvo",
+        "deezer": "https://www.deezer.com/en/album/230153882",
+        "tidal": "",
+        "amazon": "https://www.amazon.com/dp/B094X6BFNX/",
+        "tiktok": "",
+        "netease": "https://music.163.com/#/song?id=1844624035"
+      }
+    }
   },
   "fly-again": {
     "artists": "Dimatis",
@@ -694,7 +801,25 @@
           }
         ]
       }
-    ]
+    ],
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/album/4Yh0VRUWmI5jO7CNUjnPJO",
+        "soundcloud": "https://soundcloud.com/dimatis/fly-again",
+        "youtube": "https://youtu.be/4KxEsbV1il8",
+        "apple": "https://music.apple.com/us/album/fly-again-single/1557629524?app=music&ls=1",
+        "itunes": "https://music.apple.com/us/album/fly-again-single/1557629524?app=itunes&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/track/fly-again-feat-miss-lina",
+        "deezer": "https://www.deezer.com/album/213797662",
+        "tidal": "https://tidal.com/browse/album/176659884",
+        "yandex": "https://music.yandex.com/album/14412358",
+        "amazon": "https://www.amazon.com/dp/B08YHKR73R",
+        "tiktok": "https://vm.tiktok.com/ZMeSVSnQs/",
+        "netease": "https://music.163.com/#/song?id=1826070256"
+      }
+    }
   },
   "stay-remix": {
     "artists": "Eunoia",
@@ -705,7 +830,21 @@
     "person": ["Eunoia"],
     "mm": 4,
     "ss": 13,
-    "dropbox": "pc3zpxjc0gtue6n"
+    "dropbox": "pc3zpxjc0gtue6n",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/track/61dwvjWlkisQbZNFUaawkY",
+        "soundcloud": "https://soundcloud.com/dimatis/eunoia-stay-dimatis-remix",
+        "youtube": "https://youtu.be/EwsgCjFd9BM",
+        "apple": "",
+        "bandcamp": "https://dimatis.bandcamp.com/track/stay-dimatis-remix",
+        "deezer": "https://www.deezer.com/en/album/211784152",
+        "tidal": "",
+        "amazon": "https://www.amazon.com/dp/B08XWSSDWS"
+      }
+    }
   },
   "worthy-of-life": {
     "artists": "Dimatis",
@@ -716,7 +855,25 @@
     "person": ["Dimatis"],
     "mm": 3,
     "ss": 37,
-    "dropbox": "tetz2tp1ho5rxys"
+    "dropbox": "tetz2tp1ho5rxys",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/album/75PGrZ2yFtZCWXF7tzumaW",
+        "soundcloud": "https://soundcloud.com/dimatis/worthy-of-life",
+        "youtube": "https://youtu.be/G3X72Feey9M",
+        "apple": "https://music.apple.com/us/album/worthy-of-life-single/1549696728?app=music&ls=1",
+        "itunes": "https://music.apple.com/us/album/worthy-of-life-single/1549696728?app=itunes&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/track/worthy-of-life",
+        "deezer": "https://www.deezer.com/en/album/201770522",
+        "tidal": "https://tidal.com/browse/album/170355537",
+        "yandex": "https://music.yandex.com/album/14512634",
+        "amazon": "https://www.amazon.com/dp/B08TM9HKYV",
+        "tiktok": "https://vm.tiktok.com/ZMJKjkm2W/",
+        "netease": "https://music.163.com/#/song?id=1813728064"
+      }
+    }
   },
   "euphoria-remix": {
     "artists": "Chymes",
@@ -727,7 +884,15 @@
     "person": ["Chymes"],
     "mm": 3,
     "ss": 38,
-    "dropbox": "o2sgyrh43st268b"
+    "dropbox": "o2sgyrh43st268b",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "soundcloud": "https://soundcloud.com/dimatis/chymes-euphoria-dimatis-remix",
+        "youtube": "https://youtu.be/9MPRagsWKRY"
+      }
+    }
   },
   "hold-on-to-me": {
     "artists": "Dimatis & Bayza",
@@ -738,7 +903,23 @@
     "person": ["Dimatis", "Bayza"],
     "mm": 3,
     "ss": 27,
-    "dropbox": "ift9zf72xxbgihe"
+    "dropbox": "ift9zf72xxbgihe",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/track/0U9BPZn0nvkUYFfuPteBmE",
+        "soundcloud": "https://soundcloud.com/bayza/hold-on-to-me",
+        "youtube": "https://youtu.be/N2sZKeX_xGI",
+        "apple": "https://music.apple.com/us/album/hold-on-to-me-single/1526294383?app=music&ls=1",
+        "itunes": "https://music.apple.com/us/album/hold-on-to-me-single/1526294383?app=itunes&ls=1",
+        "deezer": "https://www.deezer.com/en/album/165690312",
+        "tidal": "http://tidal.com/browse/album/151393778",
+        "amazon": "https://www.amazon.com/dp/B08FFMF4L3",
+        "tiktok": "https://vm.tiktok.com/ZSmq7e54",
+        "netease": "https://music.163.com/#/song?id=1468764302"
+      }
+    }
   },
   "who-am-i-without-you": {
     "artists": "Dimatis",
@@ -749,7 +930,24 @@
     "person": ["Dimatis"],
     "mm": 3,
     "ss": 32,
-    "dropbox": "0l43nqtkzqalcgn"
+    "dropbox": "0l43nqtkzqalcgn",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/album/5aEGg2zmF985jXxaKPovIC",
+        "soundcloud": "https://soundcloud.com/dimatis/who-am-i-without-you",
+        "youtube": "https://youtu.be/Iu2eSFseGkQ",
+        "itunes": "https://music.apple.com/us/album/who-am-i-without-you-single/1526745718?app=itunes&ls=1",
+        "apple": "https://music.apple.com/us/album/who-am-i-without-you-single/1526745718?app=music&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/track/who-am-i-without-you",
+        "deezer": "https://www.deezer.com/en/album/165491562",
+        "tidal": "https://tidal.com/browse/album/151409176",
+        "amazon": "https://www.amazon.com/dp/B08FFHGH4M",
+        "tiktok": "https://vm.tiktok.com/ZSfA8V1k/",
+        "netease": "https://music.163.com/#/song?id=1469026142"
+      }
+    }
   },
   "out-there": {
     "artists": "Dimatis & Elvya",
@@ -783,18 +981,44 @@
           }
         ]
       }
-    ]
+    ],
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/album/0hpmcD7Pz7i25ik2qVt7Fs",
+        "soundcloud": "https://soundcloud.com/dimatis/out-there",
+        "youtube": "https://youtu.be/Vs-1BLxquHo",
+        "itunes": "https://music.apple.com/us/album/out-there-feat-elvya-single/1516826552?&app=itunes&ls=1",
+        "apple": "https://music.apple.com/us/album/out-there-feat-elvya-single/1516826552?&app=music&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/track/out-there-feat-elvya",
+        "deezer": "https://www.deezer.com/us/album/152263542",
+        "tidal": "",
+        "yandex": "https://music.yandex.com/album/19862325",
+        "amazon": "https://www.amazon.com/dp/B089QQMXNR",
+        "netease": "https://music.163.com/#/song?id=1453157534"
+      }
+    }
   },
   "otherworld-remix": {
-    "artists": "Killigrew",
+    "artists": "Krisu",
     "title": "Otherworld (Dimatis Remix)",
-    "description": "I was participating in the remix competition of \"Otherworld\" by Killigrew, I met many talented people there ❤.",
+    "description": "I was participating in the remix competition of \"Otherworld\" by Krisu, I met many talented people there ❤.",
     "genre": "Melodic Dubstep",
     "date": "2020-06-08T00:00:00.000",
-    "person": ["Killigrew"],
+    "person": ["Krisu"],
     "mm": 3,
     "ss": 53,
-    "dropbox": "kpnsz9108mumxdt"
+    "dropbox": "kpnsz9108mumxdt",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "soundcloud": "https://soundcloud.com/dimatis/killigrew-otherworld-dimatis-remix",
+        "youtube": "https://youtu.be/cqjYqMi87_E",
+        "tidal": "https://tidal.com/browse/track/144558495"
+      }
+    }
   },
   "two-ways": {
     "artists": "Dimatis",
@@ -805,7 +1029,22 @@
     "person": ["Dimatis"],
     "mm": 4,
     "ss": 0,
-    "dropbox": "vjthq3anusg5gur"
+    "dropbox": "vjthq3anusg5gur",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/album/0eqt9FDPTd8CuPlsA5lJZI",
+        "soundcloud": "https://soundcloud.com/dimatis/two-ways",
+        "youtube": "https://youtu.be/h_ILdk4gdZI",
+        "itunes": "https://music.apple.com/us/album/two-ways-single/1509469256?app=itunes&ls=1",
+        "apple": "https://music.apple.com/us/album/two-ways-single/1509469256?app=music&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/track/two-ways",
+        "deezer": "https://www.deezer.com/en/album/143740662",
+        "tidal": "https://tidal.com/browse/album/139245821",
+        "netease": "https://music.163.com/#/song?id=1442987422"
+      }
+    }
   },
   "escape-with-you-remix": {
     "artists": "Kooma & Veela",
@@ -816,7 +1055,16 @@
     "person": ["Kooma", "Veela"],
     "mm": 4,
     "ss": 31,
-    "dropbox": "23uax3sbrd2spnu"
+    "dropbox": "23uax3sbrd2spnu",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "soundcloud": "https://soundcloud.com/dimatis/kooma-veela-escape-with-you-dimatis-remix",
+        "youtube": "https://youtu.be/GtSI312WHUk",
+        "netease": "https://music.163.com/#/song?id=1438865572"
+      }
+    }
   },
   "experiences": {
     "artists": "Dimatis",
@@ -829,7 +1077,22 @@
     "ss": 44,
     "album": "Experiences",
     "cover": "experiences-album",
-    "dropbox": "24b9bllxlt5ixpw"
+    "dropbox": "24b9bllxlt5ixpw",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/track/6V6pCdkGIbPecsabimfucv",
+        "soundcloud": "https://soundcloud.com/dimatis/experiences",
+        "youtube": "https://youtu.be/-U4VGUcx6v0",
+        "itunes": "https://music.apple.com/us/album/experiences/1495650794?i=1495650795&app=itunes&ls=1",
+        "apple": "https://music.apple.com/us/album/experiences/1495650794?i=1495650795&app=music&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/album/experiences",
+        "deezer": "https://www.deezer.com/en/album/128070352",
+        "tidal": "https://tidal.com/browse/track/128864932",
+        "netease": "https://music.163.com/#/song?id=1418289983"
+      }
+    }
   },
   "grief": {
     "artists": "Dimatis",
@@ -842,7 +1105,22 @@
     "ss": 43,
     "album": "Experiences",
     "cover": "experiences-album",
-    "dropbox": "jv6rqyn42i3vkxh"
+    "dropbox": "jv6rqyn42i3vkxh",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/track/6GsJ2yJxxIzpJPJk7RsZFV",
+        "soundcloud": "https://soundcloud.com/dimatis/grief",
+        "youtube": "https://youtu.be/J00xm5Tj-cU",
+        "itunes": "https://music.apple.com/us/album/grief/1495650794?i=1495650797&app=itunes&ls=1",
+        "apple": "https://music.apple.com/us/album/grief/1495650794?i=1495650797&app=music&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/album/experiences",
+        "deezer": "https://www.deezer.com/en/album/128070352",
+        "tidal": "https://tidal.com/browse/track/128864933",
+        "netease": "https://music.163.com/#/song?id=1418291876"
+      }
+    }
   },
   "moments-together": {
     "artists": "Dimatis",
@@ -855,7 +1133,22 @@
     "ss": 31,
     "album": "Experiences",
     "cover": "experiences-album",
-    "dropbox": "f0579qrgp1bqvif"
+    "dropbox": "f0579qrgp1bqvif",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/track/4WRbYEJCW0UJPDksMRT5Ke",
+        "soundcloud": "https://soundcloud.com/dimatis/moments-together",
+        "youtube": "https://youtu.be/rvnrwUuLYos",
+        "itunes": "https://music.apple.com/us/album/moments-together/1495650794?i=1495650798&app=itunes&ls=1",
+        "apple": "https://music.apple.com/us/album/moments-together/1495650794?i=1495650798&app=music&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/album/experiences",
+        "deezer": "https://www.deezer.com/en/album/128070352",
+        "tidal": "https://tidal.com/browse/track/128864934",
+        "netease":"https://music.163.com/#/song?id=1418291877"
+      }
+    }
   },
   "now": {
     "artists": "Dimatis",
@@ -868,7 +1161,22 @@
     "ss": 37,
     "album": "Experiences",
     "cover": "experiences-album",
-    "dropbox": "0l0ajzxw08g1dz6"
+    "dropbox": "0l0ajzxw08g1dz6",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/track/32fJdNagkXDvTuDFwbLdp7",
+        "soundcloud": "https://soundcloud.com/dimatis/now",
+        "youtube": "https://youtu.be/N6Uk3rVGi_I",
+        "itunes": "https://music.apple.com/us/album/now/1495650794?i=1495650799&app=itunes&ls=1",
+        "apple": "https://music.apple.com/us/album/now/1495650794?i=1495650799&app=music&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/album/experiences",
+        "deezer": "https://www.deezer.com/en/album/128070352",
+        "tidal": "https://tidal.com/browse/track/128864935",
+        "netease": "https://music.163.com/#/song?id=1418289984"
+      }
+    }
   },
   "overcoming": {
     "artists": "Dimatis",
@@ -881,7 +1189,22 @@
     "ss": 54,
     "album": "Experiences",
     "cover": "experiences-album",
-    "dropbox": "9644qucw0guhpsh"
+    "dropbox": "9644qucw0guhpsh",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/track/0M1PLpcLqZ2OpR9ZjVm3Dh",
+        "soundcloud": "https://soundcloud.com/dimatis/overcoming",
+        "youtube": "https://youtu.be/9Nh6qx9e4e4",
+        "itunes": "https://music.apple.com/us/album/overcoming/1495650794?i=1495650800&app=itunes&ls=1",
+        "apple": "https://music.apple.com/us/album/overcoming/1495650794?i=1495650800&app=music&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/album/experiences",
+        "deezer": "https://www.deezer.com/en/album/128070352",
+        "tidal": "https://tidal.com/browse/track/128864936",
+        "netease": "https://music.163.com/#/song?id=1418291878"
+      }
+    }
   },
   "serenity": {
     "artists": "Bayza & Dimatis",
@@ -894,7 +1217,22 @@
     "ss": 17,
     "album": "Experiences",
     "cover": "experiences-album",
-    "dropbox": "k8hwj2x2yfq6lof"
+    "dropbox": "k8hwj2x2yfq6lof",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/track/5cf4dAIZtC5FEH1pRIc0Fg",
+        "soundcloud": "https://soundcloud.com/dimatis/serenity",
+        "youtube": "https://youtu.be/wY5IwKs9XC8",
+        "itunes": "https://music.apple.com/us/album/serenity/1495650794?i=1495650801&app=itunes&ls=1",
+        "apple": "https://music.apple.com/us/album/serenity/1495650794?i=1495650801&app=music&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/album/experiences",
+        "deezer": "https://www.deezer.com/en/album/128070352",
+        "tidal": "https://tidal.com/browse/track/128864937",
+        "netease": "https://music.163.com/#/song?id=1418291879"
+      }
+    }
   },
   "unusual": {
     "artists": "Dimatis",
@@ -907,7 +1245,22 @@
     "ss": 56,
     "album": "Experiences",
     "cover": "experiences-album",
-    "dropbox": "qqzqm93iv7ie2ws"
+    "dropbox": "qqzqm93iv7ie2ws",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/track/5l8OeslN6LpBgUb92MhX3a",
+        "soundcloud": "https://soundcloud.com/dimatis/unusual",
+        "youtube": "https://youtu.be/akJZVUYRpY0",
+        "itunes": "https://music.apple.com/us/album/unusual/1495650794?i=1495650802&app=itunes&ls=1",
+        "apple": "https://music.apple.com/us/album/unusual/1495650794?i=1495650802&app=music&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/album/experiences",
+        "deezer": "https://www.deezer.com/en/album/128070352",
+        "tidal": "https://tidal.com/browse/track/128864938",
+        "netease": "https://music.163.com/#/song?id=1418291880"
+      }
+    }
   },
   "exhilaration-remix": {
     "artists": "Sappheiros",
@@ -918,7 +1271,16 @@
     "person": ["Sappheiros"],
     "mm": 4,
     "ss": 22,
-    "dropbox": "n4g0h50dlm9g7gd"
+    "dropbox": "n4g0h50dlm9g7gd",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "soundcloud": "https://soundcloud.com/dimatis/sappheiros-exhilaration-feat-lotis-dimatis-remix",
+        "youtube": "https://youtu.be/zOAthK5Li30",
+        "bandcamp": "https://dimatis.bandcamp.com/track/exhilaration-feat-lotis-dimatis-remix"
+      }
+    }
   },
   "sign-of-time": {
     "artists": "Dimatis",
@@ -929,7 +1291,22 @@
     "person": ["Dimatis"],
     "mm": 3,
     "ss": 31,
-    "dropbox": "5yt03e1s8uov77q"
+    "dropbox": "5yt03e1s8uov77q",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/album/6j6qw9KXnX8SHsU60pXXmj",
+        "soundcloud": "https://soundcloud.com/dimatis/sign-of-time",
+        "youtube": "https://youtu.be/8pyRzIQg4Yg",
+        "itunes": "https://music.apple.com/us/album/sign-of-time-single/1484462681?app=itunes&ls=1",
+        "apple": "https://music.apple.com/us/album/sign-of-time-single/1484462681?app=music&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/track/sign-of-time",
+        "deezer": "https://www.deezer.com/en/album/115872542",
+        "tidal": "https://tidal.com/browse/album/121238375",
+        "netease": "https://music.163.com/#/song?id=1397506565"
+      }
+    }
   },
   "fantasy-remix": {
     "artists": "Cloudier",
@@ -940,7 +1317,15 @@
     "person": ["Cloudier"],
     "mm": 4,
     "ss": 15,
-    "dropbox": "if1nqn693pph4ge"
+    "dropbox": "if1nqn693pph4ge",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "soundcloud": "https://soundcloud.com/dimatis/fantasy-dimatis-remix",
+        "youtube": "https://youtu.be/afP4aEV66Nw"
+      }
+    }
   },
   "celeste": {
     "artists": "Dimatis",
@@ -951,7 +1336,22 @@
     "person": ["Dimatis"],
     "mm": 3,
     "ss": 16,
-    "dropbox": "eype54piqspnf45"
+    "dropbox": "eype54piqspnf45",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/album/1GfETiv5AU4FgkQcdr0Una",
+        "soundcloud": "https://soundcloud.com/dimatis/celeste",
+        "youtube": "https://youtu.be/s7cPhZPVOiw",
+        "itunes": "https://music.apple.com/us/album/celeste-single/1476081833?&app=itunes&ls=1",
+        "apple": "https://music.apple.com/us/album/celeste-single/1476081833?&app=music&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/track/celeste",
+        "deezer": "https://www.deezer.com/album/107546272",
+        "tidal": "https://tidal.com/album/115558065",
+        "netease": "https://music.163.com/#/song?id=1386977126"
+      }
+    }
   },
   "turns-to-dust-remix": {
     "artists": "Sound Surfer & Verso",
@@ -962,7 +1362,15 @@
     "person": ["Sound Surfer", "Verso"],
     "mm": 4,
     "ss": 32,
-    "dropbox": "kgavwcbwo0oiz83"
+    "dropbox": "kgavwcbwo0oiz83",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "soundcloud": "https://soundcloud.com/dimatis/sound-surfer-verso-turns-to-dust-feat-nilka-dimatis-remix",
+        "youtube": "https://youtu.be/ofqOVF9wmts"
+      }
+    }
   },
   "maybe-remix": {
     "artists": "Tim Schaufert",
@@ -973,7 +1381,16 @@
     "person": ["Tim Schaufert"],
     "mm": 3,
     "ss": 48,
-    "dropbox": "tb0n14v0rgh1ubl"
+    "dropbox": "tb0n14v0rgh1ubl",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "soundcloud": "https://soundcloud.com/dimatis/tim-schaufert-maybe-feat-chymes-dimatis-remix",
+        "youtube": "https://youtu.be/Par0zNE9bYM",
+        "netease": "https://music.163.com/#/song?id=1366570758"
+      }
+    }
   },
   "quity": {
     "artists": "Dimatis",
@@ -984,7 +1401,22 @@
     "person": ["Dimatis"],
     "mm": 4,
     "ss": 55,
-    "dropbox": "pdbwdpryk0rhzuc"
+    "dropbox": "pdbwdpryk0rhzuc",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/album/4oqrjHma1EHXmblZj7vmGg",
+        "soundcloud": "https://soundcloud.com/dimatis/quity",
+        "youtube": "https://youtu.be/kEgy6N-J5Jg",
+        "itunes": "https://itunes.apple.com/us/album/q%C3%BCity-single/1457320284?app=itunes&ls=1",
+        "apple": "https://itunes.apple.com/us/album/q%C3%BCity-single/1457320284?app=music&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/track/q-ity",
+        "deezer": "https://www.deezer.com/album/91192552",
+        "tidal": "https://tidal.com/album/106304906",
+        "netease": "https://music.163.com/#/song?id=1361195368"
+      }
+    }
   },
   "floating": {
     "artists": "Dimatis",
@@ -997,7 +1429,22 @@
     "ss": 48,
     "album": "Floating",
     "style": "floating-ep",
-    "dropbox": "czod1finz8lwe16"
+    "dropbox": "czod1finz8lwe16",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/track/5OpwtT7O91pZZ8EkAozoAL",
+        "soundcloud": "https://soundcloud.com/dimatis/floating",
+        "youtube": "https://youtu.be/69kR6HvBYlA",
+        "itunes": "https://music.apple.com/us/album/floating/1451828741?i=1451828743&app=itunes&ls=1",
+        "apple": "https://music.apple.com/us/album/floating/1451828741?i=1451828743&app=music&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/album/floating-ep",
+        "deezer": "https://www.deezer.com/en/track/629753662",
+        "tidal": "https://tidal.com/browse/track/103796099",
+        "netease": "https://music.163.com/#/song?id=1361198110"
+      }
+    }
   },
   "mists": {
     "artists": "Dimatis",
@@ -1010,7 +1457,22 @@
     "ss": 18,
     "album": "Floating",
     "style": "floating-ep",
-    "dropbox": "vu7yaqx1pwqlyk9"
+    "dropbox": "vu7yaqx1pwqlyk9",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/track/3RkykP9sf64dPyOJQ6WNEC",
+        "soundcloud": "https://soundcloud.com/dimatis/mists",
+        "youtube": "https://youtu.be/oqgdaS0SsCs",
+        "itunes": "https://music.apple.com/us/album/mists/1451828741?i=1451828742&app=itunes&ls=1",
+        "apple": "https://music.apple.com/us/album/mists/1451828741?i=1451828742&app=music&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/album/floating-ep",
+        "deezer": "https://www.deezer.com/en/track/629753652",
+        "tidal": "https://tidal.com/browse/track/103796098",
+        "netease": "https://music.163.com/#/song?id=1361195374"
+      }
+    }
   },
   "shades": {
     "artists": "Dimatis",
@@ -1023,7 +1485,22 @@
     "ss": 18,
     "album": "Floating",
     "style": "floating-ep",
-    "dropbox": "o8fepftcbsgpifd"
+    "dropbox": "o8fepftcbsgpifd",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/track/269SEkVwWMrcqU28W0A3Nb",
+        "soundcloud": "https://soundcloud.com/dimatis/shades",
+        "youtube": "https://youtu.be/t3ai3d3H2sU",
+        "itunes": "https://music.apple.com/us/album/shades/1451828741?i=1451828744&app=itunes&ls=1",
+        "apple": "https://music.apple.com/us/album/shades/1451828741?i=1451828744&app=music&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/album/floating-ep",
+        "deezer": "https://www.deezer.com/en/track/629753672",
+        "tidal": "https://tidal.com/browse/track/103796100",
+        "netease": "https://music.163.com/#/song?id=1361195377"
+      }
+    }
   },
   "what-awaits-us": {
     "artists": "Dimatis",
@@ -1036,7 +1513,22 @@
     "ss": 25,
     "album": "Floating",
     "style": "floating-ep",
-    "dropbox": "0y06fnks3iq2qv5"
+    "dropbox": "0y06fnks3iq2qv5",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/track/2G2akqCV0SZJfyFkqPB0wU",
+        "soundcloud": "https://soundcloud.com/dimatis/what-awaits-us",
+        "youtube": "https://youtu.be/V2QoZpH5X-Y",
+        "itunes": "https://music.apple.com/us/album/what-awaits-us/1451828741?i=1451828745&app=itunes&ls=1",
+        "apple": "https://music.apple.com/us/album/what-awaits-us/1451828741?i=1451828745&app=music&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/album/floating-ep",
+        "deezer": "https://www.deezer.com/en/track/629753682",
+        "tidal": "https://tidal.com/browse/track/103796101",
+        "netease": "https://music.163.com/#/song?id=1361195378"
+      }
+    }
   },
   "gris-remix": {
     "artists": "Berlinist",
@@ -1047,7 +1539,16 @@
     "person": ["Berlinist"],
     "mm": 4,
     "ss": 15,
-    "dropbox": "lvsufm23rp29yut"
+    "dropbox": "lvsufm23rp29yut",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "soundcloud": "https://soundcloud.com/dimatis/berlinist-gris-pt-1-dimatis-remix",
+        "youtube": "https://youtu.be/YBrP4JM7d_s",
+        "netease": "https://music.163.com/#/song?id=1336864279"
+      }
+    }
   },
   "demure": {
     "artists": "Dimatis",
@@ -1058,7 +1559,22 @@
     "person": ["Dimatis"],
     "mm": 4,
     "ss": 15,
-    "dropbox": "pxhj59odw9oz6f3"
+    "dropbox": "pxhj59odw9oz6f3",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/album/4oMdwavOy3Eh80i3DZKuLP",
+        "soundcloud": "https://soundcloud.com/dimatis/demure",
+        "youtube": "https://youtu.be/wdgMnVOYIK4",
+        "itunes": "https://music.apple.com/us/album/demure-single/1445957031?app=itunes&ls=1",
+        "apple": "https://music.apple.com/us/album/demure-single/1445957031?app=music&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/track/demure",
+        "deezer": "https://www.deezer.com/track/601170812",
+        "tidal": "https://tidal.com/browse/album/100462941",
+        "netease": "https://music.163.com/#/song?id=1336864278"
+      }
+    }
   },
   "glare": {
     "artists": "Dimatis",
@@ -1069,7 +1585,21 @@
     "person": ["Dimatis"],
     "mm": 3,
     "ss": 33,
-    "dropbox": "o4vataqft2kvjh8"
+    "dropbox": "o4vataqft2kvjh8",
+    "fanlink": {
+      "download": true,
+      "dark": true,
+      "links": {
+        "spotify": "https://open.spotify.com/album/6j6qw9KXnX8SHsU60pXXmj",
+        "soundcloud": "https://soundcloud.com/certified/dimatis-glare",
+        "youtube": "https://youtu.be/30nO0lg2PJY",
+        "itunes": "https://music.apple.com/us/album/glare-single/1435619621?app=itunes&ls=1",
+        "apple": "https://music.apple.com/us/album/glare-single/1435619621?app=music&ls=1",
+        "deezer": "https://www.deezer.com/en/album/72607692",
+        "tidal": "https://tidal.com/browse/album/94756567",
+        "netease": "https://music.163.com/#/song?id=1325712267"
+      }
+    }
   },
   "heartbeat": {
     "artists": "Dimatis",
@@ -1080,7 +1610,22 @@
     "person": ["Dimatis"],
     "mm": 4,
     "ss": 58,
-    "dropbox": "tdim6e3nhecoocd"
+    "dropbox": "tdim6e3nhecoocd",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/album/1DrIfVyeglx7vTnyV4BZW3",
+        "soundcloud": "https://soundcloud.com/dimatis/heartbeat",
+        "youtube": "https://youtu.be/gxJnzT_NmBA",
+        "itunes": "https://music.apple.com/us/album/heartbeat-single/1436304315?app=itunes&ls=1",
+        "apple": "https://music.apple.com/us/album/heartbeat-single/1436304315?app=music&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/track/heartbeat",
+        "deezer": "https://www.deezer.com/en/album/73276542",
+        "tidal": "https://tidal.com/browse/album/95261526",
+        "netease": "https://music.163.com/#/song?id=1313102206"
+      }
+    }
   },
   "moonlit-lover": {
     "artists": "Dimatis",
@@ -1092,7 +1637,22 @@
     "mm": 3,
     "ss": 29,
     "album": "Moonlit Lover",
-    "dropbox": "mlzci8p3iwhhiul"
+    "dropbox": "mlzci8p3iwhhiul",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/album/4TwwRWl2V2ikOClr3OTVPM",
+        "soundcloud": "https://soundcloud.com/dimatis/sets/moonlit-lover",
+        "youtube": "https://youtu.be/BFq5JiH7_IY",
+        "itunes": "https://music.apple.com/us/album/moonlit-lover-single/1420477130?app=itunes&ls=1",
+        "apple": "https://music.apple.com/us/album/moonlit-lover-single/1420477130?app=music&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/album/moonlit-lover",
+        "deezer": "https://www.deezer.com/en/album/69678032",
+        "tidal": "https://tidal.com/browse/album/92951077",
+        "netease": "https://music.163.com/#/album?id=72072004"
+      }
+    }
   },
   "moonlit-lover-piano": {
     "artists": "Dimatis",
@@ -1105,7 +1665,22 @@
     "ss": 17,
     "album": "Moonlit Lover",
     "style": "moonlit-lover",
-    "dropbox": "96125slijetbbg1"
+    "dropbox": "96125slijetbbg1",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/track/63GFEMzDbE81y1ZJ9gLfCl",
+        "soundcloud": "https://soundcloud.com/dimatis/moonlit-lover-piano-version",
+        "youtube": "https://youtu.be/o8GjX9sYwDc",
+        "itunes": "https://music.apple.com/us/album/moonlit-lover-piano-version/1420477130?i=1420477134&app=itunes&ls=1",
+        "apple": "https://music.apple.com/us/album/moonlit-lover-piano-version/1420477130?i=1420477134&app=music&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/album/moonlit-lover",
+        "deezer": "https://www.deezer.com/en/album/69678032",
+        "tidal": "https://tidal.com/browse/track/92951079",
+        "netease": "https://music.163.com/#/song?id=1299557164"
+      }
+    }
   },
   "bliss": {
     "artists": "Dimatis",
@@ -1116,7 +1691,21 @@
     "person": ["Dimatis"],
     "mm": 4,
     "ss": 0,
-    "dropbox": "riy9h0kcu5xuvfm"
+    "dropbox": "riy9h0kcu5xuvfm",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/album/14LRUD8JBgrv882oPmxOuY",
+        "soundcloud": "https://soundcloud.com/dimatis/bliss",
+        "youtube": "https://youtu.be/fgPz0_5Dahk",
+        "itunes": "https://music.apple.com/us/album/bliss-single/1411351875?app=itunes&ls=1",
+        "apple": "https://music.apple.com/us/album/bliss-single/1411351875?app=music&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/track/bliss",
+        "tidal": "https://tidal.com/browse/album/110267114",
+        "netease": "https://music.163.com/#/album?id=71614399"
+      }
+    }
   },
   "timeline-bayza-remix": {
     "artists": "Dimatis",
@@ -1128,7 +1717,20 @@
     "mm": 4,
     "ss": 56,
     "style": "timeline",
-    "dropbox": "rpc1gjfufyntwic"
+    "dropbox": "rpc1gjfufyntwic",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/album/5Xc0NwsGi1S1qej2IHrI8a",
+        "soundcloud": "https://soundcloud.com/bayza/dimatis-timeline-bayza-remix",
+        "youtube": "https://youtu.be/gueXauiEUkM",
+        "itunes": "https://music.apple.com/us/album/timeline-bayza-remix-single/1397416546?app=itunes&ls=1",
+        "apple": "https://music.apple.com/us/album/timeline-bayza-remix-single/1397416546?app=music&ls=1",
+        "deezer": "https://www.deezer.com/en/album/65694812",
+        "tidal": "https://tidal.com/browse/album/90324719"
+      }
+    }
   },
   "seeker": {
     "artists": "Dimatis",
@@ -1139,7 +1741,22 @@
     "person": ["Dimatis"],
     "mm": 4,
     "ss": 44,
-    "dropbox": "91tlorbzv82m5fc"
+    "dropbox": "91tlorbzv82m5fc",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/album/6yCpIKVIVL0SxnrgPwOAx9",
+        "soundcloud": "https://soundcloud.com/dimatis/seeker",
+        "youtube": "https://youtu.be/5gjABvcj72Y",
+        "itunes": "https://music.apple.com/us/album/seeker-single/1383932798?app=itunes&ls=1",
+        "apple": "https://music.apple.com/us/album/seeker-single/1383932798?app=music&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/track/seeker",
+        "deezer": "https://www.deezer.com/en/album/63457002",
+        "tidal": "https://tidal.com/browse/album/89005779",
+        "netease": "https://music.163.com/#/song?id=865048407"
+      }
+    }
   },
   "the-dream": {
     "artists": "Dimatis",
@@ -1150,7 +1767,22 @@
     "person": ["Dimatis"],
     "mm": 4,
     "ss": 15,
-    "dropbox": "qlgoxibcqk6gjlx"
+    "dropbox": "qlgoxibcqk6gjlx",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/album/6yCpIKVIVL0SxnrgPwOAx9",
+        "soundcloud": "https://soundcloud.com/dimatis/the-dream",
+        "youtube": "https://youtu.be/8k4ABl-wfhk",
+        "itunes": "https://music.apple.com/us/album/the-dream-single/1365144867?app=itunes&ls=1",
+        "apple": "https://music.apple.com/us/album/the-dream-single/1365144867?app=music&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/track/the-dream",
+        "deezer": "https://www.deezer.com/en/album/60645482",
+        "tidal": "https://tidal.com/browse/album/86598183",
+        "netease": "https://music.163.com/#/song?id=557584251"
+      }
+    }
   },
   "timeline": {
     "artists": "Dimatis",
@@ -1161,7 +1793,21 @@
     "person": ["Dimatis"],
     "mm": 3,
     "ss": 31,
-    "dropbox": "97453y1fsnug4d7"
+    "dropbox": "97453y1fsnug4d7",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/album/6ECkaPXN7CyhwePY3cF7FA",
+        "soundcloud": "https://soundcloud.com/dimatis/timeline",
+        "youtube": "https://youtu.be/0SlNMpZ-yV0",
+        "itunes": "https://music.apple.com/us/album/timeline-single/1358639824?app=itunes&ls=1",
+        "apple": "https://music.apple.com/us/album/timeline-single/1358639824?app=music&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/track/timeline",
+        "deezer": "https://www.deezer.com/en/album/58941952",
+        "tidal": "https://tidal.com/browse/album/85873410"
+      }
+    }
   },
   "vicious-mind-instrumental": {
     "artists": "Dimatis",
@@ -1173,7 +1819,19 @@
     "mm": 3,
     "ss": 15,
     "cover": "vicious-mind",
-    "dropbox": "hgmjmpe18qturhu"
+    "dropbox": "hgmjmpe18qturhu",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/album/1i74mF4gmeAx45bGKb2X75",
+        "youtube": "https://youtu.be/tSUYZHhpSIw",
+        "itunes": "https://music.apple.com/us/album/vicious-mind-instrumental-single/1363070591?app=itunes&ls=1",
+        "apple": "https://music.apple.com/us/album/vicious-mind-instrumental-single/1363070591?app=music&ls=1",
+        "deezer": "https://www.deezer.com/en/album/59660982",
+        "tidal": "https://tidal.com/browse/album/86362384"
+      }
+    }
   },
   "among-us": {
     "artists": "Dimatis",
@@ -1184,7 +1842,20 @@
     "person": ["Dimatis"],
     "mm": 4,
     "ss": 11,
-    "dropbox": "awpas9yhhtqtjt1"
+    "dropbox": "awpas9yhhtqtjt1",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/album/6yCpIKVIVL0SxnrgPwOAx9",
+        "soundcloud": "https://soundcloud.com/dimatis/among-us",
+        "youtube": "https://youtu.be/cmmMTc2Usyk",
+        "bandcamp": "https://dimatis.bandcamp.com/track/among-us",
+        "deezer": "https://www.deezer.com/en/album/55105402",
+        "tidal": "https://tidal.com/browse/album/83439793",
+        "netease": "https://music.163.com/#/song?id=534540264"
+      }
+    }
   },
   "breathe": {
     "artists": "Dimatis",
@@ -1195,7 +1866,19 @@
     "person": ["Dimatis"],
     "mm": 4,
     "ss": 3,
-    "dropbox": "mpgrk418kftusr2"
+    "dropbox": "mpgrk418kftusr2",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/album/7leXtgsgL7wUS64PC072b2",
+        "soundcloud": "https://soundcloud.com/dimatis/breathe",
+        "youtube": "https://youtu.be/DeciHtH9BDE",
+        "itunes": "https://music.apple.com/us/album/breathe-single/1297213023?app=itunes&ls=1",
+        "apple": "https://music.apple.com/us/album/breathe-single/1297213023?app=music&ls=1",
+        "tidal": "https://tidal.com/browse/album/80288586"
+      }
+    }
   },
   "fanciful": {
     "artists": "Dimatis",
@@ -1206,7 +1889,21 @@
     "person": ["Dimatis"],
     "mm": 4,
     "ss": 36,
-    "dropbox": "ohbabojqeewc19m"
+    "dropbox": "ohbabojqeewc19m",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/album/59d1PDGIfY4BsZTXRiPuzK",
+        "soundcloud": "https://soundcloud.com/dimatis/fanciful",
+        "youtube": "https://youtu.be/Ba7eykBZGk4",
+        "itunes": "https://music.apple.com/us/album/fanciful-single/1217879752?app=itunes&ls=1",
+        "apple": "https://music.apple.com/us/album/fanciful-single/1217879752?app=music&ls=1",
+        "deezer": "https://www.deezer.com/en/album/15777810",
+        "tidal": "https://tidal.com/album/72194446",
+        "netease": "https://music.163.com/#/album?id=35292811"
+      }
+    }
   },
   "white-dwarf": {
     "artists": "Dimatis",
@@ -1217,7 +1914,21 @@
     "person": ["Dimatis"],
     "mm": 4,
     "ss": 10,
-    "dropbox": "d3ci2sqoel30g9h"
+    "dropbox": "d3ci2sqoel30g9h",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/album/2KNrdUiqwoetdqO4Wv9b4I",
+        "soundcloud": "https://soundcloud.com/dimatis/white-dwarf",
+        "youtube": "https://youtu.be/9RHufVESKA8",
+        "itunes": "https://music.apple.com/us/album/white-dwarf-single/1185495179?app=itunes&ls=1",
+        "apple": "https://music.apple.com/us/album/white-dwarf-single/1185495179?app=music&ls=1",
+        "deezer": "https://www.deezer.com/album/15169833",
+        "tidal": "https://tidal.com/browse/album/68610029",
+        "netease": "https://music.163.com/#/song?id=1400110246"
+      }
+    }
   },
   "magical-forest": {
     "artists": "Dimatis",
@@ -1228,6 +1939,19 @@
     "person": ["Dimatis"],
     "mm": 5,
     "ss": 32,
-    "dropbox": "6qpvdrue96wpd36"
+    "dropbox": "6qpvdrue96wpd36",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/album/6F7bUDhQiABzfsxqGZOEBZ",
+        "soundcloud": "https://soundcloud.com/dimatis/magical-forest",
+        "youtube": "https://youtu.be/nSxzTmQPbhY",
+        "itunes": "https://music.apple.com/us/album/magical-forest-single/1219239274?app=itunes&ls=1",
+        "apple": "https://music.apple.com/us/album/magical-forest-single/1219239274?app=music&ls=1",
+        "deezer": "https://www.deezer.com/en/album/15777454",
+        "tidal": "https://tidal.com/browse/album/72198675"
+      }
+    }
   }
 }
