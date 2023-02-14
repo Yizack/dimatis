@@ -29,6 +29,7 @@
     "type": "Album",
     "date": "2020-01-24T00:00:00.000",
     "person": ["Dimatis"],
+    "dropbox": "zavkl5ker5tee7o",
     "fanlink": {
       "download": true,
       "dark": false,
@@ -60,6 +61,7 @@
     "type": "EP",
     "date": "2019-01-28T00:00:00.000",
     "person": ["Dimatis"],
+    "dropbox": "sngt6ihi0dzlw20",
     "fanlink": {
       "download": true,
       "dark": false,
