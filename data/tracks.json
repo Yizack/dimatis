@@ -1428,7 +1428,6 @@
     "mm": 3,
     "ss": 48,
     "album": "Floating",
-    "style": "floating-ep",
     "dropbox": "czod1finz8lwe16",
     "fanlink": {
       "download": true,
@@ -1456,7 +1455,6 @@
     "mm": 3,
     "ss": 18,
     "album": "Floating",
-    "style": "floating-ep",
     "dropbox": "vu7yaqx1pwqlyk9",
     "fanlink": {
       "download": true,
@@ -1484,7 +1482,6 @@
     "mm": 3,
     "ss": 18,
     "album": "Floating",
-    "style": "floating-ep",
     "dropbox": "o8fepftcbsgpifd",
     "fanlink": {
       "download": true,
@@ -1512,7 +1509,6 @@
     "mm": 3,
     "ss": 25,
     "album": "Floating",
-    "style": "floating-ep",
     "dropbox": "0y06fnks3iq2qv5",
     "fanlink": {
       "download": true,
@@ -1664,7 +1660,6 @@
     "mm": 4,
     "ss": 17,
     "album": "Moonlit Lover",
-    "style": "moonlit-lover",
     "dropbox": "96125slijetbbg1",
     "fanlink": {
       "download": true,
@@ -1716,7 +1711,6 @@
     "person": ["Dimatis"],
     "mm": 4,
     "ss": 56,
-    "style": "timeline",
     "dropbox": "rpc1gjfufyntwic",
     "fanlink": {
       "download": true,
