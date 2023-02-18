@@ -1,6 +1,6 @@
 {
   "rules": {
-    "declaration-block-trailing-semicolon": "never",
+    "declaration-block-trailing-semicolon": "always",
     "declaration-bang-space-after": "never",
     "block-opening-brace-space-before": "always",
     "string-quotes": "double",

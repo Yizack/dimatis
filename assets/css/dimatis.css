@@ -7,174 +7,174 @@
     --font: "Roboto", sans-serif;
     scrollbar-color: var(--white-color) var(--dark-color);
     scrollbar-width: thin !important;
-    scroll-behavior: unset
+    scroll-behavior: unset;
 }
 
 html {
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 
 body {
-    font-family: var(--font)
+    font-family: var(--font);
 }
 
 .text-white {
-    color: var(--white-color)
+    color: var(--white-color);
 }
 
 .bg-dark {
-    background-color: var(--dark-color)!important
+    background-color: var(--dark-color)!important;
 }
 
 .bg-white {
-    background-color: var(--white-color)!important
+    background-color: var(--white-color)!important;
 }
 
 .text-dark {
-    color: var(--dark-color)!important
+    color: var(--dark-color)!important;
 }
 
 .text-secondary {
-    color: var(--secondary-text-color)!important
+    color: var(--secondary-text-color)!important;
 }
 
 .bg-secondary {
-    background-color: var(--secondary-bg-color)!important
+    background-color: var(--secondary-bg-color)!important;
 }
 
 .bg-dark a, .bg-dark a:hover {
-    color: var(--white-color)
+    color: var(--white-color);
 }
 
 .bg-light a, .bg-light a:hover {
-    color: var(--dark-color)
+    color: var(--dark-color);
 }
 
 .btn-outline-dark {
     color: var(--dark-color);
-    border-color: var(--dark-color)
+    border-color: var(--dark-color);
 }
 
 .btn-outline-dark:hover {
     color: var(--white-color)!important;
     border-color: var(--white-color);
-    background: var(--dark-color)
+    background: var(--dark-color);
 }
 
 .btn-outline-white {
     color: var(--white-color);
-    border-color: var(--white-color)
+    border-color: var(--white-color);
 }
 
 .btn-outline-white:hover {
     color: var(--dark-color)!important;
     border-color: var(--white-color);
-    background: var(--white-color)
+    background: var(--white-color);
 }
 
 .tag a, .tag {
-    color: var(--secondary-text-color)!important
+    color: var(--secondary-text-color)!important;
 }
 
 .tag a:hover, .tag:hover {
-    color: var(--white-color)!important
+    color: var(--white-color)!important;
 }
 
 ul.alt li {
     border-bottom: solid 1px var(--muted-color);
-    padding: 0.5rem 0
+    padding: 0.5rem 0;
 }
 
 ul.alt {
     list-style: none;
-    padding-left: 0
+    padding-left: 0;
 }
 
 ul.contact li {
-    padding: 0.5rem 0
+    padding: 0.5rem 0;
 }
 
 ul.contact {
     list-style: none;
-    padding-left: 0
+    padding-left: 0;
 }
 
 ul.icons {
     list-style: none;
     padding-left: 0;
-    font-size: 1.4rem
+    font-size: 1.4rem;
 }
 
 ul.icons li {
-    display: inline-block
+    display: inline-block;
 }
 
 footer .icons a {
-    color: var(--secondary-text-color)
+    color: var(--secondary-text-color);
 }
   
 footer .spotify a:hover {
     color: #1db954;
-    text-decoration: none
+    text-decoration: none;
 }
   
 footer .soundcloud a:hover {
     color: #F26E23;
-    text-decoration: none
+    text-decoration: none;
 }
   
 footer .youtube a:hover {
     color: #ff0000;
-    text-decoration: none
+    text-decoration: none;
 }
   
 footer .twitter a:hover {
     color: #1da1f2;
-    text-decoration: none
+    text-decoration: none;
 }
   
 footer .facebook a:hover {
     color: #0165E1;
-    text-decoration: none
+    text-decoration: none;
 }
   
 footer .instagram a:hover {
     color: #833ab4;
-    text-decoration: none
+    text-decoration: none;
 }
 
 .table {
-    margin: 0
+    margin: 0;
 }
 
 .table th {
     border-top: none;
     border-color: var(--secondary-text-color);
-    font-weight: normal
+    font-weight: normal;
 }
 
 tbody tr:hover {
     background: var(--secondary-bg-color);
-    color: var(--white-color)
+    color: var(--white-color);
 }
 
 .table td {
     border-color: var(--secondary-text-color);
     border-width: 0;
     padding-left: 1rem;
-    padding-right: 1rem
+    padding-right: 1rem;
 }
 
 .table th {
-    padding: 1rem
+    padding: 1rem;
 }
 
 iframe {
-    border: none
+    border: none;
 }
 
 iframe.instagram-media.instagram-media-rendered {
-    max-height: 1000px
+    max-height: 1000px;
 }
 
 :target:before {
@@ -182,7 +182,7 @@ iframe.instagram-media.instagram-media-rendered {
     display: block;
     height: 75px;
     margin-top: -75px;
-    visibility: hidden
+    visibility: hidden;
 }
 
 #banner {
@@ -190,63 +190,67 @@ iframe.instagram-media.instagram-media-rendered {
     background-size: auto;
     background-repeat: no-repeat;
     background-position-x: center;
-    background-position-y: top
+    background-position-y: top;
 }
 
 .scale-on-hover:hover {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
-    box-shadow: 0 10px 10px rgba(0,0,0,.15)!important
+    box-shadow: 0 10px 10px rgba(0,0,0,.15)!important;
 }
 
 .scale-on-hover {
-    transition: transform .2s ease-in-out
+    transition: transform .2s ease-in-out;
 }
 
 a {
-    text-decoration: none
+    text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline
+    text-decoration: underline;
 }
 
-::-webkit-scrollbar {
-    width: 10px
+*::-webkit-scrollbar {
+    width: 16px;
 }
 
-::-webkit-scrollbar-track {
-    background: var(--dark-color)
+*::-webkit-scrollbar-track {
+    border-radius: 8px;
 }
 
-::-webkit-scrollbar-thumb {
-    background: var(--white-color) 
+*::-webkit-scrollbar-thumb {
+    height: 56px;
+    border-radius: 8px;
+    border: 4px solid transparent;
+    background-clip: content-box;
+    background-color: var(--white-color);
 }
 
-::-webkit-scrollbar-thumb:hover {
-    background: var(--white-color) 
+*::-webkit-scrollbar-thumb:hover {
+    background-color: var(--white-color);
 }
 
 
 #follow_spotify:hover {
-    text-decoration: none!important
+    text-decoration: none!important;
 }
 
 #follow_spotify:hover #spotify_button {
-    background: #1fad49
+    background: #1fad49;
 }
 
 #follow_spotify #spotify_button {
-    background: #2cbe58
+    background: #2cbe58;
 }
 
 #follow_spotify:hover #spotify_followers {
-    text-decoration: underline!important
+    text-decoration: underline!important;
 }
 
 ::selection {
     background: #292929!important;
-    color: var(--white-color)!important
+    color: var(--white-color)!important;
 }
 
 .loading-page {
@@ -254,22 +258,22 @@ a:hover {
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
 }
 
 .credits p {
     white-space: nowrap; 
     overflow: hidden;
-    text-overflow: ellipsis 
+    text-overflow: ellipsis; 
 }
 
 .nav li a, .nav li a:focus {
-    color: var(--dark-color)
+    color: var(--dark-color);
 }
 
 .album-image {
     position: relative;
-    z-index: 1
+    z-index: 1;
 }
 
 .album-image-blurry {
@@ -280,9 +284,9 @@ a:hover {
     z-index: 0;
     width: 300px;
     height: 300px;
-    background-size: contain!important
+    background-size: contain!important;
 }
 
 .pre-line {
-    white-space: pre-line
+    white-space: pre-line;
 }
