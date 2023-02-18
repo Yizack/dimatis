@@ -6,7 +6,7 @@
     --muted-color: #ddd;
     --font: "Roboto", sans-serif;
     scrollbar-color: var(--white-color) var(--dark-color);
-    scrollbar-width: thin !important;
+    scrollbar-width: auto;
     scroll-behavior: unset;
 }
 
