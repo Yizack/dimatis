@@ -55,7 +55,7 @@ definePageMeta({ layout: "site" });
               <div class="mb-0">Duration</div>  
               <div class="tag mb-2">{{ track.mm }}:{{ String(track.ss).padStart(2, "0") }}</div>
               <div class="mb-0">Fanlink</div>
-              <div class="tag"><a :href="`https://yizack.com/${param}`" target="_blank">yizack.com/{{ param }}<FontAwesomeIcon class="ms-2" :icon="faArrowUpRightFromSquare"/></a></div>
+              <div class="tag"><a :href="`https://yizack.com/${param}/`" target="_blank">yizack.com/{{ param }}<FontAwesomeIcon class="ms-2" :icon="faArrowUpRightFromSquare"/></a></div>
             </div>
           </div>
         </div>
