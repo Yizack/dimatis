@@ -3,7 +3,9 @@
     <div class="box">
       <div class="controls">
         <div class="lecteur">
-          <audio ref="audio" class="music fc-media" />
+          <audio ref="audio" class="music fc-media">
+            <source :src="`https://www.dropbox.com/s/dl/${track.dropbox}`" type="audio/mpeg">
+          </audio>
         </div>
       </div>
       <div class="cover">
@@ -43,7 +45,7 @@ export default {
   },
   mounted () {
     const media = this.$refs.audio;
-    const mediaElement = new MediaElementPlayer(media, {
+    (() => new MediaElementPlayer(media, {
       iconSprite: "",
       audioHeight: 40,
       features: ["playpause", "current", "duration", "progress", "volume", "tracks", "fullscreen"],
@@ -52,8 +54,7 @@ export default {
       iPadUseNativeControls: false,
       iPhoneUseNativeControls: false,
       AndroidUseNativeControls: false
-    });
-    mediaElement.setSrc(`https://www.dropbox.com/s/dl/${this.track.dropbox}`, "audio/mpeg");
+    }))();
   }
 };
 </script>
