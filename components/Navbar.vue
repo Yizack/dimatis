@@ -1,15 +1,11 @@
-<script setup>
-import { SITE } from "~/site-info.js";
-</script>
-
 <template>
   <nav class="navbar navbar-expand-lg bg-light navbar-light sticky-top shadow vw-100">
     <div class="container">
-      <NuxtLink class="navbar-brand text-decoration-none" to="/"><DimatisIcon width="28" height="24" fill="#151515"/>{{ SITE.name }}</NuxtLink>
+      <NuxtLink class="navbar-brand text-decoration-none" to="/"><DimatisIcon width="28" height="24" fill="#151515" />{{ SITE.name }}</NuxtLink>
       <button class="navbar-toggler rounded-pill" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon" />
       </button>
-      <div ref="nav" class="collapse navbar-collapse justify-content-end" id="nav">
+      <div id="nav" ref="nav" class="collapse navbar-collapse justify-content-end">
         <ul class="nav navbar-nav ml-auto" role="menu" @click="collapseNav()">
           <li class="nav-item pe-3" role="menuitem">
             <NuxtLink class="nav-link" to="/">Home</NuxtLink>
@@ -37,14 +33,14 @@ import { SITE } from "~/site-info.js";
 <script>
 export default {
   name: "NavbarComponent",
-  data() {
+  data () {
     return {
       path: this.$route.path
     };
   },
   methods: {
-    collapseNav() {
-      const nav = this.$refs.nav; 
+    collapseNav () {
+      const nav = this.$refs.nav;
       if (nav.classList.contains("show")) {
         const bsCollapse = new this.$nuxt.$Collapse(nav);
         bsCollapse.toggle();

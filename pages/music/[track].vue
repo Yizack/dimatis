@@ -1,7 +1,4 @@
 <script setup>
-import { SITE } from "~/site-info.js";
-import tracksJSON from "~/public/data/tracks.json";
-import lyricsJSON from "~/public/data/lyrics.json";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 definePageMeta({ layout: "site" });
@@ -15,7 +12,7 @@ definePageMeta({ layout: "site" });
           <h1 class="mb-1">{{ track.title }}</h1>
           <h3 class="text-secondary mb-0">{{ track.artists }}</h3>
         </div>
-        <MusicPlayer class="rounded-3" :size="{height: '450px', width: '100%'}" :track="track" :param="param"/>
+        <MusicPlayer class="rounded-3" :size="{height: '450px', width: '100%'}" :track="track" :param="param" />
         <div class="row my-3 mx-0 bg-secondary rounded p-3">
           <div class="col-12 col-md-8 mb-3 mb-md-0 text-secondary p-0">
             <div class="description">
@@ -52,20 +49,20 @@ definePageMeta({ layout: "site" });
               </template>
               <div class="mb-0">Release date</div>
               <div class="tag mb-2">{{ new Date(track.date).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" }) }}</div>
-              <div class="mb-0">Duration</div>  
+              <div class="mb-0">Duration</div>
               <div class="tag mb-2">{{ track.mm }}:{{ String(track.ss).padStart(2, "0") }}</div>
               <div class="mb-0">Fanlink</div>
-              <div class="tag"><a :href="`https://yizack.com/${param}/`" target="_blank">yizack.com/{{ param }}<FontAwesomeIcon class="ms-2" :icon="faArrowUpRightFromSquare"/></a></div>
+              <div class="tag"><a :href="`https://yizack.com/${param}/`" target="_blank">yizack.com/{{ param }}<FontAwesomeIcon class="ms-2" :icon="faArrowUpRightFromSquare" /></a></div>
             </div>
           </div>
         </div>
         <div id="more-tracks" class="pt-3">
-          <h3 class="text-center">More <NuxtLink  class="tag" :href="`/tag/${genreURL}/`">{{ track.genre }}</NuxtLink> music</h3>
+          <h3 class="text-center">More <NuxtLink class="tag" :href="`/tag/${genreURL}/`">{{ track.genre }}</NuxtLink> music</h3>
           <div class="row gallery text-center">
             <template v-for="(more, more_param) in moreTracks" :key="more_param">
               <div class="col-6 col-lg-3">
                 <NuxtLink :to="`/music/${more_param}/`">
-                 <img class="img-fluid scale-on-hover rounded-3" :src="`/images/${'cover' in more ? more.cover : more_param}.jpg`" :alt="`${more.artists} - ${more.title}`">
+                  <img class="img-fluid scale-on-hover rounded-3" :src="`/images/${'cover' in more ? more.cover : more_param}.jpg`" :alt="`${more.artists} - ${more.title}`">
                   <p class="mt-2 mb-0">{{ more.title }}</p>
                   <p><small>{{ more.artists }}</small></p>
                 </NuxtLink>
@@ -80,63 +77,62 @@ definePageMeta({ layout: "site" });
 
 <script>
 export default {
-  props: ["loading"],
   name: "TrackPage",
-  data() {
+  data () {
     return {
-      param: this.$route.params.track,
-      tracks: tracksJSON,
-      lyrics: lyricsJSON
+      param: this.$route.params.track
     };
   },
   computed: {
-    track() {
-      return this.tracks[this.param] || {};
+    track () {
+      return tracks[this.param] || {};
     },
-    genreURL() {
+    genreURL () {
       return this.track.genre.replace(/\s+/g, "-").toLowerCase();
     },
-    lyric() {
-      return this.lyrics[this.param]?.lyrics;
+    lyric () {
+      return lyrics[this.param]?.lyrics;
     },
-    moreTracks() {
-      return Object.entries(this.tracks).reduce((obj, [key, value]) => {
+    moreTracks () {
+      return Object.entries(tracks).reduce((obj, [key, value]) => {
         if (value.genre === this.track.genre && Object.keys(obj).length < 8 && !key.includes(this.param)) {
           obj[key] = value;
         }
         return obj;
       }, {});
     },
-    SEO() {
-      const schemaOrg = {   
-        "@context" : "http://schema.org",
-        "@type" : "MusicRecording",
-        "name" : this.track.title,
-        "url" : `${SITE.url}/music/${this.param}`,
-        "image" : `${SITE.url}/images/${"cover" in this.track ? this.track.cover : this.param}.jpg`,
-        "genre" : this.track.genre,
-        "duration" : `PT${"hh" in this.track ? this.track.hh : 0}H${"mm" in this.track ? this.track.mm : 0}M${"ss" in this.track ? this.track.ss : 0}S`,
-        "datePublished": this.track.date.split("T")[0],
-        "byArtist": []
+    SEO () {
+      const schemaOrg = {
+        "@context": "http://schema.org",
+        "@type": "MusicRecording",
+        name: this.track.title,
+        url: `${SITE.url}/music/${this.param}`,
+        image: `${SITE.url}/images/${"cover" in this.track ? this.track.cover : this.param}.jpg`,
+        genre: this.track.genre,
+        duration: `PT${"hh" in this.track ? this.track.hh : 0}H${"mm" in this.track ? this.track.mm : 0}M${"ss" in this.track ? this.track.ss : 0}S`,
+        datePublished: this.track.date.split("T")[0],
+        byArtist: []
       };
 
-      "album" in this.track ? schemaOrg.inAlbum = [{
-        "@type": "MusicAlbum",
-        "name": this.track.album,
-        "url": `${SITE.url}/album/${this.track.album.replace(/\s+/g, "-").toLowerCase()}` 
-      }] : null;
+      if ("album" in this.track) {
+        schemaOrg.inAlbum = [{
+          "@type": "MusicAlbum",
+          name: this.track.album,
+          url: `${SITE.url}/album/${this.track.album.replace(/\s+/g, "-").toLowerCase()}`
+        }];
+      }
 
       this.track.person.forEach((person) => {
         schemaOrg.byArtist.push({
           "@type": "MusicGroup",
-          "name": person
+          name: person
         });
       });
 
       return JSON.stringify(schemaOrg);
     }
   },
-  created() {
+  created () {
     useHead({
       title: `${this.track.artists} - ${this.track.title}`,
       meta: [

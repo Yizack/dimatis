@@ -1,7 +1,3 @@
-<script setup>
-import { SITE } from "~/site-info.js";
-</script>
-
 <template>
   <section id="banner">
     <div class="text-center py-5">

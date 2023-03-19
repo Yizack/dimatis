@@ -1,6 +1,4 @@
 <script setup>
-import { SITE } from "~/site-info.js";
-import tracksJSON from "~/public/data/tracks.json";
 definePageMeta({ layout: "site" });
 </script>
 
@@ -12,29 +10,29 @@ definePageMeta({ layout: "site" });
         <p>Listen to all my music in this genre</p>
         <div class="row my-4">
           <template v-for="(track, param) in latestTracks" :key="param">
-          <div class="col-12 col-lg-4">
-            <div class="item">
-              <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{width: '300px', height: '385px'}" :track="track" :param="param"/>
-              <NuxtLink :to="`/music/${param}/`">
-                <p class="mb-0">{{ track.title }}</p>
-                <p><small>{{ track.artists }}</small></p>
-              </NuxtLink>
+            <div class="col-12 col-lg-4">
+              <div class="item">
+                <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{width: '300px', height: '385px'}" :track="track" :param="param" />
+                <NuxtLink :to="`/music/${param}/`">
+                  <p class="mb-0">{{ track.title }}</p>
+                  <p><small>{{ track.artists }}</small></p>
+                </NuxtLink>
+              </div>
             </div>
-          </div>
-        </template>
-        <template v-for="(track, param) in moreTracks" :key="param">
-          <div class="col-12 col-lg-4" v-if="showMore">
-            <div class="item">
-              <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{width: '300px', height: '385px'}" :track="track" :param="param"/>
-              <NuxtLink :to="`/music/${param}/`">
-                <p class="mb-0">{{ track.title }}</p>
-                <p><small>{{ track.artists }}</small></p>
-              </NuxtLink>
+          </template>
+          <template v-for="(track, param) in moreTracks" :key="param">
+            <div v-if="showMore" class="col-12 col-lg-4">
+              <div class="item">
+                <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{width: '300px', height: '385px'}" :track="track" :param="param" />
+                <NuxtLink :to="`/music/${param}/`">
+                  <p class="mb-0">{{ track.title }}</p>
+                  <p><small>{{ track.artists }}</small></p>
+                </NuxtLink>
+              </div>
             </div>
-          </div>
-        </template>
+          </template>
         </div>
-        <div class="text-uppercase" v-if="!showMore && Object.keys(moreTracks).length">
+        <div v-if="!showMore && Object.keys(moreTracks).length" class="text-uppercase">
           <a class="btn btn-outline-white rounded-pill text-decoration-none" role="button" @click="more()">Load more</a>
         </div>
       </div>
@@ -45,58 +43,52 @@ definePageMeta({ layout: "site" });
 <script>
 export default {
   name: "TagPage",
-  data() {
+  data () {
     return {
       genreURL: this.$route.params.genre,
       genres: {
-        "bounce": "Bounce",
-        "chill": "Chill",
-        "chillstep": "Chillstep",
-        "dance": "Dance",
-        "dubstep": "Dubstep",
-        "electronic": "Electronic",
-        "electropop": "Electropop",
+        bounce: "Bounce",
+        chill: "Chill",
+        chillstep: "Chillstep",
+        dance: "Dance",
+        dubstep: "Dubstep",
+        electronic: "Electronic",
+        electropop: "Electropop",
         "future-bass": "Future Bass",
         "future-garage": "Future Garage",
         "liquid-drum-&-bass": "Liquid Drum & Bass",
         "melodic-dubstep": "Melodic Dubstep",
-        "piano": "Piano",
+        piano: "Piano"
       },
-      tracks: tracksJSON,
       showMore: false
     };
   },
-  methods: {
-    more() {
-      this.showMore = true;
-    }
-  },
   computed: {
-    genre() {
+    genre () {
       return this.genres[this.genreURL];
     },
-    allTracksGenre() {
-      return Object.entries(this.tracks).reduce((obj, [key, value]) => {
+    allTracksGenre () {
+      return Object.entries(tracks).reduce((obj, [key, value]) => {
         if (value.genre === this.genre) {
           obj[key] = value;
         }
         return obj;
       }, {});
     },
-    latestTracks() {
+    latestTracks () {
       return Object.entries(this.allTracksGenre).slice(0, 15).reduce((obj, [key, value]) => {
         obj[key] = value;
         return obj;
       }, {});
     },
-    moreTracks() {
+    moreTracks () {
       return Object.entries(this.allTracksGenre).slice(15).reduce((obj, [key, value]) => {
         obj[key] = value;
         return obj;
       }, {});
     }
   },
-  created() {
+  created () {
     useHead({
       title: `${this.genre} | ${SITE.name}`,
       meta: [
@@ -123,6 +115,11 @@ export default {
         { rel: "canonical", href: `${SITE.url}/tag/${this.genreURL}/` }
       ]
     });
+  },
+  methods: {
+    more () {
+      this.showMore = true;
+    }
   }
 };
 </script>

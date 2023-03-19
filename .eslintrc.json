@@ -1,55 +1,44 @@
 {
   "env": {
+    "browser": true,
     "node": true,
     "es2021": true,
     "jest": true
   },
   "extends": [
-    "eslint:recommended",
-    "plugin:vue/vue3-essential"
+    "@nuxtjs/eslint-config"
   ],
-  "overrides": [
-  ],
+  "overrides": [{
+    "files": ["*.vue", "*.js"],
+    "rules": {
+      "no-undef": "off"
+    }
+  }],
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "globals": {
-    "definePageMeta": "readonly",
-    "useHead": "readonly",
-    "defineNuxtPlugin": "readonly",
-    "useNuxtApp": "readonly",
-    "MediaElementPlayer": "readonly",
-    "Glide": "readonly"
-  },
-  "plugins": [
-    "vue"
-  ],
+  "plugins": ["vue"],
   "rules": {
-    "indent": [
-      "error",
-      2
-    ],
-    "linebreak-style": [
-      "error",
-      "windows"
-    ],
-    "quotes": [
-      "error",
-      "double"
-    ],
-    "semi": [
-      "error",
-      "always"
-    ],
-    "arrow-spacing": [
-      "error",
-      {
-        "before": true,
-        "after": true
-      }
-    ],
+    "indent": ["error", 2],
+    "linebreak-style": ["error", "windows"],
+    "quotes": ["error", "double"],
+    "semi": ["error", "always"],
+    "camelcase": "off",
+    "arrow-spacing": ["error", { "before": true, "after": true }],
+    "no-console": ["error", {
+      "allow": ["info", "warn"]
+    }],
+    "brace-style": ["error", "stroustrup"],
     "no-multi-spaces": "error",
-    "space-before-blocks": "error"
+    "space-before-blocks": "error",
+    "vue/first-attribute-linebreak": ["error", {
+      "singleline": "ignore", "multiline": "ignore"
+    }],
+    "vue/max-attributes-per-line": ["error", {
+      "singleline": 100
+    }],
+    "vue/singleline-html-element-content-newline": ["off"],
+    "vue/no-multiple-template-root": ["off"]
   }
 }

@@ -6,7 +6,7 @@ const SITE = {
     birthdate: "1998-06-15",
     country: {
       id: "https://musicbrainz.org/area/6f85633b-dff4-3fb4-babd-fb89b3628041",
-      name: "Panama",
+      name: "Panama"
     },
     province: {
       id: "https://musicbrainz.org/area/e4038ab2-0e15-4987-855a-adf4f0878645",

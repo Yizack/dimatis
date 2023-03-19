@@ -1,11 +1,9 @@
 <template>
-  <div class="player" :class="'cover' in track ? track.cover : param"  :style="[size]">
-    <div class="box">   
+  <div class="player" :class="'cover' in track ? track.cover : param" :style="[size]">
+    <div class="box">
       <div class="controls">
         <div class="lecteur">
-          <audio ref="audio" class="music fc-media">
-            <source :src="`https://www.dropbox.com/s/dl/${track.dropbox}`" type="audio/mpeg">
-          </audio>
+          <audio ref="audio" class="music fc-media" />
         </div>
       </div>
       <div class="cover">
@@ -23,30 +21,39 @@
 
 <script>
 export default {
-  props: ["size", "track", "param"],
   name: "MusicPlayer",
+  props: {
+    size: {
+      type: Object,
+      default: () => ({})
+    },
+    track: {
+      type: Object,
+      default: () => ({})
+    },
+    param: {
+      type: String,
+      default: ""
+    }
+  },
   computed: {
-    srcImage() {
+    srcImage () {
       return `/images/${"cover" in this.track ? this.track.cover : this.param}.jpg`;
     }
   },
-  methods: {
-    mediaElement() {
-      let media = this.$refs.audio;
-      new MediaElementPlayer(media, {
-        iconSprite: "",
-        audioHeight: 40,
-        features : ["playpause", "current", "duration", "progress", "volume", "tracks", "fullscreen"],
-        alwaysShowControls: true,
-        timeAndDurationSeparator: "<span></span>",
-        iPadUseNativeControls: false,
-        iPhoneUseNativeControls: false,
-        AndroidUseNativeControls: false
-      });
-    }
-  },
-  mounted() {
-    this.mediaElement();
+  mounted () {
+    const media = this.$refs.audio;
+    const mediaElement = new MediaElementPlayer(media, {
+      iconSprite: "",
+      audioHeight: 40,
+      features: ["playpause", "current", "duration", "progress", "volume", "tracks", "fullscreen"],
+      alwaysShowControls: true,
+      timeAndDurationSeparator: "<span></span>",
+      iPadUseNativeControls: false,
+      iPhoneUseNativeControls: false,
+      AndroidUseNativeControls: false
+    });
+    mediaElement.setSrc(`https://www.dropbox.com/s/dl/${this.track.dropbox}`, "audio/mpeg");
   }
 };
 </script>

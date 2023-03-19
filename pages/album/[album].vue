@@ -1,13 +1,9 @@
 <script setup>
-import { SITE } from "~/site-info.js";
-import albumsJSON from "~/public/data/albums.json";
-import tracksJSON from "~/public/data/tracks.json";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { faClock } from "@fortawesome/free-regular-svg-icons";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 definePageMeta({ layout: "site" });
 </script>
-
 
 <template>
   <main>
@@ -19,7 +15,7 @@ definePageMeta({ layout: "site" });
         </div>
         <div class="text-center my-3">
           <img :src="`/images/${album.cover}.jpg`" class="album-image rounded-3" itemprop="image" width="300" height="300">
-          <span class="album-image-blurry" :style="`background: url('/images/${album.cover}.jpg')`"></span>
+          <span class="album-image-blurry" :style="`background: url('/images/${album.cover}.jpg')`" />
         </div>
         <div class="row mx-0 my-3">
           <div class="col-12 info mx-0 p-0">
@@ -30,12 +26,12 @@ definePageMeta({ layout: "site" });
                   <th>#</th>
                   <th>Artists</th>
                   <th>Title</th>
-                  <th><FontAwesomeIcon :icon="faClock"/></th>
+                  <th><FontAwesomeIcon :icon="faClock" /></th>
                 </tr>
               </thead>
               <tbody class="text-secondary">
                 <template v-for="(track, index) in album.tracks" :key="track">
-                  <tr @click="goTrack(track)" role="button" :itemprop="track" itemscope itemtype="http://www.schema.org/MusicRecording">
+                  <tr role="button" :itemprop="track" itemscope itemtype="http://www.schema.org/MusicRecording" @click="goTrack(track)">
                     <td itemprop="position">{{ index + 1 }}</td>
                     <td itemprop="url" :content="`${SITE.url}/music/${track}`">{{ tracks[track].artists }}</td>
                     <td itemprop="name">{{ tracks[track].title }}</td>
@@ -57,7 +53,7 @@ definePageMeta({ layout: "site" });
                 <div class="mb-0">Release date</div>
                 <div class="tag mb-1" itemprop="datePublished" :content="album.date.split('T')[0]">{{ new Date(album.date).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" }) }}</div>
                 <div class="mb-0">Fanlink</div>
-                <div class="tag"><a :href="`https://yizack.com/${album.cover}/`" target="_blank">yizack.com/{{ album.cover }}<FontAwesomeIcon class="ms-2" :icon="faArrowUpRightFromSquare"/></a></div>
+                <div class="tag"><a :href="`https://yizack.com/${album.cover}/`" target="_blank">yizack.com/{{ album.cover }}<FontAwesomeIcon class="ms-2" :icon="faArrowUpRightFromSquare" /></a></div>
               </div>
             </div>
           </div>
@@ -65,13 +61,13 @@ definePageMeta({ layout: "site" });
         <div id="more-albums" class="pt-3">
           <h3 class="text-center">More <NuxtLink class="tag" href="/album/">Albums</NuxtLink></h3>
           <div class="row gallery text-center">
-            <template v-for="(album, param) in moreAlbums" :key="param">
-              <div class="col-6 col-lg-3" >
+            <template v-for="(moreAlbum, key) in moreAlbums" :key="key">
+              <div class="col-6 col-lg-3">
                 <div class="item">
-                  <NuxtLink :to="`/album/${param}/`">
-                    <img class="img-fluid scale-on-hover" :src="`/images/${album.cover}.jpg`" :alt="`${album.artists} - ${album.title} (${album.type})`">
-                    <p class="mt-2 mb-0">{{ album.title }} ({{ album.type }})</p>
-                    <p><small>{{ album.artists }}</small></p>
+                  <NuxtLink :to="`/album/${key}/`">
+                    <img class="img-fluid scale-on-hover" :src="`/images/${moreAlbum.cover}.jpg`" :alt="`${moreAlbum.artists} - ${moreAlbum.title} (${moreAlbum.type})`">
+                    <p class="mt-2 mb-0">{{ moreAlbum.title }} ({{ moreAlbum.type }})</p>
+                    <p><small>{{ moreAlbum.artists }}</small></p>
                   </NuxtLink>
                 </div>
               </div>
@@ -86,24 +82,17 @@ definePageMeta({ layout: "site" });
 <script>
 export default {
   name: "AlbumPage",
-  data() {
+  data () {
     return {
-      param: this.$route.params.album,
-      albums: albumsJSON,
-      tracks: tracksJSON,
+      param: this.$route.params.album
     };
   },
-  methods: {
-    goTrack(track) {
-      this.$nuxt.$router.push(`/music/${track}`);
-    },
-  },
   computed: {
-    album() {
-      return this.albums[this.param] || {};
+    album () {
+      return albums[this.param] || {};
     },
-    moreAlbums() {
-      return Object.entries(this.albums).slice(0, 8).reduce((obj, [key, value]) => {
+    moreAlbums () {
+      return Object.entries(albums).slice(0, 8).reduce((obj, [key, value]) => {
         if (!key.includes(this.param)) {
           obj[key] = value;
         }
@@ -111,7 +100,7 @@ export default {
       }, {});
     }
   },
-  created() {
+  created () {
     useHead({
       title: `${this.album.artists} - ${this.album.title} (${this.album.type})`,
       meta: [
@@ -138,6 +127,11 @@ export default {
         { rel: "canonical", href: `${SITE.url}/album/${this.param}/` }
       ]
     });
+  },
+  methods: {
+    goTrack (track) {
+      this.$nuxt.$router.push(`/music/${track}`);
+    }
   }
 };
 </script>

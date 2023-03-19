@@ -10,19 +10,19 @@ export default {
         class: "bg-dark text-white"
       },
       meta: [
-        { charset: "utf-8"},
+        { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
         { name: "robots", content: "index, follow" },
         { name: "theme-color", content: "#151515" },
         { name: "msapplication-TileColor", content: "#da532c" },
-        { name: "msapplication-TileImage", content: "/icons/mstile-144x144.png" },
+        { name: "msapplication-TileImage", content: "/icons/mstile-144x144.png" }
       ],
       link: [
         { rel: "preload", as: "style", crossorigin: "anonymous", href: "https://fonts.googleapis.com/css?family=Roboto:400,300" },
         { rel: "stylesheet", crossorigin: "anonymous", href: "https://fonts.googleapis.com/css?family=Roboto:400,300" },
-        { rel: "icon", type:"image/png", sizes:"16x16", href: "/favicon-16x16.png" },
-        { rel: "icon", type:"image/png", sizes:"32x32", href: "/favicon-32x32.png" },
-        { rel: "icon", type:"image/png", sizes:"192x192", href: "/android-chrome-192x192.png" },
+        { rel: "icon", type: "image/png", sizes: "16x16", href: "/favicon-16x16.png" },
+        { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32x32.png" },
+        { rel: "icon", type: "image/png", sizes: "192x192", href: "/android-chrome-192x192.png" },
         { rel: "shortcut icon", href: "/images/dimatis-logo-1.png" },
         { rel: "apple-touch-icon", sizes: "57x57", href: "/apple-touch-icon-57x57.png" },
         { rel: "apple-touch-icon", sizes: "60x60", href: "/apple-touch-icon-60x60.png" },
@@ -45,7 +45,7 @@ export default {
     "~/assets/css/dimatis-icon.css",
     "~/assets/css/audio-player.css",
     "~/assets/css/player-styles.css",
-    "@glidejs/glide/dist/css/glide.core.min.css",
+    "@glidejs/glide/dist/css/glide.core.min.css"
   ],
   nitro: {
     crawlLinks: true,

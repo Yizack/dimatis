@@ -1,6 +1,4 @@
 <script setup>
-import { SITE } from "~/site-info.js";
-import tracksJSON from "~/public/data/tracks.json";
 definePageMeta({ layout: "site" });
 </script>
 
@@ -11,22 +9,22 @@ definePageMeta({ layout: "site" });
         <h3 class="text-uppercase">Music</h3>
         <p class="mb-0">Listen to all my music</p>
         <div class="row my-4">
-          <template v-for="(track, param) in latestTracks" :key="param">
+          <template v-for="(track, key) in latestTracks" :key="key">
             <div class="col-12 col-lg-4">
               <div class="item">
-                <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{width: '300px', height: '385px'}" :track="track" :param="param"/>
-                <NuxtLink :to="`/music/${param}/`">
+                <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{width: '300px', height: '385px'}" :track="track" :param="key" />
+                <NuxtLink :to="`/music/${key}/`">
                   <p class="mb-0">{{ track.title }}</p>
                   <p><small>{{ track.artists }}</small></p>
                 </NuxtLink>
               </div>
             </div>
           </template>
-          <template v-for="(track, param) in moreTracks" :key="param">
+          <template v-for="(track, key) in moreTracks" :key="key">
             <div class="col-12 col-lg-4" :class="{ 'd-none': !showMore }">
               <div class="item">
-                <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{width: '300px', height: '385px'}" :track="track" :param="param"/>
-                <NuxtLink :to="`/music/${param}/`">
+                <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{width: '300px', height: '385px'}" :track="track" :param="key" />
+                <NuxtLink :to="`/music/${key}/`">
                   <p class="mb-0">{{ track.title }}</p>
                   <p><small>{{ track.artists }}</small></p>
                 </NuxtLink>
@@ -34,7 +32,7 @@ definePageMeta({ layout: "site" });
             </div>
           </template>
         </div>
-        <div class="text-uppercase" v-if="!showMore && Object.keys(moreTracks).length">
+        <div v-if="!showMore && Object.keys(moreTracks).length" class="text-uppercase">
           <a class="btn btn-outline-white rounded-pill text-decoration-none" role="button" @click="more()">Load more</a>
         </div>
       </div>
@@ -45,33 +43,27 @@ definePageMeta({ layout: "site" });
 <script>
 export default {
   name: "MusicPage",
-  data() {
+  data () {
     return {
       param: this.$route.params.track,
-      tracks: tracksJSON,
       showMore: false
     };
   },
-  methods: {
-    more() {
-      this.showMore = true;
-    }
-  },
   computed: {
-    latestTracks() {
-      return Object.entries(this.tracks).slice(0, 15).reduce((obj, [key, value]) => {
+    latestTracks () {
+      return Object.entries(tracks).slice(0, 15).reduce((obj, [key, value]) => {
         obj[key] = value;
         return obj;
       }, {});
     },
-    moreTracks() {
-      return Object.entries(this.tracks).slice(15).reduce((obj, [key, value]) => {
+    moreTracks () {
+      return Object.entries(tracks).slice(15).reduce((obj, [key, value]) => {
         obj[key] = value;
         return obj;
       }, {});
     }
   },
-  created() {
+  created () {
     useHead({
       title: `Music | ${SITE.name}`,
       meta: [
@@ -98,6 +90,11 @@ export default {
         { rel: "canonical", href: `${SITE.url}/music/` }
       ]
     });
+  },
+  methods: {
+    more () {
+      this.showMore = true;
+    }
   }
 };
 </script>
