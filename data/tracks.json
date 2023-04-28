@@ -1,4 +1,33 @@
 { 
+  "sad-songs-remix": {
+    "artists": "TobeyBeats, Taca Music & Laryssa Vachon",
+    "title": "Sad Songs (Dimatis & Morva Remix)",
+    "description": "I had the pleasure to work with Morvaross remixing Sad Songs for the Stardust Records and Spotlist Network remix contest!!",
+    "genre": "Melodic Dubstep",
+    "date": "2023-04-28T00:00:00.000",
+    "person": ["Dimatis"],
+    "mm": 3,
+    "ss": 30,
+    "dropbox": "f8dv46mqp0h9qfl",
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/track/7EZHqfwHkLpYhWKBvcIVXt",
+        "soundcloud": "https://soundcloud.com/dimatis/sad-songs-remix",
+        "youtube": "https://youtu.be/PX9DbJu8Dl8",
+        "apple": "https://music.apple.com/us/album/sad-songs-dimatis-morva-remix/1666221214?i=1666221215&app=music&ls=1",
+        "itunes": "https://music.apple.com/us/album/sad-songs-dimatis-morva-remix/1666221214?i=1666221215&app=itunes&ls=1",
+        "deezer": "https://www.deezer.com/en/album/397832487",
+        "tidal": "https://tidal.com/browse/track/272105751",
+        "yandex": "",
+        "amazon": "https://www.amazon.com/dp/B0BSLC5PGL",
+        "tiktok": "",
+        "beatport": "",
+        "netease": "https://music.163.com/#/song?id=2015661690"
+      }
+    }
+  },
   "up-above": {
     "artists": "Dimatis",
     "title": "Up Above",
