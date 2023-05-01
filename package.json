@@ -13,7 +13,7 @@
     "@nuxtjs/eslint-config": "^12.0.0",
     "colorthief": "^2.4.0",
     "eslint": "^8.39.0",
-    "nuxt": "^3.4.2",
+    "nuxt": "^3.4.3",
     "stylelint": "^15.6.0"
   },
   "dependencies": {
