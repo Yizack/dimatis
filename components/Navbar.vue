@@ -42,8 +42,7 @@ export default {
     collapseNav () {
       const nav = this.$refs.nav;
       if (nav.classList.contains("show")) {
-        const bsCollapse = new this.$nuxt.$Collapse(nav);
-        bsCollapse.toggle();
+        this.$nuxt.$bootstrap.toogleCollapse(nav);
       }
     }
   }
