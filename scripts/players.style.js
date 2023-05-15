@@ -4,7 +4,7 @@ import { resolve } from "path";
 import ColorThief from "colorthief";
 
 const require = createRequire(import.meta.url);
-const tracks = require("./public/data/tracks.json");
+const tracks = require("../public/data/tracks.json");
 const styles = {};
 let css_content = "";
 Object.keys(tracks).forEach((param) => {
