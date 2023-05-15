@@ -1,5 +1,4 @@
 <script setup>
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { faClock } from "@fortawesome/free-regular-svg-icons";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 definePageMeta({ layout: "site" });
@@ -26,7 +25,7 @@ definePageMeta({ layout: "site" });
                   <th>#</th>
                   <th>Artists</th>
                   <th>Title</th>
-                  <th><FontAwesomeIcon :icon="faClock" /></th>
+                  <th><FontAwesome :icon="faClock" /></th>
                 </tr>
               </thead>
               <tbody class="text-secondary">
@@ -53,7 +52,7 @@ definePageMeta({ layout: "site" });
                 <div class="mb-0">Release date</div>
                 <div class="tag mb-1" itemprop="datePublished" :content="album.date.split('T')[0]">{{ new Date(album.date).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" }) }}</div>
                 <div class="mb-0">Fanlink</div>
-                <div class="tag"><a :href="`https://yizack.com/${album.cover}/`" target="_blank">yizack.com/{{ album.cover }}<FontAwesomeIcon class="ms-2" :icon="faArrowUpRightFromSquare" /></a></div>
+                <div class="tag"><a :href="`https://yizack.com/${album.cover}/`" target="_blank">yizack.com/{{ album.cover }}<FontAwesome class="ms-2" :icon="faArrowUpRightFromSquare" /></a></div>
               </div>
             </div>
           </div>

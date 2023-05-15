@@ -1,6 +1,4 @@
 <script setup>
-import { SITE } from "~/site-info.js";
-import albumsJSON from "~/public/data/albums.json";
 definePageMeta({ layout: "site" });
 </script>
 
@@ -31,12 +29,7 @@ definePageMeta({ layout: "site" });
 <script>
 export default {
   name: "AlbumsPage",
-  data() {
-    return {
-      albums: albumsJSON
-    };
-  },
-  created() {
+  created () {
     useHead({
       title: `Albums | ${SITE.name}`,
       meta: [

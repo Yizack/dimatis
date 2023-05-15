@@ -1,5 +1,4 @@
 <script setup>
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { faSpotify } from "@fortawesome/free-brands-svg-icons";
 </script>
 
@@ -33,7 +32,7 @@ import { faSpotify } from "@fortawesome/free-brands-svg-icons";
           <img class="img-fluid rounded-3" src="/images/dimatis-bio.jpg" :alt="`${SITE.name} photo`">
           <a id="follow_spotify" href="https://open.spotify.com/artist/0RAT9Q5WZwzJRJgTI38zJR" target="_blank" title="Follow on Spotify">
             <div class="d-flex justify-content-center mt-2">
-              <span id="spotify_button" class="rounded-pill me-2 small px-2 py-1 text-white text-uppercase"><FontAwesomeIcon :icon="faSpotify" /> Follow</span>
+              <span id="spotify_button" class="rounded-pill me-2 small px-2 py-1 text-white text-uppercase"><FontAwesome :icon="faSpotify" /> Follow</span>
               <div class="position-relative align-self-center">
                 <span class="position-absolute" style="left: -9px;">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
