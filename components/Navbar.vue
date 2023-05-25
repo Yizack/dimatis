@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg bg-light navbar-light sticky-top shadow vw-100">
+  <nav class="navbar navbar-expand-lg bg-light navbar-light sticky-top shadow">
     <div class="container">
       <NuxtLink class="navbar-brand text-decoration-none" to="/"><DimatisIcon width="28" height="24" fill="#151515" />{{ SITE.name }}</NuxtLink>
       <button class="navbar-toggler rounded-pill" type="button" data-bs-toggle="collapse" data-bs-target="#nav">

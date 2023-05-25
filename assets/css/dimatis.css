@@ -10,10 +10,6 @@
     scroll-behavior: unset;
 }
 
-html {
-    overflow-x: hidden;
-}
-
 body {
     font-family: var(--font);
 }
@@ -173,9 +169,6 @@ iframe {
     border: none;
 }
 
-iframe.instagram-media.instagram-media-rendered {
-    max-height: 1000px;
-}
 
 :target:before {
     content: "";
