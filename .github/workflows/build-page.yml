@@ -46,8 +46,8 @@ jobs:
     
     - name: Build 🏗️
       run: |
-        npm run style_players
-        npm run generate
+        pnpm style_players
+        pnpm generate
 
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4
