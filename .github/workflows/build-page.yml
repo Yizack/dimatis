@@ -9,22 +9,46 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version: [18.x]
 
     steps:
     - name: Checkout 🛎️
       uses: actions/checkout@v3
-      with:
-        persist-credentials: false
 
-    - name: Install and build 🔧
+    - name: Setup Node 🐢
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-    - run: |
-        npm ci
+    
+    - name: PNPM Setup 🟨
+      uses: pnpm/action-setup@v2
+      id: pnpm-install
+      with:
+        version: 7
+        run_install: false
+
+    - name: Get pnpm store directory 📁
+      id: pnpm-cache
+      shell: bash
+      run: |
+        echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+
+    - uses: actions/cache@v3
+      name: Setup pnpm Cache ☁️
+      with:
+        path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+        key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+        restore-keys: |
+          ${{ runner.os }}-pnpm-store-
+      
+    - name: Install Dependencies 📦
+      run: pnpm install
+    
+    - name: Build 🏗️
+      run: |
         npm run style_players
         npm run generate
+
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4
       with:
