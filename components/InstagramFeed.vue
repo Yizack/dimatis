@@ -119,15 +119,11 @@ export default {
       }, 0);
     },
     async getFeed () {
-      await fetch("https://feed-dimatis.yizack.com/").then(async (response) => {
-        const body = await response.json();
-        if ("data" in body) {
-          this.feed = body.data;
-          this.setupGlide();
-        }
-      }).catch((error) => {
-        console.warn(error);
-      });
+      const body = await $fetch("https://feed-dimatis.yizack.com/").catch(() => ({}));
+      if ("data" in body) {
+        this.feed = body.data;
+        this.setupGlide();
+      }
     }
   }
 };

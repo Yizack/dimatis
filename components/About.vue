@@ -1,5 +1,6 @@
 <script setup>
 import { faSpotify } from "@fortawesome/free-brands-svg-icons";
+const { data: spotify } = await useFetch(`https://cf-spotify.yizack.com/followers?id=${SITE.spotify_id}`);
 </script>
 
 <template>
@@ -40,12 +41,12 @@ import { faSpotify } from "@fortawesome/free-brands-svg-icons";
                   </svg>
                 </span>
                 <span id="spotify_followers" class="bg-white rounded text-dark small py-1 px-2">
-                  <span v-if="!followers" class="spinner-box">
+                  <span v-if="!spotify" class="spinner-box">
                     <span class="spinner-border text-dark" style="width:1rem; height:1rem; font-size: 0.5rem;">
                       <span class="visually-hidden">Loading...</span>
                     </span>
                   </span>
-                  <span>{{ followers }} followers</span>
+                  <span>{{ spotify.followers }} followers</span>
                 </span>
               </div>
             </div>
@@ -58,21 +59,6 @@ import { faSpotify } from "@fortawesome/free-brands-svg-icons";
 
 <script>
 export default {
-  name: "AboutComponent",
-  data () {
-    return {
-      followers: null
-    };
-  },
-  mounted () {
-    this.spotifyFollowers();
-  },
-  methods: {
-    async spotifyFollowers () {
-      const response = await fetch(`https://cf-spotify.yizack.com/followers?id=${SITE.spotify_id}`);
-      const { followers } = await response.json();
-      this.followers = followers;
-    }
-  }
+  name: "AboutComponent"
 };
 </script>
