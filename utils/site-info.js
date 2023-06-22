@@ -24,7 +24,6 @@ const SITE = {
   spotify_id: "0RAT9Q5WZwzJRJgTI38zJR",
   twitter: "dimatismusic",
   instagram: "dimatismusic",
-  instagram_feed: "https://dev.yizack.com/instagram/feeds/dimatis/feed",
   socials: {
     spotify: "https://open.spotify.com/artist/0RAT9Q5WZwzJRJgTI38zJR",
     soundcloud: "https://soundcloud.com/dimatis",
