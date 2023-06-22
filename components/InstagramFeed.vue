@@ -1,26 +1,3 @@
-<script setup>
-const { data: body } = await useFetch("https://feed-dimatis.yizack.com/");
-const feed = body.value?.data;
-onMounted(() => {
-  setTimeout(() => {
-    const { $Glide } = useNuxtApp();
-    new $Glide(".glide", {
-      perView: 3,
-      bound: true,
-      breakpoints: {
-        968: {
-          perView: 2
-        },
-        630: {
-          perView: 1
-        }
-      }
-    }).mount();
-    window.instgrm.Embeds.process();
-  }, 0);
-});
-</script>
-
 <template>
   <section id="ig-feed" class="bg-light">
     <div class="container pb-5 text-center text-dark">
@@ -111,6 +88,35 @@ onMounted(() => {
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      feed: []
+    };
+  },
+  async mounted () {
+    const { data } = await $fetch("https://feed-dimatis.yizack.com/").catch(() => ({}));
+    this.feed = data;
+    setTimeout(() => {
+      new this.$nuxt.$Glide(".glide", {
+        perView: 3,
+        bound: true,
+        breakpoints: {
+          968: {
+            perView: 2
+          },
+          630: {
+            perView: 1
+          }
+        }
+      }).mount();
+      window.instgrm.Embeds.process();
+    });
+  }
+};
+</script>
 
 <style>
   .instagram-wrapper {
