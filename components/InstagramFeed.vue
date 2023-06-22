@@ -1,3 +1,26 @@
+<script setup>
+const { data: body } = await useFetch("https://feed-dimatis.yizack.com/");
+const feed = body.value?.data;
+onMounted(() => {
+  setTimeout(() => {
+    const { $Glide } = useNuxtApp();
+    new $Glide(".glide", {
+      perView: 3,
+      bound: true,
+      breakpoints: {
+        968: {
+          perView: 2
+        },
+        630: {
+          perView: 1
+        }
+      }
+    }).mount();
+    window.instgrm.Embeds.process();
+  }, 0);
+});
+</script>
+
 <template>
   <section id="ig-feed" class="bg-light">
     <div class="container pb-5 text-center text-dark">
@@ -57,7 +80,7 @@
                           </div>
                         </a>
                         <p style="margin:8px 0 0 0; padding:0 4px; text-align: left;">
-                          <a :href="`${post.permalink}?utm_source=ig_embed&amp;utm_campaign=loading`" style="color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">{{ post.caption }}</a>
+                          <a :href="`${post.permalink}?utm_source=ig_embed&amp;utm_campaign=loading`" style="color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">{{ post.caption.replace(/\n+/g, " ").trim() }}</a>
                         </p>
                         <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
                           A post shared by
@@ -88,46 +111,6 @@
     </div>
   </section>
 </template>
-
-<script>
-export default {
-  name: "InstagramFeed",
-  data () {
-    return {
-      feed: null
-    };
-  },
-  mounted () {
-    this.getFeed();
-  },
-  methods: {
-    setupGlide () {
-      setTimeout(() => {
-        new this.$nuxt.$Glide(".glide", {
-          perView: 3,
-          bound: true,
-          breakpoints: {
-            968: {
-              perView: 2
-            },
-            630: {
-              perView: 1
-            }
-          }
-        }).mount();
-        window.instgrm.Embeds.process();
-      }, 0);
-    },
-    async getFeed () {
-      const body = await $fetch("https://feed-dimatis.yizack.com/").catch(() => ({}));
-      if ("data" in body) {
-        this.feed = body.data;
-        this.setupGlide();
-      }
-    }
-  }
-};
-</script>
 
 <style>
   .instagram-wrapper {
