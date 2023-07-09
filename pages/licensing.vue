@@ -1,5 +1,32 @@
 <script setup>
 definePageMeta({ layout: "site" });
+
+useHead({
+  title: `Licensing | ${SITE.name}`,
+  meta: [
+    { name: "keywords", content: "licensing, youtube, monetization, streaming, videos" },
+    { name: "description", content: `${SITE.name} music licensing` },
+    // Protocolo Open Graph
+    { property: "og:url", content: `${SITE.url}/licensing/` },
+    { property: "og:type", content: "website" },
+    { property: "og:title", content: `Licensing | ${SITE.name}` },
+    { property: "og:site_name", content: SITE.name },
+    { property: "og:description", content: `${SITE.name} music licensing` },
+    { property: "og:image", content: `${SITE.url}/${SITE.cover}` },
+    { property: "og:image:width", content: "300" },
+    { property: "og:image:height", content: "200" },
+    { property: "og:image:alt", content: `${SITE.name} cover image` },
+    // Protocolo Twitter
+    { name: "twitter:card", content: "summary" },
+    { name: "twitter:site", content: `@${SITE.twitter}` },
+    { name: "twitter:title", content: `Licensing | ${SITE.name}` },
+    { name: "twitter:description", content: `${SITE.name} music licensing` },
+    { name: "twitter:image", content: `${SITE.url}/${SITE.logo}` }
+  ],
+  link: [
+    { rel: "canonical", href: `${SITE.url}/licensing/` }
+  ]
+});
 </script>
 
 <template>
@@ -59,37 +86,3 @@ definePageMeta({ layout: "site" });
     </section>
   </main>
 </template>
-
-<script>
-export default {
-  name: "LicensingPage",
-  created () {
-    useHead({
-      title: `Licensing | ${SITE.name}`,
-      meta: [
-        { name: "keywords", content: "licensing, youtube, monetization, streaming, videos" },
-        { name: "description", content: `${SITE.name} music licensing` },
-        // Protocolo Open Graph
-        { property: "og:url", content: `${SITE.url}/licensing/` },
-        { property: "og:type", content: "website" },
-        { property: "og:title", content: `Licensing | ${SITE.name}` },
-        { property: "og:site_name", content: SITE.name },
-        { property: "og:description", content: `${SITE.name} music licensing` },
-        { property: "og:image", content: `${SITE.url}/${SITE.cover}` },
-        { property: "og:image:width", content: "300" },
-        { property: "og:image:height", content: "200" },
-        { property: "og:image:alt", content: `${SITE.name} cover image` },
-        // Protocolo Twitter
-        { name: "twitter:card", content: "summary" },
-        { name: "twitter:site", content: `@${SITE.twitter}` },
-        { name: "twitter:title", content: `Licensing | ${SITE.name}` },
-        { name: "twitter:description", content: `${SITE.name} music licensing` },
-        { name: "twitter:image", content: `${SITE.url}/${SITE.logo}` }
-      ],
-      link: [
-        { rel: "canonical", href: `${SITE.url}/licensing/` }
-      ]
-    });
-  }
-};
-</script>
