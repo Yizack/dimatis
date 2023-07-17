@@ -10,7 +10,7 @@
     "style_players": "node scripts/players.style.js"
   },
   "devDependencies": {
-    "@nuxtjs/eslint-config": "^12.0.0",
+    "@nuxt/eslint-config": "^0.1.1",
     "colorthief": "^2.4.0",
     "eslint": "^8.44.0",
     "nuxt": "^3.6.2",
