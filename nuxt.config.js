@@ -1,4 +1,4 @@
-export default {
+export default defineNuxtConfig({
   app: {
     rootId: "app",
     buildAssetsDir: "/_app/",
@@ -50,5 +50,8 @@ export default {
   nitro: {
     crawlLinks: true,
     routes: ["/"]
+  },
+  experimental: {
+    inlineSSRStyles: false
   }
-};
+});
