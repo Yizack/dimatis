@@ -12,9 +12,9 @@
   "devDependencies": {
     "@nuxt/eslint-config": "^0.1.1",
     "colorthief": "^2.4.0",
-    "eslint": "^8.44.0",
-    "nuxt": "^3.6.2",
-    "stylelint": "^15.10.1"
+    "eslint": "^8.45.0",
+    "nuxt": "^3.6.4",
+    "stylelint": "^15.10.2"
   },
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.4.0",
