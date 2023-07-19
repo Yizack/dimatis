@@ -132,6 +132,13 @@ export default {
     }
   },
   created () {
+    if (!this.track.title) {
+      throw createError({
+        statusCode: 404,
+        message: `Track not found: ${this.param}`,
+        fatal: true
+      });
+    }
     useHead({
       title: `${this.track.artists} - ${this.track.title}`,
       meta: [

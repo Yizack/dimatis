@@ -100,6 +100,13 @@ export default {
     }
   },
   created () {
+    if (!this.album.title) {
+      throw createError({
+        statusCode: 404,
+        message: `Album not found: ${this.param}`,
+        fatal: true
+      });
+    }
     useHead({
       title: `${this.album.artists} - ${this.album.title} (${this.album.type})`,
       meta: [
