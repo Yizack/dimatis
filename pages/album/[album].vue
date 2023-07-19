@@ -103,7 +103,7 @@ export default {
     if (!this.album.title) {
       throw createError({
         statusCode: 404,
-        message: `Album not found: ${this.param}`,
+        message: `Album not found: '${this.param}'`,
         fatal: true
       });
     }

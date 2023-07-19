@@ -135,7 +135,7 @@ export default {
     if (!this.track.title) {
       throw createError({
         statusCode: 404,
-        message: `Track not found: ${this.param}`,
+        message: `Track not found: '${this.param}'`,
         fatal: true
       });
     }
