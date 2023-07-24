@@ -1,4 +1,4 @@
-import{_ as v}from"./MusicPlayer.9e9e34a8.js";import{c as a,a as e,t,d as u,h as g,F as c,r as w,w as y,b as l,u as b,e as _,f as S,_ as T,o as s,i as A}from"./entry.9f1527ac.js";import{_ as $}from"./FontAwesome.e6655e6b.js";import{t as I}from"./tracks.24036100.js";import{S as r}from"./site-info.a659ef9d.js";import{f as W}from"./index.f1892f41.js";const O={"traveler-in-time":{lyrics:`It feels like
+import{_ as v}from"./MusicPlayer.a4b437e9.js";import{c as a,a as e,t,d as u,h as g,F as c,r as w,w as y,b as l,u as b,e as _,f as S,_ as T,o as s,i as A}from"./entry.9a721203.js";import{_ as $}from"./FontAwesome.7dc21538.js";import{t as I}from"./tracks.24036100.js";import{S as r}from"./site-info.a659ef9d.js";import{f as W}from"./index.f1892f41.js";const O={"traveler-in-time":{lyrics:`It feels like
 The world has stopped
 Sparks floating off my fingertips
 As I listen to the unknown sounds
