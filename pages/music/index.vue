@@ -21,15 +21,17 @@ definePageMeta({ layout: "site" });
             </div>
           </template>
           <template v-for="(track, key) in moreTracks" :key="key">
-            <div class="col-12 col-lg-4" :class="{ 'd-none': !showMore }">
-              <div class="item">
-                <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{width: '300px', height: '385px'}" :track="track" :param="key" />
-                <NuxtLink :to="`/music/${key}/`">
-                  <p class="mb-0">{{ track.title }}</p>
-                  <p><small>{{ track.artists }}</small></p>
-                </NuxtLink>
+            <Transition name="tab" mode="out-in">
+              <div v-if="showMore" class="col-12 col-lg-4">
+                <div class="item">
+                  <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{width: '300px', height: '385px'}" :track="track" :param="key" />
+                  <NuxtLink :to="`/music/${key}/`">
+                    <p class="mb-0">{{ track.title }}</p>
+                    <p><small>{{ track.artists }}</small></p>
+                  </NuxtLink>
+                </div>
               </div>
-            </div>
+            </Transition>
           </template>
         </div>
         <div v-if="!showMore && Object.keys(moreTracks).length" class="text-uppercase">

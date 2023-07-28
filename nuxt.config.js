@@ -41,11 +41,12 @@ export default defineNuxtConfig({
   css: [
     "mediaelement/build/mediaelementplayer.min.css",
     "bootstrap/dist/css/bootstrap.min.css",
+    "@glidejs/glide/dist/css/glide.core.min.css",
     "~/assets/css/dimatis.css",
     "~/assets/css/dimatis-icon.css",
     "~/assets/css/audio-player.css",
     "~/assets/css/player-styles.css",
-    "@glidejs/glide/dist/css/glide.core.min.css"
+    "~/assets/css/transitions.css"
   ],
   nitro: {
     crawlLinks: true,
