@@ -1,3 +1,11 @@
+import tracks from "./public/data/tracks.json";
+import albums from "./public/data/albums.json";
+
+const routes = [
+  ...Object.keys(tracks).map((track) => `/music/${track}/`),
+  ...Object.keys(albums).map((album) => `/album/${album}/`)
+];
+
 export default defineNuxtConfig({
   app: {
     rootId: "app",
@@ -49,8 +57,10 @@ export default defineNuxtConfig({
     "~/assets/css/transitions.css"
   ],
   nitro: {
-    crawlLinks: true,
-    routes: ["/"]
+    prerender: {
+      crawlLinks: true,
+      routes
+    }
   },
   experimental: {
     inlineSSRStyles: false
