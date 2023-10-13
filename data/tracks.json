@@ -1,4 +1,32 @@
 { 
+  "meaningful": {
+    "artists": "Dimatis",
+    "title": "Meaningful",
+    "description": "I'm so happy to bring you my new song \"Meaningful\" 💙",
+    "genre": "Melodic Dubstep",
+    "date": "2023-10-13T00:00:00.000",
+    "person": ["Dimatis"],
+    "mm": 4,
+    "ss": 13,
+    "dropbox": {
+      "id": "r8voui4zgvx9ruvhba5u6",
+      "rlkey": "ji7c2d60jtlp4tdimcskkw8uq"
+    },
+    "fanlink": {
+      "spotify": "https://open.spotify.com/track/5efZRN1u4nuGQSLb4TIvjO",
+      "soundcloud": "https://soundcloud.com/dimatis/meaningful",
+      "youtube": "https://youtu.be/iWAsbMtJCTw",
+      "apple": "https://music.apple.com/us/album/meaningful-single/1711008189?app=music&ls=1",
+      "itunes": "https://music.apple.com/us/album/meaningful-single/1711008189?app=itunes&ls=1",
+      "deezer": "https://www.deezer.com/en/album/497850621",
+      "tidal": "https://tidal.com/browse/track/320703398",
+      "yandex": "",
+      "amazon": "https://www.amazon.com/dp/B0CKR4WCHR",
+      "tiktok": "",
+      "beatport": "",
+      "netease": "https://music.163.com/#/song?id=2089278165"
+    }
+  },
   "sad-songs-remix": {
     "artists": "TobeyBeats, Taca Music & Laryssa Vachon",
     "title": "Sad Songs (Dimatis & Morva Remix)",
@@ -8,7 +36,9 @@
     "person": ["Dimatis"],
     "mm": 3,
     "ss": 30,
-    "dropbox": "f8dv46mqp0h9qfl",
+    "dropbox": {
+      "id": "f8dv46mqp0h9qfl"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -37,7 +67,9 @@
     "person": ["Dimatis"],
     "mm": 3,
     "ss": 54,
-    "dropbox": "ntp1m5z2qsuospz",
+    "dropbox": {
+      "id": "ntp1m5z2qsuospz"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -67,7 +99,9 @@
     "person": ["Dimatis"],
     "mm": 3,
     "ss": 53,
-    "dropbox": "xlyehk97zf5za43",
+    "dropbox": {
+      "id": "xlyehk97zf5za43"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -97,7 +131,9 @@
     "person": ["Dimatis"],
     "mm": 3,
     "ss": 17,
-    "dropbox": "m16p1abd88il06n",
+    "dropbox": {
+      "id": "m16p1abd88il06n"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -130,7 +166,9 @@
     "album": "Traveler In Time",
     "cover": "traveler-in-time",
     "instrumental": "traveler-in-time-instrumental",
-    "dropbox": "1o0ewu4jlx9izcb",
+    "dropbox": {
+      "id": "1o0ewu4jlx9izcb"
+    },
     "credits": [
       {
         "title": "Support Elvya",
@@ -185,7 +223,9 @@
     "ss": 41,
     "album": "Traveler In Time",
     "cover": "traveler-in-time",
-    "dropbox": "25jh2nkqyiphknx",
+    "dropbox": {
+      "id": "25jh2nkqyiphknx"
+    },
     "credits": [
       {
         "title": "Support Elvya",
@@ -238,7 +278,9 @@
     "person": ["Mox Jade", "Sydney Grimm"],
     "mm": 3,
     "ss": 28,
-    "dropbox": "2ey18ka1iuwen4m",
+    "dropbox": {
+      "id": "2ey18ka1iuwen4m"
+    },
     "credits": [
       {
         "title": "Support Mox Jade",
@@ -309,7 +351,9 @@
     "person": ["Christoph Sebastian Pabst", "Valeska Rautenberg"],
     "mm": 4,
     "ss": 18,
-    "dropbox": "y2c4mchpm0y2h6r",
+    "dropbox": {
+      "id": "y2c4mchpm0y2h6r"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -339,7 +383,9 @@
     "person": ["Dimatis", "Elvya"],
     "mm": 3,
     "ss": 23,
-    "dropbox": "coshvekgb0azza3",
+    "dropbox": {
+      "id": "coshvekgb0azza3"
+    },
     "credits": [
       {
         "title": "Support Elvya",
@@ -391,7 +437,9 @@
     "person": ["Dimatis"],
     "mm": 4,
     "ss": 36,
-    "dropbox": "udvpsrgoer3b3g4",
+    "dropbox": {
+      "id": "udvpsrgoer3b3g4"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -420,7 +468,9 @@
     "person": ["NAWN"],
     "mm": 3,
     "ss": 19,
-    "dropbox": "kvci0119k2fpl2c",
+    "dropbox": {
+      "id": "kvci0119k2fpl2c"
+    },
     "credits": [
       {
         "title": "Support NAWN",
@@ -477,7 +527,9 @@
     "mm": 3,
     "ss": 16,
     "remix": "afterglow-remix",
-    "dropbox": "rplt2k5x7bbnexj",
+    "dropbox": {
+      "id": "rplt2k5x7bbnexj"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -507,7 +559,9 @@
     "mm": 3,
     "ss": 16,
     "instrumental": "afterglow",
-    "dropbox": "dmq3qfqcymu2kj5",
+    "dropbox": {
+      "id": "dmq3qfqcymu2kj5"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -526,7 +580,9 @@
     "person": ["Dimatis", "Bayza"],
     "mm": 3,
     "ss": 40,
-    "dropbox": "nrfhbd9ie9p2a20",
+    "dropbox": {
+      "id": "nrfhbd9ie9p2a20"
+    },
     "credits": [
       {
         "title": "Support Bayza",
@@ -595,7 +651,9 @@
     "mm": 3,
     "ss": 40,
     "cover": "call-out",
-    "dropbox": "rahgxnqqx3et919",
+    "dropbox": {
+      "id": "rahgxnqqx3et919"
+    },
     "credits": [
       {
         "title": "Support Bayza",
@@ -663,7 +721,9 @@
     "person": ["Emantium", "Dimatis"],
     "mm": 3,
     "ss": 58,
-    "dropbox": "ao9r99wq3gqe80u",
+    "dropbox": {
+      "id": "ao9r99wq3gqe80u"
+    },
     "credits": [
       {
         "title": "Support Emantium",
@@ -711,7 +771,9 @@
     "person": ["Dimatis"],
     "mm": 3,
     "ss": 40,
-    "dropbox": "734d4cm0j0wlrid",
+    "dropbox": {
+      "id": "734d4cm0j0wlrid"
+    },
     "credits": [
       {
         "title": "Support Linked-Memories",
@@ -751,7 +813,9 @@
     "person": ["Dimatis"],
     "mm": 4,
     "ss": 23,
-    "dropbox": "hhlhjlhshcsqixw",
+    "dropbox": {
+      "id": "hhlhjlhshcsqixw"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -780,7 +844,9 @@
     "person": ["Dimatis"],
     "mm": 3,
     "ss": 46,
-    "dropbox": "p9kknusuc2qz6jx",
+    "dropbox": {
+      "id": "p9kknusuc2qz6jx"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -808,7 +874,9 @@
     "person": ["Dimatis"],
     "mm": 4,
     "ss": 11,
-    "dropbox": "wynhiqidykmgon3",
+    "dropbox": {
+      "id": "wynhiqidykmgon3"
+    },
     "credits": [
       {
         "title": "Suppoprt Miss Lina",
@@ -889,7 +957,9 @@
     "person": ["Eunoia"],
     "mm": 4,
     "ss": 13,
-    "dropbox": "pc3zpxjc0gtue6n",
+    "dropbox": {
+      "id": "pc3zpxjc0gtue6n"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -914,7 +984,9 @@
     "person": ["Dimatis"],
     "mm": 3,
     "ss": 37,
-    "dropbox": "tetz2tp1ho5rxys",
+    "dropbox": {
+      "id": "tetz2tp1ho5rxys"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -943,7 +1015,9 @@
     "person": ["Chymes"],
     "mm": 3,
     "ss": 38,
-    "dropbox": "o2sgyrh43st268b",
+    "dropbox": {
+      "id": "o2sgyrh43st268b"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -962,7 +1036,9 @@
     "person": ["Dimatis", "Bayza"],
     "mm": 3,
     "ss": 27,
-    "dropbox": "ift9zf72xxbgihe",
+    "dropbox": {
+      "id": "ift9zf72xxbgihe"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -989,7 +1065,9 @@
     "person": ["Dimatis"],
     "mm": 3,
     "ss": 32,
-    "dropbox": "0l43nqtkzqalcgn",
+    "dropbox": {
+      "id": "0l43nqtkzqalcgn"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -1017,7 +1095,9 @@
     "person": ["Dimatis", "Elvya"],
     "mm": 4,
     "ss": 4,
-    "dropbox": "1yqavnfk4r8is9y",
+    "dropbox": {
+      "id": "1yqavnfk4r8is9y"
+    },
     "credits": [
       {
         "title": "Support Elvya",
@@ -1068,7 +1148,9 @@
     "person": ["Krisu"],
     "mm": 3,
     "ss": 53,
-    "dropbox": "kpnsz9108mumxdt",
+    "dropbox": {
+      "id": "kpnsz9108mumxdt"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -1088,7 +1170,9 @@
     "person": ["Dimatis"],
     "mm": 4,
     "ss": 0,
-    "dropbox": "vjthq3anusg5gur",
+    "dropbox": {
+      "id": "vjthq3anusg5gur"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -1114,7 +1198,9 @@
     "person": ["Kooma", "Veela"],
     "mm": 4,
     "ss": 31,
-    "dropbox": "23uax3sbrd2spnu",
+    "dropbox": {
+      "id": "23uax3sbrd2spnu"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -1136,7 +1222,9 @@
     "ss": 44,
     "album": "Experiences",
     "cover": "experiences-album",
-    "dropbox": "24b9bllxlt5ixpw",
+    "dropbox": {
+      "id": "24b9bllxlt5ixpw"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -1164,7 +1252,9 @@
     "ss": 43,
     "album": "Experiences",
     "cover": "experiences-album",
-    "dropbox": "jv6rqyn42i3vkxh",
+    "dropbox": {
+      "id": "jv6rqyn42i3vkxh"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -1192,7 +1282,9 @@
     "ss": 31,
     "album": "Experiences",
     "cover": "experiences-album",
-    "dropbox": "f0579qrgp1bqvif",
+    "dropbox": {
+      "id": "f0579qrgp1bqvif"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -1220,7 +1312,9 @@
     "ss": 37,
     "album": "Experiences",
     "cover": "experiences-album",
-    "dropbox": "0l0ajzxw08g1dz6",
+    "dropbox": {
+      "id": "0l0ajzxw08g1dz6"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -1248,7 +1342,9 @@
     "ss": 54,
     "album": "Experiences",
     "cover": "experiences-album",
-    "dropbox": "9644qucw0guhpsh",
+    "dropbox": {
+      "id": "9644qucw0guhpsh"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -1276,7 +1372,9 @@
     "ss": 17,
     "album": "Experiences",
     "cover": "experiences-album",
-    "dropbox": "k8hwj2x2yfq6lof",
+    "dropbox": {
+      "id": "k8hwj2x2yfq6lof"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -1304,7 +1402,9 @@
     "ss": 56,
     "album": "Experiences",
     "cover": "experiences-album",
-    "dropbox": "qqzqm93iv7ie2ws",
+    "dropbox": {
+      "id": "qqzqm93iv7ie2ws"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -1330,7 +1430,9 @@
     "person": ["Sappheiros"],
     "mm": 4,
     "ss": 22,
-    "dropbox": "n4g0h50dlm9g7gd",
+    "dropbox": {
+      "id": "n4g0h50dlm9g7gd"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -1350,7 +1452,9 @@
     "person": ["Dimatis"],
     "mm": 3,
     "ss": 31,
-    "dropbox": "5yt03e1s8uov77q",
+    "dropbox": {
+      "id": "5yt03e1s8uov77q"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -1376,7 +1480,9 @@
     "person": ["Cloudier"],
     "mm": 4,
     "ss": 15,
-    "dropbox": "if1nqn693pph4ge",
+    "dropbox": {
+      "id": "if1nqn693pph4ge"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -1395,7 +1501,9 @@
     "person": ["Dimatis"],
     "mm": 3,
     "ss": 16,
-    "dropbox": "eype54piqspnf45",
+    "dropbox": {
+      "id": "eype54piqspnf45"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -1421,7 +1529,9 @@
     "person": ["Sound Surfer", "Verso"],
     "mm": 4,
     "ss": 32,
-    "dropbox": "kgavwcbwo0oiz83",
+    "dropbox": {
+      "id": "kgavwcbwo0oiz83"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -1440,7 +1550,9 @@
     "person": ["Tim Schaufert"],
     "mm": 3,
     "ss": 48,
-    "dropbox": "tb0n14v0rgh1ubl",
+    "dropbox": {
+      "id": "tb0n14v0rgh1ubl"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -1460,7 +1572,9 @@
     "person": ["Dimatis"],
     "mm": 4,
     "ss": 55,
-    "dropbox": "pdbwdpryk0rhzuc",
+    "dropbox": {
+      "id": "pdbwdpryk0rhzuc"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -1487,7 +1601,9 @@
     "mm": 3,
     "ss": 48,
     "album": "Floating",
-    "dropbox": "czod1finz8lwe16",
+    "dropbox": {
+      "id": "czod1finz8lwe16"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -1514,7 +1630,9 @@
     "mm": 3,
     "ss": 18,
     "album": "Floating",
-    "dropbox": "vu7yaqx1pwqlyk9",
+    "dropbox": {
+      "id": "vu7yaqx1pwqlyk9"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -1541,7 +1659,9 @@
     "mm": 3,
     "ss": 18,
     "album": "Floating",
-    "dropbox": "o8fepftcbsgpifd",
+    "dropbox": {
+      "id": "o8fepftcbsgpifd"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -1568,7 +1688,9 @@
     "mm": 3,
     "ss": 25,
     "album": "Floating",
-    "dropbox": "0y06fnks3iq2qv5",
+    "dropbox": {
+      "id": "0y06fnks3iq2qv5"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -1594,7 +1716,9 @@
     "person": ["Berlinist"],
     "mm": 4,
     "ss": 15,
-    "dropbox": "lvsufm23rp29yut",
+    "dropbox": {
+      "id": "lvsufm23rp29yut"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -1614,7 +1738,9 @@
     "person": ["Dimatis"],
     "mm": 4,
     "ss": 15,
-    "dropbox": "pxhj59odw9oz6f3",
+    "dropbox": {
+      "id": "pxhj59odw9oz6f3"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -1640,7 +1766,9 @@
     "person": ["Dimatis"],
     "mm": 3,
     "ss": 33,
-    "dropbox": "o4vataqft2kvjh8",
+    "dropbox": {
+      "id": "o4vataqft2kvjh8"
+    },
     "fanlink": {
       "download": true,
       "dark": true,
@@ -1665,7 +1793,9 @@
     "person": ["Dimatis"],
     "mm": 4,
     "ss": 58,
-    "dropbox": "tdim6e3nhecoocd",
+    "dropbox": {
+      "id": "tdim6e3nhecoocd"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -1692,7 +1822,9 @@
     "mm": 3,
     "ss": 29,
     "album": "Moonlit Lover",
-    "dropbox": "mlzci8p3iwhhiul",
+    "dropbox": {
+      "id": "mlzci8p3iwhhiul"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -1719,7 +1851,9 @@
     "mm": 4,
     "ss": 17,
     "album": "Moonlit Lover",
-    "dropbox": "96125slijetbbg1",
+    "dropbox": {
+      "id": "96125slijetbbg1"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -1745,7 +1879,9 @@
     "person": ["Dimatis"],
     "mm": 4,
     "ss": 0,
-    "dropbox": "riy9h0kcu5xuvfm",
+    "dropbox": {
+      "id": "riy9h0kcu5xuvfm"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -1770,7 +1906,9 @@
     "person": ["Dimatis"],
     "mm": 4,
     "ss": 56,
-    "dropbox": "rpc1gjfufyntwic",
+    "dropbox": {
+      "id": "rpc1gjfufyntwic"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -1794,7 +1932,9 @@
     "person": ["Dimatis"],
     "mm": 4,
     "ss": 44,
-    "dropbox": "91tlorbzv82m5fc",
+    "dropbox": {
+      "id": "91tlorbzv82m5fc"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -1820,7 +1960,9 @@
     "person": ["Dimatis"],
     "mm": 4,
     "ss": 15,
-    "dropbox": "qlgoxibcqk6gjlx",
+    "dropbox": {
+      "id": "qlgoxibcqk6gjlx"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -1846,7 +1988,9 @@
     "person": ["Dimatis"],
     "mm": 3,
     "ss": 31,
-    "dropbox": "97453y1fsnug4d7",
+    "dropbox": {
+      "id": "97453y1fsnug4d7"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -1872,7 +2016,9 @@
     "mm": 3,
     "ss": 15,
     "cover": "vicious-mind",
-    "dropbox": "hgmjmpe18qturhu",
+    "dropbox": {
+      "id": "hgmjmpe18qturhu"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -1895,7 +2041,9 @@
     "person": ["Dimatis"],
     "mm": 4,
     "ss": 11,
-    "dropbox": "awpas9yhhtqtjt1",
+    "dropbox": {
+      "id": "awpas9yhhtqtjt1"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -1919,7 +2067,9 @@
     "person": ["Dimatis"],
     "mm": 4,
     "ss": 3,
-    "dropbox": "mpgrk418kftusr2",
+    "dropbox": {
+      "id": "mpgrk418kftusr2"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -1942,7 +2092,9 @@
     "person": ["Dimatis"],
     "mm": 4,
     "ss": 36,
-    "dropbox": "ohbabojqeewc19m",
+    "dropbox": {
+      "id": "ohbabojqeewc19m"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -1967,7 +2119,9 @@
     "person": ["Dimatis"],
     "mm": 4,
     "ss": 10,
-    "dropbox": "d3ci2sqoel30g9h",
+    "dropbox": {
+      "id": "d3ci2sqoel30g9h"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
@@ -1992,7 +2146,9 @@
     "person": ["Dimatis"],
     "mm": 5,
     "ss": 32,
-    "dropbox": "6qpvdrue96wpd36",
+    "dropbox": {
+      "id": "6qpvdrue96wpd36"
+    },
     "fanlink": {
       "download": true,
       "dark": false,
