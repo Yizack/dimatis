@@ -4,7 +4,7 @@
       <div class="controls">
         <div class="lecteur">
           <audio ref="audio" class="music fc-media">
-            <source :src="`https://www.dropbox.com/s/dl/${track.dropbox}`" type="audio/mpeg">
+            <source :src="srcDropbox" type="audio/mpeg">
           </audio>
         </div>
       </div>
@@ -41,6 +41,12 @@ export default {
   computed: {
     srcImage () {
       return `/images/${"cover" in this.track ? this.track.cover : this.param}.jpg`;
+    },
+    srcDropbox () {
+      const dropbox = this.track.dropbox;
+      const dropboxBase = "https://www.dropbox.com";
+      const downloadURL = dropbox.rlkey ? `${dropboxBase}/scl/fi/${dropbox.id}/?rlkey=${dropbox.rlkey}&dl=1` : `${dropboxBase}/s/${dropbox.id}?dl=1`;
+      return downloadURL;
     }
   },
   mounted () {

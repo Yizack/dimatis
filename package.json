@@ -12,8 +12,8 @@
   "devDependencies": {
     "@nuxt/eslint-config": "^0.2.0",
     "colorthief": "^2.4.0",
-    "eslint": "^8.49.0",
-    "nuxt": "^3.7.3",
+    "eslint": "^8.51.0",
+    "nuxt": "^3.7.4",
     "stylelint": "^15.10.3"
   },
   "dependencies": {
