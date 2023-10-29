@@ -63,6 +63,7 @@ export default defineNuxtConfig({
     }
   },
   experimental: {
-    inlineSSRStyles: false
+    inlineSSRStyles: false,
+    appManifest: false
   }
 });
