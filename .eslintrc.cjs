@@ -1,4 +1,4 @@
-{
+module.exports = {
   "env": {
     "browser": true,
     "node": true,
@@ -21,7 +21,7 @@
   "plugins": ["vue"],
   "rules": {
     "indent": ["error", 2],
-    "linebreak-style": ["error", "windows"],
+    "linebreak-style": ["error", process.platform === "win32" ? "windows" : "unix"],
     "quotes": ["error", "double"],
     "semi": ["error", "always"],
     "camelcase": "off",
@@ -32,6 +32,7 @@
     "brace-style": ["error", "stroustrup", { "allowSingleLine": true }],
     "no-multi-spaces": "error",
     "space-before-blocks": "error",
+    "no-trailing-spaces": "error",
     "vue/first-attribute-linebreak": ["error", {
       "singleline": "ignore", "multiline": "ignore"
     }],
@@ -40,5 +41,11 @@
     }],
     "vue/singleline-html-element-content-newline": ["off"],
     "vue/no-multiple-template-root": ["off"]
-  }
-}
+  },
+  "ignorePatterns": [
+    "node_modules/**/*",
+    ".nuxt/**/*",
+    "dist/**/*",
+    ".output/**/*"
+  ]
+};

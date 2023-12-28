@@ -62,8 +62,7 @@ export default defineNuxtConfig({
       routes
     }
   },
-  experimental: {
-    inlineSSRStyles: false,
-    appManifest: false
+  features: {
+    inlineStyles: false,
   }
 });
