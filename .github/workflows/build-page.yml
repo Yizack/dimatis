@@ -9,48 +9,30 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [18.x]
+        node-version: [20]
 
     steps:
-    - name: Checkout 🛎️
-      uses: actions/checkout@v3
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
 
-    - name: Setup Node 🐢
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-    
-    - name: PNPM Setup 🟨
-      uses: pnpm/action-setup@v2
-      id: pnpm-install
-      with:
-        version: 8
-        run_install: false
+      - run: corepack enable
 
-    - name: Get pnpm store directory 📁
-      id: pnpm-cache
-      shell: bash
-      run: |
-        echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
-
-    - uses: actions/cache@v3
-      name: Setup pnpm Cache ☁️
-      with:
-        path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
-        key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-        restore-keys: |
-          ${{ runner.os }}-pnpm-store-
+      - name: Setup Node 🐢
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
+        
+      - name: Install Dependencies 📦
+        run: pnpm install
       
-    - name: Install Dependencies 📦
-      run: pnpm install
-    
-    - name: Build 🏗️
-      run: |
-        pnpm style_players
-        pnpm generate
+      - name: Build 🏗️
+        run: |
+          pnpm style_players
+          pnpm generate
 
-    - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@v4
-      with:
-        branch: gh-pages
-        folder: .output/public
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: .output/public
