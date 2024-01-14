@@ -1,4 +1,37 @@
 { 
+  "reminiscences": {
+    "artists": "Dimatis",
+    "title": "Reminiscences",
+    "description": "",
+    "genre": "Chillstep",
+    "date": "2024-01-26T00:00:00.000",
+    "person": ["Dimatis"],
+    "mm": 2,
+    "ss": 37,
+    "dropbox": {
+      "id": "soep3xvq8aee4eh6hcj4r",
+      "rlkey": "g7sqo9y5zl3f69oxftzo5auc5"
+    },
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "",
+        "soundcloud": "https://soundcloud.com/dimatis/reminiscences",
+        "youtube": "",
+        "apple": "",
+        "itunes": "",
+        "bandcamp": "https://dimatis.bandcamp.com/track/reminiscences",
+        "deezer": "",
+        "tidal": "",
+        "yandex": "",
+        "amazon": "",
+        "tiktok": "",
+        "beatport": "",
+        "netease": ""
+      }
+    }
+  },
   "meaningful": {
     "artists": "Dimatis",
     "title": "Meaningful",
@@ -21,6 +54,7 @@
         "youtube": "https://youtu.be/iWAsbMtJCTw",
         "apple": "https://music.apple.com/us/album/meaningful-single/1711008189?app=music&ls=1",
         "itunes": "https://music.apple.com/us/album/meaningful-single/1711008189?app=itunes&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/track/meaningful",
         "deezer": "https://www.deezer.com/en/album/497850621",
         "tidal": "https://tidal.com/browse/track/320703398",
         "yandex": "",
@@ -52,7 +86,6 @@
         "youtube": "https://youtu.be/PX9DbJu8Dl8",
         "apple": "https://music.apple.com/us/album/sad-songs-dimatis-morva-remix/1666221214?i=1666221215&app=music&ls=1",
         "itunes": "https://music.apple.com/us/album/sad-songs-dimatis-morva-remix/1666221214?i=1666221215&app=itunes&ls=1",
-        "bandcamp": "https://dimatis.bandcamp.com/track/meaningful",
         "deezer": "https://www.deezer.com/en/album/397832487",
         "tidal": "https://tidal.com/browse/track/272105751",
         "yandex": "",
