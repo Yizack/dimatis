@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 definePageMeta({ layout: "site" });
 
 const schemaOrg = {
@@ -50,31 +50,32 @@ const schemaOrg = {
   ]
 };
 
-useHead({
+useSeoMeta({
   title: SITE.name,
-  meta: [
-    { name: "keywords", content: SITE.keywords },
-    { name: "description", content: SITE.meta_description },
-    // Protocolo Open Graph
-    { property: "og:url", content: `${SITE.url}/` },
-    { property: "og:type", content: "website" },
-    { property: "og:title", content: SITE.name },
-    { property: "og:site_name", content: SITE.name },
-    { property: "og:description", content: SITE.meta_description },
-    { property: "og:image", content: `${SITE.url}/${SITE.cover}` },
-    { property: "og:image:width", content: "300" },
-    { property: "og:image:height", content: "200" },
-    { property: "og:image:alt", content: `${SITE.name} cover image` },
-    // Protocolo Twitter
-    { name: "twitter:card", content: "summary" },
-    { name: "twitter:site", content: `@${SITE.twitter}` },
-    { name: "twitter:title", content: SITE.name },
-    { name: "twitter:description", content: SITE.meta_description },
-    { name: "twitter:image", content: `${SITE.url}/${SITE.logo}` }
-  ],
+  description: SITE.meta_description,
+  keywords: SITE.keywords,
+  // Protocolo Open Graph
+  ogUrl: `${SITE.url}/`,
+  ogType: "website",
+  ogTitle: SITE.name,
+  ogSiteName: SITE.name,
+  ogDescription: SITE.meta_description,
+  ogImage: `${SITE.url}/${SITE.cover}`,
+  ogImageWidth: "300",
+  ogImageHeight: "200",
+  ogImageAlt: `${SITE.name} cover image`,
+  // Protocolo Twitter
+  twitterCard: "summary",
+  twitterSite: `@${SITE.twitter}`,
+  twitterTitle: SITE.name,
+  twitterDescription: SITE.meta_description,
+  twitterImage: `${SITE.url}/${SITE.logo}`
+});
+
+useHead({
   script: [
     { type: "application/ld+json", children: JSON.stringify(schemaOrg) },
-    { src: "https://www.instagram.com/embed.js", async: true, body: true }
+    { src: "https://www.instagram.com/embed.js", async: true }
   ],
   link: [
     { rel: "canonical", href: `${SITE.url}/` }
@@ -83,8 +84,8 @@ useHead({
 </script>
 
 <template>
-  <Banner />
+  <BannerSection />
   <LatestMusic />
   <InstagramFeed />
-  <About />
+  <AboutSection />
 </template>

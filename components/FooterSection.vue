@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { faSpotify, faSoundcloud, faYoutube, faTwitter, faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 </script>
 
@@ -64,9 +64,3 @@ import { faSpotify, faSoundcloud, faYoutube, faTwitter, faFacebook, faInstagram 
     </div>
   </footer>
 </template>
-
-<script>
-export default {
-  name: "FooterComponent"
-};
-</script>

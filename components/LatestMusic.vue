@@ -1,3 +1,12 @@
+<script setup lang="ts">
+const latestTracks = Object.entries(tracks).reduce((obj: DimatisTracks, [key, value]) => {
+  if (Object.keys(obj).length < 3) {
+    obj[key] = value;
+  }
+  return obj;
+}, {});
+</script>
+
 <template>
   <section id="music" class="bg-light">
     <div class="container py-5 text-center text-dark">
@@ -20,19 +29,3 @@
     </div>
   </section>
 </template>
-
-<script>
-export default {
-  name: "LatestMusic",
-  computed: {
-    latestTracks () {
-      return Object.entries(tracks).reduce((obj, [key, value]) => {
-        if (Object.keys(obj).length < 3) {
-          obj[key] = value;
-        }
-        return obj;
-      }, {});
-    }
-  }
-};
-</script>

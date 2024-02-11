@@ -1,5 +1,13 @@
-<script setup>
+<script setup lang="ts">
 import { faSpotify } from "@fortawesome/free-brands-svg-icons";
+
+const spotifyFollowers = ref<number | null>(null);
+
+onMounted(async () => {
+  const spotify = await $fetch<{ followers: number; }>(`https://cf-spotify.yizack.com/followers?id=${SITE.spotify_id}`).catch(() => null);
+  if (!spotify) return;
+  spotifyFollowers.value = spotify.followers;
+});
 </script>
 
 <template>
@@ -30,22 +38,22 @@ import { faSpotify } from "@fortawesome/free-brands-svg-icons";
         </div>
         <div class="col-lg-4 text-center">
           <img class="img-fluid rounded-3" src="/images/dimatis-bio.jpg" :alt="`${SITE.name} photo`">
-          <a id="follow_spotify" href="https://open.spotify.com/artist/0RAT9Q5WZwzJRJgTI38zJR" target="_blank" title="Follow on Spotify">
+          <a id="follow-spotify" href="https://open.spotify.com/artist/0RAT9Q5WZwzJRJgTI38zJR" target="_blank" title="Follow on Spotify">
             <div class="d-flex justify-content-center mt-2">
-              <span id="spotify_button" class="rounded-pill me-2 small px-2 py-1 text-white text-uppercase"><FontAwesome :icon="faSpotify" /> Follow</span>
+              <span id="spotify-button" class="rounded-pill me-2 small px-2 py-1 text-white text-uppercase"><FontAwesome :icon="faSpotify" /> Follow</span>
               <div class="position-relative align-self-center">
                 <span class="position-absolute" style="left: -9px;">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
                     <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
                   </svg>
                 </span>
-                <span id="spotify_followers" class="bg-white rounded text-dark small py-1 px-2">
-                  <span v-if="!spotify.followers" class="spinner-box">
+                <span id="spotify-followers" class="bg-white rounded text-dark small py-1 px-2">
+                  <span v-if="!spotifyFollowers" class="spinner-box">
                     <span class="spinner-border text-dark" style="width:1rem; height:1rem; font-size: 0.5rem;">
                       <span class="visually-hidden">Loading...</span>
                     </span>
                   </span>
-                  <span>{{ spotify.followers }} followers</span>
+                  <span>{{ spotifyFollowers }} followers</span>
                 </span>
               </div>
             </div>
@@ -55,17 +63,3 @@ import { faSpotify } from "@fortawesome/free-brands-svg-icons";
     </div>
   </section>
 </template>
-
-<script>
-export default {
-  name: "AboutComponent",
-  data () {
-    return {
-      spotify: {}
-    };
-  },
-  async mounted () {
-    this.spotify = await $fetch(`https://cf-spotify.yizack.com/followers?id=${SITE.spotify_id}`).catch(() => ({}));
-  }
-};
-</script>

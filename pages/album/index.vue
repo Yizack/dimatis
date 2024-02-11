@@ -1,5 +1,33 @@
-<script setup>
+<script setup lang="ts">
 definePageMeta({ layout: "site" });
+
+useSeoMeta({
+  title: `Albums | ${SITE.name}`,
+  description: `All ${SITE.name} albums`,
+  keywords: "albums, playlist, discography, ep, duration, artists",
+  // Protocolo Open Graph
+  ogUrl: `${SITE.url}/album/`,
+  ogType: "website",
+  ogTitle: `Albums | ${SITE.name}`,
+  ogSiteName: SITE.name,
+  ogDescription: `All ${SITE.name} albums`,
+  ogImage: `${SITE.url}/${SITE.cover}`,
+  ogImageWidth: "300",
+  ogImageHeight: "200",
+  ogImageAlt: `${SITE.name} cover image`,
+  // Protocolo Twitter
+  twitterCard: "summary",
+  twitterSite: `@${SITE.twitter}`,
+  twitterTitle: `Albums | ${SITE.name}`,
+  twitterDescription: `All ${SITE.name} albums`,
+  twitterImage: `${SITE.url}/${SITE.logo}`
+});
+
+useHead({
+  link: [
+    { rel: "canonical", href: `${SITE.url}/album/` }
+  ]
+});
 </script>
 
 <template>
@@ -25,37 +53,3 @@ definePageMeta({ layout: "site" });
     </section>
   </main>
 </template>
-
-<script>
-export default {
-  name: "AlbumsPage",
-  created () {
-    useHead({
-      title: `Albums | ${SITE.name}`,
-      meta: [
-        { name: "keywords", content: "albums, playlist, discography, ep, duration, artists" },
-        { name: "description", content: `All ${SITE.name} albums` },
-        // Protocolo Open Graph
-        { property: "og:url", content: `${SITE.url}/album/` },
-        { property: "og:type", content: "website" },
-        { property: "og:title", content: `Albums | ${SITE.name}` },
-        { property: "og:site_name", content: SITE.name },
-        { property: "og:description", content: `All ${SITE.name} albums` },
-        { property: "og:image", content: `${SITE.url}/${SITE.cover}` },
-        { property: "og:image:width", content: "300" },
-        { property: "og:image:height", content: "200" },
-        { property: "og:image:alt", content: `${SITE.name} cover image` },
-        // Protocolo Twitter
-        { name: "twitter:card", content: "summary" },
-        { name: "twitter:site", content: `@${SITE.twitter}` },
-        { name: "twitter:title", content: `Albums | ${SITE.name}` },
-        { name: "twitter:description", content: `All ${SITE.name} albums` },
-        { name: "twitter:image", content: `${SITE.url}/${SITE.logo}` }
-      ],
-      link: [
-        { rel: "canonical", href: `${SITE.url}/album/` }
-      ]
-    });
-  }
-};
-</script>

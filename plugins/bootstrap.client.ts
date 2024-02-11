@@ -1,11 +1,11 @@
 import Collapse from "bootstrap/js/dist/collapse";
 
 class Bootstrap {
-  toogleCollapse (el) {
+  toogleCollapse (el: HTMLElement) {
     const bsCollapse = new Collapse(el);
     bsCollapse.toggle();
   }
-};
+}
 
 const bootstrap = new Bootstrap();
 

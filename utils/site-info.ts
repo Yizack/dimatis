@@ -1,6 +1,10 @@
+const protocol = "https";
+const domain = "dimatis.yizack.com";
+const fanlinkDomain = "yizack.com";
+
 const SITE = {
   name: "Dimatis",
-  domain: "dimatis.yizack.com",
+  domain,
   person: {
     fullname: "Yizack Rangel",
     birthdate: "1998-06-15",
@@ -13,7 +17,10 @@ const SITE = {
       name: "Panamá"
     }
   },
-  protocol: "https",
+  protocol,
+  url: `${protocol}://${domain}`,
+  fanlinkDomain,
+  fanlinkUrl: `${protocol}://${fanlinkDomain}`,
   meta_description: "Dimatis is a Panamanian musician and producer.",
   description: "Panamanian musician and producer",
   keywords: "dimatis, website, producer, dj, artist, panama, yizack, musician",
@@ -45,9 +52,7 @@ const SITE = {
     amazon: "https://www.amazon.com/s?k=Dimatis&i=digital-music"
   },
   merch: "https://merch.streamelements.com/dimatis",
-  fanlinks: "https://yizack.com/fanlinks"
+  fanlinks: `${protocol}://${fanlinkDomain}/fanlinks`
 };
-
-SITE.url = `${SITE.protocol}://${SITE.domain}`;
 
 export { SITE };

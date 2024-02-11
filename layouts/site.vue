@@ -1,13 +1,7 @@
 <template>
   <div>
-    <Navbar />
+    <NavbarComponent />
     <slot />
-    <Foot />
+    <FooterSection />
   </div>
 </template>
-
-<script>
-export default {
-  name: "SiteLayout"
-};
-</script>

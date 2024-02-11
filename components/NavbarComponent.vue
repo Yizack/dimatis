@@ -1,3 +1,13 @@
+<script setup lang="ts">
+const nav = ref() as Ref<HTMLElement>;
+
+const collapseNav = () => {
+  if (nav.value.classList.contains("show")) {
+    nav.value.classList.remove("show");
+  }
+};
+</script>
+
 <template>
   <nav class="navbar navbar-expand-lg bg-light navbar-light sticky-top shadow">
     <div class="container">
@@ -29,22 +39,3 @@
     </div>
   </nav>
 </template>
-
-<script>
-export default {
-  name: "NavbarComponent",
-  data () {
-    return {
-      path: this.$route.path
-    };
-  },
-  methods: {
-    collapseNav () {
-      const nav = this.$refs.nav;
-      if (nav.classList.contains("show")) {
-        this.$nuxt.$bootstrap.toogleCollapse(nav);
-      }
-    }
-  }
-};
-</script>

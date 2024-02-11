@@ -1,7 +1,59 @@
-<script setup>
+<script setup lang="ts">
 import { faClock } from "@fortawesome/free-regular-svg-icons";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 definePageMeta({ layout: "site" });
+
+const param = ref(useRoute().params.album.toString());
+const album = computed(() => albums[param.value]);
+
+if (!album.value) {
+  throw createError({
+    statusCode: 404,
+    message: `Album not found: '${param.value}'`,
+    fatal: true
+  });
+}
+
+const moreAlbums = computed(() => {
+  return Object.entries(albums).slice(0, 8).reduce((obj: DimatisAlbums, [key, value]) => {
+    if (!key.includes(param.value)) {
+      obj[key] = value;
+    }
+    return obj;
+  }, {});
+});
+
+const goTrack = (track: string) => {
+  useRouter().push(`/music/${track}`);
+};
+
+useSeoMeta({
+  title: `${album.value.artists} - ${album.value.title} (${album.value.type})`,
+  description: album.value.description,
+  keywords: `album, ${album.value.title}, fanlink, download`,
+  // Protocolo Open Graph
+  ogUrl: `${SITE.url}/album/${param.value}/`,
+  ogType: "website",
+  ogTitle: `${album.value.artists} - ${album.value.title} (${album.value.type})`,
+  ogSiteName: SITE.name,
+  ogImage: `${SITE.url}/images/${album.value.cover}.jpg`,
+  ogImageWidth: "500",
+  ogImageHeight: "500",
+  ogImageAlt: `${album.value.artists} - ${album.value.title} (${album.value.type})`,
+  ogDescription: album.value.description,
+  // Twitter Card
+  twitterCard: "summary",
+  twitterImage: `${SITE.url}/images/${album.value.cover}.jpg`,
+  twitterTitle: `${album.value.artists} - ${album.value.title} (${album.value.type})`,
+  twitterDescription: album.value.description,
+  twitterSite: `@${SITE.twitter}`
+});
+
+useHead({
+  link: [
+    { rel: "canonical", href: `${SITE.url}/album/${param.value}/` }
+  ]
+});
 </script>
 
 <template>
@@ -52,7 +104,7 @@ definePageMeta({ layout: "site" });
                 <div class="mb-0">Release date</div>
                 <div class="tag mb-1" itemprop="datePublished" :content="album.date.split('T')[0]">{{ new Date(album.date).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" }) }}</div>
                 <div class="mb-0">Fanlink</div>
-                <div class="tag"><a :href="`https://yizack.com/${album.cover}/`" target="_blank">yizack.com/{{ album.cover }}<FontAwesome class="ms-2" :icon="faArrowUpRightFromSquare" /></a></div>
+                <div class="tag"><a :href="`${SITE.fanlinkUrl}/${album.cover}/`" target="_blank">{{ SITE.fanlinkDomain }}/{{ album.cover }}<FontAwesome class="ms-2" :icon="faArrowUpRightFromSquare" /></a></div>
               </div>
             </div>
           </div>
@@ -77,67 +129,3 @@ definePageMeta({ layout: "site" });
     </section>
   </main>
 </template>
-
-<script>
-export default {
-  name: "AlbumPage",
-  data () {
-    return {
-      param: this.$route.params.album
-    };
-  },
-  computed: {
-    album () {
-      return albums[this.param] || {};
-    },
-    moreAlbums () {
-      return Object.entries(albums).slice(0, 8).reduce((obj, [key, value]) => {
-        if (!key.includes(this.param)) {
-          obj[key] = value;
-        }
-        return obj;
-      }, {});
-    }
-  },
-  created () {
-    if (!this.album.title) {
-      throw createError({
-        statusCode: 404,
-        message: `Album not found: '${this.param}'`,
-        fatal: true
-      });
-    }
-    useHead({
-      title: `${this.album.artists} - ${this.album.title} (${this.album.type})`,
-      meta: [
-        { name: "keywords", content: `album, ${this.album.title}, fanlink, download` },
-        { name: "description", content: this.album.description },
-        // Protocolo Open Graph
-        { property: "og:url", content: `${SITE.url}/album/${this.param}/` },
-        { property: "og:type", content: "website" },
-        { property: "og:title", content: `${this.album.artists} - ${this.album.title} (${this.album.type})` },
-        { property: "og:site_name", content: SITE.name },
-        { property: "og:image", content: `${SITE.url}/images/${this.album.cover}.jpg` },
-        { property: "og:image:width", content: "500" },
-        { property: "og:image:height", content: "500" },
-        { property: "og:image:alt", content: `${this.album.artists} - ${this.album.title} (${this.album.type})` },
-        { property: "og:description", content: this.album.description },
-        // Twitter Card
-        { name: "twitter:card", content: "summary" },
-        { name: "twitter:image", content: `${SITE.url}/images/${this.album.cover}.jpg` },
-        { name: "twitter:title", content: `${this.album.artists} - ${this.album.title} (${this.album.type})` },
-        { name: "twitter:description", content: this.album.description },
-        { name: "twitter:site", content: `@${SITE.twitter}` }
-      ],
-      link: [
-        { rel: "canonical", href: `${SITE.url}/album/${this.param}/` }
-      ]
-    });
-  },
-  methods: {
-    goTrack (track) {
-      this.$nuxt.$router.push(`/music/${track}`);
-    }
-  }
-};
-</script>

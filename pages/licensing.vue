@@ -1,28 +1,30 @@
-<script setup>
+<script setup lang="ts">
 definePageMeta({ layout: "site" });
 
-useHead({
+
+useSeoMeta({
   title: `Licensing | ${SITE.name}`,
-  meta: [
-    { name: "keywords", content: "licensing, youtube, monetization, streaming, videos" },
-    { name: "description", content: `${SITE.name} music licensing` },
-    // Protocolo Open Graph
-    { property: "og:url", content: `${SITE.url}/licensing/` },
-    { property: "og:type", content: "website" },
-    { property: "og:title", content: `Licensing | ${SITE.name}` },
-    { property: "og:site_name", content: SITE.name },
-    { property: "og:description", content: `${SITE.name} music licensing` },
-    { property: "og:image", content: `${SITE.url}/${SITE.cover}` },
-    { property: "og:image:width", content: "300" },
-    { property: "og:image:height", content: "200" },
-    { property: "og:image:alt", content: `${SITE.name} cover image` },
-    // Protocolo Twitter
-    { name: "twitter:card", content: "summary" },
-    { name: "twitter:site", content: `@${SITE.twitter}` },
-    { name: "twitter:title", content: `Licensing | ${SITE.name}` },
-    { name: "twitter:description", content: `${SITE.name} music licensing` },
-    { name: "twitter:image", content: `${SITE.url}/${SITE.logo}` }
-  ],
+  description: `${SITE.name} music licensing`,
+  keywords: "licensing, youtube, monetization, streaming, videos",
+  // Protocolo Open Graph
+  ogUrl: `${SITE.url}/licensing/`,
+  ogType: "website",
+  ogTitle: `Licensing | ${SITE.name}`,
+  ogSiteName: SITE.name,
+  ogDescription: `${SITE.name} music licensing`,
+  ogImage: `${SITE.url}/${SITE.cover}`,
+  ogImageWidth: "300",
+  ogImageHeight: "200",
+  ogImageAlt: `${SITE.name} cover image`,
+  // Protocolo Twitter
+  twitterCard: "summary",
+  twitterSite: `@${SITE.twitter}`,
+  twitterTitle: `Licensing | ${SITE.name}`,
+  twitterDescription: `${SITE.name} music licensing`,
+  twitterImage: `${SITE.url}/${SITE.logo}`
+});
+
+useHead({
   link: [
     { rel: "canonical", href: `${SITE.url}/licensing/` }
   ]

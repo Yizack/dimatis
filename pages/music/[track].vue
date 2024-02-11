@@ -1,6 +1,93 @@
-<script setup>
+<script setup lang="ts">
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 definePageMeta({ layout: "site" });
+
+const param = ref(useRoute().params.track.toString());
+const track = computed(() => tracks[param.value]);
+
+if (!track.value) {
+  throw createError({
+    statusCode: 404,
+    message: `Track not found: '${param.value}'`,
+    fatal: true
+  });
+}
+
+const genreURL = computed(() => track.value.genre.replace(/\s+/g, "-").toLowerCase());
+const lyric = computed(() => lyrics[param.value]?.lyrics);
+
+const moreTracks = computed(() => {
+  return Object.entries(tracks).reduce((obj: DimatisTracks, [key, value]) => {
+    if (value.genre === track.value.genre && Object.keys(obj).length < 8 && !key.includes(param.value)) {
+      obj[key] = value;
+    }
+    return obj;
+  }, {});
+});
+
+const SEO = computed(() => {
+  const schemaOrg = {
+    "@context": "http://schema.org",
+    "@type": "MusicRecording",
+    name: track.value.title,
+    url: `${SITE.url}/music/${param.value}`,
+    image: `${SITE.url}/images/${"cover" in track.value ? track.value.cover : param.value}.jpg`,
+    genre: track.value.genre,
+    duration: `PT${"hh" in track.value ? track.value.hh : 0}H${"mm" in track.value ? track.value.mm : 0}M${"ss" in track.value ? track.value.ss : 0}S`,
+    datePublished: track.value.date.split("T")[0],
+    inAlbum: [] as any[],
+    byArtist: [] as any[]
+  };
+
+  if ("album" in track.value) {
+    schemaOrg.inAlbum.push({
+      "@type": "MusicAlbum",
+      name: track.value.album,
+      url: `${SITE.url}/album/${track.value.album?.replace(/\s+/g, "-").toLowerCase()}`
+    });
+  }
+
+  track.value.person.forEach((person) => {
+    schemaOrg.byArtist.push({
+      "@type": "MusicGroup",
+      name: person
+    });
+  });
+
+  return JSON.stringify(schemaOrg);
+});
+
+useSeoMeta({
+  title: `${track.value.artists} - ${track.value.title}`,
+  description: track.value.description,
+  keywords: `release, ${track.value.title}, ${track.value.genre}, play, stream, download, fanlink`,
+  // Protocolo Open Graph
+  ogUrl: `${SITE.url}/music/${param.value}/`,
+  ogType: "website",
+  ogTitle: `${track.value.artists} - ${track.value.title}`,
+  ogSiteName: SITE.name,
+  ogImage: `${SITE.url}/images/${"cover" in track.value ? track.value.cover : param.value}.jpg`,
+  ogImageWidth: "500",
+  ogImageHeight: "500",
+  ogImageAlt: `${track.value.artists} - ${track.value.title}`,
+  ogDescription: track.value.description,
+  // Twitter Card
+  twitterCard: "summary",
+  twitterImage: `${SITE.url}/images/${"cover" in track.value ? track.value.cover : param.value}.jpg`,
+  twitterTitle: `${track.value.artists} - ${track.value.title}`,
+  twitterDescription: track.value.description,
+  twitterSite: `@${SITE.twitter}`
+});
+
+useHead({
+  script: [
+    // Schema.org
+    { type: "application/ld+json", children: SEO.value }
+  ],
+  link: [
+    { rel: "canonical", href: `${SITE.url}/music/${param.value}/` }
+  ]
+});
 </script>
 
 <template>
@@ -24,11 +111,11 @@ definePageMeta({ layout: "site" });
                 <p class="m-0 pre-line">{{ lyric }}</p>
               </div>
             </template>
-            <template v-if="'credits' in track">
+            <template v-if="track.credits">
               <div class="credits mt-3">
                 <h3 class="text-white">Credits</h3>
-                <template v-for="(credits, index) in track.credits" :key="index">
-                  <div :class="{ 'mb-3': track.credits.length - 1 !== index}">
+                <template v-for="(credits, index) of track.credits" :key="index">
+                  <div :class="{ 'mb-3': track.credits.length - 1 !== index }">
                     <h5>{{ credits.title }}</h5>
                     <template v-for="socials in credits.socials" :key="socials.name">
                       <p class="m-0">{{ socials.name }}: <a :href="socials.link" target="_blank">{{ socials.link }}</a></p>
@@ -42,7 +129,7 @@ definePageMeta({ layout: "site" });
             <div id="tags">
               <div class="mb-0">Genre</div>
               <div class="tag mb-2"><NuxtLink :to="`/tag/${genreURL}/`">{{ track.genre }}</NuxtLink></div>
-              <template v-if="'album' in track">
+              <template v-if="track.album">
                 <div class="mb-0">Album</div>
                 <div class="tag mb-2"><NuxtLink :to="`/album/${track.album.replace(/\s+/g, '-').toLowerCase()}/`">{{ track.album }}</NuxtLink></div>
               </template>
@@ -51,7 +138,7 @@ definePageMeta({ layout: "site" });
               <div class="mb-0">Duration</div>
               <div class="tag mb-2">{{ track.mm }}:{{ String(track.ss).padStart(2, "0") }}</div>
               <div class="mb-0">Fanlink</div>
-              <div class="tag"><a :href="`https://yizack.com/${param}/`" target="_blank">yizack.com/{{ param }}<FontAwesome class="ms-2" :icon="faArrowUpRightFromSquare" /></a></div>
+              <div class="tag"><a :href="`${SITE.fanlinkUrl}/${param}/`" target="_blank">{{ SITE.fanlinkDomain }}/{{ param }}<FontAwesome class="ms-2" :icon="faArrowUpRightFromSquare" /></a></div>
             </div>
           </div>
         </div>
@@ -61,7 +148,7 @@ definePageMeta({ layout: "site" });
             <template v-for="(more, more_param) in moreTracks" :key="more_param">
               <div class="col-6 col-lg-3">
                 <NuxtLink :to="`/music/${more_param}/`">
-                  <img class="img-fluid scale-on-hover rounded-3" :src="`/images/${'cover' in more ? more.cover : more_param}.jpg`" :alt="`${more.artists} - ${more.title}`">
+                  <img class="img-fluid scale-on-hover rounded-3" :src="`/images/${more.cover ? more.cover : more_param}.jpg`" :alt="`${more.artists} - ${more.title}`">
                   <p class="mt-2 mb-0">{{ more.title }}</p>
                   <p><small>{{ more.artists }}</small></p>
                 </NuxtLink>
@@ -73,102 +160,3 @@ definePageMeta({ layout: "site" });
     </section>
   </main>
 </template>
-
-<script>
-export default {
-  name: "TrackPage",
-  data () {
-    return {
-      param: this.$route.params.track
-    };
-  },
-  computed: {
-    track () {
-      return tracks[this.param] || {};
-    },
-    genreURL () {
-      return this.track.genre.replace(/\s+/g, "-").toLowerCase();
-    },
-    lyric () {
-      return lyrics[this.param]?.lyrics;
-    },
-    moreTracks () {
-      return Object.entries(tracks).reduce((obj, [key, value]) => {
-        if (value.genre === this.track.genre && Object.keys(obj).length < 8 && !key.includes(this.param)) {
-          obj[key] = value;
-        }
-        return obj;
-      }, {});
-    },
-    SEO () {
-      const schemaOrg = {
-        "@context": "http://schema.org",
-        "@type": "MusicRecording",
-        name: this.track.title,
-        url: `${SITE.url}/music/${this.param}`,
-        image: `${SITE.url}/images/${"cover" in this.track ? this.track.cover : this.param}.jpg`,
-        genre: this.track.genre,
-        duration: `PT${"hh" in this.track ? this.track.hh : 0}H${"mm" in this.track ? this.track.mm : 0}M${"ss" in this.track ? this.track.ss : 0}S`,
-        datePublished: this.track.date.split("T")[0],
-        byArtist: []
-      };
-
-      if ("album" in this.track) {
-        schemaOrg.inAlbum = [{
-          "@type": "MusicAlbum",
-          name: this.track.album,
-          url: `${SITE.url}/album/${this.track.album.replace(/\s+/g, "-").toLowerCase()}`
-        }];
-      }
-
-      this.track.person.forEach((person) => {
-        schemaOrg.byArtist.push({
-          "@type": "MusicGroup",
-          name: person
-        });
-      });
-
-      return JSON.stringify(schemaOrg);
-    }
-  },
-  created () {
-    if (!this.track.title) {
-      throw createError({
-        statusCode: 404,
-        message: `Track not found: '${this.param}'`,
-        fatal: true
-      });
-    }
-    useHead({
-      title: `${this.track.artists} - ${this.track.title}`,
-      meta: [
-        { name: "keywords", content: `release, ${this.track.title}, ${this.track.genre}, play, stream, download, fanlink` },
-        { name: "description", content: this.track.description },
-        // Protocolo Open Graph
-        { property: "og:url", content: `${SITE.url}/music/${this.param}/` },
-        { property: "og:type", content: "website" },
-        { property: "og:title", content: `${this.track.artists} - ${this.track.title}` },
-        { property: "og:site_name", content: SITE.name },
-        { property: "og:image", content: `${SITE.url}/images/${"cover" in this.track ? this.track.cover : this.param}.jpg` },
-        { property: "og:image:width", content: "500" },
-        { property: "og:image:height", content: "500" },
-        { property: "og:image:alt", content: `${this.track.artists} - ${this.track.title}` },
-        { property: "og:description", content: this.track.description },
-        // Twitter Card
-        { name: "twitter:card", content: "summary" },
-        { name: "twitter:image", content: `${SITE.url}/images/${"cover" in this.track ? this.track.cover : this.param}.jpg` },
-        { name: "twitter:title", content: `${this.track.artists} - ${this.track.title}` },
-        { name: "twitter:description", content: this.track.description },
-        { name: "twitter:site", content: `@${SITE.twitter}` }
-      ],
-      script: [
-        // Schema.org
-        { type: "application/ld+json", children: this.SEO }
-      ],
-      link: [
-        { rel: "canonical", href: `${SITE.url}/music/${this.param}/` }
-      ]
-    });
-  }
-};
-</script>

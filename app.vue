@@ -1,5 +1,6 @@
-<script setup>
+<script setup lang="ts">
 const nuxtApp = useNuxtApp();
+
 nuxtApp.$router.options.scrollBehavior = (to) => {
   if (to.hash === "") {
     return { left: 0, top: 0 };
@@ -12,6 +13,14 @@ nuxtApp.$router.options.scrollBehavior = (to) => {
     });
   }
 };
+
+const loading = ref(true);
+
+onBeforeMount(() => {
+  nuxtApp.hook("page:finish", () => {
+    loading.value = false;
+  });
+});
 </script>
 
 <template>
@@ -21,22 +30,6 @@ nuxtApp.$router.options.scrollBehavior = (to) => {
     <NuxtPage />
   </NuxtLayout>
 </template>
-
-<script>
-export default {
-  name: "App",
-  data () {
-    return {
-      loading: true
-    };
-  },
-  beforeMount () {
-    this.$nuxt.hook("page:finish", () => {
-      this.loading = false;
-    });
-  }
-};
-</script>
 
 <style scoped>
 .nuxt-loading-indicator {

@@ -1,3 +1,5 @@
+/* stylelint-disable no-descending-specificity */
+
 :root {
   --dark-color: #151515;
   --secondary-bg-color: #202020;
@@ -5,6 +7,7 @@
   --white-color: #f7f7f7;
   --muted-color: #ddd;
   --font: "Roboto", sans-serif;
+
   scrollbar-color: var(--white-color) var(--secondary-bg-color);
   scrollbar-width: auto;
   scroll-behavior: unset;
@@ -37,6 +40,7 @@ body {
 .bg-secondary {
   background-color: var(--secondary-bg-color)!important;
 }
+
 
 .bg-dark a, .bg-dark a:hover {
   color: var(--white-color);
@@ -120,7 +124,7 @@ footer .soundcloud a:hover {
 }
   
 footer .youtube a:hover {
-  color: #ff0000;
+  color: #f00;
   text-decoration: none;
 }
   
@@ -142,10 +146,12 @@ footer .instagram a:hover {
 .table {
   --bs-table-color: inherit;
   --bs-table-bg: transparent;
+
   margin: 0;
 }
 
 .table th {
+  padding: 1rem;
   border-top: none;
   border-color: var(--secondary-text-color);
   font-weight: normal;
@@ -163,16 +169,12 @@ tbody tr:hover {
   padding-right: 1rem;
 }
 
-.table th {
-  padding: 1rem;
-}
-
 iframe {
   border: none;
 }
 
 
-:target:before {
+:target::before {
   content: "";
   display: block;
   height: 75px;
@@ -189,9 +191,8 @@ iframe {
 }
 
 .scale-on-hover:hover {
-  -webkit-transform: scale(1.05);
   transform: scale(1.05);
-  box-shadow: 0 10px 10px rgba(0,0,0,.15)!important;
+  box-shadow: 0 10px 10px rgb(0 0 0 / 15%)!important;
 }
 
 .scale-on-hover {
@@ -227,19 +228,19 @@ a:hover {
   background-color: var(--white-color);
 }
 
-#follow_spotify:hover {
+#follow-spotify:hover {
   text-decoration: none!important;
 }
 
-#follow_spotify:hover #spotify_button {
-  background: #1fad49;
-}
-
-#follow_spotify #spotify_button {
+#follow-spotify #spotify-button {
   background: #2cbe58;
 }
 
-#follow_spotify:hover #spotify_followers {
+#follow-spotify:hover #spotify-button {
+  background: #1fad49;
+}
+
+#follow-spotify:hover #spotify-followers {
   text-decoration: underline!important;
 }
 
@@ -252,8 +253,8 @@ a:hover {
   position: fixed;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+
 }
 
 .credits p {

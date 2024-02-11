@@ -11,12 +11,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "LoadingPage"
-};
-</script>
-
 <style scoped>
 .loading-page  {
   position: fixed;

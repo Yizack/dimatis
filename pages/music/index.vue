@@ -1,5 +1,53 @@
-<script setup>
+<script setup lang="ts">
 definePageMeta({ layout: "site" });
+
+const showMore = ref(false);
+
+const latestTracks = computed(() => {
+  return Object.entries(tracks).slice(0, 15).reduce((obj: DimatisTracks, [key, value]) => {
+    obj[key] = value;
+    return obj;
+  }, {});
+});
+
+const moreTracks = computed(() => {
+  return Object.entries(tracks).slice(15).reduce((obj: DimatisTracks, [key, value]) => {
+    obj[key] = value;
+    return obj;
+  }, {});
+});
+
+const more = () => {
+  showMore.value = true;
+};
+
+useSeoMeta({
+  title: `Music | ${SITE.name}`,
+  description: `All ${SITE.name} releases`,
+  keywords: "discography, releases, singles, remixes, songs, listen",
+  // Protocolo Open Graph
+  ogUrl: `${SITE.url}/music/`,
+  ogType: "website",
+  ogTitle: `Music | ${SITE.name}`,
+  ogSiteName: SITE.name,
+  ogDescription: `All ${SITE.name} releases`,
+  ogImage: `${SITE.url}/${SITE.cover}`,
+  ogImageWidth: "300",
+  ogImageHeight: "200",
+  ogImageAlt: `${SITE.name} cover image`,
+  // Protocolo Twitter
+  twitterCard: "summary",
+  twitterSite: `@${SITE.twitter}`,
+  twitterTitle: `Music | ${SITE.name}`,
+  twitterDescription: `All ${SITE.name} releases`,
+  twitterImage: `${SITE.url}/${SITE.logo}`
+});
+
+useHead({
+  link: [
+    { rel: "canonical", href: `${SITE.url}/music/` }
+  ]
+});
 </script>
 
 <template>
@@ -41,62 +89,3 @@ definePageMeta({ layout: "site" });
     </section>
   </main>
 </template>
-
-<script>
-export default {
-  name: "MusicPage",
-  data () {
-    return {
-      param: this.$route.params.track,
-      showMore: false
-    };
-  },
-  computed: {
-    latestTracks () {
-      return Object.entries(tracks).slice(0, 15).reduce((obj, [key, value]) => {
-        obj[key] = value;
-        return obj;
-      }, {});
-    },
-    moreTracks () {
-      return Object.entries(tracks).slice(15).reduce((obj, [key, value]) => {
-        obj[key] = value;
-        return obj;
-      }, {});
-    }
-  },
-  created () {
-    useHead({
-      title: `Music | ${SITE.name}`,
-      meta: [
-        { name: "keywords", content: "discography, releases, singles, remixes, songs, listen" },
-        { name: "description", content: `All ${SITE.name} releases` },
-        // Protocolo Open Graph
-        { property: "og:url", content: `${SITE.url}/music/` },
-        { property: "og:type", content: "website" },
-        { property: "og:title", content: `Music | ${SITE.name}` },
-        { property: "og:site_name", content: SITE.name },
-        { property: "og:description", content: `All ${SITE.name} releases` },
-        { property: "og:image", content: `${SITE.url}/${SITE.cover}` },
-        { property: "og:image:width", content: "300" },
-        { property: "og:image:height", content: "200" },
-        { property: "og:image:alt", content: `${SITE.name} cover image` },
-        // Protocolo Twitter
-        { name: "twitter:card", content: "summary" },
-        { name: "twitter:site", content: `@${SITE.twitter}` },
-        { name: "twitter:title", content: `Music | ${SITE.name}` },
-        { name: "twitter:description", content: `All ${SITE.name} releases` },
-        { name: "twitter:image", content: `${SITE.url}/${SITE.logo}` }
-      ],
-      link: [
-        { rel: "canonical", href: `${SITE.url}/music/` }
-      ]
-    });
-  },
-  methods: {
-    more () {
-      this.showMore = true;
-    }
-  }
-};
-</script>
