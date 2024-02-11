@@ -8,8 +8,6 @@ const routes = [
 
 export default defineNuxtConfig({
   app: {
-    rootId: "app",
-    buildAssetsDir: "/_app/",
     head: {
       htmlAttrs: {
         lang: "en"
@@ -64,5 +62,8 @@ export default defineNuxtConfig({
   },
   features: {
     inlineStyles: false,
+  },
+  experimental: {
+    viewTransition: true
   }
 });
