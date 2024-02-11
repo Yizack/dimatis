@@ -6,6 +6,7 @@
     "string-quotes": "double",
     "declaration-colon-space-after": "always",
     "length-zero-no-unit": true,
-    "rule-empty-line-before": ["always-multi-line", {"except": ["first-nested"]}]
+    "rule-empty-line-before": ["always-multi-line", { "except": ["first-nested"] }],
+    "color-function-notation": ["modern", { "ignore": ["with-var-inside"] }]
   }
 }
