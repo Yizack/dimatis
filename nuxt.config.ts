@@ -1,5 +1,6 @@
 import tracks from "./public/data/tracks.json";
 import albums from "./public/data/albums.json";
+import { SITE } from "./utils/site-info";
 
 const routes = [
   ...Object.keys(tracks).map((track) => `/music/${track}/`),
@@ -54,13 +55,29 @@ export default defineNuxtConfig({
     "~/assets/css/transitions.css"
   ],
   modules:[
-    "nuxt-musicfyplayer"
+    "nuxt-musicfyplayer",
+    "@nuxtjs/sitemap"
   ],
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes
+      routes: [...routes, "/sitemap.xml"]
     }
+  },
+  site: {
+    url: SITE.url,
+  },
+  sitemap: {
+    discoverImages: false,
+    xslColumns: [
+      { label: "URL", width: "65%" },
+      { label: "Priority", select: "sitemap:priority", width: "12.5%" },
+      { label: "Last Modified", select: "sitemap:lastmod", width: "35%" }
+    ]
+  },
+  routeRules: {
+    "/": { sitemap: { priority: 1 } },
+    "/*/**": { sitemap: { priority: 0.8, lastmod: new Date().toISOString() } }
   },
   features: {
     inlineStyles: false,
