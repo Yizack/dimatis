@@ -25,8 +25,8 @@
     "bootstrap": "^5.3.2",
     "colorthief": "^2.4.0",
     "eslint": "^8.56.0",
-    "mediaelement": "^7.0.3",
     "nuxt": "^3.10.1",
+    "nuxt-musicfyplayer": "^1.0.0",
     "stylelint": "^16.2.1",
     "stylelint-config-standard": "^36.0.0"
   }

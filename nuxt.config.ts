@@ -45,7 +45,6 @@ export default defineNuxtConfig({
     }
   },
   css: [
-    "mediaelement/build/mediaelementplayer.min.css",
     "bootstrap/dist/css/bootstrap.min.css",
     "@glidejs/glide/dist/css/glide.core.min.css",
     "~/assets/css/dimatis.css",
@@ -53,6 +52,9 @@ export default defineNuxtConfig({
     "~/assets/css/audio-player.css",
     "~/assets/css/player-styles.css",
     "~/assets/css/transitions.css"
+  ],
+  modules:[
+    "nuxt-musicfyplayer"
   ],
   nitro: {
     prerender: {

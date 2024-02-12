@@ -41,12 +41,12 @@ devDependencies:
   eslint:
     specifier: ^8.56.0
     version: 8.56.0
-  mediaelement:
-    specifier: ^7.0.3
-    version: 7.0.3
   nuxt:
     specifier: ^3.10.1
     version: 3.10.1(eslint@8.56.0)(stylelint@16.2.1)(typescript@5.2.2)(vite@5.0.12)
+  nuxt-musicfyplayer:
+    specifier: ^1.0.0
+    version: 1.0.0
   stylelint:
     specifier: ^16.2.1
     version: 16.2.1(typescript@5.2.2)
@@ -6282,6 +6282,17 @@ packages:
     hasBin: true
     optionalDependencies:
       fsevents: 2.3.3
+    dev: true
+
+  /nuxt-musicfyplayer@1.0.0:
+    resolution: {integrity: sha512-iav3d1aaz2v3bp2f8tSde+1mcde2ZEthap7Vz2saCOOGfD3vNLSCxvORZI04oeK9zFl/OZKNjjFm+IzvA7gcgQ==}
+    dependencies:
+      '@nuxt/kit': 3.10.1
+      colorthief: 2.4.0
+      mediaelement: 7.0.3
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
     dev: true
 
   /nuxt-site-config-kit@2.2.9(vue@3.4.18):
