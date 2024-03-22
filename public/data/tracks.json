@@ -1,4 +1,37 @@
 { 
+  "the-songs-of-yesterday": {
+    "artists": "Mox Jade, Dimatis, Sydney Grimm",
+    "title": "The Songs Of Yesterday",
+    "description": "",
+    "genre": "Melodic Dubstep",
+    "date": "2024-03-22T00:00:00.000",
+    "person": ["Mox Jade", "Dimatis", "Sydney Grimm"],
+    "mm": 4,
+    "ss": 0,
+    "dropbox": {
+      "id": "mwonurbqyzfn182g0mb5z",
+      "rlkey": "ndvo2hra8w536u9700ta0h06w"
+    },
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/track/40ZycJgBXBPzkWWr9O0V0O",
+        "soundcloud": "https://soundcloud.com/dimatis/the-songs-of-yesterday",
+        "youtube": "https://youtu.be/xRJwpVhQ1jw",
+        "apple": "https://music.apple.com/us/album/the-songs-of-yesterday-single/1735631610?app=music&ls=1",
+        "itunes": "https://music.apple.com/us/album/the-songs-of-yesterday-single/1735631610?app=music&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/track/the-songs-of-yesterday",
+        "deezer": "https://www.deezer.com/en/album/559626072",
+        "tidal": "",
+        "yandex": "",
+        "amazon": "https://www.amazon.com/dp/B0CXWC45RK",
+        "tiktok": "",
+        "beatport": "",
+        "netease": "https://music.163.com/#/song?id=2135088199"
+      }
+    }
+  },
   "dont-take-me": {
     "artists": "Dimatis",
     "title": "Don't Take Me",

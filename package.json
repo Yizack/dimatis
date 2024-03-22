@@ -22,10 +22,10 @@
     "@nuxtjs/sitemap": "^5.1.0",
     "@types/bootstrap": "^5.2.10",
     "@types/glidejs__glide": "^3.6.5",
-    "bootstrap": "^5.3.2",
+    "bootstrap": "^5.3.3",
     "colorthief": "^2.4.0",
-    "eslint": "^8.56.0",
-    "nuxt": "^3.10.2",
+    "eslint": "^8.57.0",
+    "nuxt": "^3.10.3",
     "nuxt-musicfyplayer": "^1.0.1",
     "stylelint": "^16.2.1",
     "stylelint-config-standard": "^36.0.0"
