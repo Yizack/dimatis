@@ -55,6 +55,7 @@ export default defineNuxtConfig({
     "~/assets/css/transitions.css"
   ],
   modules:[
+    "@nuxt/eslint",
     "nuxt-musicfyplayer",
     "@nuxtjs/sitemap"
   ],

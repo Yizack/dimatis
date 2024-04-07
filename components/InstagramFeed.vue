@@ -1,11 +1,11 @@
 <script setup lang="ts">
-const feed = ref<any[]>([]);
+const feed = ref<unknown[]>([]);
 const { $Glide } = useNuxtApp();
 
 onMounted(async () => {
-  const req = await $fetch<{ data: any }>("https://feed-dimatis.yizack.com/").catch(() => null);
+  const req = await $fetch<{ data: unknown[] }>("https://feed-dimatis.yizack.com/").catch(() => null);
 
-  if (req) feed.value = await req.data;
+  if (req) feed.value = req.data;
 
   setTimeout(() => {
     new $Glide(".glide", {
@@ -20,6 +20,8 @@ onMounted(async () => {
         }
       }
     }).mount();
+
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (window as any).instgrm.Embeds.process();
   });
 });

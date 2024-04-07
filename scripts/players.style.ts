@@ -1,16 +1,17 @@
 import { writeFile } from "fs";
 import { createRequire } from "module";
 import { resolve } from "path";
+// @ts-expect-error - no types
 import ColorThief from "colorthief";
 
 const require = createRequire(import.meta.url);
 const tracks = require("../public/data/tracks.json");
-const styles = {};
+const styles = {} as Record<string, { color: string }>;
 let css_content = "";
 Object.keys(tracks).forEach((param) => {
   const filename = "cover" in tracks[param] ? tracks[param].cover : param;
   const img = resolve(process.cwd(), `./public/images/${filename}.jpg`);
-  ColorThief.getColor(img).then((color) => {
+  ColorThief.getColor(img).then((color: number[]) => {
     if (!(filename in styles)) {
       styles[filename] = {
         color: `rgb(${color[0]}, ${color[1]}, ${color[2]})`
@@ -23,7 +24,7 @@ Object.keys(tracks).forEach((param) => {
     else {
       console.info(`Already exists: ${filename}, skipping`);
     }
-  }).catch((err) => {
+  }).catch((err: unknown) => {
     console.warn(err);
   });
 });
