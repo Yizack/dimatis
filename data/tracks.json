@@ -1,4 +1,37 @@
 { 
+  "choices": {
+    "artists": "Dimatis",
+    "title": "Choices",
+    "description": "",
+    "genre": "Melodic Dubstep",
+    "date": "2024-04-19T00:00:00.000",
+    "person": ["Dimatis"],
+    "mm": 4,
+    "ss": 1,
+    "dropbox": {
+      "id": "1so0ncxrvlsdmyvap83rz",
+      "rlkey": "l076knq80kjgwormwltur29fq"
+    },
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "",
+        "soundcloud": "https://soundcloud.com/dimatis/choices",
+        "youtube": "",
+        "apple": "",
+        "itunes": "",
+        "bandcamp": "https://dimatis.bandcamp.com/track/choices",
+        "deezer": "",
+        "tidal": "",
+        "yandex": "",
+        "amazon": "",
+        "tiktok": "",
+        "beatport": "",
+        "netease": ""
+      }
+    }
+  },
   "the-songs-of-yesterday": {
     "artists": "Mox Jade, Dimatis, Sydney Grimm",
     "title": "The Songs of Yesterday",
