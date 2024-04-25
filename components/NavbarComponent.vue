@@ -32,6 +32,9 @@ const collapseNav = () => {
           <li class="nav-item pe-3" role="menuitem">
             <NuxtLink class="nav-link" to="/licensing/">Licensing</NuxtLink>
           </li>
+          <li class="nav-item pe-3" role="menuitem">
+            <NuxtLink class="nav-link" to="/branding/">Branding</NuxtLink>
+          </li>
           <li class="nav-item pe-3" role="menuitem"><a class="nav-link" :href="SITE.fanlinks" target="_blank">Fanlinks</a></li>
           <li class="nav-item" role="menuitem"><a class="nav-link" :href="SITE.merch" target="_blank">Merch</a></li>
         </ul>

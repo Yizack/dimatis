@@ -1,0 +1,88 @@
+<script setup lang="ts">
+definePageMeta({ layout: "site" });
+
+useSeoMeta({
+  title: `Branding | ${SITE.name}`,
+  description: `${SITE.name} music branding`,
+  keywords: "branding, logo, youtube, monetization, streaming, videos",
+  // Protocolo Open Graph
+  ogUrl: `${SITE.url}/branding/`,
+  ogType: "website",
+  ogTitle: `Branding | ${SITE.name}`,
+  ogSiteName: SITE.name,
+  ogDescription: `${SITE.name} music branding`,
+  ogImage: `${SITE.url}/${SITE.cover}`,
+  ogImageWidth: "300",
+  ogImageHeight: "200",
+  ogImageAlt: `${SITE.name} cover image`,
+  // Protocolo Twitter
+  twitterCard: "summary",
+  twitterSite: `@${SITE.twitter}`,
+  twitterTitle: `Branding | ${SITE.name}`,
+  twitterDescription: `${SITE.name} music branding`,
+  twitterImage: `${SITE.url}/${SITE.logo}`
+});
+
+useHead({
+  link: [
+    { rel: "canonical", href: `${SITE.url}/branding/` }
+  ]
+});
+</script>
+
+<template>
+  <main>
+    <section>
+      <div class="container py-5 text-center">
+        <div class="pb-2">
+          <h3 class="text-uppercase">Branding</h3>
+        </div>
+        <div class="row my-4">
+          <div class="col-12 col-lg-6 text-start mx-auto">
+            <p>Assets of my logo available for download, use these in collaborations with me, blogs, videos, and anything related to my music.</p>
+          </div>
+          <div class="col-12 text-start mx-auto mb-4">
+            <div class="d-flex justify-content-center gap-4">
+              <div class="card rounded-3 overflow-hidden">
+                <div class="card-body bg-dark">
+                  <a :href="SITE.logo" download="dimatis-logo-white.png">
+                    <img src="/images/logos/logo_dimatis_3000_white.png" alt="Dimatis logo" class="img-fluid" width="300" height="300">
+                  </a>
+                </div>
+                <div class="card-footer">Dimatis white logo (PNG 3000x3000px)</div>
+              </div>
+              <div class="card rounded-3 overflow-hidden">
+                <div class="card-body">
+                  <a :href="SITE.logo" download="dimatis-logo-black.png">
+                    <img src="/images/logos/logo_dimatis_3000.png" alt="Dimatis logo" class="img-fluid" width="300" height="300">
+                  </a>
+                </div>
+                <div class="card-footer">Dimatis black logo (PNG 3000x3000px)</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 text-start mx-auto">
+            <div class="d-flex justify-content-center gap-4">
+              <div class="card rounded-3 overflow-hidden">
+                <div class="card-body bg-dark">
+                  <a :href="SITE.logo" download="dimatis-logo-white.png">
+                    <img src="/images/logos/text_logo_dimatis_white.png" alt="Dimatis logo" class="img-fluid" width="300" height="59">
+                  </a>
+                </div>
+                <div class="card-footer">Dimatis white text logo (PNG 5000x987px)</div>
+              </div>
+              <div class="card rounded-3 overflow-hidden">
+                <div class="card-body">
+                  <a :href="SITE.logo" download="dimatis-logo-black.png">
+                    <img src="/images/logos/text_logo_dimatis.png" alt="Dimatis logo" class="img-fluid" width="300" height="59">
+                  </a>
+                </div>
+                <div class="card-footer">Dimatis black text logo (PNG 5000x987px)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</template>
