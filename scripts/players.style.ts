@@ -1,14 +1,14 @@
 import { writeFile } from "fs";
-import { createRequire } from "module";
 import { resolve } from "path";
 // @ts-expect-error - no types
 import ColorThief from "colorthief";
+import tracks from "../public/data/tracks.json";
 
-const require = createRequire(import.meta.url);
-const tracks = require("../public/data/tracks.json");
 const styles = {} as Record<string, { color: string }>;
 let css_content = "";
-Object.keys(tracks).forEach((param) => {
+
+for (const param in tracks) {
+  // @ts-expect-error - no types
   const filename = "cover" in tracks[param] ? tracks[param].cover : param;
   const img = resolve(process.cwd(), `./public/images/${filename}.jpg`);
   ColorThief.getColor(img).then((color: number[]) => {
@@ -27,4 +27,5 @@ Object.keys(tracks).forEach((param) => {
   }).catch((err: unknown) => {
     console.warn(err);
   });
-});
+
+}
