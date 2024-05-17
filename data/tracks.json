@@ -1,4 +1,37 @@
 { 
+  "starrysphere": {
+    "artists": "Dimatis",
+    "title": "Starrysphere",
+    "description": "I'm back once again with \"Starrysphere\", it is one of those relaxing chill ambient/garage tracks, inspired by the stars in the sky, get ready to embark on a journey through celestial realms as soothing melodies.",
+    "genre": "Future Garage",
+    "date": "2024-05-17T00:00:00.000",
+    "person": ["Dimatis"],
+    "mm": 3,
+    "ss": 36,
+    "dropbox": {
+      "id": "4buyczp8qbwekaq1ugvn2",
+      "rlkey": "4q7rvie6k2yi5l89cv4tf2t6m"
+    },
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/track/1UEJ2m9ZwKfntuIqJxzsPX",
+        "soundcloud": "https://soundcloud.com/dimatis/starrysphere",
+        "youtube": "https://youtu.be/3xaToLJ3eFU",
+        "apple": "https://music.apple.com/us/album/starrysphere-single/1743154118?app=music&ls=1",
+        "itunes": "https://music.apple.com/us/album/starrysphere-single/1743154118?app=itunes&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/track/starrysphere",
+        "deezer": "https://www.deezer.com/us/album/578728651",
+        "tidal": "https://tidal.com/browse/album/359879902",
+        "yandex": "https://music.yandex.com/album/30927569",
+        "amazon": "https://www.amazon.com/dp/B0D2PG5PDH",
+        "tiktok": "",
+        "beatport": "",
+        "netease": "https://music.163.com/#/song?id=2149538653"
+      }
+    }
+  },
   "choices": {
     "artists": "Dimatis",
     "title": "Choices",
