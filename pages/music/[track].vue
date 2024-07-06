@@ -28,28 +28,28 @@ const SEO = computed(() => {
   const schemaOrg = {
     "@context": "http://schema.org",
     "@type": "MusicRecording",
-    name: track.value.title,
-    url: `${SITE.url}/music/${param.value}`,
-    image: `${SITE.url}/images/${"cover" in track.value ? track.value.cover : param.value}.jpg`,
-    genre: track.value.genre,
-    duration: `PT${"hh" in track.value ? track.value.hh : 0}H${"mm" in track.value ? track.value.mm : 0}M${"ss" in track.value ? track.value.ss : 0}S`,
-    datePublished: track.value.date.split("T")[0],
-    inAlbum: [] as any[],
-    byArtist: [] as any[]
+    "name": track.value.title,
+    "url": `${SITE.url}/music/${param.value}`,
+    "image": `${SITE.url}/images/${"cover" in track.value ? track.value.cover : param.value}.jpg`,
+    "genre": track.value.genre,
+    "duration": `PT${"hh" in track.value ? track.value.hh : 0}H${"mm" in track.value ? track.value.mm : 0}M${"ss" in track.value ? track.value.ss : 0}S`,
+    "datePublished": track.value.date.split("T")[0],
+    "inAlbum": [] as { "@type": string, "name"?: string, "url": string }[],
+    "byArtist": [] as { "@type": string, "name"?: string }[]
   };
 
   if ("album" in track.value) {
     schemaOrg.inAlbum.push({
       "@type": "MusicAlbum",
-      name: track.value.album,
-      url: `${SITE.url}/album/${track.value.album?.replace(/\s+/g, "-").toLowerCase()}`
+      "name": track.value.album,
+      "url": `${SITE.url}/album/${track.value.album?.replace(/\s+/g, "-").toLowerCase()}`
     });
   }
 
   track.value.person.forEach((person) => {
     schemaOrg.byArtist.push({
       "@type": "MusicGroup",
-      name: person
+      "name": person
     });
   });
 
@@ -97,7 +97,7 @@ useHead({
           <h1 class="mb-1">{{ track.title }}</h1>
           <h3 class="text-secondary mb-0">{{ track.artists }}</h3>
         </div>
-        <MusicPlayer class="rounded-3" :size="{height: '450px', width: '100%'}" :track="track" :param="param" />
+        <MusicPlayer class="rounded-3" :size="{ height: '450px', width: '100%' }" :track="track" :param="param" />
         <div class="row my-3 mx-0 bg-secondary rounded p-3">
           <div class="col-12 col-md-8 mb-3 mb-md-0 text-secondary p-0">
             <div class="description">

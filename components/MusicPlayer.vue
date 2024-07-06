@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const props = defineProps({
   size: {
-    type: Object as PropType<{ width: string; height: string; }>,
+    type: Object as PropType<{ width: string, height: string }>,
     default: () => ({})
   },
   track: {

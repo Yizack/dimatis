@@ -37,7 +37,7 @@ onMounted(async () => {
         <div class="col-lg-12 p-0">
           <div class="glide">
             <div class="glide__track" data-glide-el="track">
-              <ul class="glide__slides" :class="{'d-none': !feed}">
+              <ul class="glide__slides" :class="{ 'd-none': !feed }">
                 <li v-for="(post, index) in feed" :key="index" class="glide__slide">
                   <div class="instagram-wrapper">
                     <blockquote class="instagram-media mx-auto" data-instgrm-captioned :data-instgrm-permalink="`${post.permalink}?utm_source=ig_embed&amp;utm_campaign=loading`" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: auto; max-width:540px; min-width:326px; padding:0; width:100%;">
@@ -100,12 +100,12 @@ onMounted(async () => {
               </ul>
             </div>
             <div class="glide__arrows" data-glide-el="controls">
-              <span class="glide__arrow glide__arrow--left" data-glide-dir="<" :class="{'d-none': !feed}">
+              <span class="glide__arrow glide__arrow--left" data-glide-dir="<" :class="{ 'd-none': !feed }">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
                 </svg>
               </span>
-              <span class="glide__arrow glide__arrow--right" data-glide-dir=">" :class="{'d-none': !feed}">
+              <span class="glide__arrow glide__arrow--right" data-glide-dir=">" :class="{ 'd-none': !feed }">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
                 </svg>

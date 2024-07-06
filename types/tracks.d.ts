@@ -20,14 +20,14 @@ declare global {
     dropbox: {
       id: string;
       rlkey?: string;
-    },
+    };
     credits?: {
       title: string;
       socials: {
         name: string;
         link: string;
       }[];
-    }[],
+    }[];
     fanlink: {
       download: boolean;
       dark: boolean;
@@ -45,7 +45,7 @@ declare global {
         tiktok?: string;
         beatport?: string;
         netease?: string;
-      }
-    }
+      };
+    };
   }
 }

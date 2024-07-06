@@ -27,5 +27,4 @@ for (const param in tracks) {
   }).catch((err: unknown) => {
     console.warn(err);
   });
-
 }

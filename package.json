@@ -8,9 +8,9 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "style_players": "tsx scripts/players.style.ts",
-    "lint": "npm run lint:eslint && npm run lint:stylelint",
-    "lint:eslint": "eslint --fix",
-    "lint:stylelint": "stylelint \"**/*.css\" --fix"
+    "lint": "pnpm lint:eslint --fix && pnpm lint:stylelint --fix",
+    "lint:eslint": "eslint",
+    "lint:stylelint": "stylelint \"**/*.css\""
   },
   "devDependencies": {
     "@glidejs/glide": "^3.6.2",

@@ -2,36 +2,51 @@ name: Build
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
-  build:
+  lint:
+    if: github.event_name == 'push'
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [20]
 
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v4
-
+      - uses: actions/checkout@v4
       - run: corepack enable
-
-      - name: Setup Node 🐢
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 20
+          cache: "pnpm"
+
+      - name: 📦 Install dependencies
+        run: pnpm install
+
+      - name: 🔎 Lint
+        run: pnpm lint:eslint && pnpm lint:stylelint
+
+  build:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: corepack enable
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
           cache: 'pnpm'
         
-      - name: Install Dependencies 📦
+      - name: 📦 Install dependencies
         run: pnpm install
       
-      - name: Build 🏗️
+      - name: 🏗️ Build
         run: |
           pnpm style_players
           pnpm generate
 
-      - name: Deploy 🚀
+      - name: 🚀 Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages

@@ -2,7 +2,7 @@
 const spotifyFollowers = ref<number | null>(null);
 
 onMounted(async () => {
-  const spotify = await $fetch<{ followers: number; }>(`https://cf-spotify.yizack.com/followers?id=${SITE.spotify_id}`).catch(() => null);
+  const spotify = await $fetch<{ followers: number }>(`https://cf-spotify.yizack.com/followers?id=${SITE.spotify_id}`).catch(() => null);
   if (!spotify) return;
   spotifyFollowers.value = spotify.followers;
 });

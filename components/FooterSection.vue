@@ -61,7 +61,7 @@
           </ul>
           <ul class="contact">
             <li>
-              <span class="ml-2">Email: </span><a class="mx-0" :href="`mailto:${ SITE.email }`" target="_blank">{{ SITE.email }}</a>
+              <span class="ml-2">Email: </span><a class="mx-0" :href="`mailto:${SITE.email}`" target="_blank">{{ SITE.email }}</a>
             </li>
           </ul>
         </div>

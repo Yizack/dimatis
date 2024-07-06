@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const error = useError() as Ref<{ statusCode: number; statusMessage: string; message: string; }>;
+const error = useError() as Ref<{ statusCode: number, statusMessage: string, message: string }>;
 
 useHead({
   bodyAttrs: {

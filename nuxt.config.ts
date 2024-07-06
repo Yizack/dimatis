@@ -3,8 +3,8 @@ import albums from "./public/data/albums.json";
 import { SITE } from "./utils/site-info";
 
 const routes = [
-  ...Object.keys(tracks).map((track) => `/music/${track}/`),
-  ...Object.keys(albums).map((album) => `/album/${album}/`)
+  ...Object.keys(tracks).map(track => `/music/${track}/`),
+  ...Object.keys(albums).map(album => `/album/${album}/`)
 ];
 
 export default defineNuxtConfig({
@@ -48,7 +48,7 @@ export default defineNuxtConfig({
     "~/assets/css/transitions.css"
   ],
 
-  modules:[
+  modules: [
     "@nuxt/eslint",
     "nuxt-musicfyplayer",
     "@nuxtjs/sitemap",
@@ -56,6 +56,13 @@ export default defineNuxtConfig({
   ],
 
   icon: { mode: "svg" },
+
+  eslint: {
+    config: {
+      autoInit: false,
+      stylistic: true
+    }
+  },
 
   nitro: {
     prerender: {
@@ -65,7 +72,7 @@ export default defineNuxtConfig({
   },
 
   site: {
-    url: SITE.url,
+    url: SITE.url
   },
 
   sitemap: {
@@ -83,7 +90,7 @@ export default defineNuxtConfig({
   },
 
   features: {
-    inlineStyles: false,
+    inlineStyles: false
   },
 
   experimental: {

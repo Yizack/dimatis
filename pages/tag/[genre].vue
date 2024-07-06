@@ -5,7 +5,7 @@ const genreURL = ref(useRoute().params.genre.toString());
 const showMore = ref(false);
 
 const genre = computed(() => {
-  return genres.find((g) => g.id === genreURL.value)?.name;
+  return genres.find(g => g.id === genreURL.value)?.name;
 });
 
 const allTracksGenre = computed(() => {
@@ -73,7 +73,7 @@ useHead({
           <template v-for="(track, param) in latestTracks" :key="param">
             <div class="col-12 col-lg-4">
               <div class="item">
-                <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{width: '300px', height: '385px'}" :track="track" :param="String(param)" />
+                <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{ width: '300px', height: '385px' }" :track="track" :param="String(param)" />
                 <NuxtLink :to="`/music/${param}/`">
                   <p class="mb-0">{{ track.title }}</p>
                   <p><small>{{ track.artists }}</small></p>
@@ -84,7 +84,7 @@ useHead({
           <template v-for="(track, param) in moreTracks" :key="param">
             <div v-if="showMore" class="col-12 col-lg-4">
               <div class="item">
-                <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{width: '300px', height: '385px'}" :track="track" :param="String(param)" />
+                <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{ width: '300px', height: '385px' }" :track="track" :param="String(param)" />
                 <NuxtLink :to="`/music/${param}/`">
                   <p class="mb-0">{{ track.title }}</p>
                   <p><small>{{ track.artists }}</small></p>
