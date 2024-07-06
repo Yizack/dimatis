@@ -40,7 +40,7 @@ useSeoMeta({
   description: `${genre.value} music by ${SITE.name}`,
   keywords: `genre, ${genre.value}, tag, style, electronic`,
   // Protocolo Open Graph
-  ogUrl: `${SITE.url}/tag/${genreURL.value}/`,
+  ogUrl: `${SITE.url}/tag/${genreURL.value}`,
   ogType: "website",
   ogTitle: `${genre.value} | ${SITE.name}`,
   ogDescription: `${genre.value} music by ${SITE.name}`,
@@ -58,7 +58,7 @@ useSeoMeta({
 
 useHead({
   link: [
-    { rel: "canonical", href: `${SITE.url}/tag/${genreURL.value}/` }
+    { rel: "canonical", href: `${SITE.url}/tag/${genreURL.value}` }
   ]
 });
 </script>
@@ -74,7 +74,7 @@ useHead({
             <div class="col-12 col-lg-4">
               <div class="item">
                 <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{ width: '300px', height: '385px' }" :track="track" :param="String(param)" />
-                <NuxtLink :to="`/music/${param}/`">
+                <NuxtLink :to="`/music/${param}`">
                   <p class="mb-0">{{ track.title }}</p>
                   <p><small>{{ track.artists }}</small></p>
                 </NuxtLink>
@@ -85,7 +85,7 @@ useHead({
             <div v-if="showMore" class="col-12 col-lg-4">
               <div class="item">
                 <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{ width: '300px', height: '385px' }" :track="track" :param="String(param)" />
-                <NuxtLink :to="`/music/${param}/`">
+                <NuxtLink :to="`/music/${param}`">
                   <p class="mb-0">{{ track.title }}</p>
                   <p><small>{{ track.artists }}</small></p>
                 </NuxtLink>

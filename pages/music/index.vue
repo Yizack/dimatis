@@ -26,7 +26,7 @@ useSeoMeta({
   description: `All ${SITE.name} releases`,
   keywords: "discography, releases, singles, remixes, songs, listen",
   // Protocolo Open Graph
-  ogUrl: `${SITE.url}/music/`,
+  ogUrl: `${SITE.url}/music`,
   ogType: "website",
   ogTitle: `Music | ${SITE.name}`,
   ogSiteName: SITE.name,
@@ -45,7 +45,7 @@ useSeoMeta({
 
 useHead({
   link: [
-    { rel: "canonical", href: `${SITE.url}/music/` }
+    { rel: "canonical", href: `${SITE.url}/music` }
   ]
 });
 </script>
@@ -61,7 +61,7 @@ useHead({
             <div class="col-12 col-lg-4">
               <div class="item">
                 <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{ width: '300px', height: '385px' }" :track="track" :param="key" />
-                <NuxtLink :to="`/music/${key}/`">
+                <NuxtLink :to="`/music/${key}`">
                   <p class="mb-0">{{ track.title }}</p>
                   <p><small>{{ track.artists }}</small></p>
                 </NuxtLink>
@@ -73,7 +73,7 @@ useHead({
               <div v-if="showMore" class="col-12 col-lg-4">
                 <div class="item">
                   <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{ width: '300px', height: '385px' }" :track="track" :param="key" />
-                  <NuxtLink :to="`/music/${key}/`">
+                  <NuxtLink :to="`/music/${key}`">
                     <p class="mb-0">{{ track.title }}</p>
                     <p><small>{{ track.artists }}</small></p>
                   </NuxtLink>

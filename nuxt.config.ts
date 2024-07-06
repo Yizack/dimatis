@@ -3,8 +3,8 @@ import albums from "./public/data/albums.json";
 import { SITE } from "./utils/site-info";
 
 const routes = [
-  ...Object.keys(tracks).map(track => `/music/${track}/`),
-  ...Object.keys(albums).map(album => `/album/${album}/`)
+  ...Object.keys(tracks).map(track => `/music/${track}`),
+  ...Object.keys(albums).map(album => `/album/${album}`)
 ];
 
 export default defineNuxtConfig({
@@ -64,6 +64,7 @@ export default defineNuxtConfig({
 
   nitro: {
     prerender: {
+      autoSubfolderIndex: false,
       crawlLinks: true,
       routes: [...routes, "/sitemap.xml"]
     }
@@ -92,7 +93,8 @@ export default defineNuxtConfig({
   },
 
   experimental: {
-    viewTransition: true
+    viewTransition: true,
+    payloadExtraction: false
   },
 
   compatibilityDate: "2024-07-06"

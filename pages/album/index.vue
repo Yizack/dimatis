@@ -6,7 +6,7 @@ useSeoMeta({
   description: `All ${SITE.name} albums`,
   keywords: "albums, playlist, discography, ep, duration, artists",
   // Protocolo Open Graph
-  ogUrl: `${SITE.url}/album/`,
+  ogUrl: `${SITE.url}/album`,
   ogType: "website",
   ogTitle: `Albums | ${SITE.name}`,
   ogSiteName: SITE.name,
@@ -25,7 +25,7 @@ useSeoMeta({
 
 useHead({
   link: [
-    { rel: "canonical", href: `${SITE.url}/album/` }
+    { rel: "canonical", href: `${SITE.url}/album` }
   ]
 });
 </script>
@@ -40,7 +40,7 @@ useHead({
           <template v-for="(album, param) in albums" :key="param">
             <div class="col-12 col-lg-4">
               <div class="item">
-                <NuxtLink :to="`/album/${param}/`">
+                <NuxtLink :to="`/album/${param}`">
                   <img class="img-fluid scale-on-hover rounded-3" :src="`/images/${album.cover}.jpg`" :alt="`${album.artists} - ${album.title} (${album.type})`" width="300">
                   <p class="mt-2 mb-0">{{ album.title }} ({{ album.type }})</p>
                   <p><small>{{ album.artists }}</small></p>

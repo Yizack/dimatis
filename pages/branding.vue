@@ -6,7 +6,7 @@ useSeoMeta({
   description: `${SITE.name} music branding`,
   keywords: "branding, logo, youtube, monetization, streaming, videos",
   // Protocolo Open Graph
-  ogUrl: `${SITE.url}/branding/`,
+  ogUrl: `${SITE.url}/branding`,
   ogType: "website",
   ogTitle: `Branding | ${SITE.name}`,
   ogSiteName: SITE.name,
@@ -25,7 +25,7 @@ useSeoMeta({
 
 useHead({
   link: [
-    { rel: "canonical", href: `${SITE.url}/branding/` }
+    { rel: "canonical", href: `${SITE.url}/branding` }
   ]
 });
 </script>

@@ -30,7 +30,7 @@ useSeoMeta({
   description: album.value.description,
   keywords: `album, ${album.value.title}, fanlink, download`,
   // Protocolo Open Graph
-  ogUrl: `${SITE.url}/album/${param.value}/`,
+  ogUrl: `${SITE.url}/album/${param.value}`,
   ogType: "website",
   ogTitle: `${album.value.artists} - ${album.value.title} (${album.value.type})`,
   ogSiteName: SITE.name,
@@ -49,7 +49,7 @@ useSeoMeta({
 
 useHead({
   link: [
-    { rel: "canonical", href: `${SITE.url}/album/${param.value}/` }
+    { rel: "canonical", href: `${SITE.url}/album/${param.value}` }
   ]
 });
 </script>
@@ -103,7 +103,7 @@ useHead({
                 <div class="tag mb-1" itemprop="datePublished" :content="album.date.split('T')[0]">{{ new Date(album.date).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" }) }}</div>
                 <div class="mb-0">Fanlink</div>
                 <div class="tag">
-                  <a class="d-flex align-items-center gap-2" :href="`${SITE.fanlinkUrl}/${album.cover}/`" target="_blank">
+                  <a class="d-flex align-items-center gap-2" :href="`${SITE.fanlinkUrl}/${album.cover}`" target="_blank">
                     <span>{{ SITE.fanlinkDomain }}/{{ album.cover }}</span>
                     <Icon name="fa6-solid:arrow-up-right-from-square" />
                   </a>
@@ -113,12 +113,12 @@ useHead({
           </div>
         </div>
         <div id="more-albums" class="pt-3">
-          <h3 class="text-center">More <NuxtLink class="tag" href="/album/">Albums</NuxtLink></h3>
+          <h3 class="text-center">More <NuxtLink class="tag" href="/album">Albums</NuxtLink></h3>
           <div class="row gallery text-center">
             <template v-for="(moreAlbum, key) in moreAlbums" :key="key">
               <div class="col-6 col-lg-3">
                 <div class="item">
-                  <NuxtLink :to="`/album/${key}/`">
+                  <NuxtLink :to="`/album/${key}`">
                     <img class="img-fluid scale-on-hover" :src="`/images/${moreAlbum.cover}.jpg`" :alt="`${moreAlbum.artists} - ${moreAlbum.title} (${moreAlbum.type})`">
                     <p class="mt-2 mb-0">{{ moreAlbum.title }} ({{ moreAlbum.type }})</p>
                     <p><small>{{ moreAlbum.artists }}</small></p>

@@ -61,7 +61,7 @@ useSeoMeta({
   description: track.value.description,
   keywords: `release, ${track.value.title}, ${track.value.genre}, play, stream, download, fanlink`,
   // Protocolo Open Graph
-  ogUrl: `${SITE.url}/music/${param.value}/`,
+  ogUrl: `${SITE.url}/music/${param.value}`,
   ogType: "website",
   ogTitle: `${track.value.artists} - ${track.value.title}`,
   ogSiteName: SITE.name,
@@ -84,7 +84,7 @@ useHead({
     { type: "application/ld+json", children: SEO.value }
   ],
   link: [
-    { rel: "canonical", href: `${SITE.url}/music/${param.value}/` }
+    { rel: "canonical", href: `${SITE.url}/music/${param.value}` }
   ]
 });
 </script>
@@ -127,10 +127,10 @@ useHead({
           <div class="col-12 col-md-4 ps-md-3 p-0">
             <div id="tags">
               <div class="mb-0">Genre</div>
-              <div class="tag mb-2"><NuxtLink :to="`/tag/${genreURL}/`">{{ track.genre }}</NuxtLink></div>
+              <div class="tag mb-2"><NuxtLink :to="`/tag/${genreURL}`">{{ track.genre }}</NuxtLink></div>
               <template v-if="track.album">
                 <div class="mb-0">Album</div>
-                <div class="tag mb-2"><NuxtLink :to="`/album/${track.album.replace(/\s+/g, '-').toLowerCase()}/`">{{ track.album }}</NuxtLink></div>
+                <div class="tag mb-2"><NuxtLink :to="`/album/${track.album.replace(/\s+/g, '-').toLowerCase()}`">{{ track.album }}</NuxtLink></div>
               </template>
               <div class="mb-0">Release date</div>
               <div class="tag mb-2">{{ new Date(track.date).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" }) }}</div>
@@ -138,7 +138,7 @@ useHead({
               <div class="tag mb-2">{{ track.mm }}:{{ String(track.ss).padStart(2, "0") }}</div>
               <div class="mb-0">Fanlink</div>
               <div class="tag">
-                <a class="d-flex align-items-center gap-2" :href="`${SITE.fanlinkUrl}/${param}/`" target="_blank">
+                <a class="d-flex align-items-center gap-2" :href="`${SITE.fanlinkUrl}/${param}`" target="_blank">
                   <span>{{ SITE.fanlinkDomain }}/{{ param }}</span>
                   <Icon name="fa6-solid:arrow-up-right-from-square" />
                 </a>
@@ -147,11 +147,11 @@ useHead({
           </div>
         </div>
         <div id="more-tracks" class="pt-3">
-          <h3 class="text-center">More <NuxtLink class="tag" :href="`/tag/${genreURL}/`">{{ track.genre }}</NuxtLink> music</h3>
+          <h3 class="text-center">More <NuxtLink class="tag" :to="`/tag/${genreURL}`">{{ track.genre }}</NuxtLink> music</h3>
           <div class="row gallery text-center">
             <template v-for="(more, more_param) in moreTracks" :key="more_param">
               <div class="col-6 col-lg-3">
-                <NuxtLink :to="`/music/${more_param}/`">
+                <NuxtLink :to="`/music/${more_param}`">
                   <img class="img-fluid scale-on-hover rounded-3" :src="`/images/${more.cover ? more.cover : more_param}.jpg`" :alt="`${more.artists} - ${more.title}`">
                   <p class="mt-2 mb-0">{{ more.title }}</p>
                   <p><small>{{ more.artists }}</small></p>

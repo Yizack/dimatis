@@ -21,19 +21,19 @@ const collapseNav = () => {
             <NuxtLink class="nav-link" to="/">Home</NuxtLink>
           </li>
           <li class="nav-item pe-3" role="menuitem">
-            <NuxtLink class="nav-link" to="/music/">Music</NuxtLink>
+            <NuxtLink class="nav-link" to="/music">Music</NuxtLink>
           </li>
           <li class="nav-item pe-3" role="menuitem">
-            <NuxtLink class="nav-link" to="/album/">Albums</NuxtLink>
+            <NuxtLink class="nav-link" to="/album">Albums</NuxtLink>
           </li>
           <li class="nav-item pe-3" role="menuitem">
             <NuxtLink class="nav-link" to="/#about">About</NuxtLink>
           </li>
           <li class="nav-item pe-3" role="menuitem">
-            <NuxtLink class="nav-link" to="/licensing/">Licensing</NuxtLink>
+            <NuxtLink class="nav-link" to="/licensing">Licensing</NuxtLink>
           </li>
           <li class="nav-item pe-3" role="menuitem">
-            <NuxtLink class="nav-link" to="/branding/">Branding</NuxtLink>
+            <NuxtLink class="nav-link" to="/branding">Branding</NuxtLink>
           </li>
           <li class="nav-item pe-3" role="menuitem"><a class="nav-link" :href="SITE.fanlinks" target="_blank">Fanlinks</a></li>
           <li class="nav-item" role="menuitem"><a class="nav-link" :href="SITE.merch" target="_blank">Merch</a></li>

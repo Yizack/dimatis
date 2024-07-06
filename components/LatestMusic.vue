@@ -16,7 +16,7 @@ const latestTracks = Object.entries(tracks).reduce((obj: DimatisTracks, [key, va
         <template v-for="(track, param) in latestTracks" :key="param">
           <div class="col-12 col-lg-4">
             <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{ width: '300px', height: '385px' }" :track="track" :param="param" />
-            <NuxtLink :to="`/music/${param}/`">
+            <NuxtLink :to="`/music/${param}`">
               <p class="mb-0">{{ track.title }}</p>
               <p><small>{{ track.artists }}</small></p>
             </NuxtLink>
