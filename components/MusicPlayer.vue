@@ -29,14 +29,10 @@ const config = defineMusicfyPlayer({
   },
   color: {
     class: props.param as string
-  },
-  size: {
-    width: props.size.width,
-    height: props.size.height
   }
 });
 </script>
 
 <template>
-  <MusicfyPlayer :config="config" />
+  <MusicfyPlayer :config="config" :width="size.width" :height="size.height" />
 </template>

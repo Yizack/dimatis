@@ -22,13 +22,11 @@
     "colorthief": "^2.4.0",
     "eslint": "^9.6.0",
     "nuxt": "^3.12.3",
-    "nuxt-musicfyplayer": "^1.0.1",
+    "nuxt-icon": "0.6.10",
+    "nuxt-musicfyplayer": "^2.0.0",
     "stylelint": "^16.6.1",
     "stylelint-config-standard": "^36.0.1",
     "tsx": "^4.16.2"
   },
-  "packageManager": "pnpm@9.4.0",
-  "dependencies": {
-    "nuxt-icon": "1.0.0-beta.7"
-  }
+  "packageManager": "pnpm@9.4.0"
 }
