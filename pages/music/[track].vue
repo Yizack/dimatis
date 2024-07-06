@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 definePageMeta({ layout: "site" });
 
 const param = ref(useRoute().params.track.toString());
@@ -138,7 +137,12 @@ useHead({
               <div class="mb-0">Duration</div>
               <div class="tag mb-2">{{ track.mm }}:{{ String(track.ss).padStart(2, "0") }}</div>
               <div class="mb-0">Fanlink</div>
-              <div class="tag"><a :href="`${SITE.fanlinkUrl}/${param}/`" target="_blank">{{ SITE.fanlinkDomain }}/{{ param }}<FontAwesome class="ms-2" :icon="faArrowUpRightFromSquare" /></a></div>
+              <div class="tag">
+                <a class="d-flex align-items-center gap-2" :href="`${SITE.fanlinkUrl}/${param}/`" target="_blank">
+                  <span>{{ SITE.fanlinkDomain }}/{{ param }}</span>
+                  <Icon name="fa6-solid:arrow-up-right-from-square" />
+                </a>
+              </div>
             </div>
           </div>
         </div>

@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { faClock } from "@fortawesome/free-regular-svg-icons";
-import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 definePageMeta({ layout: "site" });
 
 const param = ref(useRoute().params.album.toString());
@@ -77,7 +75,7 @@ useHead({
                   <th>#</th>
                   <th>Artists</th>
                   <th>Title</th>
-                  <th><FontAwesome :icon="faClock" /></th>
+                  <th><Icon name="fa6-regular:clock" /></th>
                 </tr>
               </thead>
               <tbody class="text-secondary">
@@ -104,7 +102,12 @@ useHead({
                 <div class="mb-0">Release date</div>
                 <div class="tag mb-1" itemprop="datePublished" :content="album.date.split('T')[0]">{{ new Date(album.date).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" }) }}</div>
                 <div class="mb-0">Fanlink</div>
-                <div class="tag"><a :href="`${SITE.fanlinkUrl}/${album.cover}/`" target="_blank">{{ SITE.fanlinkDomain }}/{{ album.cover }}<FontAwesome class="ms-2" :icon="faArrowUpRightFromSquare" /></a></div>
+                <div class="tag">
+                  <a class="d-flex align-items-center gap-2" :href="`${SITE.fanlinkUrl}/${album.cover}/`" target="_blank">
+                    <span>{{ SITE.fanlinkDomain }}/{{ album.cover }}</span>
+                    <Icon name="fa6-solid:arrow-up-right-from-square" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>

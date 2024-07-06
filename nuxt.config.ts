@@ -37,6 +37,7 @@ export default defineNuxtConfig({
       ]
     }
   },
+
   css: [
     "bootstrap/dist/css/bootstrap.min.css",
     "@glidejs/glide/dist/css/glide.core.min.css",
@@ -46,20 +47,27 @@ export default defineNuxtConfig({
     "~/assets/css/player-styles.css",
     "~/assets/css/transitions.css"
   ],
+
   modules:[
     "@nuxt/eslint",
     "nuxt-musicfyplayer",
-    "@nuxtjs/sitemap"
+    "@nuxtjs/sitemap",
+    "@nuxt/icon"
   ],
+
+  icon: { mode: "svg" },
+
   nitro: {
     prerender: {
       crawlLinks: true,
       routes: [...routes, "/sitemap.xml"]
     }
   },
+
   site: {
     url: SITE.url,
   },
+
   sitemap: {
     discoverImages: false,
     xslColumns: [
@@ -68,14 +76,19 @@ export default defineNuxtConfig({
       { label: "Last Modified", select: "sitemap:lastmod", width: "35%" }
     ]
   },
+
   routeRules: {
     "/": { sitemap: { priority: 1 } },
     "/*/**": { sitemap: { priority: 0.8, lastmod: new Date().toISOString() } }
   },
+
   features: {
     inlineStyles: false,
   },
+
   experimental: {
     viewTransition: true
-  }
+  },
+
+  compatibilityDate: "2024-07-06"
 });

@@ -1,7 +1,3 @@
-<script setup lang="ts">
-import { faSpotify, faSoundcloud, faYoutube, faTwitter, faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
-</script>
-
 <template>
   <footer class="bg-light text-dark text-start pt-5">
     <div class="container">
@@ -33,22 +29,34 @@ import { faSpotify, faSoundcloud, faYoutube, faTwitter, faFacebook, faInstagram 
           <h4>Contact</h4>
           <ul class="icons mb-0">
             <li class="spotify pe-3">
-              <a :href="SITE.socials.spotify" target="_blank" :aria-label="`Check out ${SITE.name} on Spotify`"><FontAwesome class="icon" :icon="faSpotify" /></a>
+              <a :href="SITE.socials.spotify" target="_blank" :aria-label="`Check out ${SITE.name} on Spotify`">
+                <Icon name="fa6-brands:spotify" />
+              </a>
             </li>
             <li class="soundcloud pe-3">
-              <a :href="SITE.socials.soundcloud" target="_blank" :aria-label="`Check out ${SITE.name} on Soundcloud`"><FontAwesome class="icon" :icon="faSoundcloud" /></a>
+              <a :href="SITE.socials.soundcloud" target="_blank" :aria-label="`Check out ${SITE.name} on Soundcloud`">
+                <Icon name="fa6-brands:soundcloud" />
+              </a>
             </li>
             <li class="youtube pe-3">
-              <a :href="SITE.socials.youtube" target="_blank" :aria-label="`Check out ${SITE.name} on Youtube`"><FontAwesome class="icon" :icon="faYoutube" /></a>
+              <a :href="SITE.socials.youtube" target="_blank" :aria-label="`Check out ${SITE.name} on Youtube`">
+                <Icon name="fa6-brands:youtube" />
+              </a>
             </li>
             <li class="twitter pe-3">
-              <a :href="SITE.socials.twitter" target="_blank" :aria-label="`Contact ${SITE.name} on Twitter`"><FontAwesome class="icon" :icon="faTwitter" /></a>
+              <a :href="SITE.socials.twitter" target="_blank" :aria-label="`Contact ${SITE.name} on Twitter`">
+                <Icon name="fa6-brands:x-twitter" />
+              </a>
             </li>
             <li class="facebook pe-3">
-              <a :href="SITE.socials.facebook" target="_blank" :aria-label="`Contact ${SITE.name} on Facebook`"><FontAwesome class="icon" :icon="faFacebook" /></a>
+              <a :href="SITE.socials.facebook" target="_blank" :aria-label="`Contact ${SITE.name} on Facebook`">
+                <Icon name="fa6-brands:facebook" />
+              </a>
             </li>
             <li class="instagram">
-              <a :href="SITE.socials.instagram" target="_blank" :aria-label="`Contact ${SITE.name} on Instagram`"><FontAwesome class="icon" :icon="faInstagram" /></a>
+              <a :href="SITE.socials.instagram" target="_blank" :aria-label="`Contact ${SITE.name} on Instagram`">
+                <Icon name="fa6-brands:instagram" />
+              </a>
             </li>
           </ul>
           <ul class="contact">
