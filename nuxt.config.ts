@@ -52,10 +52,8 @@ export default defineNuxtConfig({
     "@nuxt/eslint",
     "nuxt-musicfyplayer",
     "@nuxtjs/sitemap",
-    "@nuxt/icon"
+    "nuxt-icon"
   ],
-
-  icon: { mode: "svg" },
 
   eslint: {
     config: {
