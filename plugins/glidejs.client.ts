@@ -2,7 +2,7 @@ import Glide from "@glidejs/glide";
 
 declare module "#app" {
   interface NuxtApp {
-    $Glide: Glide;
+    $Glide: typeof Glide;
   }
 }
 
