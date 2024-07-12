@@ -3,6 +3,7 @@
     "artists": "Mordrez, Dimatis, Tadeusz",
     "title": "Limit (feat. Young Viridii)",
     "description": "After years and years, numerous tweaks and discarded versions of this song, and a lot of work, we finally bring you \"Limit\" featuring amazing artists and released on Arctic Empire record label. This song is a mix of Melodic Dubstep and Chillstep, spacey vibes and emotional vocals, with two distinct drops, the first one is a Chillstep influenced drop and the second one is a Melodic Dubstep drop. We hope you enjoy this song as much as we are happy to finally release it. 💙",
+    "label": "Arctic Empire",
     "genre": "Melodic Dubstep",
     "date": "2024-07-12T00:00:00.000",
     "person": ["Mordrez", "Dimatis", "Tadeusz", "Young Viridii"],
@@ -12,7 +13,6 @@
       "id": "9b0qc5e2q1uf3d7qvuc7z",
       "rlkey": "309g0afci8hf5aszlggziifbw"
     },
-    "label": "Arctic Empire",
     "credits": [
       {
         "title": "Support Mordrez",
@@ -162,6 +162,7 @@
     "artists": "Mox Jade, Dimatis, Sydney Grimm",
     "title": "The Songs of Yesterday",
     "description": "",
+    "label": "Jade City",
     "genre": "Melodic Dubstep",
     "date": "2024-03-22T00:00:00.000",
     "person": ["Mox Jade", "Dimatis", "Sydney Grimm"],
@@ -609,6 +610,7 @@
     "artists": "Christoph Sebastian Pabst & Valeska Rautenberg",
     "title": "Wonderland (Dimatis Remix)",
     "description": "Thanks so much to Christoph Sebastian Pabst for letting me remix his contemporary vocal song with Valeska Rautenberg Music and to Sine Music for releasing this on their label, it was a pleasure working on this remix, hope you all like these vibes ❤️",
+    "label": "Sine Music",
     "genre": "Melodic Dubstep",
     "date": "2022-09-02T00:00:00.000",
     "person": ["Christoph Sebastian Pabst", "Valeska Rautenberg"],
@@ -1102,6 +1104,7 @@
     "artists": "Dimatis",
     "title": "Paying For It (feat. Salvo)",
     "description": "Happy to share my new melodic dubstep song called \"Paying For It\" featuring Salvo vocals released on ARWV label! This is another song that I've been working on for quite some time. Enjoy!",
+    "label": "ARWV",
     "genre": "Melodic Dubstep",
     "date": "2021-05-21T00:00:00.000",
     "person": ["Dimatis"],
@@ -2025,6 +2028,7 @@
     "title": "Glare",
     "description": "I'm making chill tracks that feel so emotional... Released on Meditation Station by Artist Intelligence Agency.",
     "genre": "Chill",
+    "label": "Artist Intelligence Agency",
     "date": "2018-10-24T00:00:00.000",
     "person": ["Dimatis"],
     "mm": 3,
