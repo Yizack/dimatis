@@ -78,14 +78,14 @@
       "links": {
         "spotify": "https://open.spotify.com/track/1l0jdepp3jWDisqMe1QBKj",
         "soundcloud": "https://soundcloud.com/dimatis/limit",
-        "youtube": "https://youtu.be/D5s1DJhPq48",
+        "youtube": "",
         "apple": "https://music.apple.com/us/album/limit-single/1755613767?app=music&ls=1",
         "itunes": "https://music.apple.com/us/album/limit-single/1755613767?app=itunes&ls=1",
         "bandcamp": "https://dimatis.bandcamp.com/track/limit",
-        "deezer": "",
-        "tidal": "",
+        "deezer": "https://www.deezer.com/us/album/610988062",
+        "tidal": "https://tidal.com/browse/album/373433083",
         "yandex": "",
-        "amazon": "",
+        "amazon": "https://www.amazon.com/dp/B0D8V1LLRZ",
         "tiktok": "",
         "beatport": "",
         "netease": "https://music.163.com/#/song?id=2605056755"
