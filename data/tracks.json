@@ -2,7 +2,7 @@
   "limit": {
     "artists": "Mordrez, Dimatis, Tadeusz",
     "title": "Limit (feat. Young Viridii)",
-    "description": "After years and years, numerous tweaks and discarded versions of this song, and a lot of work, we finally bring you \"Limit\" featuring amazing artists and released on Arctic Empire record label. This song is a mix of Melodic Dubstep and Chillstep, spacey vibes and emotional vocals, with two distinct drops, the first one is a Chillstep influenced drop and the second one is a Melodic Dubstep drop. We hope you enjoy this song as much as we are happy to finally release it. 💙",
+    "description": "After years and years, numerous tweaks and discarded versions of this song, and a lot of work, we finally bring you \"Limit\" featuring amazing artists and released on Arctic Empire record label. This song is a mix of Melodic Dubstep and Chillstep, spacey vibes, and emotional vocals, with two distinct drops, the first one is a Chillstep influenced drop and the second one is a Melodic Dubstep drop. We hope you enjoy this song as much as we are happy to finally release it. 💙",
     "label": "Arctic Empire",
     "genre": "Melodic Dubstep",
     "date": "2024-07-12T00:00:00.000",
@@ -68,6 +68,10 @@
           {
             "name": "Spotify",
             "link": "https://open.spotify.com/user/arcticempireee"
+          },
+          {
+            "name": "Instagram",
+            "link": "https://www.instagram.com/arcticempireofficial"
           }
         ]
       }
