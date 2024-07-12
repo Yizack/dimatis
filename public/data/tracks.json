@@ -1,4 +1,96 @@
 { 
+  "limit": {
+    "artists": "Mordrez, Dimatis, Tadeusz",
+    "title": "Limit (feat. Young Viridii)",
+    "description": "After years and years, numerous tweaks and discarded versions of this song, and a lot of work, we finally bring you \"Limit\". This song is a mix of Melodic Dubstep and Chillstep, spacey vibes and emotional vocals, with two distinct drops, the first one is a Chillstep influenced drop and the second one is a Melodic Dubstep drop. We hope you enjoy this song as much as we are happy to finally release it. 💙",
+    "genre": "Melodic Dubstep",
+    "date": "2024-07-11T00:00:00.000",
+    "person": ["Mordrez", "Dimatis", "Tadeusz", "Young Viridii"],
+    "mm": 4,
+    "ss": 22,
+    "dropbox": {
+      "id": "9b0qc5e2q1uf3d7qvuc7z",
+      "rlkey": "309g0afci8hf5aszlggziifbw"
+    },
+    "credits": [
+      {
+        "title": "Support Mordrez",
+        "socials": [
+          {
+            "name": "All links",
+            "link": "https://linktr.ee/mordrez"
+          }
+        ]
+      },
+      {
+        "title": "Support Tadeusz",
+        "socials": [
+          {
+            "name": "All links",
+            "link": "https://ffm.bio/tadeuszmusic"
+          }
+        ]
+      },
+      {
+        "title": "Support Young Viridii",
+        "socials": [
+          {
+            "name": "All links",
+            "link": "https://linktr.ee/youngviridii"
+          }
+        ]
+      },
+      {
+        "title": "Artwork by Samantha Lee (kloir_art)",
+        "socials": [
+          {
+            "name": "All links",
+            "link": "https://linktr.ee/kloir"
+          },
+          {
+            "name": "Instagram",
+            "link": "https://www.instagram.com/kloir_art/"
+          },
+          {
+            "name": "DeviantArt",
+            "link": "https://www.deviantart.com/kloir"
+          }
+        ]
+      },
+      {
+        "title": "Arctic Empire",
+        "socials": [
+          {
+            "name": "Youtube",
+            "link": "https://www.youtube.com/@ArcticEmpire"
+          },
+          {
+            "name": "Spotify",
+            "link": "https://open.spotify.com/user/arcticempireee"
+          }
+        ]
+      }
+    ],
+    "fanlink": {
+      "download": true,
+      "dark": false,
+      "links": {
+        "spotify": "https://open.spotify.com/track/1l0jdepp3jWDisqMe1QBKj",
+        "soundcloud": "https://soundcloud.com/dimatis/limit",
+        "youtube": "https://youtu.be/D5s1DJhPq48",
+        "apple": "https://music.apple.com/us/album/limit-single/1755613767?app=music&ls=1",
+        "itunes": "https://music.apple.com/us/album/limit-single/1755613767?app=itunes&ls=1",
+        "bandcamp": "https://dimatis.bandcamp.com/track/limit",
+        "deezer": "",
+        "tidal": "",
+        "yandex": "",
+        "amazon": "",
+        "tiktok": "",
+        "beatport": "",
+        "netease": "https://music.163.com/#/song?id=2605056755"
+      }
+    }
+  },
   "starrysphere": {
     "artists": "Dimatis",
     "title": "Starrysphere",
