@@ -17,6 +17,7 @@ declare global {
     ss: number;
     album?: string;
     cover?: string;
+    label?: string;
     dropbox: {
       id: string;
       rlkey?: string;
