@@ -33,7 +33,8 @@ export default defineNuxtConfig({
         { rel: "shortcut icon", href: "/images/dimatis-logo.png" },
         { rel: "apple-touch-icon", sizes: "57x57", href: "/apple-touch-icon.png" },
         { rel: "mask-icon", href: "/safari-pinned-tab.svg", color: "#5bbad5" },
-        { rel: "manifest", href: "/site.webmanifest" }
+        { rel: "manifest", href: "/site.webmanifest" },
+        { rel: "preconnect", href: "https://www.dropbox.com" }
       ]
     }
   },
