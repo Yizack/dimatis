@@ -1,9 +1,9 @@
 <script setup lang="ts">
-const feed = ref<unknown[]>([]);
+const feed = ref<InstagramPost[]>([]);
 const { $Glide } = useNuxtApp();
 
 onMounted(async () => {
-  const req = await $fetch<{ data: unknown[] }>("https://feed-dimatis.yizack.com/").catch(() => null);
+  const req = await $fetch<{ data: InstagramPost[] }>("https://feed-dimatis.yizack.com/").catch(() => null);
 
   if (req) feed.value = req.data;
   setTimeout(() => {
