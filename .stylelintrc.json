@@ -11,6 +11,6 @@
     "dist/**/*",
     ".output/**/*",
     "public/**/*",
-    "assets/css/player-styles.css"
+    "app/assets/css/player-styles.css"
   ]
 }

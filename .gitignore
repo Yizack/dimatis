@@ -6,4 +6,4 @@ node_modules
 .output
 .env
 dist
-assets/css/player-styles.css
+app/assets/css/player-styles.css
