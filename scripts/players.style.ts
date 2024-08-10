@@ -17,7 +17,7 @@ for (const param in tracks) {
         color: `rgb(${color[0]}, ${color[1]}, ${color[2]})`
       };
       css_content += `.${/^\d/.test(filename) ? `\\3${filename}` : filename} { background-color: ${styles[filename].color}; }\n`;
-      writeFile("./assets/css/player-styles.css", css_content, "utf-8", () => {
+      writeFile("./app/assets/css/player-styles.css", css_content, "utf-8", () => {
         console.info(`Generated style: ${filename}`);
       });
     }
