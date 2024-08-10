@@ -1,6 +1,6 @@
 import tracks from "./public/data/tracks.json";
 import albums from "./public/data/albums.json";
-import { SITE } from "./utils/site-info";
+import { SITE } from "./app/utils/site-info";
 
 const routes = [
   ...Object.keys(tracks).map(track => `/music/${track}`),
@@ -8,6 +8,7 @@ const routes = [
 ];
 
 export default defineNuxtConfig({
+  future: { compatibilityVersion: 4 },
   app: {
     head: {
       htmlAttrs: {
