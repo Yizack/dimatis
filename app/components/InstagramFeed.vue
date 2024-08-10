@@ -4,31 +4,28 @@ const { $Glide } = useNuxtApp();
 
 onMounted(async () => {
   const req = await $fetch<{ data: InstagramPost[] }>("https://feed-dimatis.yizack.com/").catch(() => null);
-
   if (req) feed.value = req.data;
-  setTimeout(() => {
-    new $Glide(".glide", {
-      perView: 3,
-      bound: true,
-      breakpoints: {
-        968: {
-          perView: 2
-        },
-        630: {
-          perView: 1
-        }
-      }
-    }).mount();
-
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    (window as any).instgrm.Embeds.process();
-  });
 });
+
+const initGlide = () => {
+  if (!feed.value.length) return;
+  new $Glide(".glide", {
+    perView: 3,
+    bound: true,
+    breakpoints: {
+      968: { perView: 2 },
+      630: { perView: 1 }
+    }
+  }).mount();
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  (window as any).instgrm.Embeds.process();
+};
 </script>
 
 <template>
   <section id="ig-feed" class="bg-light">
-    <Transition name="tab">
+    <Transition name="tab" @after-enter="initGlide">
       <div v-if="feed.length" class="container pb-5 text-center text-dark">
         <div id="ig" class="pb-3">
           <h4 class="text-uppercase">Instagram feed</h4>
@@ -100,12 +97,12 @@ onMounted(async () => {
                 </ul>
               </div>
               <div class="glide__arrows" data-glide-el="controls">
-                <span class="glide__arrow glide__arrow--left" data-glide-dir="<" :class="{ 'd-none': !feed }">
+                <span class="glide__arrow glide__arrow--left" data-glide-dir="<">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
                   </svg>
                 </span>
-                <span class="glide__arrow glide__arrow--right" data-glide-dir=">" :class="{ 'd-none': !feed }">
+                <span class="glide__arrow glide__arrow--right" data-glide-dir=">">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
                   </svg>
