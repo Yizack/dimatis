@@ -67,7 +67,7 @@ useHead({
             <div class="d-flex justify-content-center gap-4">
               <div class="card rounded-3 overflow-hidden">
                 <div class="card-body bg-dark">
-                  <a href="/images/logos/text_logo_dimatis_white.png" download="dimatis-logo-white.png">
+                  <a href="/images/logos/text_logo_dimatis_white.png" download="dimatis-text-logo-white.png">
                     <div class="position-absolute top-0 end-0 m-1 px-1 bg-white rounded small text-dark"><small>5000x987px</small></div>
                     <img src="/images/logos/text_logo_dimatis_white.png" alt="Dimatis logo" class="img-fluid" width="300" height="59">
                   </a>
@@ -76,7 +76,7 @@ useHead({
               </div>
               <div class="card rounded-3 overflow-hidden">
                 <div class="card-body">
-                  <a href="/images/logos/text_logo_dimatis.png" download="dimatis-logo-black.png">
+                  <a href="/images/logos/text_logo_dimatis.png" download="dimatis-text-logo-black.png">
                     <div class="position-absolute top-0 end-0 m-1 px-1 bg-dark rounded small"><small>5000x987px</small></div>
                     <img src="/images/logos/text_logo_dimatis.png" alt="Dimatis logo" class="img-fluid" width="300" height="59">
                   </a>
