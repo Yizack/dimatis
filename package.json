@@ -24,7 +24,7 @@
     "nuxt": "^3.12.4",
     "nuxt-icon": "^0.6.10",
     "nuxt-musicfyplayer": "^2.0.0",
-    "stylelint": "^16.8.1",
+    "stylelint": "^16.8.2",
     "stylelint-config-standard": "^36.0.1",
     "tsx": "^4.17.0"
   },
