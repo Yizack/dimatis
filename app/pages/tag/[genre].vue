@@ -1,7 +1,7 @@
 <script setup lang="ts">
 definePageMeta({ layout: "site" });
 
-const genreURL = ref(useRoute().params.genre.toString());
+const genreURL = ref(useRoute("tag-genre").params.genre);
 const showMore = ref(false);
 
 const genre = computed(() => {
@@ -9,26 +9,26 @@ const genre = computed(() => {
 });
 
 const allTracksGenre = computed(() => {
-  return Object.entries(tracks).reduce((obj: DimatisTracks, [key, value]) => {
-    if (value.genre === genre.value) {
-      obj[key] = value;
+  return tracks.reduce((acc, track) => {
+    if (track.genre === genre.value) {
+      acc.push(track);
     }
-    return obj;
-  }, {});
+    return acc;
+  }, [] as DimatisTrack[]);
 });
 
 const latestTracks = computed(() => {
-  return Object.entries(allTracksGenre.value).slice(0, 15).reduce((obj: DimatisTracks, [key, value]) => {
-    obj = { ...obj, [key]: value };
-    return obj;
-  }, {});
+  return allTracksGenre.value.slice(0, 15).reduce((acc, t) => {
+    acc.push(t);
+    return acc;
+  }, [] as DimatisTrack[]);
 });
 
 const moreTracks = computed(() => {
-  return Object.entries(allTracksGenre.value).slice(15).reduce((obj: DimatisTracks, [key, value]) => {
-    obj = { ...obj, [key]: value };
-    return obj;
-  }, {});
+  return allTracksGenre.value.slice(15).reduce((acc, t) => {
+    acc.push(t);
+    return acc;
+  }, [] as DimatisTrack[]);
 });
 
 const more = () => {
@@ -70,22 +70,22 @@ useHead({
         <h3 class="text-uppercase">{{ genre }}</h3>
         <p>Listen to all my music in this genre</p>
         <div class="row my-4">
-          <template v-for="(track, param) in latestTracks" :key="param">
+          <template v-for="track of latestTracks" :key="track.id">
             <div class="col-12 col-lg-4">
               <div class="item">
-                <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{ width: '300px', height: '385px' }" :track="track" :param="String(param)" />
-                <NuxtLink :to="`/music/${param}`">
+                <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{ width: '300px', height: '385px' }" :track="track" :param="track.id" />
+                <NuxtLink :to="`/music/${track.id}`">
                   <p class="mb-0">{{ track.title }}</p>
                   <p><small>{{ track.artists }}</small></p>
                 </NuxtLink>
               </div>
             </div>
           </template>
-          <template v-for="(track, param) in moreTracks" :key="param">
+          <template v-for="track of moreTracks" :key="track.id">
             <div v-if="showMore" class="col-12 col-lg-4">
               <div class="item">
-                <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{ width: '300px', height: '385px' }" :track="track" :param="String(param)" />
-                <NuxtLink :to="`/music/${param}`">
+                <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{ width: '300px', height: '385px' }" :track="track" :param="track.id" />
+                <NuxtLink :to="`/music/${track.id}`">
                   <p class="mb-0">{{ track.title }}</p>
                   <p><small>{{ track.artists }}</small></p>
                 </NuxtLink>
@@ -93,7 +93,7 @@ useHead({
             </div>
           </template>
         </div>
-        <div v-if="!showMore && Object.keys(moreTracks).length" class="text-uppercase">
+        <div v-if="!showMore && moreTracks.length" class="text-uppercase">
           <a class="btn btn-outline-white rounded-pill text-decoration-none" role="button" @click="more()">Load more</a>
         </div>
       </div>

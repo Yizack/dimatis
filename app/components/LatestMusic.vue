@@ -1,10 +1,10 @@
 <script setup lang="ts">
-const latestTracks = Object.entries(tracks).reduce((obj: DimatisTracks, [key, value]) => {
-  if (Object.keys(obj).length < 3) {
-    obj[key] = value;
+const latestTracks = tracks.reduce((acc, t) => {
+  if (acc.length < 3) {
+    acc.push(t);
   }
-  return obj;
-}, {});
+  return acc;
+}, [] as DimatisTrack[]);
 </script>
 
 <template>
@@ -13,10 +13,10 @@ const latestTracks = Object.entries(tracks).reduce((obj: DimatisTracks, [key, va
       <h3 class="text-uppercase">Latest Music</h3>
       <p class="mb-0">Listen to my latest music</p>
       <div class="row my-4">
-        <template v-for="(track, param) in latestTracks" :key="param">
+        <template v-for="track of latestTracks" :key="track.id">
           <div class="col-12 col-lg-4">
-            <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{ width: '300px', height: '385px' }" :track="track" :param="param" />
-            <NuxtLink :to="`/music/${param}`">
+            <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{ width: '300px', height: '385px' }" :track="track" :param="track.id" />
+            <NuxtLink :to="`/music/${track.id}`">
               <p class="mb-0">{{ track.title }}</p>
               <p><small>{{ track.artists }}</small></p>
             </NuxtLink>

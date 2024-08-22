@@ -2,8 +2,7 @@ export {};
 
 declare global {
   interface DimatisLyrics {
-    [key: string]: {
-      lyrics: string;
-    } | undefined;
+    id: string;
+    lyrics: string;
   }
 }

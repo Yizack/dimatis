@@ -1,11 +1,8 @@
 export {};
 
 declare global {
-  interface DimatisTracks {
-    [key: string]: DimatisTrack;
-  }
-
   interface DimatisTrack {
+    id: string;
     artists: string;
     title: string;
     description: string;
@@ -18,6 +15,8 @@ declare global {
     album?: string;
     cover?: string;
     label?: string;
+    instrumental?: string;
+    remix?: string;
     dropbox: {
       id: string;
       rlkey?: string;

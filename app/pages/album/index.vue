@@ -37,10 +37,10 @@ useHead({
         <h3 class="text-uppercase">Albums</h3>
         <p class="mb-0">Check all my albums</p>
         <div class="row my-4">
-          <template v-for="(album, param) in albums" :key="param">
+          <template v-for="album in albums" :key="album.id">
             <div class="col-12 col-lg-4">
               <div class="item">
-                <NuxtLink :to="`/album/${param}`">
+                <NuxtLink :to="`/album/${album.id}`">
                   <img class="img-fluid scale-on-hover rounded-3" :src="`/images/${album.cover}.jpg`" :alt="`${album.artists} - ${album.title} (${album.type})`" width="300">
                   <p class="mt-2 mb-0">{{ album.title }} ({{ album.type }})</p>
                   <p><small>{{ album.artists }}</small></p>

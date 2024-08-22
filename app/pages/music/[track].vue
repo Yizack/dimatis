@@ -1,8 +1,8 @@
 <script setup lang="ts">
 definePageMeta({ layout: "site" });
 
-const param = ref(useRoute().params.track.toString());
-const track = computed(() => tracks[param.value]);
+const param = ref(useRoute("music-track").params.track);
+const track = computed(() => tracks.find(track => track.id === param.value)!);
 
 if (!track.value) {
   throw createError({
@@ -13,15 +13,15 @@ if (!track.value) {
 }
 
 const genreURL = computed(() => track.value.genre.replace(/\s+/g, "-").toLowerCase());
-const lyric = computed(() => lyrics[param.value]?.lyrics);
+const trackLyrics = computed(() => lyrics.find(lyric => lyric.id === param.value)?.lyrics);
 
 const moreTracks = computed(() => {
-  return Object.entries(tracks).reduce((obj: DimatisTracks, [key, value]) => {
-    if (value.genre === track.value.genre && Object.keys(obj).length < 8 && !key.includes(param.value)) {
-      obj[key] = value;
+  return tracks.reduce((acc, t) => {
+    if (t.genre === track.value.genre && t.id !== track.value.id) {
+      acc.push(t);
     }
-    return obj;
-  }, {});
+    return acc;
+  }, [] as DimatisTrack[]);
 });
 
 const SEO = computed(() => {
@@ -104,10 +104,10 @@ useHead({
               <h3 class="text-white">Description</h3>
               <p>{{ track.description }}</p>
             </div>
-            <template v-if="lyric">
+            <template v-if="trackLyrics">
               <div class="lyrics mt-3">
                 <h3 class="text-white">Lyrics</h3>
-                <p class="m-0 pre-line">{{ lyric }}</p>
+                <p class="m-0 pre-line">{{ trackLyrics }}</p>
               </div>
             </template>
             <template v-if="track.credits">
@@ -151,10 +151,10 @@ useHead({
         <div id="more-tracks" class="pt-3">
           <h3 class="text-center">More <NuxtLink class="tag" :to="`/tag/${genreURL}`">{{ track.genre }}</NuxtLink> music</h3>
           <div class="row gallery text-center">
-            <template v-for="(more, more_param) in moreTracks" :key="more_param">
+            <template v-for="more in moreTracks" :key="more.id">
               <div class="col-6 col-lg-3">
-                <NuxtLink :to="`/music/${more_param}`">
-                  <img class="img-fluid scale-on-hover rounded-3" :src="`/images/${more.cover ? more.cover : more_param}.jpg`" :alt="`${more.artists} - ${more.title}`">
+                <NuxtLink :to="`/music/${track.id}`">
+                  <img class="img-fluid scale-on-hover rounded-3" :src="`/images/${more.cover ? more.cover : more.id}.jpg`" :alt="`${more.artists} - ${more.title}`">
                   <p class="mt-2 mb-0">{{ more.title }}</p>
                   <p><small>{{ more.artists }}</small></p>
                 </NuxtLink>

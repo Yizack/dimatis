@@ -1,11 +1,8 @@
 export {};
 
 declare global {
-  interface DimatisAlbums {
-    [key: string]: DimatisAlbum;
-  }
-
   interface DimatisAlbum {
+    id: string;
     artists: string;
     title: string;
     description: string;
@@ -27,6 +24,7 @@ declare global {
         bandcamp?: string;
         deezer?: string;
         tidal?: string;
+        amazon?: string;
         netease?: string;
       };
     };

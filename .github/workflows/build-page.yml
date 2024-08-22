@@ -43,7 +43,8 @@ jobs:
       
       - name: 🏗️ Build
         run: |
-          pnpm style_players
+          pnpm colorthief
+          pnpm data
           pnpm generate
 
       - name: 🚀 Deploy

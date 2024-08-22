@@ -96,7 +96,8 @@ export default defineNuxtConfig({
 
   experimental: {
     viewTransition: true,
-    payloadExtraction: false
+    payloadExtraction: false,
+    typedPages: true
   },
 
   compatibilityDate: "2024-07-06"

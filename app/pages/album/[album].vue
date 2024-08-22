@@ -1,8 +1,8 @@
 <script setup lang="ts">
 definePageMeta({ layout: "site" });
 
-const param = ref(useRoute().params.album.toString());
-const album = computed(() => albums[param.value]);
+const param = ref(useRoute("album-album").params.album);
+const album = computed(() => albums.find(album => album.id === param.value)!);
 
 if (!album.value) {
   throw createError({
@@ -13,13 +13,21 @@ if (!album.value) {
 }
 
 const moreAlbums = computed(() => {
-  return Object.entries(albums).slice(0, 8).reduce((obj: DimatisAlbums, [key, value]) => {
-    if (!key.includes(param.value)) {
-      obj[key] = value;
+  return albums.slice(0, 8).reduce((acc, a) => {
+    if (a.id !== album.value.id) {
+      acc.push(a);
     }
-    return obj;
-  }, {});
+    return acc;
+  }, [] as DimatisAlbum[]);
 });
+
+const getAlbumTracks = (album: DimatisAlbum) => {
+  return album.tracks.reduce((acc, track) => {
+    const albumTrack = tracks.find(t => t.id === track);
+    if (albumTrack) acc.push(albumTrack);
+    return acc;
+  }, [] as DimatisTrack[]);
+};
 
 const goTrack = (track: string) => {
   useRouter().push(`/music/${track}`);
@@ -79,12 +87,12 @@ useHead({
                 </tr>
               </thead>
               <tbody class="text-secondary">
-                <template v-for="(track, index) in album.tracks" :key="track">
-                  <tr role="button" :itemprop="track" itemscope itemtype="http://www.schema.org/MusicRecording" @click="goTrack(track)">
+                <template v-for="(track, index) of getAlbumTracks(album)" :key="track">
+                  <tr role="button" :itemprop="track.id" itemscope itemtype="http://www.schema.org/MusicRecording" @click="goTrack(track.id)">
                     <td itemprop="position">{{ index + 1 }}</td>
-                    <td itemprop="url" :content="`${SITE.url}/music/${track}`">{{ tracks[track].artists }}</td>
-                    <td itemprop="name">{{ tracks[track].title }}</td>
-                    <td itemprop="duration" :content="`PT${'hh' in tracks[track] ? tracks[track].hh : 0}H${'mm' in tracks[track] ? tracks[track].mm : 0}M${'ss' in tracks[track] ? tracks[track].ss : 0}S`">{{ tracks[track].mm }}:{{ String(tracks[track].ss).padStart(2, "0") }}</td>
+                    <td itemprop="url" :content="`${SITE.url}/music/${track}`">{{ track.artists }}</td>
+                    <td itemprop="name">{{ track.title }}</td>
+                    <td itemprop="duration" :content="`PT${'hh' in track ? track.hh : 0}H${'mm' in track ? track.mm : 0}M${'ss' in track ? track.ss : 0}S`">{{ track.mm }}:{{ String(track.ss).padStart(2, "0") }}</td>
                   </tr>
                 </template>
               </tbody>

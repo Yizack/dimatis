@@ -1,7 +1,3 @@
-import dataTracks from "~~/public/data/tracks.json";
-import dataLyrics from "~~/public/data/lyrics.json";
-import dataAlbums from "~~/public/data/albums.json";
-
-export const tracks: DimatisTracks = dataTracks;
-export const lyrics: DimatisLyrics = dataLyrics;
-export const albums: DimatisAlbums = dataAlbums;
+export { default as tracks } from "~/assets/data/tracks";
+export { default as albums } from "~/assets/data/albums";
+export { default as lyrics } from "~/assets/data/lyrics";
