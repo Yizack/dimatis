@@ -136,8 +136,10 @@ useHead({
               <div class="tag mb-2">{{ new Date(track.date).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" }) }}</div>
               <div class="mb-0">Duration</div>
               <div class="tag mb-2">{{ track.mm }}:{{ String(track.ss).padStart(2, "0") }}</div>
-              <div class="mb-0">Record label</div>
-              <div class="tag mb-2">{{ track.label }}</div>
+              <template v-if="track.label">
+                <div class="mb-0">Record label</div>
+                <div class="tag mb-2">{{ track.label }}</div>
+              </template>
               <div class="mb-0">Fanlink</div>
               <div class="tag">
                 <a class="d-flex align-items-center gap-2" :href="`${SITE.fanlinkUrl}/${param}`" target="_blank">
