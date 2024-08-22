@@ -2,7 +2,7 @@
 definePageMeta({ layout: "site" });
 
 const param = ref(useRoute("album-album").params.album);
-const album = computed(() => albums.find(album => album.id === param.value)!);
+const album = computed(() => albums.find(a => a.id === param.value)!);
 
 if (!album.value) {
   throw createError({
@@ -123,13 +123,13 @@ useHead({
         <div id="more-albums" class="pt-3">
           <h3 class="text-center">More <NuxtLink class="tag" href="/album">Albums</NuxtLink></h3>
           <div class="row gallery text-center">
-            <template v-for="(moreAlbum, key) in moreAlbums" :key="key">
+            <template v-for="more in moreAlbums" :key="more.id">
               <div class="col-6 col-lg-3">
                 <div class="item">
-                  <NuxtLink :to="`/album/${key}`">
-                    <img class="img-fluid scale-on-hover" :src="`/images/${moreAlbum.cover}.jpg`" :alt="`${moreAlbum.artists} - ${moreAlbum.title} (${moreAlbum.type})`">
-                    <p class="mt-2 mb-0">{{ moreAlbum.title }} ({{ moreAlbum.type }})</p>
-                    <p><small>{{ moreAlbum.artists }}</small></p>
+                  <NuxtLink :to="`/album/${more.id}`">
+                    <img class="img-fluid scale-on-hover" :src="`/images/${more.cover}.jpg`" :alt="`${more.artists} - ${more.title} (${more.type})`">
+                    <p class="mt-2 mb-0">{{ more.title }} ({{ more.type }})</p>
+                    <p><small>{{ more.artists }}</small></p>
                   </NuxtLink>
                 </div>
               </div>
