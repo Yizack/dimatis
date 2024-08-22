@@ -1,10 +1,10 @@
-import tracks from "./public/data/tracks.json";
-import albums from "./public/data/albums.json";
+import tracks from "./app/assets/data/tracks";
+import albums from "./app/assets/data/albums";
 import { SITE } from "./app/utils/site-info";
 
 const routes = [
-  ...Object.keys(tracks).map(track => `/music/${track}`),
-  ...Object.keys(albums).map(album => `/album/${album}`)
+  ...tracks.map(track => `/music/${track.id}`),
+  ...albums.map(album => `/album/${album.id}`)
 ];
 
 export default defineNuxtConfig({
