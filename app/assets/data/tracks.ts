@@ -13,8 +13,8 @@ export default [
     mm: 3,
     ss: 20,
     dropbox: {
-      id: "",
-      rlkey: ""
+      id: "utxaffl6qw783pslq1xg7",
+      rlkey: "gb9tnml6gf7urtkf9tmywav4i"
     },
     fanlink: {
       download: true,
@@ -2736,6 +2736,181 @@ export default [
         apple: "https://music.apple.com/us/album/magical-forest-single/1219239274?app=music&ls=1",
         deezer: "https://www.deezer.com/en/album/15777454",
         tidal: "https://tidal.com/browse/album/72198675"
+      }
+    }
+  },
+  {
+    id: "dreamland",
+    artists: "Dimatis",
+    title: "Dreamland",
+    description: "HEAR THE COLORS • SEE THE SOUNDS",
+    genre: "Melodic Dubstep",
+    date: "2015-12-22T00:00:00.000",
+    person: [
+      "Dimatis"
+    ],
+    mm: 5,
+    ss: 0,
+    dropbox: {
+      id: "lqyoqsanoldo14fu4j66h",
+      rlkey: "orh16u64dvi5fd0p07vt8bu3z"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        soundcloud: "https://soundcloud.com/dimatis/shiny-worlds",
+        youtube: "https://www.youtube.com/watch?v=C3fxRNRH-Fs"
+      }
+    }
+  },
+  {
+    id: "shiny-worlds",
+    artists: "Dimatis",
+    title: "New Era",
+    description: "Here is my sixth new track: \"Shiny Worlds\" I'm really happy with the progress of my production skills. Hope you like it.",
+    genre: "Melodic Dubstep",
+    date: "2015-12-14T00:00:00.000",
+    person: [
+      "Dimatis"
+    ],
+    mm: 4,
+    ss: 54,
+    dropbox: {
+      id: "gzzkpxcb7neeviufj734h",
+      rlkey: "kevs4kbdd9oomhgu5co7m6fcx"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        soundcloud: "https://soundcloud.com/dimatis/shiny-worlds",
+        youtube: "https://www.youtube.com/watch?v=C3fxRNRH-Fs"
+      }
+    }
+  },
+  {
+    id: "fade-remix",
+    artists: "Holly Drummond",
+    title: "Fade (Dimatis Remix)",
+    description: "My entry for Holly Drummond's remix competition!",
+    genre: "Melodic Dubstep",
+    date: "2015-11-19T00:00:00.000",
+    person: [
+      "Holly Drummond"
+    ],
+    mm: 4,
+    ss: 37,
+    dropbox: {
+      id: "8l1p5i9z83pkfufojsjoa",
+      rlkey: "yowoo4ga87un2jkgygsnpf0ra"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        soundcloud: "https://soundcloud.com/dimatis/fade-holly-drummond-dimatis-remix",
+        youtube: "https://www.youtube.com/watch?v=8U64QEHu2CA"
+      }
+    }
+  },
+  {
+    id: "oort",
+    artists: "Dimatis",
+    title: "Oort",
+    description: "Hi guys, I am here presenting them with my fourth new track called \"Oort\". Future Bass track, adding my melodic style. Thank you very much for all the support I've received so far.",
+    genre: "Future Bass",
+    date: "2015-10-26T00:00:00.000",
+    person: [
+      "Dimatis"
+    ],
+    mm: 4,
+    ss: 30,
+    dropbox: {
+      id: "azrwieohr49h55rcjjwc8",
+      rlkey: "hidwsibpov7qsxrtv0283knn9"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        soundcloud: "https://soundcloud.com/dimatis/oort",
+        youtube: "https://www.youtube.com/watch?v=BNJgG9esju0"
+      }
+    }
+  },
+  {
+    id: "new-era",
+    artists: "Dimatis",
+    title: "New Era",
+    description: "This is my third track!, based on new era of my musical life, i hope you enjoy it! Good things are coming!",
+    genre: "Melodic Dubstep",
+    date: "2015-10-05T00:00:00.000",
+    person: [
+      "Dimatis"
+    ],
+    mm: 5,
+    ss: 13,
+    dropbox: {
+      id: "64cacavam8j937g7hqc5r",
+      rlkey: "w3rksfbx4otk2v6f7tubso0d5"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        soundcloud: "https://soundcloud.com/dimatis/new-era",
+        youtube: "https://www.youtube.com/watch?v=YziaHmwdPEs"
+      }
+    }
+  },
+  {
+    id: "boreal",
+    artists: "Dimatis",
+    title: "Boreal",
+    description: "Hey guys, here I present my second new track \"Boreal\" based on my feelings towards a person that I love. hope you like it thanks.",
+    genre: "Chillstep",
+    date: "2014-09-14T00:00:00.000",
+    person: [
+      "Dimatis"
+    ],
+    mm: 4,
+    ss: 54,
+    dropbox: {
+      id: "x6qp4se269jd1lbpt8e38",
+      rlkey: "gvhdwscl3kuu39m09l3aanusj"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        soundcloud: "https://soundcloud.com/dimatis/boreal",
+        youtube: "https://www.youtube.com/watch?v=Cz7Wp5dy6ys"
+      }
+    }
+  },
+  {
+    id: "mirror-night-remix",
+    artists: "Deemo",
+    title: "Mirror Night (Dimatis Remix)",
+    description: "This is my first serious track, previously made small projects. My life is divided into two: my real life and my musical life. I'm Dimatis",
+    genre: "Melodic Dubstep",
+    date: "2014-08-24T00:00:00.000",
+    person: [
+      "Deemo"
+    ],
+    mm: 5,
+    ss: 12,
+    dropbox: {
+      id: "y75gfdj3cgz14rcgsjaas",
+      rlkey: "a939lbfts63y9xl6rnom0q98y"
+    },
+    fanlink: {
+      download: true,
+      dark: true,
+      links: {
+        soundcloud: "https://soundcloud.com/dimatis/mirror-night-dimatis-chillstep-remix",
+        youtube: "https://www.youtube.com/watch?v=ARAbBPGOTOw"
       }
     }
   }
