@@ -17,7 +17,7 @@ const trackLyrics = computed(() => lyrics.find(lyric => lyric.id === param.value
 
 const moreTracks = computed(() => {
   return tracks.reduce((acc, t) => {
-    if (t.genre === track.value.genre && t.id !== track.value.id) {
+    if (t.genre === track.value.genre && t.id !== track.value.id && acc.length < 8) {
       acc.push(t);
     }
     return acc;
