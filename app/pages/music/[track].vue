@@ -150,7 +150,7 @@ useHead({
             </div>
           </div>
         </div>
-        <div id="more-tracks" class="pt-3">
+        <div v-if="moreTracks.length" id="more-tracks" class="pt-3">
           <h3 class="text-center">More <NuxtLink class="tag" :to="`/tag/${genreURL}`">{{ track.genre }}</NuxtLink> music</h3>
           <div class="row gallery text-center">
             <template v-for="more in moreTracks" :key="more.id">
