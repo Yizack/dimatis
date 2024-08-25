@@ -13,8 +13,8 @@ if (!album.value) {
 }
 
 const moreAlbums = computed(() => {
-  return albums.slice(0, 8).reduce((acc, a) => {
-    if (a.id !== album.value.id) {
+  return albums.reduce((acc, a) => {
+    if (a.id !== album.value.id && acc.length < 8) {
       acc.push(a);
     }
     return acc;
