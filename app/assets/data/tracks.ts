@@ -62,13 +62,13 @@ export default [
         apple: "?app=music&ls=1",
         itunes: "?app=itunes&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/track/celestigram",
-        deezer: "",
-        tidal: "",
+        deezer: "https://www.deezer.com/us/album/635049111",
+        tidal: "https://tidal.com/browse/album/383764383",
         yandex: "",
-        amazon: "",
+        amazon: "https://www.amazon.com/dp/B0DFD5JY36",
         tiktok: "",
         beatport: "",
-        netease: ""
+        netease: "https://music.163.com/#/song?id=2621312204"
       }
     }
   },
