@@ -1,4 +1,4 @@
-export default [
+export default [/*
   {
     id: "sojourn",
     artists: "Bayza & Dimatis",
@@ -35,7 +35,7 @@ export default [
         netease: ""
       }
     }
-  },
+  }, */
   {
     id: "celestigram",
     artists: "Dimatis",
