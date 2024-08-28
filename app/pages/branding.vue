@@ -34,12 +34,17 @@ useHead({
   <main>
     <section>
       <div class="container py-5 text-center">
-        <div class="pb-2">
-          <h3 class="text-uppercase">Branding</h3>
-        </div>
+        <h3 class="text-uppercase">Branding</h3>
         <div class="row my-4">
-          <div class="col-12 col-lg-6 text-start mx-auto">
-            <p>Assets of my logo available for download, use these in collaborations with me, blogs, videos, and anything related to my music.</p>
+          <div class="col-12 col-lg-6 mx-auto">
+            <div class="mb-5">
+              <p>The Dimatis' logo was made following the golden ratio proportions.</p>
+              <img src="/images/logos/golden-ratio.png" class="img-fluid rounded-3 text-center" width="400" height="400">
+            </div>
+            <div>
+              <h4 class="text-uppercase">Logo assets</h4>
+              <p class="text-start">Assets of my logo available for download, use these in collaborations with me, blogs, videos, and anything related to my music.</p>
+            </div>
           </div>
         </div>
         <div v-for="(brands, i) of BRANDING" :key="i" class="row col-12 col-lg-6 m-auto py-4">
