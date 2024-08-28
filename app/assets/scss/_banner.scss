@@ -1,6 +1,7 @@
 .banner {
-  background-position: 0 -50px;
+  background-position: center -50px;
   background-size: cover;
+  background-repeat: no-repeat;
   height: calc(100vw * 0.32);
 }
 
@@ -19,8 +20,9 @@
   pointer-events: none;
 }
 
-@media (max-width: 445px) {
+@media (max-width: 670px) {
   .banner {
-    height: 178px;
+    background-position: center 0;
+    height: 250px;
   }
 }
