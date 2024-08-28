@@ -17,7 +17,7 @@ onMounted(() => {
   <nav class="navbar navbar-expand-lg navbar-dark" :class="{ 'bg-dark shadow': scrolled || !fixed, 'sticky-top': !fixed, 'fixed-top': fixed }">
     <div class="container">
       <NuxtLink class="navbar-brand text-decoration-none" to="/">
-        <IconLogoText width="168" height="33" />
+        <IconLogoText width="151" height="30" />
       </NuxtLink>
       <button class="navbar-toggler border-0 rounded-pill" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon" />
@@ -25,7 +25,7 @@ onMounted(() => {
       <div id="offcanvasNavbar" class="offcanvas offcanvas-start" tabindex="-1" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header" data-bs-dismiss="offcanvas">
           <NuxtLink class="navbar-brand text-decoration-none" to="/">
-            <IconLogoText width="168" height="33" />
+            <IconLogoText width="151" height="30" />
           </NuxtLink>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" />
         </div>

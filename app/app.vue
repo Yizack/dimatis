@@ -1,7 +1,7 @@
 <script setup lang="ts">
-const nuxtApp = useNuxtApp();
+const router = useRouter();
 
-nuxtApp.$router.options.scrollBehavior = (to) => {
+router.options.scrollBehavior = (to) => {
   if (to.hash === "") {
     return { left: 0, top: 0 };
   }
@@ -17,6 +17,7 @@ nuxtApp.$router.options.scrollBehavior = (to) => {
 const loading = ref(true);
 
 onBeforeMount(() => {
+  const nuxtApp = useNuxtApp();
   nuxtApp.hook("page:finish", () => {
     loading.value = false;
   });
