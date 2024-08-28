@@ -13,7 +13,6 @@ if (!track.value) {
 }
 
 const genreURL = computed(() => track.value.genre.replace(/\s+/g, "-").toLowerCase());
-const trackLyrics = computed(() => lyrics.find(lyric => lyric.id === param.value)?.lyrics);
 
 const moreTracks = computed(() => {
   return tracks.reduce((acc, t) => {
@@ -38,7 +37,7 @@ const SEO = computed(() => {
     "byArtist": [] as { "@type": string, "name"?: string }[]
   };
 
-  if ("album" in track.value) {
+  if (track.value.album) {
     schemaOrg.inAlbum.push({
       "@type": "MusicAlbum",
       "name": track.value.album,
@@ -87,6 +86,10 @@ useHead({
     { rel: "canonical", href: `${SITE.url}/music/${param.value}` }
   ]
 });
+
+const lyricsFile = await import(`~/assets/lyrics/${param.value}.txt?raw`).catch(() => ({ default: null }));
+const lyricsContent = lyricsFile.default;
+const lyrics = lyricsContent ? normalizeLyrics(lyricsContent) : null;
 </script>
 
 <template>
@@ -104,10 +107,10 @@ useHead({
               <h3 class="text-white">Description</h3>
               <p>{{ track.description }}</p>
             </div>
-            <template v-if="trackLyrics">
+            <template v-if="lyrics">
               <div class="lyrics mt-3">
                 <h3 class="text-white">Lyrics</h3>
-                <p class="m-0 pre-line">{{ trackLyrics }}</p>
+                <p class="m-0 pre-line">{{ lyrics }}</p>
               </div>
             </template>
             <template v-if="track.credits">

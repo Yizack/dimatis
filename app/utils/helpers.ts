@@ -12,3 +12,7 @@ export const genres = [
   { id: "melodic-dubstep", name: "Melodic Dubstep" },
   { id: "piano", name: "Piano" }
 ];
+
+export const normalizeLyrics = (lyrics: string) => {
+  return lyrics.replace(/\r\n/g, "\n").trim();
+};
