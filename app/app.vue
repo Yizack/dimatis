@@ -26,9 +26,9 @@ onBeforeMount(() => {
 <template>
   <LoadingPage v-if="loading" />
   <NuxtLayout>
-    <NuxtLoadingIndicator :throttle="0" />
     <NuxtPage />
   </NuxtLayout>
+  <NuxtLoadingIndicator :throttle="0" />
 </template>
 
 <style scoped>
