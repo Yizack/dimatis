@@ -90,8 +90,8 @@ a:hover {
   text-overflow: ellipsis; 
 }
 
-.bg-light a {
-  color: var(--dark-color);
+.bg-light a, .bg-white a {
+  color: var(--dark-color)!important;
 }
 
 .bg-dark a {
@@ -103,24 +103,13 @@ a:hover {
 }
 
 .nav li a {
-  color: var(--dark-color);
-}
-
-.bg-dark a:hover {
-  color: var(--white-color); /* Ensuring hover state matches */
-}
-
-.bg-light a:hover {
-  color: var(--dark-color);
+  color: var(--dark-color)!important;;
 }
 
 .tag a:hover, .tag:hover {
   color: var(--white-color)!important;
 }
 
-.nav li a:focus {
-  color: var(--dark-color); /* Ensuring focus state matches */
-}
 
 .album-image {
   position: relative;
