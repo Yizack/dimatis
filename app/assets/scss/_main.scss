@@ -21,8 +21,8 @@
 }
 
 body {
-  font-family: Ebrima;
-  text-rendering: optimizeLegibility;
+  font-family: Ebrima, sans-serif;
+  text-rendering: optimizelegibility;
   letter-spacing: 0.2px;
   background-color: var(--dark-color)
 }
@@ -60,13 +60,13 @@ a:hover {
   color: var(--white-color)!important;
 }
 
+.scale-on-hover {
+  transition: transform .2s ease-in-out;
+}
+
 .scale-on-hover:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 10px rgb(0 0 0 / 15%)!important;
-}
-
-.scale-on-hover {
-  transition: transform .2s ease-in-out;
 }
 
 .bg-spotify {
@@ -90,8 +90,36 @@ a:hover {
   text-overflow: ellipsis; 
 }
 
-.nav li a, .nav li a:focus {
+.bg-light a {
   color: var(--dark-color);
+}
+
+.bg-dark a {
+  color: var(--white-color);
+}
+
+.tag a, .tag {
+  color: var(--secondary-text-color)!important;
+}
+
+.nav li a {
+  color: var(--dark-color);
+}
+
+.bg-dark a:hover {
+  color: var(--white-color); /* Ensuring hover state matches */
+}
+
+.bg-light a:hover {
+  color: var(--dark-color);
+}
+
+.tag a:hover, .tag:hover {
+  color: var(--white-color)!important;
+}
+
+.nav li a:focus {
+  color: var(--dark-color); /* Ensuring focus state matches */
 }
 
 .album-image {
@@ -138,15 +166,6 @@ a:hover {
   background-color: var(--secondary-bg-color)!important;
 }
 
-
-.bg-dark a, .bg-dark a:hover {
-  color: var(--white-color);
-}
-
-.bg-light a, .bg-light a:hover {
-  color: var(--dark-color);
-}
-
 .btn-outline-dark {
   color: var(--dark-color);
   border-color: var(--dark-color);
@@ -167,14 +186,6 @@ a:hover {
   color: var(--dark-color)!important;
   border-color: var(--white-color);
   background: var(--white-color);
-}
-
-.tag a, .tag {
-  color: var(--secondary-text-color)!important;
-}
-
-.tag a:hover, .tag:hover {
-  color: var(--white-color)!important;
 }
 
 iframe {

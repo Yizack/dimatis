@@ -11,7 +11,7 @@
     "data": "tsx scripts/generatePublicData",
     "lint": "pnpm lint:eslint --fix && pnpm lint:stylelint --fix",
     "lint:eslint": "eslint",
-    "lint:stylelint": "stylelint \"**/*.css\""
+    "lint:stylelint": "stylelint \"**/*.scss\""
   },
   "devDependencies": {
     "@glidejs/glide": "^3.6.2",
@@ -28,7 +28,7 @@
     "nuxt-musicfyplayer": "^2.0.0",
     "sass": "^1.77.8",
     "stylelint": "^16.8.2",
-    "stylelint-config-standard": "^36.0.1",
+    "stylelint-config-standard-scss": "^13.1.0",
     "tsx": "^4.17.0"
   },
   "packageManager": "pnpm@9.8.0"
