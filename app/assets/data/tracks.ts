@@ -40,7 +40,7 @@ export default [/*
     id: "celestigram",
     artists: "Dimatis",
     title: "Celestigram",
-    description: "Hey! a bit late but here is my new track \"Celestigram\". Spacey and powerful vibes with uplifting melodies, Give it a listen! 💙",
+    description: "Hey! a bit late but here is my new track \"Celestigram\". Spacey and powerful vibes with uplifting melodies, Give it a listen! 🌌",
     genre: "Melodic Dubstep",
     date: "2024-08-23T00:00:00.000",
     person: [
