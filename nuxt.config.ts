@@ -26,8 +26,8 @@ export default defineNuxtConfig({
         { name: "msapplication-TileImage", content: "/icons/mstile-144x144.png" }
       ],
       link: [
-        { rel: "preload", as: "style", crossorigin: "anonymous", href: "https://fonts.googleapis.com/css?family=Roboto:400,300" },
-        { rel: "stylesheet", crossorigin: "anonymous", href: "https://fonts.googleapis.com/css?family=Roboto:400,300" },
+        { rel: "preload", href: "/fonts/Ebrima.woff2", as: "font", type: "font/woff2", crossorigin: "anonymous" },
+        { rel: "preload", href: "/fonts/EbrimaBd.woff2", as: "font", type: "font/woff2", crossorigin: "anonymous" },
         { rel: "icon", type: "image/png", sizes: "16x16", href: "/favicon-16x16.png" },
         { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32x32.png" },
         { rel: "icon", type: "image/png", sizes: "192x192", href: "/android-chrome-192x192.png" },
@@ -41,21 +41,23 @@ export default defineNuxtConfig({
   },
 
   css: [
-    "bootstrap/dist/css/bootstrap.min.css",
-    "@glidejs/glide/dist/css/glide.core.min.css",
-    "~/assets/css/dimatis.css",
-    "~/assets/css/dimatis-icon.css",
-    "~/assets/css/audio-player.css",
-    "~/assets/css/player-styles.css",
-    "~/assets/css/transitions.css"
+    "~/assets/scss/app.scss"
   ],
 
   modules: [
+    "@nuxtjs/color-mode",
     "@nuxt/eslint",
     "nuxt-musicfyplayer",
     "@nuxtjs/sitemap",
     "nuxt-icon"
   ],
+
+  colorMode: {
+    preference: "dark",
+    fallback: "dark",
+    dataValue: "bs-theme",
+    storageKey: "nuxt-color-mode"
+  },
 
   eslint: {
     config: {

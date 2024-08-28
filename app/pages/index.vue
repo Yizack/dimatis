@@ -1,5 +1,5 @@
 <script setup lang="ts">
-definePageMeta({ layout: "site" });
+definePageMeta({ layout: "home" });
 
 const schemaOrg = {
   "@context": "http://schema.org",
@@ -84,7 +84,6 @@ useHead({
 </script>
 
 <template>
-  <BannerSection />
   <LatestMusic />
   <InstagramFeed />
   <AboutSection />

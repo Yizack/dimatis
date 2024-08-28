@@ -1,13 +1,3 @@
-<script setup lang="ts">
-const spotifyFollowers = ref<number | null>(null);
-
-onMounted(async () => {
-  const spotify = await $fetch<{ followers: number }>(`https://cf-spotify.yizack.com/followers?id=${SITE.spotify_id}`).catch(() => null);
-  if (!spotify) return;
-  spotifyFollowers.value = spotify.followers;
-});
-</script>
-
 <template>
   <section id="about">
     <div class="container py-5 text-white">
@@ -35,30 +25,7 @@ onMounted(async () => {
           </div>
         </div>
         <div class="col-lg-4 text-center">
-          <img class="img-fluid rounded-3" src="/images/dimatis-bio.jpg" :alt="`${SITE.name} photo`">
-          <a id="follow-spotify" href="https://open.spotify.com/artist/0RAT9Q5WZwzJRJgTI38zJR" target="_blank" title="Follow on Spotify">
-            <div class="d-flex justify-content-center mt-2">
-              <span id="spotify-button" class="rounded-pill me-2 small px-2 py-1 text-white text-uppercase d-flex align-items-center gap-1">
-                <Icon name="fa6-brands:spotify" size="1.1rem" />
-                <span>Follow</span>
-              </span>
-              <div class="position-relative align-self-center">
-                <span class="position-absolute" style="left: -9px;">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                    <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
-                  </svg>
-                </span>
-                <span id="spotify-followers" class="bg-white rounded text-dark small py-1 px-2">
-                  <span v-if="!spotifyFollowers" class="spinner-box">
-                    <span class="spinner-border text-dark" style="width:1rem; height:1rem; font-size: 0.5rem;">
-                      <span class="visually-hidden">Loading...</span>
-                    </span>
-                  </span>
-                  <span>{{ spotifyFollowers }} followers</span>
-                </span>
-              </div>
-            </div>
-          </a>
+          <img class="img-fluid rounded-3" src="/images/sq-logo-dimatis.jpg" :alt="`${SITE.name} photo`">
         </div>
       </div>
     </div>

@@ -16,7 +16,7 @@ for (const track of tracks) {
     if (!colors.filename) {
       colors[filename] = `rgb(${color[0]}, ${color[1]}, ${color[2]})`;
       css_content += `.${/^\d/.test(filename) ? `\\3${filename}` : filename} { background-color: ${colors[filename]}; }\n`;
-      await writeFile(fileURLToPath(new URL("./../app/assets/css/player-styles.css", import.meta.url)), css_content, "utf-8").then(() => {
+      await writeFile(fileURLToPath(new URL("./../app/assets/scss/_player-styles.scss", import.meta.url)), css_content, "utf-8").then(() => {
         console.info(`Generated style: ${filename}`);
       }).catch(console.warn);
     }

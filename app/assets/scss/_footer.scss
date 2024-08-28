@@ -1,0 +1,62 @@
+footer .icons a {
+  color: var(--secondary-text-color);
+}
+  
+footer .spotify a:hover {
+  color: #1db954;
+  text-decoration: none;
+}
+  
+footer .soundcloud a:hover {
+  color: #F26E23;
+  text-decoration: none;
+}
+  
+footer .youtube a:hover {
+  color: #f00;
+  text-decoration: none;
+}
+  
+footer .twitter a:hover {
+  color: #000;
+  text-decoration: none;
+}
+  
+footer .facebook a:hover {
+  color: #0165E1;
+  text-decoration: none;
+}
+  
+footer .instagram a:hover {
+  color: #833ab4;
+  text-decoration: none;
+}
+
+ul.alt li {
+  border-bottom: solid 1px var(--muted-color);
+  padding: 0.5rem 0;
+}
+
+ul.alt {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.contact li {
+  padding: 0.5rem 0;
+}
+
+ul.contact {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.icons {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.4rem;
+}
+
+ul.icons li {
+  display: inline-block;
+}

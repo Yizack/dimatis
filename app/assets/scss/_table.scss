@@ -1,0 +1,25 @@
+.table {
+  --bs-table-color: inherit;
+  --bs-table-bg: transparent;
+
+  margin: 0;
+}
+
+.table th {
+  padding: 1rem;
+  border-top: none;
+  border-color: var(--secondary-text-color);
+  font-weight: normal;
+}
+
+tbody tr:hover {
+  background: var(--secondary-bg-color);
+  color: var(--white-color);
+}
+
+.table td {
+  border-color: var(--secondary-text-color);
+  border-width: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
