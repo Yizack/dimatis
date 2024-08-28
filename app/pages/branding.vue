@@ -41,48 +41,21 @@ useHead({
           <div class="col-12 col-lg-6 text-start mx-auto">
             <p>Assets of my logo available for download, use these in collaborations with me, blogs, videos, and anything related to my music.</p>
           </div>
-          <div class="col-12 text-start mx-auto mb-4">
-            <div class="d-flex justify-content-center gap-4">
-              <div class="card rounded-3 overflow-hidden">
-                <div class="card-body bg-dark">
-                  <a href="/images/logos/logo_dimatis_3000_white.png" download="dimatis-logo-white.png">
-                    <div class="position-absolute top-0 end-0 m-1 px-1 bg-white rounded small text-dark"><small>3000x3000px</small></div>
-                    <img src="/images/logos/logo_dimatis_3000_white.png" alt="Dimatis logo" class="img-fluid" width="300" height="300">
-                  </a>
-                </div>
-                <div class="card-footer">Dimatis | White logo</div>
+        </div>
+        <div v-for="(brands, i) of BRANDING" :key="i" class="row col-12 col-lg-6 m-auto py-4">
+          <h5 class="text-uppercase">{{ brands.title }}</h5>
+          <p>{{ brands.description }}</p>
+          <div v-for="(file, j) of brands.files" :key="j" class="col-6 g-2">
+            <div class="card rounded-3 overflow-hidden">
+              <div class="card-body" :class="file.white ? 'bg-dark' : 'bg-white'">
+                <a :href="`/images/logos/${file.filename}`" :download="file.download">
+                  <div class="position-absolute top-0 end-0 m-1 px-1 rounded small" :class="file.white ? 'bg-white text-dark' : 'bg-dark text-white'">
+                    <small v-if="file.size">{{ file.size?.width }}x{{ file.size?.height }}</small>
+                  </div>
+                  <img :src="`/images/logos/${file.filename}`" alt="Dimatis logo" class="img-fluid" :width="file.size?.width" :height="file.size?.height">
+                </a>
               </div>
-              <div class="card rounded-3 overflow-hidden">
-                <div class="card-body bg-white">
-                  <a href="/images/logos/logo_dimatis_3000.png" download="dimatis-logo-black.png">
-                    <div class="position-absolute top-0 end-0 m-1 px-1 bg-dark rounded small"><small>3000x3000px</small></div>
-                    <img src="/images/logos/logo_dimatis_3000.png" alt="Dimatis logo" class="img-fluid" width="300" height="300">
-                  </a>
-                </div>
-                <div class="card-footer">Dimatis | Black logo</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 text-start mx-auto">
-            <div class="d-flex justify-content-center gap-4">
-              <div class="card rounded-3 overflow-hidden">
-                <div class="card-body bg-dark">
-                  <a href="/images/logos/text_logo_dimatis_white.png" download="dimatis-text-logo-white.png">
-                    <div class="position-absolute top-0 end-0 m-1 px-1 bg-white rounded small text-dark"><small>5000x987px</small></div>
-                    <img src="/images/logos/text_logo_dimatis_white.png" alt="Dimatis logo" class="img-fluid" width="300" height="59">
-                  </a>
-                </div>
-                <div class="card-footer">Dimatis | White text logo</div>
-              </div>
-              <div class="card rounded-3 overflow-hidden">
-                <div class="card-body bg-white">
-                  <a href="/images/logos/text_logo_dimatis.png" download="dimatis-text-logo-black.png">
-                    <div class="position-absolute top-0 end-0 m-1 px-1 bg-dark rounded small"><small>5000x987px</small></div>
-                    <img src="/images/logos/text_logo_dimatis.png" alt="Dimatis logo" class="img-fluid" width="300" height="59">
-                  </a>
-                </div>
-                <div class="card-footer">Dimatis | Black text logo</div>
-              </div>
+              <div class="card-footer">{{ file.title }}</div>
             </div>
           </div>
         </div>

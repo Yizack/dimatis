@@ -58,7 +58,7 @@ useHead({
             <p>If your video got copyright claimed by RouteNote, just dispute the claim and let them know that you have my permission, in case you need any help, please contact me via instagram: <a target="_blank" :href="SITE.socials.instagram">@{{ SITE.instagram }}</a>. Please don't content ID any content which includes my music.</p>
             <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
             <p>License: <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
-            <div id="accordion">
+            <div id="accordion" data-bs-theme="light">
               <div class="card">
                 <div class="card-header">
                   <a class="btn text-dark text-start w-100 collapsed" data-bs-toggle="collapse" href="#collapseOne">Click to open a guide to dispute RouteNote's Claim</a>
