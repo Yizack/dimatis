@@ -6,5 +6,5 @@ node_modules
 .output
 .env
 dist
-app/assets/css/player-styles.css
+app/assets/scss/player-styles.scss
 public/data/*
