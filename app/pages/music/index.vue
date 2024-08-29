@@ -56,14 +56,14 @@ useHead({
       <div class="container py-5 text-center">
         <h3 class="text-uppercase">Music</h3>
         <p class="mb-0">Listen to all my music</p>
-        <div class="row my-4">
+        <div class="row my-4 m">
           <template v-for="track of latestTracks" :key="track.id">
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-lg-4 mb-4">
               <div class="item">
                 <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{ width: '300px', height: '385px' }" :track="track" :param="track.cover ? track.cover : track.id" />
-                <NuxtLink :to="`/music/${track.id}`">
+                <NuxtLink class="text-decoration-none" :to="`/music/${track.id}`">
                   <p class="mb-0">{{ track.title }}</p>
-                  <p><small>{{ track.artists }}</small></p>
+                  <p class="text-secondary"><small>{{ track.artists }}</small></p>
                 </NuxtLink>
               </div>
             </div>
@@ -73,9 +73,9 @@ useHead({
               <div v-if="showMore" class="col-12 col-lg-4">
                 <div class="item">
                   <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{ width: '300px', height: '385px' }" :track="track" :param="track.cover ? track.cover : track.id" />
-                  <NuxtLink :to="`/music/${track.id}`">
+                  <NuxtLink class="text-decoration-none" :to="`/music/${track.id}`">
                     <p class="mb-0">{{ track.title }}</p>
-                    <p><small>{{ track.artists }}</small></p>
+                    <p class="text-secondary"><small>{{ track.artists }}</small></p>
                   </NuxtLink>
                 </div>
               </div>
