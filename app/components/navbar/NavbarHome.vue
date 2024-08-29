@@ -17,7 +17,7 @@ onMounted(async () => {
         <p class="mb-0">{{ SITE.description }}</p>
         <a href="https://open.spotify.com/artist/0RAT9Q5WZwzJRJgTI38zJR" target="_blank" class="text-decoration-none text-white" title="Follow on Spotify">
           <div class="d-flex mt-2">
-            <span class="bg-spotify rounded-pill me-2 small px-2 py-1 d-flex align-items-center gap-1 fw-bold">
+            <span class="bg-spotify rounded-pill me-2 small px-2 py-1 d-flex align-items-center gap-1">
               <Icon name="fa6-brands:spotify" size="1.1rem" />
               <span>Spotify</span>
             </span>
