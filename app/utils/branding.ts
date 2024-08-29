@@ -30,6 +30,7 @@ export const BRANDING = {
       {
         title: "Black text logo",
         type: "logo",
+        white: false,
         size: { width: 5000, height: 987 },
         filename: "text_logo_dimatis.png",
         download: "dimatis-text-logo-black.png"
@@ -54,7 +55,7 @@ export const BRANDING = {
         white: false,
         size: null,
         filename: "logo_dimatis.svg",
-        downnload: "dimatis-logo-black.svg"
+        download: "dimatis-logo-black.svg"
       },
       {
         title: "White fit text logo",
