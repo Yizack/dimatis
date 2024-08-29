@@ -1,7 +1,7 @@
 export default defineEventHandler(() => {
   return useDB().select({
     file: tables.downloads.file,
-    downloads: tables.downloads.downloads,
+    count: tables.downloads.count,
     lastDownload: tables.downloads.lastDownload
-  }).from(tables.downloads).all();
+  }).from(tables.downloads).orderBy(desc(tables.downloads.lastDownload)).all();
 });

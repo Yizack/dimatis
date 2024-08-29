@@ -1,7 +1,7 @@
 {
   "version": "6",
   "dialect": "sqlite",
-  "id": "5e4509b4-f0d9-45fb-bb1d-e6a47cfa3c71",
+  "id": "3d858e1d-7c34-4428-acec-65a179edcab1",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "tables": {
     "downloads": {
@@ -21,8 +21,8 @@
           "notNull": true,
           "autoincrement": false
         },
-        "downloads": {
-          "name": "downloads",
+        "count": {
+          "name": "count",
           "type": "integer",
           "primaryKey": false,
           "notNull": true,

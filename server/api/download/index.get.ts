@@ -25,12 +25,12 @@ export default defineEventHandler(async (event) => {
 
   await DB.insert(tables.downloads).values({
     file,
-    downloads: 1,
+    count: 1,
     lastDownload: time
   }).onConflictDoUpdate({
     target: tables.downloads.file,
     set: {
-      downloads: sql`${tables.downloads.downloads} + 1`,
+      count: sql`${tables.downloads.count} + 1`,
       lastDownload: time
     }
   }).returning().get();
