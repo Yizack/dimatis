@@ -11,7 +11,10 @@ declare global {
     type: string;
     date: string;
     person: string[];
-    dropbox?: string;
+    dropbox?: {
+      id: string;
+      rlkey?: string;
+    };
     fanlink?: {
       download: boolean;
       dark: boolean;

@@ -36,7 +36,9 @@ export default [
     person: [
       "Dimatis"
     ],
-    dropbox: "zavkl5ker5tee7o",
+    dropbox: {
+      id: "zavkl5ker5tee7o"
+    },
     fanlink: {
       download: true,
       dark: false,
@@ -71,7 +73,9 @@ export default [
     person: [
       "Dimatis"
     ],
-    dropbox: "sngt6ihi0dzlw20",
+    dropbox: {
+      id: "sngt6ihi0dzlw20"
+    },
     fanlink: {
       download: true,
       dark: false,

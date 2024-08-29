@@ -8,3 +8,5 @@ node_modules
 dist
 app/assets/scss/_player-styles.scss
 public/data/*
+*.sql
+.data

@@ -38,6 +38,7 @@ export default defineNuxtConfig({
   ],
 
   modules: [
+    "@nuxthub/core",
     "@nuxtjs/color-mode",
     "@nuxt/eslint",
     "nuxt-musicfyplayer",
@@ -54,6 +55,8 @@ export default defineNuxtConfig({
       accessToken: ""
     }
   },
+
+  hub: { database: true },
 
   colorMode: {
     preference: "dark",
