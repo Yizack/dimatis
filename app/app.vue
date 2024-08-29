@@ -1,31 +1,8 @@
 <script setup lang="ts">
-const router = useRouter();
-
-router.options.scrollBehavior = (to) => {
-  if (to.hash === "") {
-    return { left: 0, top: 0 };
-  }
-  else {
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        resolve({ el: to.hash, top: 48, left: 0, behavior: "smooth" });
-      }, 500);
-    });
-  }
-};
-
-const loading = ref(true);
-
-onBeforeMount(() => {
-  const nuxtApp = useNuxtApp();
-  nuxtApp.hook("page:finish", () => {
-    loading.value = false;
-  });
-});
+setScrollBehavior();
 </script>
 
 <template>
-  <LoadingPage v-if="loading" />
   <NuxtLayout>
     <NuxtPage />
   </NuxtLayout>
