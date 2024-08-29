@@ -38,12 +38,12 @@ useHead({
         <p class="mb-0">Check all my albums</p>
         <div class="row my-4">
           <template v-for="album in albums" :key="album.id">
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-lg-4 mb-3">
               <div class="item">
-                <NuxtLink :to="`/album/${album.id}`">
+                <NuxtLink class="text-decoration-none" :to="`/album/${album.id}`">
                   <img class="img-fluid scale-on-hover rounded-3" :src="`/images/${album.cover}.jpg`" :alt="`${album.artists} - ${album.title} (${album.type})`" width="300">
                   <p class="mt-2 mb-0">{{ album.title }} ({{ album.type }})</p>
-                  <p><small>{{ album.artists }}</small></p>
+                  <p class="text-secondary"><small>{{ album.artists }}</small></p>
                 </NuxtLink>
               </div>
             </div>

@@ -58,7 +58,7 @@ useHead({
         <p class="mb-0">Listen to all my music</p>
         <div class="row my-4 m">
           <template v-for="track of latestTracks" :key="track.id">
-            <div class="col-12 col-lg-4 mb-4">
+            <div class="col-12 col-lg-4 mb-3">
               <div class="item">
                 <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{ width: '300px', height: '385px' }" :track="track" :param="track.cover ? track.cover : track.id" />
                 <NuxtLink class="text-decoration-none" :to="`/music/${track.id}`">
@@ -70,7 +70,7 @@ useHead({
           </template>
           <template v-for="track of moreTracks" :key="track.id">
             <Transition name="tab" mode="out-in">
-              <div v-if="showMore" class="col-12 col-lg-4">
+              <div v-if="showMore" class="col-12 col-lg-4 mb-3">
                 <div class="item">
                   <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{ width: '300px', height: '385px' }" :track="track" :param="track.cover ? track.cover : track.id" />
                   <NuxtLink class="text-decoration-none" :to="`/music/${track.id}`">
