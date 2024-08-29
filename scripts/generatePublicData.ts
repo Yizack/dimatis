@@ -2,7 +2,6 @@ import { writeFile, mkdir } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import tracks from "../app/assets/data/tracks";
 import albums from "../app/assets/data/albums";
-import lyrics from "../app/assets/data/lyrics";
 
 const dataPath = fileURLToPath(new URL("./../public/data", import.meta.url));
 await mkdir(dataPath, { recursive: true }).catch((e) => {
@@ -12,8 +11,7 @@ await mkdir(dataPath, { recursive: true }).catch((e) => {
 
 const files = [
   { data: tracks, name: "tracks.json" },
-  { data: albums, name: "albums.json" },
-  { data: lyrics, name: "lyrics.json" }
+  { data: albums, name: "albums.json" }
 ];
 
 console.info("Minifying data to JSON files...");
