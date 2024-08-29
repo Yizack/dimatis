@@ -90,6 +90,12 @@ useHead({
 const lyricsFile = await import(`~/assets/lyrics/${param.value}.txt?raw`).catch(() => ({ default: null }));
 const lyricsContent = lyricsFile.default;
 const lyrics = lyricsContent ? normalizeLyrics(lyricsContent) : null;
+
+const showFullLyrics = ref(lyricsContent ? lyricsContent.match(/\n/g).length < 6 : true);
+
+const readLyrics = () => {
+  showFullLyrics.value = !showFullLyrics.value;
+};
 </script>
 
 <template>
@@ -107,25 +113,25 @@ const lyrics = lyricsContent ? normalizeLyrics(lyricsContent) : null;
               <h3 class="text-white">Description</h3>
               <p>{{ track.description }}</p>
             </div>
-            <template v-if="lyrics">
-              <div class="lyrics mt-3">
-                <h3 class="text-white">Lyrics</h3>
-                <p class="m-0 pre-line">{{ lyrics }}</p>
-              </div>
-            </template>
-            <template v-if="track.credits">
-              <div class="credits mt-3">
-                <h3 class="text-white">Credits</h3>
-                <template v-for="(credits, index) of track.credits" :key="index">
-                  <div :class="{ 'mb-3': track.credits.length - 1 !== index }">
-                    <h5>{{ credits.title }}</h5>
-                    <template v-for="socials in credits.socials" :key="socials.name">
-                      <p class="m-0">{{ socials.name }}: <a :href="socials.link" target="_blank">{{ socials.link }}</a></p>
-                    </template>
-                  </div>
-                </template>
-              </div>
-            </template>
+            <div v-if="lyrics" class="lyrics mt-3" :class="{ 'lyrcs-fade': !showFullLyrics }">
+              <h3 class="text-white">Lyrics</h3>
+              <p class="m-0 pre-line overflow-hidden position-relative overflow-hidden" :style="showFullLyrics ? 'height:auto' : 'height: 140px;'">{{ lyrics }}</p>
+              <a v-if="!showFullLyrics" class="small" role="button" @click="readLyrics">
+                <span class="text-decoration-underline">Read lyrics</span>
+                <Icon name="solar:alt-arrow-down-bold" />
+              </a>
+            </div>
+            <div v-if="track.credits" class="credits mt-3">
+              <h3 class="text-white">Credits</h3>
+              <template v-for="(credits, index) of track.credits" :key="index">
+                <div :class="{ 'mb-3': track.credits.length - 1 !== index }">
+                  <h5>{{ credits.title }}</h5>
+                  <template v-for="socials in credits.socials" :key="socials.name">
+                    <p class="m-0">{{ socials.name }}: <a :href="socials.link" target="_blank">{{ socials.link }}</a></p>
+                  </template>
+                </div>
+              </template>
+            </div>
           </div>
           <div class="col-12 col-md-4 ps-md-3 p-0">
             <div id="tags">

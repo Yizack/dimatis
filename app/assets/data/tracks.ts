@@ -251,7 +251,7 @@ export default [/*
     id: "the-songs-of-yesterday",
     artists: "Mox Jade, Dimatis, Sydney Grimm",
     title: "The Songs of Yesterday",
-    description: "",
+    description: "It was a pleasure to work with Mox Jade and Sydney Grimm.music and be part of the Spellbok Vol. 1 of Jade City label ❤️, I'm so proud of this one, Mox ideas were so inspiring. Don't forget to stream The Songs of Yesterday!!",
     label: "Jade City",
     genre: "Melodic Dubstep",
     date: "2024-03-22T00:00:00.000",
