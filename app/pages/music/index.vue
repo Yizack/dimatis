@@ -60,7 +60,7 @@ useHead({
           <template v-for="track of latestTracks" :key="track.id">
             <div class="col-12 col-lg-4">
               <div class="item">
-                <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{ width: '300px', height: '385px' }" :track="track" :param="track.id" />
+                <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{ width: '300px', height: '385px' }" :track="track" :param="track.cover ? track.cover : track.id" />
                 <NuxtLink :to="`/music/${track.id}`">
                   <p class="mb-0">{{ track.title }}</p>
                   <p><small>{{ track.artists }}</small></p>
@@ -72,7 +72,7 @@ useHead({
             <Transition name="tab" mode="out-in">
               <div v-if="showMore" class="col-12 col-lg-4">
                 <div class="item">
-                  <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{ width: '300px', height: '385px' }" :track="track" :param="track.id" />
+                  <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{ width: '300px', height: '385px' }" :track="track" :param="track.cover ? track.cover : track.id" />
                   <NuxtLink :to="`/music/${track.id}`">
                     <p class="mb-0">{{ track.title }}</p>
                     <p><small>{{ track.artists }}</small></p>
