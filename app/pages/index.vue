@@ -74,11 +74,10 @@ useSeoMeta({
 
 useHead({
   script: [
-    { type: "application/ld+json", children: JSON.stringify(schemaOrg) },
-    { src: "https://www.instagram.com/embed.js", async: true }
+    { type: "application/ld+json", children: JSON.stringify(schemaOrg) }
   ],
   link: [
-    { rel: "canonical", href: `${SITE.url}/` }
+    { rel: "canonical", href: `${SITE.url}` }
   ]
 });
 </script>

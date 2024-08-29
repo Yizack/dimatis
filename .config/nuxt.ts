@@ -45,6 +45,16 @@ export default defineNuxtConfig({
     "nuxt-icon"
   ],
 
+  runtimeConfig: {
+    spotify: {
+      clientId: "",
+      clientSecret: ""
+    },
+    instagram: {
+      accessToken: ""
+    }
+  },
+
   colorMode: {
     preference: "dark",
     fallback: "dark",

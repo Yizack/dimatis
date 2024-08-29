@@ -1,11 +1,5 @@
 <script setup lang="ts">
-const spotifyFollowers = ref<number | null>(null);
-
-onMounted(async () => {
-  const spotify = await $fetch<{ followers: number }>(`https://cf-spotify.yizack.com/followers?id=${SITE.spotify_id}`).catch(() => null);
-  if (!spotify) return;
-  spotifyFollowers.value = spotify.followers;
-});
+const { data: spotify } = await useFetch("/api/spotify/followers");
 </script>
 
 <template>
@@ -28,7 +22,7 @@ onMounted(async () => {
                 </svg>
               </span>
               <span class="bg-white rounded text-dark small py-1 px-2">
-                <span v-if="spotifyFollowers">{{ spotifyFollowers }} followers</span>
+                <span v-if="spotify">{{ spotify.followers }} followers</span>
                 <span v-else class="spinner-box">
                   <span class="spinner-border text-dark" style="width:1rem; height:1rem; font-size: 0.5rem;">
                     <span class="visually-hidden">Loading...</span>

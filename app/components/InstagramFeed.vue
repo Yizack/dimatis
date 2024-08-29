@@ -2,8 +2,14 @@
 const feed = ref<InstagramPost[]>([]);
 const { $Glide } = useNuxtApp();
 
+useHead({
+  script: [
+    { src: "https://www.instagram.com/embed.js", async: true }
+  ]
+});
+
 onMounted(async () => {
-  const req = await $fetch<{ data: InstagramPost[] }>("https://feed-dimatis.yizack.com/").catch(() => null);
+  const req = await $fetch<{ data: InstagramPost[] }>("/api/instagram/feed").catch(() => null);
   if (req) feed.value = req.data;
 });
 
@@ -18,8 +24,7 @@ const initGlide = () => {
     }
   }).mount();
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  (window as any).instgrm.Embeds.process();
+  window.instgrm.Embeds.process();
 };
 </script>
 
