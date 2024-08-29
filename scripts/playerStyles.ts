@@ -1,6 +1,5 @@
 import { writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
-// @ts-expect-error - no types
 import ColorThief from "colorthief";
 import tracks from "../app/assets/data/tracks";
 

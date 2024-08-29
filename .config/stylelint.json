@@ -7,11 +7,11 @@
     "scss/double-slash-comment-empty-line-before": "never"
   },
   "ignoreFiles": [
-    "node_modules/**/*",
-    ".nuxt/**/*",
-    "dist/**/*",
-    ".output/**/*",
-    "public/**/*",
-    "app/assets/scss/player-styles.scss"
+    "../node_modules/**/*",
+    "../.nuxt/**/*",
+    "../dist/**/*",
+    "../.output/**/*",
+    "../public/**/*",
+    "../app/assets/scss/_player-styles.scss"
   ]
 }

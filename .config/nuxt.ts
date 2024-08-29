@@ -1,11 +1,4 @@
-import tracks from "./app/assets/data/tracks";
-import albums from "./app/assets/data/albums";
-import { SITE } from "./app/utils/site-info";
-
-const routes = [
-  ...tracks.map(track => `/music/${track.id}`),
-  ...albums.map(album => `/album/${album.id}`)
-];
+import { SITE } from "../app/utils/site-info";
 
 export default defineNuxtConfig({
   future: { compatibilityVersion: 4 },
@@ -69,8 +62,15 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       autoSubfolderIndex: false,
-      crawlLinks: true,
-      routes: [...routes, "/sitemap.xml"]
+      crawlLinks: false,
+      routes: ["/sitemap.xml"]
+    },
+    cloudflare: {
+      pages: {
+        routes: {
+          exclude: ["/images/*", "/data/*", "/fonts/*", "/licenses/*"]
+        }
+      }
     }
   },
 

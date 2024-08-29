@@ -2,7 +2,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt build",
+    "build": "pnpm colorthief && pnpm data && nuxt build",
     "dev": "nuxt dev --port=5173",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
@@ -10,26 +10,28 @@
     "colorthief": "tsx scripts/playerStyles",
     "data": "tsx scripts/generatePublicData",
     "lint": "pnpm lint:eslint --fix && pnpm lint:stylelint --fix",
-    "lint:eslint": "eslint",
-    "lint:stylelint": "stylelint \"**/*.scss\""
+    "lint:eslint": "eslint --config .config/eslint.mjs",
+    "lint:stylelint": "stylelint \"**/*.{css,scss,sass}\" --config .config/stylelint.json",
+    "test:types": "vue-tsc --noEmit"
   },
   "devDependencies": {
     "@glidejs/glide": "^3.6.2",
-    "@nuxt/eslint": "^0.5.2",
+    "@nuxt/eslint": "^0.5.3",
     "@nuxtjs/color-mode": "^3.4.4",
     "@nuxtjs/sitemap": "^5.3.5",
     "@types/bootstrap": "^5.2.10",
     "@types/glidejs__glide": "^3.6.5",
     "bootstrap": "^5.3.3",
     "colorthief": "^2.4.0",
-    "eslint": "^9.9.0",
+    "eslint": "^9.9.1",
     "nuxt": "^3.13.0",
     "nuxt-icon": "^0.6.10",
-    "nuxt-musicfyplayer": "^2.0.0",
+    "nuxt-musicfyplayer": "^2.0.1",
     "sass": "^1.77.8",
-    "stylelint": "^16.8.2",
+    "stylelint": "^16.9.0",
     "stylelint-config-standard-scss": "^13.1.0",
-    "tsx": "^4.17.0"
+    "tsx": "^4.19.0",
+    "vue-tsc": "^2.1.2"
   },
-  "packageManager": "pnpm@9.8.0"
+  "packageManager": "pnpm@9.9.0"
 }
