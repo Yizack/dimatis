@@ -43,7 +43,7 @@ export default defineNuxtConfig({
     "@nuxt/eslint",
     "nuxt-musicfyplayer",
     "@nuxtjs/sitemap",
-    "nuxt-icon"
+    "@nuxt/icon"
   ],
 
   runtimeConfig: {
@@ -57,6 +57,13 @@ export default defineNuxtConfig({
   },
 
   hub: { database: true },
+
+  icon: {
+    mode: "svg",
+    clientBundle: {
+      scan: true
+    }
+  },
 
   colorMode: {
     preference: "dark",

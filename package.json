@@ -29,7 +29,6 @@
     "drizzle-orm": "^0.33.0",
     "eslint": "^9.9.1",
     "nuxt": "^3.13.0",
-    "nuxt-icon": "^0.6.10",
     "nuxt-musicfyplayer": "^2.0.2",
     "sass": "^1.77.8",
     "stylelint": "^16.9.0",
@@ -39,5 +38,8 @@
     "wrangler": "^3.73.0",
     "zod": "^3.23.8"
   },
-  "packageManager": "pnpm@9.9.0"
+  "packageManager": "pnpm@9.9.0",
+  "dependencies": {
+    "@nuxt/icon": "^1.5.0"
+  }
 }
