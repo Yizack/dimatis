@@ -4,7 +4,7 @@ const { $Glide } = useNuxtApp();
 
 useHead({
   script: [
-    { src: "https://www.instagram.com/embed.js", async: true }
+    { src: "https://www.instagram.com/embed.js", async: true, defer: true }
   ]
 });
 
