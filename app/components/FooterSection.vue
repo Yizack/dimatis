@@ -59,11 +59,10 @@
               </a>
             </li>
           </ul>
-          <ul class="contact">
-            <li>
-              <span class="ml-2">Email: </span><a class="mx-0" :href="`mailto:${SITE.email}`" target="_blank">{{ SITE.email }}</a>
-            </li>
-          </ul>
+          <div class="py-2">
+            <span>Email: </span>
+            <a class="mx-0" :href="`mailto:${SITE.email}`" target="_blank">{{ SITE.email }}</a>
+          </div>
         </div>
         <div class="col-md-12 text-center py-2 text-small">
           <p class="mb-0">© {{ SITE.name }}. All rights reserved.</p>
