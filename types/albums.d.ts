@@ -9,7 +9,7 @@ declare global {
     tracks: string[];
     cover: string;
     type: string;
-    date: string;
+    date: TDate;
     person: string[];
     dropbox?: {
       id: string;

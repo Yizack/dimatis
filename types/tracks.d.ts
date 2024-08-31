@@ -7,7 +7,7 @@ declare global {
     title: string;
     description: string;
     genre: string;
-    date: string;
+    date: TDate;
     person: string[];
     hh?: number;
     mm: number;

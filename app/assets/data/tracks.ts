@@ -43,9 +43,7 @@ export default [/*
     description: "Hey! a bit late but here is my new track \"Celestigram\". Spacey and powerful vibes with uplifting melodies, Give it a listen! 🌌",
     genre: "Melodic Dubstep",
     date: "2024-08-23T00:00:00.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 3,
     ss: 40,
     dropbox: {
@@ -182,9 +180,7 @@ export default [/*
     description: "I'm back once again with \"Starrysphere\", it is one of those relaxing chill ambient/garage tracks, inspired by the stars in the sky, get ready to embark on a journey through celestial realms as soothing melodies.",
     genre: "Future Garage",
     date: "2024-05-17T00:00:00.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 3,
     ss: 36,
     dropbox: {
@@ -218,9 +214,7 @@ export default [/*
     description: "More Melodic Chillstep! The speech lyrics of this track come from a quote from a quest in one of my favorite games ever called Runescape, I liked what it says and how deep it is so I wanted to make a song highlighting this phrase, the voice isn't from the game, only the phrase but I thought it would fit well with a text-to-speech voice.\nIn addition to the release, I'd like to announce that my logo has been refined, it was a tough decision to make after the previous one has represented my music and brand for 10 years but I think it was time for a little change, I wanted it to be as similar as possible to the old one so that it didn't feel off, but using the golden ratio to make it more harmonic and I think it looks great now. Hope you like the new music and the refined logo! 💙",
     genre: "Melodic Dubstep",
     date: "2024-04-23T00:00:00.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 4,
     ss: 1,
     dropbox: {
@@ -293,9 +287,7 @@ export default [/*
     description: "Dark Future Garage + Melodic Dubstep track! I usually don't make dark music but this one turned out great. Hope you like the new music! ❤️",
     genre: "Melodic Dubstep",
     date: "2024-02-16T00:00:00.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 3,
     ss: 52,
     dropbox: {
@@ -329,9 +321,7 @@ export default [/*
     description: "I didn't release a chill song after a while, for this one I experimented with a dramatic and emotional mood. Last year I couldn't make as many songs as usual so this year I have the goal of releasing a song monthly, I feel like this is going to be a year of experimenting with new stuff because I will mainly focus on old projects that have never seen light or couldn't finish for whatever reason, but don't worry, I'll keep my essence in my songs and of course, I live for melodic dubstep and I will die making melodic dubstep, I just sometimes do something different as always :) I hope you enjoy this new song and thank you all for the continue supporting my music!",
     genre: "Chillstep",
     date: "2024-01-26T00:00:00.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 2,
     ss: 37,
     dropbox: {
@@ -365,9 +355,7 @@ export default [/*
     description: "I'm so happy to bring you my new song \"Meaningful\" 💙",
     genre: "Melodic Dubstep",
     date: "2023-10-13T00:00:00.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 4,
     ss: 13,
     dropbox: {
@@ -401,9 +389,7 @@ export default [/*
     description: "I had the pleasure to work with Morvaross remixing Sad Songs for the Stardust Records and Spotlist Network remix contest!!",
     genre: "Melodic Dubstep",
     date: "2023-04-28T00:00:00.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 3,
     ss: 30,
     dropbox: {
@@ -435,9 +421,7 @@ export default [/*
     description: "My new song \"Up Above\" is finally out! it is a captivating and atmospheric Melodic Dubstep track that captures the sensation of being high above the world, it represents the beauty and majesty of the sky, looking up at the clouds and beyond from the ground. I hope this track will be journey for you and will make you feel uplifted and inspired. 💖☁️",
     genre: "Melodic Dubstep",
     date: "2023-02-24T00:00:00.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 3,
     ss: 54,
     dropbox: {
@@ -470,9 +454,7 @@ export default [/*
     description: "I'm very happy to bring you my new song Aura, this song is a bit different from what I usually do, this was an idea from 4 years ago and I decided to release it today. I hope you enjoy it 💙.",
     genre: "Dubstep",
     date: "2023-01-27T00:00:00.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 3,
     ss: 53,
     dropbox: {
@@ -505,9 +487,7 @@ export default [/*
     description: "2022 is not over yet, this is my last song of the year. This song has a special meaning for me, 5 months ago I left behind my fear/phobia of getting on a plane, and I left my country for the first time on a 10 hours trip to France all alone, to meet my girlfriend and live with her for more than a month, everything was perfect and can't be happier. When I came back home after a hard and sobbing goodbye, I wrote the melody of this song, it makes me feel good that I'll be back with her soon again so I decided to release it before the end of the year 💙. In short, it's been a great year, both musically and personally and I will continue to bring more and better music next year.",
     genre: "Chillstep",
     date: "2022-12-09T00:00:00.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 3,
     ss: 17,
     dropbox: {
@@ -835,9 +815,7 @@ export default [/*
     description: "Maybe this is not my best song, but I really like how it turned out, I tried to be a bit more modern. Hope you like it 💙. This year has been a year of new experiences, and difficult decisions, I learned to drive, I graduated from university, got my first job, I caught covid but I'm recovered, and I'm traveling to another country for the first time next week, and many other things. I'm also always happy and grateful to know there are people waiting for more releases from me, you all are the best!",
     genre: "Melodic Dubstep",
     date: "2022-07-01T00:00:00.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 4,
     ss: 36,
     dropbox: {
@@ -930,9 +908,7 @@ export default [/*
     description: "A year ago I did a remix for a remix competition by Beatcore, I had no place in the winners, I know that feeling of disappointment with yourself because I have participated in several contests that I didn't win an official remix placement but I know I've been making music for many years now and I can't let things like this affect me. I remember I didn't even want to listen to it again until a good told me that it's a beautiful remix and that it would be nice to release it, and now I feel like it's such a great track, NEVER feel bad about your creations! So since I only used the vocals from the original I decided to release the instrumental on all platforms as self-release you can still listen to the remix version 💙.",
     genre: "Melodic Dubstep",
     date: "2022-03-04T00:00:01.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 3,
     ss: 16,
     remix: "afterglow-remix",
@@ -1194,9 +1170,7 @@ export default [/*
     description: "Positive and beautiful chill vibes to end the year ❤ I made this song inspired by this fantastic painting art and it's also inspired by my song \"Overcoming\" which has been very popular these years so I decided to make something similar this time! This is my last song of the year. I wish you a wonderful end of the year, I'm immensely grateful for all the support, couldn't thank you enough, you all are the best and have a big place in my heart and life.",
     genre: "Future Garage",
     date: "2021-12-10T00:00:00.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 3,
     ss: 40,
     dropbox: {
@@ -1239,9 +1213,7 @@ export default [/*
     description: "After 5 months I'm excited to be back at making music! I've been thinking a lot about the direction of music I don't want to get stuck or behind so I'll probably try new things in the next songs but keep my \"Dimatis\" style. ❤ I want to thank everyone who continues listening to me on any platform commenting, liking, adding to playlists, and sharing my music, you all motivate me to keep doing what I love to and thanks to everyone who asked me through my socials how I was doing! And about this song, every song I make has a reason for being or a feeling attached to it about what I felt at that moment while making it, it's been a year since I met the nicest and most supportive and caring person I've ever met but we are really far from each other and we hope to get together someday soon, so this a classic Dimatis' melodic dubstep style song with optimistic and hopeful vibes.",
     genre: "Melodic Dubstep",
     date: "2021-11-05T00:00:00.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 4,
     ss: 23,
     dropbox: {
@@ -1274,9 +1246,7 @@ export default [/*
     label: "ARWV",
     genre: "Melodic Dubstep",
     date: "2021-05-21T00:00:00.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 3,
     ss: 46,
     dropbox: {
@@ -1307,9 +1277,7 @@ export default [/*
     description: "I'm so happy to announce this new song \"Fly Again\", the lyrics are about the hope of going out normally again after having been through all this situation that we all know last year, some day we will have the energy to be able to fly again 💕, thanks to Miss Lina, she did an incredible job on the lyrics and with such an amazing voice I loved how this turned out, also thanks so much to MissChibiArtist for making this lovely illustration for the artwork of the song, I love how talented people come together to help me create something beautiful. I don't have enough words to thank everyone who continues to support me, it has only been 3 months this year and it is being incredible because I'm achieving many milestones that I never thought I would achieve in my life. I hope you like this song 🕊💜💙",
     genre: "Melodic Dubstep",
     date: "2021-03-19T00:00:00.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 4,
     ss: 11,
     dropbox: {
@@ -1423,9 +1391,7 @@ export default [/*
     description: "I made this song two weeks ago because some friends published that a friend of theirs needed to raise funds for a heart surgery, they started a campaign where they motivated several producers to donate songs for a compilation album where every earning went to the cost of the surgery, so I decided to make this song for that and try to help (even I didn't know him I just wanted to help), the campaign was a success and the goal was achieved with the help of many people, I am very proud of the chill community ❤",
     genre: "Chillstep",
     date: "2021-01-22T00:00:00.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 3,
     ss: 37,
     dropbox: {
@@ -1514,9 +1480,7 @@ export default [/*
     description: "I am very excited for you to listen to my new song \"Who Am I Without You\" sometimes when I feel lacking in creativity or inspiration I like to look for drawings, imagine a story and create a song out of it. Thanks to erien.ato (Alien Art) a Panamanian illustrator for allowing me to use her art for my song. It's a bit different from my usual style but hope you like it!",
     genre: "Chillstep",
     date: "2020-08-21T00:00:00.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 3,
     ss: 32,
     dropbox: {
@@ -1629,9 +1593,7 @@ export default [/*
     description: "I wasn't sure if I should release this song so I posted it on my Facebook to know what people thought about it, and many people liked it and told me that it is obviously a release. I always love the amazing support you all give to my music. I hope you like this song named \"Two Ways\" more good music is coming :)",
     genre: "Melodic Dubstep",
     date: "2020-04-09T00:00:00.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 4,
     ss: 0,
     dropbox: {
@@ -1686,9 +1648,7 @@ export default [/*
     description: "Hello, I am very excited to present my first album \"Experiences\" this album represents some feelings of my experiences lived during 2019, I hope you like it.",
     genre: "Melodic Dubstep",
     date: "2020-01-24T00:00:07.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 3,
     ss: 44,
     album: "Experiences",
@@ -1719,9 +1679,7 @@ export default [/*
     description: "Liquid Drum & bass is one of my favorite genres, this is one more attempt to make this style. This song represents the pain of the loss of someone important in our lives.",
     genre: "Liquid Drum & Bass",
     date: "2020-01-24T00:00:06.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 2,
     ss: 43,
     album: "Experiences",
@@ -1752,9 +1710,7 @@ export default [/*
     description: "This is a love chill track. I did most of these songs in December 2019 holidays and put in a lot of effort because the rest of the year I was busy with my university studies. This song represents that feeling of the moments together with someone important in our lives.",
     genre: "Chill",
     date: "2020-01-24T00:00:05.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 3,
     ss: 31,
     album: "Experiences",
@@ -1785,9 +1741,7 @@ export default [/*
     description: "I love working with vocals, took these from Laniakea Sounds on splice.com. I hope you are liking the album!",
     genre: "Melodic Dubstep",
     date: "2020-01-24T00:00:04.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 2,
     ss: 37,
     album: "Experiences",
@@ -1818,9 +1772,7 @@ export default [/*
     description: "This is an inspirational Chill/Future Garage track, I'm in love with this style since I made \"Mists\" from my \"Floating\" EP. Many people don't know but I lived 4 years with anxiety disorders and constantly fears, I overcame it in April 2019 and this song represents the overcoming of these types of problems that usually appear in our lives.",
     genre: "Future Garage",
     date: "2020-01-24T00:00:03.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 2,
     ss: 54,
     album: "Experiences",
@@ -1885,9 +1837,7 @@ export default [/*
     description: "I've always wanted to try this style, maybe it's not my best song but it's not bad to try new things :)",
     genre: "Dubstep",
     date: "2020-01-24T00:00:01.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 2,
     ss: 56,
     album: "Experiences",
@@ -1943,9 +1893,7 @@ export default [/*
     description: "Lately, I haven't had much time to create more music, I hope you like this melodic dubstep track called Sign Of Time ❤ Also, I've already started some new tracks so I hope to finish them soon.",
     genre: "Melodic Dubstep",
     date: "2019-10-15T00:00:00.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 3,
     ss: 31,
     dropbox: {
@@ -1998,9 +1946,7 @@ export default [/*
     description: "I really like piano songs, I'm not the best at composing solo piano but I made this for a special person <3",
     genre: "Piano",
     date: "2019-08-15T00:00:00.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 3,
     ss: 16,
     dropbox: {
@@ -2079,9 +2025,7 @@ export default [/*
     description: "My dog named \"Qüity\" passed away on February 25 so I decided to make a song in her memory. My brother and I found her abandoned about 12 years ago, so I calculate that she died with about 14 or 15 years old, we adopted and gave her a home, she wasn't from a special breed, but was very important to me as part of my family, she was blind in her last days and I was in her care, I'm glad she can rest now. His weird name comes from a neighbor who called her \"Queeny\" but we interpreted the pronunciation in Spanish as \"Qüity\". There are some images and videos of her in my YouTube video.",
     genre: "Melodic Dubstep",
     date: "2019-03-22T00:00:00.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 4,
     ss: 55,
     dropbox: {
@@ -2110,9 +2054,7 @@ export default [/*
     description: "Floating is a melodic dubstep track and it's the second of the EP.",
     genre: "Melodic Dubstep",
     date: "2019-01-28T00:00:03.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 3,
     ss: 48,
     album: "Floating",
@@ -2142,9 +2084,7 @@ export default [/*
     description: "Mists is a Future Garage track and is the first of the Floating EP.",
     genre: "Future Garage",
     date: "2019-01-28T00:00:02.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 3,
     ss: 18,
     album: "Floating",
@@ -2174,9 +2114,7 @@ export default [/*
     description: "Shades from the Floating EP by Dimatis. Liquid Drum & Bass this time!",
     genre: "Liquid Drum & Bass",
     date: "2019-01-28T00:00:01.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 3,
     ss: 18,
     album: "Floating",
@@ -2206,9 +2144,7 @@ export default [/*
     description: "The last track of the Floating EP is a Chillstep made in a 3/4 time signature.",
     genre: "Chillstep",
     date: "2019-01-28T00:00:00.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 3,
     ss: 25,
     album: "Floating",
@@ -2263,9 +2199,7 @@ export default [/*
     description: "I made a trancestep/melodic dubstep track.",
     genre: "Melodic Dubstep",
     date: "2018-12-01T00:00:00.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 4,
     ss: 15,
     dropbox: {
@@ -2295,9 +2229,7 @@ export default [/*
     genre: "Chill",
     label: "Artist Intelligence Agency",
     date: "2018-10-24T00:00:00.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 3,
     ss: 33,
     dropbox: {
@@ -2325,9 +2257,7 @@ export default [/*
     description: "Vocals by KARRA from her vocal pack on Splice.",
     genre: "Melodic Dubstep",
     date: "2018-09-14T00:00:00.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 4,
     ss: 58,
     dropbox: {
@@ -2356,9 +2286,7 @@ export default [/*
     description: "Chillstep love song.",
     genre: "Chillstep",
     date: "2018-08-01T00:00:01.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 3,
     ss: 29,
     album: "Moonlit Lover",
@@ -2388,9 +2316,7 @@ export default [/*
     description: "Piano version of Moonlit Lover. I hope this makes you feel something ❤",
     genre: "Piano",
     date: "2018-08-01T00:00:00.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 4,
     ss: 17,
     album: "Moonlit Lover",
@@ -2420,9 +2346,7 @@ export default [/*
     description: "A chill track with a touch of melodic dubstep in the 2nd drop 💕.",
     genre: "Chillstep",
     date: "2018-07-10T00:00:00.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 4,
     ss: 0,
     dropbox: {
@@ -2450,9 +2374,7 @@ export default [/*
     description: "Bayza remixed my song \"Timeline\"",
     genre: "Bounce",
     date: "2018-06-11T00:00:00.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 4,
     ss: 56,
     dropbox: {
@@ -2479,9 +2401,7 @@ export default [/*
     description: "Thank you so much for the 2k followers on soundcloud <3.",
     genre: "Melodic Dubstep",
     date: "2018-05-12T00:00:00.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 4,
     ss: 44,
     dropbox: {
@@ -2510,9 +2430,7 @@ export default [/*
     description: "Let me know what you think! hope you like it <3.",
     genre: "Melodic Dubstep",
     date: "2018-03-27T00:00:00.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 4,
     ss: 15,
     dropbox: {
@@ -2541,9 +2459,7 @@ export default [/*
     description: "Chill vibes for you ❤. Deep chill track by Dimatis.",
     genre: "Chill",
     date: "2018-03-12T00:00:00.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 3,
     ss: 31,
     dropbox: {
@@ -2571,9 +2487,7 @@ export default [/*
     description: "Some people asked me for the instrumental of this song, so here it is! and I couldn't upload the original to spotify because of Alan Watts vocals. Hope you like it ❤",
     genre: "Chillstep",
     date: "2018-03-01T00:00:00.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 3,
     ss: 15,
     cover: "vicious-mind",
@@ -2600,9 +2514,7 @@ export default [/*
     description: "End the 2017 and start the 2018 with a pure melodic dubstep track, hope you like it ❤",
     genre: "Melodic Dubstep",
     date: "2018-01-15T00:00:00.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 4,
     ss: 11,
     dropbox: {
@@ -2629,9 +2541,7 @@ export default [/*
     description: "I made this track for the Panama eSports community.",
     genre: "Liquid Drum & Bass",
     date: "2017-10-16T00:00:00.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 4,
     ss: 3,
     dropbox: {
@@ -2657,9 +2567,7 @@ export default [/*
     description: "One of my favorite triplet melody that I ever made.",
     genre: "Melodic Dubstep",
     date: "2017-03-22T00:00:00.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 4,
     ss: 36,
     dropbox: {
@@ -2687,9 +2595,7 @@ export default [/*
     description: "Many times I inspire my music for that feeling that transmits me to think about the universe, this is one of them and I hope you like it.",
     genre: "Melodic Dubstep",
     date: "2016-12-04T00:00:00.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 4,
     ss: 10,
     dropbox: {
@@ -2711,15 +2617,154 @@ export default [/*
     }
   },
   {
+    id: "adventures",
+    artists: "Dimatis",
+    title: "Adventures",
+    description: "Happy Holidays guys! I have here a new track with a different style hope you like it!",
+    genre: "Chillstep",
+    date: "2015-12-27T00:00:00.000",
+    person: ["Dimatis"],
+    mm: 4,
+    ss: 14,
+    dropbox: {
+      id: "ukn4g7kvbtzq33wbg7yl1",
+      rlkey: "cajtkvekv5qsmtfrdgl776tq8"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        soundcloud: "https://soundcloud.com/dimatis/adventures",
+        youtube: "https://www.youtube.com/watch?v=5K-J9h2teGo"
+      }
+    }
+  },
+  {
+    id: "dreams-of-colors",
+    artists: "Dimatis",
+    title: "Dreams of Colors",
+    description: "Sorry for my inactivity, I had problems with my pc, I hope soon to return to the music, which I like a lot :) Here's my new track \"Dreams Of Colors\" hope you like it!",
+    genre: "Melodic Dubstep",
+    date: "2015-11-28T00:00:00.000",
+    person: ["Dimatis"],
+    mm: 4,
+    ss: 17,
+    dropbox: {
+      id: "hoqp1e7wyaliv5te45ka0",
+      rlkey: "tun1o7zqr6sjgtbrao9xxfvk1"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        soundcloud: "https://soundcloud.com/dimatis/dreams-of-colors",
+        youtube: "https://www.youtube.com/watch?v=ERyRMgFoPuw"
+      }
+    }
+  },
+  {
+    id: "borderline",
+    artists: "KISNOU & Dimatis",
+    title: "Borderline",
+    description: "So happy to share this fresh collab",
+    genre: "Melodic Dubstep",
+    date: "2015-09-23T00:00:00.000",
+    person: ["KISNOU", "Dimatis"],
+    mm: 3,
+    ss: 56,
+    dropbox: {
+      id: "ow92t6wonepefcv9te9vr",
+      rlkey: "hoirytg9vye7q8h9b0y5ymg9y"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        spotify: "https://open.spotify.com/track/2YgzOR7tiSx9P67jOcCg5a",
+        soundcloud: "https://soundcloud.com/kisnoumusic/kisnou-dimatis-borderline",
+        youtube: "https://www.youtube.com/watch?v=kB7v-LwDHms",
+        itunes: "https://music.apple.com/us/album/borderline-feat-dimatis/1155871455?i=1155871462?app=itunes&ls=1",
+        apple: "https://music.apple.com/us/album/borderline-feat-dimatis/1155871455?i=1155871462?app=music&ls=1"
+      }
+    }
+  },
+  {
+    id: "contact",
+    artists: "Dimatis",
+    title: "Contact",
+    description: "",
+    genre: "Melodic Dubstep",
+    date: "2015-08-31T00:00:00.000",
+    person: ["Dimatis"],
+    mm: 4,
+    ss: 12,
+    dropbox: {
+      id: "9deqyypl1214ongjmtcm0",
+      rlkey: "sx3uqyk77v9vmbdyk0hot19zp"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        soundcloud: "https://soundcloud.com/dimatis/contact",
+        youtube: "https://www.youtube.com/watch?v=LKUnTymO0Q0"
+      }
+    }
+  },
+  {
+    id: "catastrophe",
+    artists: "Dimatis",
+    title: "Catastrophe",
+    description: "My first ambient track",
+    genre: "Ambient",
+    date: "2015-08-22T00:00:00.000",
+    person: ["Dimatis"],
+    mm: 6,
+    ss: 37,
+    dropbox: {
+      id: "z7937n6xtnvnx2lv5r8n2",
+      rlkey: "pjvbydcsvon1lo3dv4h4tk2lg"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        soundcloud: "https://soundcloud.com/dimatis/catastrophe",
+        youtube: "https://www.youtube.com/watch?v=w-edTD5f0B8"
+      }
+    }
+  },
+  {
+    id: "futuristic",
+    artists: "Dimatis",
+    title: "Futuristic",
+    description: "",
+    genre: "Melodic Dubstep",
+    date: "2015-08-02T00:00:00.000",
+    person: ["Dimatis"],
+    mm: 5,
+    ss: 8,
+    dropbox: {
+      id: "ehwxwigxt0rufyaoxemra",
+      rlkey: "blewuplu4jj03yphi7p5p5x1i"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        soundcloud: "https://soundcloud.com/dimatis/futuristic",
+        youtube: "https://www.youtube.com/watch?v=Eral8pQHm1g"
+      }
+    }
+  },
+  {
     id: "magical-forest",
     artists: "Dimatis",
     title: "Magical Forest",
     description: "Magical Forest was one of my first songs that I really liked.",
     genre: "Melodic Dubstep",
     date: "2015-07-04T00:00:00.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 5,
     ss: 32,
     dropbox: {
@@ -2740,15 +2785,131 @@ export default [/*
     }
   },
   {
+    id: "last-sunrise",
+    artists: "Dimatis",
+    title: "Last Sunrise",
+    description: "",
+    genre: "Chillstep",
+    date: "2015-06-19T00:00:00.000",
+    person: ["Dimatis"],
+    mm: 5,
+    ss: 18,
+    dropbox: {
+      id: "kfij8q3pi1f6r2grl4qvh",
+      rlkey: "cpzngv0rgyo87mxeod8z27948"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        soundcloud: "https://soundcloud.com/dimatis/last-sunrise",
+        youtube: "https://www.youtube.com/watch?v=W3xcWYbH9sA"
+      }
+    }
+  },
+  {
+    id: "geo",
+    artists: "Dimatis",
+    title: "Geo",
+    description: "Here is my eleventh track: Geo, chill music to your ears.",
+    genre: "Chill",
+    date: "2015-05-17T00:00:00.000",
+    person: ["Dimatis"],
+    mm: 3,
+    ss: 58,
+    dropbox: {
+      id: "l5pq0nvl2q9dq936qi9jx",
+      rlkey: "5g4zemoxf5jdfr5r10ppkcvob"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        soundcloud: "https://soundcloud.com/dimatis/geo",
+        youtube: "https://youtu.be/elkxjC_6PMU"
+      }
+    }
+  },
+  {
+    id: "time-remix",
+    artists: "Destiny Malibu",
+    title: "Time (Dimatis Remix)",
+    description: "My entry for Destiny Malibu's remix competition!",
+    genre: "Melodic Dubstep",
+    date: "2015-04-04T00:00:00.000",
+    person: [
+      "Destiny Malibu"
+    ],
+    mm: 4,
+    ss: 42,
+    dropbox: {
+      id: "wj1vgmtvk3ymhacpt84kl",
+      rlkey: "ox1o80pp7jjasnwtl2icr5u6k"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        soundcloud: "https://soundcloud.com/dimatis/destiny-time-dimatis-remix",
+        youtube: "https://www.youtube.com/watch?v=Fx4oaAE3Ryc"
+      }
+    }
+  },
+  {
+    id: "nature",
+    artists: "Dimatis",
+    title: "Nature",
+    description: "Here is my ninth track: Nature, chill music to your ears.",
+    genre: "Chillstep",
+    date: "2015-03-07T00:00:00.000",
+    person: ["Dimatis"],
+    mm: 4,
+    ss: 23,
+    dropbox: {
+      id: "la3aucvufi52yhq31624z",
+      rlkey: "otp5ion8r3u4ymz9j8b3ll8w2"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        soundcloud: "https://soundcloud.com/dimatis/nature",
+        youtube: "https://www.youtube.com/watch?v=r3uvUjkLbIw"
+      }
+    }
+  },
+  {
+    id: "augury",
+    artists: "Dimatis",
+    title: "Augury",
+    description: "Hey guys i'm back, this is my eight track, hope you like it",
+    genre: "Melodic Dubstep",
+    date: "2015-02-15T00:00:00.000",
+    person: ["Dimatis"],
+    mm: 4,
+    ss: 37,
+    dropbox: {
+      id: "e989d5zsc41c20q7hb19n",
+      rlkey: "zs603v532z6dx2nxijvv0ig1j"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        soundcloud: "https://soundcloud.com/dimatis/augury",
+        youtube: "https://www.youtube.com/watch?v=18VaoqSZ2RE"
+      }
+    }
+  },
+  {
     id: "dreamland",
     artists: "Dimatis",
     title: "Dreamland",
     description: "HEAR THE COLORS • SEE THE SOUNDS",
     genre: "Melodic Dubstep",
-    date: "2015-12-22T00:00:00.000",
-    person: [
-      "Dimatis"
-    ],
+    date: "2014-12-22T00:00:00.000",
+    label: "Jaba Recording",
+    person: ["Dimatis"],
     mm: 5,
     ss: 0,
     dropbox: {
@@ -2759,21 +2920,19 @@ export default [/*
       download: true,
       dark: false,
       links: {
-        soundcloud: "https://soundcloud.com/dimatis/shiny-worlds",
-        youtube: "https://www.youtube.com/watch?v=C3fxRNRH-Fs"
+        soundcloud: "https://soundcloud.com/dimatis/dreamland",
+        youtube: "https://www.youtube.com/watch?v=McoP7Tz3GNg"
       }
     }
   },
   {
     id: "shiny-worlds",
     artists: "Dimatis",
-    title: "New Era",
+    title: "Shiny Worlds",
     description: "Here is my sixth new track: \"Shiny Worlds\" I'm really happy with the progress of my production skills. Hope you like it.",
     genre: "Melodic Dubstep",
-    date: "2015-12-14T00:00:00.000",
-    person: [
-      "Dimatis"
-    ],
+    date: "2014-12-14T00:00:00.000",
+    person: ["Dimatis"],
     mm: 4,
     ss: 54,
     dropbox: {
@@ -2795,7 +2954,7 @@ export default [/*
     title: "Fade (Dimatis Remix)",
     description: "My entry for Holly Drummond's remix competition!",
     genre: "Melodic Dubstep",
-    date: "2015-11-19T00:00:00.000",
+    date: "2014-11-19T00:00:00.000",
     person: [
       "Holly Drummond"
     ],
@@ -2820,10 +2979,8 @@ export default [/*
     title: "Oort",
     description: "Hi guys, I am here presenting them with my fourth new track called \"Oort\". Future Bass track, adding my melodic style. Thank you very much for all the support I've received so far.",
     genre: "Future Bass",
-    date: "2015-10-26T00:00:00.000",
-    person: [
-      "Dimatis"
-    ],
+    date: "2014-10-26T00:00:00.000",
+    person: ["Dimatis"],
     mm: 4,
     ss: 30,
     dropbox: {
@@ -2845,10 +3002,8 @@ export default [/*
     title: "New Era",
     description: "This is my third track!, based on new era of my musical life, i hope you enjoy it! Good things are coming!",
     genre: "Melodic Dubstep",
-    date: "2015-10-05T00:00:00.000",
-    person: [
-      "Dimatis"
-    ],
+    date: "2014-10-05T00:00:00.000",
+    person: ["Dimatis"],
     mm: 5,
     ss: 13,
     dropbox: {
@@ -2871,9 +3026,7 @@ export default [/*
     description: "Hey guys, here I present my second new track \"Boreal\" based on my feelings towards a person that I love. hope you like it thanks.",
     genre: "Chillstep",
     date: "2014-09-14T00:00:00.000",
-    person: [
-      "Dimatis"
-    ],
+    person: ["Dimatis"],
     mm: 4,
     ss: 54,
     dropbox: {

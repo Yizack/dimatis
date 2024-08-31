@@ -6,3 +6,10 @@ export const downloads = sqliteTable("downloads", {
   count: integer("count").notNull().default(0),
   lastDownload: integer("last_download")
 });
+
+export const fanlinks = sqliteTable("fanlinks", {
+  id: integer("id").primaryKey(),
+  track: integer("track").notNull(),
+  service: text("service").notNull(),
+  link: text("link").notNull()
+});
