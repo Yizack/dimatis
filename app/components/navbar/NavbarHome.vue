@@ -22,7 +22,7 @@ const { data: followers } = await useFetch("/api/followers");
                 </svg>
               </span>
               <span v-if="followers" class="bg-white rounded text-dark small py-1 px-2">
-                <span v-if="followers.spotify">{{ followers.spotify}} followers</span>
+                <span v-if="followers.spotify">{{ followers.spotify }} followers</span>
                 <span v-else class="spinner-box">
                   <span class="spinner-border text-dark" style="width:1rem; height:1rem; font-size: 0.5rem;">
                     <span class="visually-hidden">Loading...</span>
