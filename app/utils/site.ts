@@ -29,7 +29,7 @@ const SITE = {
   logoNavbar: "images/logos/logo-navbar.svg",
   image: "images/dimatis-bio.jpg",
   cover: "images/cover.jpg",
-  spotify_id: "0RAT9Q5WZwzJRJgTI38zJR",
+  spotifyId: "0RAT9Q5WZwzJRJgTI38zJR",
   twitter: "dimatismusic",
   instagram: "dimatismusic",
   socials: {
