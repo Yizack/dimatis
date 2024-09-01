@@ -6,6 +6,6 @@ export default defineCachedEventHandler(async (event) => {
   const spotifyArtist = await spotifyAPI.getArtist(SITE.spotifyId);
 
   return {
-    spotify: spotifyArtist.followers
+    spotify: spotifyArtist.followers.total
   };
 }, { maxAge: 86400 });
