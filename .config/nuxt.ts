@@ -43,7 +43,8 @@ export default defineNuxtConfig({
     "@nuxt/eslint",
     "nuxt-musicfyplayer",
     "@nuxtjs/sitemap",
-    "@nuxt/icon"
+    "@nuxt/icon",
+    "@nuxt/scripts"
   ],
 
   runtimeConfig: {
@@ -62,7 +63,8 @@ export default defineNuxtConfig({
     mode: "svg",
     clientBundle: {
       scan: true
-    }
+    },
+    serverBundle: false
   },
 
   colorMode: {

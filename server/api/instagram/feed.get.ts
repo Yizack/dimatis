@@ -4,5 +4,5 @@ export default defineCachedEventHandler(async (event) => {
   await API.refreshAccessToken();
   const feed = await API.getFeed();
 
-  return { data: feed };
+  return feed;
 }, { maxAge: 86400 });
