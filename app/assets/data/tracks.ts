@@ -2663,7 +2663,7 @@ export default [
         soundcloud: "https://soundcloud.com/dimatis/emotional-tourism",
         youtube: "https://www.youtube.com/watch?v=0rYajHgEOHc",
         itunes: "https://music.apple.com/us/album/emotional-tourism-single/1176140746?app=itunes&ls=1",
-        apple: "https://music.apple.com/us/album/emotional-tourism-single/1176140746?app=music&ls=1",
+        apple: "https://music.apple.com/us/album/emotional-tourism-single/1176140746?app=music&ls=1"
       }
     }
   },
