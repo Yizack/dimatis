@@ -1,4 +1,4 @@
-export default [/*
+export default [
   {
     id: "sojourn",
     artists: "Bayza & Dimatis",
@@ -35,7 +35,7 @@ export default [/*
         netease: ""
       }
     }
-  }, */
+  },
   {
     id: "celestigram",
     artists: "Dimatis",
@@ -2589,6 +2589,31 @@ export default [/*
     }
   },
   {
+    id: "lighting",
+    artists: "Dimatis",
+    title: "Lighting",
+    description: "",
+    genre: "Melodic Dubstep",
+    date: "2016-12-20T00:00:00.000",
+    person: ["Dimatis"],
+    mm: 3,
+    ss: 58,
+    dropbox: {
+      id: "a0ytrqb990ts5cdm9m4js",
+      rlkey: "hg56g5jctq45icu6dkhoezi0r"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        spotify: "https://open.spotify.com/track/0p3pQqku7cmPu6W1YWAmDQ",
+        soundcloud: "https://soundcloud.com/dimatis/lighting",
+        itunes: "https://music.apple.com/us/album/lighting-single/1195821531?app=itunes&ls=1",
+        apple: "https://music.apple.com/us/album/lighting-single/1195821531?app=music&ls=1"
+      }
+    }
+  },
+  {
     id: "white-dwarf",
     artists: "Dimatis",
     title: "White Dwarf",
@@ -2613,6 +2638,229 @@ export default [/*
         deezer: "https://www.deezer.com/album/15169833",
         tidal: "https://tidal.com/browse/album/68610029",
         netease: "https://music.163.com/#/song?id=1400110246"
+      }
+    }
+  },
+  {
+    id: "emotional-tourism",
+    artists: "Dimatis",
+    title: "Emotional Tourism",
+    description: "Chill vibes for you ❤",
+    genre: "Chill",
+    date: "2016-11-17T00:00:00.000",
+    person: ["Dimatis"],
+    mm: 3,
+    ss: 53,
+    dropbox: {
+      id: "xifei4hipoglajfsrt768",
+      rlkey: "67zo8r4x5oa93o20w3p0rhvcu"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        spotify: "https://open.spotify.com/track/1kyJ8FPpWbXnmGZIvfqCVM",
+        soundcloud: "https://soundcloud.com/dimatis/emotional-tourism",
+        youtube: "https://www.youtube.com/watch?v=0rYajHgEOHc",
+        itunes: "https://music.apple.com/us/album/emotional-tourism-single/1176140746?app=itunes&ls=1",
+        apple: "https://music.apple.com/us/album/emotional-tourism-single/1176140746?app=music&ls=1",
+      }
+    }
+  },
+  {
+    id: "life-is-strange",
+    artists: "Dimatis",
+    title: "Life Is Strange",
+    description: "Thanks for 1k followers on SoundCloud 💕",
+    genre: "Melodic Dubstep",
+    date: "2016-11-02T00:00:00.000",
+    person: ["Dimatis"],
+    mm: 4,
+    ss: 18,
+    dropbox: {
+      id: "o5jwofpx2fssci0rwux0j",
+      rlkey: "s51cmnznf8j8zygk199jjjkfq"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        soundcloud: "https://soundcloud.com/dimatis/life-is-strange",
+        youtube: "https://youtu.be/o3t_jyehNag"
+      }
+    }
+  },
+  {
+    id: "your-heart-at-mind",
+    artists: "Dimatis",
+    title: "Your Heart at Mind (feat. Ashley Apollodor)",
+    description: "I made this track with the beautiful voice of Ashley Apollodor.",
+    genre: "Melodic Dubstep",
+    date: "2016-10-20T00:00:00.000",
+    person: ["Dimatis"],
+    mm: 5,
+    ss: 23,
+    dropbox: {
+      id: "3rydrlp874o1vanhfzypv",
+      rlkey: "n16fgpne23ydce4d5h4szsytl"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        soundcloud: "https://soundcloud.com/dimatis/your-heart-at-mind-feat-ashley-apollodor",
+        youtube: "https://www.youtube.com/watch?v=mmcko9yHrBk"
+      }
+    }
+  },
+  {
+    id: "attempts",
+    artists: "Dimatis",
+    title: "Attempts",
+    description: "",
+    genre: "Melodic Dubstep",
+    date: "2016-09-04T00:00:00.000",
+    person: ["Dimatis"],
+    mm: 4,
+    ss: 42,
+    dropbox: {
+      id: "xvprhr0oa61vdm2iwzf67",
+      rlkey: "60oteqczyubes6gvd2qzeep86"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        spotify: "https://open.spotify.com/track/5fdr4iXgbVr8w5HBUHL5TR",
+        soundcloud: "https://soundcloud.com/dimatis/attempts",
+        youtube: "https://www.youtube.com/watch?v=PfKsrVsFYSs",
+        itunes: "https://music.apple.com/us/album/attempts-single/1153995706?app=itunes&ls=1",
+        apple: "https://music.apple.com/us/album/attempts-single/1153995706?app=music&ls=1"
+      }
+    }
+  },
+  {
+    id: "fragments",
+    artists: "Dimatis",
+    title: "Fragments",
+    description: "",
+    genre: "Melodic Dubstep",
+    date: "2016-07-11T00:00:00.000",
+    person: ["Dimatis"],
+    mm: 4,
+    ss: 58,
+    dropbox: {
+      id: "4dicdysow0uyt5p6ykwlk",
+      rlkey: "yeeln40sbi5iff4kh8zw4ku7w"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        spotify: "https://open.spotify.com/track/6lWtYdw4OVE2idkxRxuUp7",
+        soundcloud: "https://soundcloud.com/dimatis/fragments",
+        youtube: "https://youtu.be/69kR6HvBYlA"
+      }
+    }
+  },
+  {
+    id: "fortitude",
+    artists: "Dimatis",
+    title: "Fortitude",
+    description: "",
+    genre: "Melodic Dubstep",
+    date: "2016-06-11T00:00:00.000",
+    person: ["Dimatis"],
+    mm: 4,
+    ss: 30,
+    dropbox: {
+      id: "uh56b1rov4npnsfd4i2zn",
+      rlkey: "g5orga5xgy04dnl7gf7zd26fr"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        spotify: "https://open.spotify.com/track/1WT9Xqyl9L7hpH3ZrDHX9L",
+        soundcloud: "https://soundcloud.com/dimatis/fortitude",
+        youtube: "https://www.youtube.com/watch?v=MTQipMMx0i0",
+        itunes: "https://music.apple.com/us/album/fortitude-single/1139797031?app=itunes&ls=1",
+        apple: "https://music.apple.com/us/album/fortitude-single/1139797031?app=music&ls=1"
+      }
+    }
+  },
+  {
+    id: "splintered-arms-remix",
+    artists: "Liyv",
+    title: "Splintered Arms (Dimatis Remix)",
+    description: "Remix of the song \"Splintered Arms\" by Liyv.",
+    genre: "Melodic Dubstep",
+    date: "2016-05-01T00:00:00.000",
+    person: ["Liyv"],
+    mm: 4,
+    ss: 31,
+    dropbox: {
+      id: "0vjqzf0wt0uovgin32uvg",
+      rlkey: "nbkmqmh0l1u8vjzfp0cnsbjko"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        soundcloud: "https://soundcloud.com/dimatis/liyv-splintered-arms-dimatis-remix",
+        youtube: "https://www.youtube.com/watch?v=fMYVHWpZ7Ak"
+      }
+    }
+  },
+  {
+    id: "have-you-here-remix",
+    artists: "Peter Posession ft. Matt Pardus",
+    title: "Have You Here (Dimatis Remix)",
+    description: "Remix of the song \"Have You Here\" by Peter Posession ft. Matt Pardus.",
+    genre: "Melodic Dubstep",
+    date: "2016-02-26T00:00:00.000",
+    person: ["Peter Posession", "Matt Pardus"],
+    mm: 4,
+    ss: 18,
+    dropbox: {
+      id: "5ws4luc4utov7927i6pey",
+      rlkey: "c36xmxwkqfgx55b4ccjgvhqm1"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        soundcloud: "https://soundcloud.com/dimatis/peter-posession-ft-matt-pardus-have-you-here-dimatis-remix",
+        youtube: "https://www.youtube.com/watch?v=HrLabITcKkw"
+      }
+    }
+  },
+  {
+    id: "beyond-earth",
+    artists: "Dimatis & KISNOU",
+    title: "Beyond Earth",
+    description: "Best way to start the year with a collaboration with my friend KISNOU. We hope you like it!",
+    genre: "Melodic Dubstep",
+    date: "2016-01-21T00:00:00.000",
+    person: ["Dimatis", "KISNOU"],
+    mm: 4,
+    ss: 11,
+    dropbox: {
+      id: "0ndmyfb6p8su0vmx3dl2g",
+      rlkey: "79v21jthdk5xnx9376sgac1ve"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        soundcloud: "https://soundcloud.com/dimatis/dimatis-kisnou-beyond-earth",
+        youtube: "https://www.youtube.com/watch?v=4CfuQolk4V4",
+        spotify: "https://open.spotify.com/track/3hH6RcIWvE0t3JRzO1x5nv",
+        itunes: "https://music.apple.com/pa/album/beyond-earth-single/1145766864?app=itunes&ls=1",
+        apple: "https://music.apple.com/pa/album/beyond-earth-single/1145766864?app=music&ls=1",
+        deezer: "https://www.deezer.com/us/track/130558408",
+        bandcamp: "https://kisnou.bandcamp.com/track/dimatis-kisnou-beyond-earth",
+        amazon: "https://www.amazon.com/dp/B01KYZ3WZK"
       }
     }
   },
