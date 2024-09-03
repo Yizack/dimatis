@@ -2535,6 +2535,31 @@ export default [
     }
   },
   {
+    id: "till-we-meet-again",
+    artists: "Dimatis",
+    title: "Till We Meet Again",
+    description: "A beautiful, mellow, but still powerful track from Dimatis, enjoy!",
+    genre: "Future Bass",
+    date: "2017-12-23T00:00:00.000",
+    person: ["Dimatis"],
+    mm: 4,
+    ss: 12,
+    label: "Lyon Records",
+    dropbox: {
+      id: "ktpaewh7ss7zle3f3mf6y",
+      rlkey: "qcy4os3h21sux34u4ccn1v0ki"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        spotify: "https://open.spotify.com/track/78SZVMH0yAY0Bg6v6gLZ3v",
+        soundcloud: "https://soundcloud.com/lyon_records/lr-007",
+        youtube: "https://www.youtube.com/watch?v=QzWE5ZURwAc"
+      }
+    }
+  },
+  {
     id: "breathe",
     artists: "Dimatis",
     title: "Breathe",
@@ -2557,6 +2582,100 @@ export default [
         itunes: "https://music.apple.com/us/album/breathe-single/1297213023?app=itunes&ls=1",
         apple: "https://music.apple.com/us/album/breathe-single/1297213023?app=music&ls=1",
         tidal: "https://tidal.com/browse/album/80288586"
+      }
+    }
+  },
+  {
+    id: "gone",
+    artists: "Dimatis",
+    title: "Gone",
+    description: "",
+    genre: "Melodic Dubstep",
+    date: "2017-08-20T00:00:00.000",
+    person: ["Dimatis"],
+    mm: 4,
+    ss: 49,
+    dropbox: {
+      id: "w0j2f8jnn28jidjb7stqs",
+      rlkey: "32vz0b8445l7wcu8vu3j040aq"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        spotify: "https://open.spotify.com/track/1hp5JmkxWSZu1hVkvE8x9g",
+        soundcloud: "https://soundcloud.com/dimatis/gone",
+        youtube: "https://www.youtube.com/watch?v=Q8wGDunN6-Q"
+      }
+    }
+  },
+  {
+    id: "incandescent",
+    artists: "Dimatis",
+    title: "Incandescent",
+    description: "",
+    genre: "Melodic Dubstep",
+    date: "2017-07-24T00:00:00.000",
+    person: ["Dimatis"],
+    mm: 4,
+    ss: 25,
+    dropbox: {
+      id: "x8w7kq6d1r1wv0v"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        spotify: "https://open.spotify.com/track/7KXtO1eKrG6R6ALKS9ZPOW",
+        soundcloud: "https://soundcloud.com/dimatis/incandescent",
+        youtube: "https://www.youtube.com/watch?v=yVyx0XWZMlU"
+      }
+    }
+  },
+  {
+    id: "wait-for-me-remix",
+    artists: "Chime",
+    title: "Wait For Me (Dimatis Remix)",
+    description: "My entry for the remix contest of the song \"Wait For Me\" by Chime.",
+    genre: "Melodic Dubstep",
+    date: "2017-07-08T00:00:00.000",
+    person: ["Chime"],
+    mm: 4,
+    ss: 3,
+    dropbox: {
+      id: "tjyg4gaubwnkw2t5qdv8u",
+      rlkey: "gdrwab20d5luy62sk1ffwmnc9"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        soundcloud: "https://soundcloud.com/dimatis/chime-wait-for-me-dimatis-remix",
+        youtube: "https://www.youtube.com/watch?v=5Ibu6Ahqj1Q"
+      }
+    }
+  },
+  {
+    id: "my-dear",
+    artists: "Dimatis",
+    title: "My Dear",
+    description: "",
+    genre: "Melodic Dubstep",
+    date: "2017-05-21T00:00:00.000",
+    person: ["Dimatis"],
+    mm: 4,
+    ss: 0,
+    dropbox: {
+      id: "ddeuirrh6znohz0g766m9",
+      rlkey: "v267mkjq85rforvs5jiw4o7ok"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        spotify: "https://open.spotify.com/track/5LTeJmo9F1LFZtD9fzbhxt",
+        soundcloud: "https://soundcloud.com/dimatis/my-dear",
+        youtube: "https://www.youtube.com/watch?v=q8Xm6h7PhMs"
       }
     }
   },
@@ -2585,6 +2704,56 @@ export default [
         deezer: "https://www.deezer.com/en/album/15777810",
         tidal: "https://tidal.com/album/72194446",
         netease: "https://music.163.com/#/album?id=35292811"
+      }
+    }
+  },
+  {
+    id: "use-me-remix",
+    artists: "Veela",
+    title: "Use Me (Dimatis Remix)",
+    description: "Here's my remix of the song \"Use Me\" from the \"Course\" album by Veela",
+    genre: "Melodic Dubstep",
+    date: "2017-02-01T00:00:00.000",
+    person: ["Veela"],
+    mm: 4,
+    ss: 0,
+    dropbox: {
+      id: "mtp04020vuaktrgpin13e",
+      rlkey: "sao7i80immzaztcltuliz5p2p"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        soundcloud: "https://soundcloud.com/dimatis/veela-use-me-dimatis-remix",
+        youtube: "https://www.youtube.com/watch?v=Tr5FB97d9os"
+      }
+    }
+  },
+  {
+    id: "nearby",
+    artists: "Dimatis",
+    title: "Nearby",
+    description: "",
+    genre: "Melodic Dubstep",
+    date: "2017-01-07T00:00:00.000",
+    person: ["Dimatis"],
+    mm: 5,
+    ss: 9,
+    dropbox: {
+      id: "6p7jhp1rr1c10lnbjfkf5",
+      rlkey: "7rovlnlugyq84njymvtj650mm"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        spotify: "https://open.spotify.com/track/254s9bDbTapRTKpPPaVOBr",
+        soundcloud: "https://soundcloud.com/dimatis/nearby",
+        youtube: "https://www.youtube.com/watch?v=Py9dG4AffYg",
+        itunes: "https://music.apple.com/us/album/nearby-single/1196847093?app=itunes&ls=1",
+        apple: "https://music.apple.com/us/album/nearby-single/1196847093?app=music&ls=1",
+        deezer: "https://www.deezer.com/en/album/15179895"
       }
     }
   },
