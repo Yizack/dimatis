@@ -6,10 +6,8 @@ defineProps({
 const scrolled = ref(false);
 const maxScroll = 50;
 
-const { path } = useRoute();
-
-const activeMusicPath = path.includes("/music");
-const activeAlbumPath = path.includes("/album");
+const activeMusicPath = computed(() => useRoute().path.includes("/music"));
+const activeAlbumPath = computed(() => useRoute().path.includes("/album"));
 
 onMounted(() => {
   onscroll = () => {
