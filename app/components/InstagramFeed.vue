@@ -117,11 +117,11 @@ onMounted(async () => {
     border-color: #dbdbdb;
   }
   .glide__arrow--right {
-    top: 300px;
-    right: -15px;
+    top: 200px;
+    right: 0;
   }
   .glide__arrow--left {
-    top: 300px;
-    left: -15px;
+    top: 200px;
+    left: 0;
   }
 </style>
