@@ -27,11 +27,9 @@ onMounted(async () => {
 </script>
 
 <template>
-  <section id="ig-feed" class="bg-light">
-    <div v-if="feed && feed.length" class="container pb-5 text-center text-dark">
-      <div id="ig" class="pb-3">
-        <h4 class="text-uppercase">Instagram feed</h4>
-      </div>
+  <section id="ig-feed" class="bg-light py-5">
+    <div v-if="feed && feed.length" class="container text-center text-dark">
+      <h4 class="text-uppercase mb-4">Instagram feed</h4>
       <div class="row">
         <div class="col-lg-12 p-0">
           <div class="glide">

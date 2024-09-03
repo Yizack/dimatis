@@ -80,10 +80,13 @@ useHead({
     { rel: "canonical", href: `${SITE.url}` }
   ]
 });
+
+const dev = import.meta.dev;
 </script>
 
 <template>
-  <LatestMusic />
-  <InstagramFeed />
-  <AboutSection />
+  <SectionLatestMusic />
+  <SectionStats />
+  <InstagramFeed v-if="!dev" />
+  <SectionAbout />
 </template>

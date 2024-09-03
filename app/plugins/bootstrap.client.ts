@@ -1,10 +1,16 @@
 import Collapse from "bootstrap/js/dist/collapse";
+import Popover from "bootstrap/js/dist/popover";
 import "bootstrap/js/dist/offcanvas";
 
 class Bootstrap {
   toogleCollapse (el: HTMLElement) {
     const bsCollapse = new Collapse(el);
     bsCollapse.toggle();
+  }
+
+  initializePopover () {
+    const popoverList = document.querySelectorAll("[data-bs-toggle=\"popover\"]");
+    [...popoverList].map(e => new Popover(e, { trigger: "hover" }));
   }
 }
 

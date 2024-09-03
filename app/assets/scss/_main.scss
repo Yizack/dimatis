@@ -9,10 +9,14 @@
   src: url("/fonts/EbrimaBd.woff2") format("woff2");
 }
 
+$dimatis-bg: #292929;
+
 :root {
   --dark-color: #151515;
   --secondary-bg-color: #202020;
   --secondary-text-color: #a3a5a7;
+  --bs-tertiary-bg: #{$dimatis-bg};
+  --bs-tertiary-bg-rgb: #{to-rgb($dimatis-bg)};
   --white-color: #f7f7f7;
   --muted-color: #ddd;
   
