@@ -23,8 +23,8 @@ const moreTracks = computed(() => {
   }, [] as DimatisTrack[]);
 });
 
-const SEO = computed(() => {
-  const schemaOrg = {
+const musicSchemaOrg = computed(() => {
+  const schema = {
     "@context": "http://schema.org",
     "@type": "MusicRecording",
     "name": track.value.title,
@@ -38,7 +38,7 @@ const SEO = computed(() => {
   };
 
   if (track.value.album) {
-    schemaOrg.inAlbum.push({
+    schema.inAlbum.push({
       "@type": "MusicAlbum",
       "name": track.value.album,
       "url": `${SITE.url}/album/${track.value.album?.replace(/\s+/g, "-").toLowerCase()}`
@@ -46,13 +46,13 @@ const SEO = computed(() => {
   }
 
   track.value.person.forEach((person) => {
-    schemaOrg.byArtist.push({
+    schema.byArtist.push({
       "@type": "MusicGroup",
       "name": person
     });
   });
 
-  return JSON.stringify(schemaOrg);
+  return schema;
 });
 
 useSeoMeta({
@@ -80,7 +80,7 @@ useSeoMeta({
 useHead({
   script: [
     // Schema.org
-    { type: "application/ld+json", children: SEO.value }
+    { type: "application/ld+json", children: JSON.stringify(musicSchemaOrg.value) }
   ],
   link: [
     { rel: "canonical", href: `${SITE.url}/music/${param.value}` }

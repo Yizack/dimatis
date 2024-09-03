@@ -25,7 +25,7 @@ useSeoMeta({
 
 useHead({
   script: [
-    { type: "application/ld+json", children: JSON.stringify(schemaOrg) }
+    { type: "application/ld+json", children: JSON.stringify(homeSchemaOrg) }
   ],
   link: [
     { rel: "canonical", href: `${SITE.url}` }

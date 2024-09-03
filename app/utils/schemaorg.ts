@@ -1,4 +1,4 @@
-export const schemaOrg = {
+export const homeSchemaOrg = {
   "@context": "http://schema.org",
   "@graph": [
     {
@@ -24,18 +24,16 @@ export const schemaOrg = {
       "image": `${SITE.url}/${SITE.logo}`,
       "description": SITE.meta_description,
       "birthDate": SITE.person.birthdate,
-      "birthPlace":
-          {
-            "@type": "AdministrativeArea",
-            "@id": SITE.person.province.id,
-            "name": SITE.person.province.name,
-            "containedIn":
-              {
-                "@type": "Country",
-                "@id": SITE.person.country.id,
-                "name": SITE.person.country.name
-              }
-          },
+      "birthPlace": {
+        "@type": "AdministrativeArea",
+        "@id": SITE.person.province.id,
+        "name": SITE.person.province.name,
+        "containedIn": {
+          "@type": "Country",
+          "@id": SITE.person.country.id,
+          "name": SITE.person.country.name
+        }
+      },
       "sameAs": [
         SITE.socials.youtube,
         SITE.socials.soundcloud,
