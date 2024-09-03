@@ -39,7 +39,7 @@ useHead({
           <div class="col-12 col-lg-6 mx-auto">
             <div class="mb-5">
               <p>The Dimatis' logo was made following the golden ratio proportions.</p>
-              <img src="/images/logos/golden-ratio.png" class="img-fluid rounded-3 text-center" width="400" height="400">
+              <img src="/images/logos/golden-ratio.jpg" class="img-fluid rounded-3 text-center" width="400" height="400">
             </div>
             <div>
               <h4 class="text-uppercase">Logo assets</h4>
