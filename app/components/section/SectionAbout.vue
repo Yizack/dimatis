@@ -1,6 +1,6 @@
 <template>
-  <section id="about">
-    <div class="container py-5 text-white">
+  <section id="about" class="about position-relative">
+    <div class="container py-5 position-relative z-1">
       <div class="pb-3">
         <h3 class="text-center text-uppercase">About</h3>
       </div>
@@ -25,7 +25,7 @@
           </div>
         </div>
         <div class="col-lg-4 text-center">
-          <img class="img-fluid rounded-3" src="/images/sq-logo-dimatis.jpg" :alt="`${SITE.name} photo`">
+          <img class="img-fluid rounded-3 shadow" src="/images/sq-logo-dimatis.jpg" :alt="`${SITE.name} photo`">
         </div>
       </div>
     </div>

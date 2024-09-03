@@ -7,6 +7,9 @@ declare global {
     permalink: string;
     timestamp: string;
     username: string;
+    media_url: string;
+    media_type: string;
+    thumbnail_url: string;
   }
 
   interface Window {

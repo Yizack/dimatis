@@ -8,7 +8,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <section id="stats" class="">
+  <section id="stats">
     <div class="container py-5">
       <h3 class="text-uppercase text-center mb-4">Career Statistics</h3>
       <div class="row g-3">

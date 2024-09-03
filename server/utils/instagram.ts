@@ -16,7 +16,7 @@ export class InstagramFeed {
   }
 
   async getFeed () {
-    const query = new URLSearchParams({ fields: "username,permalink,timestamp,caption", access_token: this.accessToken });
+    const query = new URLSearchParams({ fields: "username,permalink,timestamp,caption,media_url,media_type,thumbnail_url", access_token: this.accessToken });
     const response = await $fetch<{ data: InstagramPost[] }>(`${this.api}/me/media?${query}`).catch((e) => {
       console.warn(e);
       throw createError({ statusCode: 500, message: "Failed to fetch instagram feed" });

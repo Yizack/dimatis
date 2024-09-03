@@ -1,55 +1,6 @@
 <script setup lang="ts">
 definePageMeta({ layout: "home" });
 
-const schemaOrg = {
-  "@context": "http://schema.org",
-  "@graph": [
-    {
-      "@type": "WebSite",
-      "name": SITE.name,
-      "url": SITE.url,
-      "image": `${SITE.url}/${SITE.logo}`
-    },
-    {
-      "@type": "Organization",
-      "name": "Dimatis",
-      "url": SITE.url,
-      "logo": `${SITE.url}/${SITE.logo}`,
-      "image": `${SITE.url}/${SITE.cover}`,
-      "description": SITE.meta_description
-    },
-    {
-      "@type": ["Person", "MusicGroup"],
-      "@id": SITE.socials.musicbrainz,
-      "name": SITE.name,
-      "alternateName": SITE.person.fullname,
-      "url": SITE.url,
-      "image": `${SITE.url}/${SITE.logo}`,
-      "description": SITE.meta_description,
-      "birthDate": SITE.person.birthdate,
-      "birthPlace":
-          {
-            "@type": "AdministrativeArea",
-            "@id": SITE.person.province.id,
-            "name": SITE.person.province.name,
-            "containedIn":
-              {
-                "@type": "Country",
-                "@id": SITE.person.country.id,
-                "name": SITE.person.country.name
-              }
-          },
-      "sameAs": [
-        SITE.socials.youtube,
-        SITE.socials.soundcloud,
-        SITE.socials.facebook,
-        SITE.socials.twitter,
-        SITE.socials.instagram
-      ]
-    }
-  ]
-};
-
 useSeoMeta({
   title: SITE.name,
   description: SITE.meta_description,
@@ -81,12 +32,36 @@ useHead({
   ]
 });
 
-const dev = import.meta.dev;
+const latestTracks = tracks.reduce((acc, t) => {
+  if (acc.length < 3) {
+    acc.push(t);
+  }
+  return acc;
+}, [] as DimatisTrack[]);
 </script>
 
 <template>
-  <SectionLatestMusic />
+  <SectionAbout class="bg-body-secondary" />
   <SectionStats />
-  <InstagramFeed v-if="!dev" />
-  <SectionAbout />
+  <section id="music" class="bg-body-secondary">
+    <div class="container py-5 text-center">
+      <h3 class="text-uppercase">Latest Music</h3>
+      <p class="mb-0">Listen to my latest music</p>
+      <div class="row my-4">
+        <template v-for="track of latestTracks" :key="track.id">
+          <div class="col-12 col-lg-4">
+            <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{ width: '300px', height: '385px' }" :track="track" :param="track.cover ? track.cover : track.id" />
+            <NuxtLink class="text-decoration-none" :to="`/music/${track.id}`">
+              <p class="mb-0">{{ track.title }}</p>
+              <p class="text-secondary"><small>{{ track.artists }}</small></p>
+            </NuxtLink>
+          </div>
+        </template>
+      </div>
+      <div class="text-uppercase">
+        <NuxtLink class="btn btn-outline-white rounded-pill text-decoration-none" role="button" to="/music">More music</NuxtLink>
+      </div>
+    </div>
+  </section>
+  <InstagramFeed />
 </template>
