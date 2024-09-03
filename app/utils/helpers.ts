@@ -24,7 +24,7 @@ export const getTracksPerYear = (year: number) => {
 export const getStats = () => {
   const totalTracks = tracks.length;
   const unofficialReleases = tracks.filter(track => Boolean(!track.fanlink.links.spotify)).length;
-  const tracksReleased = totalTracks - unofficialReleases;
+  const releasedTracks = totalTracks - unofficialReleases;
   const collabsCount = tracks.filter((track) => {
     return (track.person.includes("Dimatis") && track.person.length > 1) || (track.title.includes("Dimatis &") || track.title.includes("& Dimatis"));
   }).length;
@@ -41,8 +41,8 @@ export const getStats = () => {
       description: "All tracks produced by Dimatis"
     },
     {
-      title: "Tracks Released",
-      value: tracksReleased,
+      title: "Released Tracks",
+      value: releasedTracks,
       icon: "tabler:building-store",
       description: "All tracks released on streaming platforms and music stores"
     },
