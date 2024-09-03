@@ -9,9 +9,12 @@ const maxScroll = 50;
 const activeMusicPath = computed(() => useRoute().path.includes("/music"));
 const activeAlbumPath = computed(() => useRoute().path.includes("/album"));
 
+const getScrolled = () => (document.body.scrollTop > maxScroll || document.documentElement.scrollTop > maxScroll);
+
 onMounted(() => {
+  scrolled.value = getScrolled();
   onscroll = () => {
-    scrolled.value = (document.body.scrollTop > maxScroll || document.documentElement.scrollTop > maxScroll);
+    scrolled.value = getScrolled();
   };
 });
 </script>
