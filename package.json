@@ -22,7 +22,7 @@
     "@nuxt/scripts": "^0.7.1",
     "@nuxthub/core": "^0.7.9",
     "@nuxtjs/color-mode": "^3.4.4",
-    "@nuxtjs/sitemap": "^5.3.5",
+    "@nuxtjs/sitemap": "^6.0.0",
     "@types/bootstrap": "^5.2.10",
     "@types/glidejs__glide": "^3.6.5",
     "bootstrap": "^5.3.3",

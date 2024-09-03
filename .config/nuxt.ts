@@ -102,16 +102,16 @@ export default defineNuxtConfig({
 
   sitemap: {
     discoverImages: false,
+    sources: ["/api/__sitemap__/urls"],
     xslColumns: [
       { label: "URL", width: "65%" },
-      { label: "Priority", select: "sitemap:priority", width: "12.5%" },
-      { label: "Last Modified", select: "sitemap:lastmod", width: "35%" }
+      { label: "Priority", select: "sitemap:priority", width: "12.5%" }
     ]
   },
 
   routeRules: {
     "/": { sitemap: { priority: 1 } },
-    "/*/**": { sitemap: { priority: 0.8, lastmod: new Date().toISOString() } }
+    "/*/**": { sitemap: { priority: 0.8 } }
   },
 
   features: {
