@@ -10,6 +10,12 @@
   text-decoration: none;
 }
 
+.navbar-nav .nav-item:not(.nav-hash) .nav-link.active {
+  color: var(--dark-color);
+  background-color: var(--white-color);
+  text-decoration: none;
+}
+
 .navbar .dropdown-item:hover, .navbar .nav-link:hover {
   text-decoration: underline;
 }

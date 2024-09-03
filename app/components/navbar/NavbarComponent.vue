@@ -6,6 +6,11 @@ defineProps({
 const scrolled = ref(false);
 const maxScroll = 50;
 
+const { path } = useRoute();
+
+const activeMusicPath = path.includes("/music");
+const activeAlbumPath = path.includes("/album");
+
 onMounted(() => {
   onscroll = () => {
     scrolled.value = (document.body.scrollTop > maxScroll || document.documentElement.scrollTop > maxScroll);
@@ -35,10 +40,10 @@ onMounted(() => {
               <NuxtLink class="nav-link" to="/">Home</NuxtLink>
             </li>
             <li class="nav-item" role="menuitem" data-bs-dismiss="offcanvas">
-              <NuxtLink class="nav-link" to="/music">Music</NuxtLink>
+              <NuxtLink class="nav-link" :class="{ active: activeMusicPath }" to="/music">Music</NuxtLink>
             </li>
             <li class="nav-item" role="menuitem" data-bs-dismiss="offcanvas">
-              <NuxtLink class="nav-link" to="/album">Albums</NuxtLink>
+              <NuxtLink class="nav-link" :class="{ active: activeAlbumPath }" to="/album">Albums</NuxtLink>
             </li>
             <li class="nav-item nav-hash" role="menuitem" data-bs-dismiss="offcanvas">
               <NuxtLink class="nav-link" to="/#about">About</NuxtLink>
