@@ -1441,16 +1441,44 @@ export default [
     }
   },
   {
+    id: "reborn",
+    artists: "Bayza & Dimatis",
+    title: "Reborn",
+    description: "We made this track for a gaming community here in Panama. It's like a Trap / Bass style, hope you enjoy!.",
+    genre: "Trap",
+    date: "2020-10-22T00:00:00.000",
+    person: ["Bayza", "Dimatis"],
+    mm: 2,
+    ss: 41,
+    dropbox: {
+      id: "45b0rv4fqtrahdvdp34f3",
+      rlkey: "4fk23gq9wzu0sx1kouiq1rmwj"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        spotify: "https://open.spotify.com/track/3POCFD2UIKRvmySfhQvRgU",
+        soundcloud: "https://soundcloud.com/bayza/reborn",
+        youtube: "https://www.youtube.com/watch?v=Uqm00tl0nKQ",
+        apple: "https://music.apple.com/album/reborn-single/1535187248?app=music&ls=1",
+        itunes: "https://music.apple.com/album/reborn-single/1535187248?app=itunes&ls=1",
+        deezer: "https://www.deezer.com/en/album/178782202",
+        bandcamp: "https://bayza.bandcamp.com/track/reborn",
+        amazon: "https://www.amazon.com/dp/B08KY8ZJV7",
+        tidal: "https://tidal.com/browse/album/158112844",
+        tiktok: "https://vm.tiktok.com/ZSQNYnMg"
+      }
+    }
+  },
+  {
     id: "hold-on-to-me",
     artists: "Dimatis & Bayza",
     title: "Hold On To Me",
     description: "This is different from my usual style, we like to try different genres together, this time we try some Future Bass with vocals. Hope you like it and if not, don't worry, more Melodic Dubstep songs are coming this year. 💖",
     genre: "Future Bass",
     date: "2020-09-25T00:00:00.000",
-    person: [
-      "Dimatis",
-      "Bayza"
-    ],
+    person: ["Dimatis", "Bayza"],
     mm: 3,
     ss: 27,
     dropbox: {
