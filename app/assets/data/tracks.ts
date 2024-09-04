@@ -19,17 +19,17 @@ export default [
       links: {
         spotify: "https://open.spotify.com/track/3Q7z3tRpsC8WgbK8lUsNoH",
         soundcloud: "https://soundcloud.com/dimatis/sojourn",
-        youtube: "",
+        youtube: "https://youtu.be/ZmQR0rU9_so",
         apple: "https://music.apple.com/us/album/sojourn-single/1766377012?app=music&ls=1",
         itunes: "https://music.apple.com/us/album/sojourn-single/1766377012?app=itunes&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/track/sojourn",
         deezer: "https://www.deezer.com/en/album/638066901",
         tidal: "",
         yandex: "",
-        amazon: "",
+        amazon: "https://www.amazon.com/dp/B0DG2XD26Q",
         tiktok: "",
         beatport: "",
-        netease: ""
+        netease: "https://music.163.com/#/song?id=2623928965"
       }
     }
   },
