@@ -13,13 +13,10 @@ const tracksFiltered = computed(() => {
     tracksAcc = tracks;
   }
 
-  if (filters.value.search !== "") {
-    tracksAcc = tracksAcc.filter((track) => {
-      return track.title.toLowerCase().includes(filters.value.search.toLowerCase()) || track.artists.toLowerCase().includes(filters.value.search.toLowerCase());
-    });
-  }
-
   switch (filters.value.type) {
+    case "all":
+      tracksAcc = tracks;
+      break;
     case "solo":
       tracksAcc = tracksSolo.value;
       break;
@@ -29,6 +26,12 @@ const tracksFiltered = computed(() => {
     case "collabs":
       tracksAcc = tracksCollabs.value;
       break;
+  }
+
+  if (filters.value.search !== "") {
+    tracksAcc = tracksAcc.filter((track) => {
+      return track.title.toLowerCase().includes(filters.value.search.toLowerCase()) || track.artists.toLowerCase().includes(filters.value.search.toLowerCase());
+    });
   }
 
   if (filters.value.year !== 0) {
