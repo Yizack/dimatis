@@ -51,6 +51,10 @@ useInfiniteScroll(document, () => {
   scrollCount.value++;
 }, { distance: 300 });
 
+watch(filters, () => {
+  scrollCount.value = 0;
+}, { deep: true });
+
 useSeoMeta({
   title: `Music | ${SITE.name}`,
   description: `All ${SITE.name} releases`,
@@ -85,7 +89,7 @@ const currentYear = new Date().getFullYear();
 <template>
   <main class="page">
     <section>
-      <div class="container py-5 text-center">
+      <div class="container py-lg-5 py-3 text-center">
         <h3 class="text-uppercase">Music</h3>
         <p class="mb-1">Listen to all my music in one place</p>
         <div class="fst-italic">
