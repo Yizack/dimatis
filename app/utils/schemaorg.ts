@@ -23,6 +23,7 @@ export const homeSchemaOrg = {
         "url": `${SITE.url}/${SITE.image}`
       },
       "description": SITE.meta_description,
+      "email": SITE.workEmail,
       "sameAs": [
         SITE.socials.youtube,
         SITE.socials.soundcloud,

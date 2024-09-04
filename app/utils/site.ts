@@ -25,6 +25,7 @@ const SITE = {
   description: "Panamanian musician and producer",
   keywords: "dimatis, website, producer, dj, artist, panama, yizack, musician",
   email: "dimatismusic@gmail.com",
+  workEmail: "dimatis@yizack.com",
   logo: "images/sq-logo-dimatis.jpg",
   logoNavbar: "images/logos/logo-navbar.svg",
   image: "images/dimatis-bio.jpg",
