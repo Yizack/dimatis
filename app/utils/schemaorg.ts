@@ -5,14 +5,23 @@ export const homeSchemaOrg = {
       "@type": "WebSite",
       "name": SITE.name,
       "url": SITE.url,
-      "image": `${SITE.url}/${SITE.logo}`
+      "image": {
+        "@type": "ImageObject",
+        "url": `${SITE.url}/${SITE.image}`
+      }
     },
     {
       "@type": "Organization",
       "name": "Dimatis",
       "url": SITE.url,
-      "logo": `${SITE.url}/${SITE.logo}`,
-      "image": `${SITE.url}/${SITE.cover}`,
+      "logo": {
+        "@type": "ImageObject",
+        "url": `${SITE.url}/${SITE.logo}`
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": `${SITE.url}/${SITE.image}`
+      },
       "description": SITE.meta_description
     },
     {
@@ -21,7 +30,18 @@ export const homeSchemaOrg = {
       "name": SITE.name,
       "alternateName": SITE.person.fullname,
       "url": SITE.url,
-      "image": `${SITE.url}/${SITE.logo}`,
+      "genre": [
+        "Melodic Dubstep",
+        "Chillstep"
+      ],
+      "logo": {
+        "@type": "ImageObject",
+        "url": `${SITE.url}/${SITE.logo}`
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": `${SITE.url}/${SITE.image}`
+      },
       "description": SITE.meta_description,
       "birthDate": SITE.person.birthdate,
       "birthPlace": {

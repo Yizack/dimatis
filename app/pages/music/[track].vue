@@ -29,7 +29,10 @@ const musicSchemaOrg = computed(() => {
     "@type": "MusicRecording",
     "name": track.value.title,
     "url": `${SITE.url}/music/${param.value}`,
-    "image": `${SITE.url}/images/${"cover" in track.value ? track.value.cover : param.value}.jpg`,
+    "image": {
+      "@type": "ImageObject",
+      "url": `${SITE.url}/images/${"cover" in track.value ? track.value.cover : param.value}.jpg`
+    },
     "genre": track.value.genre,
     "duration": `PT${"hh" in track.value ? track.value.hh : 0}H${"mm" in track.value ? track.value.mm : 0}M${"ss" in track.value ? track.value.ss : 0}S`,
     "datePublished": track.value.date.split("T")[0],
