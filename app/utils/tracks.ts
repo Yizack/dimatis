@@ -72,3 +72,11 @@ export const getStats = () => {
     }
   ];
 };
+
+export const isTrackSearchMatch = (track: DimatisTrack, query: string) => {
+  return query === "" || track.title.toLowerCase().includes(query.toLowerCase()) || track.artists.toLowerCase().includes(query.toLowerCase());
+};
+
+export const isTrackYearMatch = (track: DimatisTrack, year: number) => {
+  return year === 0 || track.date.split("-")[0] === year.toString();
+};

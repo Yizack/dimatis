@@ -8,15 +8,13 @@ const filters = ref({
 });
 
 const tracksFiltered = computed(() => {
-  let tracksAcc: DimatisTrack[] = [];
-  if (filters.value.year === 0 && filters.value.type === "all") {
-    tracksAcc = tracks;
+  let tracksAcc: DimatisTrack[];
+
+  if (filters.value.year === 0 && filters.value.type === "all" && filters.value.search === "") {
+    return tracks;
   }
 
   switch (filters.value.type) {
-    case "all":
-      tracksAcc = tracks;
-      break;
     case "solo":
       tracksAcc = tracksSolo.value;
       break;
@@ -26,17 +24,15 @@ const tracksFiltered = computed(() => {
     case "collabs":
       tracksAcc = tracksCollabs.value;
       break;
+    default:
+      tracksAcc = tracks;
   }
 
-  if (filters.value.search !== "") {
-    tracksAcc = tracksAcc.filter((track) => {
-      return track.title.toLowerCase().includes(filters.value.search.toLowerCase()) || track.artists.toLowerCase().includes(filters.value.search.toLowerCase());
-    });
-  }
-
-  if (filters.value.year !== 0) {
-    tracksAcc = tracksAcc.filter(track => track.date.split("-")[0] === filters.value.year.toString());
-  }
+  tracksAcc = tracksAcc.filter((track) => {
+    const matchesSearch = isTrackSearchMatch(track, filters.value.search);
+    const matchesYear = isTrackYearMatch(track, filters.value.year);
+    return matchesSearch && matchesYear;
+  });
 
   return tracksAcc;
 });
