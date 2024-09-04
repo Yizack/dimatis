@@ -1,3 +1,4 @@
+import "bootstrap/js/dist/dropdown";
 import Collapse from "bootstrap/js/dist/collapse";
 import Popover from "bootstrap/js/dist/popover";
 import "bootstrap/js/dist/offcanvas";

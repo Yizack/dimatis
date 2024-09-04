@@ -1,10 +1,10 @@
-.tab-enter-active,
-.tab-leave-active {
+.slide-down-enter-active,
+.slide-down-leave-active {
   transition: all 0.2s;
 }
 
-.tab-enter-from,
-.tab-leave-to {
+.slide-down-enter-from,
+.slide-down-leave-to {
   opacity: 0;
   transform: translate(0, -10px);
 }
@@ -17,4 +17,24 @@
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
+}
+
+.list-move,
+.list-enter-active,
+.list-leave-active {
+  transition: all 0.5s ease;
+}
+
+.list-enter-from,
+.list-leave-to {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.list-leave-active {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  z-index: -1;
 }

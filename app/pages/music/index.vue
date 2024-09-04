@@ -1,17 +1,56 @@
 <script setup lang="ts">
 definePageMeta({ layout: "site" });
 
-const tracksArray = ref<DimatisTrack[]>(tracks.slice(0, 15).reduce((acc, t) => {
-  acc.push(t);
-  return acc;
-}, [] as DimatisTrack[]));
+const filters = ref({
+  year: 0,
+  type: "all",
+  search: ""
+});
 
-const { reset } = useInfiniteScroll(document,
-  () => {
-    tracksArray.value = tracks.slice(0, tracksArray.value.length + 15);
-  },
-  { distance: 300 }
-);
+const tracksFiltered = computed(() => {
+  let tracksAcc: DimatisTrack[] = [];
+  if (filters.value.year === 0 && filters.value.type === "all") {
+    tracksAcc = tracks;
+  }
+
+  if (filters.value.search !== "") {
+    tracksAcc = tracksAcc.filter((track) => {
+      return track.title.toLowerCase().includes(filters.value.search.toLowerCase()) || track.artists.toLowerCase().includes(filters.value.search.toLowerCase());
+    });
+  }
+
+  switch (filters.value.type) {
+    case "solo":
+      tracksAcc = tracksSolo.value;
+      break;
+    case "remixes":
+      tracksAcc = tracksRemixes.value;
+      break;
+    case "collabs":
+      tracksAcc = tracksCollabs.value;
+      break;
+  }
+
+  if (filters.value.year !== 0) {
+    tracksAcc = tracksAcc.filter(track => track.date.split("-")[0] === filters.value.year.toString());
+  }
+
+  return tracksAcc;
+});
+
+const tracksCount = 15;
+const scrollCount = ref(0);
+
+const tracksArray = computed(() => {
+  return tracksFiltered.value.slice(0, tracksCount + (scrollCount.value * tracksCount)).reduce((acc, t) => {
+    acc.push(t);
+    return acc;
+  }, [] as DimatisTrack[]);
+});
+
+useInfiniteScroll(document, () => {
+  scrollCount.value++;
+}, { distance: 300 });
 
 useSeoMeta({
   title: `Music | ${SITE.name}`,
@@ -40,6 +79,8 @@ useHead({
     { rel: "canonical", href: `${SITE.url}/music` }
   ]
 });
+
+const currentYear = new Date().getFullYear();
 </script>
 
 <template>
@@ -47,9 +88,33 @@ useHead({
     <section>
       <div class="container py-5 text-center">
         <h3 class="text-uppercase">Music</h3>
-        <p class="mb-0">Listen to all my music</p>
+        <p class="mb-4">Listen to all my music</p>
+        <div class="col-12 col-lg-11 mx-auto">
+          <div class="input-group mb-3">
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Filters</button>
+            <div class="dropdown-menu p-2">
+              <div class="form-floating mb-2">
+                <select id="filter-year" v-model.number="filters.year" class="form-select">
+                  <option :value="0">All</option>
+                  <option v-for="n of (currentYear - 2014) + 1" :key="n" :value="currentYear - n + 1">{{ currentYear - n + 1 }}</option>
+                </select>
+                <label for="filter-year" class="form-label">Year</label>
+              </div>
+              <div class="form-floating mb-2">
+                <select id="filter-year" v-model="filters.type" class="form-select">
+                  <option value="all">All</option>
+                  <option value="solo">Solo</option>
+                  <option value="remixes">Remixes</option>
+                  <option value="collabs">Collaborations</option>
+                </select>
+                <label for="filter-year" class="form-label">Type</label>
+              </div>
+            </div>
+            <input v-model.trim="filters.search" type="text" class="form-control form-control-lg" placeholder="Search...">
+          </div>
+        </div>
         <div class="row my-4">
-          <TransitionGroup name="fade">
+          <TransitionGroup name="list">
             <div v-for="track of tracksArray" :key="track.id" class="col-12 col-lg-4 mb-3">
               <div class="item">
                 <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{ width: '300px', height: '385px' }" :track="track" :param="track.cover ? track.cover : track.id" />
