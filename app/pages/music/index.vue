@@ -87,10 +87,14 @@ const currentYear = new Date().getFullYear();
     <section>
       <div class="container py-5 text-center">
         <h3 class="text-uppercase">Music</h3>
-        <p class="mb-4">Listen to all my music</p>
-        <div class="col-12 col-lg-11 mx-auto">
-          <div class="input-group mb-3">
-            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Filters</button>
+        <p class="mb-1">Listen to all my music in one place</p>
+        <div class="fst-italic">
+          <p v-if="tracksFiltered.length">{{ tracksFiltered.length }} {{ tracksFiltered.length > 1 ? 'tracks' : 'track' }} found</p>
+          <p v-else>No tracks found</p>
+        </div>
+        <div class="col-12 col-lg-11 mx-auto position-relative mb-5">
+          <div class="input-group">
+            <button class="btn btn-lg dropdown-toggle border" type="button" data-bs-toggle="dropdown" aria-expanded="false">Filters</button>
             <div class="dropdown-menu p-2">
               <div class="form-floating mb-2">
                 <select id="filter-year" v-model.number="filters.year" class="form-select">
@@ -109,7 +113,19 @@ const currentYear = new Date().getFullYear();
                 <label for="filter-year" class="form-label">Type</label>
               </div>
             </div>
-            <input v-model.trim="filters.search" type="text" class="form-control form-control-lg" placeholder="Search...">
+            <input v-model.trim="filters.search" type="text" class="form-control" placeholder="Search...">
+          </div>
+          <div class="d-flex align-items-center justify-content-between position-absolute mt-2 start-0">
+            <div class="d-flex align-items-center gap-2">
+              <div v-if="filters.year" class="bg-body-tertiary px-2 py-1 rounded d-flex align-items-center gap-1" role="button" @click="filters.year = 0">
+                <span>{{ filters.year }}</span>
+                <Icon name="tabler:x" />
+              </div>
+              <div v-if="filters.type !== 'all'" class="bg-body-tertiary px-2 py-1 rounded d-flex align-items-center gap-1" role="button" @click="filters.type = 'all'">
+                <span>{{ filters.type }}</span>
+                <Icon name="tabler:x" />
+              </div>
+            </div>
           </div>
         </div>
         <div class="row my-4">
