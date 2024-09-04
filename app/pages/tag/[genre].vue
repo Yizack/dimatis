@@ -1,11 +1,11 @@
 <script setup lang="ts">
 definePageMeta({ layout: "site" });
 
-const genreURL = ref(useRoute("tag-genre").params.genre);
+const genreURI = ref(useRoute("tag-genre").params.genre);
 const showMore = ref(false);
 
 const genre = computed(() => {
-  return genres.find(g => g.id === genreURL.value)?.name;
+  return genres.find(g => g.id === genreURI.value)?.name || getGenreNameFromURI(genreURI.value);
 });
 
 const allTracksGenre = computed(() => {
@@ -40,7 +40,7 @@ useSeoMeta({
   description: `${genre.value} music by ${SITE.name}`,
   keywords: `genre, ${genre.value}, tag, style, electronic`,
   // Protocolo Open Graph
-  ogUrl: `${SITE.url}/tag/${genreURL.value}`,
+  ogUrl: `${SITE.url}/tag/${genreURI.value}`,
   ogType: "website",
   ogTitle: `${genre.value} | ${SITE.name}`,
   ogDescription: `${genre.value} music by ${SITE.name}`,
@@ -58,7 +58,7 @@ useSeoMeta({
 
 useHead({
   link: [
-    { rel: "canonical", href: `${SITE.url}/tag/${genreURL.value}` }
+    { rel: "canonical", href: `${SITE.url}/tag/${genreURI.value}` }
   ]
 });
 </script>

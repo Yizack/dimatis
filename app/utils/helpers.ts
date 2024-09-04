@@ -13,6 +13,10 @@ export const genres = [
   { id: "piano", name: "Piano" }
 ];
 
+export const getGenreNameFromURI = (id: string) => {
+  return id.replace(/-/g, " ").replace(/\b\w/g, l => l.toUpperCase());
+};
+
 export const normalizeLyrics = (lyrics: string) => {
   return lyrics.replace(/\r\n/g, "\n").trim();
 };
