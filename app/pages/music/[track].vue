@@ -100,8 +100,8 @@ const readLyrics = () => {
 
 <template>
   <main>
-    <section id="music">
-      <div class="container py-5">
+    <section id="music" class="py-lg-5 py-4">
+      <div class="container">
         <div class="pb-3 text-center">
           <h1 class="mb-1">{{ track.title }}</h1>
           <h3 class="text-secondary mb-0">{{ track.artists }}</h3>

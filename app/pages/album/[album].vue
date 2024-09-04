@@ -64,8 +64,8 @@ useHead({
 
 <template>
   <main>
-    <section id="album">
-      <div class="container py-5" itemscope itemtype="http://schema.org/MusicAlbum">
+    <section id="album" class="py-lg-5 py-4">
+      <div class="container" itemscope itemtype="http://schema.org/MusicAlbum">
         <div class="pb-3 text-center">
           <h1 class="mb-1"><span itemprop="name">{{ album.title }}</span> ({{ album.type }})</h1>
           <h3 class="text-secondary mb-0" itemprop="byArtist" itemscope itemtype="http://schema.org/MusicGroup"><span itemprop="name">{{ album.artists }}</span></h3>

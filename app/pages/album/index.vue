@@ -32,8 +32,8 @@ useHead({
 
 <template>
   <main>
-    <section>
-      <div class="container py-5 text-center">
+    <section id="album" class="py-lg-5 py-4">
+      <div class="container text-center">
         <h3 class="text-uppercase">Albums</h3>
         <p class="mb-0">Check all my albums</p>
         <div class="row my-4">

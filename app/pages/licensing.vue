@@ -32,8 +32,8 @@ useHead({
 
 <template>
   <main>
-    <section>
-      <div class="container py-5 text-center">
+    <section id="licensing" class="py-lg-5 py-4">
+      <div class="container text-center">
         <div class="pb-2">
           <h3 class="text-uppercase">Licensing & Usage</h3>
         </div>

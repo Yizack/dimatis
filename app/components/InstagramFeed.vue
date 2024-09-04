@@ -16,7 +16,7 @@ onMounted(async () => {
 </script>
 
 <template>
-  <section id="ig-feed" class="py-5">
+  <section id="ig-feed" class="py-lg-5 py-4">
     <div v-if="feed && feed.length" class="container text-center">
       <h4 class="text-uppercase mb-4">Instagram feed</h4>
       <div class="row">

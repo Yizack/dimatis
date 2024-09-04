@@ -43,8 +43,8 @@ const latestTracks = tracks.reduce((acc, t) => {
 <template>
   <SectionAbout class="bg-body-secondary" />
   <SectionStats />
-  <section id="music" class="bg-body-secondary">
-    <div class="container py-5 text-center">
+  <section id="music" class="bg-body-secondary py-lg-5 py-4">
+    <div class="container text-center">
       <h3 class="text-uppercase">Latest Music</h3>
       <p class="mb-0">Listen to my latest music</p>
       <div class="row my-4">

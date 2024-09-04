@@ -1,6 +1,6 @@
 <template>
-  <section id="about" class="about position-relative">
-    <div class="container py-5 position-relative z-1">
+  <section id="about" class="about position-relative py-lg-5 py-4">
+    <div class="container position-relative z-1">
       <div class="pb-3">
         <h3 class="text-center text-uppercase">About</h3>
       </div>
