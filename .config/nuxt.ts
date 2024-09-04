@@ -62,9 +62,9 @@ export default defineNuxtConfig({
   icon: {
     mode: "svg",
     clientBundle: {
-      scan: true
-    },
-    serverBundle: false
+      scan: true,
+      sizeLimitKb: 2048
+    }
   },
 
   colorMode: {
@@ -124,5 +124,5 @@ export default defineNuxtConfig({
     typedPages: true
   },
 
-  compatibilityDate: "2024-07-06"
+  compatibilityDate: "2024-09-04"
 });

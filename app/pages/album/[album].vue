@@ -83,7 +83,7 @@ useHead({
                   <th>#</th>
                   <th>Artists</th>
                   <th>Title</th>
-                  <th><Icon name="fa6-regular:clock" /></th>
+                  <th><Icon name="tabler:clock-hour-5" size="1rem" /></th>
                 </tr>
               </thead>
               <tbody class="text-secondary">
@@ -113,7 +113,7 @@ useHead({
                 <div class="tag">
                   <a class="d-flex align-items-center gap-2" :href="`${SITE.fanlinkUrl}/${album.cover}`" target="_blank">
                     <span>{{ SITE.fanlinkDomain }}/{{ album.cover }}</span>
-                    <Icon name="fa6-solid:arrow-up-right-from-square" />
+                    <Icon name="tabler:external-link" size="1.3rem" />
                   </a>
                 </div>
               </div>

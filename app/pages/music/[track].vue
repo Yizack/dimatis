@@ -121,7 +121,7 @@ const readLyrics = () => {
               <p class="m-0 pre-line overflow-hidden position-relative overflow-hidden" :style="showFullLyrics ? 'height:auto' : 'height: 140px;'">{{ lyrics }}</p>
               <a v-if="!showFullLyrics" class="small" role="button" @click="readLyrics">
                 <span class="text-decoration-underline">Read lyrics</span>
-                <Icon name="solar:alt-arrow-down-bold" />
+                <Icon name="tabler:caret-down-filled" />
               </a>
             </div>
             <div v-if="track.credits" class="credits mt-3">
@@ -156,7 +156,7 @@ const readLyrics = () => {
               <div class="tag">
                 <a class="d-flex align-items-center gap-2" :href="`${SITE.fanlinkUrl}/${param}`" target="_blank">
                   <span>{{ SITE.fanlinkDomain }}/{{ param }}</span>
-                  <Icon name="fa6-solid:arrow-up-right-from-square" />
+                  <Icon name="tabler:external-link" size="1.3rem" />
                 </a>
               </div>
             </div>
