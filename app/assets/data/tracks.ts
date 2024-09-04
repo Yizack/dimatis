@@ -3,7 +3,7 @@ export default [
     id: "sojourn",
     artists: "Bayza & Dimatis",
     title: "Sojourn",
-    description: "t's been a while since I last collaborated with my brother Bayza, this time we tried to make a Chill House inspired track called \"Sojourn\", we hope you vibe with us! ✨",
+    description: "It's been a while since I last collaborated with my brother Bayza, this time we tried to make a Chill House inspired track called \"Sojourn\", we hope you vibe with us! ✨",
     genre: "Chill House",
     date: "2024-08-30T00:00:00.000",
     person: ["Bayza", "Dimatis"],
