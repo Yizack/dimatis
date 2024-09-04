@@ -3,13 +3,10 @@ export default [
     id: "sojourn",
     artists: "Bayza & Dimatis",
     title: "Sojourn",
-    description: "",
+    description: "t's been a while since I last collaborated with my brother Bayza, this time we tried to make a Chill House inspired track called \"Sojourn\", we hope you vibe with us! ✨",
     genre: "Chill House",
     date: "2024-08-30T00:00:00.000",
-    person: [
-      "Bayza",
-      "Dimatis"
-    ],
+    person: ["Bayza", "Dimatis"],
     mm: 3,
     ss: 20,
     dropbox: {
@@ -20,13 +17,13 @@ export default [
       download: true,
       dark: false,
       links: {
-        spotify: "",
+        spotify: "https://open.spotify.com/track/3Q7z3tRpsC8WgbK8lUsNoH",
         soundcloud: "https://soundcloud.com/dimatis/sojourn",
         youtube: "",
-        apple: "?app=music&ls=1",
-        itunes: "?app=itunes&ls=1",
+        apple: "https://music.apple.com/us/album/sojourn-single/1766377012?app=music&ls=1",
+        itunes: "https://music.apple.com/us/album/sojourn-single/1766377012?app=itunes&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/track/sojourn",
-        deezer: "",
+        deezer: "https://www.deezer.com/en/album/638066901",
         tidal: "",
         yandex: "",
         amazon: "",
