@@ -22,7 +22,14 @@ export const homeSchemaOrg = {
         "@type": "ImageObject",
         "url": `${SITE.url}/${SITE.image}`
       },
-      "description": SITE.meta_description
+      "description": SITE.meta_description,
+      "sameAs": [
+        SITE.socials.youtube,
+        SITE.socials.soundcloud,
+        SITE.socials.facebook,
+        SITE.socials.twitter,
+        SITE.socials.instagram
+      ]
     },
     {
       "@type": ["Person", "MusicGroup"],
