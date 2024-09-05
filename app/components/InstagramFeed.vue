@@ -17,8 +17,9 @@ onMounted(async () => {
 const replaceLinkables = (text: string) => {
   // Replace hashtags and mentions with links
   let replacedText = text.replace(/\n+/g, " ").trim();
-  replacedText = text.replace(/#(\S+)/g, "<a href='https://www.instagram.com/explore/tags/$1/' target='_blank' style='color: rgb(224 241 255)'>#$1</a>");
-  replacedText = replacedText.replace(/@(\S+)/g, "<a href='https://www.instagram.com/$1/' target='_blank' style='color: rgb(224 241 255)'>@$1</a>");
+  replacedText = replacedText.replace(/#([a-zA-Z0-9._]+)(?=\W|$)/g, "<a href='https://www.instagram.com/explore/tags/$1/' target='_blank' style='color: rgb(224 241 255)'>#$1</a>");
+  // handle mentions with commas
+  replacedText = replacedText.replace(/@([a-zA-Z0-9._]+)(?=\W|$)/g, "<a href='https://www.instagram.com/$1/' target='_blank' style='color: rgb(224 241 255)'>@$1</a>");
   return replacedText;
 };
 </script>
@@ -64,7 +65,7 @@ const replaceLinkables = (text: string) => {
                         </a>
                         <p class="mx-3 my-2" style="text-align: left;">
                           <!-- eslint-disable-next-line vue/no-v-html -->
-                          <a :href="`${post.permalink}?utm_source=ig_embed&amp;utm_campaign=loading`" style="font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank" v-html="replaceLinkables(post.caption)" />
+                          <span :href="`${post.permalink}?utm_source=ig_embed&amp;utm_campaign=loading`" style="font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank" v-html="replaceLinkables(post.caption)" />
                         </p>
                       </div>
                     </blockquote>
