@@ -43,8 +43,7 @@ export default defineNuxtConfig({
     "@nuxt/eslint",
     "nuxt-musicfyplayer",
     "@nuxtjs/sitemap",
-    "@nuxt/icon",
-    "@nuxt/scripts"
+    "@nuxt/icon"
   ],
 
   runtimeConfig: {
