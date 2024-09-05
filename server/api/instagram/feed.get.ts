@@ -1,6 +1,6 @@
 export default defineCachedEventHandler(async (event) => {
   const { instagram } = useRuntimeConfig(event);
-  const API = new InstagramFeed(instagram.accessToken);
+  const API = new InstagramFeed(instagram.userId, instagram.accessToken);
   await API.refreshAccessToken();
   const feed = await API.getFeed();
 

@@ -52,7 +52,8 @@ export default defineNuxtConfig({
       clientSecret: ""
     },
     instagram: {
-      accessToken: ""
+      accessToken: "",
+      userId: ""
     }
   },
 
