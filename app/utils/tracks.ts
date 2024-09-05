@@ -26,13 +26,13 @@ export const getStats = () => {
       title: "Total Tracks",
       value: tracks.length,
       icon: "tabler:disc",
-      description: "All tracks produced by Dimatis"
+      description: "All tracks including remixes produced by Dimatis"
     },
     {
       title: "Released Tracks",
       value: tracks.length - tracksUnofficials.value.length,
       icon: "tabler:building-store",
-      description: "All tracks released on streaming platforms and music stores"
+      description: "All tracks including remixes released on streaming platforms and music stores"
     },
     {
       title: "Original Tracks",
@@ -56,7 +56,7 @@ export const getStats = () => {
       title: "Unofficial Releases",
       value: tracksUnofficials.value.length,
       icon: "tabler:shopping-bag-x",
-      description: "All tracks that were not released on streaming platforms and music stores. (e.g. SoundCloud and Youtube only releases)"
+      description: "All tracks including remixes that were not released on streaming platforms and music stores. (e.g. SoundCloud and YouTube only releases)"
     },
     {
       title: "Solo Tracks",
@@ -68,7 +68,7 @@ export const getStats = () => {
       title: "Collaborations",
       value: tracksCollabs.value.length,
       icon: "tabler:users-group",
-      description: "All tracks produced by Dimatis in collaboration with other artists"
+      description: "All tracks including remixes produced by Dimatis in collaboration with other artists"
     }
   ];
 };
