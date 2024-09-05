@@ -111,7 +111,8 @@ export default defineNuxtConfig({
 
   routeRules: {
     "/": { sitemap: { priority: 1 } },
-    "/*/**": { sitemap: { priority: 0.8 } }
+    "/*/**": { sitemap: { priority: 0.8 } },
+    "/api/_nuxt_icon/**": { cache: { maxAge: 1.577e+7 } }
   },
 
   features: {
