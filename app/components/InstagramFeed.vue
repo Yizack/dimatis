@@ -37,7 +37,7 @@ const replaceLinkables = (text: string) => {
                   <div class="instagram-wrapper bg-body-tertiary rounded-3">
                     <blockquote class="instagram-media mx-auto" style="border:0; border-radius:3px; margin: auto; max-width:540px; min-width:326px; padding:0; width:100%;">
                       <a :href="`${post.permalink}?utm_source=ig_embed&amp;utm_campaign=loading`" style="text-decoration:none;" target="_blank">
-                        <img v-if="post.media_type !== 'VIDEO'" class="w-100" :src="post.media_url">
+                        <img v-if="post.media_type !== 'VIDEO' && post.media_type !== 'REELS'" class="w-100" :src="post.media_url">
                         <img v-else class="w-100" :src="post.thumbnail_url">
                         <div class="px-3 text-start">
                           <div class="py-3" style="color:#3897f0; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
