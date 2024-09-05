@@ -35,39 +35,37 @@ const replaceLinkables = (text: string) => {
               <ul class="glide__slides" :class="{ 'd-none': !feed }">
                 <li v-for="(post, index) in feed" :key="index" class="glide__slide">
                   <div class="instagram-wrapper bg-body-tertiary rounded-3">
-                    <blockquote class="instagram-media mx-auto" data-instgrm-captioned :data-instgrm-permalink="`${post.permalink}?utm_source=ig_embed&amp;utm_campaign=loading`" style="border:0; border-radius:3px; margin: auto; max-width:540px; min-width:326px; padding:0; width:100%;">
-                      <div>
-                        <a :href="`${post.permalink}?utm_source=ig_embed&amp;utm_campaign=loading`" style="text-decoration:none;" target="_blank">
-                          <img v-if="post.media_type !== 'VIDEO'" class="w-100" :src="post.media_url">
-                          <img v-else class="w-100" :src="post.thumbnail_url">
-                          <div class="px-3 text-start">
-                            <div class="py-3" style="color:#3897f0; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
-                              <span>View this post on Instagram</span>
-                            </div>
-                            <hr class="m-0" role="none">
+                    <blockquote class="instagram-media mx-auto" style="border:0; border-radius:3px; margin: auto; max-width:540px; min-width:326px; padding:0; width:100%;">
+                      <a :href="`${post.permalink}?utm_source=ig_embed&amp;utm_campaign=loading`" style="text-decoration:none;" target="_blank">
+                        <img v-if="post.media_type !== 'VIDEO'" class="w-100" :src="post.media_url">
+                        <img v-else class="w-100" :src="post.thumbnail_url">
+                        <div class="px-3 text-start">
+                          <div class="py-3" style="color:#3897f0; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                            <span>View this post on Instagram</span>
                           </div>
-                          <div class="px-3" style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
-                            <div>
-                              <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);" />
-                              <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;" />
-                              <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);" />
-                            </div>
-                            <div style="margin-left: 8px;">
-                              <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;" />
-                              <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)" />
-                            </div>
-                            <div style="margin-left: auto;">
-                              <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);" />
-                              <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);" />
-                              <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);" />
-                            </div>
+                          <hr class="m-0" role="none">
+                        </div>
+                        <div class="px-3" style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                          <div>
+                            <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);" />
+                            <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;" />
+                            <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);" />
                           </div>
-                        </a>
-                        <p class="mx-3 my-2" style="text-align: left;">
-                          <!-- eslint-disable-next-line vue/no-v-html -->
-                          <span :href="`${post.permalink}?utm_source=ig_embed&amp;utm_campaign=loading`" style="font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank" v-html="replaceLinkables(post.caption)" />
-                        </p>
-                      </div>
+                          <div style="margin-left: 8px;">
+                            <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;" />
+                            <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)" />
+                          </div>
+                          <div style="margin-left: auto;">
+                            <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);" />
+                            <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);" />
+                            <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);" />
+                          </div>
+                        </div>
+                      </a>
+                      <p class="mx-3 my-2" style="text-align: left;">
+                        <!-- eslint-disable-next-line vue/no-v-html -->
+                        <span :href="`${post.permalink}?utm_source=ig_embed&amp;utm_campaign=loading`" style="font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank" v-html="replaceLinkables(post.caption)" />
+                      </p>
                     </blockquote>
                   </div>
                 </li>
