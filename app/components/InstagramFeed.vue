@@ -94,9 +94,10 @@ const replaceLinkables = (text: string) => {
 
 <style>
   .instagram-wrapper {
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
     width: 90%;
-    max-height: 800px;
+    max-height: 500px;
     margin: auto;
   }
   .instagram-media {
