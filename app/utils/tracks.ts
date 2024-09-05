@@ -1,23 +1,36 @@
 export const tracksCollabs = computed(() => {
-  return tracks.filter((track) => {
-    return (track.person.includes("Dimatis") && track.person.length > 1) || (track.title.includes("Dimatis &") || track.title.includes("& Dimatis"));
+  return tracks.filter(({ title, person, id }) => {
+    const lowerTitle = title.toLowerCase();
+    const isFeat = lowerTitle.includes("feat.") || lowerTitle.includes("ft.");
+    const isRemix = id.includes("remix");
+    const isCollab = person.includes("Dimatis") && person.length > 1;
+    const dimatisMention = lowerTitle.includes("dimatis &") || lowerTitle.includes("& dimatis") || lowerTitle.includes("dimatis x") || lowerTitle.includes("x dimatis");
+    return isCollab || (isFeat && !isRemix) || (isRemix && dimatisMention);
   });
 });
 
 export const tracksUnofficials = computed(() => {
-  return tracks.filter(track => Boolean(!track.fanlink.links.spotify));
+  return tracks.filter(({ fanlink }) => Boolean(!fanlink.links.spotify));
 });
 
 export const tracksRemixes = computed(() => {
-  return tracks.filter(track => track.id.includes("remix"));
+  return tracks.filter(({ id }) => id.includes("remix"));
 });
 
 export const tracksOfficialRemixes = computed(() => {
-  return tracks.filter(track => track.id.includes("remix") && Boolean(track.fanlink.links.spotify));
+  return tracks.filter(({ id, fanlink }) => id.includes("remix") && Boolean(fanlink.links.spotify));
 });
 
 export const tracksSolo = computed(() => {
-  return tracks.filter(track => !track.id.includes("remix"));
+  return tracks.filter(({ title, person, id }) => {
+    const lowerTitle = title.toLowerCase();
+    const isSoloTrack = person.includes("Dimatis") && person.length === 1;
+    const isNotFeat = !lowerTitle.includes("feat.");
+    const isNotRemix = !id.includes("remix");
+    const isSoloRemix = id.includes("remix") && lowerTitle.includes("(dimatis remix)");
+
+    return (isSoloTrack && isNotFeat && isNotRemix) || isSoloRemix;
+  });
 });
 
 export const getStats = () => {
@@ -62,7 +75,7 @@ export const getStats = () => {
       title: "Solo Tracks",
       value: tracksSolo.value.length,
       icon: "tabler:user",
-      description: "All tracks produced by Dimatis without any collaborations"
+      description: "All tracks including remixes produced by Dimatis without any collaborations"
     },
     {
       title: "Collaborations",

@@ -386,7 +386,7 @@ export default [
     description: "I had the pleasure to work with Morvaross remixing Sad Songs for the Stardust Records and Spotlist Network remix contest!!",
     genre: "Melodic Dubstep",
     date: "2023-04-28T00:00:00.000",
-    person: ["Dimatis"],
+    person: ["TobeyBeats", "Taca Music", "Laryssa Vachon"],
     mm: 3,
     ss: 30,
     dropbox: {
@@ -2389,33 +2389,6 @@ export default [
         bandcamp: "https://dimatis.bandcamp.com/track/bliss",
         tidal: "https://tidal.com/browse/album/110267114",
         netease: "https://music.163.com/#/album?id=71614399"
-      }
-    }
-  },
-  {
-    id: "timeline-bayza-remix",
-    artists: "Dimatis",
-    title: "Timeline (Bayza Remix)",
-    description: "Bayza remixed my song \"Timeline\"",
-    genre: "Bounce",
-    date: "2018-06-11T00:00:00.000",
-    person: ["Dimatis"],
-    mm: 4,
-    ss: 56,
-    dropbox: {
-      id: "rpc1gjfufyntwic"
-    },
-    fanlink: {
-      download: true,
-      dark: false,
-      links: {
-        spotify: "https://open.spotify.com/album/5Xc0NwsGi1S1qej2IHrI8a",
-        soundcloud: "https://soundcloud.com/bayza/dimatis-timeline-bayza-remix",
-        youtube: "https://youtu.be/gueXauiEUkM",
-        itunes: "https://music.apple.com/us/album/timeline-bayza-remix-single/1397416546?app=itunes&ls=1",
-        apple: "https://music.apple.com/us/album/timeline-bayza-remix-single/1397416546?app=music&ls=1",
-        deezer: "https://www.deezer.com/en/album/65694812",
-        tidal: "https://tidal.com/browse/album/90324719"
       }
     }
   },
