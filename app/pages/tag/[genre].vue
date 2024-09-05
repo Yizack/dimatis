@@ -64,8 +64,8 @@ useHead({
 </script>
 
 <template>
-  <main>
-    <section id="tag" class="py-lg-5 py-4">
+  <main class="py-lg-5 py-4 bg-body-secondary">
+    <section id="tag">
       <div class="container text-center">
         <h3 class="text-uppercase">{{ genre }}</h3>
         <p>Listen to all my music in this genre</p>

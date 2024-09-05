@@ -9,19 +9,25 @@
   src: url("/fonts/EbrimaBd.woff2") format("woff2");
 }
 
+$white: #f7f7f7;
 $dimatis-bg: #292929;
 $secondary-bg: #0e0e0e;
+$secondary-text: #a3a5a7;
+$body: #151515;
 
 :root {
-  --dark-color: #151515;
-  --secondary-bg-color: #202020;
-  --secondary-text-color: #a3a5a7;
+  --dark-color: #{$body};
+  --bs-body-bg: #{$body};
+  --bs-body-bg-rgb: #{to-rgb($body)};
+  --bs-secondary: #{$secondary-text};
+  --bs-secondary-rgb: #{to-rgb($secondary-text)};
   --bs-secondary-bg: #{$secondary-bg};
   --bs-secondary-bg-rgb: #{to-rgb($secondary-bg)};
   --bs-tertiary-bg: #{$dimatis-bg};
   --bs-tertiary-bg-rgb: #{to-rgb($dimatis-bg)};
-  --white-color: #f7f7f7;
-  --muted-color: #ddd;
+  --bs-border-color: var(--bs-tertiary-bg);
+  --bs-white: #{$white};
+  --bs-white-rgb: #{to-rgb($white)};
   
   scrollbar-width: auto;
   scroll-behavior: unset;
@@ -64,7 +70,7 @@ a:hover {
 
 ::selection {
   background: #292929!important;
-  color: var(--white-color)!important;
+  color: var(--bs-white)!important;
 }
 
 .scale-on-hover {
@@ -102,11 +108,11 @@ a:hover {
 }
 
 .bg-dark a {
-  color: var(--white-color);
+  color: var(--bs-white);
 }
 
 .tag a, .tag {
-  color: var(--secondary-text-color)!important;
+  color: var(--bs-secondary)!important;
 }
 
 .nav li a {
@@ -114,7 +120,7 @@ a:hover {
 }
 
 .tag a:hover, .tag:hover {
-  color: var(--white-color)!important;
+  color: var(--bs-white)!important;
 }
 
 .album-image {
@@ -137,16 +143,12 @@ a:hover {
   white-space: pre-line;
 }
 
-.text-white {
-  color: var(--white-color);
-}
-
 .bg-dark {
   background-color: var(--dark-color)!important;
 }
 
 .bg-white {
-  background-color: var(--white-color)!important;
+  background-color: var(--bs-white)!important;
 }
 
 .text-dark {
@@ -154,11 +156,11 @@ a:hover {
 }
 
 .text-secondary {
-  color: var(--secondary-text-color)!important;
+  color: var(--bs-secondary)!important;
 }
 
 .bg-secondary {
-  background-color: var(--secondary-bg-color)!important;
+  background-color: var(--bs-secondary-bg)!important;
 }
 
 .btn-outline-dark {
@@ -167,20 +169,20 @@ a:hover {
 }
 
 .btn-outline-dark:hover {
-  color: var(--white-color)!important;
-  border-color: var(--white-color);
+  color: var(--bs-white)!important;
+  border-color: var(--bs-white);
   background: var(--dark-color);
 }
 
 .btn-outline-white {
-  color: var(--white-color);
-  border-color: var(--white-color);
+  color: var(--bs-white);
+  border-color: var(--bs-white);
 }
 
 .btn-outline-white:hover {
   color: var(--dark-color)!important;
-  border-color: var(--white-color);
-  background: var(--white-color);
+  border-color: var(--bs-white);
+  background: var(--bs-white);
 }
 
 iframe {
@@ -194,7 +196,7 @@ iframe {
   left: 0;
   right: 0;
   height: 50px;
-  background: linear-gradient(to bottom, rgb(32 32 32 / 0%), var(--secondary-bg-color));
+  background: linear-gradient(to bottom, rgb(32 32 32 / 0%), var(--bs-body-bg));
 }
 
 .about::before {

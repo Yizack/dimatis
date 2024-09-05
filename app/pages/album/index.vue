@@ -32,7 +32,7 @@ useHead({
 
 <template>
   <main>
-    <section id="album" class="py-lg-5 py-4">
+    <section id="album" class="py-lg-5 py-4 bg-body-secondary">
       <div class="container text-center">
         <h3 class="text-uppercase">Albums</h3>
         <p class="mb-0">Check all my albums</p>

@@ -103,14 +103,14 @@ const readLyrics = () => {
 
 <template>
   <main>
-    <section id="music" class="py-lg-5 py-4">
+    <section id="music" class="py-lg-5 py-4 bg-body-secondary">
       <div class="container">
         <div class="pb-3 text-center">
           <h1 class="mb-1">{{ track.title }}</h1>
           <h3 class="text-secondary mb-0">{{ track.artists }}</h3>
         </div>
         <MusicPlayer class="rounded-3" :size="{ height: '450px', width: '100%' }" :track="track" :param="param" />
-        <div class="row my-3 mx-0 bg-secondary rounded p-3">
+        <div class="row my-3 mx-0 bg-body rounded p-3">
           <div class="col-12 col-md-8 mb-3 mb-md-0 text-secondary p-0">
             <div class="description">
               <h3 class="text-white">Description</h3>

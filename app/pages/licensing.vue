@@ -32,7 +32,7 @@ useHead({
 
 <template>
   <main>
-    <section id="licensing" class="py-lg-5 py-4">
+    <section id="licensing" class="py-lg-5 py-4 bg-body-secondary">
       <div class="container text-center">
         <div class="pb-2">
           <h3 class="text-uppercase">Licensing & Usage</h3>

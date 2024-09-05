@@ -32,7 +32,7 @@ useHead({
 
 <template>
   <main>
-    <section id="branding" class="py-lg-5 py-4">
+    <section id="branding" class="py-lg-5 py-4 bg-body-secondary">
       <div class="container text-center">
         <h3 class="text-uppercase">Branding</h3>
         <div class="row my-4">
@@ -54,7 +54,7 @@ useHead({
             <div class="card rounded-3 overflow-hidden">
               <div class="card-body" :class="file.white ? 'bg-dark' : 'bg-white'">
                 <a :href="`/images/logos/${file.filename}`" :download="file.download">
-                  <div class="position-absolute top-0 end-0 m-1 px-1 rounded small" :class="file.white ? 'bg-white text-dark' : 'bg-dark text-white'">
+                  <div class="position-absolute top-0 end-0 m-1 px-1 rounded small" :class="file.white ? 'bg-white text-dark' : 'bg-body-tertiary text-white'">
                     <small v-if="file.size">{{ file.size?.width }}x{{ file.size?.height }}</small>
                   </div>
                   <img :src="`/images/logos/${file.filename}`" alt="Dimatis logo" class="img-fluid" :width="file.size?.width" :height="file.size?.height">

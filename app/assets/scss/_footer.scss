@@ -1,39 +1,22 @@
 footer .icons a {
-  color: var(--secondary-text-color);
+  color: var(--bs-secondary);
+}
+
+ul.alt li a {
+  color: var(--bs-secondary);
 }
   
-footer .spotify a:hover {
-  color: #1db954!important;
-  text-decoration: none;
-}
-  
-footer .soundcloud a:hover {
-  color: #F26E23!important;
-  text-decoration: none;
-}
-  
-footer .youtube a:hover {
-  color: #f00!important;
-  text-decoration: none;
-}
-  
-footer .twitter a:hover {
-  color: #000!important;
-  text-decoration: none;
-}
-  
-footer .facebook a:hover {
-  color: #0165E1!important;
-  text-decoration: none;
-}
-  
-footer .instagram a:hover {
-  color: #833ab4!important;
+footer ul.icons a:hover {
+  color: var(--bs-white);
   text-decoration: none;
 }
 
+ul.alt li a:hover {
+  color: var(--bs-white);
+}
+
 ul.alt li {
-  border-bottom: solid 1px var(--muted-color);
+  border-bottom: solid 1px var(--bs-tertiary-bg);
   padding: 0.5rem 0;
 }
 

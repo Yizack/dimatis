@@ -88,7 +88,7 @@ const currentYear = new Date().getFullYear();
 
 <template>
   <main>
-    <section id="music">
+    <section id="music" class="bg-body-secondary">
       <div class="container py-lg-5 py-4 text-center">
         <h3 class="text-uppercase">Music</h3>
         <p class="mb-1">Listen to all my music in one place</p>

@@ -64,7 +64,7 @@ useHead({
 
 <template>
   <main>
-    <section id="album" class="py-lg-5 py-4">
+    <section id="album" class="py-lg-5 py-4 bg-body-secondary">
       <div class="container" itemscope itemtype="http://schema.org/MusicAlbum">
         <div class="pb-3 text-center">
           <h1 class="mb-1"><span itemprop="name">{{ album.title }}</span> ({{ album.type }})</h1>
@@ -98,7 +98,7 @@ useHead({
               </tbody>
             </table>
           </div>
-          <div class="col-12 row mt-3 mb-3 mb-md-0 mx-0 bg-secondary rounded p-3">
+          <div class="col-12 row mt-3 mb-3 mb-md-0 mx-0 bg-body rounded p-3">
             <div class="col-12 col-md-8 text-secondary p-0">
               <h3 class="mb-0 text-white">Description</h3>
               <p class="mb-md-0">{{ album.description }}</p>

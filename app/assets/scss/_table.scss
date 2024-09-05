@@ -8,17 +8,17 @@
 .table th {
   padding: 1rem;
   border-top: none;
-  border-color: var(--secondary-text-color);
+  border-color: var(--bs-secondary);
   font-weight: normal;
 }
 
 tbody tr:hover {
-  background: var(--secondary-bg-color);
-  color: var(--white-color);
+  background: var(--bs-body-bg);
+  color: var(--bs-white);
 }
 
 .table td {
-  border-color: var(--secondary-text-color);
+  border-color: var(--bs-secondary);
   border-width: 0;
   padding-left: 1rem;
   padding-right: 1rem;

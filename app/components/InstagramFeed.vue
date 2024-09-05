@@ -13,6 +13,14 @@ onMounted(async () => {
     }
   }).mount();
 });
+
+const replaceLinkables = (text: string) => {
+  // Replace hashtags and mentions with links
+  let replacedText = text.replace(/\n+/g, " ").trim();
+  replacedText = text.replace(/#(\S+)/g, "<a href='https://www.instagram.com/explore/tags/$1/' target='_blank' style='color: rgb(224, 241, 255)'>#$1</a>");
+  replacedText = replacedText.replace(/@(\S+)/g, "<a href='https://www.instagram.com/$1/' target='_blank' style='color: rgb(224, 241, 255)'>@$1</a>");
+  return replacedText;
+};
 </script>
 
 <template>
@@ -35,7 +43,7 @@ onMounted(async () => {
                             <div class="py-3" style="color:#3897f0; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
                               <span>View this post on Instagram</span>
                             </div>
-                            <hr class="m-0">
+                            <hr class="m-0" role="none">
                           </div>
                           <div class="px-3" style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
                             <div>
@@ -55,7 +63,8 @@ onMounted(async () => {
                           </div>
                         </a>
                         <p class="mx-3 my-2" style="text-align: left;">
-                          <a :href="`${post.permalink}?utm_source=ig_embed&amp;utm_campaign=loading`" style="font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">{{ post.caption.replace(/\n+/g, " ").trim() }}</a>
+                          <!-- eslint-disable-next-line vue/no-v-html -->
+                          <a :href="`${post.permalink}?utm_source=ig_embed&amp;utm_campaign=loading`" style="font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank" v-html="replaceLinkables(post.caption)" />
                         </p>
                       </div>
                     </blockquote>
