@@ -17,8 +17,8 @@ onMounted(async () => {
 const replaceLinkables = (text: string) => {
   // Replace hashtags and mentions with links
   let replacedText = text.replace(/\n+/g, " ").trim();
-  replacedText = text.replace(/#(\S+)/g, "<a href='https://www.instagram.com/explore/tags/$1/' target='_blank' style='color: rgb(224, 241, 255)'>#$1</a>");
-  replacedText = replacedText.replace(/@(\S+)/g, "<a href='https://www.instagram.com/$1/' target='_blank' style='color: rgb(224, 241, 255)'>@$1</a>");
+  replacedText = text.replace(/#(\S+)/g, "<a href='https://www.instagram.com/explore/tags/$1/' target='_blank' style='color: rgb(224 241 255)'>#$1</a>");
+  replacedText = replacedText.replace(/@(\S+)/g, "<a href='https://www.instagram.com/$1/' target='_blank' style='color: rgb(224 241 255)'>@$1</a>");
   return replacedText;
 };
 </script>

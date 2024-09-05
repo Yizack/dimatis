@@ -13,7 +13,7 @@ for (const track of tracks) {
   const img = fileURLToPath(new URL(`./../public/images/${filename}.jpg`, import.meta.url));
   await ColorThief.getColor(img).then(async (color: number[]) => {
     if (!colors[filename]) {
-      colors[filename] = `rgb(${color[0]}, ${color[1]}, ${color[2]})`;
+      colors[filename] = `rgb(${color[0]} ${color[1]} ${color[2]})`;
       css_content += `.${/^\d/.test(filename) ? `\\3${filename}` : filename} { background-color: ${colors[filename]}; }\n`;
       await writeFile(fileURLToPath(new URL("./../app/assets/scss/_player-styles.scss", import.meta.url)), css_content, "utf-8").then(() => {
         console.info(`Generated style: ${filename}`);
