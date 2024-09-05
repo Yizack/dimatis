@@ -24,6 +24,7 @@
     "@nuxtjs/sitemap": "^6.0.0",
     "@types/bootstrap": "^5.2.10",
     "@types/glidejs__glide": "^3.6.5",
+    "@vueuse/core": "^11.0.3",
     "bootstrap": "^5.3.3",
     "colorthief": "^2.4.0",
     "drizzle-kit": "^0.24.2",
