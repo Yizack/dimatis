@@ -28,7 +28,6 @@ export const tracksSolo = computed(() => {
     const isNotFeat = !lowerTitle.includes("feat.");
     const isNotRemix = !id.includes("remix");
     const isSoloRemix = id.includes("remix") && lowerTitle.includes("(dimatis remix)");
-
     return (isSoloTrack && isNotFeat && isNotRemix) || isSoloRemix;
   });
 });

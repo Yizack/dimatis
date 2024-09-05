@@ -1,10 +1,11 @@
 <script setup lang="ts">
 definePageMeta({ layout: "site" });
 
+const { query, path } = useRoute();
 const filters = ref({
-  year: 0,
-  type: "all",
-  search: ""
+  year: Number(query.year) || 0,
+  type: query.type?.toString() || "all",
+  search: query.q?.toString() || ""
 });
 
 const tracksFiltered = computed(() => {
@@ -53,6 +54,19 @@ useInfiniteScroll(document, () => {
 
 watch(filters, () => {
   scrollCount.value = 0;
+  const queryValues = {
+    q: filters.value.search || undefined,
+    year: filters.value.year !== 0 ? filters.value.year.toString() : undefined,
+    type: filters.value.type !== "all" ? filters.value.type : undefined
+  };
+  const filterParams = Object.entries(queryValues).reduce((acc, [key, value]) => {
+    if (value) acc[key] = value;
+    return acc;
+  }, {} as Record<string, string>);
+  const params = Object.entries(filterParams).length ? filterParams : undefined;
+  const queryParams = params ? "?" + new URLSearchParams(params).toString() : "";
+  const url = path + queryParams;
+  window.history.replaceState({}, "", url);
 }, { deep: true });
 
 useSeoMeta({
