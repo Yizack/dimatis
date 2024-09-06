@@ -24,6 +24,7 @@ const config = defineMusicfyPlayer({
   audio: {
     provider: "dropbox",
     type: "audio/mpeg",
+    preload: "none",
     id: props.track.dropbox.id,
     rlkey: props.track.dropbox.rlkey
   },

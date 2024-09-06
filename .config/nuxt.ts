@@ -125,5 +125,15 @@ export default defineNuxtConfig({
     typedPages: true
   },
 
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          quietDeps: true
+        }
+      }
+    }
+  },
+
   compatibilityDate: "2024-09-04"
 });
