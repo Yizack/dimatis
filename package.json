@@ -19,7 +19,7 @@
     "@glidejs/glide": "^3.6.2",
     "@nuxt/eslint": "^0.5.6",
     "@nuxt/icon": "^1.5.1",
-    "@nuxthub/core": "^0.7.9",
+    "@nuxthub/core": "^0.7.10",
     "@nuxtjs/color-mode": "^3.4.4",
     "@nuxtjs/sitemap": "^6.0.1",
     "@types/bootstrap": "^5.2.10",
@@ -29,7 +29,7 @@
     "colorthief": "^2.4.0",
     "drizzle-kit": "^0.24.2",
     "drizzle-orm": "^0.33.0",
-    "eslint": "^9.9.1",
+    "eslint": "^9.10.0",
     "nuxt": "^3.13.1",
     "nuxt-musicfyplayer": "^2.1.0",
     "sass": "^1.78.0",
@@ -37,7 +37,7 @@
     "stylelint-config-standard-scss": "^13.1.0",
     "tsx": "^4.19.0",
     "vue-tsc": "^2.1.6",
-    "wrangler": "^3.74.0",
+    "wrangler": "^3.75.0",
     "zod": "^3.23.8"
   },
   "packageManager": "pnpm@9.9.0"
