@@ -1,5 +1,39 @@
 export default [
   {
+    id: "legado",
+    artists: "Dimatis",
+    title: "Legado",
+    description: "",
+    genre: "Chillstep",
+    date: "2024-09-13T00:00:00.000",
+    person: ["Dimatis"],
+    mm: 4,
+    ss: 18,
+    dropbox: {
+      id: "cvz9dfokkybmqgxgx283h",
+      rlkey: "vq2tb9g8260xu41saa1cf3d6t"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        spotify: "",
+        soundcloud: "https://soundcloud.com/dimatis/legado",
+        youtube: "https://youtu.be/N-IcMW_BeQM",
+        apple: "",
+        itunes: "",
+        bandcamp: "https://dimatis.bandcamp.com/track/legado",
+        deezer: "",
+        tidal: "",
+        yandex: "",
+        amazon: "",
+        tiktok: "",
+        beatport: "",
+        netease: ""
+      }
+    }
+  },
+  {
     id: "sojourn",
     artists: "Bayza & Dimatis",
     title: "Sojourn",
