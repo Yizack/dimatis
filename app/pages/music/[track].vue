@@ -91,14 +91,8 @@ useHead({
 });
 
 const lyricsFile = await import(`~/assets/lyrics/${param.value}.txt?raw`).catch(() => ({ default: null }));
-const lyricsContent = lyricsFile.default;
-const lyrics = lyricsContent ? normalizeLyrics(lyricsContent) : null;
-
-const showFullLyrics = ref(lyricsContent ? lyricsContent.match(/\n/g).length < 6 : true);
-
-const readLyrics = () => {
-  showFullLyrics.value = !showFullLyrics.value;
-};
+const lyrics = lyricsFile.default ? normalizeLyrics(lyricsFile.default) : null;
+const showFullLyrics = ref(lyrics ? (lyrics.match(/\n/g)?.length ?? 0) < 6 : true);
 </script>
 
 <template>
@@ -119,9 +113,13 @@ const readLyrics = () => {
             <div v-if="lyrics" class="lyrics mt-3" :class="{ 'lyrcs-fade': !showFullLyrics }">
               <h3 class="text-white">Lyrics</h3>
               <p class="m-0 pre-line overflow-hidden position-relative overflow-hidden" :style="showFullLyrics ? 'height:auto' : 'height: 140px;'">{{ lyrics }}</p>
-              <a v-if="!showFullLyrics" class="small" role="button" @click="readLyrics">
+              <a v-if="!showFullLyrics" class="small" role="button" @click="showFullLyrics = true">
                 <span class="text-decoration-underline">Read lyrics</span>
                 <Icon name="tabler:caret-down-filled" />
+              </a>
+              <a v-else class="small" role="button" @click="showFullLyrics = false">
+                <span class="text-decoration-underline">Show less</span>
+                <Icon name="tabler:caret-up-filled" />
               </a>
             </div>
             <div v-if="track.credits" class="credits mt-3">
