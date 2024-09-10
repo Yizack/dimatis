@@ -90,15 +90,18 @@ useHead({
   ]
 });
 
-const lyricsFile = await import(`~/assets/lyrics/${param.value}.txt?raw`).catch(() => ({ default: null }));
-const lyricsContent = lyricsFile.default;
-const lyrics = lyricsContent ? normalizeLyrics(lyricsContent) : null;
-
-const showFullLyrics = ref(lyricsContent ? lyricsContent.match(/\n/g).length < 6 : true);
-
+const lyrics = ref<string | null>(null);
+const showFullLyrics = ref(true);
 const readLyrics = () => {
   showFullLyrics.value = !showFullLyrics.value;
 };
+
+onMounted(async () => {
+  const lyricsFile = await import(`~/assets/lyrics/${param.value}.txt?raw`).catch(() => ({ default: null }));
+  const lyricsContent = lyricsFile.default;
+  lyrics.value = lyricsContent ? normalizeLyrics(lyricsContent) : null;
+  showFullLyrics.value = lyricsContent ? lyricsContent.match(/\n/g).length < 6 : true;
+});
 </script>
 
 <template>
