@@ -21,7 +21,7 @@
               <a target="_blank" href="https://dimatis.bandcamp.com/">Bandcamp</a>
             </li>
             <li>
-              <a target="_blank" href="https://www.amazon.com/s?k=Dimatis&i=digital-music">Amazon</a>
+              <a target="_blank" href="https://music.amazon.com/artists/B01JLNZO70/dimatis">Amazon</a>
             </li>
           </ul>
         </div>
