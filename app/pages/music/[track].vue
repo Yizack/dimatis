@@ -167,10 +167,10 @@ const readLyrics = () => {
           <div class="row gallery text-center">
             <template v-for="more in moreTracks" :key="more.id">
               <div class="col-6 col-lg-3">
-                <NuxtLink :to="`/music/${more.id}`">
+                <NuxtLink :to="`/music/${more.id}`" class="text-decoration-none">
                   <img class="img-fluid scale-on-hover rounded-3" :src="`/images/${more.cover ? more.cover : more.id}.jpg`" :alt="`${more.artists} - ${more.title}`">
                   <p class="mt-2 mb-0">{{ more.title }}</p>
-                  <p><small>{{ more.artists }}</small></p>
+                  <p class="text-secondary"><small>{{ more.artists }}</small></p>
                 </NuxtLink>
               </div>
             </template>
