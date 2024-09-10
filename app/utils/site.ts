@@ -46,12 +46,12 @@ const SITE = {
     spotify: "https://open.spotify.com/artist/0RAT9Q5WZwzJRJgTI38zJR",
     soundcloud: "https://soundcloud.com/dimatis",
     youtube: "https://youtube.com/dimatis",
-    apple: "https://geo.itunes.apple.com/us/artist/dimatis/id1139797073?mt=1&app=music"
+    apple: "https://music.apple.com/artist/dimatis/1139797073?app=music&ls=1"
   },
   buy: {
-    itunes: "https://geo.itunes.apple.com/us/artist/dimatis/id1139797073?app=itunes",
+    itunes: "https://music.apple.com/artist/dimatis/1139797073?app=itunes&ls=1",
     bandcamp: "https://dimatis.bandcamp.com/",
-    amazon: "https://www.amazon.com/s?k=Dimatis&i=digital-music"
+    amazon: "https://music.amazon.com/artists/B01JLNZO70/dimatis"
   },
   merch: "https://merch.streamelements.com/dimatis",
   fanlinks: `${protocol}://${fanlinkDomain}/fanlinks`

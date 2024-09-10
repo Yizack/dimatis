@@ -14,15 +14,9 @@
         <div class="col-md-3 col-lg-4">
           <h4>Buy Music</h4>
           <ul class="alt">
-            <li>
-              <a target="_blank" href="https://geo.itunes.apple.com/us/artist/dimatis/id1139797073?app=itunes">iTunes</a>
-            </li>
-            <li>
-              <a target="_blank" href="https://dimatis.bandcamp.com/">Bandcamp</a>
-            </li>
-            <li>
-              <a target="_blank" href="https://music.amazon.com/artists/B01JLNZO70/dimatis">Amazon</a>
-            </li>
+            <li><a target="_blank" :href="SITE.buy.itunes">iTunes</a></li>
+            <li><a target="_blank" :href="SITE.buy.bandcamp">Bandcamp</a></li>
+            <li><a target="_blank" :href="SITE.buy.amazon">Amazon</a></li>
           </ul>
         </div>
         <div class="col-md-6 col-lg-4">
