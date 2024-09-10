@@ -7,7 +7,7 @@
           <ul class="alt">
             <li><a target="_blank" :href="SITE.stream.spotify">Spotify</a></li>
             <li><a target="_blank" :href="SITE.stream.soundcloud">SoundCloud</a></li>
-            <li><a target="_blank" :href="SITE.stream.youtube">Youtube</a></li>
+            <li><a target="_blank" :href="SITE.stream.youtube">YouTube</a></li>
             <li><a target="_blank" :href="SITE.stream.apple">Apple Music</a></li>
           </ul>
         </div>
@@ -39,7 +39,7 @@
               </a>
             </li>
             <li class="youtube pe-3">
-              <a :href="SITE.socials.youtube" target="_blank" :aria-label="`Check out ${SITE.name} on Youtube`">
+              <a :href="SITE.socials.youtube" target="_blank" :aria-label="`Check out ${SITE.name} on YouTube`">
                 <Icon name="fa6-brands:youtube" />
               </a>
             </li>

@@ -170,7 +170,7 @@ export default [
         title: "Support Arctic Empire",
         socials: [
           {
-            name: "Youtube",
+            name: "YouTube",
             link: "https://www.youtube.com/@ArcticEmpire"
           },
           {
@@ -572,7 +572,7 @@ export default [
             link: "https://open.spotify.com/artist/7nsHwDfvq2CVqfC2jt3Z9N"
           },
           {
-            name: "Youtube",
+            name: "YouTube",
             link: "https://youtube.com/user/elvyaofficial"
           },
           {
@@ -633,7 +633,7 @@ export default [
             link: "https://open.spotify.com/artist/7nsHwDfvq2CVqfC2jt3Z9N"
           },
           {
-            name: "Youtube",
+            name: "YouTube",
             link: "https://youtube.com/user/elvyaofficial"
           },
           {
@@ -692,7 +692,7 @@ export default [
             link: "https://open.spotify.com/artist/3HlA4oN32tBsJgVIppg0z1"
           },
           {
-            name: "Youtube",
+            name: "YouTube",
             link: "https://www.youtube.com/channel/UCfXV7PqwvmWbyZ8XmHgkHqw"
           },
           {
@@ -806,7 +806,7 @@ export default [
             link: "https://open.spotify.com/artist/7nsHwDfvq2CVqfC2jt3Z9N"
           },
           {
-            name: "Youtube",
+            name: "YouTube",
             link: "https://youtube.com/user/elvyaofficial"
           },
           {
@@ -899,7 +899,7 @@ export default [
             link: "https://open.spotify.com/artist/0HlvLeYhYyyJy0bxU7yLgw"
           },
           {
-            name: "Youtube",
+            name: "YouTube",
             link: "https://www.youtube.com/c/NAWNofficial"
           },
           {
@@ -1024,7 +1024,7 @@ export default [
             link: "https://www.facebook.com/BayzaMusic"
           },
           {
-            name: "Youtube",
+            name: "YouTube",
             link: "https://youtube.com/bayza"
           },
           {
@@ -1099,7 +1099,7 @@ export default [
             link: "https://www.facebook.com/BayzaMusic"
           },
           {
-            name: "Youtube",
+            name: "YouTube",
             link: "https://youtube.com/bayza"
           },
           {
@@ -1169,7 +1169,7 @@ export default [
             link: "https://open.spotify.com/artist/6fJ0KdqybU7jdEcFeiNiE7"
           },
           {
-            name: "Youtube",
+            name: "YouTube",
             link: "https://www.youtube.com/channel/UCCAuZQAws06HffSAPrgHOMw"
           }
         ]
@@ -1327,7 +1327,7 @@ export default [
             link: "https://open.spotify.com/artist/1YWIbcvuqzWzPyxyrVTMJv"
           },
           {
-            name: "Youtube",
+            name: "YouTube",
             link: "https://www.youtube.com/c/miss-lina-official"
           },
           {
@@ -1348,7 +1348,7 @@ export default [
             link: "https://www.etsy.com/shop/MissChibiArtist"
           },
           {
-            name: "Youtube",
+            name: "YouTube",
             link: "https://www.youtube.com/user/MissChibiArtist"
           },
           {
@@ -1588,7 +1588,7 @@ export default [
             link: "https://open.spotify.com/artist/7nsHwDfvq2CVqfC2jt3Z9N"
           },
           {
-            name: "Youtube",
+            name: "YouTube",
             link: "https://youtube.com/user/elvyaofficial"
           },
           {
