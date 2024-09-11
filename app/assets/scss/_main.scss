@@ -213,3 +213,14 @@ iframe {
   );
   pointer-events: none;
 }
+
+.samplepack-blurry {
+  filter: blur(20px);
+  position: absolute;
+  left: 0;
+  transform: translate(0, 0);
+  z-index: 0;
+  width: 250px;
+  height: 250px;
+  background-size: contain !important;
+}
