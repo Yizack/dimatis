@@ -29,7 +29,7 @@ export default [
         amazon: "",
         tiktok: "",
         beatport: "",
-        netease: ""
+        netease: "https://music.163.com/#/song?id=2626498612"
       }
     }
   },
