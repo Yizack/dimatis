@@ -17,8 +17,8 @@ export default [
       title: "Buy Sample Pack",
       socials: [
         {
-          name: "Patreon",
-          link: "https://www.patreon.com/checkout/dimatis?pvid=309263"
+          name: "Legado: A decade of Dimatis",
+          link: "https://dimatis.yizack.com/shop/legado"
         }
       ]
     }],
