@@ -13,6 +13,15 @@ export default [
       id: "cvz9dfokkybmqgxgx283h",
       rlkey: "vq2tb9g8260xu41saa1cf3d6t"
     },
+    credits: [{
+      title: "Buy Sample Pack",
+      socials: [
+        {
+          name: "Patreon",
+          link: "https://www.patreon.com/dimatis/shop/legado-decade-of-dimatis-sample-pack-309263"
+        }
+      ]
+    }],
     fanlink: {
       download: true,
       dark: false,
