@@ -1,5 +1,21 @@
 <script setup lang="ts">
 definePageMeta({ layout: "site" });
+
+useSeoMeta({
+  title: "Legado: A decade of Dimatis Sample Pack",
+  description: "This sample pack contains a wide variety of sounds handpicked by me from the best sounds and presets of my 10 years of music career.",
+  ogImage: `${SITE.url}/images/legado.jpg`,
+  ogImageWidth: "500",
+  ogImageHeight: "500",
+  ogImageAlt: "Legado: A decade of Dimatis Sample Pack",
+  ogUrl: `${SITE.url}/shop/legado`,
+  ogType: "website",
+  twitterCard: "summary",
+  twitterSite: `@${SITE.twitter}`,
+  twitterTitle: "Legado: A decade of Dimatis Sample Pack",
+  twitterDescription: "This sample pack contains a wide variety of sounds handpicked by me from the best sounds and presets of my 10 years of music career.",
+  twitterImage: `${SITE.url}/images/legado.jpg`
+});
 </script>
 
 <template>
