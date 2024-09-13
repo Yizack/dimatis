@@ -51,7 +51,7 @@ useSeoMeta({
                 </a>
                 <a class="btn btn-light d-flex align-items-center gap-2 px-4 text-dark text-decoration-none" href="/music/legado" target="_blank">
                   <Icon name="tabler:player-play-filled" size="1rem" />
-                  <span>Preview</span>
+                  <span>Demo</span>
                 </a>
               </div>
             </div>
