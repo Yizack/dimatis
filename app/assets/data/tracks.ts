@@ -3,7 +3,7 @@ export default [
     id: "legado",
     artists: "Dimatis",
     title: "Legado",
-    description: "This song is the demo of my new Sample Pack \"Legado\", spanish word for \"Legacy\" or \"Heritage\". Last month marked the 10th anniversary of Dimatis, so I wanted to celebrate it by making a selection of sounds from my musical journey. If you are a music producer, check out my new Melodic Chillstep Sample Pack!",
+    description: "This track is the demo of my new Sample Pack \"Legado\", the Spanish word for \"Legacy\" or \"Heritage\". Last month marked the 10th anniversary of Dimatis, so I wanted to celebrate it by making a selection of sounds from my musical journey. If you are a music producer, check out my new Melodic Chillstep Samples and Presets Pack!",
     genre: "Chillstep",
     date: "2024-09-13T00:00:00.000",
     person: ["Dimatis"],
