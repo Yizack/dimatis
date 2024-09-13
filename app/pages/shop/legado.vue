@@ -45,7 +45,7 @@ useSeoMeta({
             </div>
             <div class="flex-fill align-content-end mt-2 mt-lg-0">
               <div class="d-flex gap-2">
-                <a class="btn btn-primary d-flex align-items-center gap-2 px-4 text-decoration-none" href="https://www.patreon.com/dimatis/shop/legado-decade-of-dimatis-sample-pack-309263" target="_blank">
+                <a class="btn btn-primary d-flex align-items-center gap-2 px-4 text-decoration-none" href="https://www.patreon.com/checkout/dimatis?pvid=309263" target="_blank">
                   <Icon name="tabler:shopping-bag-plus" size="1.3rem" />
                   <span>Buy</span>
                 </a>

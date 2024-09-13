@@ -18,7 +18,7 @@ export default [
       socials: [
         {
           name: "Patreon",
-          link: "https://www.patreon.com/dimatis/shop/legado-decade-of-dimatis-sample-pack-309263"
+          link: "https://www.patreon.com/checkout/dimatis?pvid=309263"
         }
       ]
     }],
