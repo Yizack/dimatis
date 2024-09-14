@@ -34,7 +34,7 @@ export default [
         bandcamp: "https://dimatis.bandcamp.com/track/legado",
         deezer: "https://www.deezer.com/us/album/642321791",
         tidal: "https://tidal.com/browse/album/386944726",
-        yandex: "",
+        yandex: "https://music.yandex.com/album/33278618",
         amazon: "https://www.amazon.com/dp/B0DGV9SMBJ",
         tiktok: "",
         beatport: "",
