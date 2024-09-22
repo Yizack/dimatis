@@ -129,7 +129,8 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          quietDeps: true
+          api: "modern-compiler",
+          silenceDeprecations: ["mixed-decls", "color-functions"]
         }
       }
     }
