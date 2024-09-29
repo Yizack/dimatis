@@ -189,14 +189,24 @@ iframe {
   border: none;
 }
 
-.lyrcs-fade p::after {
+.lyrics-fade p::after {
   content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   height: 50px;
-  background: linear-gradient(to bottom, rgb(32 32 32 / 0%), var(--bs-body-bg));
+  background: linear-gradient(to bottom, rgb(0 0 0 / 0%), var(--bs-body-bg));
+}
+
+.about-fade p::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background: linear-gradient(to bottom, rgb(0 0 0 / 0%), var(--bs-secondary-bg));
 }
 
 .about::before {
