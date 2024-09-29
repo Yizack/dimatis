@@ -38,7 +38,7 @@ onMounted(() => {
         <div id="release">
           <span class="text-uppercase">Latest Release</span>
           <!-- Latest release -->
-          <NuxtLink ref="releasepop" :to="`/${page.cover ? page.cover : page.id}`" class="link normal col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none d-flex align-items-center justify-content-center" data-bs-toggle="popover">
+          <NuxtLink ref="releasepop" :to="`${SITE.fanlinksUrl}/${page.cover ? page.cover : page.id}`" class="link normal col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none d-flex align-items-center justify-content-center" data-bs-toggle="popover">
             <IconLogo width="18" height="18" />
             <strong class="ms-1">{{ page.artists }} - {{ page.title }}</strong>
           </NuxtLink>
