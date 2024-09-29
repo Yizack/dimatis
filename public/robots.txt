@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://dimatis.yizack.com/sitemap.xml
+Sitemap: https://dimatis.music/sitemap.xml

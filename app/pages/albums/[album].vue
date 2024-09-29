@@ -1,7 +1,7 @@
 <script setup lang="ts">
 definePageMeta({ layout: "site" });
 
-const param = ref(useRoute("album-album").params.album);
+const param = ref(useRoute("albums-album").params.album);
 const album = computed(() => albums.find(a => a.id === param.value)!);
 
 if (!album.value) {
@@ -34,30 +34,30 @@ const goTrack = (track: string) => {
 };
 
 useSeoMeta({
-  title: `${album.value.artists} - ${album.value.title} (${album.value.type})`,
+  title: `${album.value.title} (${album.value.type}) by ${album.value.artists})`,
   description: album.value.description,
   keywords: `album, ${album.value.title}, fanlink, download`,
   // Protocolo Open Graph
-  ogUrl: `${SITE.url}/album/${param.value}`,
+  ogUrl: `${SITE.url}/albums/${param.value}`,
   ogType: "website",
-  ogTitle: `${album.value.artists} - ${album.value.title} (${album.value.type})`,
+  ogTitle: `${album.value.title} (${album.value.type}) by ${album.value.artists}`,
   ogSiteName: SITE.name,
   ogImage: `${SITE.url}/images/${album.value.cover}.jpg`,
   ogImageWidth: "500",
   ogImageHeight: "500",
-  ogImageAlt: `${album.value.artists} - ${album.value.title} (${album.value.type})`,
+  ogImageAlt: `${album.value.title} (${album.value.type}) by ${album.value.artists})`,
   ogDescription: album.value.description,
   // Twitter Card
   twitterCard: "summary",
   twitterImage: `${SITE.url}/images/${album.value.cover}.jpg`,
-  twitterTitle: `${album.value.artists} - ${album.value.title} (${album.value.type})`,
+  twitterTitle: `${album.value.title} (${album.value.type}) by ${album.value.artists})`,
   twitterDescription: album.value.description,
   twitterSite: `@${SITE.twitter}`
 });
 
 useHead({
   link: [
-    { rel: "canonical", href: `${SITE.url}/album/${param.value}` }
+    { rel: "canonical", href: `${SITE.url}/albums/${param.value}` }
   ]
 });
 </script>
@@ -111,8 +111,8 @@ useHead({
                 <div class="tag mb-1" itemprop="datePublished" :content="album.date.split('T')[0]">{{ new Date(album.date).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" }) }}</div>
                 <div class="mb-0">Fanlink</div>
                 <div class="tag">
-                  <a class="d-flex align-items-center gap-2" :href="`${SITE.fanlinkUrl}/${album.cover}`" target="_blank">
-                    <span>{{ SITE.fanlinkDomain }}/{{ album.cover }}</span>
+                  <a class="d-flex align-items-center gap-2" :href="`${SITE.fanlinksUrl}/${album.cover}`" target="_blank">
+                    <span>{{ SITE.fanlinksDomain }}/{{ album.cover }}</span>
                     <Icon name="tabler:external-link" size="1.3rem" />
                   </a>
                 </div>
@@ -121,12 +121,12 @@ useHead({
           </div>
         </div>
         <div id="more-albums" class="pt-3">
-          <h3 class="text-center">More <NuxtLink class="tag" href="/album">Albums</NuxtLink></h3>
+          <h3 class="text-center">More <NuxtLink class="tag" href="/albums">Albums</NuxtLink></h3>
           <div class="row gallery text-center">
             <template v-for="more in moreAlbums" :key="more.id">
               <div class="col-6 col-lg-3">
                 <div class="item">
-                  <NuxtLink :to="`/album/${more.id}`" class="text-decoration-none">
+                  <NuxtLink :to="`/albums/${more.id}`" class="text-decoration-none">
                     <img class="img-fluid scale-on-hover rounded-3" :src="`/images/${more.cover}.jpg`" :alt="`${more.artists} - ${more.title} (${more.type})`">
                     <p class="mt-2 mb-0">{{ more.title }} ({{ more.type }})</p>
                     <p class="text-secondary"><small>{{ more.artists }}</small></p>

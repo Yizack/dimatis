@@ -51,7 +51,7 @@ const latestTracks = tracks.reduce((acc, t) => {
         <template v-for="track of latestTracks" :key="track.id">
           <div class="col-12 col-lg-4">
             <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{ width: '300px', height: '385px' }" :track="track" :param="track.cover ? track.cover : track.id" />
-            <NuxtLink class="text-decoration-none" :to="`/music/${track.id}`">
+            <NuxtLink class="text-decoration-none" :to="`/tracks/${track.id}`">
               <p class="mb-0">{{ track.title }}</p>
               <p class="text-secondary"><small>{{ track.artists }}</small></p>
             </NuxtLink>
