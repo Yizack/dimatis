@@ -13,6 +13,17 @@ class Bootstrap {
     const popoverList = document.querySelectorAll("[data-bs-toggle=\"popover\"]");
     [...popoverList].map(e => new Popover(e, { trigger: "hover" }));
   }
+
+  popover (el: HTMLElement, options: Record<string, unknown>) {
+    return new Popover(el, options);
+  }
+
+  hidePopover (el: HTMLElement) {
+    const popover = Popover.getInstance(el);
+    if (popover) {
+      popover.hide();
+    }
+  }
 }
 
 declare module "#app" {
