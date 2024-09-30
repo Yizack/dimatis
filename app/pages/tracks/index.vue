@@ -8,6 +8,12 @@ const filters = ref({
   search: query.q?.toString() || ""
 });
 
+const currentYear = new Date().getFullYear();
+
+const isBetweenYears = computed(() => {
+  return filters.value.year >= 2014 && filters.value.year <= currentYear;
+});
+
 const tracksFiltered = computed(() => {
   let tracksAcc: DimatisTrack[];
 
@@ -71,24 +77,24 @@ watch(filters, () => {
 
 useSeoMeta({
   title: `Tracks | ${SITE.name}`,
-  description: `All ${SITE.name} releases`,
+  description: isBetweenYears.value ? `All ${SITE.name} releases from ${filters.value.year}` : `All ${SITE.name} releases`,
   keywords: "discography, releases, singles, remixes, songs, listen",
   // Protocolo Open Graph
   ogUrl: `${SITE.url}/tracks`,
   ogType: "website",
-  ogTitle: `Tracks | ${SITE.name}`,
+  ogTitle: isBetweenYears.value ? `Tracks | ${SITE.name} (${filters.value.year})` : `Tracks | ${SITE.name}`,
   ogSiteName: SITE.name,
-  ogDescription: `All ${SITE.name} releases`,
-  ogImage: `${SITE.url}/${SITE.cover}`,
-  ogImageWidth: "300",
-  ogImageHeight: "200",
+  ogDescription: isBetweenYears.value ? `All ${SITE.name} releases from ${filters.value.year}` : `All ${SITE.name} releases`,
+  ogImage: `${SITE.url}/${isBetweenYears.value ? `images/playlists/d${filters.value.year}.jpg` : SITE.cover}`,
+  ogImageWidth: isBetweenYears.value ? "1425" : "300",
+  ogImageHeight: isBetweenYears.value ? "1425" : "200",
   ogImageAlt: `${SITE.name} cover image`,
   // Protocolo Twitter
   twitterCard: "summary",
   twitterSite: `@${SITE.twitter}`,
-  twitterTitle: `Tracks | ${SITE.name}`,
-  twitterDescription: `All ${SITE.name} releases`,
-  twitterImage: `${SITE.url}/${SITE.logo}`
+  twitterTitle: isBetweenYears.value ? `Tracks | ${SITE.name} (${filters.value.year})` : `Tracks | ${SITE.name}`,
+  twitterDescription: isBetweenYears.value ? `All ${SITE.name} releases from ${filters.value.year}` : `All ${SITE.name} releases`,
+  twitterImage: `${SITE.url}/${isBetweenYears.value ? `images/playlists/d${filters.value.year}.jpg` : SITE.logo}`
 });
 
 useHead({
@@ -96,8 +102,6 @@ useHead({
     { rel: "canonical", href: `${SITE.url}/tracks` }
   ]
 });
-
-const currentYear = new Date().getFullYear();
 </script>
 
 <template>
