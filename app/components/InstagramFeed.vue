@@ -22,6 +22,17 @@ const replaceLinkables = (text: string) => {
   replacedText = replacedText.replace(/@([a-zA-Z0-9._]+)(?=\W|$)/g, "<a href='https://www.instagram.com/$1/' target='_blank' style='color: rgb(224 241 255)'>@$1</a>");
   return replacedText;
 };
+
+const playVideo = (event: MouseEvent) => {
+  event.preventDefault();
+  const video = event.target as HTMLVideoElement;
+  if (video.paused) {
+    video.play();
+    video.controls = true;
+    return;
+  }
+  video.pause();
+};
 </script>
 
 <template>
@@ -38,7 +49,12 @@ const replaceLinkables = (text: string) => {
                     <blockquote class="instagram-media mx-auto" style="border:0; border-radius:3px; margin: auto; max-width:540px; min-width:326px; padding:0; width:100%;">
                       <a :href="`${post.permalink}?utm_source=ig_embed&amp;utm_campaign=loading`" style="text-decoration:none;" target="_blank">
                         <img v-if="post.media_type !== 'VIDEO' && post.media_type !== 'REELS'" class="w-100" :src="post.media_url">
-                        <img v-else class="w-100" :src="post.thumbnail_url">
+                        <div v-else class="position-relative">
+                          <video class="w-100" :poster="post.thumbnail_url" @click="playVideo">
+                            <source :src="post.media_url" type="video/mp4">
+                          </video>
+                          <Icon class="position-absolute top-0 end-0 m-1" name="tabler:video" size="1.5rem" />
+                        </div>
                         <div class="px-3 text-start">
                           <div class="py-3" style="color:#3897f0; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
                             <span>View this post on Instagram</span>
