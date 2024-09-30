@@ -85,7 +85,7 @@ useSeoMeta({
   ogTitle: isBetweenYears.value ? `Music | ${SITE.name} (${filters.value.year})` : `Music | ${SITE.name}`,
   ogSiteName: SITE.name,
   ogDescription: isBetweenYears.value ? `All ${SITE.name} releases from ${filters.value.year}` : `All ${SITE.name} releases`,
-  ogImage: `${SITE.url}/${isBetweenYears.value ? `images/playlists/d${filters.value.year}.jpg` : SITE.logo}`,
+  ogImage: `${SITE.url}/${isBetweenYears.value ? `images/playlists/d${filters.value.year}.jpg` : SITE.cover}`,
   ogImageWidth: isBetweenYears.value ? "1425" : "300",
   ogImageHeight: isBetweenYears.value ? "1425" : "200",
   ogImageAlt: `${SITE.name} cover image`,
@@ -94,7 +94,7 @@ useSeoMeta({
   twitterSite: `@${SITE.twitter}`,
   twitterTitle: isBetweenYears.value ? `Music | ${SITE.name} (${filters.value.year})` : `Music | ${SITE.name}`,
   twitterDescription: isBetweenYears.value ? `All ${SITE.name} releases from ${filters.value.year}` : `All ${SITE.name} releases`,
-  twitterImage: `${SITE.url}/${SITE.logo}`
+  twitterImage: `${SITE.url}/${isBetweenYears.value ? `images/playlists/d${filters.value.year}.jpg` : SITE.logo}`
 });
 
 useHead({
