@@ -41,7 +41,7 @@ const showFullAbout = ref(false);
           </div>
         </div>
         <div class="col-lg-4 text-center">
-          <img class="img-fluid rounded-3 shadow" src="/images/sq-logo-dimatis.jpg" :alt="`${SITE.name} photo`">
+          <img class="img-fluid rounded-3 shadow" src="/images/avatars/sq-logo.jpg" :alt="`${SITE.name} photo`">
         </div>
       </div>
     </div>
