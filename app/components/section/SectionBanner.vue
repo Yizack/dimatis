@@ -3,7 +3,7 @@ const { data: followers } = await useFetch("/api/followers");
 </script>
 
 <template>
-  <section id="banner" style="background-image: url('/images/banner_page.jpg');" class="banner position-relative">
+  <section id="banner" style="background-image: url('/images/backgrounds/profile.jpg');" class="banner position-relative">
     <div class="position-absolute bottom-0 start-0 w-100 z-1 py-4">
       <div class="container">
         <h1 class="display-5 fw-bold">Dimatis</h1>
