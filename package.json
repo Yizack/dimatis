@@ -37,7 +37,7 @@
     "stylelint-config-standard-scss": "^13.1.0",
     "tsx": "^4.19.1",
     "vue-tsc": "^2.1.6",
-    "wrangler": "^3.78.12",
+    "wrangler": "^3.79.0",
     "zod": "^3.23.8"
   },
   "packageManager": "pnpm@9.11.0"
