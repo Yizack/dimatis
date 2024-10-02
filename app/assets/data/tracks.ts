@@ -1,5 +1,72 @@
 export default [
   {
+    id: "to-stand-again",
+    artists: "Dimatis & Calmseer",
+    title: "To Stand Again",
+    description: "I'm happy to announce my latest release, \"To Stand Again\" a collaboration with Calmseer, featured on Jade City Records' Spellbook Vol. II album! This song captures the moment when a hero, on the verge of giving up, finds the strength to rise again, driven by a desire to protect others. 🗡️📖",
+    label: "Jade City",
+    genre: "Melodic Dubstep",
+    date: "2024-10-04T00:00:00.000",
+    person: ["Dimatis", "Calmseer"],
+    mm: 4,
+    ss: 0,
+    dropbox: {
+      id: "lf3e4hnlq52yofe0kkks6",
+      rlkey: "chilqcxeelebnz3bq3mtha5vd"
+    },
+    credits: [
+      {
+        title: "Support Calmseer",
+        socials: [
+          {
+            name: "Spotify",
+            link: "https://open.spotify.com/artist/2RtIZi9ui5VBDYpWH1us7r?si=d10o4MwLTvuO7Pqqndfc7w"
+          },
+          {
+            name: "Instagram",
+            link: "https://www.instagram.com/calmseer.music/"
+          }
+        ]
+      },
+      {
+        title: "Support Jade City",
+        socials: [
+          {
+            name: "Instagram",
+            link: "https://www.instagram.com/jadecityrecords/"
+          },
+          {
+            name: "Discord",
+            link: "https://discord.gg/QEAvUTVhNc"
+          },
+          {
+            name: "Soundcloud",
+            link: "https://soundcloud.com/jadecityrecords"
+          }
+        ]
+      }
+    ],
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        spotify: "https://open.spotify.com/track/3cFlQzUgRJRMuBuqrtkJxd",
+        soundcloud: "https://soundcloud.com/dimatis/to-stand-again",
+        youtube: "https://youtu.be/e6emeGkva9g",
+        apple: "https://music.apple.com/us/album/to-stand-again-single/1770453969?app=music&ls=1",
+        itunes: "https://music.apple.com/us/album/to-stand-again-single/1770453969?app=itunes&ls=1",
+        bandcamp: "https://dimatis.bandcamp.com/track/to-stand-again",
+        deezer: "",
+        tidal: "",
+        yandex: "",
+        amazon: "",
+        tiktok: "",
+        beatport: "",
+        netease: ""
+      }
+    }
+  },
+  {
     id: "legado",
     artists: "Dimatis",
     title: "Legado",
