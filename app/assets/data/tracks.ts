@@ -50,7 +50,7 @@ export default [
       download: true,
       dark: false,
       links: {
-        spotify: "https://open.spotify.com/track/3cFlQzUgRJRMuBuqrtkJxd",
+        spotify: "https://open.spotify.com/track/5amhKM5Ud57MnIevz57NRO",
         soundcloud: "https://soundcloud.com/dimatis/to-stand-again",
         youtube: "https://youtu.be/e6emeGkva9g",
         apple: "https://music.apple.com/us/album/to-stand-again-single/1770453969?app=music&ls=1",
