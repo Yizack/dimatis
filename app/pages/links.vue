@@ -26,31 +26,42 @@ onMounted(() => {
 
 <template>
   <main id="links">
-    <div class="bg-links" :style="`background-image: url('${LINKS.background}'); opacity: 0.5;`" />
-    <div class="container">
-      <div class="text-center py-4">
-        <div class="mb-2">
-          <img class="mx-auto rounded-circle" :src="SITE.logo" height="150" width="150">
+    <div class="bg-links" :style="{ backgroundImage: `url(${LINKS.background})`, filter: 'blur(10px)', opacity: .9 }" />
+    <div class="container py-5">
+      <div class="card rounded-4 col-lg-7 mx-auto overflow-hidden">
+        <div class="card-header text-center py-5">
+          <img class="rounded-4 scale-on-hover" :src="SITE.image" height="350" width="350">
+          <h1 class="text-center mb-0 mt-3">{{ SITE.name }}</h1>
+          <p class="text-center text-muted m-0">{{ SITE.person.fullname }}</p>
+          <p class="text-center text-muted m-0">{{ SITE.description }}</p>
+          <a :href="`mailto:${SITE.email}`">{{ SITE.email }}</a>
         </div>
-        <div class="mb-4">
-          <h3>{{ SITE.name }}</h3>
-        </div>
-        <div id="release">
-          <span class="text-uppercase">Latest Release</span>
-          <!-- Latest release -->
-          <NuxtLink ref="releasepop" :to="`${SITE.fanlinksUrl}/${page.cover ? page.cover : page.id}`" class="link normal col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none d-flex align-items-center justify-content-center" data-bs-toggle="popover">
-            <IconLogo width="18" height="18" />
-            <strong class="ms-1">{{ page.artists }} - {{ page.title }}</strong>
-          </NuxtLink>
-        </div>
-        <div v-for="(tree, i) of LINKS.tree" :id="tree.id" :key="i">
-          <span class="text-uppercase">{{ tree.title }}</span>
-          <template v-for="(link, j) of tree.content" :key="j">
-            <a :href="link.url" target="_blank" class="link col-lg-8 col-11 p-3 mb-3 bg-white border rounded mx-auto text-decoration-none d-flex align-items-center justify-content-center" :class="link.code ? link.code : 'normal'">
-              <Icon v-if="link.code" :name="`fa6-brands:${link.code}`" />
-              <IconLogo v-else width="18" height="18" />
-              <strong class="ms-1">{{ link.title }}</strong>
-            </a>
+        <div class="card-body px-lg-5 bg-body-secondary">
+          <h4>Latest Release</h4>
+          <div class="position-relative neon scale-on-hover normal">
+            <NuxtLink ref="releasepop" :href="`${SITE.fanlinksUrl}/${page.cover ? page.cover : page.id}`" class="bg-body-tertiary d-flex align-items-center rounded-4 overflow-hidden mb-2 border text-decoration-none position-relative z-1" data-bs-toggle="popover">
+              <img class="img-fluid" :src="`/images/${page.id}.jpg`" :alt="`${page.artists} - ${page.title}`" width="100" height="100">
+              <div class="px-3 w-100">
+                <h5 class="m-0">{{ page.title }}</h5>
+                <p class="m-0 text-muted">{{ page.artists }}</p>
+              </div>
+            </NuxtLink>
+          </div>
+          <hr>
+          <template v-for="(tree, i) of LINKS.tree" :key="tree.id">
+            <h4>{{ tree.title }}</h4>
+            <div v-for="(link, j) of tree.content" :key="j" class="position-relative neon scale-on-hover" :class="link.code ? link.code : 'normal'">
+              <a :href="link.url" class="bg-body d-flex align-items-center rounded-4 overflow-hidden mb-2 border text-decoration-none position-relative z-1">
+                <div class="d-flex align-items-center justify-content-center" :style="{ minWidth: '100px' }">
+                  <Icon v-if="link.code" :name="`fa6-brands:${link.code}`" size="1.5rem" />
+                  <IconLogo v-else size="1.5rem" />
+                </div>
+                <div class="bg-body-tertiary px-3 py-4 w-100">
+                  <h5 class="m-0">{{ link.title }}</h5>
+                </div>
+              </a>
+            </div>
+            <hr v-if="i !== LINKS.tree.length - 1">
           </template>
         </div>
       </div>
@@ -71,13 +82,6 @@ onMounted(() => {
 </template>
 
 <style scoped>
-.border {
-  border: 2px solid #151515!important;
-}
-.spotify:hover, .youtube:hover, .soundcloud:hover, .instagram:hover, .facebook:hover, .normal:hover, .x-twitter:hover, .bandcamp:hover {
-  border-color: #fff!important;
-  color: #fff!important;
-}
 .bg-links {
   position: fixed;
   left: 0;
@@ -87,54 +91,6 @@ onMounted(() => {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
-}
-.spotify {
-  color: #1db954;
-}
-.spotify:hover {
-  background-color: #48ad6c!important;
-}
-.youtube {
-  color: #ff0000;
-}
-.youtube:hover {
-  background-color: #e44747!important;
-}
-.soundcloud {
-  color: #ff8800;
-}
-.soundcloud:hover {
-  background-color: #ff953c!important;
-}
-.instagram {
-  color: #833ab4;
-}
-.instagram:hover {
-  background-color: #8f58b3!important;
-}
-.facebook {
-  color: #3b5998;
-}
-.facebook:hover {
-  background-color: #5879c0!important;
-}
-.normal {
-  color: #151515;
-}
-.normal:hover {
-  background-color: #151515!important;
-}
-.x-twitter {
-  color: #000;
-}
-.x-twitter:hover {
-  background-color: #151515!important;
-}
-.bandcamp {
-  color: #1da0c3;
-}
-.bandcamp:hover {
-  background-color: #1da0c3!important;
 }
 .popover {
   max-width: 1000px;
@@ -149,7 +105,42 @@ onMounted(() => {
 #release_popped {
   width:300px;
 }
-.rounded {
-  border-radius: 2rem!important;
+.neon:hover::after {
+  opacity: 1;
+  transform: translateZ(0) scale(.97,.75);
+  transition: opacity .3s;
+}
+.neon::after {
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  filter: blur(20px);
+}
+.spotify:hover::after {
+  background-color: #1db954;
+}
+.youtube:hover::after {
+  background-color: #ff0000;
+}
+.soundcloud:hover::after {
+  background-color: #ff8800;
+}
+.instagram:hover::after {
+  background-color: #833ab4;
+}
+.facebook:hover::after {
+  background-color: #3b5998;
+}
+.normal:hover::after {
+  background-color: #f7f7f7;
+}
+.x-twitter:hover::after {
+  background-color: #f7f7f7;
+}
+.bandcamp:hover::after {
+  background-color: #1da0c3;
 }
 </style>
