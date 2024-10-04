@@ -30,7 +30,7 @@ onMounted(() => {
     <div class="container py-5">
       <div class="card rounded-4 col-lg-7 mx-auto overflow-hidden">
         <div class="card-header text-center py-5">
-          <img class="rounded-4 scale-on-hover" :src="SITE.image" height="350" width="350">
+          <img class="img-fluid rounded-4 scale-on-hover" :src="SITE.image" height="350" width="350">
           <h1 class="text-center mb-0 mt-3">{{ SITE.name }}</h1>
           <p class="text-center text-muted m-0">{{ SITE.person.fullname }}</p>
           <p class="text-center text-muted m-0">{{ SITE.description }}</p>
