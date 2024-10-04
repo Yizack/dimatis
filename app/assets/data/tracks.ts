@@ -56,12 +56,12 @@ export default [
         apple: "https://music.apple.com/us/album/to-stand-again-single/1770453969?app=music&ls=1",
         itunes: "https://music.apple.com/us/album/to-stand-again-single/1770453969?app=itunes&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/track/to-stand-again",
-        deezer: "",
-        tidal: "",
+        deezer: "https://www.deezer.com/us/album/647809131",
+        tidal: "https://tidal.com/browse/album/388987543",
         yandex: "",
-        amazon: "",
+        amazon: "https://www.amazon.com/dp/B0DHSQ8TFL",
         tiktok: "",
-        beatport: "",
+        beatport: "https://www.beatport.com/track/to-stand-again/19550056",
         netease: "https://music.163.com/#/song?id=2630019998"
       }
     }
