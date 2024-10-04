@@ -19,7 +19,7 @@
     "@glidejs/glide": "^3.6.2",
     "@nuxt/eslint": "^0.5.7",
     "@nuxt/icon": "^1.5.2",
-    "@nuxthub/core": "^0.7.20",
+    "@nuxthub/core": "^0.7.22",
     "@nuxtjs/color-mode": "^3.5.1",
     "@nuxtjs/sitemap": "^6.1.1",
     "@types/bootstrap": "^5.2.10",
@@ -37,8 +37,8 @@
     "stylelint-config-standard-scss": "^13.1.0",
     "tsx": "^4.19.1",
     "vue-tsc": "^2.1.6",
-    "wrangler": "^3.78.12",
+    "wrangler": "^3.79.0",
     "zod": "^3.23.8"
   },
-  "packageManager": "pnpm@9.11.0"
+  "packageManager": "pnpm@9.12.0"
 }

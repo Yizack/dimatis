@@ -11,7 +11,7 @@ const filters = ref({
 const currentYear = new Date().getFullYear();
 
 const isBetweenYears = computed(() => {
-  return filters.value.year >= 2014 && filters.value.year <= currentYear;
+  return filters.value.year >= 2014 && filters.value.year <= currentYear && filters.value.type === "all" && filters.value.search === "";
 });
 
 const tracksFiltered = computed(() => {
