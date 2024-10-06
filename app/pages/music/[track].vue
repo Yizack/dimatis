@@ -90,8 +90,8 @@ useHead({
   ]
 });
 
-const lyricsFile = await import(`~/assets/lyrics/${param.value}.txt?raw`).catch(() => ({ default: null }));
-const lyrics = lyricsFile.default ? normalizeLyrics(lyricsFile.default) : null;
+const lyricsFile = await useLyrics(param.value);
+const lyrics = lyricsFile ? normalizeLyrics(lyricsFile) : null;
 const showFullLyrics = ref(lyrics ? (lyrics.match(/\n/g)?.length ?? 0) < 6 : true);
 </script>
 

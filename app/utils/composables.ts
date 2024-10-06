@@ -9,3 +9,16 @@ export const setScrollBehavior = () => {
     });
   };
 };
+
+export const useLyrics = async (path: string): Promise<string | null> => {
+  const assets = import.meta.glob("~/assets/lyrics/*", {
+    eager: false,
+    import: "default",
+    query: "?raw"
+  }) as Record<string, () => Promise<string>>;
+  const lyricsPath = "/assets/lyrics/" + path + ".txt";
+  const getLyrics = assets[lyricsPath];
+  if (!getLyrics) return null;
+  const lyrics = await getLyrics();
+  return lyrics;
+};
