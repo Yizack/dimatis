@@ -90,9 +90,21 @@ useHead({
   ]
 });
 
-const lyricsFile = await useLyrics(param.value);
-const lyrics = lyricsFile ? normalizeLyrics(lyricsFile) : null;
-const showFullLyrics = ref(lyrics ? (lyrics.match(/\n/g)?.length ?? 0) < 6 : true);
+const assets = import.meta.glob("~~/server/assets/lyrics/*", {
+  eager: true
+});
+
+const existLyrics = assets["../server/assets/lyrics/" + param.value + ".txt"] !== undefined;
+const lyrics = ref<string>();
+const showFullLyrics = ref<boolean>(false);
+
+if (existLyrics) {
+  const { data: lyricsData } = await useFetch("/api/lyrics", {
+    params: { track: param.value }
+  });
+  lyrics.value = lyricsData.value;
+  showFullLyrics.value = lyrics.value ? (lyrics.value.match(/\n/g)?.length ?? 0) < 6 : true;
+}
 </script>
 
 <template>
