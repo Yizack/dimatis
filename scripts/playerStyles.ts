@@ -26,5 +26,5 @@ for (const track of tracks) {
 }
 
 if (Object.keys(colors).length > 0) {
-  console.info("player-styles.css generated successfully!");
+  console.info("player-styles.scss generated successfully!");
 }
