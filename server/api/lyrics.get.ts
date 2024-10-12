@@ -5,7 +5,7 @@ export default defineCachedEventHandler(async (event) => {
 
   const lyrics = await useStorage("assets/server/lyrics").getItemRaw(track + ".txt");
 
-  if (!lyrics) throw createError({ statusCode: 404, message: "No lyrics found" });
+  if (!lyrics) throw createError({ statusCode: ErrorCode.NOT_FOUND, message: "No lyrics found" });
 
   setResponseHeader(event, "Content-Type", "text/plain");
   return normalizeLyrics(lyrics.toString());

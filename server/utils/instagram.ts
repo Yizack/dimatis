@@ -12,7 +12,7 @@ export class InstagramFeed {
     const query = new URLSearchParams({ grant_type: "ig_refresh_token", access_token: this.accessToken });
     const response = await $fetch(`${this.api}/refresh_access_token?${query}`).catch((e) => {
       console.warn(e);
-      throw createError({ statusCode: 500, message: "Failed to refresh access token" });
+      throw createError({ statusCode: ErrorCode.INTERNAL_SERVER_ERROR, message: "Failed to refresh access token" });
     });
     return response;
   }
@@ -21,7 +21,7 @@ export class InstagramFeed {
     const query = new URLSearchParams({ fields: "username,permalink,timestamp,caption,media_url,media_type,thumbnail_url", access_token: this.accessToken });
     const response = await $fetch<{ data: InstagramPost[] }>(`${this.api}/${this.userId}/media?${query}`).catch((e) => {
       console.warn(e);
-      throw createError({ statusCode: 500, message: "Failed to fetch instagram feed" });
+      throw createError({ statusCode: ErrorCode.INTERNAL_SERVER_ERROR, message: "Failed to fetch instagram feed" });
     });
     return response.data;
   }

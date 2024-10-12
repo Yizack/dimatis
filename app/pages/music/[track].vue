@@ -6,7 +6,7 @@ const track = computed(() => tracks.find(track => track.id === param.value)!);
 
 if (!track.value) {
   throw createError({
-    statusCode: 404,
+    statusCode: ErrorCode.NOT_FOUND,
     message: `Track not found: '${param.value}'`,
     fatal: true
   });

@@ -6,7 +6,7 @@ const album = computed(() => albums.find(a => a.id === param.value)!);
 
 if (!album.value) {
   throw createError({
-    statusCode: 404,
+    statusCode: ErrorCode.NOT_FOUND,
     message: `Album not found: '${param.value}'`,
     fatal: true
   });

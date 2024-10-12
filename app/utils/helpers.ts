@@ -1,3 +1,5 @@
+export { ErrorCode } from "~~/server/utils/errors";
+
 export const genres = [
   { id: "bounce", name: "Bounce" },
   { id: "chill", name: "Chill" },

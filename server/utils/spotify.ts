@@ -30,7 +30,7 @@ export class SpotifyAPI {
       headers: {
         Authorization: `Bearer ${this.accessToken}`
       }
-    }).catch(() => { throw createError({ statusCode: 404, message: "Artist not found" }); });
+    }).catch(() => { throw createError({ statusCode: ErrorCode.NOT_FOUND, message: "Artist not found" }); });
     return response;
   }
 }
