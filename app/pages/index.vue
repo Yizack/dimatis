@@ -63,5 +63,5 @@ const latestTracks = tracks.reduce((acc, t) => {
       </div>
     </div>
   </section>
-  <InstagramFeed />
+  <SectionInstagram />
 </template>
