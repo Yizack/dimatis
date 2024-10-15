@@ -9,7 +9,7 @@ let css_content = "";
 console.info("Generating CSS...");
 
 for (const track of tracks) {
-  const filename = track.art ?? track.id;
+  const filename = track.art || track.id;
   const img = fileURLToPath(new URL(`./../public/images/${filename}.jpg`, import.meta.url));
   await ColorThief.getColor(img).then(async (color: number[]) => {
     if (!colors[filename]) {

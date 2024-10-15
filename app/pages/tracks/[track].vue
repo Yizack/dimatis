@@ -31,7 +31,7 @@ const tracksSchemaOrg = computed(() => {
     "url": `${SITE.url}/tracks/${param.value}`,
     "image": {
       "@type": "ImageObject",
-      "url": `${SITE.url}/images/${track.value.art ?? param.value}.jpg`
+      "url": `${SITE.url}/images/${track.value.art || param.value}.jpg`
     },
     "genre": track.value.genre,
     "duration": `PT${"hh" in track.value ? track.value.hh : 0}H${"mm" in track.value ? track.value.mm : 0}M${"ss" in track.value ? track.value.ss : 0}S`,
@@ -67,14 +67,14 @@ useSeoMeta({
   ogType: "website",
   ogTitle: `${track.value.title} by ${track.value.artists}`,
   ogSiteName: SITE.name,
-  ogImage: `${SITE.url}/images/${track.value.art ?? param.value}.jpg`,
+  ogImage: `${SITE.url}/images/${track.value.art || param.value}.jpg`,
   ogImageWidth: "500",
   ogImageHeight: "500",
   ogImageAlt: `${track.value.title} by ${track.value.artists}`,
   ogDescription: track.value.description,
   // Twitter Card
   twitterCard: "summary",
-  twitterImage: `${SITE.url}/images/${track.value.art ?? param.value}.jpg`,
+  twitterImage: `${SITE.url}/images/${track.value.art || param.value}.jpg`,
   twitterTitle: `${track.value.title} by ${track.value.artists}`,
   twitterDescription: track.value.description,
   twitterSite: `@${SITE.twitter}`
@@ -103,7 +103,7 @@ if (existLyrics) {
     params: { track: param.value }
   });
   lyrics.value = lyricsData.value;
-  showFullLyrics.value = lyrics.value ? (lyrics.value.match(/\n/g)?.length ?? 0) < 6 : true;
+  showFullLyrics.value = lyrics.value ? (lyrics.value.match(/\n/g)?.length || 0) < 6 : true;
 }
 </script>
 
@@ -178,7 +178,7 @@ if (existLyrics) {
             <template v-for="more in moreTracks" :key="more.id">
               <div class="col-6 col-lg-3">
                 <NuxtLink :to="`/tracks/${more.id}`" class="text-decoration-none">
-                  <img class="img-fluid scale-on-hover rounded-3" :src="`/images/${more.art ?? more.id}.jpg`" :alt="`${more.artists} - ${more.title}`">
+                  <img class="img-fluid scale-on-hover rounded-3" :src="`/images/${more.art || more.id}.jpg`" :alt="`${more.artists} - ${more.title}`">
                   <p class="mt-2 mb-0">{{ more.title }}</p>
                   <p class="text-secondary"><small>{{ more.artists }}</small></p>
                 </NuxtLink>

@@ -14,7 +14,7 @@ const props = defineProps({
   }
 });
 
-const srcImage = computed(() => `/images/${props.track.art ?? props.param}.jpg`);
+const srcImage = computed(() => `/images/${props.track.art || props.param}.jpg`);
 
 const config = defineMusicfyPlayer({
   image: {

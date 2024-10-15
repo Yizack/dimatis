@@ -39,7 +39,7 @@ onMounted(() => {
         <div class="card-body px-lg-5 bg-body-secondary">
           <h4>Latest Release</h4>
           <div class="position-relative neon scale-on-hover normal">
-            <a ref="releasepop" :href="`${SITE.fanlinksUrl}/${page.art ?? page.id}`" class="bg-body-tertiary d-flex align-items-center rounded-4 overflow-hidden mb-2 border text-decoration-none position-relative z-1" data-bs-toggle="popover">
+            <a ref="releasepop" :href="`${SITE.fanlinksUrl}/${page.art || page.id}`" class="bg-body-tertiary d-flex align-items-center rounded-4 overflow-hidden mb-2 border text-decoration-none position-relative z-1" data-bs-toggle="popover">
               <img class="img-fluid" :src="`/images/${page.id}.jpg`" :alt="`${page.artists} - ${page.title}`" width="100" height="100">
               <div class="px-3 w-100">
                 <h5 class="m-0">{{ page.title }}</h5>
