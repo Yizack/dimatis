@@ -627,15 +627,12 @@ export default [
     description: "Who wouldn't want to travel back or forward in time? I have the pleasure to bring you another song with Elvya this time with a time traveler theme, get ready to be delighted with a chill-type beat using sparkly and enveloping sounds that we could probably hear during a time teleportation while everything stops around you 💫. I came up with the instrumental of this song as an idea of mine almost 3 years ago but the result never convinced me so I never released it until talking to Elvya I showed her the demo and she added that magic missing, Now it comes alive thanks to her amazing vocals as always 💜.",
     genre: "Chill",
     date: "2022-11-25T00:00:00.000",
-    person: [
-      "Dimatis",
-      "Elvya"
-    ],
+    person: ["Dimatis", "Elvya"],
     mm: 3,
     ss: 41,
     album: "Traveler In Time",
-    cover: "traveler-in-time",
-    instrumental: "traveler-in-time-instrumental",
+    art: "traveler-in-time",
+    related: ["traveler-in-time-instrumental"],
     dropbox: {
       id: "1o0ewu4jlx9izcb"
     },
@@ -689,14 +686,12 @@ export default [
     description: "Instrumental version of Traveler In Time. Read more about the song in the original version!",
     genre: "Chill",
     date: "2022-11-25T00:00:00.000",
-    person: [
-      "Dimatis",
-      "Elvya"
-    ],
+    person: ["Dimatis", "Elvya"],
     mm: 3,
     ss: 41,
     album: "Traveler In Time",
-    cover: "traveler-in-time",
+    art: "traveler-in-time",
+    related: ["traveler-in-time"],
     dropbox: {
       id: "25jh2nkqyiphknx"
     },
@@ -1018,7 +1013,7 @@ export default [
     person: ["Dimatis"],
     mm: 3,
     ss: 16,
-    remix: "afterglow-remix",
+    related: ["afterglow-remix"],
     dropbox: {
       id: "rplt2k5x7bbnexj"
     },
@@ -1054,7 +1049,7 @@ export default [
     ],
     mm: 3,
     ss: 16,
-    instrumental: "afterglow",
+    related: ["afterglow"],
     dropbox: {
       id: "dmq3qfqcymu2kj5"
     },
@@ -1154,7 +1149,7 @@ export default [
     ],
     mm: 3,
     ss: 40,
-    cover: "call-out",
+    art: "call-out",
     dropbox: {
       id: "rahgxnqqx3et919"
     },
@@ -1787,7 +1782,8 @@ export default [
     mm: 3,
     ss: 44,
     album: "Experiences",
-    cover: "experiences-album",
+    art: "experiences-album",
+    related: ["experiences-album"],
     dropbox: {
       id: "24b9bllxlt5ixpw"
     },
@@ -1818,7 +1814,8 @@ export default [
     mm: 2,
     ss: 43,
     album: "Experiences",
-    cover: "experiences-album",
+    art: "experiences-album",
+    related: ["experiences-album"],
     dropbox: {
       id: "jv6rqyn42i3vkxh"
     },
@@ -1849,7 +1846,8 @@ export default [
     mm: 3,
     ss: 31,
     album: "Experiences",
-    cover: "experiences-album",
+    art: "experiences-album",
+    related: ["experiences-album"],
     dropbox: {
       id: "f0579qrgp1bqvif"
     },
@@ -1880,7 +1878,8 @@ export default [
     mm: 2,
     ss: 37,
     album: "Experiences",
-    cover: "experiences-album",
+    art: "experiences-album",
+    related: ["experiences-album"],
     dropbox: {
       id: "0l0ajzxw08g1dz6"
     },
@@ -1911,7 +1910,8 @@ export default [
     mm: 2,
     ss: 54,
     album: "Experiences",
-    cover: "experiences-album",
+    art: "experiences-album",
+    related: ["experiences-album"],
     dropbox: {
       id: "9644qucw0guhpsh"
     },
@@ -1938,14 +1938,12 @@ export default [
     description: "Sometimes I try to make music with my twin brother but our styles are so different that it is difficult to combine them and we end up making a style that we do not know what genre is.",
     genre: "Electronic",
     date: "2020-01-24T00:00:02.000",
-    person: [
-      "Bayza",
-      "Dimatis"
-    ],
+    person: ["Bayza", "Dimatis"],
     mm: 3,
     ss: 17,
     album: "Experiences",
-    cover: "experiences-album",
+    art: "experiences-album",
+    related: ["experiences-album"],
     dropbox: {
       id: "k8hwj2x2yfq6lof"
     },
@@ -1976,7 +1974,8 @@ export default [
     mm: 2,
     ss: 56,
     album: "Experiences",
-    cover: "experiences-album",
+    art: "experiences-album",
+    related: ["experiences-album"],
     dropbox: {
       id: "qqzqm93iv7ie2ws"
     },
@@ -2003,9 +2002,7 @@ export default [
     description: "My entry for \"Exhilaration\" remix competition by Sappheiros 💙.",
     genre: "Melodic Dubstep",
     date: "2019-11-04T00:00:00.000",
-    person: [
-      "Sappheiros"
-    ],
+    person: ["Sappheiros"],
     mm: 4,
     ss: 22,
     dropbox: {
@@ -2193,6 +2190,7 @@ export default [
     mm: 3,
     ss: 48,
     album: "Floating",
+    related: ["floating-ep"],
     dropbox: {
       id: "czod1finz8lwe16"
     },
@@ -2223,6 +2221,7 @@ export default [
     mm: 3,
     ss: 18,
     album: "Floating",
+    related: ["floating-ep"],
     dropbox: {
       id: "vu7yaqx1pwqlyk9"
     },
@@ -2253,6 +2252,7 @@ export default [
     mm: 3,
     ss: 18,
     album: "Floating",
+    related: ["floating-ep"],
     dropbox: {
       id: "o8fepftcbsgpifd"
     },
@@ -2283,6 +2283,7 @@ export default [
     mm: 3,
     ss: 25,
     album: "Floating",
+    related: ["floating-ep"],
     dropbox: {
       id: "0y06fnks3iq2qv5"
     },
@@ -2309,9 +2310,7 @@ export default [
     description: "I remixed the main theme of the game GRIS! I recently discovered this game, I was fascinated by its music and I bought the song to make a remix, enjoy!",
     genre: "Melodic Dubstep",
     date: "2018-12-17T00:00:00.000",
-    person: [
-      "Berlinist"
-    ],
+    person: ["Berlinist"],
     mm: 4,
     ss: 15,
     dropbox: {
@@ -2425,6 +2424,7 @@ export default [
     mm: 3,
     ss: 29,
     album: "Moonlit Lover",
+    related: ["moonlit-lover-piano"],
     dropbox: {
       id: "mlzci8p3iwhhiul"
     },
@@ -2455,6 +2455,7 @@ export default [
     mm: 4,
     ss: 17,
     album: "Moonlit Lover",
+    related: ["moonlit-lover"],
     dropbox: {
       id: "96125slijetbbg1"
     },
@@ -2598,7 +2599,7 @@ export default [
     person: ["Dimatis"],
     mm: 3,
     ss: 15,
-    cover: "vicious-mind",
+    art: "vicious-mind",
     dropbox: {
       id: "hgmjmpe18qturhu"
     },

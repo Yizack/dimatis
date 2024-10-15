@@ -13,10 +13,9 @@ declare global {
     mm: number;
     ss: number;
     album?: string;
-    cover?: string;
+    art?: string;
     label?: string;
-    instrumental?: string;
-    remix?: string;
+    related?: string[];
     dropbox: {
       id: string;
       rlkey?: string;

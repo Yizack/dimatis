@@ -41,7 +41,7 @@ useHead({
             <div class="col-12 col-lg-4 mb-3">
               <div class="item">
                 <NuxtLink class="text-decoration-none" :to="`/albums/${album.id}`">
-                  <img class="img-fluid scale-on-hover rounded-3" :src="`/images/${album.cover}.jpg`" :alt="`${album.artists} - ${album.title} (${album.type})`" width="300">
+                  <img class="img-fluid scale-on-hover rounded-3" :src="`/images/${album.art}.jpg`" :alt="`${album.artists} - ${album.title} (${album.type})`" width="300">
                   <p class="mt-2 mb-0">{{ album.title }} ({{ album.type }})</p>
                   <p class="text-secondary"><small>{{ album.artists }}</small></p>
                 </NuxtLink>

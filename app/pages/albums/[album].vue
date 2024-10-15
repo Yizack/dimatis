@@ -42,14 +42,14 @@ useSeoMeta({
   ogType: "website",
   ogTitle: `${album.value.title} (${album.value.type}) by ${album.value.artists}`,
   ogSiteName: SITE.name,
-  ogImage: `${SITE.url}/images/${album.value.cover}.jpg`,
+  ogImage: `${SITE.url}/images/${album.value.art}.jpg`,
   ogImageWidth: "500",
   ogImageHeight: "500",
   ogImageAlt: `${album.value.title} (${album.value.type}) by ${album.value.artists})`,
   ogDescription: album.value.description,
   // Twitter Card
   twitterCard: "summary",
-  twitterImage: `${SITE.url}/images/${album.value.cover}.jpg`,
+  twitterImage: `${SITE.url}/images/${album.value.art}.jpg`,
   twitterTitle: `${album.value.title} (${album.value.type}) by ${album.value.artists})`,
   twitterDescription: album.value.description,
   twitterSite: `@${SITE.twitter}`
@@ -71,8 +71,8 @@ useHead({
           <h3 class="text-secondary mb-0" itemprop="byArtist" itemscope itemtype="http://schema.org/MusicGroup"><span itemprop="name">{{ album.artists }}</span></h3>
         </div>
         <div class="text-center my-3">
-          <img :src="`/images/${album.cover}.jpg`" class="album-image rounded-3" itemprop="image" width="300" height="300">
-          <span class="album-image-blurry" :style="`background: url('/images/${album.cover}.jpg')`" />
+          <img :src="`/images/${album.art}.jpg`" class="album-image rounded-3" itemprop="image" width="300" height="300">
+          <span class="album-image-blurry" :style="`background: url('/images/${album.art}.jpg')`" />
         </div>
         <div class="row mx-0 my-3">
           <div class="col-12 info mx-0 p-0">
@@ -111,8 +111,8 @@ useHead({
                 <div class="tag mb-1" itemprop="datePublished" :content="album.date.split('T')[0]">{{ new Date(album.date).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" }) }}</div>
                 <div class="mb-0">Fanlink</div>
                 <div class="tag">
-                  <a class="d-flex align-items-center gap-2" :href="`${SITE.fanlinksUrl}/${album.cover}`" target="_blank">
-                    <span>{{ SITE.fanlinksDomain }}/{{ album.cover }}</span>
+                  <a class="d-flex align-items-center gap-2" :href="`${SITE.fanlinksUrl}/${album.art}`" target="_blank">
+                    <span>{{ SITE.fanlinksDomain }}/{{ album.art }}</span>
                     <Icon name="tabler:external-link" size="1.3rem" />
                   </a>
                 </div>
@@ -127,7 +127,7 @@ useHead({
               <div class="col-6 col-lg-3">
                 <div class="item">
                   <NuxtLink :to="`/albums/${more.id}`" class="text-decoration-none">
-                    <img class="img-fluid scale-on-hover rounded-3" :src="`/images/${more.cover}.jpg`" :alt="`${more.artists} - ${more.title} (${more.type})`">
+                    <img class="img-fluid scale-on-hover rounded-3" :src="`/images/${more.art}.jpg`" :alt="`${more.artists} - ${more.title} (${more.type})`">
                     <p class="mt-2 mb-0">{{ more.title }} ({{ more.type }})</p>
                     <p class="text-secondary"><small>{{ more.artists }}</small></p>
                   </NuxtLink>

@@ -7,7 +7,7 @@ declare global {
     title: string;
     description: string;
     tracks: string[];
-    cover: string;
+    art: string;
     type: string;
     date: TDate;
     person: string[];

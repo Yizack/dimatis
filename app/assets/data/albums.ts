@@ -8,7 +8,7 @@ export default [
       "traveler-in-time",
       "traveler-in-time-instrumental"
     ],
-    cover: "traveler-in-time",
+    art: "traveler-in-time",
     type: "Single",
     date: "2022-11-25T00:00:00.000",
     person: [
@@ -30,7 +30,7 @@ export default [
       "serenity",
       "unusual"
     ],
-    cover: "experiences-album",
+    art: "experiences-album",
     type: "Album",
     date: "2020-01-24T00:00:00.000",
     person: [
@@ -67,7 +67,7 @@ export default [
       "shades",
       "what-awaits-us"
     ],
-    cover: "floating-ep",
+    art: "floating-ep",
     type: "EP",
     date: "2019-01-28T00:00:00.000",
     person: [
@@ -101,7 +101,7 @@ export default [
       "moonlit-lover",
       "moonlit-lover-piano"
     ],
-    cover: "moonlit-lover",
+    art: "moonlit-lover",
     type: "Single",
     date: "2018-08-01T00:00:00.000",
     person: [
