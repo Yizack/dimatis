@@ -2067,7 +2067,7 @@ export default [
     },
     fanlink: {
       download: true,
-      dark: false,
+      dark: true,
       links: {
         soundcloud: "https://soundcloud.com/dimatis/fantasy-dimatis-remix",
         youtube: "https://youtu.be/afP4aEV66Nw"
