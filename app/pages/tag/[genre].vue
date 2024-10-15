@@ -74,7 +74,7 @@ useHead({
             <div class="col-12 col-lg-4">
               <div class="item">
                 <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{ width: '300px', height: '385px' }" :track="track" :param="track.id" />
-                <NuxtLink :to="`/music/${track.id}`">
+                <NuxtLink :to="`/tracks/${track.id}`">
                   <p class="mb-0">{{ track.title }}</p>
                   <p><small>{{ track.artists }}</small></p>
                 </NuxtLink>
@@ -85,7 +85,7 @@ useHead({
             <div v-if="showMore" class="col-12 col-lg-4">
               <div class="item">
                 <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{ width: '300px', height: '385px' }" :track="track" :param="track.id" />
-                <NuxtLink :to="`/music/${track.id}`">
+                <NuxtLink :to="`/tracks/${track.id}`">
                   <p class="mb-0">{{ track.title }}</p>
                   <p><small>{{ track.artists }}</small></p>
                 </NuxtLink>

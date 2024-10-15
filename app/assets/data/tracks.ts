@@ -85,7 +85,7 @@ export default [
       socials: [
         {
           name: "Legado: A decade of Dimatis",
-          link: "https://dimatis.yizack.com/shop/legado"
+          link: "https://dimatis.music/shop/legado"
         }
       ]
     }],

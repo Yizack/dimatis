@@ -49,7 +49,7 @@ useSeoMeta({
                   <Icon name="tabler:shopping-bag-plus" size="1.3rem" />
                   <span>Buy</span>
                 </a>
-                <a class="btn btn-light d-flex align-items-center gap-2 px-4 text-dark text-decoration-none" href="/music/legado" target="_blank">
+                <a class="btn btn-light d-flex align-items-center gap-2 px-4 text-dark text-decoration-none" href="/tracks/legado" target="_blank">
                   <Icon name="tabler:player-play-filled" size="1rem" />
                   <span>Demo</span>
                 </a>

@@ -76,13 +76,13 @@ watch(filters, () => {
 }, { deep: true });
 
 useSeoMeta({
-  title: `Music | ${SITE.name}`,
+  title: `Tracks | ${SITE.name}`,
   description: isBetweenYears.value ? `All ${SITE.name} releases from ${filters.value.year}` : `All ${SITE.name} releases`,
   keywords: "discography, releases, singles, remixes, songs, listen",
   // Protocolo Open Graph
-  ogUrl: `${SITE.url}/music`,
+  ogUrl: `${SITE.url}/tracks`,
   ogType: "website",
-  ogTitle: isBetweenYears.value ? `Music | ${SITE.name} (${filters.value.year})` : `Music | ${SITE.name}`,
+  ogTitle: isBetweenYears.value ? `Tracks | ${SITE.name} (${filters.value.year})` : `Tracks | ${SITE.name}`,
   ogSiteName: SITE.name,
   ogDescription: isBetweenYears.value ? `All ${SITE.name} releases from ${filters.value.year}` : `All ${SITE.name} releases`,
   ogImage: `${SITE.url}/${isBetweenYears.value ? `images/playlists/d${filters.value.year}.jpg` : SITE.cover}`,
@@ -92,23 +92,23 @@ useSeoMeta({
   // Protocolo Twitter
   twitterCard: "summary",
   twitterSite: `@${SITE.twitter}`,
-  twitterTitle: isBetweenYears.value ? `Music | ${SITE.name} (${filters.value.year})` : `Music | ${SITE.name}`,
+  twitterTitle: isBetweenYears.value ? `Tracks | ${SITE.name} (${filters.value.year})` : `Tracks | ${SITE.name}`,
   twitterDescription: isBetweenYears.value ? `All ${SITE.name} releases from ${filters.value.year}` : `All ${SITE.name} releases`,
   twitterImage: `${SITE.url}/${isBetweenYears.value ? `images/playlists/d${filters.value.year}.jpg` : SITE.logo}`
 });
 
 useHead({
   link: [
-    { rel: "canonical", href: `${SITE.url}/music` }
+    { rel: "canonical", href: `${SITE.url}/tracks` }
   ]
 });
 </script>
 
 <template>
   <main>
-    <section id="music" class="bg-body-secondary">
+    <section id="tracks" class="bg-body-secondary">
       <div class="container py-lg-5 py-4 text-center">
-        <h3 class="text-uppercase">Music</h3>
+        <h3 class="text-uppercase">Tracks</h3>
         <p class="mb-1">Listen to all my music in one place</p>
         <div class="fst-italic">
           <p v-if="tracksFiltered.length">{{ tracksFiltered.length }} {{ tracksFiltered.length > 1 ? 'tracks' : 'track' }} found</p>
@@ -155,7 +155,7 @@ useHead({
             <div v-for="track of tracksArray" :key="track.id" class="col-12 col-lg-4 mb-3">
               <div class="item">
                 <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{ width: '300px', height: '385px' }" :track="track" :param="track.cover ? track.cover : track.id" />
-                <NuxtLink class="text-decoration-none" :to="`/music/${track.id}`">
+                <NuxtLink class="text-decoration-none" :to="`/tracks/${track.id}`">
                   <p class="mb-0">{{ track.title }}</p>
                   <p class="text-secondary"><small>{{ track.artists }}</small></p>
                 </NuxtLink>

@@ -1,10 +1,12 @@
-const protocol = "https";
-const domain = "dimatis.yizack.com";
-const fanlinkDomain = "yizack.com";
+const domain = "dimatis.music";
+const fanlinksDomain = "go.dimatis.music";
 
-const SITE = {
+export const SITE = {
   name: "Dimatis",
   domain,
+  url: `https://${domain}`,
+  fanlinksDomain,
+  fanlinksUrl: `https://${fanlinksDomain}`,
   person: {
     fullname: "Yizack Rangel",
     birthdate: "1998-06-15",
@@ -17,15 +19,10 @@ const SITE = {
       name: "Panamá"
     }
   },
-  protocol,
-  url: `${protocol}://${domain}`,
-  fanlinkDomain,
-  fanlinkUrl: `${protocol}://${fanlinkDomain}`,
   meta_description: "Dimatis is a Panamanian musician and producer.",
   description: "Panamanian musician and producer",
   keywords: "dimatis, website, producer, dj, artist, panama, yizack, musician",
-  email: "dimatismusic@gmail.com",
-  workEmail: "dimatis@yizack.com",
+  email: "contact@dimatis.music",
   logo: "images/avatars/sq-logo.jpg",
   logoNavbar: "images/logos/logo-navbar.svg",
   image: "images/avatars/bio.jpg",
@@ -52,9 +49,5 @@ const SITE = {
     itunes: "https://music.apple.com/artist/dimatis/1139797073?app=itunes&ls=1",
     bandcamp: "https://dimatis.bandcamp.com/",
     amazon: "https://music.amazon.com/artists/B01JLNZO70/dimatis"
-  },
-  merch: "https://merch.streamelements.com/dimatis",
-  fanlinks: `${protocol}://${fanlinkDomain}/fanlinks`
+  }
 };
-
-export { SITE };

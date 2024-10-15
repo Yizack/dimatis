@@ -1,7 +1,7 @@
 <script setup lang="ts">
 definePageMeta({ layout: "site" });
 
-const param = ref(useRoute("music-track").params.track);
+const param = ref(useRoute("tracks-track").params.track);
 const track = computed(() => tracks.find(track => track.id === param.value)!);
 
 if (!track.value) {
@@ -23,12 +23,12 @@ const moreTracks = computed(() => {
   }, [] as DimatisTrack[]);
 });
 
-const musicSchemaOrg = computed(() => {
+const tracksSchemaOrg = computed(() => {
   const schema = {
     "@context": "http://schema.org",
     "@type": "MusicRecording",
     "name": track.value.title,
-    "url": `${SITE.url}/music/${param.value}`,
+    "url": `${SITE.url}/tracks/${param.value}`,
     "image": {
       "@type": "ImageObject",
       "url": `${SITE.url}/images/${"cover" in track.value ? track.value.cover : param.value}.jpg`
@@ -44,7 +44,7 @@ const musicSchemaOrg = computed(() => {
     schema.inAlbum.push({
       "@type": "MusicAlbum",
       "name": track.value.album,
-      "url": `${SITE.url}/album/${track.value.album?.replace(/\s+/g, "-").toLowerCase()}`
+      "url": `${SITE.url}/albums/${track.value.album?.replace(/\s+/g, "-").toLowerCase()}`
     });
   }
 
@@ -59,23 +59,23 @@ const musicSchemaOrg = computed(() => {
 });
 
 useSeoMeta({
-  title: `${track.value.artists} - ${track.value.title}`,
+  title: `${track.value.title} by ${track.value.artists}`,
   description: track.value.description,
   keywords: `release, ${track.value.title}, ${track.value.genre}, play, stream, download, fanlink`,
   // Protocolo Open Graph
-  ogUrl: `${SITE.url}/music/${param.value}`,
+  ogUrl: `${SITE.url}/tracks/${param.value}`,
   ogType: "website",
-  ogTitle: `${track.value.artists} - ${track.value.title}`,
+  ogTitle: `${track.value.title} by ${track.value.artists}`,
   ogSiteName: SITE.name,
   ogImage: `${SITE.url}/images/${"cover" in track.value ? track.value.cover : param.value}.jpg`,
   ogImageWidth: "500",
   ogImageHeight: "500",
-  ogImageAlt: `${track.value.artists} - ${track.value.title}`,
+  ogImageAlt: `${track.value.title} by ${track.value.artists}`,
   ogDescription: track.value.description,
   // Twitter Card
   twitterCard: "summary",
   twitterImage: `${SITE.url}/images/${"cover" in track.value ? track.value.cover : param.value}.jpg`,
-  twitterTitle: `${track.value.artists} - ${track.value.title}`,
+  twitterTitle: `${track.value.title} by ${track.value.artists}`,
   twitterDescription: track.value.description,
   twitterSite: `@${SITE.twitter}`
 });
@@ -83,10 +83,10 @@ useSeoMeta({
 useHead({
   script: [
     // Schema.org
-    { type: "application/ld+json", children: JSON.stringify(musicSchemaOrg.value) }
+    { type: "application/ld+json", children: JSON.stringify(tracksSchemaOrg.value) }
   ],
   link: [
-    { rel: "canonical", href: `${SITE.url}/music/${param.value}` }
+    { rel: "canonical", href: `${SITE.url}/tracks/${param.value}` }
   ]
 });
 
@@ -152,7 +152,7 @@ if (existLyrics) {
               <div class="tag mb-2"><NuxtLink :to="`/tag/${genreURL}`">{{ track.genre }}</NuxtLink></div>
               <template v-if="track.album">
                 <div class="mb-0">Album</div>
-                <div class="tag mb-2"><NuxtLink :to="`/album/${track.album.replace(/\s+/g, '-').toLowerCase()}`">{{ track.album }}</NuxtLink></div>
+                <div class="tag mb-2"><NuxtLink :to="`/albums/${track.album.replace(/\s+/g, '-').toLowerCase()}`">{{ track.album }}</NuxtLink></div>
               </template>
               <div class="mb-0">Release date</div>
               <div class="tag mb-2">{{ new Date(track.date).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" }) }}</div>
@@ -164,8 +164,8 @@ if (existLyrics) {
               </template>
               <div class="mb-0">Fanlink</div>
               <div class="tag">
-                <a class="d-flex align-items-center gap-2" :href="`${SITE.fanlinkUrl}/${param}`" target="_blank">
-                  <span>{{ SITE.fanlinkDomain }}/{{ param }}</span>
+                <a class="d-flex align-items-center gap-2" :href="`${SITE.fanlinksUrl}/${param}`" target="_blank">
+                  <span>{{ SITE.fanlinksDomain }}/{{ param }}</span>
                   <Icon name="tabler:external-link" size="1.3rem" />
                 </a>
               </div>
@@ -177,7 +177,7 @@ if (existLyrics) {
           <div class="row gallery text-center">
             <template v-for="more in moreTracks" :key="more.id">
               <div class="col-6 col-lg-3">
-                <NuxtLink :to="`/music/${more.id}`" class="text-decoration-none">
+                <NuxtLink :to="`/tracks/${more.id}`" class="text-decoration-none">
                   <img class="img-fluid scale-on-hover rounded-3" :src="`/images/${more.cover ? more.cover : more.id}.jpg`" :alt="`${more.artists} - ${more.title}`">
                   <p class="mt-2 mb-0">{{ more.title }}</p>
                   <p class="text-secondary"><small>{{ more.artists }}</small></p>

@@ -6,8 +6,8 @@ defineProps({
 const scrolled = ref(false);
 const maxScroll = 50;
 
-const activeMusicPath = computed(() => useRoute().path.includes("/music"));
-const activeAlbumPath = computed(() => useRoute().path.includes("/album"));
+const isTracksPath = computed(() => useRoute().path.includes("/tracks"));
+const isAlbumsPath = computed(() => useRoute().path.includes("/albums"));
 
 const getScrolled = () => (document.body.scrollTop > maxScroll || document.documentElement.scrollTop > maxScroll);
 
@@ -41,10 +41,10 @@ onMounted(() => {
               <NuxtLink class="nav-link" to="/">Home</NuxtLink>
             </li>
             <li class="nav-item" role="menuitem" data-bs-dismiss="offcanvas">
-              <NuxtLink class="nav-link" :class="{ active: activeMusicPath }" to="/music">Music</NuxtLink>
+              <NuxtLink class="nav-link" :class="{ active: isTracksPath }" to="/tracks">Tracks</NuxtLink>
             </li>
             <li class="nav-item" role="menuitem" data-bs-dismiss="offcanvas">
-              <NuxtLink class="nav-link" :class="{ active: activeAlbumPath }" to="/album">Albums</NuxtLink>
+              <NuxtLink class="nav-link" :class="{ active: isAlbumsPath }" to="/albums">Albums</NuxtLink>
             </li>
             <li class="nav-item nav-hash" role="menuitem" data-bs-dismiss="offcanvas">
               <NuxtLink class="nav-link" to="/#about">About</NuxtLink>
@@ -55,7 +55,7 @@ onMounted(() => {
             <li class="nav-item" role="menuitem" data-bs-dismiss="offcanvas">
               <NuxtLink class="nav-link" to="/branding">Branding</NuxtLink>
             </li>
-            <!-- <li class="nav-item" role="menuitem"><a class="nav-link" :href="SITE.fanlinks" target="_blank">Fanlinks</a></li> -->
+            <!-- <li class="nav-item" role="menuitem"><a class="nav-link" :href="SITE.fanlinksUrl" target="_blank">Fanlinks</a></li> -->
             <!-- <li class="nav-item" role="menuitem"><a class="nav-link" :href="SITE.merch" target="_blank">Merch</a></li> -->
           </ul>
         </div>
