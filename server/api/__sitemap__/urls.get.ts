@@ -5,11 +5,11 @@ export default defineSitemapEventHandler(() => {
   return [
     { loc: "/", priority: 1 },
     ...tracks.map(t => asSitemapUrl({
-      loc: "music/" + t.id,
+      loc: "tracks/" + t.id,
       priority: 0.8
     })),
     ...albums.map(a => asSitemapUrl({
-      loc: "album/" + a.id,
+      loc: "albums/" + a.id,
       priority: 0.8
     }))
   ];
