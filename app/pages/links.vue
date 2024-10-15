@@ -1,20 +1,20 @@
 <script setup lang="ts">
 const { $bootstrap } = useNuxtApp();
 
-const releasepop = ref<{ $el: HTMLElement }>();
+const releasepop = ref<HTMLElement>();
 const releasepop_content = ref<HTMLElement>();
 
 const page = ref(tracks[0]!);
 
 onBeforeUnmount(() => {
   if (!releasepop.value) return;
-  $bootstrap.hidePopover(releasepop.value.$el);
+  $bootstrap.hidePopover(releasepop.value);
 });
 
 onMounted(() => {
   if (!releasepop.value || !releasepop_content.value) return;
 
-  $bootstrap.popover(releasepop.value.$el, {
+  $bootstrap.popover(releasepop.value, {
     container: "body",
     content: releasepop_content.value.innerHTML,
     html: true,
