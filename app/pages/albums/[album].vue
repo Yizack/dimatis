@@ -34,7 +34,7 @@ const goTrack = (track: string) => {
 };
 
 useSeoMeta({
-  title: `${album.value.title} (${album.value.type}) by ${album.value.artists})`,
+  title: `${album.value.title} (${album.value.type}) by ${album.value.artists}`,
   description: album.value.description,
   keywords: `album, ${album.value.title}, fanlink, download`,
   // Protocolo Open Graph
@@ -45,12 +45,12 @@ useSeoMeta({
   ogImage: `${SITE.url}/images/${album.value.art}.jpg`,
   ogImageWidth: "500",
   ogImageHeight: "500",
-  ogImageAlt: `${album.value.title} (${album.value.type}) by ${album.value.artists})`,
+  ogImageAlt: `${album.value.title} (${album.value.type}) by ${album.value.artists}`,
   ogDescription: album.value.description,
   // Twitter Card
   twitterCard: "summary",
   twitterImage: `${SITE.url}/images/${album.value.art}.jpg`,
-  twitterTitle: `${album.value.title} (${album.value.type}) by ${album.value.artists})`,
+  twitterTitle: `${album.value.title} (${album.value.type}) by ${album.value.artists}`,
   twitterDescription: album.value.description,
   twitterSite: `@${SITE.twitter}`
 });
