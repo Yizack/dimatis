@@ -2,7 +2,7 @@
 definePageMeta({ layout: "site" });
 
 const param = ref(useRoute("albums-album").params.album);
-const album = computed(() => albums.find(a => a.id === param.value)!);
+const album = computed<DimatisAlbum>(() => albums.find(a => a.id === param.value)!);
 
 if (!album.value) {
   throw createError({
@@ -30,7 +30,7 @@ const getAlbumTracks = (album: DimatisAlbum) => {
 };
 
 const goTrack = (track: string) => {
-  useRouter().push(`/music/${track}`);
+  navigateTo(`/tracks/${track}`);
 };
 
 useSeoMeta({
@@ -90,9 +90,9 @@ useHead({
                 <template v-for="(track, index) of getAlbumTracks(album)" :key="track">
                   <tr role="button" :itemprop="track.id" itemscope itemtype="http://www.schema.org/MusicRecording" @click="goTrack(track.id)">
                     <td itemprop="position">{{ index + 1 }}</td>
-                    <td itemprop="url" :content="`${SITE.url}/music/${track}`">{{ track.artists }}</td>
+                    <td itemprop="url" :content="`${SITE.url}/tracks/${track.id}`">{{ track.artists }}</td>
                     <td itemprop="name">{{ track.title }}</td>
-                    <td itemprop="duration" :content="`PT${'hh' in track ? track.hh : 0}H${'mm' in track ? track.mm : 0}M${'ss' in track ? track.ss : 0}S`">{{ track.mm }}:{{ String(track.ss).padStart(2, "0") }}</td>
+                    <td itemprop="duration" :content="`PT${track.hh || 0}H${track.mm || 0}M${track.ss || 0}S`">{{ track.mm }}:{{ String(track.ss).padStart(2, "0") }}</td>
                   </tr>
                 </template>
               </tbody>
@@ -108,7 +108,7 @@ useHead({
                 <div class="mb-0">Type</div>
                 <div class="tag mb-1">{{ album.type }}</div>
                 <div class="mb-0">Release date</div>
-                <div class="tag mb-1" itemprop="datePublished" :content="album.date.split('T')[0]">{{ new Date(album.date).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" }) }}</div>
+                <div class="tag mb-1" itemprop="datePublished" :content="album.date.split('T')[0]">{{ formatDate(album.date) }}</div>
                 <div class="mb-0">Fanlink</div>
                 <div class="tag">
                   <a class="d-flex align-items-center gap-2" :href="`${SITE.fanlinksUrl}/${album.art}`" target="_blank">
@@ -123,7 +123,7 @@ useHead({
         <div id="more-albums" class="pt-3">
           <h3 class="text-center">More <NuxtLink class="tag" href="/albums">Albums</NuxtLink></h3>
           <div class="row gallery text-center">
-            <template v-for="more in moreAlbums" :key="more.id">
+            <template v-for="more of moreAlbums" :key="more.id">
               <div class="col-6 col-lg-3">
                 <div class="item">
                   <NuxtLink :to="`/albums/${more.id}`" class="text-decoration-none">

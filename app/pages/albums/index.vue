@@ -37,7 +37,7 @@ useHead({
         <h3 class="text-uppercase">Albums</h3>
         <p class="mb-0">Check all my albums</p>
         <div class="row my-4">
-          <template v-for="album in albums" :key="album.id">
+          <template v-for="album of albums" :key="album.id">
             <div class="col-12 col-lg-4 mb-3">
               <div class="item">
                 <NuxtLink class="text-decoration-none" :to="`/albums/${album.id}`">

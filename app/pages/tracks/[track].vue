@@ -2,7 +2,7 @@
 definePageMeta({ layout: "site" });
 
 const param = ref(useRoute("tracks-track").params.track);
-const track = computed(() => tracks.find(track => track.id === param.value)!);
+const track = computed<DimatisTrack>(() => tracks.find(track => track.id === param.value)!);
 
 if (!track.value) {
   throw createError({
@@ -34,7 +34,7 @@ const tracksSchemaOrg = computed(() => {
       "url": `${SITE.url}/images/${track.value.art || param.value}.jpg`
     },
     "genre": track.value.genre,
-    "duration": `PT${"hh" in track.value ? track.value.hh : 0}H${"mm" in track.value ? track.value.mm : 0}M${"ss" in track.value ? track.value.ss : 0}S`,
+    "duration": `PT${track.value.hh || 0}H${track.value.mm || 0}M${track.value.ss || 0}S`,
     "datePublished": track.value.date.split("T")[0],
     "inAlbum": [] as { "@type": string, "name"?: string, "url": string }[],
     "byArtist": [] as { "@type": string, "name"?: string }[]
@@ -155,7 +155,7 @@ if (existLyrics) {
                 <div class="tag mb-2"><NuxtLink :to="`/albums/${track.album.replace(/\s+/g, '-').toLowerCase()}`">{{ track.album }}</NuxtLink></div>
               </template>
               <div class="mb-0">Release date</div>
-              <div class="tag mb-2">{{ new Date(track.date).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" }) }}</div>
+              <div class="tag mb-2">{{ formatDate(track.date) }}</div>
               <div class="mb-0">Duration</div>
               <div class="tag mb-2">{{ track.mm }}:{{ String(track.ss).padStart(2, "0") }}</div>
               <template v-if="track.label">
@@ -175,7 +175,7 @@ if (existLyrics) {
         <div v-if="moreTracks.length" id="more-tracks" class="pt-3">
           <h3 class="text-center">More <NuxtLink class="tag" :to="`/tag/${genreURL}`">{{ track.genre }}</NuxtLink> music</h3>
           <div class="row gallery text-center">
-            <template v-for="more in moreTracks" :key="more.id">
+            <template v-for="more of moreTracks" :key="more.id">
               <div class="col-6 col-lg-3">
                 <NuxtLink :to="`/tracks/${more.id}`" class="text-decoration-none">
                   <img class="img-fluid scale-on-hover rounded-3" :src="`/images/${more.art || more.id}.jpg`" :alt="`${more.artists} - ${more.title}`">

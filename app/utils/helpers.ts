@@ -18,3 +18,11 @@ export const genres = [
 export const getGenreNameFromURI = (id: string) => {
   return id.replace(/-/g, " ").replace(/\b\w/g, l => l.toUpperCase());
 };
+
+export const formatDate = (date: string) => {
+  return new Date(date).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "short",
+    day: "numeric"
+  });
+};
