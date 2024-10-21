@@ -1,3 +1,5 @@
+type InstagramFields = "username" | "permalink" | "timestamp" | "caption" | "media_url" | "media_type" | "thumbnail_url";
+
 export class InstagramFeed {
   api: string;
   userId: string;
@@ -17,8 +19,8 @@ export class InstagramFeed {
     return response;
   }
 
-  async getFeed () {
-    const query = new URLSearchParams({ fields: "username,permalink,timestamp,caption,media_url,media_type,thumbnail_url", access_token: this.accessToken });
+  async getFeed (fields: InstagramFields[]) {
+    const query = new URLSearchParams({ fields: fields.join(), access_token: this.accessToken });
     const response = await $fetch<{ data: InstagramPost[] }>(`${this.api}/${this.userId}/media?${query}`).catch((e) => {
       console.warn(e);
       throw createError({ statusCode: ErrorCode.INTERNAL_SERVER_ERROR, message: "Failed to fetch instagram feed" });

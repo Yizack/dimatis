@@ -1,7 +1,14 @@
 <script setup lang="ts">
 const { $Glide } = useNuxtApp();
 
-const { data: feed } = await useFetch<InstagramPost[]>("/api/instagram/feed");
+const { data: cachedFeed } = useNuxtData<InstagramPost[]>("instagram-feed");
+const { data: feed, execute } = await useFetch<InstagramPost[]>("/api/instagram/feed", {
+  key: "instagram-feed",
+  immediate: false,
+  default: () => cachedFeed.value || []
+});
+
+if (!feed.value.length) await execute();
 
 onMounted(async () => {
   new $Glide(".glide", {
@@ -44,7 +51,7 @@ const playVideo = (event: MouseEvent) => {
           <div class="glide">
             <div class="glide__track" data-glide-el="track">
               <ul class="glide__slides" :class="{ 'd-none': !feed }">
-                <li v-for="(post, index) of feed" :key="index" class="glide__slide">
+                <li v-for="post of feed" :key="post.id" class="glide__slide">
                   <div class="instagram-wrapper bg-body-tertiary rounded-3">
                     <blockquote class="instagram-media mx-auto" style="border:0; border-radius:3px; margin: auto; max-width:540px; min-width:326px; padding:0; width:100%;">
                       <a :href="`${post.permalink}?utm_source=ig_embed&amp;utm_campaign=loading`" style="text-decoration:none;" target="_blank">

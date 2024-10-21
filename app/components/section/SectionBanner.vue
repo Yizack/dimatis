@@ -1,5 +1,12 @@
 <script setup lang="ts">
-const { data: followers } = await useFetch("/api/followers");
+const { data: cachedFollowers } = useNuxtData("followers");
+const { data: followers, execute } = await useFetch("/api/followers", {
+  key: "followers",
+  immediate: false,
+  default: () => cachedFollowers.value || null
+});
+
+if (!followers.value) await execute();
 </script>
 
 <template>
