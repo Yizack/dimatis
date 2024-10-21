@@ -59,7 +59,7 @@ const latestTracks = tracks.reduce((acc, t) => {
         </template>
       </div>
       <div class="text-uppercase">
-        <NuxtLink class="btn btn-outline-white rounded-pill text-decoration-none" role="button" to="/music">More music</NuxtLink>
+        <NuxtLink class="btn btn-outline-white rounded-pill text-decoration-none" role="button" to="/tracks">More music</NuxtLink>
       </div>
     </div>
   </section>
