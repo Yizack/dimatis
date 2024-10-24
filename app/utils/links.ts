@@ -1,5 +1,5 @@
 export const LINKS = {
-  background: "/images/backgrounds/fanlinks.jpg",
+  background: "/images/backgrounds/fanlinks.webp",
   tree: [
     {
       id: "useful-links",
