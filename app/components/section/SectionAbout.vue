@@ -6,7 +6,7 @@ const showFullAbout = ref(false);
   <section id="about" class="about position-relative py-lg-5 py-4">
     <div class="container position-relative z-1">
       <div class="pb-3">
-        <h3 class="text-center text-uppercase">About</h3>
+        <p class="text-center text-uppercase h3">About</p>
       </div>
       <div class="row">
         <div class="col-lg-8">

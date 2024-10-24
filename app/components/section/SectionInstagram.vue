@@ -55,7 +55,7 @@ const playVideo = (event: MouseEvent) => {
                   <div class="instagram-wrapper bg-body-tertiary rounded-3">
                     <blockquote class="instagram-media mx-auto" style="border:0; border-radius:3px; margin: auto; max-width:540px; min-width:326px; padding:0; width:100%;">
                       <a :href="`${post.permalink}?utm_source=ig_embed&amp;utm_campaign=loading`" style="text-decoration:none;" target="_blank">
-                        <img v-if="post.media_type !== 'VIDEO' && post.media_type !== 'REELS'" class="w-100" :src="post.media_url">
+                        <img v-if="post.media_type !== 'VIDEO' && post.media_type !== 'REELS'" class="w-100" :src="post.media_url" :alt="`Instagram ${post.media_type} (${post.id})`">
                         <div v-else class="position-relative">
                           <video class="w-100" playsinline disablePictureInPicture controlsList="noplaybackrate nodownload" :poster="post.thumbnail_url" @click="playVideo">
                             <source :src="post.media_url" type="video/mp4">

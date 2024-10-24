@@ -25,7 +25,7 @@ onMounted(() => {
       <button class="navbar-toggler border-0 rounded-pill" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon" />
       </button>
-      <NuxtLink class="navbar-brand text-decoration-none me-auto ms-2 ms-lg-0" to="/">
+      <NuxtLink class="navbar-brand text-decoration-none me-auto ms-2 ms-lg-0" to="/" aria-label="Dimatis home">
         <IconLogoText width="151" height="30" />
       </NuxtLink>
       <div id="offcanvasNavbar" class="offcanvas offcanvas-start" tabindex="-1" aria-labelledby="offcanvasNavbarLabel">
