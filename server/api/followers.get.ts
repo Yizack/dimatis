@@ -8,4 +8,10 @@ export default defineCachedEventHandler(async (event) => {
   return {
     spotify: spotifyArtist.followers.total
   };
-}, { maxAge: 86400 });
+}, {
+  group: "api",
+  name: "followers",
+  getKey: () => "all",
+  swr: true,
+  maxAge: 86400
+});

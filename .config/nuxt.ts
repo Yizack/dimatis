@@ -57,7 +57,7 @@ export default defineNuxtConfig({
     }
   },
 
-  hub: { database: true },
+  hub: { database: true, cache: true },
 
   icon: {
     mode: "svg",

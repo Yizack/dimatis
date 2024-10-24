@@ -9,4 +9,10 @@ export default defineCachedEventHandler(async (event) => {
 
   setResponseHeader(event, "Content-Type", "text/plain");
   return normalizeLyrics(lyrics.toString());
-}, { maxAge: 86400 });
+}, {
+  group: "api",
+  name: "lyrics",
+  getKey: event => getQuery(event).track?.toString() as string,
+  swr: true,
+  maxAge: 86400
+});

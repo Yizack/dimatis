@@ -5,4 +5,10 @@ export default defineCachedEventHandler(async (event) => {
   const feed = await API.getFeed(["permalink", "timestamp", "caption", "media_url", "media_type", "thumbnail_url"]);
 
   return feed;
-}, { maxAge: 86400 });
+}, {
+  group: "api",
+  name: "instagram",
+  getKey: () => "feed",
+  swr: true,
+  maxAge: 86400
+});
