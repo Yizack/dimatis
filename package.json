@@ -18,8 +18,8 @@
   "devDependencies": {
     "@glidejs/glide": "^3.6.2",
     "@nuxt/eslint": "^0.6.0",
-    "@nuxt/icon": "^1.5.6",
-    "@nuxthub/core": "^0.7.36",
+    "@nuxt/icon": "^1.5.7",
+    "@nuxthub/core": "^0.7.37",
     "@nuxtjs/color-mode": "^3.5.2",
     "@nuxtjs/sitemap": "^6.1.2",
     "@types/bootstrap": "^5.2.10",
