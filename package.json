@@ -18,8 +18,8 @@
   "devDependencies": {
     "@glidejs/glide": "^3.6.2",
     "@nuxt/eslint": "^0.6.0",
-    "@nuxt/icon": "^1.5.7",
-    "@nuxthub/core": "^0.7.37",
+    "@nuxt/icon": "^1.5.8",
+    "@nuxthub/core": "^0.8.2",
     "@nuxtjs/color-mode": "^3.5.2",
     "@nuxtjs/sitemap": "^6.1.2",
     "@types/bootstrap": "^5.2.10",
@@ -34,8 +34,8 @@
     "sass": "^1.80.4",
     "stylelint": "^16.10.0",
     "stylelint-config-standard-scss": "^13.1.0",
-    "tsx": "^4.19.1",
-    "vue-tsc": "^2.1.6",
+    "tsx": "^4.19.2",
+    "vue-tsc": "^2.1.8",
     "wrangler": "^3.83.0",
     "zod": "^3.23.8"
   },
