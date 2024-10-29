@@ -4,6 +4,8 @@ export default defineNuxtConfig({
   future: { compatibilityVersion: 4 },
   app: {
     head: {
+      charset: "utf-8",
+      viewport: "width=device-width, initial-scale=1",
       htmlAttrs: {
         lang: "en"
       },
@@ -11,8 +13,6 @@ export default defineNuxtConfig({
         class: "bg-dark text-white"
       },
       meta: [
-        { charset: "utf-8" },
-        { name: "viewport", content: "width=device-width, initial-scale=1" },
         { name: "robots", content: "index, follow" },
         { name: "theme-color", content: "#151515" },
         { name: "msapplication-TileColor", content: "#da532c" },

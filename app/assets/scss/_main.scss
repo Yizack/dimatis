@@ -1,12 +1,14 @@
 @font-face {
-  font-family: Ebrima;
+  font-family: ebrima;
   src: url("/fonts/Ebrima.woff2") format("woff2");
+  font-display: swap;
 }
 
 @font-face {
-  font-family: Ebrima;
+  font-family: ebrima;
   font-weight: 500;
   src: url("/fonts/EbrimaBd.woff2") format("woff2");
+  font-display: swap;
 }
 
 $white: #f7f7f7;
@@ -16,6 +18,7 @@ $secondary-text: #a3a5a7;
 $body: #151515;
 
 :root {
+  --bs-body-font-family: ebrima, sans-serif;
   --dark-color: #{$body};
   --bs-body-bg: #{$body};
   --bs-body-bg-rgb: #{to-rgb($body)};
@@ -34,8 +37,6 @@ $body: #151515;
 }
 
 body {
-  font-family: Ebrima, sans-serif;
-  text-rendering: optimizelegibility;
   letter-spacing: 0.2px;
   background-color: var(--dark-color)
 }
