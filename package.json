@@ -17,9 +17,9 @@
   },
   "devDependencies": {
     "@glidejs/glide": "^3.6.2",
-    "@nuxt/eslint": "^0.6.0",
-    "@nuxt/icon": "^1.5.8",
-    "@nuxthub/core": "^0.8.2",
+    "@nuxt/eslint": "^0.6.1",
+    "@nuxt/icon": "^1.6.1",
+    "@nuxthub/core": "^0.8.3",
     "@nuxtjs/color-mode": "^3.5.2",
     "@nuxtjs/sitemap": "^6.1.2",
     "@types/bootstrap": "^5.2.10",
@@ -39,5 +39,5 @@
     "wrangler": "^3.83.0",
     "zod": "^3.23.8"
   },
-  "packageManager": "pnpm@9.12.2"
+  "packageManager": "pnpm@9.12.3"
 }
