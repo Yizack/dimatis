@@ -6,6 +6,7 @@ export const LINKS = {
       title: "Useful Links",
       content: [
         { title: "Legado: A decade of Dimatis Sample Pack", url: "/shop/legado" },
+        { title: "REMIX CONTEST: The Songs of Yesterday", url: "https://drive.google.com/file/d/1YG_w5h8T25X1hi__zv6yKKWQUEW8oSB0/view" },
         { title: "Melodic Dubstep playlist", url: "https://open.spotify.com/playlist/6Qu7co7czjjXwSEuCyCOAD", code: "spotify" }
       ]
     },
