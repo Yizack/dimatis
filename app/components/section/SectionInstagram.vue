@@ -1,14 +1,9 @@
 <script setup lang="ts">
 const { $Glide } = useNuxtApp();
 
-const { data: cachedFeed } = useNuxtData<InstagramPost[]>("instagram-feed");
-const { data: feed, execute } = await useFetch<InstagramPost[]>("/api/instagram/feed", {
-  key: "instagram-feed",
-  immediate: false,
-  default: () => cachedFeed.value || []
+const { data: feed } = await useFetch<InstagramPost[]>("/api/instagram/feed", {
+  getCachedData: (key, nuxtApp) => nuxtApp.payload.data[key]
 });
-
-if (!feed.value.length) await execute();
 
 onMounted(async () => {
   new $Glide(".glide", {

@@ -1,12 +1,7 @@
 <script setup lang="ts">
-const { data: cachedFollowers } = useNuxtData("followers");
-const { data: followers, execute } = await useFetch("/api/followers", {
-  key: "followers",
-  immediate: false,
-  default: () => cachedFollowers.value || null
+const { data: followers } = await useFetch("/api/followers", {
+  getCachedData: (key, nuxtApp) => nuxtApp.payload.data[key]
 });
-
-if (!followers.value) await execute();
 </script>
 
 <template>

@@ -100,7 +100,8 @@ const showFullLyrics = ref<boolean>(false);
 
 if (existLyrics) {
   const { data: lyricsData } = await useFetch("/api/lyrics", {
-    params: { track: param.value }
+    params: { track: param.value },
+    getCachedData: (key, nuxtApp) => nuxtApp.payload.data[key]
   });
   lyrics.value = lyricsData.value;
   showFullLyrics.value = lyrics.value ? (lyrics.value.match(/\n/g)?.length || 0) < 6 : true;
