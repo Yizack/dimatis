@@ -1,5 +1,39 @@
 export default [
   {
+    id: "detach",
+    artists: "Dimatis",
+    title: "Detach",
+    description: "Currently, I'm going through so many life changes, and in this song I tried to express the intense feelings that come with major life changes. Even when some of these are positive, too many sudden changes can feel overwhelming. I wanted this track to express the difficult decisions we make, the things we leave behind, and the chaotic thoughts that sometimes happen inside our minds, that's why there's a slow start, then it goes faster and ends up with a calm resolution 💜🌌",
+    genre: "Melodic Dubstep",
+    date: "2024-11-15T00:00:00.000",
+    person: ["Dimatis"],
+    mm: 4,
+    ss: 17,
+    dropbox: {
+      id: "876lh5jwynjh4mj3zfe8p",
+      rlkey: "v4xkwhy1gx0szwvpzlo24anv7"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        spotify: "",
+        soundcloud: "https://soundcloud.com/dimatis/detach",
+        youtube: "",
+        apple: "",
+        itunes: "",
+        bandcamp: "https://dimatis.bandcamp.com/track/detach",
+        deezer: "",
+        tidal: "",
+        yandex: "",
+        amazon: "",
+        tiktok: "",
+        beatport: "",
+        netease: ""
+      }
+    }
+  },
+  {
     id: "to-stand-again",
     artists: "Dimatis & Calmseer",
     title: "To Stand Again",
