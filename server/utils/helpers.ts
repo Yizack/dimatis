@@ -1,4 +1,3 @@
-export { SITE } from "~/utils/site";
 export { z } from "zod";
 
 export const normalizeLyrics = (lyrics: string) => {
