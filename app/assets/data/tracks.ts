@@ -3,7 +3,7 @@ export default [
     id: "detach",
     artists: "Dimatis",
     title: "Detach",
-    description: "Currently, I'm going through so many life changes, and in this song I tried to express the intense feelings that come with major life changes. Even when some of these are positive, too many sudden changes can feel overwhelming. I wanted this track to express the difficult decisions we make, the things we leave behind, and the chaotic thoughts that sometimes happen inside our minds, that's why there's a slow start, then it goes faster and ends up with a calm resolution 💜🌌",
+    description: "What an amazing musical year! This is the 11th track of 2024, meaning there is only one left to finish the year. It's difficult sometimes to keep the 1 release per month frequency but I love to see them out! 💫 About \"Detach\": Currently, I'm going through so many life changes, and in this song, I tried to express the intense feelings that come with major life changes. Even when some of these are positive, too many sudden changes can feel overwhelming. I wanted this track to express the difficult decisions we make, the things we leave behind, and the chaotic thoughts that sometimes happen inside our minds, that's why there's a slow start, then it goes faster and ends up with a calm resolution 🌀✨",
     genre: "Melodic Dubstep",
     date: "2024-11-15T00:00:00.000",
     person: ["Dimatis"],
@@ -17,11 +17,11 @@ export default [
       download: true,
       dark: false,
       links: {
-        spotify: "",
+        spotify: "https://open.spotify.com/track/5NEHlbndgLtqRKTYdBwBec",
         soundcloud: "https://soundcloud.com/dimatis/detach",
-        youtube: "",
-        apple: "",
-        itunes: "",
+        youtube: "https://youtu.be/or3wowwTMnE",
+        apple: "https://music.apple.com/us/album/detach-single/1777673451?app=music&ls=1",
+        itunes: "https://music.apple.com/us/album/detach-single/1777673451?app=itunes&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/track/detach",
         deezer: "",
         tidal: "",
@@ -29,7 +29,7 @@ export default [
         amazon: "",
         tiktok: "",
         beatport: "",
-        netease: ""
+        netease: "https://music.163.com/#/song?id=2642868089"
       }
     }
   },
