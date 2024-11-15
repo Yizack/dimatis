@@ -26,7 +26,7 @@ export default [
         deezer: "https://www.deezer.com/us/album/664958301",
         tidal: "https://tidal.com/browse/album/397376050",
         yandex: "",
-        amazon: "",
+        amazon: "https://www.amazon.com/dp/B0DLV2J2VY",
         tiktok: "",
         beatport: "",
         netease: "https://music.163.com/#/song?id=2642868089"
