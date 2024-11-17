@@ -53,12 +53,12 @@ useHead({
           <div v-for="(file, j) of brands.files" :key="j" class="col-6 g-2">
             <div class="card rounded-3 overflow-hidden">
               <div class="card-body" :class="file.white ? 'bg-dark' : 'bg-white'">
-                <a :href="`/images/logos/${file.filename}`" :download="file.download">
+                <NuxtLink :to="`/images/logos/${file.filename}`" target="_blank" :download="file.download">
                   <div class="position-absolute top-0 end-0 m-1 px-1 rounded small" :class="file.white ? 'bg-white text-dark' : 'bg-body-tertiary text-white'">
                     <small v-if="file.size">{{ file.size?.width }}x{{ file.size?.height }}</small>
                   </div>
                   <img :src="`/images/logos/${file.filename}`" alt="Dimatis logo" class="img-fluid" :width="file.size?.width" :height="file.size?.height">
-                </a>
+                </NuxtLink>
               </div>
               <div class="card-footer">{{ file.title }}</div>
             </div>

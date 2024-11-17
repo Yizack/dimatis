@@ -141,7 +141,7 @@ if (existLyrics) {
                 <div :class="{ 'mb-3': track.credits.length - 1 !== index }">
                   <h5>{{ credits.title }}</h5>
                   <template v-for="socials in credits.socials" :key="socials.name">
-                    <p class="m-0">{{ socials.name }}: <a :href="socials.link" target="_blank">{{ socials.link }}</a></p>
+                    <p class="m-0">{{ socials.name }}: <NuxtLink :to="socials.link" target="_blank">{{ socials.link }}</NuxtLink></p>
                   </template>
                 </div>
               </template>
@@ -165,10 +165,10 @@ if (existLyrics) {
               </template>
               <div class="mb-0">Fanlink</div>
               <div class="tag">
-                <a class="d-flex align-items-center gap-2" :href="`${SITE.fanlinksUrl}/${param}`" target="_blank">
+                <NuxtLink class="d-flex align-items-center gap-2" :to="`${SITE.fanlinksUrl}/${param}`" target="_blank">
                   <span>{{ SITE.fanlinksDomain }}/{{ param }}</span>
                   <Icon name="tabler:external-link" size="1.3rem" />
-                </a>
+                </NuxtLink>
               </div>
             </div>
           </div>

@@ -10,7 +10,7 @@ const { data: followers } = await useFetch("/api/followers", {
       <div class="container">
         <h1 class="display-5 fw-bold">Dimatis</h1>
         <p class="mb-2">{{ SITE.description }}</p>
-        <a href="https://open.spotify.com/artist/0RAT9Q5WZwzJRJgTI38zJR" target="_blank" class="text-decoration-none text-white" title="Follow on Spotify">
+        <NuxtLink to="https://open.spotify.com/artist/0RAT9Q5WZwzJRJgTI38zJR" target="_blank" class="text-decoration-none text-white" title="Follow on Spotify">
           <div class="d-flex">
             <span class="bg-spotify rounded-pill me-2 small px-2 py-1 d-flex align-items-center gap-1">
               <Icon name="fa6-brands:spotify" size="1.1rem" />
@@ -32,7 +32,7 @@ const { data: followers } = await useFetch("/api/followers", {
               </span>
             </div>
           </div>
-        </a>
+        </NuxtLink>
       </div>
     </div>
   </section>

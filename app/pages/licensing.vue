@@ -45,19 +45,19 @@ useHead({
                 <p class="card-text">
                   ----------<br>
                   Music by Dimatis<br>
-                  Spotify: <a :href="SITE.socials.spotify" target="_blank">{{ SITE.socials.spotify }}</a><br>
-                  SoundCloud: <a :href="SITE.socials.soundcloud" target="_blank">{{ SITE.socials.soundcloud }}</a><br>
-                  YouTube: <a :href="SITE.socials.youtube" target="_blank">{{ SITE.socials.youtube }}</a><br>
-                  Instagram: <a :href="SITE.socials.instagram" target="_blank">{{ SITE.socials.instagram }}</a><br>
-                  Facebook: <a :href="SITE.socials.facebook" target="_blank">{{ SITE.socials.facebook }}</a><br>
-                  Twitter: <a :href="SITE.socials.twitter" target="_blank">{{ SITE.socials.twitter }}</a><br>
+                  Spotify: <NuxtLink :to="SITE.socials.spotify" target="_blank">{{ SITE.socials.spotify }}</NuxtLink><br>
+                  SoundCloud: <NuxtLink :to="SITE.socials.soundcloud" target="_blank">{{ SITE.socials.soundcloud }}</NuxtLink><br>
+                  YouTube: <NuxtLink :to="SITE.socials.youtube" target="_blank">{{ SITE.socials.youtube }}</NuxtLink><br>
+                  Instagram: <NuxtLink :to="SITE.socials.instagram" target="_blank">{{ SITE.socials.instagram }}</NuxtLink><br>
+                  Facebook: <NuxtLink :to="SITE.socials.facebook" target="_blank">{{ SITE.socials.facebook }}</NuxtLink><br>
+                  Twitter: <NuxtLink :to="SITE.socials.twitter" target="_blank">{{ SITE.socials.twitter }}</NuxtLink><br>
                   ----------
                 </p>
               </div>
             </div>
-            <p>If your video got copyright claimed by RouteNote, just dispute the claim and let them know that you have my permission, in case you need any help, please contact me via instagram: <a target="_blank" :href="SITE.socials.instagram">@{{ SITE.instagram }}</a>. Please don't content ID any content which includes my music.</p>
-            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
-            <p>License: <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+            <p>If your video got copyright claimed by RouteNote, just dispute the claim and let them know that you have my permission, in case you need any help, please contact me via instagram: <NuxtLink target="_blank" :to="SITE.socials.instagram">@{{ SITE.instagram }}</NuxtLink>. Please don't content ID any content which includes my music.</p>
+            <NuxtLink rel="license" to="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></NuxtLink>
+            <p>License: <NuxtLink rel="license" to="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</NuxtLink>.</p>
             <div id="accordion" data-bs-theme="light">
               <div class="card">
                 <div class="card-header">

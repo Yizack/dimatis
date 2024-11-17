@@ -34,24 +34,24 @@ onMounted(() => {
           <h1 class="text-center mb-0 mt-3">{{ SITE.name }}</h1>
           <p class="text-center text-muted m-0">{{ SITE.person.fullname }}</p>
           <p class="text-center text-muted m-0">{{ SITE.description }}</p>
-          <a :href="`mailto:${SITE.email}`">{{ SITE.email }}</a>
+          <NuxtLink :to="`mailto:${SITE.email}`">{{ SITE.email }}</NuxtLink>
         </div>
         <div class="card-body px-lg-5 bg-body-secondary">
           <h4>Latest Release</h4>
           <div class="position-relative neon scale-on-hover normal">
-            <a ref="releasepop" :href="`${SITE.fanlinksUrl}/${page.art || page.id}`" class="bg-body-tertiary d-flex align-items-center rounded-4 overflow-hidden mb-2 border text-decoration-none position-relative z-1" data-bs-toggle="popover">
+            <NuxtLink ref="releasepop" :to="`${SITE.fanlinksUrl}/${page.art || page.id}`" class="bg-body-tertiary d-flex align-items-center rounded-4 overflow-hidden mb-2 border text-decoration-none position-relative z-1" data-bs-toggle="popover">
               <img class="img-fluid" :src="`/images/${page.id}.jpg`" :alt="`${page.artists} - ${page.title}`" width="100" height="100">
               <div class="px-3 w-100">
                 <h5 class="m-0">{{ page.title }}</h5>
                 <p class="m-0 text-muted">{{ page.artists }}</p>
               </div>
-            </a>
+            </NuxtLink>
           </div>
           <hr>
           <template v-for="(tree, i) of LINKS.tree" :key="tree.id">
             <h4>{{ tree.title }}</h4>
             <div v-for="(link, j) of tree.content" :key="j" class="position-relative neon scale-on-hover" :class="link.code ? link.code : 'normal'">
-              <a :href="link.url" class="bg-body d-flex align-items-center rounded-4 overflow-hidden mb-2 border text-decoration-none position-relative z-1">
+              <NuxtLink :to="link.url" class="bg-body d-flex align-items-center rounded-4 overflow-hidden mb-2 border text-decoration-none position-relative z-1">
                 <div class="d-flex align-items-center justify-content-center" :style="{ minWidth: '100px' }">
                   <Icon v-if="link.code" :name="`fa6-brands:${link.code}`" size="1.5rem" />
                   <IconLogo v-else size="1.5rem" />
@@ -59,7 +59,7 @@ onMounted(() => {
                 <div class="bg-body-tertiary px-3 py-4 w-100">
                   <h5 class="m-0">{{ link.title }}</h5>
                 </div>
-              </a>
+              </NuxtLink>
             </div>
             <hr v-if="i !== LINKS.tree.length - 1">
           </template>

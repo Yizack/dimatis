@@ -45,14 +45,14 @@ useSeoMeta({
             </div>
             <div class="flex-fill align-content-end mt-2 mt-lg-0">
               <div class="d-flex gap-2">
-                <a class="btn btn-primary d-flex align-items-center gap-2 px-4 text-decoration-none" href="https://www.patreon.com/checkout/dimatis?pvid=309263" target="_blank">
+                <NuxtLink class="btn btn-primary d-flex align-items-center gap-2 px-4 text-decoration-none" to="https://www.patreon.com/checkout/dimatis?pvid=309263" target="_blank">
                   <Icon name="tabler:shopping-bag-plus" size="1.3rem" />
                   <span>Buy</span>
-                </a>
-                <a class="btn btn-light d-flex align-items-center gap-2 px-4 text-dark text-decoration-none" href="/tracks/legado" target="_blank">
+                </NuxtLink>
+                <NuxtLink class="btn btn-light d-flex align-items-center gap-2 px-4 text-dark text-decoration-none" to="/tracks/legado" target="_blank">
                   <Icon name="tabler:player-play-filled" size="1rem" />
                   <span>Demo</span>
-                </a>
+                </NuxtLink>
               </div>
             </div>
           </div>
@@ -60,7 +60,7 @@ useSeoMeta({
         <div>
           <h5>Story</h5>
           <p>I started learning to produce in 2013, a year later in 2014 I created the Dimatis' project, at the beginning I didn't set any goal, I just wanted to create music for myself as how I would like it to be, most of my tracks are inspired by my daily experiences, thoughts about the universe, existential thoughts, life mysteries. I try to express those emotions in my music. I will always recognize that I had luck in my musical journey, somehow I managed to carry my life with my music, I can't imagine what my life would be like if I hadn't started producing music. It has given me nearly everything I have today relationships, friendships, a supportive community, financial stability, and feeling proud of myself.</p>
-          <p>Watch my <a class="text-primary-emphasis" href="https://youtu.be/AntejpPnW4s" target="_blank">Personal Q&A Session</a> video on my YouTube channel to know a little more about me.</p>
+          <p>Watch my <NuxtLink class="text-primary-emphasis" to="https://youtu.be/AntejpPnW4s" target="_blank">Personal Q&A Session</NuxtLink> video on my YouTube channel to know a little more about me.</p>
           <h5>Description</h5>
           <p>"Legado" is the Spanish word for "Legacy" or "Heritage", this sample pack contains a wide variety of sounds handpicked by me from the best sounds and presets of my 10 years of music career. Most of the sounds in this sample pack will include, as part of their names, the name of the song they came from. This is intended to give you the feeling of exploring a part of my discography as you use it.</p>
           <h5>Samples</h5>

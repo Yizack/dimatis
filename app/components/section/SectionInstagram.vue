@@ -49,7 +49,7 @@ const playVideo = (event: MouseEvent) => {
                 <li v-for="post of feed" :key="post.id" class="glide__slide">
                   <div class="instagram-wrapper bg-body-tertiary rounded-3">
                     <blockquote class="instagram-media mx-auto" style="border:0; border-radius:3px; margin: auto; max-width:540px; min-width:326px; padding:0; width:100%;">
-                      <a :href="`${post.permalink}?utm_source=ig_embed&amp;utm_campaign=loading`" style="text-decoration:none;" target="_blank">
+                      <NuxtLink :to="`${post.permalink}?utm_source=ig_embed&amp;utm_campaign=loading`" style="text-decoration:none;" target="_blank">
                         <img v-if="post.media_type !== 'VIDEO' && post.media_type !== 'REELS'" class="w-100" :src="post.media_url" :alt="`Instagram ${post.media_type} (${post.id})`">
                         <div v-else class="position-relative">
                           <video class="w-100" playsinline disablePictureInPicture controlsList="noplaybackrate nodownload" :poster="post.thumbnail_url" @click="playVideo">
@@ -62,11 +62,11 @@ const playVideo = (event: MouseEvent) => {
                             <span>View this post on Instagram</span>
                           </div>
                         </div>
-                      </a>
+                      </NuxtLink>
                       <hr class="mt-0" role="none">
                       <p class="mx-3 my-2" style="text-align: left;">
                         <!-- eslint-disable-next-line vue/no-v-html -->
-                        <span :href="`${post.permalink}?utm_source=ig_embed&amp;utm_campaign=loading`" style="font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank" v-html="replaceLinkables(post.caption)" />
+                        <span style="font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" v-html="replaceLinkables(post.caption)" />
                       </p>
                     </blockquote>
                   </div>
