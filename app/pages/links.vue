@@ -1,27 +1,5 @@
 <script setup lang="ts">
-const { $bootstrap } = useNuxtApp();
-
-const releasepop = ref<HTMLElement>();
-const releasepop_content = ref<HTMLElement>();
-
 const page = ref(tracks[0]!);
-
-onBeforeUnmount(() => {
-  if (!releasepop.value) return;
-  $bootstrap.hidePopover(releasepop.value);
-});
-
-onMounted(() => {
-  if (!releasepop.value || !releasepop_content.value) return;
-
-  $bootstrap.popover(releasepop.value, {
-    container: "body",
-    content: releasepop_content.value.innerHTML,
-    html: true,
-    placement: "bottom",
-    trigger: "hover"
-  });
-});
 </script>
 
 <template>
@@ -39,13 +17,13 @@ onMounted(() => {
         <div class="card-body px-lg-5 bg-body-secondary">
           <h4>Latest Release</h4>
           <div class="position-relative neon scale-on-hover normal">
-            <a ref="releasepop" :href="`${SITE.fanlinksUrl}/${page.art || page.id}`" class="bg-body-tertiary d-flex align-items-center rounded-4 overflow-hidden mb-2 border text-decoration-none position-relative z-1" data-bs-toggle="popover" rel="noopener noreferrer">
+            <NuxtLink :to="`${SITE.fanlinksUrl}/${page.art || page.id}`" class="bg-body-tertiary d-flex align-items-center rounded-4 overflow-hidden mb-2 border text-decoration-none position-relative z-1">
               <img class="img-fluid" :src="`/images/${page.id}.jpg`" :alt="`${page.artists} - ${page.title}`" width="100" height="100">
               <div class="px-3 w-100">
                 <h5 class="m-0">{{ page.title }}</h5>
                 <p class="m-0 text-muted">{{ page.artists }}</p>
               </div>
-            </a>
+            </NuxtLink>
           </div>
           <hr>
           <template v-for="(tree, i) of LINKS.tree" :key="tree.id">
@@ -63,18 +41,6 @@ onMounted(() => {
             </div>
             <hr v-if="i !== LINKS.tree.length - 1">
           </template>
-        </div>
-      </div>
-    </div>
-    <!-- Release Content -->
-    <div ref="releasepop_content" class="d-none">
-      <div id="release_popped" class="bg-dark text-white rounded-3">
-        <img class="d-block img-fluid p-2" :src="`/images/${page.id}.jpg`" :alt="`${page.artists} - ${page.title}`" width="300">
-        <div class="p-4">
-          <div class="text-center">
-            <h5><b>{{ page.title }}</b></h5>
-            <h6 class="mb-0">{{ page.artists }}</h6>
-          </div>
         </div>
       </div>
     </div>
