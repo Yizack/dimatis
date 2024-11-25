@@ -23,7 +23,7 @@
     "@nuxt/icon": "^1.8.2",
     "@nuxthub/core": "^0.8.7",
     "@nuxtjs/color-mode": "^3.5.2",
-    "@nuxtjs/sitemap": "^6.1.5",
+    "@nuxtjs/sitemap": "^7.0.0",
     "@types/bootstrap": "^5.2.10",
     "@types/glidejs__glide": "^3.6.5",
     "@vueuse/core": "^11.3.0",
@@ -39,7 +39,7 @@
     "tsx": "^4.19.2",
     "typescript": "5.6.3",
     "vue-tsc": "^2.1.10",
-    "wrangler": "^3.89.0",
+    "wrangler": "^3.90.0",
     "zod": "^3.23.8"
   },
   "packageManager": "pnpm@9.14.2"
