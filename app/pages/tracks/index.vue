@@ -22,6 +22,9 @@ const tracksFiltered = computed(() => {
   }
 
   switch (filters.value.type) {
+    case "originals":
+      tracksAcc = originalTracks.value;
+      break;
     case "solo":
       tracksAcc = tracksSolo.value;
       break;
@@ -128,8 +131,9 @@ useHead({
               <div class="form-floating mb-2">
                 <select id="filter-year" v-model="filters.type" class="form-select">
                   <option value="all">All</option>
-                  <option value="solo">Solo</option>
+                  <option value="originals">Originals</option>
                   <option value="remixes">Remixes</option>
+                  <option value="solo">Solo</option>
                   <option value="collabs">Collaborations</option>
                 </select>
                 <label for="filter-year" class="form-label">Type</label>

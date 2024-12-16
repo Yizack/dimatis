@@ -27,9 +27,12 @@ export const tracksSolo = computed(() => {
     const isSoloTrack = person.includes("Dimatis") && person.length === 1;
     const isNotFeat = !lowerTitle.includes("feat.");
     const isNotRemix = !id.includes("remix");
-    const isSoloRemix = id.includes("remix") && lowerTitle.includes("(dimatis remix)");
-    return (isSoloTrack && isNotFeat && isNotRemix) || isSoloRemix;
+    return isSoloTrack && isNotFeat && isNotRemix;
   });
+});
+
+export const originalTracks = computed(() => {
+  return tracks.filter(({ id }) => !id.includes("remix"));
 });
 
 export const getStats = () => {
@@ -38,49 +41,49 @@ export const getStats = () => {
       title: "Total Tracks",
       value: tracks.length,
       icon: "tabler:disc",
-      description: "All tracks including remixes produced by Dimatis"
+      description: "Tracks including remixes produced by Dimatis. (complete discography)"
     },
     {
       title: "Released Tracks",
       value: tracks.length - tracksUnofficials.value.length,
       icon: "tabler:building-store",
-      description: "All tracks including remixes released on streaming platforms and music stores"
+      description: "Tracks including remixes released on streaming platforms and music stores. (official releases)"
     },
     {
       title: "Original Tracks",
-      value: tracks.length - tracksRemixes.value.length,
+      value: originalTracks.value.length,
       icon: "tabler:file-music",
-      description: "All original tracks produced by Dimatis (excluding remixes)"
+      description: "Original tracks produced by Dimatis. (excludes remixes)"
     },
     {
       title: "Remixes",
       value: tracksRemixes.value.length,
       icon: "tabler:device-speaker",
-      description: "All remixes produced by Dimatis"
+      description: "Remixes produced by Dimatis"
     },
     {
       title: "Official Remixes",
       value: tracksOfficialRemixes.value.length,
       icon: "tabler:medal",
-      description: "All remixes released on streaming platforms and music stores as a result of a winning contest or official release"
+      description: "Remixes released on streaming platforms and music stores as a result of a winning contest or official release"
     },
     {
       title: "Unofficial Releases",
       value: tracksUnofficials.value.length,
       icon: "tabler:shopping-bag-x",
-      description: "All tracks including remixes that were not released on streaming platforms and music stores. (e.g. SoundCloud and YouTube only releases)"
+      description: "Tracks including remixes that were not released on streaming platforms and music stores. (e.g. SoundCloud and YouTube only releases)"
     },
     {
       title: "Solo Tracks",
       value: tracksSolo.value.length,
       icon: "tabler:user",
-      description: "All tracks including remixes produced by Dimatis without any collaborations"
+      description: "Tracks produced by Dimatis without any collaborations or remixes"
     },
     {
       title: "Collaborations",
       value: tracksCollabs.value.length,
       icon: "tabler:users-group",
-      description: "All tracks including remixes produced by Dimatis in collaboration with other artists"
+      description: "Tracks including remixes produced by Dimatis in collaboration with other artists"
     }
   ];
 };
