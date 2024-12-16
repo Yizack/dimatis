@@ -2,11 +2,9 @@ type InstagramFields = "username" | "permalink" | "timestamp" | "caption" | "med
 
 export class InstagramFeed {
   api: string;
-  userId: string;
   accessToken: string;
-  constructor (userId: string, accessToken: string) {
+  constructor (accessToken: string) {
     this.api = "https://graph.instagram.com";
-    this.userId = userId;
     this.accessToken = accessToken;
   }
 
