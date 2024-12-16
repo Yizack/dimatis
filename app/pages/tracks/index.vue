@@ -129,17 +129,17 @@ useHead({
                 <label for="filter-year" class="form-label">Year</label>
               </div>
               <div class="form-floating mb-2">
-                <select id="filter-year" v-model="filters.type" class="form-select">
+                <select id="filter-type" v-model="filters.type" class="form-select">
                   <option value="all">All</option>
                   <option value="originals">Originals</option>
                   <option value="remixes">Remixes</option>
                   <option value="solo">Solo</option>
                   <option value="collabs">Collaborations</option>
                 </select>
-                <label for="filter-year" class="form-label">Type</label>
+                <label for="filter-type" class="form-label">Type</label>
               </div>
             </div>
-            <input v-model.trim="filters.search" type="text" class="form-control" placeholder="Search...">
+            <input id="filter-search" v-model.trim="filters.search" type="text" class="form-control" placeholder="Search...">
           </div>
           <div class="d-flex align-items-center justify-content-between position-absolute mt-2 start-0">
             <div class="d-flex align-items-center gap-2">
