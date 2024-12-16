@@ -1,5 +1,39 @@
 export default [
   {
+    id: "good-ending",
+    artists: "Dimatis",
+    title: "Good Ending",
+    description: "Hey! This is my last release of the year, with this one I have completed 12 months, 12 songs. \"Good Ending\" is a chill track made for those who might not have had the best year but with this track, I wish everyone well so hopefully it makes it a bit better. Chill melodies, granulated sounds, and a calming",
+    genre: "Chillstep",
+    date: "2024-12-20T00:00:00.000",
+    person: ["Dimatis"],
+    mm: 3,
+    ss: 45,
+    dropbox: {
+      id: "0pen9qy8h2dihcm55gpe8",
+      rlkey: "cpnfza82vk5l8q85pbthuc0gn"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        spotify: "",
+        soundcloud: "https://soundcloud.com/dimatis/good-ending",
+        youtube: "https://youtu.be/CAxkHfnO6yI",
+        apple: "",
+        itunes: "",
+        bandcamp: "https://dimatis.bandcamp.com/track/good-ending",
+        deezer: "",
+        tidal: "",
+        yandex: "",
+        amazon: "",
+        tiktok: "",
+        beatport: "",
+        netease: ""
+      }
+    }
+  },
+  {
     id: "detach",
     artists: "Dimatis",
     title: "Detach",
