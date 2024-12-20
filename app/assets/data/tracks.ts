@@ -3,7 +3,7 @@ export default [
     id: "good-ending",
     artists: "Dimatis",
     title: "Good Ending",
-    description: "Hey! This is my last release of the year, with this one I have completed 12 months, 12 songs. \"Good Ending\" is a chill track made for those who might not have had the best year but with this track, I wish everyone well so hopefully it makes it a bit better. Chill melodies, granulated sounds, and a calming",
+    description: "Hey! This is my last release of the year, with this one I have completed 12 months, 12 songs. \"Good Ending\" is a chill track made for those who might not have had the best year but with this track, I wish everyone well so hopefully it makes it a bit better. Listen carefully to the chill melodies, granulated sounds, soothing ambiance, and calming rhythm.",
     genre: "Chillstep",
     date: "2024-12-20T00:00:00.000",
     person: ["Dimatis"],
@@ -17,19 +17,19 @@ export default [
       download: true,
       dark: false,
       links: {
-        spotify: "",
+        spotify: "https://open.spotify.com/track/01gF5NNOxCXTh4pBB0opwk",
         soundcloud: "https://soundcloud.com/dimatis/good-ending",
         youtube: "https://youtu.be/CAxkHfnO6yI",
-        apple: "",
-        itunes: "",
+        apple: "https://music.apple.com/us/album/good-ending-single/1784233929?app=music&ls=1",
+        itunes: "https://music.apple.com/us/album/good-ending-single/1784233929?app=itunes&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/track/good-ending",
-        deezer: "",
-        tidal: "",
+        deezer: "https://www.deezer.com/us/album/681627301",
+        tidal: "https://tidal.com/browse/album/404600805",
         yandex: "",
-        amazon: "",
+        amazon: "https://www.amazon.com/dp/B0DPXBS77N",
         tiktok: "",
         beatport: "",
-        netease: ""
+        netease: "https://music.163.com/#/song?id=2654806481"
       }
     }
   },

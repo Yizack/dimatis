@@ -17,11 +17,11 @@
   },
   "devDependencies": {
     "@glidejs/glide": "^3.7.1",
-    "@iconify-json/fa6-brands": "^1.2.4",
-    "@iconify-json/tabler": "^1.2.12",
-    "@nuxt/eslint": "^0.7.3",
-    "@nuxt/icon": "^1.10.2",
-    "@nuxthub/core": "^0.8.8",
+    "@iconify-json/fa6-brands": "^1.2.5",
+    "@iconify-json/tabler": "^1.2.13",
+    "@nuxt/eslint": "^0.7.4",
+    "@nuxt/icon": "^1.10.3",
+    "@nuxthub/core": "^0.8.10",
     "@nuxtjs/color-mode": "^3.5.2",
     "@nuxtjs/sitemap": "^7.0.0",
     "@types/bootstrap": "^5.2.10",
@@ -39,8 +39,8 @@
     "tsx": "^4.19.2",
     "typescript": "5.6.3",
     "vue-tsc": "^2.1.10",
-    "wrangler": "^3.95.0",
+    "wrangler": "^3.99.0",
     "zod": "^3.24.1"
   },
-  "packageManager": "pnpm@9.14.4"
+  "packageManager": "pnpm@9.15.1"
 }
