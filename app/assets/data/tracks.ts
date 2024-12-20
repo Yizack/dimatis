@@ -15,7 +15,7 @@ export default [
     },
     fanlink: {
       download: true,
-      dark: false,
+      dark: true,
       links: {
         spotify: "https://open.spotify.com/track/01gF5NNOxCXTh4pBB0opwk",
         soundcloud: "https://soundcloud.com/dimatis/good-ending",
