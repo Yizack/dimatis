@@ -9,6 +9,5 @@ export default defineCachedEventHandler(async (event) => {
   group: "api",
   name: "instagram",
   getKey: () => "feed",
-  swr: true,
   maxAge: 86400
 });
