@@ -10,12 +10,4 @@ declare global {
     media_type: string;
     thumbnail_url: string;
   }
-
-  interface Window {
-    instgrm: {
-      Embeds: {
-        process: () => void;
-      };
-    };
-  }
 }
