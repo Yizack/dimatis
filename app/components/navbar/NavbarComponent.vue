@@ -1,7 +1,7 @@
 <script setup lang="ts">
-defineProps({
-  fixed: { type: Boolean, default: false }
-});
+defineProps<{
+  fixed?: boolean;
+}>();
 
 const scrolled = ref(false);
 const maxScroll = 50;

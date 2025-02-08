@@ -1,22 +1,13 @@
 <script setup lang="ts">
-const props = defineProps({
-  size: {
-    type: Object as PropType<{ width: string, height: string }>,
-    default: () => ({})
-  },
-  track: {
-    type: Object as PropType<DimatisTrack>,
-    default: () => ({})
-  },
-  param: {
-    type: [String, Number],
-    default: ""
-  }
-});
+const props = defineProps<{
+  size: { width: string, height: string };
+  track: DimatisTrack;
+  param: string;
+}>();
 
 const srcImage = computed(() => `/images/${props.track.art || props.param}.jpg`);
 
-const config = defineMusicfyPlayer({
+const config = useMusicfyPlayer({
   image: {
     src: srcImage.value,
     alt: `${props.track.artists} - ${props.track.title}`
@@ -29,7 +20,7 @@ const config = defineMusicfyPlayer({
     rlkey: props.track.dropbox.rlkey
   },
   color: {
-    class: props.param as string
+    class: props.param
   }
 });
 </script>
