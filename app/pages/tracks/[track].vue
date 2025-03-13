@@ -83,7 +83,7 @@ useSeoMeta({
 useHead({
   script: [
     // Schema.org
-    { type: "application/ld+json", children: JSON.stringify(tracksSchemaOrg.value) }
+    { type: "application/ld+json", innerHTML: JSON.stringify(tracksSchemaOrg.value) }
   ],
   link: [
     { rel: "canonical", href: `${SITE.url}/tracks/${param.value}` }
