@@ -35,18 +35,19 @@ const tracksSchemaOrg = computed(() => {
     },
     "genre": track.value.genre,
     "duration": `PT${track.value.hh || 0}H${track.value.mm || 0}M${track.value.ss || 0}S`,
+    "isrcCode": track.value.isrc,
     "datePublished": track.value.date.split("T")[0],
     "inAlbum": [] as { "@type": string, "name"?: string, "url": string }[],
     "byArtist": [] as { "@type": string, "name"?: string }[]
   };
 
-  if (track.value.album) {
-    schema.inAlbum.push({
-      "@type": "MusicAlbum",
-      "name": track.value.album,
-      "url": `${SITE.url}/albums/${track.value.album?.replace(/\s+/g, "-").toLowerCase()}`
-    });
-  }
+  const albumUrl = track.value.album ? `${SITE.url}/albums/${track.value.album.replace(/\s+/g, "-").toLowerCase()}` : `${SITE.url}/tracks/${param.value}`;
+
+  schema.inAlbum.push({
+    "@type": "MusicAlbum",
+    "name": track.value.album || track.value.title,
+    "url": albumUrl
+  });
 
   track.value.person.forEach((person) => {
     schema.byArtist.push({
