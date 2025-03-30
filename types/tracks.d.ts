@@ -16,6 +16,7 @@ declare global {
     art?: string;
     label?: string;
     related?: string[];
+    isrc?: string;
     dropbox: {
       id: string;
       rlkey?: string;
