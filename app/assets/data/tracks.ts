@@ -1,5 +1,39 @@
 export default [
   {
+    id: "reverie",
+    artists: "Dimatis",
+    title: "Reverie",
+    description: "I'm happy to present my first song of 2025, \"Reverie.\" This track brings some classic \"Dimatis\" vibes. I also want to apologize for the three months without new music and being quiet. I've been through a period of demotivation due to IRL work-related issues. I won't go into too much detail because my music is always about positivism, so I decided to return to what I feel proud of, making music.",
+    genre: "Melodic Dubstep",
+    date: "2025-04-04T00:00:00.000",
+    person: ["Dimatis"],
+    mm: 3,
+    ss: 53,
+    dropbox: {
+      id: "68uc0f4mjyzioy2mycy2v",
+      rlkey: "yge84tuii9od7mbb3hf1q93mb"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        spotify: "",
+        soundcloud: "https://soundcloud.com/dimatis/reverie",
+        youtube: "",
+        apple: "",
+        itunes: "",
+        bandcamp: "https://dimatis.bandcamp.com/track/reverie",
+        deezer: "",
+        tidal: "",
+        yandex: "",
+        amazon: "",
+        tiktok: "",
+        beatport: "",
+        netease: ""
+      }
+    }
+  },
+  {
     id: "good-ending",
     artists: "Dimatis",
     title: "Good Ending",
