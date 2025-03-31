@@ -4,7 +4,7 @@ export default [
     isrc: "GX8LE2546558",
     artists: "Dimatis",
     title: "Reverie",
-    description: "I'm happy to present my first song of 2025, \"Reverie.\" This track brings some classic \"Dimatis\" vibes. I also want to apologize for these three months without new music and being quiet. I've been through a period of demotivation due to IRL work-related issues. I won't go into too much detail because my music is always about positivism, so I decided to return to what I feel proud of, making music.",
+    description: "Hello!!! I'm happy to present my first track of 2025, \"Reverie\". This track has a classic \"Dimatis\" structure and vibes. I also want to apologize for these three months without new music and being quiet. I've been through a period of demotivation due to IRL work-related struggles. I won't go into too much detail because my music is always about positivism, but I decided to return to what I feel proud of.",
     genre: "Melodic Dubstep",
     date: "2025-04-04T00:00:00.000",
     person: [
