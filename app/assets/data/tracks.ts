@@ -306,6 +306,7 @@ export default [
   },
   {
     id: "limit",
+    isrc: "USA2P2442830",
     artists: "Mordrez, Dimatis, Tadeusz",
     title: "Limit (feat. Young Viridii)",
     description: "After years and years, numerous tweaks and discarded versions of this song, and a lot of work, we finally bring you \"Limit\" featuring amazing artists and released on Arctic Empire record label. This song is a mix of Melodic Dubstep and Chillstep, spacey vibes, and emotional vocals, with two distinct drops, the first one is a Chillstep influenced drop and the second one is a Melodic Dubstep drop. We hope you enjoy this song as much as we are happy to finally release it. 💙",
@@ -483,6 +484,7 @@ export default [
   },
   {
     id: "the-songs-of-yesterday",
+    isrc: "QZHN52463553",
     artists: "Mox Jade, Dimatis, Sydney Grimm",
     title: "The Songs of Yesterday",
     description: "It was a pleasure to work with Mox Jade and Sydney Grimm.music and be part of the Spellbok Vol. 1 of Jade City label ❤️, I'm so proud of this one, Mox ideas were so inspiring. Don't forget to stream The Songs of Yesterday!!",
@@ -522,6 +524,7 @@ export default [
   },
   {
     id: "dont-take-me",
+    isrc: "QZMHL2454002",
     artists: "Dimatis",
     title: "Don't Take Me",
     description: "Dark Future Garage + Melodic Dubstep track! I usually don't make dark music but this one turned out great. Hope you like the new music! ❤️",
@@ -1315,6 +1318,7 @@ export default [
   },
   {
     id: "call-out-instrumental",
+    isrc: "GX38U2262101",
     artists: "Dimatis & Bayza",
     title: "Call Out (Instrumental)",
     description: "We're excited for you to listen to our new song! \"Call Out\" is an electropop-style track with future bass and modern dance music influences including melancholy vocals. Although our musical styles are completely different, somehow we always manage to merge our styles as in previous collaborations we have done like Dive, Serenity, Hold on To Me, Reborn, and now Call Out.",
@@ -1526,6 +1530,7 @@ export default [
   },
   {
     id: "paying-for-it",
+    isrc: "USA2P2117917",
     artists: "Dimatis",
     title: "Paying For It (feat. Salvo)",
     description: "Happy to share my new melodic dubstep song called \"Paying For It\" featuring Salvo vocals released on ARWV label! This is another song that I've been working on for quite some time. Enjoy!",
@@ -1560,6 +1565,7 @@ export default [
   },
   {
     id: "fly-again",
+    isrc: "GBSMU9633669",
     artists: "Dimatis",
     title: "Fly Again (feat. Miss Lina)",
     description: "I'm so happy to announce this new song \"Fly Again\", the lyrics are about the hope of going out normally again after having been through all this situation that we all know last year, some day we will have the energy to be able to fly again 💕, thanks to Miss Lina, she did an incredible job on the lyrics and with such an amazing voice I loved how this turned out, also thanks so much to MissChibiArtist for making this lovely illustration for the artwork of the song, I love how talented people come together to help me create something beautiful. I don't have enough words to thank everyone who continues to support me, it has only been 3 months this year and it is being incredible because I'm achieving many milestones that I never thought I would achieve in my life. I hope you like this song 🕊💜💙",
@@ -1676,6 +1682,7 @@ export default [
   },
   {
     id: "worthy-of-life",
+    isrc: "GBSMU9361791",
     artists: "Dimatis",
     title: "Worthy of Life",
     description: "I made this song two weeks ago because some friends published that a friend of theirs needed to raise funds for a heart surgery, they started a campaign where they motivated several producers to donate songs for a compilation album where every earning went to the cost of the surgery, so I decided to make this song for that and try to help (even I didn't know him I just wanted to help), the campaign was a success and the goal was achieved with the help of many people, I am very proud of the chill community ❤",
@@ -1803,6 +1810,7 @@ export default [
   },
   {
     id: "who-am-i-without-you",
+    isrc: "GBSMU8397679",
     artists: "Dimatis",
     title: "Who Am I Without You",
     description: "I am very excited for you to listen to my new song \"Who Am I Without You\" sometimes when I feel lacking in creativity or inspiration I like to look for drawings, imagine a story and create a song out of it. Thanks to erien.ato (Alien Art) a Panamanian illustrator for allowing me to use her art for my song. It's a bit different from my usual style but hope you like it!",
@@ -2400,6 +2408,7 @@ export default [
   },
   {
     id: "quity",
+    isrc: "GBSMU6179605",
     artists: "Dimatis",
     title: "Qüity",
     description: "My dog named \"Qüity\" passed away on February 25 so I decided to make a song in her memory. My brother and I found her abandoned about 12 years ago, so I calculate that she died with about 14 or 15 years old, we adopted and gave her a home, she wasn't from a special breed, but was very important to me as part of my family, she was blind in her last days and I was in her care, I'm glad she can rest now. His weird name comes from a neighbor who called her \"Queeny\" but we interpreted the pronunciation in Spanish as \"Qüity\". There are some images and videos of her in my YouTube video.",
@@ -2732,6 +2741,7 @@ export default [
   },
   {
     id: "moonlit-lover-piano",
+    isrc: "GBSMU5487925",
     artists: "Dimatis",
     title: "Moonlit Lover (Piano Version)",
     description: "Piano version of Moonlit Lover. I hope this makes you feel something ❤",
@@ -2893,6 +2903,7 @@ export default [
   },
   {
     id: "vicious-mind-instrumental",
+    isrc: "GBSMU4954085",
     artists: "Dimatis",
     title: "Vicious Mind (Instrumental)",
     description: "Some people asked me for the instrumental of this song, so here it is! and I couldn't upload the original to spotify because of Alan Watts vocals. Hope you like it ❤",
