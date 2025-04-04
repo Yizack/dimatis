@@ -20,19 +20,19 @@ export default [
       download: true,
       dark: false,
       links: {
-        spotify: "",
+        spotify: "https://open.spotify.com/track/37hxCNoNGVx9X8lRTYxnzz",
         soundcloud: "https://soundcloud.com/dimatis/reverie",
         youtube: "https://youtu.be/e0FsIac2spU",
         apple: "https://music.apple.com/us/album/reverie-single/1804776289?app=music&ls=1",
         itunes: "https://music.apple.com/us/album/reverie-single/1804776289?app=itunes&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/track/reverie",
-        deezer: "",
-        tidal: "",
+        deezer: "https://www.deezer.com/us/album/732655301",
+        tidal: "https://tidal.com/browse/album/426100643",
         yandex: "",
-        amazon: "",
+        amazon: "https://www.amazon.com/dp/B0F2GJ8LF7",
         tiktok: "",
         beatport: "",
-        netease: ""
+        netease: "https://music.163.com/#/song?id=2688225598"
       }
     }
   },
