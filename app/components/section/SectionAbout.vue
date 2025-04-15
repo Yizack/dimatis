@@ -25,7 +25,7 @@ const showFullAbout = ref(false);
 
                 His mission is to share his music with the world by providing beautiful emotions through the melodies of his songs and one day be recognized for his music.<br><br>
 
-                Artists who inspire him are: Au5, Blackmill, Chime, CMA, Collin McLoughlin, Crystal Skies, ILLENIUM, Said The Sky, Seven Lions, Skrux, Tim Schaufert, Xilent, among many others.
+                Artists who inspire him are: Au5, Blackmill, Chime, CMA, Collin McLoughlin, Crystal Skies, ILLENIUM, Jason Ross, Said The Sky, Seven Lions, Skrux, Tim Schaufert, Xeuphoria, Xilent, among many others.
               </p>
             </div>
             <a v-if="!showFullAbout" class="small" role="button" @click="showFullAbout = true">
