@@ -122,7 +122,7 @@ if (existLyrics) {
           <div class="col-12 col-md-8 mb-3 mb-md-0 text-secondary p-0">
             <div class="description">
               <h3 class="text-white">Description</h3>
-              <p>{{ track.description }}</p>
+              <p v-for="(paragraph, i) of track.description.split('\n')" :key="i">{{ paragraph }}</p>
             </div>
             <div v-if="lyrics" class="lyrics mt-3" :class="{ 'lyrics-fade': !showFullLyrics }">
               <h3 class="text-white">Lyrics</h3>

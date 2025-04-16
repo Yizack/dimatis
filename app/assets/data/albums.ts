@@ -3,7 +3,7 @@ export default [
     id: "traveler-in-time",
     artists: "Dimatis & Elvya",
     title: "Traveler In time",
-    description: "Who wouldn't want to travel back or forward in time? I have the pleasure to bring you another song with Elvya this time with a time traveler theme, get ready to be delighted with a chill-type beat using sparkly and enveloping sounds that we could probably hear during a time teleportation while everything stops around you 💫. I came up with the instrumental of this song as an idea of mine almost 3 years ago but the result never convinced me so I never released it until talking to Elvya I showed her the demo and she added that magic missing, Now it comes alive thanks to her amazing vocals as always 💜.",
+    description: "Who wouldn't want to travel back or forward in time? I have the pleasure to bring you another song with Elvya this time with a time traveler theme, get ready to be delighted with a chill-type beat using sparkly and enveloping sounds that we could probably hear during a time teleportation while everything stops around you 💫.\nI came up with the instrumental of this song as an idea of mine almost 3 years ago but the result never convinced me so I never released it until talking to Elvya I showed her the demo and she added that magic missing, Now it comes alive thanks to her amazing vocals as always 💜.",
     tracks: [
       "traveler-in-time",
       "traveler-in-time-instrumental"

@@ -1,5 +1,42 @@
 export default [
   {
+    id: "sophira",
+    isrc: "GX38U2539294",
+    artists: "Dimatis",
+    title: "Sophira",
+    description: "Hello again! A new track is coming out soon, a nature kind detail-oriented melodic chillstep called \"Sophira\". 🌼\nLately I've been getting inspiration from genres like Botanica and Hyperpop in terms of details, I don't intend to transform my style or create something new, just incorporate more interesting little soothing details, into my production, I'm also experimenting with new grain effects and doubling melodies to make interesting arpeggios. I hope you are liking this slightly different yet familiar Dimatis so far on my latest tracks!",
+    genre: "Melodic Dubstep",
+    date: "2025-04-18T00:00:00.000",
+    person: [
+      "Dimatis"
+    ],
+    mm: 3,
+    ss: 33,
+    dropbox: {
+      id: "r7xmtddwb0pkow4ed45b7",
+      rlkey: "gug0dzguhcdg6q1ko9k9n3ehz"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        spotify: "",
+        soundcloud: "https://soundcloud.com/dimatis/sophira",
+        youtube: "https://youtu.be/oB3n-QX8UII",
+        apple: "https://music.apple.com/us/album/sophira-single/1808036466?app=music&ls=1",
+        itunes: "https://music.apple.com/us/album/sophira-single/1808036466?app=itunes&ls=1",
+        bandcamp: "https://dimatis.bandcamp.com/track/sophira",
+        deezer: "",
+        tidal: "",
+        yandex: "",
+        amazon: "",
+        tiktok: "",
+        beatport: "",
+        netease: ""
+      }
+    }
+  },
+  {
     id: "reverie",
     isrc: "GX8LE2546558",
     artists: "Dimatis",
@@ -78,7 +115,7 @@ export default [
     isrc: "QZS672476170",
     artists: "Dimatis",
     title: "Detach",
-    description: "What an amazing musical year! This is the 11th track of 2024, meaning there is only one left to finish the year. It's difficult sometimes to keep the 1 release per month frequency but I love to see them out! 💫 About \"Detach\": Currently, I'm going through so many life changes, and in this song, I tried to express the intense feelings that come with major life changes. Even when some of these are positive, too many sudden changes can feel overwhelming. I wanted this track to express the difficult decisions we make, the things we leave behind, and the chaotic thoughts that sometimes happen inside our minds, that's why there's a slow start, then it goes faster and ends up with a calm resolution 🌀✨",
+    description: "What an amazing musical year! This is the 11th track of 2024, meaning there is only one left to finish the year. It's difficult sometimes to keep the 1 release per month frequency but I love to see them out! 💫\nAbout \"Detach\": Currently, I'm going through so many life changes, and in this song, I tried to express the intense feelings that come with major life changes. Even when some of these are positive, too many sudden changes can feel overwhelming. I wanted this track to express the difficult decisions we make, the things we leave behind, and the chaotic thoughts that sometimes happen inside our minds, that's why there's a slow start, then it goes faster and ends up with a calm resolution 🌀✨",
     genre: "Melodic Dubstep",
     date: "2024-11-15T00:00:00.000",
     person: [

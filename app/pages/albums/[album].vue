@@ -101,7 +101,7 @@ useHead({
           <div class="col-12 row mt-3 mb-3 mb-md-0 mx-0 bg-body rounded p-3">
             <div class="col-12 col-md-8 text-secondary p-0">
               <h3 class="mb-0 text-white">Description</h3>
-              <p class="mb-md-0">{{ album.description }}</p>
+              <p v-for="(paragraph, i) of album.description.split('\n')" :key="i">{{ paragraph }}</p>
             </div>
             <div class="col-12 col-md-4 ps-md-3 p-0">
               <div class="tags">
