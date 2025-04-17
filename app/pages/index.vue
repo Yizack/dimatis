@@ -41,15 +41,15 @@ const latestTracks = tracks.reduce((acc, t) => {
 </script>
 
 <template>
-  <SectionAbout class="bg-body-secondary" />
+  <SectionAbout />
   <SectionStats />
   <section id="music" class="bg-body-secondary py-lg-5 py-4">
     <div class="container text-center">
       <h3 class="text-uppercase">Latest Music</h3>
       <p class="mb-0">Listen to my latest music</p>
-      <div class="row my-4">
+      <div class="row my-4 justify-content-center">
         <template v-for="track of latestTracks" :key="track.id">
-          <div class="col-12 col-lg-4">
+          <div class="col-12 col-md-6 col-lg-4">
             <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{ width: '300px', height: '385px' }" :track="track" :param="track.art || track.id" />
             <NuxtLink class="text-decoration-none" :to="`/tracks/${track.id}`">
               <p class="mb-0">{{ track.title }}</p>
@@ -64,4 +64,5 @@ const latestTracks = tracks.reduce((acc, t) => {
     </div>
   </section>
   <SectionInstagram />
+  <SectionMerch />
 </template>

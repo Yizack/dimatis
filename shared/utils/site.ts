@@ -1,5 +1,6 @@
 const domain = "dimatis.music";
 const fanlinksDomain = "go.dimatis.music";
+const merchDomain = "merch.dimatis.music";
 
 export const SITE = {
   name: "Dimatis",
@@ -7,6 +8,8 @@ export const SITE = {
   url: `https://${domain}`,
   fanlinksDomain,
   fanlinksUrl: `https://${fanlinksDomain}`,
+  merchDomain,
+  merchUrl: `https://${merchDomain}`,
   person: {
     fullname: "Yizack Rangel",
     birthdate: "1998-06-15",

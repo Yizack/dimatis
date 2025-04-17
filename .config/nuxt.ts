@@ -51,6 +51,10 @@ export default defineNuxtConfig({
     },
     instagram: {
       accessToken: ""
+    },
+    fourthwall: {
+      user: "",
+      password: ""
     }
   },
 
