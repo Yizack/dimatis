@@ -14,5 +14,5 @@ export default defineCachedEventHandler(async (event) => {
   group: "api",
   name: "lyrics",
   getKey: event => getQuery(event).track?.toString() as string,
-  maxAge: 86400
+  maxAge: 86400 * 30 * 6 // 6 months cache
 });
