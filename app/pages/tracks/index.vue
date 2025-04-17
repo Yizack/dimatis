@@ -149,7 +149,7 @@ useHead({
         </div>
         <div class="row my-4">
           <TransitionGroup name="list">
-            <div v-for="track of tracksArray" :key="track.id" class="col-12 col-lg-4 mb-3">
+            <div v-for="track of tracksArray" :key="track.id" class="col-12 col-md-6 col-lg-4 mb-3">
               <div class="item">
                 <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{ width: '300px', height: '385px' }" :track="track" :param="track.art || track.id" />
                 <NuxtLink class="text-decoration-none" :to="`/tracks/${track.id}`">
