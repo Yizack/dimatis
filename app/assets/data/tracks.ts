@@ -20,7 +20,7 @@ export default [
       download: true,
       dark: false,
       links: {
-        spotify: "",
+        spotify: "https://open.spotify.com/track/1aGL2Gd3kA9wVgqtWhUvq2",
         soundcloud: "https://soundcloud.com/dimatis/sophira",
         youtube: "https://youtu.be/oB3n-QX8UII",
         apple: "https://music.apple.com/us/album/sophira-single/1808036466?app=music&ls=1",
@@ -32,7 +32,7 @@ export default [
         amazon: "",
         tiktok: "",
         beatport: "",
-        netease: ""
+        netease: "https://music.163.com/#/song?id=2693592517"
       }
     }
   },
