@@ -26,7 +26,7 @@ export const SITE = {
   logo: "images/avatars/sq-logo.jpg",
   logoNavbar: "images/logos/logo-navbar.svg",
   image: "images/avatars/bio.jpg",
-  cover: "images/banners/cover.jpg",
+  cover: "images/banners/promo-cover.jpg",
   spotifyId: "0RAT9Q5WZwzJRJgTI38zJR",
   twitter: "dimatismusic",
   instagram: "dimatismusic",

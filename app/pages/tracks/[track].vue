@@ -69,8 +69,8 @@ useSeoMeta({
   ogTitle: `${track.value.title} by ${track.value.artists}`,
   ogSiteName: SITE.name,
   ogImage: `${SITE.url}/images/${track.value.art || param.value}.jpg`,
-  ogImageWidth: "500",
-  ogImageHeight: "500",
+  ogImageWidth: 500,
+  ogImageHeight: 500,
   ogImageAlt: `${track.value.title} by ${track.value.artists}`,
   ogDescription: track.value.description,
   // Twitter Card

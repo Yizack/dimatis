@@ -48,7 +48,7 @@ useSeoMeta({
   ogImageAlt: `${album.value.title} (${album.value.type}) by ${album.value.artists}`,
   ogDescription: album.value.description,
   // Twitter Card
-  twitterCard: "summary",
+  twitterCard: "summary_large_image",
   twitterImage: `${SITE.url}/images/${album.value.art}.jpg`,
   twitterTitle: `${album.value.title} (${album.value.type}) by ${album.value.artists}`,
   twitterDescription: album.value.description,
