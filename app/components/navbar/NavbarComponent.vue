@@ -8,6 +8,7 @@ const maxScroll = 50;
 
 const isTracksPath = computed(() => useRoute().path.includes("/tracks"));
 const isAlbumsPath = computed(() => useRoute().path.includes("/albums"));
+const isAboutHash = computed(() => useRoute().hash === "#about");
 
 const getScrolled = () => (document.body.scrollTop > maxScroll || document.documentElement.scrollTop > maxScroll);
 
@@ -47,13 +48,16 @@ onMounted(() => {
               <NuxtLink class="nav-link" :class="{ active: isAlbumsPath }" to="/albums">Albums</NuxtLink>
             </li>
             <li class="nav-item nav-hash" role="menuitem" data-bs-dismiss="offcanvas">
-              <NuxtLink class="nav-link" to="/#about">About</NuxtLink>
+              <NuxtLink class="nav-link" to="/#about" :class="{ active: isAboutHash }">About</NuxtLink>
             </li>
             <li class="nav-item" role="menuitem" data-bs-dismiss="offcanvas">
               <NuxtLink class="nav-link" to="/licensing">Licensing</NuxtLink>
             </li>
             <li class="nav-item" role="menuitem" data-bs-dismiss="offcanvas">
               <NuxtLink class="nav-link" to="/branding">Branding</NuxtLink>
+            </li>
+            <li class="nav-item" role="menuitem" data-bs-dismiss="offcanvas">
+              <NuxtLink class="nav-link" to="https://merch.dimatis.music" target="_blank">Merch</NuxtLink>
             </li>
           </ul>
         </div>
