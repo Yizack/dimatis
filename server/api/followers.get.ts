@@ -12,5 +12,5 @@ export default defineCachedEventHandler(async (event) => {
   group: "api",
   name: "followers",
   getKey: () => "all",
-  maxAge: 86400
+  maxAge: 86400 // 1 day cache
 });
