@@ -26,11 +26,11 @@ export default [
         apple: "https://music.apple.com/us/album/sophira-single/1808036466?app=music&ls=1",
         itunes: "https://music.apple.com/us/album/sophira-single/1808036466?app=itunes&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/track/sophira",
-        deezer: "",
-        tidal: "",
+        deezer: "https://www.deezer.com/us/album/741119091",
+        tidal: "https://tidal.com/browse/album/429449855",
         yandex: "",
-        amazon: "",
-        tiktok: "",
+        amazon: "https://www.amazon.com/dp/B0F4LQPFJX",
+        tiktok: "https://vm.tiktok.com/ZMBsAswEs/",
         beatport: "",
         netease: "https://music.163.com/#/song?id=2693592517"
       }
@@ -67,7 +67,7 @@ export default [
         tidal: "https://tidal.com/browse/album/426100643",
         yandex: "",
         amazon: "https://www.amazon.com/dp/B0F2GJ8LF7",
-        tiktok: "",
+        tiktok: "https://vm.tiktok.com/ZMBsAcygd/",
         beatport: "",
         netease: "https://music.163.com/#/song?id=2688225598"
       }
