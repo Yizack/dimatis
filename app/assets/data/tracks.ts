@@ -4,7 +4,7 @@ export default [
     isrc: "GX38U2539294",
     artists: "Dimatis",
     title: "Sophira",
-    description: "Hello again! A new track is coming out soon, a nature kind detail-oriented melodic chillstep called \"Sophira\". 🌼\nLately I've been getting inspiration from genres like Botanica and Hyperpop in terms of details, I don't intend to transform my style or create something new, just incorporate more interesting little soothing details, into my production, I'm also experimenting with new grain effects and doubling melodies to make interesting arpeggios. I hope you are liking this slightly different yet familiar Dimatis so far on my latest tracks!",
+    description: "This track is a nature kind detail-oriented Melodic Chillstep. 🌼\nLately I've been getting inspiration from genres like Botanica and Hyperpop in terms of details, I don't intend to transform my style or create something new, just incorporate more interesting little soothing details, into my production, I'm also experimenting with new grain effects and doubling melodies to make interesting arpeggios. I hope you are liking this slightly different yet familiar Dimatis so far on my latest tracks!",
     genre: "Melodic Dubstep",
     date: "2025-04-18T00:00:00.000",
     person: [
