@@ -6,7 +6,7 @@ export default defineCachedEventHandler(async (event) => {
       authorization: `Basic ${btoa(`${fourthwall.user}:${fourthwall.password}`)}`
     },
     query: {
-      size: 8
+      size: 9 // need 8 only but 9 because there's 1 hidden product
     }
   }).catch(() => null);
 
@@ -17,19 +17,18 @@ export default defineCachedEventHandler(async (event) => {
     const hasImages = product.images.length > 0;
     const hasVariants = product.variants.length > 0;
     return isPublic && hasImages && hasVariants;
-  }).sort((a, b) => {
-    return new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime();
   }).map(product => ({
     id: product.id,
     name: product.name,
+    description: product.description.replace(/<[^>]+>/g, ""),
     slug: product.slug,
     image: product.images[0]!,
     price: product.variants[0]!.unitPrice.value.toFixed(2)
-  }));
+  })).reverse();
 }, {
   swr: false,
   group: "api",
   name: "merch",
-  getKey: event => event.path,
+  getKey: () => "all",
   maxAge: 86400 * 7 // 7 days cache
 });
