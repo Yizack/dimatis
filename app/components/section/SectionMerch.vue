@@ -12,7 +12,7 @@ const { data: merch } = useFetch("/api/merch", {
       <div class="row my-4 justify-content-center">
         <div v-for="item of merch" :key="item.id" class="col-12 col-md-6 col-lg-3 mb-4" :title="item.description">
           <div class="card h-100 border-0 rounded-3 shadow-sm">
-            <NuxtLink :to="`${SITE.merchUrl}/products/${item.slug}`" target="_blank" class="text-decoration-none">
+            <NuxtLink :to="`${SITE.merchUrl}/products/${item.slug}`" target="_blank" class="text-decoration-none flex-fill">
               <img class="card-img-top border-bottom" :src="item.image.url" :alt="`Merch ${item.id}`">
               <div class="card-body text-center">
                 <!-- eslint-disable-next-line vue/no-v-html -->
