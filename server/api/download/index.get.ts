@@ -20,20 +20,20 @@ export default defineEventHandler(async (event) => {
     });
   }
 
-  const DB = useDB();
   const time = Date.now();
-
-  await DB.insert(tables.downloads).values({
-    file,
-    count: 1,
-    lastDownload: time
-  }).onConflictDoUpdate({
-    target: tables.downloads.file,
-    set: {
-      count: sql`${tables.downloads.count} + 1`,
+  event.waitUntil(
+    useDB().insert(tables.downloads).values({
+      file,
+      count: 1,
       lastDownload: time
-    }
-  }).returning().get();
+    }).onConflictDoUpdate({
+      target: tables.downloads.file,
+      set: {
+        count: sql`${tables.downloads.count} + 1`,
+        lastDownload: time
+      }
+    }).run()
+  );
 
   const { dropbox } = propData;
   if (!dropbox) {
