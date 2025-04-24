@@ -53,7 +53,7 @@ useSeoMeta({
   twitterSite: `@${SITE.twitter}`,
   twitterTitle: `${genre.value} | ${SITE.name}`,
   twitterDescription: `${genre.value} music by ${SITE.name}`,
-  twitterImage: `${SITE.url}/${SITE.logo}`
+  twitterImage: `${SITE.url}/${SITE.cover}`
 });
 
 useHead({

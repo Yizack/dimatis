@@ -20,7 +20,7 @@ useSeoMeta({
   twitterSite: `@${SITE.twitter}`,
   twitterTitle: `Albums | ${SITE.name}`,
   twitterDescription: `All ${SITE.name} albums`,
-  twitterImage: `${SITE.url}/${SITE.logo}`
+  twitterImage: `${SITE.url}/${SITE.cover}`
 });
 
 useHead({

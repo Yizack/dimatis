@@ -90,7 +90,7 @@ useSeoMeta({
   twitterSite: `@${SITE.twitter}`,
   twitterTitle: isBetweenYears.value ? `Tracks | ${SITE.name} (${filters.value.year})` : `Tracks | ${SITE.name}`,
   twitterDescription: isBetweenYears.value ? `All ${SITE.name} releases from ${filters.value.year}` : `All ${SITE.name} releases`,
-  twitterImage: `${SITE.url}/${isBetweenYears.value ? `images/playlists/d${filters.value.year}.jpg` : SITE.logo}`
+  twitterImage: `${SITE.url}/${isBetweenYears.value ? `images/playlists/d${filters.value.year}.jpg` : SITE.cover}`
 });
 
 useHead({

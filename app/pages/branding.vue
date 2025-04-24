@@ -20,7 +20,7 @@ useSeoMeta({
   twitterSite: `@${SITE.twitter}`,
   twitterTitle: `Branding | ${SITE.name}`,
   twitterDescription: `${SITE.name} music branding`,
-  twitterImage: `${SITE.url}/${SITE.logo}`
+  twitterImage: `${SITE.url}/${SITE.cover}`
 });
 
 useHead({

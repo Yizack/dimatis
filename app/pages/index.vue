@@ -20,7 +20,7 @@ useSeoMeta({
   twitterSite: `@${SITE.twitter}`,
   twitterTitle: SITE.name,
   twitterDescription: SITE.meta_description,
-  twitterImage: `${SITE.url}/${SITE.logo}`
+  twitterImage: `${SITE.url}/${SITE.cover}`
 });
 
 useHead({
