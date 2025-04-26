@@ -105,23 +105,29 @@ useHead({
             </div>
             <div class="col-12 col-md-4 ps-md-3 p-0">
               <div class="tags">
-                <div class="mb-0">Type</div>
-                <div class="tag mb-1">{{ album.type }}</div>
-                <div class="mb-0">Release date</div>
-                <div class="tag mb-1" itemprop="datePublished" :content="album.date.split('T')[0]">{{ formatDate(album.date) }}</div>
-                <div class="mb-0">Fanlink</div>
-                <div class="tag">
-                  <NuxtLink class="d-flex align-items-center gap-2" :to="`${SITE.fanlinksUrl}/${album.art}`" target="_blank">
-                    <span>{{ SITE.fanlinksDomain }}/{{ album.art }}</span>
-                    <Icon name="tabler:external-link" size="1.3rem" />
-                  </NuxtLink>
+                <div class="mb-2">
+                  <div class="mb-0">Type</div>
+                  <div class="tag">{{ album.type }}</div>
+                </div>
+                <div class="mb-2">
+                  <div class="mb-0">Release date</div>
+                  <div class="tag" itemprop="datePublished" :content="album.date.split('T')[0]">{{ formatDate(album.date) }}</div>
+                </div>
+                <div class="mb-2">
+                  <div class="mb-0">Fanlink</div>
+                  <div class="tag">
+                    <NuxtLink class="d-flex align-items-center gap-2" :to="`${SITE.fanlinksUrl}/${album.art}`" target="_blank">
+                      <span>{{ SITE.fanlinksDomain }}/{{ album.art }}</span>
+                      <Icon name="tabler:external-link" size="1.3rem" />
+                    </NuxtLink>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div id="more-albums" class="pt-3">
-          <h3 class="text-center">More <NuxtLink class="tag" to="/albums">Albums</NuxtLink></h3>
+          <h3 class="text-center mb-3">More <NuxtLink class="tag" to="/albums">Albums</NuxtLink></h3>
           <div class="row gallery text-center">
             <template v-for="more of moreAlbums" :key="more.id">
               <div class="col-6 col-lg-3">
