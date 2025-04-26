@@ -91,9 +91,22 @@ useHead({
   ]
 });
 
+const assets = import.meta.glob("~~/server/assets/lyrics/*", {
+  eager: true
+});
+
+const existLyrics = assets["../server/assets/lyrics/" + param.value + ".txt"] !== undefined;
+const lyrics = ref<string>();
 const showFullLyrics = ref<boolean>(false);
-const lyrics = await import(`~/assets/lyrics/${param.value}.txt?raw`).then(l => normalizeLyrics(l.default)).catch(() => null);
-showFullLyrics.value = lyrics ? (lyrics.match(/\n/g)?.length || 0) < 6 : true;
+
+if (existLyrics) {
+  const { data: lyricsData } = await useFetch("/api/lyrics", {
+    params: { track: param.value },
+    getCachedData: (key, nuxtApp) => nuxtApp.payload.data[key]
+  });
+  lyrics.value = lyricsData.value;
+  showFullLyrics.value = lyrics.value ? (lyrics.value.match(/\n/g)?.length || 0) < 6 : true;
+}
 </script>
 
 <template>

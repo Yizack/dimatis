@@ -29,7 +29,3 @@ export const formatDate = (date: string) => {
     day: "numeric"
   });
 };
-
-export const normalizeLyrics = (lyrics: string) => {
-  return lyrics.replace(/\r\n/g, "\n").trim();
-};
