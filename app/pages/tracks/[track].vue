@@ -12,6 +12,11 @@ if (!track.value) {
   });
 }
 
+const { data: download } = await useFetch("/api/download/count", {
+  query: { file: param.value },
+  getCachedData: (key, nuxtApp) => nuxtApp.payload.data[key]
+});
+
 const genreURL = computed(() => track.value.genre.replace(/\s+/g, "-").toLowerCase());
 
 const moreTracks = computed(() => {
@@ -150,32 +155,44 @@ if (existLyrics) {
           </div>
           <div class="col-12 col-md-4 ps-md-3 p-0">
             <div id="tags">
-              <div class="mb-0">Genre</div>
-              <div class="tag mb-2"><NuxtLink :to="`/tag/${genreURL}`">{{ track.genre }}</NuxtLink></div>
-              <template v-if="track.album">
+              <div class="mb-2">
+                <div class="mb-0">Genre</div>
+                <div class="tag"><NuxtLink :to="`/tag/${genreURL}`">{{ track.genre }}</NuxtLink></div>
+              </div>
+              <div v-if="track.album" class="mb-2">
                 <div class="mb-0">Album</div>
-                <div class="tag mb-2"><NuxtLink :to="`/albums/${track.album.replace(/\s+/g, '-').toLowerCase()}`">{{ track.album }}</NuxtLink></div>
-              </template>
-              <div class="mb-0">Release date</div>
-              <div class="tag mb-2">{{ formatDate(track.date) }}</div>
-              <div class="mb-0">Duration</div>
-              <div class="tag mb-2">{{ track.mm }}:{{ String(track.ss).padStart(2, "0") }}</div>
-              <template v-if="track.label">
+                <div class="tag"><NuxtLink :to="`/albums/${track.album.replace(/\s+/g, '-').toLowerCase()}`">{{ track.album }}</NuxtLink></div>
+              </div>
+              <div class="mb-2">
+                <div class="mb-0">Release date</div>
+                <div class="tag">{{ formatDate(track.date) }}</div>
+              </div>
+              <div class="mb-2">
+                <div class="mb-0">Duration</div>
+                <div class="tag">{{ track.mm }}:{{ String(track.ss).padStart(2, "0") }}</div>
+              </div>
+              <div v-if="track.label" class="mb-2">
                 <div class="mb-0">Record label</div>
-                <div class="tag mb-2">{{ track.label }}</div>
-              </template>
-              <div class="mb-0">Fanlink</div>
-              <div class="tag">
-                <NuxtLink class="d-flex align-items-center gap-2" :to="`${SITE.fanlinksUrl}/${param}`" target="_blank">
-                  <span>{{ SITE.fanlinksDomain }}/{{ param }}</span>
-                  <Icon name="tabler:external-link" size="1.3rem" />
-                </NuxtLink>
+                <div class="tag">{{ track.label }}</div>
+              </div>
+              <div class="mb-2">
+                <div class="mb-0">Fanlink</div>
+                <div class="tag">
+                  <NuxtLink class="d-flex align-items-center gap-2" :to="`${SITE.fanlinksUrl}/${param}`" target="_blank">
+                    <span>{{ SITE.fanlinksDomain }}/{{ param }}</span>
+                    <Icon name="tabler:external-link" size="1.3rem" />
+                  </NuxtLink>
+                </div>
+              </div>
+              <div v-if="download && download.count">
+                <div class="mb-0">Downloaded for free</div>
+                <div class="tag">{{ download.count }} times</div>
               </div>
             </div>
           </div>
         </div>
         <div v-if="moreTracks.length" id="more-tracks" class="pt-3">
-          <h3 class="text-center">More <NuxtLink class="tag" :to="`/tag/${genreURL}`">{{ track.genre }}</NuxtLink> music</h3>
+          <h3 class="text-center mb-3">More <NuxtLink class="tag" :to="`/tag/${genreURL}`">{{ track.genre }}</NuxtLink> music</h3>
           <div class="row gallery text-center">
             <template v-for="more of moreTracks" :key="more.id">
               <div class="col-6 col-lg-3">
