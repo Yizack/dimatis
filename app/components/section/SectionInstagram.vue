@@ -5,15 +5,25 @@ const { data: feed } = useFetch<InstagramPost[]>("/api/instagram/feed", {
   getCachedData: (key, nuxtApp) => nuxtApp.payload.data[key]
 });
 
-onMounted(async () => {
-  new $Glide(".glide", {
-    perView: 3,
-    bound: true,
-    breakpoints: {
-      968: { perView: 2 },
-      630: { perView: 1 }
-    }
-  }).mount();
+const mountFeed = () => {
+  if (feed.value && feed.value.length > 1) {
+    new $Glide(".glide", {
+      perView: 3,
+      bound: true,
+      breakpoints: {
+        968: { perView: 2 },
+        630: { perView: 1 }
+      }
+    }).mount();
+  }
+};
+
+watch(feed, () => {
+  nextTick(mountFeed);
+});
+
+onMounted(() => {
+  mountFeed();
 });
 
 const replaceLinkables = (text: string) => {
@@ -25,8 +35,7 @@ const replaceLinkables = (text: string) => {
   return replacedText;
 };
 
-const playVideo = (event: MouseEvent) => {
-  event.preventDefault();
+const playVideo = (event: Event) => {
   const video = event.target as HTMLVideoElement;
   if (video.paused) {
     video.play();
@@ -52,7 +61,7 @@ const playVideo = (event: MouseEvent) => {
                       <NuxtLink :to="`${post.permalink}?utm_source=ig_embed&amp;utm_campaign=loading`" style="text-decoration:none;" target="_blank">
                         <img v-if="post.media_type !== 'VIDEO' && post.media_type !== 'REELS'" class="w-100" :src="post.media_url" :alt="`Instagram ${post.media_type} (${post.id})`">
                         <div v-else class="position-relative">
-                          <video class="w-100" playsinline disablePictureInPicture controlsList="noplaybackrate nodownload" :poster="post.thumbnail_url" @click="playVideo">
+                          <video class="w-100" playsinline disablePictureInPicture controlsList="noplaybackrate nodownload" :poster="post.thumbnail_url" @click.prevent="playVideo">
                             <source :src="post.media_url" type="video/mp4">
                           </video>
                           <Icon class="position-absolute top-0 end-0 m-1" name="tabler:video" size="1.5rem" />
