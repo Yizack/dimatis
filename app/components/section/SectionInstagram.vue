@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const { $Glide } = useNuxtApp();
 
-const { data: feed } = await useFetch<InstagramPost[]>("/api/instagram/feed", {
+const { data: feed } = useFetch<InstagramPost[]>("/api/instagram/feed", {
   getCachedData: (key, nuxtApp) => nuxtApp.payload.data[key]
 });
 
@@ -38,8 +38,8 @@ const playVideo = (event: MouseEvent) => {
 </script>
 
 <template>
-  <section id="ig-feed" class="py-lg-5 py-4">
-    <div v-if="feed && feed.length" class="container text-center">
+  <section v-if="feed && feed.length" id="ig-feed" class="py-lg-5 py-4">
+    <div class="container text-center">
       <h4 class="text-uppercase mb-4">Instagram feed</h4>
       <div class="row">
         <div class="col-lg-12 p-0">

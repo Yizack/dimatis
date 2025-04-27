@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { data: followers } = await useFetch("/api/followers", {
+const { data: followers } = useFetch("/api/followers", {
   getCachedData: (key, nuxtApp) => nuxtApp.payload.data[key]
 });
 </script>
@@ -22,8 +22,8 @@ const { data: followers } = await useFetch("/api/followers", {
                   <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
                 </svg>
               </span>
-              <span v-if="followers" class="bg-white rounded text-dark small py-1 px-2">
-                <span v-if="followers.spotify">{{ followers.spotify }} followers</span>
+              <span class="bg-white rounded text-dark small py-1 px-2">
+                <span v-if="followers && followers.spotify">{{ followers.spotify }} followers</span>
                 <span v-else class="spinner-box">
                   <span class="spinner-border text-dark" style="width:1rem; height:1rem; font-size: 0.5rem;">
                     <span class="visually-hidden">Loading...</span>
