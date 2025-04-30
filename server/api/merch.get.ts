@@ -38,5 +38,6 @@ export default defineCachedEventHandler(async (event) => {
   group: "api",
   name: "merch",
   getKey: () => "all",
-  maxAge: 86400 * 7 // 7 days cache
+  maxAge: 86400 * 7, // 7 days cache
+  shouldBypassCache: () => !!import.meta.dev
 });
