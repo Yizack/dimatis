@@ -95,7 +95,7 @@ const page = ref(tracks[0]!);
   background-color: #ff8800;
 }
 .instagram:hover::after {
-  background-color: #833ab4;
+  background-color: #ff0069;
 }
 .facebook:hover::after {
   background-color: #3b5998;
