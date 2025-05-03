@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { data: merch } = useFetch("/api/merch", {
+const { data: merch } = useLazyFetch("/api/merch", {
   getCachedData: (key, nuxtApp) => nuxtApp.payload.data[key]
 });
 </script>

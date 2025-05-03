@@ -12,7 +12,7 @@ if (!track.value) {
   });
 }
 
-const { data: download } = useFetch("/api/download/count", {
+const { data: download } = useLazyFetch("/api/download/count", {
   query: { file: param.value },
   getCachedData: (key, nuxtApp) => nuxtApp.payload.data[key]
 });

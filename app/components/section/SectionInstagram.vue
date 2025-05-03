@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const { $Glide } = useNuxtApp();
 
-const { data: feed } = useFetch<InstagramPost[]>("/api/instagram/feed", {
+const { data: feed } = useLazyFetch<InstagramPost[]>("/api/instagram/feed", {
   getCachedData: (key, nuxtApp) => nuxtApp.payload.data[key]
 });
 
