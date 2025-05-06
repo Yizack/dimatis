@@ -40,14 +40,14 @@
     "@nuxtjs/sitemap": "^7.2.10",
     "@types/bootstrap": "^5.2.10",
     "@types/glidejs__glide": "^3.6.6",
-    "@types/node": "^22.15.3",
+    "@types/node": "^22.15.9",
     "@vueuse/core": "^13.1.0",
-    "bootstrap": "^5.3.5",
-    "drizzle-kit": "^0.31.0",
+    "bootstrap": "^5.3.6",
+    "drizzle-kit": "^0.31.1",
     "drizzle-orm": "^0.43.1",
-    "eslint": "^9.25.1",
+    "eslint": "^9.26.0",
     "fast-average-color-node": "^3.1.0",
-    "nuxt": "^3.17.1",
+    "nuxt": "^3.17.2",
     "nuxt-musicfyplayer": "^2.1.6",
     "sass": "^1.87.0",
     "stylelint": "^16.19.1",
@@ -55,7 +55,7 @@
     "typescript": "^5.8.3",
     "vue-tsc": "^2.2.10",
     "wrangler": "^4.14.1",
-    "zod": "^3.24.3"
+    "zod": "^3.24.4"
   },
   "packageManager": "pnpm@10.10.0"
 }
