@@ -12,26 +12,52 @@ if (!album.value) {
   });
 }
 
-const moreAlbums = computed(() => {
-  return albums.reduce((acc, a) => {
-    if (a.id !== album.value.id && acc.length < 8) {
-      acc.push(a);
-    }
-    return acc;
-  }, [] as DimatisAlbum[]);
-});
+const moreAlbums = computed(() => albums.reduce((acc, a) => {
+  if (a.id !== album.value.id && acc.length < 8) {
+    acc.push(a);
+  }
+  return acc;
+}, [] as DimatisAlbum[]));
 
-const getAlbumTracks = (album: DimatisAlbum) => {
-  return album.tracks.reduce((acc, track) => {
-    const albumTrack = tracks.find(t => t.id === track);
-    if (albumTrack) acc.push(albumTrack);
-    return acc;
-  }, [] as DimatisTrack[]);
-};
+const albumTracks = computed(() => album.value.tracks.reduce((acc, track) => {
+  const albumTrack = tracks.find(t => t.id === track);
+  if (albumTrack) acc.push(albumTrack);
+  return acc;
+}, [] as DimatisTrack[]));
 
 const goTrack = (track: string) => {
   navigateTo(`/tracks/${track}`);
 };
+
+const albumSchemaOrg = computed(() => ({
+  "@context": "http://schema.org",
+  "@type": ["MusicAlbum", "MusicRelease"],
+  "@id": `${SITE.url}/albums/${param.value}`,
+  "url": `${SITE.url}/albums/${param.value}`,
+  "name": album.value.title,
+  "description": album.value.description,
+  "image": {
+    "@type": "ImageObject",
+    "url": `${SITE.url}/images/${album.value.art}.jpg`
+  },
+  "datePublished": album.value.date.split("T")[0],
+  "musicReleaseFormat": "http://schema.org/DigitalFormat",
+  "albumReleaseType": "http://schema.org/AlbumRelease",
+  "numTracks": albumTracks.value.length,
+  "albumRelease": albumTracks.value.map(track => ({
+    "@type": ["MusicRecording", "MusicRelease"],
+    "@id": `${SITE.url}/tracks/${track.id}`,
+    "url": `${SITE.url}/tracks/${track.id}`,
+    "name": track.title,
+    "duration": `PT${track.hh || 0}H${track.mm || 0}M${track.ss || 0}S`
+  })),
+  "byArtist": [{
+    "@type": "MusicGroup",
+    "@id": SITE.url,
+    "url": SITE.url,
+    "name": SITE.name
+  }]
+}));
 
 useSeoMeta({
   title: `${album.value.title} (${album.value.type}) by ${album.value.artists}`,
@@ -56,6 +82,10 @@ useSeoMeta({
 });
 
 useHead({
+  script: [
+    // Schema.org
+    { type: "application/ld+json", innerHTML: JSON.stringify(albumSchemaOrg.value) }
+  ],
   link: [
     { rel: "canonical", href: `${SITE.url}/albums/${param.value}` }
   ]
@@ -65,13 +95,13 @@ useHead({
 <template>
   <main>
     <section id="album" class="py-lg-5 py-4 bg-body-secondary">
-      <div class="container" itemscope itemtype="http://schema.org/MusicAlbum">
+      <div class="container">
         <div class="pb-3 text-center">
-          <h1 class="mb-1"><span itemprop="name">{{ album.title }}</span> ({{ album.type }})</h1>
-          <h3 class="text-secondary mb-0" itemprop="byArtist" itemscope itemtype="http://schema.org/MusicGroup"><span itemprop="name">{{ album.artists }}</span></h3>
+          <h1 class="mb-1">{{ album.title }} ({{ album.type }})</h1>
+          <h3 class="text-secondary mb-0">{{ album.artists }}</h3>
         </div>
         <div class="text-center my-3">
-          <img :src="`/images/${album.art}.jpg`" class="album-image rounded-3" itemprop="image" width="300" height="300">
+          <img :src="`/images/${album.art}.jpg`" class="album-image rounded-3" width="300" height="300">
           <span class="album-image-blurry" :style="`background: url('/images/${album.art}.jpg')`" />
         </div>
         <div class="row mx-0 my-3">
@@ -87,12 +117,12 @@ useHead({
                 </tr>
               </thead>
               <tbody class="text-secondary">
-                <template v-for="(track, index) of getAlbumTracks(album)" :key="track">
-                  <tr role="button" :itemprop="track.id" itemscope itemtype="http://www.schema.org/MusicRecording" @click="goTrack(track.id)">
-                    <td itemprop="position">{{ index + 1 }}</td>
-                    <td itemprop="url" :content="`${SITE.url}/tracks/${track.id}`">{{ track.artists }}</td>
-                    <td itemprop="name">{{ track.title }}</td>
-                    <td itemprop="duration" :content="`PT${track.hh || 0}H${track.mm || 0}M${track.ss || 0}S`">{{ track.mm }}:{{ String(track.ss).padStart(2, "0") }}</td>
+                <template v-for="(track, index) of albumTracks" :key="track">
+                  <tr role="button" @click="goTrack(track.id)">
+                    <td>{{ index + 1 }}</td>
+                    <td>{{ track.artists }}</td>
+                    <td>{{ track.title }}</td>
+                    <td>{{ track.mm }}:{{ String(track.ss).padStart(2, "0") }}</td>
                   </tr>
                 </template>
               </tbody>
@@ -111,7 +141,7 @@ useHead({
                 </div>
                 <div class="mb-2">
                   <div class="mb-0">Release date</div>
-                  <div class="tag" itemprop="datePublished" :content="album.date.split('T')[0]">{{ formatDate(album.date) }}</div>
+                  <div class="tag">{{ formatDate(album.date) }}</div>
                 </div>
                 <div class="mb-2">
                   <div class="mb-0">Fanlink</div>

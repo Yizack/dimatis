@@ -28,41 +28,34 @@ const moreTracks = computed(() => {
   }, [] as DimatisTrack[]);
 });
 
-const tracksSchemaOrg = computed(() => {
-  const schema = {
-    "@context": "http://schema.org",
-    "@type": "MusicRecording",
-    "name": track.value.title,
-    "url": `${SITE.url}/tracks/${param.value}`,
-    "image": {
-      "@type": "ImageObject",
-      "url": `${SITE.url}/images/${track.value.art || param.value}.jpg`
-    },
-    "genre": track.value.genre,
-    "duration": `PT${track.value.hh || 0}H${track.value.mm || 0}M${track.value.ss || 0}S`,
-    "isrcCode": track.value.isrc,
-    "datePublished": track.value.date.split("T")[0],
-    "inAlbum": [] as { "@type": string, "name"?: string, "url": string }[],
-    "byArtist": [] as { "@type": string, "name"?: string }[]
-  };
-
-  const albumUrl = track.value.album ? `${SITE.url}/albums/${track.value.album.replace(/\s+/g, "-").toLowerCase()}` : `${SITE.url}/tracks/${param.value}`;
-
-  schema.inAlbum.push({
+const trackSchemaOrg = computed(() => ({
+  "@context": "http://schema.org",
+  "@type": ["MusicRecording", "MusicRelease"],
+  "@id": `${SITE.url}/tracks/${param.value}`,
+  "url": `${SITE.url}/tracks/${param.value}`,
+  "name": track.value.title,
+  "description": track.value.description,
+  "image": {
+    "@type": "ImageObject",
+    "url": `${SITE.url}/images/${track.value.art || param.value}.jpg`
+  },
+  "musicReleaseFormat": "http://schema.org/DigitalFormat",
+  "genre": track.value.genre,
+  "duration": `PT${track.value.hh || 0}H${track.value.mm || 0}M${track.value.ss || 0}S`,
+  "isrcCode": track.value.isrc,
+  "datePublished": track.value.date.split("T")[0],
+  "inAlbum": [{
     "@type": "MusicAlbum",
     "name": track.value.album || track.value.title,
-    "url": albumUrl
-  });
-
-  track.value.person.forEach((person) => {
-    schema.byArtist.push({
-      "@type": "MusicGroup",
-      "name": person
-    });
-  });
-
-  return schema;
-});
+    "url": track.value.album ? `${SITE.url}/albums/${track.value.album.replace(/\s+/g, "-").toLowerCase()}` : `${SITE.url}/tracks/${param.value}`
+  }],
+  "byArtist": track.value.person.map(person => ({
+    "@type": "MusicGroup",
+    "@id": person === "Dimatis" ? SITE.url : undefined,
+    "url": person === "Dimatis" ? SITE.url : undefined,
+    "name": person
+  }))
+}));
 
 useSeoMeta({
   title: `${track.value.title} by ${track.value.artists}`,
@@ -89,7 +82,7 @@ useSeoMeta({
 useHead({
   script: [
     // Schema.org
-    { type: "application/ld+json", innerHTML: JSON.stringify(tracksSchemaOrg.value) }
+    { type: "application/ld+json", innerHTML: JSON.stringify(trackSchemaOrg.value) }
   ],
   link: [
     { rel: "canonical", href: `${SITE.url}/tracks/${param.value}` }
