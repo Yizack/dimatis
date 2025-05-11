@@ -44,7 +44,7 @@ body {
 a {
   text-decoration: underline dashed;
   text-decoration-thickness: 1px;
-  text-decoration-color: rgba(var(--bs-secondary-rgb), 0.3);
+  text-decoration-color: rgb(var(--bs-secondary-rgb), 0.3);
   text-underline-position: under;
 }
 
