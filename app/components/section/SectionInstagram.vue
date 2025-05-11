@@ -49,7 +49,7 @@ const playVideo = (event: Event) => {
 <template>
   <section v-if="feed && feed.length" id="ig-feed" class="py-lg-5 py-4">
     <div class="container text-center">
-      <h4 class="text-uppercase mb-4">Instagram feed</h4>
+      <h3 class="text-uppercase mb-4">Instagram feed</h3>
       <div class="row">
         <div class="col-lg-12 p-0">
           <div class="glide">
