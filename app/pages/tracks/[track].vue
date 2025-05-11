@@ -1,6 +1,4 @@
 <script setup lang="ts">
-definePageMeta({ layout: "site" });
-
 const param = ref(useRoute("tracks-track").params.track);
 const track = computed<DimatisTrack>(() => tracks.find(track => track.id === param.value)!);
 

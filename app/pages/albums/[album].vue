@@ -1,6 +1,4 @@
 <script setup lang="ts">
-definePageMeta({ layout: "site" });
-
 const param = ref(useRoute("albums-album").params.album);
 const album = computed<DimatisAlbum>(() => albums.find(a => a.id === param.value)!);
 

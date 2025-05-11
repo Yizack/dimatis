@@ -1,6 +1,4 @@
 <script setup lang="ts">
-definePageMeta({ layout: "site" });
-
 useSeoMeta({
   title: "Legado: A decade of Dimatis Sample Pack",
   description: "This sample pack contains a wide variety of sounds handpicked by me from the best sounds and presets of my 10 years of music career.",

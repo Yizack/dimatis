@@ -1,6 +1,4 @@
 <script setup lang="ts">
-definePageMeta({ layout: "site" });
-
 const { query, path } = useRoute();
 const filters = ref({
   year: Number(query.year) || 0,

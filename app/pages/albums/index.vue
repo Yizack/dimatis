@@ -1,6 +1,4 @@
 <script setup lang="ts">
-definePageMeta({ layout: "site" });
-
 useSeoMeta({
   title: `Albums | ${SITE.name}`,
   description: `All ${SITE.name} albums`,

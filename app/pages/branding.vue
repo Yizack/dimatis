@@ -1,6 +1,4 @@
 <script setup lang="ts">
-definePageMeta({ layout: "site" });
-
 useSeoMeta({
   title: `Branding | ${SITE.name}`,
   description: `${SITE.name} music branding`,

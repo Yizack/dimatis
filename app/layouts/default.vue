@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NavbarComponent />
+    <NavBar />
     <slot />
     <SectionFooter />
   </div>

@@ -1,6 +1,4 @@
 <script setup lang="ts">
-definePageMeta({ layout: "site" });
-
 const genreURI = ref(useRoute("tag-genre").params.genre);
 const showMore = ref(false);
 

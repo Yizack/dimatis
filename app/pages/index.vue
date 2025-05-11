@@ -1,6 +1,4 @@
 <script setup lang="ts">
-definePageMeta({ layout: "home" });
-
 useSeoMeta({
   title: SITE.name,
   description: SITE.meta_description,
@@ -41,28 +39,31 @@ const latestTracks = tracks.reduce((acc, t) => {
 </script>
 
 <template>
-  <SectionAbout />
-  <SectionStats />
-  <section id="music" class="bg-body-secondary py-lg-5 py-4">
-    <div class="container text-center">
-      <h3 class="text-uppercase">Latest Music</h3>
-      <p class="mb-0">Listen to my latest music</p>
-      <div class="row my-4 justify-content-center">
-        <template v-for="track of latestTracks" :key="track.id">
-          <div class="col-12 col-md-6 col-lg-4">
-            <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{ width: '300px', height: '385px' }" :track="track" :param="track.art || track.id" />
-            <NuxtLink class="text-decoration-none" :to="`/tracks/${track.id}`">
-              <p class="mb-0">{{ track.title }}</p>
-              <p class="text-secondary"><small>{{ track.artists }}</small></p>
-            </NuxtLink>
-          </div>
-        </template>
+  <main>
+    <SectionBanner />
+    <SectionAbout />
+    <SectionStats />
+    <section id="music" class="bg-body-secondary py-lg-5 py-4">
+      <div class="container text-center">
+        <h3 class="text-uppercase">Latest Music</h3>
+        <p class="mb-0">Listen to my latest music</p>
+        <div class="row my-4 justify-content-center">
+          <template v-for="track of latestTracks" :key="track.id">
+            <div class="col-12 col-md-6 col-lg-4">
+              <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{ width: '300px', height: '385px' }" :track="track" :param="track.art || track.id" />
+              <NuxtLink class="text-decoration-none" :to="`/tracks/${track.id}`">
+                <p class="mb-0">{{ track.title }}</p>
+                <p class="text-secondary"><small>{{ track.artists }}</small></p>
+              </NuxtLink>
+            </div>
+          </template>
+        </div>
+        <div class="text-uppercase">
+          <NuxtLink class="btn btn-outline-white rounded-pill text-decoration-none" role="button" to="/tracks">More music</NuxtLink>
+        </div>
       </div>
-      <div class="text-uppercase">
-        <NuxtLink class="btn btn-outline-white rounded-pill text-decoration-none" role="button" to="/tracks">More music</NuxtLink>
-      </div>
-    </div>
-  </section>
-  <SectionInstagram />
-  <SectionMerch />
+    </section>
+    <SectionInstagram />
+    <SectionMerch />
+  </main>
 </template>
