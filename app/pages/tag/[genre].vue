@@ -65,30 +65,26 @@ useHead({
   <main class="py-lg-5 py-4 bg-body-secondary">
     <section id="tag">
       <div class="container text-center">
-        <h3 class="text-uppercase">{{ genre }}</h3>
+        <h1 class="text-uppercase">{{ genre }}</h1>
         <p>Listen to all my music in this genre</p>
         <div class="row my-4">
           <template v-for="track of latestTracks" :key="track.id">
-            <div class="col-12 col-lg-4">
-              <div class="item">
-                <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{ width: '300px', height: '385px' }" :track="track" :param="track.id" />
-                <NuxtLink :to="`/tracks/${track.id}`">
-                  <p class="mb-0">{{ track.title }}</p>
-                  <p><small>{{ track.artists }}</small></p>
-                </NuxtLink>
-              </div>
-            </div>
+            <article class="col-12 col-lg-4">
+              <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{ width: '300px', height: '385px' }" :track="track" :param="track.id" />
+              <NuxtLink class="text-decoration-none" :to="`/tracks/${track.id}`">
+                <h3 class="mb-0 fs-5 fst-normal fw-normal">{{ track.title }}</h3>
+                <p class="text-secondary"><small>{{ track.artists }}</small></p>
+              </NuxtLink>
+            </article>
           </template>
           <template v-for="track of moreTracks" :key="track.id">
-            <div v-if="showMore" class="col-12 col-lg-4">
-              <div class="item">
-                <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{ width: '300px', height: '385px' }" :track="track" :param="track.id" />
-                <NuxtLink :to="`/tracks/${track.id}`">
-                  <p class="mb-0">{{ track.title }}</p>
-                  <p><small>{{ track.artists }}</small></p>
-                </NuxtLink>
-              </div>
-            </div>
+            <article v-if="showMore" class="col-12 col-lg-4">
+              <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{ width: '300px', height: '385px' }" :track="track" :param="track.id" />
+              <NuxtLink class="text-decoration-none" :to="`/tracks/${track.id}`">
+                <h3 class="mb-0 fs-5 fst-normal fw-normal">{{ track.title }}</h3>
+                <p class="text-secondary"><small>{{ track.artists }}</small></p>
+              </NuxtLink>
+            </article>
           </template>
         </div>
         <div v-if="!showMore && moreTracks.length" class="text-uppercase">

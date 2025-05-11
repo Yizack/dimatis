@@ -102,7 +102,7 @@ useHead({
   <main>
     <section id="tracks" class="bg-body-secondary">
       <div class="container py-lg-5 py-4 text-center">
-        <h3 class="text-uppercase">Tracks</h3>
+        <h1 class="text-uppercase">Tracks</h1>
         <p class="mb-1">Listen to all my music in one place</p>
         <div class="fst-italic">
           <p v-if="tracksFiltered.length">{{ tracksFiltered.length }} {{ tracksFiltered.length > 1 ? 'tracks' : 'track' }} found</p>
@@ -147,15 +147,13 @@ useHead({
         </div>
         <div class="row my-4">
           <TransitionGroup name="list">
-            <div v-for="track of tracksArray" :key="track.id" class="col-12 col-md-6 col-lg-4 mb-3">
-              <div class="item">
-                <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{ width: '300px', height: '385px' }" :track="track" :param="track.art || track.id" />
-                <NuxtLink class="text-decoration-none" :to="`/tracks/${track.id}`">
-                  <p class="mb-0">{{ track.title }}</p>
-                  <p class="text-secondary"><small>{{ track.artists }}</small></p>
-                </NuxtLink>
-              </div>
-            </div>
+            <article v-for="track of tracksArray" :key="track.id" class="col-12 col-md-6 col-lg-4 mb-3">
+              <MusicPlayer class="rounded-3 mx-auto mb-2" :size="{ width: '300px', height: '385px' }" :track="track" :param="track.art || track.id" />
+              <NuxtLink class="text-decoration-none" :to="`/tracks/${track.id}`">
+                <h3 class="mb-0 fs-5 fst-normal fw-normal">{{ track.title }}</h3>
+                <p class="text-secondary"><small>{{ track.artists }}</small></p>
+              </NuxtLink>
+            </article>
           </TransitionGroup>
         </div>
       </div>

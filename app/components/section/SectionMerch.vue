@@ -7,7 +7,7 @@ const { data: merch } = useLazyFetch("/api/merch", {
 <template>
   <section v-if="merch" id="merch" class="py-lg-5 py-4 bg-body-secondary">
     <div class="container">
-      <h3 class="text-uppercase text-center">Merch</h3>
+      <h2 class="text-uppercase text-center">Merch</h2>
       <p class="text-center mb-0">Check out my merch</p>
       <div class="row my-4 justify-content-center">
         <article v-for="item of merch" :key="item.id" class="col-12 col-md-6 col-lg-3 mb-4" :title="item.description">

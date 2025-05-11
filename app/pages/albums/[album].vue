@@ -96,7 +96,7 @@ useHead({
       <div class="container">
         <div class="pb-3 text-center">
           <h1 class="mb-1">{{ album.title }} ({{ album.type }})</h1>
-          <h3 class="text-secondary mb-0">{{ album.artists }}</h3>
+          <h2 class="text-secondary mb-0">{{ album.artists }}</h2>
         </div>
         <div class="text-center my-3">
           <img :src="`/images/${album.art}.jpg`" class="album-image rounded-3" width="300" height="300">

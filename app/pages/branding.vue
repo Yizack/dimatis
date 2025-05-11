@@ -32,7 +32,7 @@ useHead({
   <main>
     <section id="branding" class="py-lg-5 py-4 bg-body-secondary">
       <div class="container text-center">
-        <h3 class="text-uppercase">Branding</h3>
+        <h1 class="text-uppercase">Branding</h1>
         <div class="row my-4">
           <div class="col-12 col-lg-6 mx-auto">
             <div class="mb-5">
@@ -40,13 +40,13 @@ useHead({
               <img src="/images/logos/golden-ratio.jpg" class="img-fluid rounded-3 text-center" width="400" height="400">
             </div>
             <div>
-              <h4 class="text-uppercase">Logo assets</h4>
+              <h2 class="text-uppercase">Logo assets</h2>
               <p class="text-start">Assets of my logo available for download, use these in collaborations with me, blogs, videos, and anything related to my music.</p>
             </div>
           </div>
         </div>
         <div v-for="(brands, i) of BRANDING" :key="i" class="row col-12 col-lg-6 m-auto py-4">
-          <h5 class="text-uppercase">{{ brands.title }}</h5>
+          <h3 class="text-uppercase">{{ brands.title }}</h3>
           <p>{{ brands.description }}</p>
           <div v-for="(file, j) of brands.files" :key="j" class="col-6 g-2">
             <div class="card rounded-3 overflow-hidden">

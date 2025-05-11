@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-3 col-lg-4">
-          <h4>Stream Music</h4>
+          <h3 class="h4">Stream Music</h3>
           <ul class="alt">
             <li><NuxtLink target="_blank" :to="SITE.stream.spotify">Spotify</NuxtLink></li>
             <li><NuxtLink target="_blank" :to="SITE.stream.soundcloud">SoundCloud</NuxtLink></li>
@@ -12,7 +12,7 @@
           </ul>
         </div>
         <div class="col-md-3 col-lg-4">
-          <h4>Buy Music</h4>
+          <h3 class="h4">Buy Music</h3>
           <ul class="alt">
             <li><NuxtLink target="_blank" :to="SITE.buy.itunes">iTunes</NuxtLink></li>
             <li><NuxtLink target="_blank" :to="SITE.buy.bandcamp">Bandcamp</NuxtLink></li>
@@ -20,7 +20,7 @@
           </ul>
         </div>
         <div class="col-md-6 col-lg-4">
-          <h4>Contact</h4>
+          <h3 class="h4">Contact</h3>
           <ul class="icons mb-0">
             <li class="spotify pe-3">
               <NuxtLink :to="SITE.socials.spotify" target="_blank" :aria-label="`Check out ${SITE.name} on Spotify`">
