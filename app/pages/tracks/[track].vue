@@ -189,7 +189,7 @@ if (existLyrics) {
               <div class="col-6 col-lg-3">
                 <NuxtLink :to="`/tracks/${more.id}`" class="text-decoration-none">
                   <img class="img-fluid scale-on-hover rounded-3" :src="`/images/${more.art || more.id}.jpg`" :alt="`${more.artists} - ${more.title}`">
-                  <p class="mt-2 mb-0">{{ more.title }}</p>
+                  <h3 class="mt-2 mb-0 fs-5 fst-normal fw-normal">{{ more.title }}</h3>
                   <p class="text-secondary"><small>{{ more.artists }}</small></p>
                 </NuxtLink>
               </div>

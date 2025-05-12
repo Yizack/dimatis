@@ -162,7 +162,7 @@ useHead({
                 <div class="item">
                   <NuxtLink :to="`/albums/${more.id}`" class="text-decoration-none">
                     <img class="img-fluid scale-on-hover rounded-3" :src="`/images/${more.art}.jpg`" :alt="`${more.artists} - ${more.title} (${more.type})`">
-                    <p class="mt-2 mb-0">{{ more.title }} ({{ more.type }})</p>
+                    <h3 class="mt-2 mb-0 fs-5 fst-normal fw-normal">{{ more.title }} ({{ more.type }})</h3>
                     <p class="text-secondary"><small>{{ more.artists }}</small></p>
                   </NuxtLink>
                 </div>
