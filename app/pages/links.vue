@@ -1,4 +1,6 @@
 <script setup lang="ts">
+definePageMeta({ layout: false });
+
 const page = ref(tracks[0]!);
 </script>
 
