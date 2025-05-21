@@ -123,8 +123,7 @@ export default defineNuxtConfig({
   experimental: {
     viewTransition: true,
     payloadExtraction: false,
-    typedPages: true,
-    purgeCachedData: false
+    typedPages: true
   },
 
   vite: {
