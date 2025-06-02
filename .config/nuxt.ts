@@ -15,17 +15,21 @@ export default defineNuxtConfig({
       meta: [
         { name: "robots", content: "index, follow" },
         { name: "theme-color", content: "#151515" },
-        { name: "msapplication-TileColor", content: "#da532c" },
-        { name: "msapplication-TileImage", content: "/icons/mstile-144x144.png" }
+        { name: "application-name", content: SITE.name },
+        { name: "msapplication-TileColor", content: "#151515" },
+        { name: "msapplication-TileImage", content: "/icons/mstile-144x144.png" },
+        { name: "apple-mobile-web-app-title", content: SITE.name },
+        { name: "apple-mobile-web-app-capable", content: SITE.name }
       ],
       link: [
-        { rel: "icon", type: "image/png", sizes: "16x16", href: "/favicon-16x16.png" },
-        { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32x32.png" },
+        { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
+        { rel: "shortcut icon", href: "/favicon.ico" },
+        { rel: "icon", type: "image/png", sizes: "512x512", href: "/android-chrome-512x512.png" },
         { rel: "icon", type: "image/png", sizes: "192x192", href: "/android-chrome-192x192.png" },
-        { rel: "shortcut icon", href: "/images/dimatis-logo.png" },
-        { rel: "apple-touch-icon", sizes: "57x57", href: "/apple-touch-icon.png" },
-        { rel: "mask-icon", href: "/safari-pinned-tab.svg", color: "#5bbad5" },
+        { rel: "icon", type: "image/png", sizes: "96x96", href: "/favicon-96x96.png" },
+        { rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png" },
         { rel: "manifest", href: "/site.webmanifest" },
+        { rel: "mask-icon", href: "/safari-pinned-tab.svg", color: "#151515" },
         { rel: "preconnect", href: "https://www.dropbox.com" }
       ]
     }
