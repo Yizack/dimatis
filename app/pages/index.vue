@@ -22,9 +22,13 @@ useSeoMeta({
 });
 
 useHead({
-  script: [
-    { type: "application/ld+json", innerHTML: JSON.stringify(homeSchemaOrg) }
-  ],
+  script: homeSchemaOrg.map(schema => ({
+    type: "application/ld+json",
+    innerHTML: JSON.stringify({
+      "@context": "http://schema.org",
+      ...schema
+    })
+  })),
   link: [
     { rel: "canonical", href: `${SITE.url}` }
   ]
