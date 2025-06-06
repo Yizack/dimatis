@@ -46,7 +46,7 @@ const latestTracks = tracks.reduce((acc, t) => {
   <main>
     <SectionBanner />
     <SectionAbout />
-    <SectionStats />
+    <LazySectionStats hydrate-on-visible />
     <section id="music" class="bg-body-secondary py-lg-5 py-4">
       <div class="container text-center">
         <h2 class="text-uppercase">Latest Music</h2>
@@ -67,7 +67,7 @@ const latestTracks = tracks.reduce((acc, t) => {
         </div>
       </div>
     </section>
-    <SectionInstagram />
-    <SectionMerch />
+    <LazySectionInstagram hydrate-on-visible />
+    <LazySectionMerch hydrate-on-visible />
   </main>
 </template>
