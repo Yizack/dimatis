@@ -2,6 +2,6 @@
   <div>
     <NavBar />
     <slot />
-    <SectionFooter />
+    <LazySectionFooter hydrate-on-visible />
   </div>
 </template>
