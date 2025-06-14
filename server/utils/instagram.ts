@@ -1,4 +1,4 @@
-type InstagramFields = "username" | "permalink" | "timestamp" | "caption" | "media_url" | "media_type" | "thumbnail_url";
+type InstagramFields = "username" | "permalink" | "timestamp" | "caption" | "media_url" | "media_type" | "thumbnail_url" | "is_shared_to_feed";
 
 export class InstagramFeed {
   api: string;

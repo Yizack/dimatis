@@ -9,5 +9,6 @@ declare global {
     media_url: string;
     media_type: string;
     thumbnail_url: string;
+    is_shared_to_feed: boolean;
   }
 }
