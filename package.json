@@ -27,7 +27,7 @@
     "lint:fix": "pnpm lint:eslint --fix && pnpm lint:stylelint --fix",
     "lint:eslint": "eslint --config .config/eslint.mjs",
     "lint:stylelint": "stylelint \"**/*.{css,scss,sass}\" --config .config/stylelint.json",
-    "test:types": "vue-tsc --noEmit"
+    "test:types": "vue-tsc -b --noEmit"
   },
   "devDependencies": {
     "@glidejs/glide": "^3.7.1",
@@ -40,22 +40,22 @@
     "@nuxtjs/sitemap": "^7.4.3",
     "@types/bootstrap": "^5.2.10",
     "@types/glidejs__glide": "^3.6.6",
-    "@types/node": "^24.0.10",
+    "@types/node": "^24.0.1",
     "@vueuse/core": "^13.5.0",
     "bootstrap": "^5.3.7",
     "drizzle-kit": "^0.31.4",
-    "drizzle-orm": "^0.44.2",
-    "eslint": "^9.30.1",
+    "drizzle-orm": "^0.44.3",
+    "eslint": "^9.31.0",
     "fast-average-color-node": "^3.1.0",
-    "nuxt": "^3.17.6",
+    "nuxt": "^4.0.0",
     "nuxt-musicfyplayer": "^2.1.7",
     "sass": "^1.89.2",
     "stylelint": "^16.21.1",
     "stylelint-config-standard-scss": "^15.0.1",
     "typescript": "^5.8.3",
     "vue-tsc": "^3.0.1",
-    "wrangler": "^4.23.0",
-    "zod": "^3.25.75"
+    "wrangler": "^4.24.3",
+    "zod": "^4.0.5"
   },
-  "packageManager": "pnpm@10.12.4"
+  "packageManager": "pnpm@10.13.1"
 }

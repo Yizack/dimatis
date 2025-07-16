@@ -108,6 +108,10 @@ export default defineNuxtConfig({
   sitemap: {
     discoverImages: false,
     sources: ["/api/__sitemap__/urls"],
+    defaults: { priority: 0.8 },
+    urls: [
+      { loc: "/", priority: 1 }
+    ],
     xslColumns: [
       { label: "URL", width: "65%" },
       { label: "Priority", select: "sitemap:priority", width: "12.5%" }
@@ -115,8 +119,6 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    "/": { sitemap: { priority: 1 } },
-    "/*/**": { sitemap: { priority: 0.8 } },
     "/api/_nuxt_icon/**": { cache: { maxAge: 1.577e+7 } }
   },
 
@@ -134,12 +136,11 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          api: "modern-compiler",
           silenceDeprecations: ["mixed-decls", "color-functions", "import", "global-builtin"]
         }
       }
     }
   },
 
-  compatibilityDate: "2025-04-30"
+  compatibilityDate: "2025-07-16"
 });
