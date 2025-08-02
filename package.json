@@ -52,10 +52,10 @@
     "sass": "^1.89.2",
     "stylelint": "^16.23.0",
     "stylelint-config-standard-scss": "^15.0.1",
-    "typescript": "^5.8.3",
-    "vue-tsc": "^3.0.4",
-    "wrangler": "^4.26.1",
+    "typescript": "^5.9.2",
+    "vue-tsc": "^3.0.5",
+    "wrangler": "^4.27.0",
     "zod": "^4.0.14"
   },
-  "packageManager": "pnpm@10.13.1"
+  "packageManager": "pnpm@10.14.0"
 }
