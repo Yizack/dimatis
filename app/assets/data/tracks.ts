@@ -1,5 +1,42 @@
 export default [
   {
+    id: "framboise",
+    isrc: "GXESV2565555",
+    artists: "Dimatis",
+    title: "Framboise",
+    description: "",
+    genre: "Liquid Drum & Bass",
+    date: "2025-08-15T00:00:00.000",
+    person: [
+      "Dimatis"
+    ],
+    mm: 2,
+    ss: 53,
+    dropbox: {
+      id: "5oo4x1mswdezuja32jaji",
+      rlkey: "q8lmfc6n58aczv02bd4z6nm9y"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        spotify: "",
+        soundcloud: "https://soundcloud.com/dimatis/framboise",
+        youtube: "",
+        apple: "https://music.apple.com/us/album/framboise-single/1808036466?app=music&ls=1",
+        itunes: "https://music.apple.com/us/album/framboise-single/1808036466?app=itunes&ls=1",
+        bandcamp: "https://dimatis.bandcamp.com/track/framboise",
+        deezer: "",
+        tidal: "",
+        yandex: "",
+        amazon: "",
+        tiktok: "",
+        beatport: "",
+        netease: ""
+      }
+    }
+  },
+  {
     id: "sophira",
     isrc: "GX38U2539294",
     artists: "Dimatis",
