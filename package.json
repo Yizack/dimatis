@@ -18,7 +18,7 @@
     "build": "pnpm color:players && pnpm data && nuxt build",
     "dev": "nuxt dev --port=5173",
     "generate": "nuxt generate",
-    "preview": "pnpm dlx nuxthub preview",
+    "preview": "pnpx nuxthub preview",
     "postinstall": "nuxt prepare",
     "color:players": "jiti scripts/playerStyles",
     "data": "jiti scripts/generatePublicData",
