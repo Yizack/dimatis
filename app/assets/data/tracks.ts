@@ -709,6 +709,7 @@ export default [
   },
   {
     id: "sad-songs-remix",
+    isrc: "QZMHN2334773",
     artists: "TobeyBeats, Taca Music & Laryssa Vachon",
     title: "Sad Songs (Dimatis & Morva Remix)",
     description: "I had the pleasure to work with Morvaross remixing Sad Songs for the Stardust Records and Spotlist Network remix contest!!",
