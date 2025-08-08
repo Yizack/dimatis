@@ -11,7 +11,7 @@ export default [
       "Dimatis"
     ],
     mm: 2,
-    ss: 53,
+    ss: 52,
     dropbox: {
       id: "5oo4x1mswdezuja32jaji",
       rlkey: "q8lmfc6n58aczv02bd4z6nm9y"
