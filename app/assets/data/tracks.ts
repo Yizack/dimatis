@@ -4,7 +4,7 @@ export default [
     isrc: "GXESV2565555",
     artists: "Dimatis",
     title: "Framboise",
-    description: "",
+    description: "\"Framboise\", is a soft Chill Drum & Bass track made with a 3/4 time signature, I love DnB and I tried to fit a DnB-type rhythm into a waltz beat, and this is what I got. Why 3/4? For me, it's the perfect time signature for expressing beauty through emotions in melodies. 🍓\n\nThe word \"Framboise\" is the french for \"Raspberry\", I've always liked its taste and it's one of my favorite flavors, especially in iced tea and lemonades but can also enjoy sweet cakes :) I've found myself enjoying anything with raspberries during some of the best moments in my life so why not use it as a song name ❤️",
     genre: "Liquid Drum & Bass",
     date: "2025-08-15T00:00:00.000",
     person: [
@@ -22,9 +22,9 @@ export default [
       links: {
         spotify: "",
         soundcloud: "https://soundcloud.com/dimatis/framboise",
-        youtube: "",
-        apple: "https://music.apple.com/us/album/framboise-single/1808036466?app=music&ls=1",
-        itunes: "https://music.apple.com/us/album/framboise-single/1808036466?app=itunes&ls=1",
+        youtube: "https://youtu.be/RByaqg79yMw",
+        apple: "https://music.apple.com/us/album/framboise-single/1831260360?app=music&ls=1",
+        itunes: "https://music.apple.com/us/album/framboise-single/1831260360?app=itunes&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/track/framboise",
         deezer: "",
         tidal: "",
