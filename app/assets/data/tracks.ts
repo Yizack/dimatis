@@ -20,19 +20,19 @@ export default [
       download: true,
       dark: false,
       links: {
-        spotify: "",
+        spotify: "https://open.spotify.com/track/6T2Qm0X0wV3uJXJL1JFF66?si=b330b7f78aa44332",
         soundcloud: "https://soundcloud.com/dimatis/framboise",
         youtube: "https://youtu.be/RByaqg79yMw",
         apple: "https://music.apple.com/us/album/framboise-single/1831260360?app=music&ls=1",
         itunes: "https://music.apple.com/us/album/framboise-single/1831260360?app=itunes&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/track/framboise",
         deezer: "",
-        tidal: "",
+        tidal: "https://tidal.com/browse/album/452299364",
         yandex: "",
         amazon: "",
         tiktok: "",
         beatport: "",
-        netease: ""
+        netease: "https://music.163.com/#/song?id=2733380209"
       }
     }
   },
