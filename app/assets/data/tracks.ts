@@ -26,11 +26,11 @@ export default [
         apple: "https://music.apple.com/us/album/framboise-single/1831260360?app=music&ls=1",
         itunes: "https://music.apple.com/us/album/framboise-single/1831260360?app=itunes&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/track/framboise",
-        deezer: "",
+        deezer: "https://www.deezer.com/us/album/799612821",
         tidal: "https://tidal.com/browse/album/452299364",
         yandex: "",
-        amazon: "",
-        tiktok: "",
+        amazon: "https://www.amazon.com/dp/B0FL7SJ44M",
+        tiktok: "https://vm.tiktok.com/ZMHsT6oU42aan-Rs1w0/",
         beatport: "",
         netease: "https://music.163.com/#/song?id=2733380209"
       }
