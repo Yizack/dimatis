@@ -1,0 +1,24 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "dimatis",
+  "compatibility_date": "2025-08-24",
+  "main": "dist/server/index.mjs",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "binding": "ASSETS",
+    "directory": "dist/public"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "dimatis",
+      "database_id": "4142d6df-433f-47ef-93cb-c7978026fb68"
+    }
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "CACHE",
+      "id": "5cdc786a8a6f41aeb918d13a9cc030f4",
+    }
+  ]
+}
