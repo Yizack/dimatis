@@ -18,7 +18,8 @@
     {
       "binding": "DB",
       "database_name": "dimatis",
-      "database_id": "4142d6df-433f-47ef-93cb-c7978026fb68"
+      "database_id": "4142d6df-433f-47ef-93cb-c7978026fb68",
+      "migrations_dir": "dist/database/migrations"
     }
   ],
   "kv_namespaces": [

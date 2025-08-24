@@ -18,7 +18,7 @@
     "build": "pnpm color:players && pnpm data && nuxt build",
     "dev": "nuxt dev --port=5173",
     "generate": "nuxt generate",
-    "preview": "pnpx nuxthub preview",
+    "preview": "wrangler d1 migrations apply DB --local && wrangler dev",
     "postinstall": "nuxt prepare",
     "color:players": "jiti scripts/playerStyles",
     "data": "jiti scripts/generatePublicData",
