@@ -9,9 +9,6 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: "en"
       },
-      bodyAttrs: {
-        class: "bg-dark text-white"
-      },
       meta: [
         { name: "robots", content: "index, follow" },
         { name: "theme-color", content: "#151515" },

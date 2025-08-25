@@ -42,6 +42,7 @@ body {
 }
 
 a {
+  color: var(--bs-white);
   text-decoration: underline dashed;
   text-decoration-thickness: 1px;
   text-decoration-color: rgb(var(--bs-secondary-rgb), 0.3);
