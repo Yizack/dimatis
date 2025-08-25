@@ -90,7 +90,7 @@ export default defineNuxtConfig({
     prerender: {
       autoSubfolderIndex: false,
       crawlLinks: false,
-      routes: ["/sitemap.xml"]
+      routes: ["/sitemap.xml", "/branding", "/licensing", "/links", "/shop/legado"]
     },
     cloudflare: {
       pages: {
