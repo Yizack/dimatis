@@ -5,8 +5,7 @@ const track = computed<DimatisTrack>(() => tracks.find(track => track.id === par
 if (!track.value) {
   throw createError({
     statusCode: ErrorCode.NOT_FOUND,
-    message: `Track not found: '${param.value}'`,
-    fatal: true
+    message: `Track not found: '${param.value}'`
   });
 }
 

@@ -5,8 +5,7 @@ const album = computed<DimatisAlbum>(() => albums.find(a => a.id === param.value
 if (!album.value) {
   throw createError({
     statusCode: ErrorCode.NOT_FOUND,
-    message: `Album not found: '${param.value}'`,
-    fatal: true
+    message: `Album not found: '${param.value}'`
   });
 }
 
