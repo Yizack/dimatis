@@ -1,7 +1,35 @@
 <script setup lang="ts">
 definePageMeta({ layout: false });
 
-const page = ref(tracks[0]!);
+useSeoMeta({
+  title: `Links | ${SITE.name}`,
+  description: `${SITE.name} links`,
+  keywords: SITE.keywords,
+  // Protocolo Open Graph
+  ogUrl: `${SITE.url}/links`,
+  ogType: "website",
+  ogTitle: `Links | ${SITE.name}`,
+  ogSiteName: SITE.name,
+  ogDescription: `${SITE.name} links`,
+  ogImage: `${SITE.url}/${SITE.cover}`,
+  ogImageWidth: 750,
+  ogImageHeight: 375,
+  ogImageAlt: `${SITE.name} cover image`,
+  // Protocolo Twitter
+  twitterCard: "summary_large_image",
+  twitterSite: `@${SITE.twitter}`,
+  twitterTitle: `Links | ${SITE.name}`,
+  twitterDescription: `${SITE.name} links`,
+  twitterImage: `${SITE.url}/${SITE.cover}`
+});
+
+useHead({
+  link: [
+    { rel: "canonical", href: `${SITE.url}/links` }
+  ]
+});
+
+const latestRelease = ref(tracks[0]!);
 </script>
 
 <template>
@@ -19,11 +47,11 @@ const page = ref(tracks[0]!);
         <div class="card-body px-lg-5 bg-body-secondary">
           <h4>Latest Release</h4>
           <div class="position-relative neon scale-on-hover normal">
-            <NuxtLink :to="`${SITE.fanlinksUrl}/${page.art || page.id}`" class="bg-body-tertiary d-flex align-items-center rounded-4 overflow-hidden mb-2 border text-decoration-none position-relative z-1">
-              <img class="img-fluid" :src="`/images/${page.id}.jpg`" :alt="`${page.artists} - ${page.title}`" width="100" height="100">
+            <NuxtLink :to="`${SITE.fanlinksUrl}/${latestRelease.art || latestRelease.id}`" class="bg-body-tertiary d-flex align-items-center rounded-4 overflow-hidden mb-2 border text-decoration-none position-relative z-1">
+              <img class="img-fluid" :src="`/images/${latestRelease.id}.jpg`" :alt="`${latestRelease.artists} - ${latestRelease.title}`" width="100" height="100">
               <div class="px-3 w-100">
-                <h5 class="m-0">{{ page.title }}</h5>
-                <p class="m-0 text-muted">{{ page.artists }}</p>
+                <h5 class="m-0">{{ latestRelease.title }}</h5>
+                <p class="m-0 text-muted">{{ latestRelease.artists }}</p>
               </div>
             </NuxtLink>
           </div>
