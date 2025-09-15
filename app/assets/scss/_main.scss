@@ -30,7 +30,7 @@ $body: #151515;
   --bs-border-color: var(--bs-tertiary-bg);
   --bs-white: #{$white};
   --bs-white-rgb: #{to-rgb($white)};
-  
+
   scrollbar-width: auto;
   scroll-behavior: unset;
 }
@@ -103,9 +103,9 @@ a:hover {
 }
 
 .credits p {
-  white-space: nowrap; 
+  white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis; 
+  text-overflow: ellipsis;
 }
 
 .bg-light a, .bg-white a {
