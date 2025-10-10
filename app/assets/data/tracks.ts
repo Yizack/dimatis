@@ -4,7 +4,7 @@ export default [
     isrc: "GXBDT2532759",
     artists: "Dimatis & Oscuro",
     title: "Hope on the Horizon",
-    description: "I'm excited to share my latest collaboration with Oscuro, \"Hope on the Horizon\". It was a pleasure working with him. I've always admired Oscuro's music, and being able to create something together is like a dream come true. This track combines our styles; the release also includes a Chill version. I hope it brings a sense of hope and positivity. We hope you enjoy it!",
+    description: "I'm excited to share my latest collaboration with Oscuro, \"Hope on the Horizon\". It was a pleasure working with him. I've always admired Oscuro's music, and being able to create something together is like a dream come true. This track combines our styles; the release also includes a Chill version. I hope it brings a sense of hope and positivity. We hope you enjoy it! 💙☁️",
     genre: "Melodic Dubstep",
     date: "2025-10-10T00:00:00.000",
     person: [
