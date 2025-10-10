@@ -1,5 +1,43 @@
 export default [
   {
+    id: "hope-on-the-horizon",
+    isrc: "GXBDT2532759",
+    artists: "Dimatis & Oscuro",
+    title: "Hope on the Horizon",
+    description: "I'm excited to share my latest collaboration with Oscuro, \"Hope on the Horizon\". It was a pleasure working with him. I've always admired Oscuro's music, and being able to create something together is like a dream come true. This track combines our styles; the release includes a Chill version track too. I hope it brings a sense of hope and positivity. We hope you enjoy it!",
+    genre: "Melodic Dubstep",
+    date: "2025-10-10T00:00:00.000",
+    person: [
+      "Dimatis",
+      "Oscuro"
+    ],
+    mm: 3,
+    ss: 20,
+    dropbox: {
+      id: "txqos11k9oaskgngb8jc3",
+      rlkey: "avac3rbd3pwem20zd50kb9yyt"
+    },
+    fanlink: {
+      download: true,
+      dark: true,
+      links: {
+        spotify: "https://open.spotify.com/track/7oVcLtcTyPHMLFT6xEOJXM",
+        soundcloud: "https://soundcloud.com/dimatis/hope-on-the-horizon",
+        youtube: "https://youtu.be/wl2bkyb_DtU",
+        apple: "https://music.apple.com/us/album/hope-on-the-horizon-single/1837115260?app=music&ls=1",
+        itunes: "https://music.apple.com/us/album/hope-on-the-horizon-single/1837115260?app=itunes&ls=1",
+        bandcamp: "https://dimatis.bandcamp.com/album/hope-on-the-horizon",
+        deezer: "https://www.deezer.com/us/album/814114221",
+        tidal: "https://tidal.com/album/457577901",
+        yandex: "",
+        amazon: "https://www.amazon.com/dp/B0FPDJ8SF8",
+        tiktok: "",
+        beatport: "",
+        netease: "https://music.163.com/#/album?id=283589110"
+      }
+    }
+  },
+  {
     id: "framboise",
     isrc: "GXESV2565555",
     artists: "Dimatis",
