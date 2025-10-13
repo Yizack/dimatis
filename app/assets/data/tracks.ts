@@ -31,7 +31,7 @@ export default [
         tidal: "https://tidal.com/album/457577901",
         yandex: "",
         amazon: "https://www.amazon.com/dp/B0FPDJ8SF8",
-        tiktok: "",
+        tiktok: "https://vm.tiktok.com/ZMH7qoNmHby74-zciRW/",
         beatport: "",
         netease: "https://music.163.com/#/album?id=283589110"
       }
