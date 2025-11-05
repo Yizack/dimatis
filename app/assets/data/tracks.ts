@@ -1,5 +1,42 @@
 export default [
   {
+    id: "esmeralda",
+    isrc: "GXHZK2593968",
+    artists: "Dimatis",
+    title: "Esmeralda",
+    description: "",
+    genre: "Melodic Dubstep",
+    date: "2025-11-14T00:00:00.000",
+    person: [
+      "Dimatis"
+    ],
+    mm: 3,
+    ss: 44,
+    dropbox: {
+      id: "k1fddgez77jl2af0s6chd",
+      rlkey: "7walcoj3v1a59ud1v0qvdpiyh"
+    },
+    fanlink: {
+      download: true,
+      dark: true,
+      links: {
+        spotify: "",
+        soundcloud: "https://soundcloud.com/dimatis/esmeralda",
+        youtube: "https://youtu.be/NrjTqSb3skI",
+        apple: "https://music.apple.com/us/album/esmeralda-single/1849319574?app=music&ls=1",
+        itunes: "https://music.apple.com/us/album/esmeralda-single/1849319574?app=itunes&ls=1",
+        bandcamp: "https://dimatis.bandcamp.com/album/esmeralda",
+        deezer: "",
+        tidal: "",
+        yandex: "",
+        amazon: "",
+        tiktok: "",
+        beatport: "",
+        netease: ""
+      }
+    }
+  },
+  {
     id: "hope-on-the-horizon",
     isrc: "GXBDT2532759",
     artists: "Dimatis & Oscuro",
