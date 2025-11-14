@@ -4,7 +4,7 @@ export default [
     isrc: "GXHZK2593968",
     artists: "Dimatis",
     title: "Esmeralda",
-    description: "",
+    description: "Hey there!🙏\nThe idea for this track dates back to 2021, a little over 4 years ago. Initially, I wasn't satisfied with the idea (maybe because it doesn't carry as much personal emotional weight as other tracks I've made, or quality-wise it isn't the best), but recently I decided to give it another shot!\nIt is exciting sometimes to revisit old ideas! Never discard an idea forever, there might be someone out there eager to listen to them. Even if it's not perfect for you, it could be the perfect song for someone else.\nFor some reason, I visualize this track surrounded by greenery, which is why I decided to name it \"Esmeralda\", the Spanish word for \"Emerald\". 💚☘️🍃\nI hope you like it!",
     genre: "Melodic Dubstep",
     date: "2025-11-14T00:00:00.000",
     person: [
@@ -18,21 +18,21 @@ export default [
     },
     fanlink: {
       download: true,
-      dark: true,
+      dark: false,
       links: {
-        spotify: "",
+        spotify: "https://open.spotify.com/track/63rlY35R1L5NoOOc3Qis3n",
         soundcloud: "https://soundcloud.com/dimatis/esmeralda",
         youtube: "https://youtu.be/NrjTqSb3skI",
         apple: "https://music.apple.com/us/album/esmeralda-single/1849319574?app=music&ls=1",
         itunes: "https://music.apple.com/us/album/esmeralda-single/1849319574?app=itunes&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/album/esmeralda",
-        deezer: "",
+        deezer: "https://www.deezer.com/us/album/845777912",
         tidal: "",
         yandex: "",
-        amazon: "",
+        amazon: "https://www.amazon.com/dp/B0FY6R99DL",
         tiktok: "",
         beatport: "",
-        netease: ""
+        netease: "https://music.163.com/#/song?id=3311908448"
       }
     }
   },
