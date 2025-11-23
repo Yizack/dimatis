@@ -121,7 +121,7 @@ if (existLyrics) {
             </div>
             <div v-if="lyrics" class="lyrics mt-3" :class="{ 'lyrics-fade': !showFullLyrics }">
               <h3 class="text-white">Lyrics</h3>
-              <p class="m-0 pre-line overflow-hidden position-relative overflow-hidden" :style="showFullLyrics ? 'height:auto' : 'height: 140px;'">{{ lyrics }}</p>
+              <p class="m-0 pre-line overflow-hidden position-relative" :style="showFullLyrics ? 'height:auto' : 'height: 140px;'">{{ lyrics }}</p>
               <a v-if="!showFullLyrics" class="small" role="button" @click="showFullLyrics = true">
                 <span class="text-decoration-underline">Read lyrics</span>
                 <Icon name="tabler:caret-down-filled" />
