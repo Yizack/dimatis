@@ -2,6 +2,16 @@ import { SITE } from "../shared/utils/site";
 
 export default defineNuxtConfig({
   // future: { compatibilityVersion: 4 },
+
+  modules: [
+    "@nuxthub/core",
+    "@nuxtjs/color-mode",
+    "@nuxt/eslint",
+    "nuxt-musicfyplayer",
+    "@nuxtjs/sitemap",
+    "@nuxt/icon"
+  ],
+
   app: {
     head: {
       charset: "utf-8",
@@ -36,14 +46,16 @@ export default defineNuxtConfig({
     "~/assets/scss/app.scss"
   ],
 
-  modules: [
-    "@nuxthub/core",
-    "@nuxtjs/color-mode",
-    "@nuxt/eslint",
-    "nuxt-musicfyplayer",
-    "@nuxtjs/sitemap",
-    "@nuxt/icon"
-  ],
+  site: {
+    url: SITE.url
+  },
+
+  colorMode: {
+    preference: "dark",
+    fallback: "dark",
+    dataValue: "bs-theme",
+    storageKey: "nuxt-color-mode"
+  },
 
   runtimeConfig: {
     spotify: {
@@ -57,62 +69,6 @@ export default defineNuxtConfig({
       user: "",
       password: ""
     }
-  },
-
-  hub: { database: true, cache: true, workers: true },
-
-  icon: {
-    mode: "svg",
-    clientBundle: {
-      scan: true,
-      sizeLimitKb: 2048
-    }
-  },
-
-  colorMode: {
-    preference: "dark",
-    fallback: "dark",
-    dataValue: "bs-theme",
-    storageKey: "nuxt-color-mode"
-  },
-
-  eslint: {
-    config: {
-      autoInit: false,
-      stylistic: true
-    }
-  },
-
-  nitro: {
-    prerender: {
-      autoSubfolderIndex: false,
-      crawlLinks: false,
-      routes: ["/sitemap.xml", "/branding", "/licensing", "/links", "/shop/legado"]
-    },
-    cloudflare: {
-      pages: {
-        routes: {
-          exclude: ["/images/*", "/data/*", "/fonts/*", "/licenses/*"]
-        }
-      }
-    }
-  },
-
-  site: {
-    url: SITE.url
-  },
-
-  sitemap: {
-    discoverImages: false,
-    sources: ["/api/__sitemap__/urls"],
-    defaults: { priority: 0.8 },
-    urls: [
-      { loc: "/", priority: 1 }
-    ],
-    xslColumns: [
-      { label: "URL", width: "65%" },
-      { label: "Priority", select: "sitemap:priority", width: "12.5%" }
-    ]
   },
 
   routeRules: {
@@ -129,6 +85,25 @@ export default defineNuxtConfig({
     typedPages: true
   },
 
+  compatibilityDate: "2025-07-16",
+
+  nitro: {
+    prerender: {
+      autoSubfolderIndex: false,
+      crawlLinks: false,
+      routes: ["/sitemap.xml", "/branding", "/licensing", "/links", "/shop/legado"]
+    },
+    cloudflare: {
+      pages: {
+        routes: {
+          exclude: ["/images/*", "/data/*", "/fonts/*", "/licenses/*"]
+        }
+      }
+    }
+  },
+
+  hub: { database: true, cache: true, workers: true },
+
   vite: {
     css: {
       preprocessorOptions: {
@@ -139,5 +114,31 @@ export default defineNuxtConfig({
     }
   },
 
-  compatibilityDate: "2025-07-16"
+  eslint: {
+    config: {
+      autoInit: false,
+      stylistic: true
+    }
+  },
+
+  icon: {
+    mode: "svg",
+    clientBundle: {
+      scan: true,
+      sizeLimitKb: 2048
+    }
+  },
+
+  sitemap: {
+    discoverImages: false,
+    sources: ["/api/__sitemap__/urls"],
+    defaults: { priority: 0.8 },
+    urls: [
+      { loc: "/", priority: 1 }
+    ],
+    xslColumns: [
+      { label: "URL", width: "65%" },
+      { label: "Priority", select: "sitemap:priority", width: "12.5%" }
+    ]
+  }
 });
