@@ -1,5 +1,66 @@
 export default [
   {
+    id: "here-tomorrow",
+    isrc: "QZPJ32517837",
+    artists: "Dimatis & HYLIA",
+    title: "Here, Tomorrow",
+    description: "Hey friends 👋❤️ This is my first ever cover remix. It's finally out, and it was so hard to keep it a secret.\nWhen I first heard the original song back in April this year, I visually loved the Spirit Blossom event, the vocals immediately reminded me of HYLIA, and I knew I had to ask her to collaborate with me on this cover remix.\nFor this version, I recreated the intro section from scratch and transitioned it into melodic dubstep drops.\nI've always been a huge fan of League of Legends, it was a big part of my adolescence, and even today I still play sometimes, so being able to release this cover feels great. ✨❤️",
+    genre: "Melodic Dubstep",
+    date: "2025-12-05T00:00:00.000",
+    person: [
+      "Dimatis",
+      "HYLIA"
+    ],
+    mm: 3,
+    ss: 33,
+    dropbox: {
+      id: "vtynxm2778i18txoazuje",
+      rlkey: "1d31fff4g698dhnca4hpqx276"
+    },
+    credits: [
+      {
+        title: "Support HYLIA",
+        socials: [
+          {
+            name: "Spotify",
+            link: "https://open.spotify.com/artist/6zRFKufuh8CGgePzQeIzw8?si=gad8FMvaTjqJUpqo0yxKmg"
+          },
+          {
+            name: "Instagram",
+            link: "https://www.instagram.com/hyliamusicofficial/"
+          },
+          {
+            name: "YouTube",
+            link: "https://www.youtube.com/@hyliamusicofficial"
+          },
+          {
+            name: "Soundcloud",
+            link: "https://soundcloud.com/hyliamusicofficial"
+          }
+        ]
+      }
+    ],
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        spotify: "https://open.spotify.com/track/3SntgUOA1rBInDRHXEVLBL",
+        soundcloud: "https://soundcloud.com/dimatis/here-tomorrow",
+        youtube: "https://youtu.be/NrjTqSb3skI",
+        apple: "https://music.apple.com/us/album/here-tomorrow-from-league-of-legends-single/1847963516?app=music&ls=1",
+        itunes: "https://music.apple.com/us/album/here-tomorrow-from-league-of-legends-single/1847963516?app=itunes&ls=1",
+        bandcamp: "https://dimatis.bandcamp.com/album/here-tomorrow",
+        deezer: "https://www.deezer.com/us/album/842616612",
+        tidal: "https://tidal.com/album/468683845",
+        yandex: "",
+        amazon: "https://www.amazon.com/dp/B0FXBSCLKZ",
+        tiktok: "",
+        beatport: "",
+        netease: "https://music.163.com/#/song?id=2758052339"
+      }
+    }
+  },
+  {
     id: "esmeralda",
     isrc: "GXHZK2593968",
     artists: "Dimatis",
