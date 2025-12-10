@@ -28,7 +28,7 @@ onMounted(() => {
 
 const replaceLinkables = (text: string) => {
   // Replace hashtags with links
-  let replacedText = text.replace(/[\s|\n]#([a-zA-Z0-9._]+)(?=\W|$)/g, " <a href='https://www.instagram.com/explore/tags/$1/' target='_blank' style='color: rgb(224 241 255)'>#$1</a>");
+  let replacedText = text.replace(/#([a-zA-Z0-9._]+)(?=\W|$)/g, " <a href='https://www.instagram.com/explore/tags/$1/' target='_blank' style='color: rgb(224 241 255)'>#$1</a>");
   // Replace mentions with links
   replacedText = replacedText.replace(/[\s|\n]@([a-zA-Z0-9._]+)(?=\W|$)/g, " <a href='https://www.instagram.com/$1/' target='_blank' style='color: rgb(224 241 255)'>@$1</a>");
   replacedText = replacedText.replace(/\n/g, "<br>").trim();
