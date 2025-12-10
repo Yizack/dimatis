@@ -114,7 +114,7 @@ useHead({
                 </tr>
               </thead>
               <tbody class="text-secondary">
-                <template v-for="(track, index) of albumTracks" :key="track">
+                <template v-for="(track, index) of albumTracks" :key="track.id">
                   <tr role="button" @click="goTrack(track.id)">
                     <td>{{ index + 1 }}</td>
                     <td>{{ track.artists }}</td>
