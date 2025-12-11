@@ -12,6 +12,12 @@ export default defineNuxtConfig({
     "@nuxt/icon"
   ],
 
+  $production: {
+    nitro: {
+      preset: "cloudflare-module"
+    }
+  },
+
   app: {
     head: {
       charset: "utf-8",
