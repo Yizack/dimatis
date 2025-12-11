@@ -22,7 +22,7 @@ export default defineEventHandler(async (event) => {
 
   const time = Date.now();
   event.waitUntil(
-    useDB().insert(tables.downloads).values({
+    db.insert(tables.downloads).values({
       file,
       count: 1,
       lastDownload: time

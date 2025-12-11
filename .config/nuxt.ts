@@ -102,7 +102,12 @@ export default defineNuxtConfig({
     }
   },
 
-  hub: { database: true, cache: true, workers: true },
+  hub: {
+    db: {
+      dialect: "sqlite"
+    },
+    cache: true
+  },
 
   vite: {
     css: {

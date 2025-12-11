@@ -3,8 +3,7 @@ export default defineCachedEventHandler(async (event) => {
     file: z.string()
   }).parse);
 
-  const DB = useDB();
-  const data = await DB.select({
+  const data = await db.select({
     count: tables.downloads.count
   }).from(tables.downloads).where(eq(tables.downloads.file, file)).get();
 
@@ -21,5 +20,6 @@ export default defineCachedEventHandler(async (event) => {
   group: "api",
   name: "download-count",
   getKey: event => getQuery(event).file as string,
-  maxAge: 86400 // 1 day cache
+  maxAge: 86400, // 1 day cache
+  shouldBypassCache: () => !!import.meta.dev
 });
