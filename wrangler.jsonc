@@ -2,8 +2,8 @@
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "dimatis",
   "compatibility_date": "2025-08-24",
-  "main": "dist/server/index.mjs",
-  "compatibility_flags": ["nodejs_compat", "no_nodejs_compat_v2"],
+  "main": ".output/server/index.mjs",
+  "compatibility_flags": ["nodejs_compat"],
   "routes": [
     {
       "pattern": "dimatis.music",
@@ -12,14 +12,14 @@
   ],
   "assets": {
     "binding": "ASSETS",
-    "directory": "dist/public"
+    "directory": ".output/public"
   },
   "d1_databases": [
     {
       "binding": "DB",
       "database_name": "dimatis",
       "database_id": "4142d6df-433f-47ef-93cb-c7978026fb68",
-      "migrations_dir": "dist/database/migrations"
+      "migrations_dir": ".output/server/db/migrations"
     }
   ],
   "kv_namespaces": [
