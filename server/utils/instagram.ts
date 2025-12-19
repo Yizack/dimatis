@@ -12,7 +12,10 @@ export class InstagramFeed {
     const query = new URLSearchParams({ grant_type: "ig_refresh_token", access_token: this.accessToken });
     return $fetch(`${this.api}/refresh_access_token?${query}`).catch((e) => {
       console.warn(e);
-      throw createError({ statusCode: ErrorCode.INTERNAL_SERVER_ERROR, message: "Failed to refresh access token" });
+      throw createError({
+        status: ErrorCode.INTERNAL_SERVER_ERROR,
+        message: "Failed to refresh access token"
+      });
     });
   }
 
@@ -24,7 +27,10 @@ export class InstagramFeed {
     });
     return $fetch<{ data: InstagramPost[] }>(`${this.api}/${this.version}/me/media?${query}`).catch((e) => {
       console.warn(e);
-      throw createError({ statusCode: ErrorCode.INTERNAL_SERVER_ERROR, message: "Failed to fetch instagram feed" });
+      throw createError({
+        status: ErrorCode.INTERNAL_SERVER_ERROR,
+        message: "Failed to fetch instagram feed"
+      });
     });
   }
 }

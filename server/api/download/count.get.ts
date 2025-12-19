@@ -9,8 +9,8 @@ export default defineCachedEventHandler(async (event) => {
 
   if (!data) {
     throw createError({
-      message: "Track not found",
-      statusCode: ErrorCode.NOT_FOUND
+      status: ErrorCode.NOT_FOUND,
+      message: "Track not found"
     });
   }
 

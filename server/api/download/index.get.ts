@@ -15,8 +15,8 @@ export default defineEventHandler(async (event) => {
 
   if (!propData) {
     throw createError({
-      message: isAlbum ? "Album or EP not found" : "Track not found",
-      statusCode: ErrorCode.NOT_FOUND
+      status: ErrorCode.NOT_FOUND,
+      message: isAlbum ? "Album or EP not found" : "Track not found"
     });
   }
 
@@ -38,8 +38,8 @@ export default defineEventHandler(async (event) => {
   const { dropbox } = propData;
   if (!dropbox) {
     throw createError({
-      message: "No downloadable file found",
-      statusCode: ErrorCode.NOT_FOUND
+      status: ErrorCode.NOT_FOUND,
+      message: "No downloadable file found"
     });
   }
 
