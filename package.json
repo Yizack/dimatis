@@ -19,7 +19,7 @@
     "dev": "nuxt dev --port=5173 --public",
     "generate": "nuxt generate",
     "preview": "wrangler d1 migrations apply DB --local && wrangler dev",
-    "postinstall": "nuxt prepare && jiti scripts/patch-nuxthub",
+    "postinstall": "nuxt prepare",
     "color:players": "jiti scripts/player-styles",
     "data": "jiti scripts/generate-public-data",
     "db:migrate": "drizzle-kit generate --config=.config/drizzle.ts",
@@ -32,12 +32,12 @@
   "dependencies": {
     "@glidejs/glide": "^3.7.1",
     "@iconify-json/fa6-brands": "^1.2.6",
-    "@iconify-json/tabler": "^1.2.23",
+    "@iconify-json/tabler": "^1.2.24",
     "@libsql/client": "^0.15.15",
     "@nuxt/icon": "^2.1.1",
-    "@nuxthub/core": "^0.10.1",
+    "@nuxthub/core": "^0.10.3",
     "@nuxtjs/color-mode": "^4.0.0",
-    "@nuxtjs/sitemap": "^7.4.9",
+    "@nuxtjs/sitemap": "^7.5.0",
     "@vueuse/core": "^14.1.0",
     "bootstrap": "^5.3.8",
     "drizzle-kit": "^0.31.8",
@@ -45,20 +45,20 @@
     "fast-average-color-node": "^3.2.0",
     "nuxt": "^4.2.2",
     "nuxt-musicfyplayer": "^2.1.10",
-    "sass": "^1.96.0",
-    "zod": "^4.2.0"
+    "sass": "^1.97.0",
+    "zod": "^4.2.1"
   },
   "devDependencies": {
     "@nuxt/eslint": "^1.12.1",
     "@types/bootstrap": "^5.2.10",
     "@types/glidejs__glide": "^3.6.6",
-    "@types/node": "^25.0.2",
+    "@types/node": "^25.0.3",
     "eslint": "^9.39.2",
     "stylelint": "^16.26.1",
     "stylelint-config-standard-scss": "^16.0.0",
     "typescript": "^5.9.3",
     "vue-tsc": "^3.1.8",
-    "wrangler": "^4.54.0"
+    "wrangler": "^4.55.0"
   },
   "packageManager": "pnpm@10.26.0"
 }
