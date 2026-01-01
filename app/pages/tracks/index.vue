@@ -130,7 +130,7 @@ useHead({
                 <label for="filter-type" class="form-label">Type</label>
               </div>
             </div>
-            <input id="filter-search" v-model.trim="filters.search" type="text" class="form-control" placeholder="Search...">
+            <input id="filter-search" v-model.trim="filters.search" type="search" class="form-control" placeholder="Search...">
           </div>
           <div class="d-flex align-items-center justify-content-between position-absolute mt-2 start-0">
             <div class="d-flex align-items-center gap-2">
