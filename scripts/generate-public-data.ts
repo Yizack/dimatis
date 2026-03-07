@@ -1,4 +1,4 @@
-import { writeFile, mkdir } from "node:fs/promises";
+import { mkdir, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import tracks from "../app/assets/data/tracks";
 import albums from "../app/assets/data/albums";

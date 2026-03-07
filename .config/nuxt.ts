@@ -6,7 +6,6 @@ export default defineNuxtConfig({
   modules: [
     "@nuxthub/core",
     "@nuxtjs/color-mode",
-    "@nuxt/eslint",
     "nuxt-musicfyplayer",
     "@nuxtjs/sitemap",
     "@nuxt/icon"
@@ -123,13 +122,6 @@ export default defineNuxtConfig({
           silenceDeprecations: ["color-functions", "import", "global-builtin", "if-function"]
         }
       }
-    }
-  },
-
-  eslint: {
-    config: {
-      autoInit: false,
-      stylistic: true
     }
   },
 
