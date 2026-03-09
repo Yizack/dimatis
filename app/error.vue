@@ -15,8 +15,8 @@ useHead({
 <template>
   <div class="container vh-100 d-flex justify-content-center align-items-center">
     <div class="bg-light p-5 rounded-3 shadow text-dark">
-      <h1>Error {{ error.statusCode }}</h1>
-      <h5>Sorry, an error has occurred. {{ error.message || error.statusMessage }}</h5>
+      <h1>Error {{ error.status }}</h1>
+      <h5>Sorry, an error has occurred. {{ error.message || error.statusText }}</h5>
       <p>Go back: <NuxtLink to="/" class="text-decoration-underline">{{ SITE.domain }}</NuxtLink></p>
     </div>
   </div>
