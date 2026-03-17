@@ -34,7 +34,7 @@ const latestRelease = ref(tracks[0]!);
 
 <template>
   <main id="links">
-    <div class="bg-links" :style="{ backgroundImage: `url(${LINKS.background})`, filter: 'blur(10px)', opacity: .9 }" />
+    <div class="bg-links" :style="{ backgroundImage: `url(${LINKS.background})`, filter: 'blur(10px)', opacity: .9, transform: 'scale(1.05)' }" />
     <div class="container py-5">
       <div class="card rounded-4 col-lg-7 mx-auto overflow-hidden">
         <div class="card-header text-center py-5">
