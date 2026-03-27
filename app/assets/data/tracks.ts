@@ -4,7 +4,7 @@ export default [
     isrc: "GX8LE2633733",
     artists: "Dimatis",
     title: "Frozen Ripples",
-    description: "Heyy!! I've returned after a few months of break to disconnect from the noise of social media and find clarity in my life. This track captures that feeling of being stuck in life, ripples from drops frozen on water like frozen in time. I hope you like it!",
+    description: "Heyy!! I've returned after a few months of break to disconnect from the noise of social media and find clarity in my life. This track captures that feeling of being stuck in life, like moments when life is paused. I hope you like it!",
     genre: "Melodic Dubstep",
     date: "2026-03-27T00:00:00.000",
     person: [
