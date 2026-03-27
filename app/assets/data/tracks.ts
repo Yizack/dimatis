@@ -1,5 +1,42 @@
 export default [
   {
+    id: "frozen-ripples",
+    isrc: "GX8LE2633733",
+    artists: "Dimatis",
+    title: "Frozen Ripples",
+    description: "Heyy!! I've returned after a few months of break to disconnect from the noise of social media and find clarity in my life. This track captures that feeling of being stuck in life, ripples from drops frozen on water like frozen in time. I hope you like it!",
+    genre: "Melodic Dubstep",
+    date: "2026-03-27T00:00:00.000",
+    person: [
+      "Dimatis"
+    ],
+    mm: 3,
+    ss: 37,
+    dropbox: {
+      id: "birip192au6urunh6vz0f",
+      rlkey: "6xvgw3astpupgr8bpo3s277pk"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        spotify: "https://open.spotify.com/track/4p7Bt1G0P2X0Jw4Xxwowhn",
+        soundcloud: "https://soundcloud.com/dimatis/frozen-ripples",
+        youtube: "",
+        apple: "https://music.apple.com/us/album/frozen-ripples-single/1884182635?app=music&ls=1",
+        itunes: "https://music.apple.com/us/album/frozen-ripples-single/1884182635?app=itunes&ls=1",
+        bandcamp: "https://dimatis.bandcamp.com/album/frozen-ripples",
+        deezer: "https://www.deezer.com/us/album/937325151",
+        tidal: "https://tidal.com/album/508605861",
+        yandex: "",
+        amazon: "https://www.amazon.com/dp/B0GS5P4SHV",
+        tiktok: "",
+        beatport: "",
+        netease: "https://music.163.com/#/song?id=3357981841"
+      }
+    }
+  },
+  {
     id: "here-tomorrow",
     isrc: "QZPJ32517837",
     artists: "Dimatis & HYLIA",
