@@ -9,4 +9,5 @@ ignoredBuiltDependencies:
   - esbuild
   - sharp
   - unrs-resolver
+  - vue-demi
   - workerd
