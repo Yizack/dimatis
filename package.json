@@ -32,16 +32,16 @@
   "dependencies": {
     "@glidejs/glide": "^3.7.1",
     "@iconify-json/fa6-brands": "^1.2.6",
-    "@iconify-json/tabler": "^1.2.32",
+    "@iconify-json/tabler": "^1.2.33",
     "@libsql/client": "^0.17.2",
     "@nuxt/icon": "^2.2.1",
     "@nuxthub/core": "^0.10.7",
     "@nuxtjs/color-mode": "^4.0.0",
-    "@nuxtjs/sitemap": "^8.0.8",
+    "@nuxtjs/sitemap": "^8.0.11",
     "@vueuse/core": "^14.2.1",
     "bootstrap": "^5.3.8",
     "drizzle-kit": "^0.31.10",
-    "drizzle-orm": "^0.45.1",
+    "drizzle-orm": "^0.45.2",
     "fast-average-color-node": "^3.2.0",
     "nuxt": "^4.4.2",
     "nuxt-musicfyplayer": "^2.1.10",
@@ -59,7 +59,7 @@
     "stylelint-config-standard-scss": "^17.0.0",
     "typescript": "^6.0.2",
     "vue-tsc": "^3.2.6",
-    "wrangler": "^4.77.0"
+    "wrangler": "^4.78.0"
   },
   "packageManager": "pnpm@10.33.0"
 }
