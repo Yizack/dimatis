@@ -22,7 +22,7 @@ export default [
       links: {
         spotify: "https://open.spotify.com/track/4p7Bt1G0P2X0Jw4Xxwowhn",
         soundcloud: "https://soundcloud.com/dimatis/frozen-ripples",
-        youtube: "",
+        youtube: "https://youtu.be/9nW5qUBwmck",
         apple: "https://music.apple.com/us/album/frozen-ripples-single/1884182635?app=music&ls=1",
         itunes: "https://music.apple.com/us/album/frozen-ripples-single/1884182635?app=itunes&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/album/frozen-ripples",
