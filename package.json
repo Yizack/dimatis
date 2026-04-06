@@ -45,21 +45,21 @@
     "fast-average-color-node": "^3.2.0",
     "nuxt": "^4.4.2",
     "nuxt-musicfyplayer": "^2.1.10",
-    "sass-embedded": "^1.98.0",
+    "sass-embedded": "^1.99.0",
     "zod": "^4.3.6"
   },
   "devDependencies": {
     "@nuxt/eslint": "^1.15.2",
     "@types/bootstrap": "^5.2.10",
     "@types/glidejs__glide": "^3.6.6",
-    "@types/node": "^25.5.0",
+    "@types/node": "^25.5.2",
     "@yizack/eslint-config": "^0.0.5",
-    "eslint": "^10.1.0",
+    "eslint": "^10.2.0",
     "stylelint": "^17.6.0",
     "stylelint-config-standard-scss": "^17.0.0",
     "typescript": "^6.0.2",
     "vue-tsc": "^3.2.6",
-    "wrangler": "^4.78.0"
+    "wrangler": "^4.80.0"
   },
   "packageManager": "pnpm@10.33.0"
 }
