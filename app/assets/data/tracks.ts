@@ -504,7 +504,7 @@ export default [
         apple: "https://music.apple.com/us/album/sojourn-single/1766377012?app=music&ls=1",
         itunes: "https://music.apple.com/us/album/sojourn-single/1766377012?app=itunes&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/track/sojourn",
-        deezer: "https://www.deezer.com/en/album/638066901",
+        deezer: "https://www.deezer.com/album/638066901",
         tidal: "",
         yandex: "",
         amazon: "https://www.amazon.com/dp/B0DG2XD26Q",
@@ -759,7 +759,7 @@ export default [
         apple: "https://music.apple.com/us/album/the-songs-of-yesterday-single/1735631610?app=music&ls=1",
         itunes: "https://music.apple.com/us/album/the-songs-of-yesterday-single/1735631610?app=music&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/track/the-songs-of-yesterday",
-        deezer: "https://www.deezer.com/en/album/559626072",
+        deezer: "https://www.deezer.com/album/559626072",
         tidal: "https://tidal.com/browse/track/351566262",
         yandex: "",
         amazon: "https://www.amazon.com/dp/B0CXWC45RK",
@@ -796,7 +796,7 @@ export default [
         apple: "https://music.apple.com/us/album/dont-take-me/1730329403?app=music&ls=1",
         itunes: "https://music.apple.com/us/album/dont-take-me/1730329403?app=music&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/track/dont-take-me",
-        deezer: "https://www.deezer.com/en/album/546613942",
+        deezer: "https://www.deezer.com/album/546613942",
         tidal: "https://tidal.com/browse/album/344910264",
         yandex: "https://music.yandex.com/album/29675237",
         amazon: "https://www.amazon.com/dp/B0CVFRBN7H",
@@ -833,7 +833,7 @@ export default [
         apple: "https://music.apple.com/us/album/reminiscences-single/1727018419?app=music&ls=1",
         itunes: "https://music.apple.com/us/album/reminiscences-single/1727018419?app=itnues&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/track/reminiscences",
-        deezer: "https://www.deezer.com/en/album/538123742",
+        deezer: "https://www.deezer.com/album/538123742",
         tidal: "",
         yandex: "",
         amazon: "https://www.amazon.com/dp/B0CSYZV6SY",
@@ -870,7 +870,7 @@ export default [
         apple: "https://music.apple.com/us/album/meaningful-single/1711008189?app=music&ls=1",
         itunes: "https://music.apple.com/us/album/meaningful-single/1711008189?app=itunes&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/track/meaningful",
-        deezer: "https://www.deezer.com/en/album/497850621",
+        deezer: "https://www.deezer.com/album/497850621",
         tidal: "https://tidal.com/browse/track/320703398",
         yandex: "",
         amazon: "https://www.amazon.com/dp/B0CKR4WCHR",
@@ -907,7 +907,7 @@ export default [
         youtube: "https://youtu.be/PX9DbJu8Dl8",
         apple: "https://music.apple.com/us/album/sad-songs-dimatis-morva-remix/1666221214?i=1666221215&app=music&ls=1",
         itunes: "https://music.apple.com/us/album/sad-songs-dimatis-morva-remix/1666221214?i=1666221215&app=itunes&ls=1",
-        deezer: "https://www.deezer.com/en/album/397832487",
+        deezer: "https://www.deezer.com/album/397832487",
         tidal: "https://tidal.com/browse/track/272105751",
         yandex: "",
         amazon: "https://www.amazon.com/dp/B0BSLC5PGL",
@@ -943,7 +943,7 @@ export default [
         apple: "https://music.apple.com/us/album/up-above-single/1673001892?app=music&ls=1",
         itunes: "https://music.apple.com/us/album/up-above-single/1673001892?app=itunes&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/track/up-above",
-        deezer: "https://www.deezer.com/en/album/409576177?deferredFl=1",
+        deezer: "https://www.deezer.com/album/409576177?deferredFl=1",
         tidal: "https://tidal.com/browse/track/277865322",
         yandex: "",
         amazon: "https://www.amazon.com/dp/B0BW9SRP74",
@@ -1258,7 +1258,7 @@ export default [
         apple: "https://music.apple.com/us/album/wonderland-dimatis-remix/1639259678?app=music&ls=1",
         itunes: "https://music.apple.com/us/album/wonderland-dimatis-remix/1639259678?app=itunes&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/track/wonderland-dimatis-remix",
-        deezer: "https://www.deezer.com/en/album/344728217",
+        deezer: "https://www.deezer.com/album/344728217",
         tidal: "https://tidal.com/browse/album/242282198",
         yandex: "https://music.yandex.com/album/23203526",
         amazon: "https://www.amazon.com/dp/B0B957L5X6",
@@ -1318,7 +1318,7 @@ export default [
         apple: "https://music.apple.com/us/album/let-me-goy-single/1632805901?app=music&ls=1",
         itunes: "https://music.apple.com/us/album/let-me-go-single/1632805901?app=itunes&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/track/let-me-go",
-        deezer: "https://www.deezer.com/en/album/332667717",
+        deezer: "https://www.deezer.com/album/332667717",
         tidal: "https://tidal.com/browse/album/236342315",
         yandex: "",
         amazon: "https://www.amazon.com/dp/B0B5PBKZVZ",
@@ -1353,7 +1353,7 @@ export default [
         apple: "https://music.apple.com/us/album/fade-away-single/1631123114?app=music&ls=1",
         itunes: "https://music.apple.com/us/album/fade-away-single/1631123114?app=itunes&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/track/fade-away",
-        deezer: "https://www.deezer.com/en/album/329528627",
+        deezer: "https://www.deezer.com/album/329528627",
         tidal: "https://tidal.com/browse/album/234782020",
         yandex: "",
         amazon: "https://www.amazon.com/dp/B0B4S8DL62",
@@ -1555,7 +1555,7 @@ export default [
         apple: "https://music.apple.com/us/album/call-out-single/1608543909?app=music&ls=1",
         itunes: "https://music.apple.com/us/album/call-out-single/1608543909?app=itunes&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/album/call-out",
-        deezer: "https://www.deezer.com/en/album/293077852",
+        deezer: "https://www.deezer.com/album/293077852",
         tidal: "https://tidal.com/browse/album/215313561",
         yandex: "https://music.yandex.com/album/20983998",
         amazon: "https://www.amazon.com/dp/B09SF6MJTW",
@@ -1767,7 +1767,7 @@ export default [
         apple: "https://music.apple.com/us/album/i-will-someday-single/1592078845?app=music&ls=1",
         itunes: "https://music.apple.com/us/album/i-will-someday-single/1592078845?app=itunes&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/track/i-will-someday",
-        deezer: "https://www.deezer.com/en/album/267965902",
+        deezer: "https://www.deezer.com/album/267965902",
         tidal: "https://tidal.com/browse/album/202439308",
         yandex: "https://music.yandex.com/album/19858837",
         amazon: "https://www.amazon.com/dp/B09K7Q4ZR1",
@@ -1803,7 +1803,7 @@ export default [
         apple: "https://music.apple.com/us/album/paying-for-it-feat-salvo-single/1567512744?app=music&ls=1",
         itunes: "https://music.apple.com/us/album/paying-for-it-feat-salvo-single/1567512744?app=itunes&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/track/paying-for-it-feat-salvo",
-        deezer: "https://www.deezer.com/en/album/230153882",
+        deezer: "https://www.deezer.com/album/230153882",
         tidal: "",
         amazon: "https://www.amazon.com/dp/B094X6BFNX/",
         tiktok: "",
@@ -1922,7 +1922,7 @@ export default [
         youtube: "https://youtu.be/EwsgCjFd9BM",
         apple: "",
         bandcamp: "https://dimatis.bandcamp.com/track/stay-dimatis-remix",
-        deezer: "https://www.deezer.com/en/album/211784152",
+        deezer: "https://www.deezer.com/album/211784152",
         tidal: "",
         amazon: "https://www.amazon.com/dp/B08XWSSDWS"
       }
@@ -1954,7 +1954,7 @@ export default [
         apple: "https://music.apple.com/us/album/worthy-of-life-single/1549696728?app=music&ls=1",
         itunes: "https://music.apple.com/us/album/worthy-of-life-single/1549696728?app=itunes&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/track/worthy-of-life",
-        deezer: "https://www.deezer.com/en/album/201770522",
+        deezer: "https://www.deezer.com/album/201770522",
         tidal: "https://tidal.com/browse/album/170355537",
         yandex: "https://music.yandex.com/album/14512634",
         amazon: "https://www.amazon.com/dp/B08TM9HKYV",
@@ -2014,7 +2014,7 @@ export default [
         youtube: "https://www.youtube.com/watch?v=Uqm00tl0nKQ",
         apple: "https://music.apple.com/album/reborn-single/1535187248?app=music&ls=1",
         itunes: "https://music.apple.com/album/reborn-single/1535187248?app=itunes&ls=1",
-        deezer: "https://www.deezer.com/en/album/178782202",
+        deezer: "https://www.deezer.com/album/178782202",
         bandcamp: "https://bayza.bandcamp.com/track/reborn",
         amazon: "https://www.amazon.com/dp/B08KY8ZJV7",
         tidal: "https://tidal.com/browse/album/158112844",
@@ -2048,7 +2048,7 @@ export default [
         youtube: "https://youtu.be/N2sZKeX_xGI",
         apple: "https://music.apple.com/us/album/hold-on-to-me-single/1526294383?app=music&ls=1",
         itunes: "https://music.apple.com/us/album/hold-on-to-me-single/1526294383?app=itunes&ls=1",
-        deezer: "https://www.deezer.com/en/album/165690312",
+        deezer: "https://www.deezer.com/album/165690312",
         tidal: "http://tidal.com/browse/album/151393778",
         amazon: "https://www.amazon.com/dp/B08FFMF4L3",
         tiktok: "https://vm.tiktok.com/ZSmq7e54",
@@ -2082,7 +2082,7 @@ export default [
         itunes: "https://music.apple.com/us/album/who-am-i-without-you-single/1526745718?app=itunes&ls=1",
         apple: "https://music.apple.com/us/album/who-am-i-without-you-single/1526745718?app=music&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/track/who-am-i-without-you",
-        deezer: "https://www.deezer.com/en/album/165491562",
+        deezer: "https://www.deezer.com/album/165491562",
         tidal: "https://tidal.com/browse/album/151409176",
         amazon: "https://www.amazon.com/dp/B08FFHGH4M",
         tiktok: "https://vm.tiktok.com/ZSfA8V1k/",
@@ -2199,7 +2199,7 @@ export default [
         itunes: "https://music.apple.com/us/album/two-ways-single/1509469256?app=itunes&ls=1",
         apple: "https://music.apple.com/us/album/two-ways-single/1509469256?app=music&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/track/two-ways",
-        deezer: "https://www.deezer.com/en/album/143740662",
+        deezer: "https://www.deezer.com/album/143740662",
         tidal: "https://tidal.com/browse/album/139245821",
         netease: "https://music.163.com/#/song?id=1442987422"
       }
@@ -2262,7 +2262,7 @@ export default [
         itunes: "https://music.apple.com/us/album/experiences/1495650794?i=1495650795&app=itunes&ls=1",
         apple: "https://music.apple.com/us/album/experiences/1495650794?i=1495650795&app=music&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/album/experiences",
-        deezer: "https://www.deezer.com/en/album/128070352",
+        deezer: "https://www.deezer.com/album/128070352",
         tidal: "https://tidal.com/browse/track/128864932",
         netease: "https://music.163.com/#/song?id=1418289983"
       }
@@ -2299,7 +2299,7 @@ export default [
         itunes: "https://music.apple.com/us/album/grief/1495650794?i=1495650797&app=itunes&ls=1",
         apple: "https://music.apple.com/us/album/grief/1495650794?i=1495650797&app=music&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/album/experiences",
-        deezer: "https://www.deezer.com/en/album/128070352",
+        deezer: "https://www.deezer.com/album/128070352",
         tidal: "https://tidal.com/browse/track/128864933",
         netease: "https://music.163.com/#/song?id=1418291876"
       }
@@ -2336,7 +2336,7 @@ export default [
         itunes: "https://music.apple.com/us/album/moments-together/1495650794?i=1495650798&app=itunes&ls=1",
         apple: "https://music.apple.com/us/album/moments-together/1495650794?i=1495650798&app=music&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/album/experiences",
-        deezer: "https://www.deezer.com/en/album/128070352",
+        deezer: "https://www.deezer.com/album/128070352",
         tidal: "https://tidal.com/browse/track/128864934",
         netease: "https://music.163.com/#/song?id=1418291877"
       }
@@ -2373,7 +2373,7 @@ export default [
         itunes: "https://music.apple.com/us/album/now/1495650794?i=1495650799&app=itunes&ls=1",
         apple: "https://music.apple.com/us/album/now/1495650794?i=1495650799&app=music&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/album/experiences",
-        deezer: "https://www.deezer.com/en/album/128070352",
+        deezer: "https://www.deezer.com/album/128070352",
         tidal: "https://tidal.com/browse/track/128864935",
         netease: "https://music.163.com/#/song?id=1418289984"
       }
@@ -2410,7 +2410,7 @@ export default [
         itunes: "https://music.apple.com/us/album/overcoming/1495650794?i=1495650800&app=itunes&ls=1",
         apple: "https://music.apple.com/us/album/overcoming/1495650794?i=1495650800&app=music&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/album/experiences",
-        deezer: "https://www.deezer.com/en/album/128070352",
+        deezer: "https://www.deezer.com/album/128070352",
         tidal: "https://tidal.com/browse/track/128864936",
         netease: "https://music.163.com/#/song?id=1418291878"
       }
@@ -2448,7 +2448,7 @@ export default [
         itunes: "https://music.apple.com/us/album/serenity/1495650794?i=1495650801&app=itunes&ls=1",
         apple: "https://music.apple.com/us/album/serenity/1495650794?i=1495650801&app=music&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/album/experiences",
-        deezer: "https://www.deezer.com/en/album/128070352",
+        deezer: "https://www.deezer.com/album/128070352",
         tidal: "https://tidal.com/browse/track/128864937",
         netease: "https://music.163.com/#/song?id=1418291879"
       }
@@ -2485,7 +2485,7 @@ export default [
         itunes: "https://music.apple.com/us/album/unusual/1495650794?i=1495650802&app=itunes&ls=1",
         apple: "https://music.apple.com/us/album/unusual/1495650794?i=1495650802&app=music&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/album/experiences",
-        deezer: "https://www.deezer.com/en/album/128070352",
+        deezer: "https://www.deezer.com/album/128070352",
         tidal: "https://tidal.com/browse/track/128864938",
         netease: "https://music.163.com/#/song?id=1418291880"
       }
@@ -2542,7 +2542,7 @@ export default [
         itunes: "https://music.apple.com/us/album/sign-of-time-single/1484462681?app=itunes&ls=1",
         apple: "https://music.apple.com/us/album/sign-of-time-single/1484462681?app=music&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/track/sign-of-time",
-        deezer: "https://www.deezer.com/en/album/115872542",
+        deezer: "https://www.deezer.com/album/115872542",
         tidal: "https://tidal.com/browse/album/121238375",
         netease: "https://music.163.com/#/song?id=1397506565"
       }
@@ -2716,7 +2716,7 @@ export default [
         itunes: "https://music.apple.com/us/album/floating/1451828741?i=1451828743&app=itunes&ls=1",
         apple: "https://music.apple.com/us/album/floating/1451828741?i=1451828743&app=music&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/album/floating-ep",
-        deezer: "https://www.deezer.com/en/track/629753662",
+        deezer: "https://www.deezer.com/track/629753662",
         tidal: "https://tidal.com/browse/track/103796099",
         netease: "https://music.163.com/#/song?id=1361198110"
       }
@@ -2752,7 +2752,7 @@ export default [
         itunes: "https://music.apple.com/us/album/mists/1451828741?i=1451828742&app=itunes&ls=1",
         apple: "https://music.apple.com/us/album/mists/1451828741?i=1451828742&app=music&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/album/floating-ep",
-        deezer: "https://www.deezer.com/en/track/629753652",
+        deezer: "https://www.deezer.com/track/629753652",
         tidal: "https://tidal.com/browse/track/103796098",
         netease: "https://music.163.com/#/song?id=1361195374"
       }
@@ -2788,7 +2788,7 @@ export default [
         itunes: "https://music.apple.com/us/album/shades/1451828741?i=1451828744&app=itunes&ls=1",
         apple: "https://music.apple.com/us/album/shades/1451828741?i=1451828744&app=music&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/album/floating-ep",
-        deezer: "https://www.deezer.com/en/track/629753672",
+        deezer: "https://www.deezer.com/track/629753672",
         tidal: "https://tidal.com/browse/track/103796100",
         netease: "https://music.163.com/#/song?id=1361195377"
       }
@@ -2824,7 +2824,7 @@ export default [
         itunes: "https://music.apple.com/us/album/what-awaits-us/1451828741?i=1451828745&app=itunes&ls=1",
         apple: "https://music.apple.com/us/album/what-awaits-us/1451828741?i=1451828745&app=music&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/album/floating-ep",
-        deezer: "https://www.deezer.com/en/track/629753682",
+        deezer: "https://www.deezer.com/track/629753682",
         tidal: "https://tidal.com/browse/track/103796101",
         netease: "https://music.163.com/#/song?id=1361195378"
       }
@@ -2881,7 +2881,7 @@ export default [
         itunes: "https://music.apple.com/us/album/demure-single/1445957031?app=itunes&ls=1",
         apple: "https://music.apple.com/us/album/demure-single/1445957031?app=music&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/track/demure",
-        deezer: "https://www.deezer.com/track/601170812",
+        deezer: "https://www.deezer.com/album/81211462",
         tidal: "https://tidal.com/browse/album/100462941",
         netease: "https://music.163.com/#/song?id=1336864278"
       }
@@ -2913,7 +2913,7 @@ export default [
         youtube: "https://youtu.be/30nO0lg2PJY",
         itunes: "https://music.apple.com/us/album/glare-single/1435619621?app=itunes&ls=1",
         apple: "https://music.apple.com/us/album/glare-single/1435619621?app=music&ls=1",
-        deezer: "https://www.deezer.com/en/album/72607692",
+        deezer: "https://www.deezer.com/album/72607692",
         tidal: "https://tidal.com/browse/album/94756567",
         netease: "https://music.163.com/#/song?id=1325712267"
       }
@@ -2945,7 +2945,7 @@ export default [
         itunes: "https://music.apple.com/us/album/heartbeat-single/1436304315?app=itunes&ls=1",
         apple: "https://music.apple.com/us/album/heartbeat-single/1436304315?app=music&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/track/heartbeat",
-        deezer: "https://www.deezer.com/en/album/73276542",
+        deezer: "https://www.deezer.com/album/73276542",
         tidal: "https://tidal.com/browse/album/95261526",
         netease: "https://music.163.com/#/song?id=1313102206"
       }
@@ -2981,7 +2981,7 @@ export default [
         itunes: "https://music.apple.com/us/album/moonlit-lover-single/1420477130?app=itunes&ls=1",
         apple: "https://music.apple.com/us/album/moonlit-lover-single/1420477130?app=music&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/album/moonlit-lover",
-        deezer: "https://www.deezer.com/en/album/69678032",
+        deezer: "https://www.deezer.com/album/69678032",
         tidal: "https://tidal.com/browse/album/92951077",
         netease: "https://music.163.com/#/album?id=72072004"
       }
@@ -3017,7 +3017,7 @@ export default [
         itunes: "https://music.apple.com/us/album/moonlit-lover-piano-version/1420477130?i=1420477134&app=itunes&ls=1",
         apple: "https://music.apple.com/us/album/moonlit-lover-piano-version/1420477130?i=1420477134&app=music&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/album/moonlit-lover",
-        deezer: "https://www.deezer.com/en/album/69678032",
+        deezer: "https://www.deezer.com/album/69678032",
         tidal: "https://tidal.com/browse/track/92951079",
         netease: "https://music.163.com/#/song?id=1299557164"
       }
@@ -3081,7 +3081,7 @@ export default [
         itunes: "https://music.apple.com/us/album/seeker-single/1383932798?app=itunes&ls=1",
         apple: "https://music.apple.com/us/album/seeker-single/1383932798?app=music&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/track/seeker",
-        deezer: "https://www.deezer.com/en/album/63457002",
+        deezer: "https://www.deezer.com/album/63457002",
         tidal: "https://tidal.com/browse/album/89005779",
         netease: "https://music.163.com/#/song?id=865048407"
       }
@@ -3113,7 +3113,7 @@ export default [
         itunes: "https://music.apple.com/us/album/the-dream-single/1365144867?app=itunes&ls=1",
         apple: "https://music.apple.com/us/album/the-dream-single/1365144867?app=music&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/track/the-dream",
-        deezer: "https://www.deezer.com/en/album/60645482",
+        deezer: "https://www.deezer.com/album/60645482",
         tidal: "https://tidal.com/browse/album/86598183",
         netease: "https://music.163.com/#/song?id=557584251"
       }
@@ -3145,7 +3145,7 @@ export default [
         itunes: "https://music.apple.com/us/album/timeline-single/1358639824?app=itunes&ls=1",
         apple: "https://music.apple.com/us/album/timeline-single/1358639824?app=music&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/track/timeline",
-        deezer: "https://www.deezer.com/en/album/58941952",
+        deezer: "https://www.deezer.com/album/58941952",
         tidal: "https://tidal.com/browse/album/85873410"
       }
     }
@@ -3175,7 +3175,7 @@ export default [
         youtube: "https://youtu.be/tSUYZHhpSIw",
         itunes: "https://music.apple.com/us/album/vicious-mind-instrumental-single/1363070591?app=itunes&ls=1",
         apple: "https://music.apple.com/us/album/vicious-mind-instrumental-single/1363070591?app=music&ls=1",
-        deezer: "https://www.deezer.com/en/album/59660982",
+        deezer: "https://www.deezer.com/album/59660982",
         tidal: "https://tidal.com/browse/album/86362384"
       }
     }
@@ -3204,7 +3204,7 @@ export default [
         soundcloud: "https://soundcloud.com/dimatis/among-us",
         youtube: "https://youtu.be/cmmMTc2Usyk",
         bandcamp: "https://dimatis.bandcamp.com/track/among-us",
-        deezer: "https://www.deezer.com/en/album/55105402",
+        deezer: "https://www.deezer.com/album/55105402",
         tidal: "https://tidal.com/browse/album/83439793",
         netease: "https://music.163.com/#/song?id=534540264"
       }
@@ -3397,7 +3397,7 @@ export default [
         youtube: "https://youtu.be/Ba7eykBZGk4",
         itunes: "https://music.apple.com/us/album/fanciful-single/1217879752?app=itunes&ls=1",
         apple: "https://music.apple.com/us/album/fanciful-single/1217879752?app=music&ls=1",
-        deezer: "https://www.deezer.com/en/album/15777810",
+        deezer: "https://www.deezer.com/album/15777810",
         tidal: "https://tidal.com/album/72194446",
         netease: "https://music.163.com/#/album?id=35292811"
       }
@@ -3454,7 +3454,7 @@ export default [
         youtube: "https://www.youtube.com/watch?v=Py9dG4AffYg",
         itunes: "https://music.apple.com/us/album/nearby-single/1196847093?app=itunes&ls=1",
         apple: "https://music.apple.com/us/album/nearby-single/1196847093?app=music&ls=1",
-        deezer: "https://www.deezer.com/en/album/15179895"
+        deezer: "https://www.deezer.com/album/15179895"
       }
     }
   },
@@ -3947,7 +3947,7 @@ export default [
         youtube: "https://youtu.be/nSxzTmQPbhY",
         itunes: "https://music.apple.com/us/album/magical-forest-single/1219239274?app=itunes&ls=1",
         apple: "https://music.apple.com/us/album/magical-forest-single/1219239274?app=music&ls=1",
-        deezer: "https://www.deezer.com/en/album/15777454",
+        deezer: "https://www.deezer.com/album/15777454",
         tidal: "https://tidal.com/browse/album/72198675"
       }
     }
