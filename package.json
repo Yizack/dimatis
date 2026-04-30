@@ -33,33 +33,33 @@
     "@glidejs/glide": "^3.7.1",
     "@iconify-json/fa6-brands": "^1.2.6",
     "@iconify-json/tabler": "^1.2.33",
-    "@libsql/client": "^0.17.2",
+    "@libsql/client": "^0.17.3",
     "@nuxt/icon": "^2.2.1",
     "@nuxthub/core": "^0.10.7",
     "@nuxtjs/color-mode": "^4.0.0",
-    "@nuxtjs/sitemap": "^8.0.11",
+    "@nuxtjs/sitemap": "^8.0.14",
     "@vueuse/core": "^14.2.1",
     "bootstrap": "^5.3.8",
     "drizzle-kit": "^0.31.10",
     "drizzle-orm": "^0.45.2",
     "fast-average-color-node": "^3.2.0",
-    "nuxt": "^4.4.2",
+    "nuxt": "^4.4.4",
     "nuxt-musicfyplayer": "^2.1.10",
     "sass-embedded": "^1.99.0",
-    "zod": "^4.3.6"
+    "zod": "^4.4.1"
   },
   "devDependencies": {
     "@nuxt/eslint": "^1.15.2",
     "@types/bootstrap": "^5.2.10",
     "@types/glidejs__glide": "^3.6.6",
-    "@types/node": "^25.5.2",
+    "@types/node": "^25.6.0",
     "@yizack/eslint-config": "^0.0.5",
-    "eslint": "^10.2.0",
-    "stylelint": "^17.6.0",
+    "eslint": "^10.2.1",
+    "stylelint": "^17.9.1",
     "stylelint-config-standard-scss": "^17.0.0",
-    "typescript": "^6.0.2",
-    "vue-tsc": "^3.2.6",
-    "wrangler": "^4.80.0"
+    "typescript": "^6.0.3",
+    "vue-tsc": "^3.2.7",
+    "wrangler": "^4.86.0"
   },
-  "packageManager": "pnpm@10.33.0"
+  "packageManager": "pnpm@10.33.2"
 }
