@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const param = ref(useRoute("tracks-track").params.track);
+const param = computed(() => useRoute("tracks-track").params.track.toLowerCase());
 const track = computed<DimatisTrack>(() => tracks.find(track => track.id === param.value)!);
 
 if (!track.value) {

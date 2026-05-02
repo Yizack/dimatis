@@ -1,9 +1,9 @@
 <script setup lang="ts">
-const genreURI = ref(useRoute("tag-genre").params.genre);
+const param = computed(() => useRoute("tag-genre").params.genre.toLowerCase());
 const showMore = ref(false);
 
 const genre = computed(() => {
-  return genres.find(g => g.id === genreURI.value)?.name || getGenreNameFromURI(genreURI.value);
+  return genres.find(g => g.id === param.value)?.name || getGenreNameFromURI(param.value);
 });
 
 const allTracksGenre = computed(() => {
@@ -38,7 +38,7 @@ useSeoMeta({
   description: `${genre.value} music by ${SITE.name}`,
   keywords: `genre, ${genre.value}, tag, style, electronic`,
   // Protocolo Open Graph
-  ogUrl: `${SITE.url}/tag/${genreURI.value}`,
+  ogUrl: `${SITE.url}/tag/${param.value}`,
   ogType: "website",
   ogTitle: `${genre.value} | ${SITE.name}`,
   ogDescription: `${genre.value} music by ${SITE.name}`,
@@ -56,7 +56,7 @@ useSeoMeta({
 
 useHead({
   link: [
-    { rel: "canonical", href: `${SITE.url}/tag/${genreURI.value}` }
+    { rel: "canonical", href: `${SITE.url}/tag/${param.value}` }
   ]
 });
 </script>

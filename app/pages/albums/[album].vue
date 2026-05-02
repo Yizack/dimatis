@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const param = ref(useRoute("albums-album").params.album);
+const param = computed(() => useRoute("albums-album").params.album.toLowerCase());
 const album = computed<DimatisAlbum>(() => albums.find(a => a.id === param.value)!);
 
 if (!album.value) {
