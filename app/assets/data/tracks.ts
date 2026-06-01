@@ -4,7 +4,7 @@ export default [
     isrc: "GX5MX2617645",
     artists: "Dimatis",
     title: "Boons",
-    description: "Hello! I'm excited to share with you this Liquid Drum & Bass track called \"Boons\". Lately, many good things have been happening in my life, that's why I decided to name this track \"Boons\", which generally means a blessing, a gift, something that is exceptionally helpful, a fortunate occurrence, etc. I hope this track brings you good vibes and positive energy! 🩵☁️",
+    description: "Hello! I'm excited to share with you this Liquid Drum & Bass track called \"Boons\". Lately, many good things have been happening in my life, that's why I decided to name this track \"Boons\", which generally means a blessing, a gift, something that is exceptionally helpful, a fortunate occurrence, etc. I hope this track brings positive energy! 🩵☁️",
     genre: "Liquid Drum & Bass",
     date: "2026-05-29T00:00:00.000",
     person: [
@@ -22,7 +22,7 @@ export default [
       links: {
         spotify: "https://open.spotify.com/track/1TiRjJxkqhsO9sAVmmg2EC",
         soundcloud: "https://soundcloud.com/dimatis/boons",
-        youtube: "",
+        youtube: "https://youtu.be/y8-nCfLD_vY",
         apple: "https://music.apple.com/us/album/boons-single/6767395196?app=music&ls=1",
         itunes: "https://music.apple.com/us/album/boons-single/6767395196?app=itunes&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/album/boons",
