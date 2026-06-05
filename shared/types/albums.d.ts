@@ -8,7 +8,7 @@ declare global {
     description: string;
     tracks: string[];
     art: string;
-    type: string;
+    type: "Single" | "EP" | "Album" | "Compilation";
     date: TDate;
     person: string[];
     dropbox?: {

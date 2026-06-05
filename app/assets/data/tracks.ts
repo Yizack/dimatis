@@ -13,6 +13,11 @@ export default [
     ],
     mm: 3,
     ss: 39,
+    album: "The World We Left Behind",
+    art: "the-world-we-left-behind",
+    related: [
+      "the-world-we-left-behind-instrumental"
+    ],
     dropbox: {
       id: "lgvavv7rw1yfe0fko6xe3",
       rlkey: "7s2vqg07if2pey3qwtxmuyzui"
@@ -73,7 +78,7 @@ export default [
     id: "the-world-we-left-behind-instrumental",
     isrc: "QZPJ32551566",
     artists: "Dimatis & Calmseer",
-    title: "The World We Left Behind",
+    title: "The World We Left Behind (Instrumental)",
     description: "",
     genre: "Melodic Dubstep",
     date: "2026-06-05T00:00:00.000",
@@ -83,6 +88,11 @@ export default [
     ],
     mm: 3,
     ss: 39,
+    album: "The World We Left Behind",
+    art: "the-world-we-left-behind",
+    related: [
+      "the-world-we-left-behind"
+    ],
     dropbox: {
       id: "6md073i4bcbnjcsb9sz4j",
       rlkey: "36wh56vc6wsle7clgjwjwller"
