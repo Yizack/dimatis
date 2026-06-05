@@ -1,5 +1,145 @@
 export default [
   {
+    id: "the-world-we-left-behind",
+    isrc: "QZPJ32551565",
+    artists: "Dimatis & Calmseer",
+    title: "The World We Left Behind",
+    description: "",
+    genre: "Melodic Dubstep",
+    date: "2026-06-05T00:00:00.000",
+    person: [
+      "Dimatis",
+      "Calmseer"
+    ],
+    mm: 3,
+    ss: 39,
+    dropbox: {
+      id: "lgvavv7rw1yfe0fko6xe3",
+      rlkey: "7s2vqg07if2pey3qwtxmuyzui"
+    },
+    credits: [
+      {
+        title: "Support Calmseer",
+        socials: [
+          {
+            name: "Spotify",
+            link: "https://open.spotify.com/artist/2RtIZi9ui5VBDYpWH1us7r?si=d10o4MwLTvuO7Pqqndfc7w"
+          },
+          {
+            name: "Instagram",
+            link: "https://www.instagram.com/calmseer.music/"
+          }
+        ]
+      },
+      {
+        title: "Support Jade City",
+        socials: [
+          {
+            name: "Instagram",
+            link: "https://www.instagram.com/jadecityrecords/"
+          },
+          {
+            name: "Discord",
+            link: "https://discord.gg/QEAvUTVhNc"
+          },
+          {
+            name: "Soundcloud",
+            link: "https://soundcloud.com/jadecityrecords"
+          }
+        ]
+      }
+    ],
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        spotify: "https://open.spotify.com/track/3gvYvv9XSHbg8uY8eVpNkK",
+        soundcloud: "https://soundcloud.com/dimatis/the-world-we-left-behind?in=dimatis/sets/the-world-we-left-behind/",
+        youtube: "",
+        apple: "https://music.apple.com/us/album/the-world-we-left-behind-single/6768428231?i=6768428592&app=music&ls=1",
+        itunes: "https://music.apple.com/us/album/the-world-we-left-behind-single/6768428231?i=6768428592&app=itunes&ls=1",
+        bandcamp: "https://dimatis.bandcamp.com/album/the-world-we-left-behind",
+        deezer: "https://www.deezer.com/us/album/980512951",
+        tidal: "https://tidal.com/album/523570061",
+        yandex: "",
+        amazon: "https://www.amazon.com/dp/B0H1DVRWR4",
+        tiktok: "https://vt.tiktok.com/ZS92XUv9cm1uY-B0KYm/",
+        beatport: "",
+        netease: "https://music.163.com/#/song?id=3380747002"
+      }
+    }
+  },
+  {
+    id: "the-world-we-left-behind-instrumental",
+    isrc: "QZPJ32551566",
+    artists: "Dimatis & Calmseer",
+    title: "The World We Left Behind",
+    description: "",
+    genre: "Melodic Dubstep",
+    date: "2026-06-05T00:00:00.000",
+    person: [
+      "Dimatis",
+      "Calmseer"
+    ],
+    mm: 3,
+    ss: 39,
+    dropbox: {
+      id: "6md073i4bcbnjcsb9sz4j",
+      rlkey: "36wh56vc6wsle7clgjwjwller"
+    },
+    credits: [
+      {
+        title: "Support Calmseer",
+        socials: [
+          {
+            name: "Spotify",
+            link: "https://open.spotify.com/artist/2RtIZi9ui5VBDYpWH1us7r?si=d10o4MwLTvuO7Pqqndfc7w"
+          },
+          {
+            name: "Instagram",
+            link: "https://www.instagram.com/calmseer.music/"
+          }
+        ]
+      },
+      {
+        title: "Support Jade City",
+        socials: [
+          {
+            name: "Instagram",
+            link: "https://www.instagram.com/jadecityrecords/"
+          },
+          {
+            name: "Discord",
+            link: "https://discord.gg/QEAvUTVhNc"
+          },
+          {
+            name: "Soundcloud",
+            link: "https://soundcloud.com/jadecityrecords"
+          }
+        ]
+      }
+    ],
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        spotify: "https://open.spotify.com/track/3BlBHziC70SpterSEuEF94",
+        soundcloud: "https://soundcloud.com/dimatis/the-world-we-left-behind-instrumental?in=dimatis/sets/the-world-we-left-behind/",
+        youtube: "",
+        apple: "https://music.apple.com/us/album/the-world-we-left-behind-single/6768428231?i=6768428593&app=music&ls=1",
+        itunes: "https://music.apple.com/us/album/the-world-we-left-behind-single/6768428231?i=6768428593&app=itunes&ls=1",
+        bandcamp: "https://dimatis.bandcamp.com/album/the-world-we-left-behind",
+        deezer: "https://www.deezer.com/us/album/980512951",
+        tidal: "https://tidal.com/album/523570061",
+        yandex: "",
+        amazon: "https://www.amazon.com/dp/B0H1DVRWR4",
+        tiktok: "https://vt.tiktok.com/ZS92XUv9cm1uY-B0KYm/",
+        beatport: "",
+        netease: "https://music.163.com/#/song?id=3380745500"
+      }
+    }
+  },
+  {
     id: "boons",
     isrc: "GX5MX2617645",
     artists: "Dimatis",
