@@ -3,7 +3,7 @@ export default [
     id: "the-world-we-left-behind",
     artists: "Dimatis & Calmseer",
     title: "The World We Left Behind",
-    description: "",
+    description: "New song with Calmseer for Jade City Spellbook Vol. IV! The lyrics behind this song touched me personally. It's filled with a mix of nostalgia and hope for a fresh start after everything falls apart. When Caley sent me the vocals, I was amazed by the lyrical world she created. I fell in love with the song instantly! 🩵📖",
     tracks: [
       "the-world-we-left-behind",
       "the-world-we-left-behind-instrumental"

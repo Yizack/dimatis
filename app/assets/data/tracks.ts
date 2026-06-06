@@ -4,7 +4,7 @@ export default [
     isrc: "QZPJ32551565",
     artists: "Dimatis & Calmseer",
     title: "The World We Left Behind",
-    description: "",
+    description: "New song with Calmseer for Jade City Spellbook Vol. IV! The lyrics behind this song touched me personally. It's filled with a mix of nostalgia and hope for a fresh start after everything falls apart. When Caley sent me the vocals, I was amazed by the lyrical world she created. I fell in love with the song instantly! 🩵📖",
     genre: "Melodic Dubstep",
     date: "2026-06-05T00:00:00.000",
     person: [
@@ -79,7 +79,7 @@ export default [
     isrc: "QZPJ32551566",
     artists: "Dimatis & Calmseer",
     title: "The World We Left Behind (Instrumental)",
-    description: "",
+    description: "New song with Calmseer for Jade City Spellbook Vol. IV! The lyrics behind this song touched me personally. It's filled with a mix of nostalgia and hope for a fresh start after everything falls apart. When Caley sent me the vocals, I was amazed by the lyrical world she created. I fell in love with the song instantly! 🩵�",
     genre: "Melodic Dubstep",
     date: "2026-06-05T00:00:00.000",
     person: [
