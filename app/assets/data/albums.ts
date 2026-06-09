@@ -17,6 +17,23 @@ export default [
     ]
   },
   {
+    id: "hope-on-the-horizon",
+    artists: "Dimatis & Oscuro",
+    title: "Hope on the Horizon",
+    description: "I'm excited to share my latest collaboration with Oscuro, \"Hope on the Horizon\". It was a pleasure working with him. I've always admired Oscuro's music, and being able to create something together is like a dream come true. This track combines our styles; the release also includes a Chill version. I hope it brings a sense of hope and positivity. We hope you enjoy it! 💙☁️",
+    tracks: [
+      "hope-on-the-horizon",
+      "hope-on-the-horizon-chill-version"
+    ],
+    art: "hope-on-the-horizon",
+    type: "Single",
+    date: "2025-10-10T00:00:00.000",
+    person: [
+      "Dimatis",
+      "Oscuro"
+    ]
+  },
+  {
     id: "traveler-in-time",
     artists: "Dimatis & Elvya",
     title: "Traveler In time",

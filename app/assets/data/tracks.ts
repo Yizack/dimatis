@@ -335,6 +335,8 @@ export default [
     ],
     mm: 3,
     ss: 20,
+    album: "Hope on the Horizon",
+    art: "hope-on-the-horizon",
     dropbox: {
       id: "txqos11k9oaskgngb8jc3",
       rlkey: "avac3rbd3pwem20zd50kb9yyt"
@@ -344,6 +346,46 @@ export default [
       dark: true,
       links: {
         spotify: "https://open.spotify.com/track/7oVcLtcTyPHMLFT6xEOJXM",
+        soundcloud: "https://soundcloud.com/dimatis/hope-on-the-horizon",
+        youtube: "https://youtu.be/wl2bkyb_DtU",
+        apple: "https://music.apple.com/us/album/hope-on-the-horizon-single/1837115260?app=music&ls=1",
+        itunes: "https://music.apple.com/us/album/hope-on-the-horizon-single/1837115260?app=itunes&ls=1",
+        bandcamp: "https://dimatis.bandcamp.com/album/hope-on-the-horizon",
+        deezer: "https://www.deezer.com/us/album/814114221",
+        tidal: "https://tidal.com/album/457577901",
+        yandex: "",
+        amazon: "https://www.amazon.com/dp/B0FPDJ8SF8",
+        tiktok: "https://vm.tiktok.com/ZMH7qoNmHby74-zciRW/",
+        beatport: "",
+        netease: "https://music.163.com/#/album?id=283589110"
+      }
+    }
+  },
+  {
+    id: "hope-on-the-horizon-chill-version",
+    isrc: "GXBDT2500571",
+    artists: "Dimatis & Oscuro",
+    title: "Hope on the Horizon (Chill Version)",
+    description: "I'm excited to share my latest collaboration with Oscuro, \"Hope on the Horizon\". It was a pleasure working with him. I've always admired Oscuro's music, and being able to create something together is like a dream come true. This track combines our styles; the release also includes a Chill version. I hope it brings a sense of hope and positivity. We hope you enjoy it! 💙☁️",
+    genre: "Future Garage",
+    date: "2025-10-10T00:00:00.000",
+    person: [
+      "Dimatis",
+      "Oscuro"
+    ],
+    mm: 3,
+    ss: 20,
+    album: "Hope on the Horizon",
+    art: "hope-on-the-horizon",
+    dropbox: {
+      id: "mzcqjqiz2p77fj8afu35d",
+      rlkey: "ru3vvjwpu85l44ts6mcrx2fqd"
+    },
+    fanlink: {
+      download: true,
+      dark: true,
+      links: {
+        spotify: "https://open.spotify.com/track/4HwSqJucIf12nO85XFOHNM",
         soundcloud: "https://soundcloud.com/dimatis/hope-on-the-horizon",
         youtube: "https://youtu.be/wl2bkyb_DtU",
         apple: "https://music.apple.com/us/album/hope-on-the-horizon-single/1837115260?app=music&ls=1",
