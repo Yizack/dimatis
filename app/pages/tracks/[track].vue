@@ -10,7 +10,7 @@ if (!track.value) {
 }
 
 const { data: download } = useLazyFetch("/api/download/count", {
-  query: { file: param.value },
+  query: { file: track.value.id },
   getCachedData: (key, nuxtApp) => nuxtApp.payload.data[key]
 });
 
@@ -28,13 +28,13 @@ const moreTracks = computed(() => {
 const trackSchemaOrg = computed(() => ({
   "@context": "http://schema.org",
   "@type": ["MusicRecording", "MusicRelease"],
-  "@id": `${SITE.url}/tracks/${param.value}`,
-  "url": `${SITE.url}/tracks/${param.value}`,
+  "@id": `${SITE.url}/tracks/${track.value.id}`,
+  "url": `${SITE.url}/tracks/${track.value.id}`,
   "name": track.value.title,
   "description": track.value.description,
   "image": {
     "@type": "ImageObject",
-    "url": `${SITE.url}/images/${track.value.art || param.value}.jpg`
+    "url": `${SITE.url}/images/${track.value.art || track.value.id}.jpg`
   },
   "musicReleaseFormat": "http://schema.org/DigitalFormat",
   "genre": track.value.genre,
@@ -44,7 +44,7 @@ const trackSchemaOrg = computed(() => ({
   "inAlbum": [{
     "@type": "MusicAlbum",
     "name": track.value.album || track.value.title,
-    "url": track.value.album ? `${SITE.url}/albums/${track.value.album.replace(/\s+/g, "-").toLowerCase()}` : `${SITE.url}/tracks/${param.value}`
+    "url": track.value.album ? `${SITE.url}/albums/${track.value.album.replace(/\s+/g, "-").toLowerCase()}` : `${SITE.url}/tracks/${track.value.id}`
   }],
   "byArtist": track.value.person.map(person => ({
     "@type": "MusicGroup",
@@ -59,18 +59,18 @@ useSeoMeta({
   description: track.value.description,
   keywords: `release, ${track.value.title}, ${track.value.genre}, play, stream, download, fanlink`,
   // Protocolo Open Graph
-  ogUrl: `${SITE.url}/tracks/${param.value}`,
+  ogUrl: `${SITE.url}/tracks/${track.value.id}`,
   ogType: "website",
   ogTitle: `${track.value.title} by ${track.value.artists}`,
   ogSiteName: SITE.name,
-  ogImage: `${SITE.url}/images/${track.value.art || param.value}.jpg`,
+  ogImage: `${SITE.url}/images/${track.value.art || track.value.id}.jpg`,
   ogImageWidth: 500,
   ogImageHeight: 500,
   ogImageAlt: `${track.value.title} by ${track.value.artists}`,
   ogDescription: track.value.description,
   // Twitter Card
   twitterCard: "summary",
-  twitterImage: `${SITE.url}/images/${track.value.art || param.value}.jpg`,
+  twitterImage: `${SITE.url}/images/${track.value.art || track.value.id}.jpg`,
   twitterTitle: `${track.value.title} by ${track.value.artists}`,
   twitterDescription: track.value.description,
   twitterSite: `@${SITE.twitter}`
@@ -82,7 +82,7 @@ useHead({
     { type: "application/ld+json", innerHTML: JSON.stringify(trackSchemaOrg.value) }
   ],
   link: [
-    { rel: "canonical", href: `${SITE.url}/tracks/${param.value}` }
+    { rel: "canonical", href: `${SITE.url}/tracks/${track.value.id}` }
   ]
 });
 
@@ -90,13 +90,13 @@ const assets = import.meta.glob("~~/server/assets/lyrics/*", {
   eager: true
 });
 
-const existLyrics = assets["../server/assets/lyrics/" + param.value + ".txt"] !== undefined;
+const existLyrics = assets["../server/assets/lyrics/" + track.value.id + ".txt"] !== undefined;
 const lyrics = ref<string>();
 const showFullLyrics = ref<boolean>(false);
 
 if (existLyrics) {
   const { data: lyricsData } = await useFetch("/api/lyrics", {
-    params: { track: param.value },
+    params: { track: track.value.id },
     getCachedData: (key, nuxtApp) => nuxtApp.payload.data[key]
   });
   lyrics.value = lyricsData.value;
@@ -112,7 +112,7 @@ if (existLyrics) {
           <h1 class="mb-1">{{ track.title }}</h1>
           <h2 class="text-secondary mb-0">{{ track.artists }}</h2>
         </div>
-        <MusicPlayer class="rounded-3" :size="{ height: '450px', width: '100%' }" :track="track" :param="param" />
+        <MusicPlayer class="rounded-3" :size="{ height: '450px', width: '100%' }" :track="track" :param="track.art || track.id" />
         <div class="row my-3 mx-0 bg-body rounded p-3">
           <div class="col-12 col-md-8 mb-3 mb-md-0 text-secondary p-0">
             <div class="description">
@@ -168,7 +168,7 @@ if (existLyrics) {
               <div class="mb-2">
                 <div class="mb-0">Fanlink</div>
                 <div class="tag">
-                  <NuxtLink class="d-flex align-items-center gap-2" :to="`${SITE.fanlinksUrl}/${param}`" target="_blank">
+                  <NuxtLink class="d-flex align-items-center gap-2" :to="`${SITE.fanlinksUrl}/${track.id}`" target="_blank">
                     <span>{{ SITE.fanlinksDomain }}/{{ param }}</span>
                     <Icon name="tabler:external-link" size="1.3rem" />
                   </NuxtLink>
