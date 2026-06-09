@@ -60,7 +60,7 @@ export default [
       links: {
         spotify: "https://open.spotify.com/track/3gvYvv9XSHbg8uY8eVpNkK",
         soundcloud: "https://soundcloud.com/dimatis/the-world-we-left-behind?in=dimatis/sets/the-world-we-left-behind/",
-        youtube: "",
+        youtube: "https://youtu.be/xyHEFJ_MnVk",
         apple: "https://music.apple.com/us/album/the-world-we-left-behind-single/6768428231?i=6768428592&app=music&ls=1",
         itunes: "https://music.apple.com/us/album/the-world-we-left-behind-single/6768428231?i=6768428592&app=itunes&ls=1",
         bandcamp: "https://dimatis.bandcamp.com/album/the-world-we-left-behind",
