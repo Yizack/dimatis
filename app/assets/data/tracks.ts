@@ -1,5 +1,246 @@
 export default [
   {
+    id: "to-stand-again-instrumental",
+    isrc: "GX4R52628859",
+    artists: "Dimatis & Calmseer",
+    title: "To Stand Again (Instrumental)",
+    description: "",
+    genre: "Melodic Dubstep",
+    date: "2026-06-19T00:00:00.000",
+    person: [
+      "Dimatis",
+      "Calmseer"
+    ],
+    mm: 4,
+    ss: 0,
+    album: "The Instrumentals",
+    art: "the-instrumentals",
+    dropbox: {
+      id: "47m4ouplzx0qf89kvlb6a",
+      rlkey: "svvmccskiobofgsi8bw7xnue1"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        spotify: "https://open.spotify.com/track/7bA7KLEKQxF1fObpbTnKko",
+        soundcloud: "https://soundcloud.com/dimatis/to-stand-again-instrumental?in=dimatis/sets/the-instrumentals/",
+        youtube: "https://youtu.be/yYXvHsKC68g?t=0",
+        apple: "https://music.apple.com/us/album/the-instrumentals/1893766196?i=1893766197&app=music&ls=1",
+        itunes: "https://music.apple.com/us/album/the-instrumentals/1893766196?i=1893766197&app=itunes&ls=1",
+        bandcamp: "https://dimatis.bandcamp.com/album/the-instrumentals",
+        deezer: "https://www.deezer.com/en/album/962205531",
+        tidal: "https://tidal.com/album/516083745",
+        yandex: "",
+        amazon: "",
+        tiktok: "",
+        beatport: "",
+        netease: "https://music.163.com/song?id=3370632077"
+      }
+    }
+  },
+  {
+    id: "the-songs-of-yesterday-instrumental",
+    isrc: "GX4R52681118",
+    artists: "Mox Jade, Dimatis, Sydney Grimm",
+    title: "The Songs of Yesterday (Instrumental)",
+    description: "",
+    genre: "Melodic Dubstep",
+    date: "2026-06-19T00:00:00.000",
+    person: [
+      "Mox Jade",
+      "Dimatis",
+      "Sydney Grimm"
+    ],
+    mm: 4,
+    ss: 0,
+    album: "The Instrumentals",
+    art: "the-instrumentals",
+    dropbox: {
+      id: "374hyz8fw4lfegch2ul16",
+      rlkey: "cstzvh0m9zxoi1k0p9aezh1bm"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        spotify: "https://open.spotify.com/track/0KBouFw0pMvQg1O6JmAgXX",
+        soundcloud: "https://soundcloud.com/dimatis/the-songs-of-yesterday-instrumental?in=dimatis/sets/the-instrumentals/",
+        youtube: "https://youtu.be/yYXvHsKC68g?t=241",
+        apple: "https://music.apple.com/us/album/the-instrumentals/1893766196?i=1893766198&app=music&ls=1",
+        itunes: "https://music.apple.com/us/album/the-instrumentals/1893766196?i=1893766198&app=itunes&ls=1",
+        bandcamp: "https://dimatis.bandcamp.com/album/the-instrumentals",
+        deezer: "https://www.deezer.com/en/album/962205531",
+        tidal: "https://tidal.com/album/516083745",
+        yandex: "",
+        amazon: "",
+        tiktok: "",
+        beatport: "",
+        netease: "https://music.163.com/song?id=3370632078"
+      }
+    }
+  },
+  {
+    id: "fly-again-instrumental",
+    isrc: "GX4R52610802",
+    artists: "Dimatis, Miss Lina",
+    title: "Fly Again (Instrumental)",
+    description: "",
+    genre: "Melodic Dubstep",
+    date: "2026-06-19T00:00:00.000",
+    person: [
+      "Dimatis",
+      "Miss Lina"
+    ],
+    mm: 4,
+    ss: 11,
+    album: "The Instrumentals",
+    art: "the-instrumentals",
+    dropbox: {
+      id: "lz8u9mngbn8z1n6caf1bg",
+      rlkey: "8lsqmjxtw5hp9r37f631cpnlv"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        spotify: "https://open.spotify.com/track/2AmtWp0vOnbFJNi66jLmrn",
+        soundcloud: "https://soundcloud.com/dimatis/fly-again-instrumental?in=dimatis/sets/the-instrumentals/",
+        youtube: "https://youtu.be/yYXvHsKC68g?t=481",
+        apple: "https://music.apple.com/us/album/the-instrumentals/1893766196?i=1893766199&app=music&ls=1",
+        itunes: "https://music.apple.com/us/album/the-instrumentals/1893766196?i=1893766199&app=itunes&ls=1",
+        bandcamp: "https://dimatis.bandcamp.com/album/the-instrumentals",
+        deezer: "https://www.deezer.com/en/album/962205531",
+        tidal: "https://tidal.com/album/516083745",
+        yandex: "",
+        amazon: "",
+        tiktok: "",
+        beatport: "",
+        netease: "https://music.163.com/song?id=3370632079"
+      }
+    }
+  },
+  {
+    id: "paying-for-it-instrumental",
+    isrc: "GX4R52619947",
+    artists: "Dimatis",
+    title: "Paying For It (feat. Salvo) (Instrumental)",
+    description: "",
+    genre: "Melodic Dubstep",
+    date: "2026-06-19T00:00:00.000",
+    person: [
+      "Dimatis",
+      "Salvo"
+    ],
+    mm: 3,
+    ss: 46,
+    album: "The Instrumentals",
+    art: "the-instrumentals",
+    dropbox: {
+      id: "vtv3dc9r3xa3wb1tm106d",
+      rlkey: "jaedyl4e5skk4zhedbna0515s"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        spotify: "https://open.spotify.com/track/0jKoeCatdIZ0VgrslTE5mk",
+        soundcloud: "https://soundcloud.com/dimatis/paying-for-it-instrumental?in=dimatis/sets/the-instrumentals/",
+        youtube: "https://youtu.be/yYXvHsKC68g?t=733",
+        apple: "https://music.apple.com/us/album/the-instrumentals/1893766196?i=1893766200&app=music&ls=1",
+        itunes: "https://music.apple.com/us/album/the-instrumentals/1893766196?i=1893766200&app=itunes&ls=1",
+        bandcamp: "https://dimatis.bandcamp.com/album/the-instrumentals",
+        deezer: "https://www.deezer.com/en/album/962205531",
+        tidal: "https://tidal.com/album/516083745",
+        yandex: "",
+        amazon: "",
+        tiktok: "",
+        beatport: "",
+        netease: "https://music.163.com/song?id=3370632080"
+      }
+    }
+  },
+  {
+    id: "let-me-go-instrumental",
+    isrc: "GX4R52618310",
+    artists: "Dimatis & Elvya",
+    title: "Let Me Go (Instrumental)",
+    description: "",
+    genre: "Chillstep",
+    date: "2026-06-19T00:00:00.000",
+    person: [
+      "Dimatis",
+      "Elvya"
+    ],
+    mm: 3,
+    ss: 23,
+    album: "The Instrumentals",
+    art: "the-instrumentals",
+    dropbox: {
+      id: "vpe40s486fcbf9hhnja26",
+      rlkey: "gw9epd74i6z5x6u8hcuanwid5"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        spotify: "https://open.spotify.com/track/2zAX7O8joCIVmuNF1rT5D8",
+        soundcloud: "https://soundcloud.com/dimatis/let-me-go-instrumental?in=dimatis/sets/the-instrumentals/",
+        youtube: "https://youtu.be/yYXvHsKC68g?t=959",
+        apple: "https://music.apple.com/us/album/the-instrumentals/1893766196?i=1893766201&app=music&ls=1",
+        itunes: "https://music.apple.com/us/album/the-instrumentals/1893766196?i=1893766201&app=itunes&ls=1",
+        bandcamp: "https://dimatis.bandcamp.com/album/the-instrumentals",
+        deezer: "https://www.deezer.com/en/album/962205531",
+        tidal: "https://tidal.com/album/516083745",
+        yandex: "",
+        amazon: "",
+        tiktok: "",
+        beatport: "",
+        netease: "https://music.163.com/song?id=3370632081"
+      }
+    }
+  },
+  {
+    id: "out-there-instrumental",
+    isrc: "GX4R52676294",
+    artists: "Dimatis & Elvya",
+    title: "Out There (Instrumental)",
+    description: "",
+    genre: "Chillstep",
+    date: "2026-06-19T00:00:00.000",
+    person: [
+      "Dimatis",
+      "Elvya"
+    ],
+    mm: 4,
+    ss: 4,
+    album: "The Instrumentals",
+    art: "the-instrumentals",
+    dropbox: {
+      id: "8j5axsjutasknuoejku0d",
+      rlkey: "kkz4rzfhscamgqy1banyy2ifb"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        spotify: "https://open.spotify.com/track/2zAX7O8joCIVmuNF1rT5D8",
+        soundcloud: "https://soundcloud.com/dimatis/out-there-instrumental?in=dimatis/sets/the-instrumentals/",
+        youtube: "https://youtu.be/yYXvHsKC68g?t=1162",
+        apple: "https://music.apple.com/us/album/the-instrumentals/1893766196?i=1893766202&app=music&ls=1",
+        itunes: "https://music.apple.com/us/album/the-instrumentals/1893766196?i=1893766202&app=itunes&ls=1",
+        bandcamp: "https://dimatis.bandcamp.com/album/the-instrumentals",
+        deezer: "https://www.deezer.com/en/album/962205531",
+        tidal: "https://tidal.com/album/516083745",
+        yandex: "",
+        amazon: "",
+        tiktok: "",
+        beatport: "",
+        netease: "https://music.163.com/song?id=3370631477"
+      }
+    }
+  },
+  {
     id: "the-world-we-left-behind",
     isrc: "QZPJ32551565",
     artists: "Dimatis & Calmseer",

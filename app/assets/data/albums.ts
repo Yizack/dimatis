@@ -1,5 +1,46 @@
 export default [
   {
+    id: "the-instrumentals",
+    artists: "Dimatis",
+    title: "The Instrumentals",
+    description: "Over the years, some people have asked me for instrumental versions of my collaborations. Today, I'm happy to finally share this instrumentals album. I hope you enjoy it!",
+    tracks: [
+      "to-stand-again-instrumental",
+      "the-songs-of-yesterday-instrumental",
+      "fly-again-instrumental",
+      "paying-for-it-instrumental",
+      "let-me-go-instrumental",
+      "out-there-instrumental",
+      "traveler-in-time-instrumental",
+      "call-out-instrumental"
+    ],
+    art: "the-instrumentals",
+    type: "Album",
+    date: "2026-06-19T00:00:00.000",
+    person: [
+      "Dimatis"
+    ],
+    dropbox: {
+      id: "6p1tvwxnfyc8x5qyd80cl",
+      rlkey: "gnagi4trnpi26zaso4geijdwl"
+    },
+    fanlink: {
+      download: true,
+      dark: false,
+      links: {
+        spotify: "https://open.spotify.com/album/6YEopwMsSL8iiAOfC4pQG3",
+        soundcloud: "https://soundcloud.com/dimatis/sets/the-instrumentals",
+        youtube: "https://youtu.be/yYXvHsKC68g",
+        itunes: "https://music.apple.com/us/album/the-instrumentals/1893766196?app=itunes&ls=1",
+        apple: "https://music.apple.com/us/album/the-instrumentals/1893766196?app=music&ls=1",
+        bandcamp: "https://dimatis.bandcamp.com/album/the-instrumentals",
+        deezer: "https://www.deezer.com/en/album/962205531",
+        tidal: "https://tidal.com/album/516083745",
+        netease: "https://music.163.com/#/album?id=371250994"
+      }
+    }
+  },
+  {
     id: "the-world-we-left-behind",
     artists: "Dimatis & Calmseer",
     title: "The World We Left Behind",
