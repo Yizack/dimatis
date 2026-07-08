@@ -29,7 +29,16 @@ useHead({
   ]
 });
 
-const latestRelease = ref(tracks[0]!);
+const latestTrack = ref(tracks[0]!);
+const latestAlbum = ref(albums[0]!);
+const latestRelease = ref<typeof latestTrack.value | typeof latestAlbum.value>();
+
+if (latestTrack.value.date > latestAlbum.value.date) {
+  latestRelease.value = latestTrack.value;
+}
+else {
+  latestRelease.value = latestAlbum.value;
+}
 </script>
 
 <template>
@@ -46,9 +55,12 @@ const latestRelease = ref(tracks[0]!);
         </div>
         <div class="card-body px-lg-5 bg-body-secondary">
           <h4>Latest Release</h4>
-          <div class="position-relative neon scale-on-hover normal">
-            <NuxtLink :to="`${SITE.fanlinksUrl}/${latestRelease.art || latestRelease.id}`" class="bg-body-tertiary d-flex align-items-center rounded-4 overflow-hidden mb-2 border text-decoration-none position-relative z-1">
-              <img class="img-fluid" :src="`/images/${latestRelease.id}.jpg`" :alt="`${latestRelease.artists} - ${latestRelease.title}`" width="100" height="100">
+          <div v-if="latestRelease" class="position-relative neon scale-on-hover normal">
+            <NuxtLink
+              :to="'type' in latestRelease ? `${SITE.fanlinksUrl}/${latestRelease.id}-${latestRelease.type.toLowerCase()}` : `${SITE.fanlinksUrl}/${latestRelease.id}`"
+              class="bg-body-tertiary d-flex align-items-center rounded-4 overflow-hidden mb-2 border text-decoration-none position-relative z-1"
+            >
+              <img class="img-fluid" :src="`/images/${latestRelease.art || latestRelease.id}.jpg`" :alt="`${latestRelease.artists} - ${latestRelease.title}`" width="100" height="100">
               <div class="px-3 w-100">
                 <h5 class="m-0">{{ latestRelease.title }}</h5>
                 <p class="m-0 text-muted">{{ latestRelease.artists }}</p>
